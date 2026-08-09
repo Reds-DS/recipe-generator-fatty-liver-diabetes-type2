@@ -1,0 +1,127 @@
+{
+  "id": "723ebcf3-83d4-4eed-9b57-526d0384f63a",
+  "title": "Baked Cinnamon Apple Slices with Vanilla Greek Yogurt",
+  "intro": "This incredibly simple, fast-prep dessert requires almost no active time. Warm, spice-roasted apples deliver comforting flavor over a protein-rich base of vanilla Greek yogurt.",
+  "diet_tags": [],
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 15,
+  "cook_time_max_min": 20,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Fresh apple",
+      "canonical_name": "Apples, raw, with skin",
+      "quantity_g": 250.0,
+      "quantity_display": "9 oz (250 g)",
+      "preparation": "cored and sliced 1/4-inch thick",
+      "fdc_id": 1105781,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground nutmeg",
+      "canonical_name": "Spices, nutmeg, ground",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 171326,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Maple syrup",
+      "canonical_name": "Syrups, maple",
+      "quantity_g": 7.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 169661,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Nonfat plain Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 150.0,
+      "quantity_display": "5.5 oz (150 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 4.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pecans",
+      "canonical_name": "Nuts, pecans",
+      "quantity_g": 15.0,
+      "quantity_display": "2 tbsp (15 g)",
+      "preparation": "chopped",
+      "fdc_id": 170182,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 400°F / 200°C. Line a baking sheet with parchment paper.",
+    "Toss the sliced apples with the cinnamon, nutmeg, and maple syrup in a bowl until evenly coated.",
+    "Spread the apples in a single layer on the prepared baking sheet.",
+    "Bake for 15 to 20 minutes, or until the apples are tender and lightly browned. Check at 15 minutes.",
+    "Stir the vanilla extract into the Greek yogurt while the apples bake.",
+    "Divide the vanilla yogurt between two small bowls and top warmly with the baked apple slices.",
+    "Sprinkle the chopped pecans over the apples and serve immediately."
+  ],
+  "variation": "Swap the chopped pecans for sliced almonds or toasted walnuts.",
+  "conservation": "Keeps 2 days refrigerated; reheat apples slightly before serving.",
+  "nutrition_per_serving": {
+    "calories_kcal": 191.0,
+    "protein_g": 8.6,
+    "carbs_g": 25.8,
+    "fat_g": 6.0,
+    "fiber_g": 3.9,
+    "sodium_mg": 27.7,
+    "sugar_g": 19.3,
+    "saturated_fat_g": 0.6,
+    "added_sugar_g": 2.4,
+    "cholesterol_mg": 3.8,
+    "potassium_mg": 284.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 3.1,
+    "pufa_g": 1.6,
+    "calcium_mg": 111.5,
+    "iron_mg": 0.4,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "saturated_fat_g: partial data — 58% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 58% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dessert\\IMG\\baked_cinnamon_apple_slices_with_vanilla_greek_yogurt.png",
+  "created_at": "2026-08-09T18:43:46.801683",
+  "generation_id": "7607b9e2-6d7c-481a-95e9-7eec15566166"
+}

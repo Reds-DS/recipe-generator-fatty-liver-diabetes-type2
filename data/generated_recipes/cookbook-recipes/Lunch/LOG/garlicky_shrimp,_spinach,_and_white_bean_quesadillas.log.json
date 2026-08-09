@@ -1,0 +1,299 @@
+{
+  "main_ingredient": "Frozen cooked shrimp",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Garlicky Shrimp, Spinach, and White Bean Quesadillas",
+  "recipe_id": "7bc8a122-ae54-451e-ba1b-eeced5a07b4c",
+  "generation_id": "4b2612cb-b1a5-42ff-9981-13835adf4a8d",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:58:45.475394",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Garlicky Shrimp, Spinach, and White Bean Quesadillas",
+        "main_ingredient": "Frozen cooked shrimp",
+        "technique": "Skillet toasting (no-cook filling assembly)",
+        "flavour_profile": "Garlicky, herby, and mildly tangy",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Frozen cooked peeled shrimp",
+          "No-salt-added canned cannellini beans",
+          "Whole-wheat tortillas",
+          "Fresh baby spinach",
+          "Crumbled feta cheese",
+          "Garlic powder",
+          "Dried oregano",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Frozen cooked peeled shrimp, untreated': [175180] Crustaceans, shrimp, cooked has no USDA value for fiber_g (which would be summed as zero) — switched to [171970] Crustaceans, shrimp, mixed species, cooked, breaded and fried.",
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 589.3,
+          "protein_g": 37.8,
+          "carbs_g": 66.4,
+          "fat_g": 20.1,
+          "fiber_g": 14.0,
+          "sodium_mg": 716.6,
+          "sugar_g": 2.6,
+          "saturated_fat_g": 5.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 126.2,
+          "potassium_mg": 1244.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.0,
+          "pufa_g": 5.3,
+          "calcium_mg": 372.4,
+          "iron_mg": 8.2,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.889,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 66.4 g/serving > ceiling 55 g (\"main\")",
+        "sodium 716.6 mg/serving > ceiling 550 mg (\"main\")",
+        "saturated fat 5.8 g/serving > ceiling 5 g (\"main\")",
+        "589.3 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 66.4 g/serving > ceiling 55 g (\"main\")",
+              "sodium 716.6 mg/serving > ceiling 550 mg (\"main\")",
+              "saturated fat 5.8 g/serving > ceiling 5 g (\"main\")",
+              "589.3 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[nutrition_plausibility] The automated check flagged carbs, saturated fat, sodium, and calories as being over the limit, but this is clearly a database discrepancy. Based on the specified ingredients (260g beans, two 45g whole-wheat tortillas, 170g shrimp, 20g feta), the per-serving values should realistically sit around 400 kcal, 53g carbs, and 2.5g saturated fat, which all fall well within the 'main' chapter targets. The recipe itself is portioned correctly; investigate the underlying database mapping for the tortillas or beans."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, creative recipe that perfectly embodies the dietary philosophy of the book by using mashed beans instead of heavy melted cheese to bind the quesadilla. The automated nutrient warnings are a database mapping artifact; the recipe as written is correctly portioned and highly appealing.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Mediterranean flavor profile is well-balanced. Using lemon, garlic, oregano, and a small amount of feta provides robust flavor, while the bean mash acts as a creamy, satisfying base."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is correctly accounted for in the steps, and no unlisted ingredients are mentioned."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Cook times are provided as ranges (2 to 3 minutes), visual doneness cues are clear (golden brown, crisp, wilts slightly), and a midway check time is included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe successfully and sensibly merges a Mediterranean ingredient profile with a familiar American quesadilla format."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Pan-toasting in a skillet is the ideal method for quesadillas. The mashed cannellini beans will effectively act as the 'glue' to hold the folded tortillas together."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The automated check flagged carbs, saturated fat, sodium, and calories as being over the limit, but this is clearly a database discrepancy. Based on the specified ingredients (260g beans, two 45g whole-wheat tortillas, 170g shrimp, 20g feta), the per-serving values should realistically sit around 400 kcal, 53g carbs, and 2.5g saturated fat, which all fall well within the 'main' chapter targets. The recipe itself is portioned correctly; investigate the underlying database mapping for the tortillas or beans."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and highlight the clever culinary swap (bean mash instead of heavy cheese) with an honest, practical tone and no banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very high appeal. It is a creative, filling, and highly appetizing lunch that uses simple pantry and freezer staples in a smart way."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the book's dietary philosophy. It cleverly replaces the heavy saturated fat of a standard quesadilla with fiber-rich mashed beans, while maintaining the comfort-food format and delivering lean protein and quality whole grains."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Contains zero added sugar. The carbohydrates are appropriately portioned and sourced entirely from high-quality, high-fiber bases (beans and whole-wheat tortillas)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Lunch chapter perfectly as a quick, protein- and fiber-packed midday meal."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed from a cold start in under 20 minutes. The ingredients are standard supermarket staples, and thawing small, cooked shrimp in cold water is a realistic, fast prep method."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two quesadillas are centered in the frame, cut into neat halves, displayed on two simple matte ceramic plates. One plate is in sharp focus in the immediate foreground, while the second is softly blurred behind it, capturing a realistic serving for two. The camera is positioned at a 3/4 overhead angle, showing the volume of the golden-brown, crispy whole-wheat tortillas. The interior filling is visible along the cut edges, revealing a creamy, off-white cannellini bean mash, vibrant green wilted spinach, small pink chunks of shrimp, and salty white crumbles of feta. The tortillas feature a slightly uneven, rustic golden-brown sear with subtle charred spots from the skillet. Lighting is soft, natural, and directional, coming from a window on the left, casting gentle shadows and highlighting the texture of the toasted dough and the sheen of a light brush of olive oil. The setting is a rustic, aged oak tabletop with a rumpled, neutral-colored linen napkin tucked partially beneath the front plate. Beside the plate, a few stray crumbles of feta and a couple of small, fresh spinach leaves are scattered naturally. A small, blurred ramekin containing a touch of extra dried oregano sits in the background. Photorealistic, not AI-generated looking. The scene reflects a home-cooked lunch: lived-in, warm, and authentic. There are slight imperfections, such as a tiny stray piece of shrimp near the plate edge and an asymmetric placement of the quesadilla wedges. No plastic sheen, no unnaturally smooth surfaces. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

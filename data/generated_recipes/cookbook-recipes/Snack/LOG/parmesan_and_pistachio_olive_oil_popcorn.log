@@ -1,0 +1,150 @@
+=== RECIPE LOG: Parmesan and Pistachio Olive Oil Popcorn ===
+ID            : f68c6e6e-3d91-467b-9e63-15c99aaf98c1
+Generation ID : 25d45976-6fb6-4687-8a45-e0be35ae05fc
+Generated     : 2026-08-09 19:22:48
+LLM model     : gemini-3.1-pro-preview
+Validation    : FAIL
+Warnings      : 11
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Popcorn kernels
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Parmesan and Pistachio Olive Oil Popcorn
+Technique       : Stovetop
+Cuisine style   : Mediterranean-American
+Flavour profile : Savory, cheesy, and nutty
+Sketch          : Popcorn kernels, Extra-virgin olive oil, Grated parmesan cheese, Shelled pistachios, Garlic powder, Dried thyme, Black pepper
+
+--- Draft (6 attempt(s)) ---
+  [Attempt 1] Rejected
+    [WARN] Total raw weight too low: 84g for 2 people (42g/person; expected at least 50g/person for a snack or side).
+  [Attempt 2] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. Total raw weight too low: 84g for 2 people (42g/person; expected at least 50g/person for a snack or side).
+
+Revise the quantit...
+  [Attempt 1] Rejected
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [cooking_method_suitability] Freshly popped stovetop popcorn absorbs or vaporizes its popping oil, leaving the kernels dry. Tossing d...
+    [WARN] Total raw weight too low: 80g for 2 people (40g/person; expected at least 50g/person for a snack or side).
+  [Attempt 2] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. Total raw weight too low: 80g for 2 people (40g/person; expected at least 50g/person for a snack or side).
+
+Revise the quantit...
+  [Attempt 1] Rejected
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [instruction_completeness] Because all 2 tsp of olive oil are used during the popping process, the popped kernels will be too dry for...
+    [WARN] Total raw weight too low: 90g for 2 people (45g/person; expected at least 50g/person for a snack or side).
+  [Attempt 2] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. Total raw weight too low: 90g for 2 people (45g/person; expected at least 50g/person for a snack or side).
+
+Revise the quantit...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Popcorn kernels
+  [WARN] No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 43% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 43% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 43% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 43% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 24.2 g/serving > ceiling 24 g ("snack")
+    [WARN] saturated fat 2.5 g/serving > ceiling 2 g ("snack")
+    [WARN] 256.1 kcal/serving > high bound 230 kcal ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Popcorn kernels
+  [WARN] No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 55% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 55% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 55% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 55% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 25.5 g/serving > ceiling 24 g ("snack")
+    [WARN] saturated fat 2.2 g/serving > ceiling 2 g ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Popcorn kernels
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.
+  [WARN] No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 46% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 46% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 46% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 46% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 25.2 g/serving > ceiling 24 g ("snack")
+    [WARN] saturated fat 2.9 g/serving > ceiling 2 g ("snack")
+    [WARN] 255 kcal/serving > high bound 230 kcal ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : failed
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 3
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic bowls filled with parmesan and pistachio olive oil popcorn, centered in the frame with gene...

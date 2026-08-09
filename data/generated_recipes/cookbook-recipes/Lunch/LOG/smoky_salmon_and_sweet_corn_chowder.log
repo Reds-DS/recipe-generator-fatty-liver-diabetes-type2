@@ -1,0 +1,64 @@
+=== RECIPE LOG: Smoky Salmon and Sweet Corn Chowder ===
+ID            : 7c1af84f-f2d6-4d69-98c8-2d3db3c7f331
+Generation ID : 528827d2-3765-4839-938b-60eaa5c26a1c
+Generated     : 2026-08-09 18:21:47
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned pink salmon
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky Salmon and Sweet Corn Chowder
+Technique       : Simmering
+Cuisine style   : New England-Inspired
+Flavour profile : Smoky, creamy, and savory
+Sketch          : No-salt-added canned pink salmon, Baby red potatoes, Frozen sweet corn, Low-sodium vegetable broth, Low-fat (1%) milk, Celery, Yellow onion, Extra-virgin olive oil, Smoked paprika, Fresh chives
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] sugar_g: partial data — 14% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 19% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 19% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 19% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] total carbohydrate 47.1 g/serving > ceiling 45 g ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition: two simple, round, matte-white ceramic bowls are centered on a weathered, aged oak wooden table, arranged for a home-cooked...

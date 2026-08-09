@@ -1,0 +1,289 @@
+{
+  "main_ingredient": "Canned no-salt-added black-eyed peas",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Lemony Black-Eyed Pea and Tomato Salad",
+  "recipe_id": "27c2e497-6bcc-4a6b-acad-a46720337a0a",
+  "generation_id": "3d92baab-3098-40d0-a66d-ff7ff9dfa911",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:13:50.514342",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemony Black-Eyed Pea and Tomato Salad",
+        "main_ingredient": "Canned no-salt-added black-eyed peas",
+        "technique": "No-cook / Mixing",
+        "flavour_profile": "Bright, crisp, and herbaceous",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Canned no-salt-added black-eyed peas",
+          "Cherry tomatoes",
+          "Cucumber",
+          "Red onion",
+          "Fresh parsley",
+          "Lemon (for juice and zest)",
+          "Extra-virgin olive oil",
+          "Dried oregano"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'Canned no-salt-added black-eyed peas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173759] Cowpeas, common (blackeyes, crowder, southern), mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 183.7,
+          "protein_g": 7.4,
+          "carbs_g": 23.4,
+          "fat_g": 7.7,
+          "fiber_g": 6.9,
+          "sodium_mg": 145.8,
+          "sugar_g": 5.9,
+          "saturated_fat_g": 1.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 490.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.2,
+          "pufa_g": 1.0,
+          "calcium_mg": 52.7,
+          "iron_mg": 2.9,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 10,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.909,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flawless, highly practical recipe that perfectly hits the nutritional targets and stylistic guidelines for the book without requiring a single edit.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent taste coherence. Lemon, oregano, parsley, and olive oil create a classic, bright Mediterranean flavor profile that perfectly complements the earthy black-eyed peas and fresh vegetables."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly accounted for in the instructions, and no unlisted ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are clear and complete for a no-cook assembly recipe. The steps logically separate the dressing preparation from the addition of the bulky ingredients."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean style, utilizing extra-virgin olive oil, fresh lemon, oregano, and plenty of fresh vegetables."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, tossing method is exactly what this raw vegetable and canned bean salad requires."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition values are highly plausible. The calories, protein, and carbohydrates align perfectly with the specified quantities of black-eyed peas and olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the main ingredients, and the intro provides a warm, practical, and claim-free context that fits the book's tone beautifully."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a colorful, fresh, and appetizing dish that offers great texture and requires minimal effort."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawlessly answers both conditions. It relies on a high-fiber pulse for complex carbohydrates, extra-virgin olive oil for healthy fats, and delivers a robust vegetable presence."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar is truthful. The 23.4 g of carbohydrate comes entirely from high-quality sources (beans and vegetables), landing perfectly in the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Snacks & Sides' chapter perfectly. It works excellently as an afternoon snack or a vegetable side, and the macros hit the tier targets spot-on."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Extremely practical. Slicing tomatoes, dicing cucumber, and rinsing canned beans will easily take less than 10 minutes from a cold start. All ingredients are common supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte-white ceramic bowls, one in the immediate foreground and the second slightly blurred in the background, both centered in the frame with generous negative space. The camera is positioned at a 3/4 overhead angle, perfectly capturing the vibrant, colorful contents of the salad. The depth of field is shallow, leaving the foreground bowl tack-sharp. Soft natural light streams from a window on the left, casting subtle, gentle shadows and highlighting the fresh sheen of the extra-virgin olive oil coating the ingredients. The setting is a worn, rustic aged oak kitchen table with visible wood grain. Props include a wooden spoon resting casually beside the primary bowl, a crumpled linen napkin tucked partially beneath the bowl, and a few stray pieces of cherry tomato and a sprig of fresh parsley scattered naturally on the table surface. The salad is a bright, textured mixture of beige, cooked black-eyed peas, halved cherry tomatoes with their glossy, juicy skins, crisp emerald green diced cucumber, and flecks of finely chopped purple red onion and fresh, vivid green parsley. The dressing provides a faint, shimmering with olive oil and tiny specks of dried oregano and black pepper, coats every ingredient. The appearance is fresh, rustic, and inviting, with slight natural imperfections like an uneven distribution of ingredients and a few stray herbs clinging to the bowl's rim. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

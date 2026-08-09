@@ -1,0 +1,100 @@
+=== RECIPE LOG: Skillet Pork Chops with Apple, Squash, and Farro ===
+ID            : d6318749-70f0-4f36-9c54-763d5a7d7eb8
+Generation ID : 688ca8e1-3066-48ba-9d5f-fa993b774769
+Generated     : 2026-08-09 17:41:40
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 10
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Boneless pork loin chops
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Skillet Pork Chops with Apple, Squash, and Farro
+Technique       : One-Skillet Pan-Sear
+Cuisine style   : Modern American
+Flavour profile : Savory-sweet, earthy, and slightly tangy
+Sketch          : Boneless pork loin chops, Microwaveable farro pouch, Frozen butternut squash chunks, Crisp apple (e.g., Fuji or Gala), Fresh baby spinach, Apple cider vinegar, Dijon mustard, Fresh sage, Extra-virgin olive oil, Garlic powder
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [chapter_intent_fit] The recipe overshoots the chapter's sodium ceiling (726mg vs 550mg max) and slightly exceeds the carbohydrate ce...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Dijon mustard, Fresh sage, Ready-to-eat cooked farro pouch
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Dijon mustard' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Fresh sage' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Ready-to-eat cooked farro pouch' — values estimated by the LLM.
+  [WARN] saturated_fat_g: partial data — 21% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 42% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 21% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 21% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 21% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 58 g/serving > ceiling 55 g ("main")
+    [WARN] sodium 725.5 mg/serving > ceiling 550 mg ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : fresh sage, unseasoned ready-to-eat cooked farro
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'fresh sage' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'unseasoned ready-to-eat cooked farro' — values estimated by the LLM.
+  [WARN] saturated_fat_g: partial data — 21% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 39% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 16% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 16% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 16% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two white matte ceramic plates placed side-by-side on an aged oak wood surface with visible grain and small nicks. The camera a...

@@ -1,0 +1,87 @@
+=== RECIPE LOG: Deconstructed Spicy Shrimp Sushi Bowls ===
+ID            : fe50db14-9cb4-4624-9167-38d1622c00ee
+Generation ID : ec0a3409-7b91-489c-ac2b-2171256269f9
+Generated     : 2026-08-09 20:14:49
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 4
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen cooked shrimp (peeled and tail-off)
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Deconstructed Spicy Shrimp Sushi Bowls
+Technique       : No-cook / Assembly
+Cuisine style   : Asian-American
+Flavour profile : Spicy, creamy, umami, and bright
+Sketch          : Frozen cooked shrimp (peeled and tail-off), Ready-to-eat brown rice pouch, Plain nonfat Greek yogurt, Sriracha sauce, Avocado, English cucumber, Bagged matchstick carrots, Reduced-sodium soy sauce, Rice vinegar, Toasted sesame seeds
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [instruction_completeness] The instructions tell the reader to divide the ready-to-eat brown rice straight into bowls, but omit heati...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Sriracha sauce
+  [WARN] Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+  [WARN] No USDA candidate for 'Sriracha sauce' — values estimated by the LLM.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] sodium 1565 mg/serving > ceiling 550 mg ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] fiber 6.8 g/serving < floor 7 g ("main")
+    [WARN] sodium 1399.5 mg/serving > ceiling 550 mg ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. Two white matte ceramic bowls are positioned on a rustic, aged oak wooden table with visible grain and small crumbs. One bowl is in shar...

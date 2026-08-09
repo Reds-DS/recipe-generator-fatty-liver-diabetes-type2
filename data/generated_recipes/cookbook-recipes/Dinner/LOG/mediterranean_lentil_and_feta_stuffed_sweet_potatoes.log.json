@@ -1,0 +1,289 @@
+{
+  "main_ingredient": "Sweet potatoes and no-salt-added canned lentils",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Mediterranean Lentil and Feta Stuffed Sweet Potatoes",
+  "recipe_id": "7a1177ea-1612-45e0-b0ea-27d958830fd7",
+  "generation_id": "59f159fb-52aa-4108-9f84-265b11c96088",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:52:47.795915",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Mediterranean Lentil and Feta Stuffed Sweet Potatoes",
+        "main_ingredient": "Sweet potatoes and no-salt-added canned lentils",
+        "technique": "Microwave steaming and quick skillet warming",
+        "flavour_profile": "Earthy, bright, and herbaceous",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "medium sweet potatoes",
+          "no-salt-added canned lentils",
+          "baby spinach",
+          "feta cheese",
+          "chopped walnuts",
+          "nonfat plain Greek yogurt",
+          "fresh lemon",
+          "garlic",
+          "extra-virgin olive oil",
+          "ground cumin"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'no-salt-added canned lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 512.8,
+          "protein_g": 27.5,
+          "carbs_g": 54.7,
+          "fat_g": 22.3,
+          "fiber_g": 13.4,
+          "sodium_mg": 372.3,
+          "sugar_g": 11.0,
+          "saturated_fat_g": 4.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 23.7,
+          "potassium_mg": 1211.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.0,
+          "pufa_g": 7.8,
+          "calcium_mg": 328.7,
+          "iron_mg": 6.3,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An exemplary recipe that flawlessly hits the stringent meatless dinner macros. It delivers complex carbohydrates, immense fiber, and a clever protein stack (lentils + yogurt) in under 20 minutes, perfectly embodying the book's dietary and practical promises.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor balance. The natural sweetness of the sweet potato is perfectly countered by the earthy cumin-laced lentils, the bright acidity of the lemon yogurt, and the salty punch of the feta."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect consistency. Every ingredient listed is utilized correctly in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are clear, utilize ranges for cook times (6 to 8 minutes, 2 to 3 minutes), and provide strong visual and physical cues (tender, fully wilted, heated through). The simultaneous stovetop and microwave tasks are choreographed well."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean style, utilizing a core flavor triad of olive oil, garlic, and lemon, finished with Greek yogurt and feta."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Microwaving the sweet potatoes is the ideal method here to meet the strict 30-minute time limit without sacrificing the integrity of the dish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are entirely plausible. The macro profile makes sense for a sweet potato and lentil base supplemented by nonfat Greek yogurt and a controlled amount of feta/walnuts."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and appetizing. The intro clearly sets up the functional benefits (protein/fiber for steady energy) and practical appeal without resorting to disallowed health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It reads like a modern, restaurant-quality bowl meal but executes effortlessly at home with everyday staples."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Textbook execution for the book's dietary philosophy: it supplies a robust, quality whole-food carbohydrate buffered heavily by plant and dairy protein and significant fiber, cooked in olive oil."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugar, and the carbohydrate component (54.7g) is substantial, high-quality (sweet potato + lentils), and sits exactly where it belongs in the target window (32-55g) to prevent hypoglycemia while managing liver insulin response."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect fit for 'Vegetable & Meatless Dinners'. It successfully cracks the hardest design problem of the chapter—hitting >=26g protein without meat—by intelligently stacking lentils, nonfat Greek yogurt, and a sprinkle of feta/walnuts."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very practical. A cold-start home cook will easily finish this in under 20 minutes. All ingredients are cheap, accessible, mainstream supermarket items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two rustic, halved sweet potatoes centered on individual matte ceramic plates, captured from a 3/4 overhead angle (40-degree) to ensure the full depth of the stuffing is visible. The foreground plate is in sharp focus, while the second plate sits slightly behind, softly blurred by the shallow depth of field. Each potato is split open, with the golden-orange, steaming-soft flesh acting as a base for a generous heap of dark green, wilted spinach and brown, tender lentils. A creamy, thick lemon-yogurt sauce is drizzled artistically over the center, topped with ivory-white crumbles of feta cheese and toasted, rough-chopped walnuts. The scene is lit by soft, natural light from a window on the left, casting subtle shadows and highlighting the glistening sheen of the yogurt and oil. The potatoes are set upon a worn, dark oak wood table showing authentic grain and small, realistic scratches. Props include a wooden spoon resting casually beside one plate and a crumpled linen napkin tucked partially beneath the dish. Scattered on the surface are a few loose walnut fragments and a small smear of yogurt. NO chickpeas, NO fresh parsley, NO fresh herbs. The colors are earthy: amber-gold potatoes, deep forest-green spinach, and cream-colored yogurt. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small yogurt drip on the plate rim, slightly uneven browning on the potato skins. Include subtle traces of the cooking process: a crumb trail on the surface, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

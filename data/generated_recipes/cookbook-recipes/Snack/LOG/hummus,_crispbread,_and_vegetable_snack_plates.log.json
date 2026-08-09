@@ -1,0 +1,526 @@
+{
+  "main_ingredient": "Store-bought traditional hummus",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Hummus, Crispbread, and Vegetable Snack Plates",
+  "recipe_id": "d5776dad-0d77-468f-b4e6-7799fe6c8fc9",
+  "generation_id": "fb28f1f0-30c8-481f-a8c1-70f41d413b69",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:17:24.216022",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Hummus, Crispbread, and Vegetable Snack Plates",
+        "main_ingredient": "Store-bought traditional hummus",
+        "technique": "No-cook / Assembly",
+        "flavour_profile": "Fresh, crunchy, and savory",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Store-bought traditional hummus (no added sugar)",
+          "Whole-grain crispbreads (such as Wasa)",
+          "English cucumber",
+          "Cherry tomatoes",
+          "Raw unsalted almonds",
+          "Hemp hearts or chia seeds",
+          "Za'atar seasoning (or dried oregano)",
+          "Lemon juice"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Raw unsalted almonds' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Raw unsalted almonds"
+        ],
+        "nutrition": {
+          "calories_kcal": 234.9,
+          "protein_g": 7.9,
+          "carbs_g": 27.2,
+          "fat_g": 12.2,
+          "fiber_g": 7.3,
+          "sodium_mg": 253.1,
+          "sugar_g": 3.0,
+          "saturated_fat_g": 1.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 445.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.9,
+          "pufa_g": 5.1,
+          "calcium_mg": 54.9,
+          "iron_mg": 2.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Raw unsalted almonds"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.875,
+        "alias_hit_rate": 0.75,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 27.2 g/serving > ceiling 24 g (\"snack\")",
+        "sodium 253.1 mg/serving > ceiling 250 mg (\"snack\")",
+        "234.9 kcal/serving > high bound 230 kcal (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 27.2 g/serving > ceiling 24 g (\"snack\")",
+              "sodium 253.1 mg/serving > ceiling 250 mg (\"snack\")",
+              "234.9 kcal/serving > high bound 230 kcal (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[taste_coherence] Store-bought hummus is usually already quite acidic and well-seasoned. Drizzling a full 1/2 tbsp of raw lemon juice over a small 1.5 oz portion of hummus may make it too tart and watery. Consider omitting the lemon juice and simply pressing the za'atar and hemp hearts directly into the hummus."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A fresh, appealing, and thoroughly Mediterranean snack plate that hits the right qualitative marks for the diet. However, the current portion sizes slightly overshoot the strict carbohydrate, calorie, and sodium ceilings for the snack tier; reducing the crispbread portion will bring it comfortably into compliance.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Store-bought hummus is usually already quite acidic and well-seasoned. Drizzling a full 1/2 tbsp of raw lemon juice over a small 1.5 oz portion of hummus may make it too tart and watery. Consider omitting the lemon juice and simply pressing the za'atar and hemp hearts directly into the hummus."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are consistently accounted for in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The assembly steps are clear, complete, and easy to follow."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and flavor profile fit the Mediterranean style perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, assembly-only format is ideal for this snack."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values accurately reflect the listed ingredients and their quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and introduction honestly and appealingly describe the dish without making outsized health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appetizing, crunchy, and texturally satisfying snack plate."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers an excellent balance of fiber from the raw vegetables, healthy fats and protein from the hemp hearts and almonds, and a complex carbohydrate base."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the crispbread provides a high-quality, fibrous carbohydrate."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe slightly overshoots the snack tier's strict ceilings for carbohydrates (27.2 g vs 24 g limit), calories (235 vs 230 limit), and sodium. To fix this, reduce the whole-grain crispbreads from 4 slices (36 g) to 2 slices (18 g) total (meaning 1 large slice per person). This will drop the carbs to ~14 g and calories to ~170, neatly centering the dish in the snack window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily assembled from a cold start in 10 minutes using standard, accessible supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe slightly overshoots the snack tier's strict ceilings for carbohydrates (27.2 g vs 24 g limit), calories (235 vs 230 limit), and sodium. To fix this, reduce the whole-grain crispbreads from 4 slices (36 g) to 2 slices (18 g) total (meaning 1 large slice per person). This will drop the carbs to ~14 g and calories to ~170, neatly centering the dish in the snack window.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Raw unsalted almonds' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Raw unsalted almonds"
+        ],
+        "nutrition": {
+          "calories_kcal": 195.0,
+          "protein_g": 6.4,
+          "carbs_g": 19.6,
+          "fat_g": 11.6,
+          "fiber_g": 5.8,
+          "sodium_mg": 215.8,
+          "sugar_g": 2.9,
+          "saturated_fat_g": 1.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 345.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.6,
+          "pufa_g": 3.1,
+          "calcium_mg": 40.3,
+          "iron_mg": 1.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Raw unsalted almonds"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.857,
+        "alias_hit_rate": 0.714,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical recipe that perfectly aligns with the book's nutritional guidelines and offers readers a quick, satisfying, genuinely healthy snack option.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic Mediterranean pairing of hummus, fresh vegetables, lemon, and za'atar. Flavors are well-balanced, fresh, and savory."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are properly listed and correctly deployed in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Clear and sufficient for a simple no-cook assembly. The meal-prep container suggestion is a nice, practical touch for readers."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with Mediterranean snacking traditions (hummus, za'atar, cucumbers, tomatoes, lemon)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No-cook assembly is ideal for this fresh snack plate."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Macros are accurate and completely plausible for the ingredients listed. Excellent fiber content and well-controlled sodium for a store-bought hummus dish."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title is descriptive and accurate. The intro appropriately highlights the steady energy and satiety without using banned health or 'detox' claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing, practical everyday snack that brings crunch, freshness, and satiety. Great visual variety."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the dietary targets perfectly: healthy unsaturated fats (almonds, tahini) for the liver, and whole-grain/legume carbohydrates for steady blood sugar, supported by great vegetable volume."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar. The carbohydrates (19.6 g) fall cleanly in the chapter's target window and come entirely from high-quality sources (whole-grain crispbread, chickpeas, and vegetables)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Meets all the snack tier nutrient targets beautifully. Fits perfectly into the 'Snacks & Sides' chapter as an afternoon gap-filler."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily prepared well under the 30-minute limit. Everyday ingredients are readily available at any mainstream supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, matte ceramic plates positioned side by side, with the foreground plate sharp and the background plate softly blurred. The camera angle is 3/4 overhead, capturing the full arrangement of the ingredients. On each plate, a generous dollop of smooth, beige traditional hummus is placed off-center, sprinkled with a fragrant dusting of brown and green za'atar seasoning. Beside the hummus, a crisp whole-grain crispbread is propped up against the side of the plate. Freshly sliced dark green English cucumber rounds and vibrant red cherry tomato halves are arranged neatly in distinct sections alongside the hummus. A small handful of raw, light-tan unsalted almonds are scattered naturally between the vegetables. A light drizzle of lemon juice adds a subtle, realistic sheen to the surfaces of the vegetables. The scene is set on a warm, weathered oak table with visible wood grain. Props include a wooden spoon resting casually next to the plates and a few stray za'atar flakes and a crumb trail on the wood surface, suggesting a freshly prepared snack. Soft natural light from a window on the left casts gentle, realistic shadows. Photorealistic, not AI-generated looking. The scene is lived-in, warm, and authentic. Includes slight natural imperfections like an asymmetric garnish and uneven vegetable placement. No plastic sheen, no artificial symmetry, no hands or faces. Warm, golden-hour color temperature. Indistinguishable from a professional editorial food photograph for a high-end cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

@@ -1,0 +1,85 @@
+=== RECIPE LOG: Parchment-Baked Lemon Cod with Zucchini and Couscous ===
+ID            : 9cf7c4f9-aa74-4bb0-bc5b-f4fe7f845dac
+Generation ID : 3c38d867-08e9-436b-807a-8674fa6cc4ed
+Generated     : 2026-08-09 12:43:38
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Skinless cod fillets
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Parchment-Baked Lemon Cod with Zucchini and Couscous
+Technique       : Parchment baking (en papillote)
+Cuisine style   : Mediterranean
+Flavour profile : Bright, citrusy, and herbaceous with a mild briny note
+Sketch          : Skinless cod fillets, Whole wheat couscous, Zucchini, Cherry tomatoes, Kalamata olives, Fresh lemon, Dried oregano, Extra-virgin olive oil
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [added_sugar_and_carb_balance] The recipe features an excellent complex carbohydrate (whole wheat couscous), but the 3/4 cup dry port...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium Kalamata olives
+  [WARN] No USDA candidate for 'Low-sodium Kalamata olives' — values estimated by the LLM.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] fiber 6.4 g/serving < floor 7 g ("main")
+    [WARN] total carbohydrate 57.6 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Kalamata olives, low-sodium
+  [WARN] No USDA candidate for 'Kalamata olives, low-sodium' — values estimated by the LLM.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+  [WARN] Carb base "Whole wheat couscous, dry" (85 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. "brown rice" / "100% whole-wheat pasta" / "whole-grain tortilla", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor.
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is captured from a 3/4 overhead angle (40 degrees) to showcase the volume and texture of two white ceramic plates resting on an aged oak table...

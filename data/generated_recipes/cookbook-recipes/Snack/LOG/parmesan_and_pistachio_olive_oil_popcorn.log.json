@@ -1,0 +1,816 @@
+{
+  "main_ingredient": "Popcorn kernels",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Parmesan and Pistachio Olive Oil Popcorn",
+  "recipe_id": "f68c6e6e-3d91-467b-9e63-15c99aaf98c1",
+  "generation_id": "25d45976-6fb6-4687-8a45-e0be35ae05fc",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:22:48.135014",
+  "draft_attempts": 2,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Parmesan and Pistachio Olive Oil Popcorn",
+        "main_ingredient": "Popcorn kernels",
+        "technique": "Stovetop",
+        "flavour_profile": "Savory, cheesy, and nutty",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Popcorn kernels",
+          "Extra-virgin olive oil",
+          "Grated parmesan cheese",
+          "Shelled pistachios",
+          "Garlic powder",
+          "Dried thyme",
+          "Black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "Total raw weight too low: 84g for 2 people (42g/person; expected at least 50g/person for a snack or side)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Total raw weight too low: 84g for 2 people (42g/person; expected at least 50g/person for a snack or side).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 43% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Popcorn kernels"
+        ],
+        "nutrition": {
+          "calories_kcal": 256.1,
+          "protein_g": 7.2,
+          "carbs_g": 24.2,
+          "fat_g": 15.9,
+          "fiber_g": 6.0,
+          "sodium_mg": 47.8,
+          "sugar_g": 1.8,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 2.1,
+          "potassium_mg": 236.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.5,
+          "pufa_g": 3.5,
+          "calcium_mg": 64.3,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Popcorn kernels"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.857,
+        "alias_hit_rate": 0.714,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 24.2 g/serving > ceiling 24 g (\"snack\")",
+        "saturated fat 2.5 g/serving > ceiling 2 g (\"snack\")",
+        "256.1 kcal/serving > high bound 230 kcal (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 24.2 g/serving > ceiling 24 g (\"snack\")",
+              "saturated fat 2.5 g/serving > ceiling 2 g (\"snack\")",
+              "256.1 kcal/serving > high bound 230 kcal (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A deliciously savory, fiber-forward whole-grain snack that fits the Mediterranean profile well. To make it publish-ready, slightly reduce the pistachios to meet snack nutrient ceilings, and add a quick spray of olive oil before tossing so the dry spices actually adhere to the kernels rather than falling to the bottom of the bowl.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory flavors of parmesan, thyme, garlic, and pistachios work very well together, offering a deeply satisfying earthy profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions provide clear stovetop popcorn basics, including a precise doneness cue (2 seconds between pops) and a prompt to transfer immediately to avoid burning."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Parmesan, extra-virgin olive oil, and thyme fit the Mediterranean-American style perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Freshly popped stovetop popcorn absorbs or vaporizes its popping oil, leaving the kernels dry. Tossing dry grated parmesan, garlic powder, and dried thyme onto dry popcorn means the seasoning will simply fall to the bottom of the bowl. Fix: Add an instruction to lightly mist the popped corn with olive oil cooking spray (or a tiny additional drizzle of oil) right before adding the spices so they adhere."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition values accurately reflect the ingredients used (pistachios and oil drive the fat/calories, popcorn drives the carbs/fiber)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the dish, highlight the fiber benefit naturally, and avoid banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appealing, quick, and savory whole-grain snack that feels indulgent but remains highly functional."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent use of whole-grain carbohydrates (popcorn) paired with unsaturated fats and plant protein (pistachios) to yield a slow-digesting, liver-friendly snack."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and a robust 24g of high-quality complex carbohydrates from the popcorn, placing it right at the top of the snack window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe slightly overshoots the snack nutrient ceilings for saturated fat (2.5g vs 2.0g) and calories (256 vs 230). Fix: Reduce the pistachios from 1/3 cup to 1/4 cup. This will pull both metrics back into the target window without sacrificing the nutty character of the dish."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe takes less than 10 minutes total from a cold start and relies entirely on standard supermarket pantry ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "Total raw weight too low: 80g for 2 people (40g/person; expected at least 50g/person for a snack or side)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [cooking_method_suitability] Freshly popped stovetop popcorn absorbs or vaporizes its popping oil, leaving the kernels dry. Tossing dry grated parmesan, garlic powder, and dried thyme onto dry popcorn means the seasoning will simply fall to the bottom of the bowl. Fix: Add an instruction to lightly mist the popped corn with olive oil cooking spray (or a tiny additional drizzle of oil) right before adding the spices so they adhere.\n2. [chapter_intent_fit] The recipe slightly overshoots the snack nutrient ceilings for saturated fat (2.5g vs 2.0g) and calories (256 vs 230). Fix: Reduce the pistachios from 1/3 cup to 1/4 cup. This will pull both metrics back into the target window without sacrificing the nutty character of the dish.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Total raw weight too low: 80g for 2 people (40g/person; expected at least 50g/person for a snack or side).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 55% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 55% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 55% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 55% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Popcorn kernels"
+        ],
+        "nutrition": {
+          "calories_kcal": 228.8,
+          "protein_g": 6.9,
+          "carbs_g": 25.5,
+          "fat_g": 12.3,
+          "fiber_g": 5.6,
+          "sodium_mg": 92.6,
+          "sugar_g": 1.1,
+          "saturated_fat_g": 2.2,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 4.3,
+          "potassium_mg": 140.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.3,
+          "pufa_g": 2.1,
+          "calcium_mg": 67.9,
+          "iron_mg": 1.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Popcorn kernels"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.857,
+        "alias_hit_rate": 0.857,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 25.5 g/serving > ceiling 24 g (\"snack\")",
+        "saturated fat 2.2 g/serving > ceiling 2 g (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 25.5 g/serving > ceiling 24 g (\"snack\")",
+              "saturated fat 2.2 g/serving > ceiling 2 g (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "[cooking_method_suitability] Extra-virgin olive oil has a relatively low smoke point and may smoke or become bitter if heated on 'medium-high' for several minutes. Fix: Change the heat instruction to 'medium', which is plenty hot enough to pop corn safely without scorching the oil."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flavorful, highly appealing snack that perfectly hits the whole-grain and healthy-fat notes of the book's philosophy. However, a culinary adjustment is needed to the instructions: oil must be reserved to help the dry seasonings stick to the finished popcorn, and the cooking heat should be slightly lowered to prevent the extra-virgin olive oil from smoking.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory, nutty combination of parmesan, pistachio, garlic, and thyme is flavorful, balanced, and makes excellent culinary sense."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Because all 2 tsp of olive oil are used during the popping process, the popped kernels will be too dry for the crushed pistachios, parmesan, and spices to adhere—they will just fall to the bottom of the bowl. Fix: Pop the kernels in 1 tsp of the oil, then drizzle the remaining 1 tsp of oil over the hot popped corn in the bowl just before tossing with the dry ingredients."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The use of extra-virgin olive oil, parmesan, thyme, and pistachios fits the Mediterranean-American profile perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Extra-virgin olive oil has a relatively low smoke point and may smoke or become bitter if heated on 'medium-high' for several minutes. Fix: Change the heat instruction to 'medium', which is plenty hot enough to pop corn safely without scorching the oil."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients are highly plausible and align well with the provided ingredient quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate, and the intro provides a practical, appealing reason to make the recipe without relying on banned health claims or scare tactics."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, creative, and highly appealing snack that feels like a treat rather than 'diet food'."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely answers to both conditions: it uses a 100% whole grain base, leans on unsaturated fats, and avoids processed carbs."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate is entirely derived from a quality, fiber-rich whole grain (popcorn)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the snack chapter's goal perfectly as a savory, whole-food alternative to highly processed crunchy snacks."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "With a 5-minute prep and 3-to-5 minute cook time, this easily meets the under-30-minute promise using ordinary pantry staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "Total raw weight too low: 90g for 2 people (45g/person; expected at least 50g/person for a snack or side)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [instruction_completeness] Because all 2 tsp of olive oil are used during the popping process, the popped kernels will be too dry for the crushed pistachios, parmesan, and spices to adhere—they will just fall to the bottom of the bowl. Fix: Pop the kernels in 1 tsp of the oil, then drizzle the remaining 1 tsp of oil over the hot popped corn in the bowl just before tossing with the dry ingredients.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Total raw weight too low: 90g for 2 people (45g/person; expected at least 50g/person for a snack or side).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.",
+        "No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 46% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 46% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 46% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 46% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Popcorn kernels"
+        ],
+        "nutrition": {
+          "calories_kcal": 255.0,
+          "protein_g": 7.9,
+          "carbs_g": 25.2,
+          "fat_g": 14.7,
+          "fiber_g": 5.6,
+          "sodium_mg": 138.5,
+          "sugar_g": 1.4,
+          "saturated_fat_g": 2.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 6.5,
+          "potassium_mg": 187.2,
+          "trans_fat_g": 0.1,
+          "mufa_g": 7.3,
+          "pufa_g": 2.5,
+          "calcium_mg": 92.5,
+          "iron_mg": 1.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Popcorn kernels"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.857,
+        "alias_hit_rate": 0.857,
+        "match_sources": [
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 25.2 g/serving > ceiling 24 g (\"snack\")",
+        "saturated fat 2.9 g/serving > ceiling 2 g (\"snack\")",
+        "255 kcal/serving > high bound 230 kcal (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 25.2 g/serving > ceiling 24 g (\"snack\")",
+              "saturated fat 2.9 g/serving > ceiling 2 g (\"snack\")",
+              "255 kcal/serving > high bound 230 kcal (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a delicious and highly appealing savory snack that hits the dietary philosophy perfectly, but it requires minor recipe scaling to fit the snack-tier nutrition ceilings and a technique tweak to ensure the seasonings actually adhere to the popcorn.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent; Parmesan, thyme, garlic, and pistachios make a highly savory and satisfying Mediterranean-inspired snack."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop popcorn instructions are thorough. The temperature-equalizing step (30 seconds off heat) is a great technique, and visual/audio cues (popping slows to 2-3 seconds) are clearly stated."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Using olive oil, thyme, garlic, pistachios, and Parmesan perfectly aligns an American staple with the Mediterranean profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Tossing dry spices and grated cheese directly onto hot, essentially dry popped corn (since the 2 tsp of oil is absorbed during popping) means the flavorings will fall to the bottom of the bowl. Fix: Add an instruction to lightly mist the popped corn with olive oil spray (or drizzle a tiny bit of reserved oil) immediately before tossing so the cheese and spices stick."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is accurate for the quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro accurately reflect the ingredients and maintain an appropriately positive, compliant tone regarding blood sugar."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appealing, fast, and familiar snack that upgrades movie night without feeling restrictive."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely fits the dual-condition mandate: a high-quality, high-fiber whole grain paired with healthy fats and protein to buffer the carbohydrate load."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly savory with zero added sugar and a solid, quality whole-grain carbohydrate base."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe slightly overshoots three strict snack-tier ceilings: saturated fat (2.9g vs 2.0g ceiling), carbohydrates (25.2g vs 24g ceiling), and calories (255 vs 230 ceiling). Fix: Reduce the popcorn kernels from 1/4 cup to 3 tablespoons, and reduce the Parmesan cheese from 3 tablespoons to 1.5 or 2 tablespoons to bring all three values into compliance."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily executable in under 10 minutes total using common pantry staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 3,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic bowls filled with parmesan and pistachio olive oil popcorn, centered in the frame with generous negative space to accommodate a circular crop. Shot from a 3/4 overhead angle, ensuring every component is visible with a shallow depth of field that keeps the foreground bowl sharp and the secondary bowl softly blurred in the background. Soft, natural side light from a window to the left highlights the textures, creating a slight, authentic sheen on the olive oil-coated kernels. The surface is a warm, aged oak table with visible grain and a few scattered crumbs. The popcorn is light, fluffy, and golden-white, generously dusted with finely grated parmesan cheese that clings to the crevices. Roughly chopped green pistachios are integrated naturally throughout the popcorn mix, along with tiny, visible flecks of dried thyme and black pepper. A vintage wooden spoon rests casually beside the foreground bowl. The styling is lived-in and authentic, reflecting a homemade snack for two. Small traces of the preparation are visible: a stray pistachio shard and a few grains of thyme on the wooden surface. The atmosphere is warm, golden-hour, and cozy. Photorealistic, not AI-generated looking. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 11,
+  "total_corrections": 0
+}

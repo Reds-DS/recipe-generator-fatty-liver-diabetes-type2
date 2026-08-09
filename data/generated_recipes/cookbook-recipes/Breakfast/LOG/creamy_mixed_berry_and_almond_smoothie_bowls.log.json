@@ -1,0 +1,751 @@
+{
+  "main_ingredient": "Silken tofu",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Creamy Mixed Berry and Almond Smoothie Bowls",
+  "recipe_id": "5b23380d-0e87-465f-9315-8f833f0fb8d3",
+  "generation_id": "0aa95306-ad25-4c98-9819-49fc2cf67919",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:00:24.027515",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Creamy Mixed Berry and Almond Smoothie Bowls",
+        "main_ingredient": "Silken tofu",
+        "technique": "Blending (No-cook)",
+        "flavour_profile": "Naturally sweet, nutty, and bright",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Silken tofu",
+          "Frozen mixed berries",
+          "Unsweetened soy milk",
+          "Banana",
+          "Creamy almond butter",
+          "Chia seeds",
+          "Old-fashioned rolled oats",
+          "Cinnamon"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "potassium_mg: partial data — 37% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 467.9,
+          "protein_g": 26.6,
+          "carbs_g": 41.3,
+          "fat_g": 23.5,
+          "fiber_g": 11.9,
+          "sodium_mg": 97.9,
+          "sugar_g": 10.6,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 735.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.0,
+          "pufa_g": 10.4,
+          "calcium_mg": 606.8,
+          "iron_mg": 5.6,
+          "vitamin_d_mcg": 2.9,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.625,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[taste_coherence] The flavor profile is excellent and well-balanced, but sprinkling raw rolled oats on top of a cold smoothie results in a dry, somewhat unpleasantly chewy texture. Suggest either blending the oats directly into the smoothie base, or swapping the oat garnish for toasted sliced almonds or chopped walnuts to provide a better crunch."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a nutritionally outstanding breakfast with great flavor, but the liquid proportions will create a drinkable smoothie rather than the promised thick bowl. Reducing the soy milk significantly and addressing the dry texture of raw oat topping will easily elevate this to a passing grade.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and well-balanced, but sprinkling raw rolled oats on top of a cold smoothie results in a dry, somewhat unpleasantly chewy texture. Suggest either blending the oats directly into the smoothie base, or swapping the oat garnish for toasted sliced almonds or chopped walnuts to provide a better crunch."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are listed and successfully accounted for in the blending and topping instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are clear, concise, and effectively include necessary beginner cues like pausing to scrape down the sides of the blender."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with modern American breakfast and smoothie bowl aesthetics."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The liquid ratio is much too high for a 'smoothie bowl' that can be eaten with a spoon. Combining 2 cups of soy milk with 16 oz of silken tofu creates over 32 ounces of liquid base before even adding the fruit. This will yield a standard, drinkable smoothie, not the 'remarkably thick' texture promised. To fix, reduce the soy milk to 1/2 cup (or omit it entirely, letting the tofu provide the moisture), or re-title the recipe as a drinkable smoothie."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros correctly reflect the ingredients. Tofu, soy milk, and almond butter comfortably reach the stated 26.6 g of protein, and the fiber and carbohydrate counts are accurate for the fruit and oat amounts."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The intro is well-written, hits the right tone without using banned health claims, and accurately highlights the culinary utility of silken tofu for protein."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Once the liquid ratio is adjusted to ensure a proper spoonable texture, this will be a highly appealing, satisfying, and fast morning meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent alignment. It leans on plant protein, healthy unsaturated fats from almonds and chia, and complex carbohydrates, satisfying both liver and blood sugar needs perfectly."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Spot on. Sweetness comes entirely from the fruit and cinnamon. The carbohydrate load (41.3 g) is high-quality, whole-food based, and sits squarely inside the target 32-55 g window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Breakfast chapter's main tier perfectly, hitting the protein and fiber floors needed to provide the promised holding power until lunch."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A genuinely fast, 5-minute cold start. Every ingredient is easily found in a standard supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High oil / fat amount: 24g/person (recommended at most 18g/person for a main meal)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [cooking_method_suitability] The liquid ratio is much too high for a 'smoothie bowl' that can be eaten with a spoon. Combining 2 cups of soy milk with 16 oz of silken tofu creates over 32 ounces of liquid base before even adding the fruit. This will yield a standard, drinkable smoothie, not the 'remarkably thick' texture promised. To fix, reduce the soy milk to 1/2 cup (or omit it entirely, letting the tofu provide the moisture), or re-title the recipe as a drinkable smoothie.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High oil / fat amount: 24g/person (recommended at most 18g/person for a main meal).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 444.3,
+          "protein_g": 24.0,
+          "carbs_g": 50.6,
+          "fat_g": 17.6,
+          "fiber_g": 9.4,
+          "sodium_mg": 103.3,
+          "sugar_g": 17.2,
+          "saturated_fat_g": 2.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 1186.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.3,
+          "pufa_g": 8.7,
+          "calcium_mg": 456.6,
+          "iron_mg": 4.9,
+          "vitamin_d_mcg": 2.9,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.75,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "protein 24 g/serving < floor 26 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "protein 24 g/serving < floor 26 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "[title_intro_accuracy] The intro promises an 'extra-thick bowl', which currently contradicts the high liquid volume in the recipe base. Once the soy milk reduction and frozen berry increase are made, this intro will be fully accurate."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This smoothie bowl has an excellent flavor profile and strong metabolic credentials, but fails mechanically on texture and slightly misses the chapter's protein floor. Adjusting the liquid-to-frozen ratio and slightly bumping the seeds/nut butter will fix both issues simultaneously.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of berries, banana, oats, almond butter, and cinnamon is a classic, cohesive smoothie profile. Silken tofu seamlessly adds creamy bulk without clashing flavors."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are perfectly accounted for in the single blending step."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "For a simple blender recipe, 'blend on high until completely smooth, thick, and velvety' serves as an adequate visual and textural doneness cue."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits perfectly within the Modern American breakfast and smoothie-bowl style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The liquid-to-solid ratio is heavily skewed toward a drinkable, thin smoothie rather than the promised spoonable bowl. 16 oz of silken tofu (which liquifies when blended) plus 2 whole cups of soy milk against only 1 cup of frozen berries will not yield a thick base. Fix: Reduce the soy milk to 1/2 cup or 3/4 cup, and increase the frozen mixed berries to 2 cups to provide the necessary frosty bulk."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros accurately reflect the ingredients provided. The 24g protein count correctly sums the tofu, milk, oats, and seeds."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The intro promises an 'extra-thick bowl', which currently contradicts the high liquid volume in the recipe base. Once the soy milk reduction and frozen berry increase are made, this intro will be fully accurate."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appetizing, accessible, and fast plant-based breakfast that is easy to assemble on a busy weekday morning."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent use of whole-food carbohydrates (oats, fruit), healthy fats (almonds, chia), and lean plant protein (tofu, soy milk). It squarely addresses insulin resistance without relying on heavy saturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sweetness relies entirely on whole fruit and cinnamon (0g added sugar). The carbohydrate load (50.6 g) sits perfectly inside the 32-55 g window, anchored by 9.4 g of quality dietary fiber."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe misses the 'main' breakfast tier's 26g protein floor, currently sitting at 24g per serving. Fix: Double the almond butter to 2 tbsp and double the chia seeds to 2 tbsp. This will add roughly 3g of protein per serving (bringing it to a passing 27g), while simultaneously contributing to the thickness and fiber needed for a true smoothie bowl."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Requires only 5 minutes of prep, uses standard supermarket ingredients, and perfectly aligns with the book's strict 30-minute promise."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [cooking_method_suitability] The liquid-to-solid ratio is heavily skewed toward a drinkable, thin smoothie rather than the promised spoonable bowl. 16 oz of silken tofu (which liquifies when blended) plus 2 whole cups of soy milk against only 1 cup of frozen berries will not yield a thick base. Fix: Reduce the soy milk to 1/2 cup or 3/4 cup, and increase the frozen mixed berries to 2 cups to provide the necessary frosty bulk.\n2. [chapter_intent_fit] The recipe misses the 'main' breakfast tier's 26g protein floor, currently sitting at 24g per serving. Fix: Double the almond butter to 2 tbsp and double the chia seeds to 2 tbsp. This will add roughly 3g of protein per serving (bringing it to a passing 27g), while simultaneously contributing to the thickness and fiber needed for a true smoothie bowl.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 516.9,
+          "protein_g": 27.7,
+          "carbs_g": 56.4,
+          "fat_g": 21.9,
+          "fiber_g": 13.1,
+          "sodium_mg": 119.2,
+          "sugar_g": 20.2,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 1192.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.5,
+          "pufa_g": 9.8,
+          "calcium_mg": 355.6,
+          "iron_mg": 5.7,
+          "vitamin_d_mcg": 1.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.875,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 56.4 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 56.4 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, nutrient-dense breakfast recipe. It cleverly uses silken tofu and chia seeds to hit ambitious protein and fiber targets without relying on processed protein powders, and sweetness comes entirely from whole fruit.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredient combination makes perfect sense for a smoothie bowl. The neutral silken tofu provides a creamy base that allows the berries, banana, and almond butter to shine, while cinnamon adds a warm background note."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is explicitly mentioned in the instructions, and no unexpected ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The blending instructions are thorough, guiding the cook to start on low to catch the dry ingredients, then increase to high, with clear textural cues ('completely smooth and remarkably thick') and a reminder to scrape down the sides."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American plant-based or wellness-oriented breakfast style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A high-speed blender is the exact right tool for pulverizing chia seeds, oats, and frozen fruit into a smooth texture."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros align perfectly with the heavy inclusion of tofu (protein), almond butter/chia (fat, protein, fiber), and oats/fruit (carbohydrates, fiber)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is appetizing and accurate, and the intro sets the right practical, encouraging tone without making any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It solves the common problem of smoothie bowls being low in protein or leaving the eater hungry an hour later, and it looks beautiful."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An exemplary recipe for this dietary profile. It avoids saturated fat by using plant-based fats (almond butter, chia), avoids refined carbohydrates, and packs massive amounts of fiber and lean protein to stabilize blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar is a huge win. The sweetness is entirely honest, coming from the whole banana and berries. The carbohydrate load is built entirely from high-quality, fiber-bound sources (oats, fruit, chia)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Breakfast chapter's goal perfectly by providing a massive 27.7g of protein and 13.1g of fiber to prevent mid-morning crashes. The automated flag notes a tiny 1.4g overage on the carbohydrate ceiling; this is a completely acceptable artifact of using whole fruit and oats, and it does not hurt the recipe at all."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in 10 minutes from common supermarket ingredients. Silken tofu is widely available in mainstream grocery stores, and the rest are pantry/freezer staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic bowls centered in the frame, filled with a thick, vibrant purple mixed-berry smoothie base, captured from a 3/4 overhead angle. One bowl is in sharp focus in the foreground, with the second bowl softly blurred behind it to represent two servings. The smoothie has a remarkably thick, glossy, velvet-like texture, displaying a deep magenta and violet hue from the blended berries. The surface of the smoothie is smooth but shows natural, irregular swirls from the blending process. The bowls are placed on an aged, weathered oak wooden surface with visible grain. Props include a simple wooden spoon resting casually against the edge of the front bowl, a slightly rumpled linen napkin tucked under one side, and a few stray rolled oats and a tiny sprinkle of cinnamon scattered naturally on the table. Lighting is soft, natural, and directional, coming from a window to the left, creating subtle highlights on the surface of the berry mixture. The overall aesthetic is warm, cozy, and lived-in. Photorealistic, not AI-generated looking. The scene captures the moment just after preparation, showing slight, authentic imperfections like a tiny, realistic splash mark on the rim of the bowl and a few stray grains on the wood. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. The image is indistinguishable from a professional food photograph for a high-end cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

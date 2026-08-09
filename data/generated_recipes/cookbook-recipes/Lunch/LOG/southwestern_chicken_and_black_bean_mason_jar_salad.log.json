@@ -1,0 +1,292 @@
+{
+  "main_ingredient": "Chicken breast and black beans",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Southwestern Chicken and Black Bean Mason Jar Salad",
+  "recipe_id": "ef00a217-86a2-4058-bc89-6256158cb701",
+  "generation_id": "e76bfec8-428f-481d-9ffd-308f6c74efd1",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:12:46.778316",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Southwestern Chicken and Black Bean Mason Jar Salad",
+        "main_ingredient": "Chicken breast and black beans",
+        "technique": "No-cook / Assembly",
+        "flavour_profile": "Zesty, citrusy, and herbaceous",
+        "cuisine_style": "Southwestern",
+        "ingredients_sketch": [
+          "cooked chicken breast",
+          "no-salt-added canned black beans",
+          "pre-cooked plain quinoa",
+          "frozen whole kernel corn",
+          "cherry tomatoes",
+          "romaine lettuce",
+          "fresh cilantro",
+          "lime",
+          "extra-virgin olive oil",
+          "ground cumin"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 379.4,
+          "protein_g": 35.1,
+          "carbs_g": 34.6,
+          "fat_g": 12.0,
+          "fiber_g": 9.1,
+          "sodium_mg": 459.9,
+          "sugar_g": 4.5,
+          "saturated_fat_g": 2.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 72.2,
+          "potassium_mg": 966.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.7,
+          "pufa_g": 2.3,
+          "calcium_mg": 88.2,
+          "iron_mg": 4.6,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 2,
+        "matcher_hits": 9,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.182,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[thirty_minute_practicality] The recipe relies on 'cooked and cooled' quinoa. Cooking and cooling raw quinoa from scratch takes longer than 30 minutes. To honestly meet the book's 30-minute cold-start promise, update the ingredient text to say 'leftover or store-bought pre-cooked pouch quinoa'. It would also be helpful to specify 'cooked chicken breast (such as rotisserie)'."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical mason jar salad that perfectly hits the nutritional targets and culinary goals of the book. Just explicitly note the use of leftover or pre-cooked pouch quinoa in the ingredients list to maintain total transparency regarding the 30-minute time promise.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic Southwestern flavor profile with a bright lime and cumin vinaigrette. The flavors are well-balanced, punchy, and make perfect culinary sense together."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is accurately accounted for in the step-by-step assembly instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The assembly instructions are clear and properly explain the layered mason jar technique to ensure the delicate greens remain crisp."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with Southwestern cuisine, utilizing black beans, corn, cumin, fresh cilantro, and lime."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The mason jar assembly method is ideal for a prep-ahead lunch salad, brilliantly keeping the wet dressing and heavy ingredients at the bottom away from the lettuce."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition values align perfectly with the given ingredients and quantities. The high protein and quality carbohydrate counts compute properly."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately and attractively describe the dish without resorting to any banned health claims, 'detox', or gimmicky language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, colorful, and genuinely practical weekday lunch that readers will look forward to eating."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of eating for both conditions: lean protein, exceptional fiber from legumes and vegetables, and a vibrant dressing built on heart-healthy extra-virgin olive oil rather than saturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with a robust, high-quality carbohydrate component (34.6 g) coming entirely from whole foods (beans, corn, quinoa, tomatoes). It lands squarely in the middle of the chapter's target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits every single target for a 'light main' salad. Protein (35.1 g), fiber (9.1 g), and carbs (34.6 g) are perfectly dialed in, and the vinaigrette is made from scratch as required."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe relies on 'cooked and cooled' quinoa. Cooking and cooling raw quinoa from scratch takes longer than 30 minutes. To honestly meet the book's 30-minute cold-start promise, update the ingredient text to say 'leftover or store-bought pre-cooked pouch quinoa'. It would also be helpful to specify 'cooked chicken breast (such as rotisserie)'."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two glass mason jars, one sharply in focus and the other slightly blurred behind it, displayed on a rustic, aged oak wood table. The camera angle is a 3/4 overhead view, capturing the distinct, vibrant layers of a Southwestern salad. The bottom of the jars shows the translucent, golden emulsion of lime juice, olive oil, cumin, and flecks of green cilantro. Above the dressing, layers are clearly defined: halved bright red cherry tomatoes, dark black beans, sweet yellow corn kernels, and fluffy, ivory-colored cooked quinoa. Resting on the grains, the chopped, tender, poached chicken breast pieces are visible, and the top is packed with crisp, vibrant green chopped romaine lettuce. Shallow depth of field creates a natural bokeh. Soft natural side lighting from a window on the left illuminates the textures, creating a subtle sheen on the oil droplets and fresh produce. A small, used wooden spoon sits casually on the table next to a scattered half-lime and a few loose cilantro leaves. The scene appears lived-in, featuring a slight condensation on the glass and a small, authentic spill of a few grains of quinoa on the wood surface. The color palette is warm and inviting, defined by the contrast of fresh greens, reds, and earthy tones. Photorealistic, not AI-generated looking. The scene should look like someone just finished preparing a home-cooked lunch—warm, authentic, and not a sterile studio setup. Slight natural imperfections, such as an asymmetric layering, are present. No text, no watermark, no logo, no hands, no faces. The image is indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

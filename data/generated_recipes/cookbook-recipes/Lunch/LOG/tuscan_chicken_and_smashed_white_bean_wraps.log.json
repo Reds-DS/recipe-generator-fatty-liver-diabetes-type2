@@ -1,0 +1,298 @@
+{
+  "main_ingredient": "Skinless rotisserie chicken breast",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Tuscan Chicken and Smashed White Bean Wraps",
+  "recipe_id": "d7def962-64ef-4970-97a5-5afcf76d9dd6",
+  "generation_id": "447bde77-cfb6-4022-ae25-0085a65a72d2",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T20:04:00.863528",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Tuscan Chicken and Smashed White Bean Wraps",
+        "main_ingredient": "Skinless rotisserie chicken breast",
+        "technique": "No-cook / Assemble",
+        "flavour_profile": "Savory, herbaceous, and tangy",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Skinless rotisserie chicken breast",
+          "No-salt-added canned cannellini beans",
+          "100% whole-wheat tortillas",
+          "Sun-dried tomatoes",
+          "Canned quartered artichoke hearts (water-packed)",
+          "Fresh baby spinach",
+          "Lemon",
+          "Extra-virgin olive oil",
+          "Garlic powder",
+          "Dried oregano"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added canned artichoke hearts (water-packed)': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 524.7,
+          "protein_g": 39.1,
+          "carbs_g": 57.5,
+          "fat_g": 16.4,
+          "fiber_g": 14.7,
+          "sodium_mg": 493.5,
+          "sugar_g": 6.2,
+          "saturated_fat_g": 4.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 63.8,
+          "potassium_mg": 1341.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.0,
+          "pufa_g": 2.2,
+          "calcium_mg": 260.6,
+          "iron_mg": 6.5,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] Dry-packed sun-dried tomatoes can be quite tough and leathery if chopped and eaten raw in a cold wrap. Consider either adding a quick step to soak them in hot water for 5 minutes before chopping, or simply change the ingredient to 'oil-packed (rinsed and drained)'.",
+        "[chapter_intent_fit] The recipe embodies the lunch chapter's 'make-ahead desk lunch' goal perfectly. However, the 57.5g total carbohydrate slightly exceeds the 55g main-tier ceiling. Consider reducing the tortilla weight spec from 120g to 100g (two 50g medium tortillas) to bring it cleanly under the cap."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical no-cook lunch recipe that perfectly hits the Mediterranean flavor profile and the dietary needs of the reader. Minor adjustments to the tortilla weight specification and the sun-dried tomato preparation will make it flawless.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of lemon, oregano, sun-dried tomatoes, and artichokes creates a vibrant, classic Mediterranean flavor profile. Using mashed cannellini beans as a creamy binder instead of mayonnaise is both clever and delicious."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are correctly and sequentially utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Dry-packed sun-dried tomatoes can be quite tough and leathery if chopped and eaten raw in a cold wrap. Consider either adding a quick step to soak them in hot water for 5 minutes before chopping, or simply change the ingredient to 'oil-packed (rinsed and drained)'."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with Mediterranean-American cuisine, relying on olive oil, white beans, artichokes, and bright lemon flavors."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, mash-and-assemble method is highly suitable and practical for these ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The values are highly plausible. The slight carbohydrate overage is directly attributable to the large weight given for the tortillas (120g total, meaning 60g per wrap)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish. The intro sets realistic expectations for a desk lunch, praises the bean substitution gracefully, and contains no disallowed health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An incredibly appealing and practical recipe. It offers excellent texture contrast and rich, savory flavors without feeling like 'diet food'."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Answers both conditions beautifully. It delivers a substantial dose of high-quality fiber (14.7g), uses unsaturated fats (EVOO), features lean protein, and is built around high-quality complex carbohydrates."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate load comes from whole food sources (beans and whole-wheat tortillas) that won't cause severe blood sugar spikes."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe embodies the lunch chapter's 'make-ahead desk lunch' goal perfectly. However, the 57.5g total carbohydrate slightly exceeds the 55g main-tier ceiling. Consider reducing the tortilla weight spec from 120g to 100g (two 50g medium tortillas) to bring it cleanly under the cap."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Extremely practical. 10 minutes of active time with zero cooking, relying heavily on accessible supermarket staples like rotisserie chicken and canned beans."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two Tuscan chicken and smashed white bean wraps placed on simple, matte off-white ceramic plates. The primary wrap is centered in the foreground, sliced diagonally to reveal the cross-section of the filling, with the second wrap positioned slightly behind and blurred. Camera angle is a 3/4 overhead view at 40 degrees, ensuring the layers of the wrap are clearly identifiable. Shallow depth of field creates a soft natural bokeh background. Soft, natural side light enters from a window on the left, casting gentle, natural shadows and highlighting the texture of the whole-wheat tortillas. The surface is a worn, rustic aged oak table with visible wood grain. Props include a small wooden spoon resting casually beside the plate and a few scattered pieces of sun-dried tomato and a small cluster of fresh baby spinach leaves on the table surface. The filling clearly shows the creamy, pale texture of the smashed cannellini beans binding the chunks of rotisserie chicken, vivid red pieces of chopped sun-dried tomatoes, and light green chopped artichoke hearts, all nestled over a bed of vibrant, fresh baby spinach. The tortillas have a light brown, whole-wheat texture. Photorealistic, not AI-generated looking. The scene reflects a lived-in, warm home kitchen. Includes slight natural imperfections like a tiny stray spinach leaf and a small, realistic smudge of bean filling on the plate rim. No plastic sheen, no perfect symmetry. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional cookbook photography.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

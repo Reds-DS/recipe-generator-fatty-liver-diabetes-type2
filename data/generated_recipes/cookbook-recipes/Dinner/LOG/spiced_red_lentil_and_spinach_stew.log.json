@@ -1,0 +1,307 @@
+{
+  "main_ingredient": "Dry red lentils",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Spiced Red Lentil and Spinach Stew",
+  "recipe_id": "10c7c1b2-d0df-49cc-8d7f-275c6d0a6339",
+  "generation_id": "7cf30c26-454b-4ddd-b969-43c89bf9219b",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:48:32.424582",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Spiced Red Lentil and Spinach Stew",
+        "main_ingredient": "Dry red lentils",
+        "technique": "One-pot simmer",
+        "flavour_profile": "Warm, spiced, earthy, and creamy",
+        "cuisine_style": "Indian-inspired",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Pre-chopped yellow onion",
+          "Minced garlic",
+          "Curry powder",
+          "Dry red lentils",
+          "Low-sodium vegetable broth",
+          "No-salt-added canned diced tomatoes",
+          "Fresh baby spinach",
+          "Nonfat plain Greek yogurt (stirred in at the end for protein and creaminess)",
+          "Fresh cilantro"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "sugar_g: partial data — 16% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 15% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 49% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 35% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 35% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 35% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 453.1,
+          "protein_g": 33.8,
+          "carbs_g": 60.6,
+          "fat_g": 10.2,
+          "fiber_g": 12.3,
+          "sodium_mg": 466.9,
+          "sugar_g": 12.2,
+          "saturated_fat_g": 1.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 7.5,
+          "potassium_mg": 1296.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.8,
+          "pufa_g": 1.7,
+          "calcium_mg": 301.2,
+          "iron_mg": 6.7,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 60.6 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 60.6 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[added_sugar_and_carb_balance] There is zero added sugar and the carbohydrate quality is exceptional. However, the 60.6 g total carbohydrate slightly exceeds the 55 g ceiling for the 'main' tier. To bring it strictly into the 32-55 g window without falling below the 26 g protein floor, consider reducing the dry red lentils from 4.2 oz (120 g) to 3.5 oz (100 g)."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical weeknight stew that cleverly uses Greek yogurt and red lentils to hit strict protein and saturated fat targets while delivering massive comfort in under 30 minutes. A minor tweak to the lentil volume would bring the excellent-quality carbohydrates strictly into the chapter's numerical ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavors are well-balanced and make culinary sense. Classic Indian-inspired pairing of earthy lentils, tomatoes, and curry powder with a bright, tangy yogurt finish."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions exactly as described, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough. You provided clear time ranges, visual doneness cues ('deeply fragrant', 'wilt completely'), and crucially, included a short cooling rest to prevent the nonfat yogurt from splitting when added."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with an Indian-inspired dal, using appropriate spices and aromatics."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop simmering in a single pot is the perfect method for quick-cooking red lentils."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Computed nutrition values are highly plausible and align well with the large portions of lentils and Greek yogurt."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title matches the dish, and the intro is wonderfully practical, highlighting the time-saving prep and the smart swap of yogurt for coconut milk without making outsized health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appealing, comforting weeknight dinner that relies on pantry staples and delivers creamy richness."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliantly executes the diet's core philosophy: it provides high fiber and slow-digesting protein to stabilize blood sugar, while using unsaturated fat and nonfat dairy to protect the liver."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "There is zero added sugar and the carbohydrate quality is exceptional. However, the 60.6 g total carbohydrate slightly exceeds the 55 g ceiling for the 'main' tier. To bring it strictly into the 32-55 g window without falling below the 26 g protein floor, consider reducing the dry red lentils from 4.2 oz (120 g) to 3.5 oz (100 g)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the 'Vegetable & Meatless Dinners' brief. It creatively solves the vegetarian protein requirement (aiming for >26 g) by combining lentils with a generous portion of Greek yogurt."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Realistic timeline. Red lentils are genuinely a sub-20-minute ingredient, and leveraging pre-chopped onions ensures the prep stays well under the 30-minute total budget. No special equipment needed."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two deep, round, matte ceramic bowls set on an aged oak wood surface with subtle wear marks. The bowls are positioned 3/4 overhead to show the rich texture of the stew, with one bowl sharp in the foreground and the second bowl softly blurred in the background. The stew is a thick, creamy, sunset-orange mixture derived from red lentils, tomatoes, and Greek yogurt, with bright, wilted streaks of dark green baby spinach folded throughout. Tiny flecks of green cilantro are scattered naturally across the surface. A wooden spoon rests casually on the table beside the main bowl, and a few stray fragments of cilantro and a tiny smear of the orange-hued sauce mark the wood surface. The lighting is soft natural side light from a window on the left, creating gentle highlights on the creamy, slightly oily sheen of the yogurt-lentil emulsion. No artificial lights or flash. The dish appears as a comforting, home-cooked meal, warm and inviting. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a small sauce drip on the bowl rim, uneven spinach distribution, and natural steam ripples. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 11,
+  "total_corrections": 0
+}

@@ -1,0 +1,294 @@
+{
+  "main_ingredient": "Canned pure pumpkin",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Warm Pumpkin Spice Oat Mug Cakes",
+  "recipe_id": "d4ab4aec-837a-4c08-95fa-9a56470a4af5",
+  "generation_id": "64279020-30fc-4e56-b072-cbd5d50fd109",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:45:52.774308",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Warm Pumpkin Spice Oat Mug Cakes",
+        "main_ingredient": "Canned pure pumpkin",
+        "technique": "Microwave baking",
+        "flavour_profile": "Warm, spiced, cozy, and mildly sweet",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Canned pure pumpkin (not pie filling)",
+          "Oat flour",
+          "Baking powder",
+          "Pumpkin pie spice",
+          "Vanilla extract",
+          "Pure maple syrup",
+          "Large egg",
+          "Chopped pecans",
+          "Nonfat plain Greek yogurt"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "sugar_g: partial data — 12% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 12% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 12% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 193.7,
+          "protein_g": 9.2,
+          "carbs_g": 24.2,
+          "fat_g": 6.6,
+          "fiber_g": 3.4,
+          "sodium_mg": 156.8,
+          "sugar_g": 9.0,
+          "saturated_fat_g": 1.2,
+          "added_sugar_g": 6.0,
+          "cholesterol_mg": 94.5,
+          "potassium_mg": 267.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.6,
+          "pufa_g": 1.4,
+          "calcium_mg": 143.4,
+          "iron_mg": 2.1,
+          "vitamin_d_mcg": 0.5,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 156.8 mg/serving > ceiling 150 mg (\"dessert\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 156.8 mg/serving > ceiling 150 mg (\"dessert\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical recipe that brilliantly uses the microwave to deliver a cozy, whole-grain dessert well within both time and nutritional budgets.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavor profile of pumpkin, maple, vanilla, and oat flour is well-balanced and classically coherent."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used properly in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent completeness. Features a clear time range ('1 to 2 minutes'), a specific check instruction ('checking at 1 minute'), and visual doneness cues ('puffed and the center is set')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The pumpkin spice profile and microwave mug cake format fit the Modern American style perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Mug cakes are specifically designed for the microwave and this batter's moisture level is ideal for it."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros map accurately to the ingredients. The 6g of added sugar aligns exactly with half a tablespoon of maple syrup per person, and the sodium accurately reflects the baking powder."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Accurately describes the dish, sets realistic expectations for the microwave technique, and avoids all banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A fast, warm, cozy dessert that genuinely feels like a treat while staying within health guidelines. Highly appealing for weeknight cravings."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers high-quality carbohydrates (oats, pumpkin), decent protein (egg, Greek yogurt), and minimal saturated fat. Excellent execution of the dual-condition diet philosophy."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Added sugar is smartly limited, relying on vanilla and pumpkin spice for perceived sweetness. The 24.2g carbohydrate load is firmly in the target window and comes from excellent whole-food sources."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the dessert chapter perfectly. Fast, relies on whole-food ingredients, fits the sugar budget, and utilizes yogurt instead of heavy cream or icing."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Well under the 30-minute limit. Oat flour is widely available at mainstream supermarkets, and the microwave technique is universally accessible and extremely fast."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two pumpkin spice oat mug cakes are centered in the frame, placed side-by-side on a rustic, aged oak wood surface, leaving enough negative space for a circular crop. Shot from a 3/4 overhead angle, roughly 40 degrees, ensuring the interior texture of both cakes is visible. Shallow depth of field keeps the primary mug in sharp focus while the second mug is softly blurred in the background. Soft, natural side light from a window to the left creates gentle, realistic shadows and highlights the moist, slightly spongy texture of the warm cakes. Each mug cake is topped with a generous, slightly uneven dollop of thick, white, nonfat plain Greek yogurt that is just beginning to soften from the residual heat. A scattering of finely chopped, rustic-cut pecans sits on top of the yogurt. The cakes appear dense, amber-orange in color, with a slight puff and visible flecks of pumpkin pie spice throughout. A single, small wooden spoon rests casually on the wood surface near one of the mugs. A few stray pecan pieces and a faint dusting of oat flour are scattered naturally on the table. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a small smudge of yogurt on the inner rim of one mug, slightly uneven cake surface, and a crumb trail on the wood. No plastic sheen, no unnaturally smooth surfaces. Warm, golden-hour color temperature—cozy and inviting. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 5,
+  "total_corrections": 0
+}

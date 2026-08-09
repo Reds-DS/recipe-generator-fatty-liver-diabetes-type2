@@ -1,0 +1,167 @@
+{
+  "id": "1b60b8ab-fbeb-4e6d-b431-66f5c7cc6676",
+  "title": "Sheet-Pan Lemon-Dill Salmon with Potatoes and Green Beans",
+  "intro": "This single-pan meal brings together salmon, skin-on potatoes, and crisp greens for a filling combination of lean protein and dietary fiber. A mustard and herb coating keeps the fish flavorful without relying on heavy sauces.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 8,
+  "cook_time_min": 20,
+  "cook_time_max_min": 22,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Salmon",
+      "canonical_name": "Fish, salmon, Atlantic, wild, raw",
+      "quantity_g": 285.0,
+      "quantity_display": "10 oz (285 g)",
+      "preparation": "fillets, untreated",
+      "fdc_id": 173686,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby potatoes",
+      "canonical_name": "Potatoes, raw",
+      "quantity_g": 400.0,
+      "quantity_display": "14 oz (400 g)",
+      "preparation": "cut into 1/2-inch cubes",
+      "fdc_id": 170026,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh green beans",
+      "canonical_name": "Beans, snap, green, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "trimmed",
+      "fdc_id": 169961,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 9.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 1.5,
+      "quantity_display": "1/4 tsp (1.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole grain mustard",
+      "canonical_name": "Mustard, prepared, yellow",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 326698,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": "freshly squeezed",
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh dill",
+      "canonical_name": "Dill weed, fresh",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tbsp (3 g)",
+      "preparation": "chopped",
+      "fdc_id": 172233,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sliced almonds",
+      "canonical_name": "Nuts, almonds",
+      "quantity_g": 8.0,
+      "quantity_display": "1 tbsp (8 g)",
+      "preparation": null,
+      "fdc_id": 170158,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 425°F / 220°C for 5 minutes.",
+    "Toss the cubed potatoes directly on a baking sheet with the olive oil, garlic powder, salt, and black pepper.",
+    "Spread the potatoes into an even layer and roast for 10 minutes until they begin to soften.",
+    "Mix the whole grain mustard, lemon juice, and fresh dill in a small bowl.",
+    "Remove the baking sheet from the oven, push the potatoes to one side, and place the green beans in the middle.",
+    "Place the salmon fillets on the remaining open third of the pan and spoon the mustard mixture evenly over the fish.",
+    "Return the pan to the oven and roast for 10 to 12 minutes, checking at 10 minutes, until the salmon is opaque and flakes easily with a fork. Scatter the almonds over the top before serving."
+  ],
+  "variation": "Swap the fresh green beans for trimmed asparagus spears.",
+  "conservation": "Keeps 2 days refrigerated; reheat gently in the oven.",
+  "nutrition_per_serving": {
+    "calories_kcal": 469.7,
+    "protein_g": 36.0,
+    "carbs_g": 46.6,
+    "fat_g": 16.4,
+    "fiber_g": 8.3,
+    "sodium_mg": 456.9,
+    "sugar_g": 6.0,
+    "saturated_fat_g": 2.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 78.4,
+    "potassium_mg": 1876.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.8,
+    "pufa_g": 4.9,
+    "calcium_mg": 105.8,
+    "iron_mg": 4.5,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "sugar_g: partial data — 29% of recipe weight has no USDA value for it.",
+    "[instruction_completeness] The instruction 'Preheat the oven to 425°F / 220°C for 5 minutes' is confusing, as ovens take varying times to preheat. Simply state 'Preheat the oven to 425°F / 220°C.' Additionally, direct the reader to lightly toss the green beans in the pan's residual oil when adding them so they do not roast completely dry."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\sheet-pan_lemon-dill_salmon_with_potatoes_and_green_beans.png",
+  "created_at": "2026-08-09T11:20:56.662233",
+  "generation_id": "0e071f21-1d84-4015-ad46-e8a3d9cc30b6"
+}

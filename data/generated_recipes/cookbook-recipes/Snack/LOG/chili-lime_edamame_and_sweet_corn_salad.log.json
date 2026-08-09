@@ -1,0 +1,508 @@
+{
+  "main_ingredient": "Frozen shelled edamame",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Chili-Lime Edamame and Sweet Corn Salad",
+  "recipe_id": "92d54e55-cf6c-4af6-b004-d236531aa130",
+  "generation_id": "5a91ed1b-13c7-41b0-9a82-110ea3847497",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:59:56.777337",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Chili-Lime Edamame and Sweet Corn Salad",
+        "main_ingredient": "Frozen shelled edamame",
+        "technique": "No-cook / Microwave",
+        "flavour_profile": "Zesty, bright, and mildly spicy",
+        "cuisine_style": "Southwestern-inspired",
+        "ingredients_sketch": [
+          "Frozen shelled edamame",
+          "Frozen sweet corn kernels",
+          "Red onion",
+          "Fresh cilantro",
+          "Extra-virgin olive oil",
+          "Fresh lime juice",
+          "Chili powder"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "saturated_fat_g: partial data — 55% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 55% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 190.9,
+          "protein_g": 10.9,
+          "carbs_g": 21.6,
+          "fat_g": 8.8,
+          "fiber_g": 5.8,
+          "sodium_mg": 158.8,
+          "sugar_g": 4.8,
+          "saturated_fat_g": 0.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 584.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.4,
+          "pufa_g": 0.7,
+          "calcium_mg": 58.3,
+          "iron_mg": 2.1,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.75,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a fantastic, highly practical recipe that hits the dietary goals for both MASLD and Type 2 diabetes perfectly, but it fails the completeness check due to a missing microwave time range in Step 2.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of lime, chili, and cilantro provides a classic, well-balanced Southwestern flavor profile. Using edamame instead of traditional black beans is a smart, firm-textured, high-protein swap that works beautifully with the acidic dressing."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is accurately accounted for in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Step 2 tells the reader to microwave the vegetables but provides no time estimate. Update to include a specific range and a check, for example: 'Microwave on high for 2 to 3 minutes, checking halfway, until both vegetables are completely thawed and just warmed through.'"
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Lime, cilantro, and chili powder perfectly match the stated Southwestern-inspired cuisine style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Microwaving frozen edamame and corn is the quickest, most reliable method to thaw and warm them gently without drying them out or requiring extra pots."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel accurately reflects the ingredients used, capturing the high plant protein from the edamame and the healthy fats from the olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title matches the dish perfectly, and the intro provides warm, practical context about fiber and plant protein without relying on banned 'diet' language or liver-scare claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a vibrant, appealing, and extremely fast recipe that leans smartly on freezer staples for convenience and zero waste."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly answers both conditions. Edamame and olive oil provide lean plant protein and healthy unsaturated fats for liver health, while the corn provides a measured, high-fiber carbohydrate for stable blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugars; the natural sweetness legitimately comes from the sweet corn. The 21.6g of carbohydrates consists entirely of high-quality, fiber-rich whole foods, safely within the snack tier window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the Snacks & Sides brief excellently. With nearly 11g of protein and almost 6g of fiber, it functions perfectly as a satisfying, blood-sugar-stabilizing snack or a quick vegetable side."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Ingredients are ubiquitous supermarket staples, and the entire dish comes together in under 10 minutes from a cold start."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [instruction_completeness] Step 2 tells the reader to microwave the vegetables but provides no time estimate. Update to include a specific range and a check, for example: 'Microwave on high for 2 to 3 minutes, checking halfway, until both vegetables are completely thawed and just warmed through.'\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "saturated_fat_g: partial data — 63% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 63% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 164.5,
+          "protein_g": 10.3,
+          "carbs_g": 17.4,
+          "fat_g": 7.6,
+          "fiber_g": 5.3,
+          "sodium_mg": 22.5,
+          "sugar_g": 4.3,
+          "saturated_fat_g": 0.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 539.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.7,
+          "pufa_g": 0.6,
+          "calcium_mg": 57.0,
+          "iron_mg": 2.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.857,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, practical, and delicious recipe that perfectly aligns with the book's dietary requirements, utilizing accessible ingredients for a speedy, high-fiber, and high-protein snack.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Using edamame as the bean base with classic Southwestern pairings (corn, lime, chili powder, cilantro, red onion) creates a bright, cohesive, and texturally satisfying combination."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are listed and utilized perfectly in the instructions. No missing steps or unused items."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough and appropriately detailed for a beginner. The microwave time is given as a range, includes a halfway check, provides a clear visual doneness cue ('completely thawed and just warmed through'), and includes the crucial step of draining excess water."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with the 'Southwestern-inspired' label, smartly substituting edamame as a high-protein legume alongside traditional staples like corn, cilantro, and lime."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Microwaving the frozen vegetables is the ideal, time-saving method here, ensuring they are gently warmed without turning mushy."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is completely plausible for these ingredients. The protein and fiber levels accurately reflect the generous amount of edamame."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate, and the intro is inviting, practical, and devoid of any banned diet or health claims. It appropriately celebrates the utility of freezer staples."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, colorful, and vibrant snack. It feels fresh and intentional, rather than like 'diet food'."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe perfectly fits the book's dual mission. It delivers whole-food fiber and plant protein for blood sugar control while keeping saturated fat extremely low to support liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and it lands squarely in the middle of the snack carbohydrate window (17.4 g) using high-quality, complex carbohydrate sources (edamame and corn)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits every target for a snack/side: ready in minutes, perfectly portioned, and meets all macro constraints (10g protein, 5g fiber, <2g sat fat)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A true quick-prep recipe well under the 30-minute limit. Frozen edamame and corn are widely available at mainstream supermarkets, making this highly accessible."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, matte ceramic bowls set side-by-side on an aged oak wood tabletop, centered in the frame with generous negative space. The camera angle is a 3/4 overhead view at 40 degrees, ensuring every component of the salad is visible. The lighting is soft natural side light from a window to the left, creating gentle highlights on the vegetable surfaces and soft shadows. Shallow depth of field keeps the front bowl in sharp focus with the second bowl softly blurred. The salad consists of bright green, plump edamame kernels mixed with sweet golden corn and finely chopped red onion, tossed in a light, glistening olive oil and lime dressing. A subtle dusting of deep red chili powder coats the vegetables, and flecks of vibrant fresh green cilantro are distributed throughout. Props include a small wooden spoon resting casually against one bowl and a crumpled, off-white linen napkin placed slightly off-center. A few stray kernels of corn and a stray cilantro leaf are scattered on the wood surface near the bowl to signify the cooking process. Photorealistic, not AI-generated looking. The scene looks like a home-cooked meal, warm and authentic, with slight natural imperfections like an uneven distribution of ingredients and a small droplet of lime dressing on the rim. No plastic sheen, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

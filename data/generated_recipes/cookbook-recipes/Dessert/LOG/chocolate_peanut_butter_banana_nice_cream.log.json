@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "Frozen bananas",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Chocolate Peanut Butter Banana Nice Cream",
+  "recipe_id": "2b70d6e4-5f8f-4169-849b-29d2b1d0521f",
+  "generation_id": "316a9326-c236-48d3-8858-a8b4c3e64b24",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T13:15:43.458458",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Chocolate Peanut Butter Banana Nice Cream",
+        "main_ingredient": "Frozen bananas",
+        "technique": "Blending",
+        "flavour_profile": "Rich chocolate and roasted peanut",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Frozen sliced bananas",
+          "Nonfat plain Greek yogurt",
+          "Unsweetened cocoa powder",
+          "Natural creamy peanut butter",
+          "Vanilla extract",
+          "Unsweetened almond milk",
+          "Dark chocolate chips"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 175.0,
+          "protein_g": 7.3,
+          "carbs_g": 25.0,
+          "fat_g": 6.6,
+          "fiber_g": 3.6,
+          "sodium_mg": 61.1,
+          "sugar_g": 13.8,
+          "saturated_fat_g": 2.1,
+          "added_sugar_g": 2.3,
+          "cholesterol_mg": 2.2,
+          "potassium_mg": 444.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.8,
+          "pufa_g": 1.1,
+          "calcium_mg": 83.1,
+          "iron_mg": 1.2,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 3,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.429,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "saturated fat 2.1 g/serving > ceiling 2 g (\"dessert\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "saturated fat 2.1 g/serving > ceiling 2 g (\"dessert\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical dessert recipe that perfectly hits the diet's carbohydrate and added-sugar guidelines while remaining quick and delicious.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Chocolate, peanut butter, and banana are a classic, highly coherent combination. The yogurt provides a slight tang that balances the sweetness nicely."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent, providing clear cues (pulsing vs. blending, scraping down the sides) and a clear visual doneness cue ('smooth, thick, and resembles soft-serve ice cream')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American wholesome dessert profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A food processor or high-powered blender is the correct tool for pureeing frozen bananas into a soft-serve consistency."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are highly plausible and match the ingredient list. The 25g carbohydrates trace accurately to the bananas and yogurt, while the fat comes from the peanut butter and chocolate chips."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish. The intro is warm and appealing, avoiding banned terms while highlighting the inclusion of whole fruit and protein."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a quick, familiar, and highly satisfying dessert that feels decadent while remaining within healthy parameters."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A great example of addressing both conditions simultaneously. It avoids empty calories and provides a quality whole-food carbohydrate base paired with satiating protein from the Greek yogurt."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Exceptional fit. The sweet profile relies honestly on whole frozen bananas, with only 2.3g of added sugar coming from the chocolate chips. The 25g total carbohydrate hits the target window securely, avoiding a 'keto' profile."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the dessert chapter's 'nice cream' brief beautifully. The automated check flagged a 2.1g saturated fat value against a 2.0g ceiling; this 0.1g overage is negligible and entirely acceptable since it comes from the dark chocolate garnish."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in under 5 minutes. Uses standard supermarket staples and relies on an allowed appliance (blender/food processor)."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, white matte ceramic bowls placed side-by-side on an aged, dark-stained oak wood kitchen table with subtle grain textures and faint use marks. The camera angle is 3/4 overhead at 40 degrees, ensuring the interior of both bowls is fully visible. One bowl is in sharp focus in the foreground, while the second sits slightly further back with a soft, natural bokeh effect. The chocolate peanut butter banana nice cream has a dense, thick, swirled soft-serve texture, showing a deep, rich cocoa-brown color with subtle lighter streaks from the blended banana and yogurt. The surface of each scoop is topped with a scattering of dark chocolate chips, some slightly pressed into the cream. Lighting is soft, natural side-light coming from a window on the left, casting gentle shadows and highlighting the cool, creamy sheen of the frozen mixture. A wooden spoon rests casually on the table near the foreground bowl. A few stray chocolate chips and a small smear of the blended banana mixture are visible on the wood surface near the bowl rims. The scene is authentic and lived-in, capturing the end of the cooking process. Warm, golden-hour color temperature. Photorealistic, not AI-generated looking. The bowls look like a homemade, nourishing dessert for two. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional food photograph for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

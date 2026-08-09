@@ -1,0 +1,150 @@
+{
+  "id": "2aee853a-688f-4fa2-8495-0c205dd84a42",
+  "title": "Skillet White Bean and Zucchini Pizza Bake",
+  "intro": "This savory one-pan meal delivers plenty of vegetables and plant-based protein for lasting fullness. Creamy navy beans replace a refined flour crust, providing a comforting, high-fiber base for classic pizza flavors.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 12,
+  "cook_time_max_min": 16,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Zucchini",
+      "canonical_name": "Squash, summer, zucchini, includes skin, raw",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": "chopped",
+      "fdc_id": 169291,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cremini mushrooms",
+      "canonical_name": "Mushrooms, brown, italian, or crimini, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "sliced",
+      "fdc_id": 168434,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added navy beans",
+      "canonical_name": "Beans, navy, mature seeds, canned, no salt added",
+      "quantity_g": 250.0,
+      "quantity_display": "8.8 oz (250 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 173746,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned crushed tomatoes",
+      "canonical_name": "Tomatoes, crushed, canned, no salt added",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 g)",
+      "preparation": null,
+      "fdc_id": 170138,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Part-skim mozzarella cheese",
+      "canonical_name": "Cheese, mozzarella, part skim milk",
+      "quantity_g": 56.0,
+      "quantity_display": "1/2 cup (56 g)",
+      "preparation": "shredded",
+      "fdc_id": 171244,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Parmesan cheese",
+      "canonical_name": "Cheese, parmesan, grated",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tbsp (10 g)",
+      "preparation": "grated",
+      "fdc_id": 171247,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 400°F / 200°C.",
+    "Heat the olive oil in an oven-safe skillet over medium-high heat until shimmering.",
+    "Sauté the zucchini and mushrooms in the skillet until softened and lightly browned, 5 to 7 minutes.",
+    "Stir the garlic powder, dried oregano, navy beans, and crushed tomatoes into the skillet.",
+    "Reduce the heat to medium and simmer until the sauce thickens slightly, 3 to 4 minutes.",
+    "Remove the skillet from the heat and sprinkle the shredded mozzarella and grated Parmesan evenly over the top.",
+    "Transfer the skillet to the oven and bake until the cheese is melted and bubbling, 4 to 5 minutes."
+  ],
+  "variation": "Swap the cremini mushrooms for diced green bell peppers.",
+  "conservation": "Keeps 3 days refrigerated; reheat in the microwave.",
+  "nutrition_per_serving": {
+    "calories_kcal": 407.7,
+    "protein_g": 23.6,
+    "carbs_g": 48.4,
+    "fat_g": 15.5,
+    "fiber_g": 17.4,
+    "sodium_mg": 304.6,
+    "sugar_g": 8.5,
+    "saturated_fat_g": 5.2,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 22.2,
+    "potassium_mg": 1566.4,
+    "trans_fat_g": 0.2,
+    "mufa_g": 7.3,
+    "pufa_g": 2.0,
+    "calcium_mg": 409.1,
+    "iron_mg": 4.8,
+    "vitamin_d_mcg": 0.2,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 qualifier: 'No-salt-added navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.",
+    "protein 23.6 g/serving < floor 26 g (\"main\")",
+    "saturated fat 5.2 g/serving > ceiling 5 g (\"main\")",
+    "[taste_coherence] The recipe includes over 1.5 lbs of watery vegetables (zucchini, mushrooms), beans, and tomatoes, but specifies zero added salt or black pepper, relying entirely on a small amount of cheese for seasoning. This will result in a very bland, unbalanced base. Fix: Add 1/8 tsp salt and 1/4 tsp black pepper in step 3 to draw out the mushroom moisture and properly season the vegetables. This adds ~145 mg sodium per serving, keeping the total (450 mg) safely below the 550 mg chapter ceiling."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\skillet_white_bean_and_zucchini_pizza_bake.png",
+  "created_at": "2026-08-09T17:59:34.153733",
+  "generation_id": "214e82f2-6398-45e9-89af-abe3ec0065cd"
+}

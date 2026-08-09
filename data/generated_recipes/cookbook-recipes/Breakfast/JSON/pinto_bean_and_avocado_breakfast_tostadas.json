@@ -1,0 +1,162 @@
+{
+  "id": "14bfb995-a476-4e9b-bbab-8fd84e7890c3",
+  "title": "Pinto Bean and Avocado Breakfast Tostadas",
+  "intro": "Eating a combination of plant and egg protein in the morning helps maintain steady energy and lasting fullness until lunch.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 11,
+  "cook_time_max_min": 16,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Raw pepitas",
+      "canonical_name": "Seeds, pumpkin and squash seed kernels, dried",
+      "quantity_g": 15.0,
+      "quantity_display": "1.5 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 170556,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Yellow corn tortillas",
+      "canonical_name": "Tortillas, corn, ready-to-bake or -fry",
+      "quantity_g": 100.0,
+      "quantity_display": "4 tortillas (100 g)",
+      "preparation": null,
+      "fdc_id": 175036,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned pinto beans",
+      "canonical_name": "Beans, pinto, canned, no salt added, drained",
+      "quantity_g": 255.0,
+      "quantity_display": "1 1/2 cups (255 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed, crushed or ground",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 120.0,
+      "quantity_display": "4 cups (120 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 100.0,
+      "quantity_display": "2 large (100 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Egg whites",
+      "canonical_name": "Egg, white, raw, fresh",
+      "quantity_g": 132.0,
+      "quantity_display": "4 large (132 g)",
+      "preparation": null,
+      "fdc_id": 172183,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh pico de gallo",
+      "canonical_name": "Salsa, fresh",
+      "quantity_g": 110.0,
+      "quantity_display": "1/2 cup (110 g)",
+      "preparation": null,
+      "fdc_id": 2709737,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 50.0,
+      "quantity_display": "1/3 medium (50 g)",
+      "preparation": "sliced",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place a large non-stick skillet over medium heat. Add the raw pepitas and toast for 2 to 3 minutes until golden and fragrant, then transfer to a small bowl.",
+    "Warm the corn tortillas in the same skillet over medium heat for 1 to 2 minutes per side until pliable and lightly toasted. Transfer to serving plates.",
+    "Add the extra-virgin olive oil, drained pinto beans, and ground cumin to the skillet over medium heat. Mash the beans roughly using a wooden spoon or silicone spatula for 3 to 4 minutes until warmed through, then divide evenly over the tortillas.",
+    "Add the baby spinach to the skillet and toss for 1 to 2 minutes until just wilted. Layer the spinach evenly over the mashed beans.",
+    "Whisk the whole eggs and egg whites together in a bowl. Pour into the skillet over medium-low heat and stir gently with a silicone spatula for 2 to 3 minutes until soft curds form and the eggs are set.",
+    "Spoon the scrambled eggs over the spinach. Top the tostadas evenly with the fresh pico de gallo, sliced avocado, and the toasted pepitas."
+  ],
+  "variation": "Swap the baby spinach for thinly sliced fresh Tuscan kale.",
+  "conservation": "Best enjoyed right away; does not keep well once assembled.",
+  "nutrition_per_serving": {
+    "calories_kcal": 526.8,
+    "protein_g": 32.9,
+    "carbs_g": 64.0,
+    "fat_g": 17.6,
+    "fiber_g": 18.7,
+    "sodium_mg": 500.7,
+    "sugar_g": 3.2,
+    "saturated_fat_g": 3.5,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 186.0,
+    "potassium_mg": 890.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.8,
+    "pufa_g": 4.1,
+    "calcium_mg": 154.4,
+    "iron_mg": 4.8,
+    "vitamin_d_mcg": 1.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added canned pinto beans"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "No USDA candidate for 'No-salt-added canned pinto beans' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 29% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 29% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 29% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 29% of recipe weight has no USDA value for it.",
+    "total carbohydrate 64 g/serving > ceiling 55 g (\"main\")",
+    "[chapter_intent_fit] The recipe overshoots the breakfast chapter's 55g carbohydrate ceiling, landing at 64g. Additionally, 3/4 cup of mashed beans per person is quite thick for just two small tortillas. Reduce the pinto beans from 1.5 cups (255g) to 1 cup (170g). This will improve the bean-to-tortilla ratio and bring the carbohydrates cleanly into the 45-55g target window."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\pinto_bean_and_avocado_breakfast_tostadas.png",
+  "created_at": "2026-08-09T16:46:49.205374",
+  "generation_id": "a4b75c5b-5c87-419e-95e6-86825e1f7bf4"
+}

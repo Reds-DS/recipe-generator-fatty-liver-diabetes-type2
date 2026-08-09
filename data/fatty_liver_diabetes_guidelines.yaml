@@ -1,0 +1,846 @@
+# The Fatty Liver Diet Cookbook for Type 2 Diabetes — machine-readable spec (single source of truth).
+# schema_version 1. Values distilled from docs/fatty_liver_diabetes_guidelines.md.
+# Every quantitative claim references a `sources:` id resolved in the `sources:` block.
+#
+# Loader-parsed sections (drive runtime): per_recipe_constraints.meal_categories + hard_blocks,
+#   recipe_categories, prompt_snippets.{ideation,drafting,critic}, cooking_methods.prefer/avoid.
+# Per-serving values are DERIVED (a daily authority target split across the day's eating occasions)
+#   and flagged severity: soft unless a structural hard_block. Servings fixed at 2; per-serving =
+#   one person's per-meal portion.
+#
+# THREE PLACES CARRY THE SAME NUMBERS BY DESIGN: meal_categories below, the prose in
+#   prompt_snippets.drafting, and the table in section 4 of the dossier. Change all three together;
+#   tests/test_spec_coherence.py and tests/test_dossier_coherence.py assert they agree.
+
+meta:
+  schema_version: 1
+  title: Fatty liver (MASLD) + type 2 diabetes cookbook — recipe guidelines
+  book: "The Fatty Liver Diet Cookbook for Type 2 Diabetes"
+  subtitle: "100+ Recipes in Under 30 Minutes from Everyday Ingredients, with a Personalized 30-Day Meal Plan to Help Lower Liver Fat and Keep Your Blood Sugar Steady"
+  description: >-
+    US adults with type 2 diabetes who have been told they have fatty liver — clinically
+    metabolic dysfunction-associated steatotic liver disease (MASLD), or its inflammatory form
+    MASH. Typically overweight or living with obesity, often on metformin and frequently on a
+    GLP-1 receptor agonist, SGLT2 inhibitor, insulin or a sulfonylurea. One way of eating for
+    both conditions: Mediterranean-pattern, energy-controlled, very low in added sugar,
+    fiber- and protein-forward, alcohol-free, deliberately NOT low-carbohydrate. Every recipe
+    on the table in under 30 minutes from mainstream US-supermarket ingredients.
+    English; USDA FoodData Central nutrition.
+  companion_doc: "docs/fatty_liver_diabetes_guidelines.md"
+  fixed_servings: 2
+  last_reviewed: "2026-08-09"
+  review_notes: >-
+    Grounded in EASL-EASD-EASO 2024, AASLD 2023, the AGA 2021 lifestyle Clinical Practice Update,
+    the ADA MASLD consensus report 2025, ADA Standards of Care 2026 (§4 and §5), the Dietary
+    Guidelines for Americans 2025-2030 (published 2026-01-07), FDA labeling rules and AHA figures,
+    plus named RCTs and meta-analyses. FETCH FAILURES TO RE-VERIFY BEFORE PRINT (full detail in
+    section 9 of the dossier): diabetesjournals.org returned HTTP 403 for both the ADA MASLD
+    consensus report and ADA Standards of Care 2026 §4/§5, so their figures come from official
+    abstracts and society-derived summaries, each corroborated by a second retrieved source;
+    dietaryguidelines.gov failed to fetch and realfood.gov served an image-only PDF, so the
+    DGA 2025-2030 figures come from a guideline-summary service and the Harvard Nutrition Source
+    — the "no more than 10 g of added sugars per meal" figure is load-bearing for this spec and
+    MUST be re-verified against the primary document. The percentage liver-fat reductions in
+    Markova 2017 and the "39%" steatosis figure circulating for a 12-week Mediterranean trial
+    could NOT be retrieved and MUST NOT be printed. USDA FDC nutrient ids 1235/1092/1114 were
+    verified against the live nutrient.csv on 2026-07-19 (carried from the parent engine).
+    'Net carbs' is deliberately NOT computed or printed in this book — ADA and FDA both count
+    total carbohydrate, and a reader dosing insulin must not be shown a subtracted number.
+
+sources:
+  - id: easl-easd-easo-2024
+    name: "EASL-EASD-EASO. Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic liver disease (MASLD), 2024 — Executive Summary. (Weight loss >=5% to reduce liver fat, 7-10% to improve liver inflammation, >=10% to improve fibrosis — LoE 2, strong. Improve diet quality similar to the Mediterranean dietary pattern; limit ultra-processed food rich in sugars and saturated fat; avoid sugar-sweetened beverages — LoE 2, strong. >150 min/week moderate or 75 min/week vigorous physical activity — LoE 1, strong. All alcohol stopped completely and permanently in advanced fibrosis or cirrhosis. Cirrhosis: >=35 kcal/kg/day and 1.2-1.5 g/kg/day protein.)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11519095/"
+    accessed: "2026-08-09"
+  - id: aasld-2023
+    name: "Rinella ME, Neuschwander-Tetri BA, Siddiqui MS, et al. AASLD Practice Guidance on the clinical assessment and management of nonalcoholic fatty liver disease. Hepatology 2023;77:1797-1835. (Weight loss 3-5% improves steatosis; >10% generally required to improve NASH and fibrosis. Excessive fructose consumption increases the risk of NAFLD, NASH and advanced fibrosis independent of calorie intake. Alcohol categories: mild up to 20 g/day women and 30 g/day men; moderate use increases the probability of advanced fibrosis; heavy use should be avoided. Coffee 3+ cups/day could be recommended absent contraindications. >=150 min/week moderate exercise. Vitamin E 800 IU/day only in NON-DIABETIC non-cirrhotic patients. Pioglitazone 30-45 mg/day.)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10735173/"
+    accessed: "2026-08-09"
+  - id: aga-2021-lifestyle
+    name: "Younossi ZM, et al. AGA Clinical Practice Update on Lifestyle Modification Using Diet and Exercise to Achieve Weight Loss in the Management of NAFLD: Expert Review. Gastroenterology 2021. (Weight loss >=5% decreases hepatic steatosis, >=7% leads to steatohepatitis resolution, >=10% results in fibrosis regression or stability; lean patients 3-5%. Hypocaloric diet targeting 1,200-1,500 kcal/day or a reduction of 500-1,000 kcal/day from baseline. Follow the Mediterranean diet. Minimize saturated fatty acid intake, specifically red and processed meat. Limit or eliminate consumption of commercially produced fructose. Alcohol consumption should be restricted or eliminated. 150-300 min/week moderate or 75-150 min/week vigorous aerobic exercise plus resistance training.)"
+    url: "https://gastro.org/clinical-guidance/lifestyle-modification-using-diet-and-exercise-to-achieve-weight-loss-in-the-management-of-nonalcoholic-fatty-liver-disease-nafld/"
+    accessed: "2026-08-09"
+  - id: ada-masld-consensus-2025
+    name: "Cusi K, Abdelmalek MF, Apovian CM, et al. Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) in People With Diabetes: The Need for Screening and Early Intervention. A Consensus Report of the American Diabetes Association. Diabetes Care 2025;48(7):1057-1082. (MASLD affects about 70% of US adults with type 2 diabetes, about half of whom have MASH. Mediterranean eating pattern recommended. Weight-loss targets >=5% to reduce liver fat, >=7-10% to improve inflammation, >=10% to reduce fibrosis. GLP-1 RA, dual GIP/GLP-1 RA, pioglitazone or combinations by liver-disease stage.) NOTE: article page and PDF returned HTTP 403 to the automated fetcher; figures from the official abstract and society summaries, each corroborated by a second retrieved source."
+    url: "https://diabetesjournals.org/care/article/48/7/1057/160536/"
+    accessed: "2026-08-09"
+  - id: ada-soc-2026-s4
+    name: "American Diabetes Association. 4. Comprehensive Medical Evaluation and Assessment of Comorbidities: Standards of Care in Diabetes-2026. Diabetes Care 2026;49(Suppl 1). (Screen all adults with type 2 diabetes or prediabetes for liver fibrosis regardless of liver enzyme levels, initial test FIB-4; FIB-4 >=1.3 -> transient elastography or ELF; refer indeterminate/high risk to hepatology. Lifestyle change promoting weight loss; a GLP-1 RA with demonstrated MASH benefit preferred for glycemic management in biopsy-proven MASH or high fibrosis risk.) NOTE: publisher page returned HTTP 403; content from PubMed record and ADA-derived summaries."
+    url: "https://pubmed.ncbi.nlm.nih.gov/41358897/"
+    accessed: "2026-08-09"
+  - id: ada-soc-2026-s5
+    name: "American Diabetes Association. 5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes-2026. Diabetes Care 2026;49(Suppl 1):S89. (There is not an ideal percentage of calories from carbohydrate, protein and fat; macronutrient distribution individualized. Emphasize minimally processed, nutrient-dense, high-fiber carbohydrate at at least 14 g fiber per 1,000 kcal. Minimize foods with added sugar. Limit sodium to <2,300 mg/day. Weight-loss target 5-7% of baseline body weight.) NOTE: publisher page returned HTTP 403; content from ADA-derived summaries."
+    url: "https://diabetesjournals.org/care/article/49/Supplement_1/S89/163932/"
+    accessed: "2026-08-09"
+  - id: dga-2025-2030
+    name: "USDA & HHS. Dietary Guidelines for Americans, 2025-2030 (published 2026-01-07). (One meal should contain no more than 10 grams of added sugars; no amount of added sugars or non-nutritive sweeteners is recommended as part of a healthy diet. Saturated fat should not exceed 10% of total daily calories. Sodium less than 2,300 mg/day for ages 14 and older. Protein 1.2-1.6 g per kg body weight per day. Whole grains 2-4 servings/day. Avoid sugar-sweetened beverages such as sodas, fruit drinks and energy drinks. Significantly reduce the consumption of highly processed, refined carbohydrates.) NOTE: dietaryguidelines.gov failed to fetch and realfood.gov served an image-only PDF; figures from a guideline-summary service and the Harvard Nutrition Source commentary — re-verify the per-meal added-sugar figure before print."
+    url: "https://www.dietaryguidelines.gov/"
+    accessed: "2026-08-09"
+  - id: fda-daily-values
+    name: "FDA. Daily Value on the Nutrition and Supplement Facts Labels (fiber 28 g, protein 50 g, total carb 275 g, total fat 78 g, sat fat 20 g, added sugars 50 g, sodium 2,300 mg, cholesterol 300 mg, vitamin D 20 mcg, calcium 1,300 mg, iron 18 mg, potassium 4,700 mg; total sugars and trans fat carry no DV)."
+    url: "https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+    accessed: "2026-08-09"
+  - id: fda-nutrition-facts-101-9
+    name: "FDA / eCFR 21 CFR 101.9. Nutrition labeling of food — mandatory Nutrition Facts declarations; Total Carbohydrate with Dietary Fiber and Sugars beneath; 'net carbs' has no regulatory definition."
+    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-A/section-101.9"
+    accessed: "2026-08-09"
+  - id: fda-nutrient-claims-101-54
+    name: "FDA / eCFR 21 CFR 101.54. Nutrient content claims: 'good source' 10-19% DV, 'high'/'excellent source' >=20% DV per RACC (=> 'high fiber' >=5.6 g, 'high protein' >=10 g per serving)."
+    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-101/subpart-D/section-101.54"
+    accessed: "2026-08-09"
+  - id: aha-added-sugar
+    name: "American Heart Association. Added Sugars. (No more than 25 g / 6 tsp / 100 kcal of added sugar per day for women and 36 g / 9 tsp / 150 kcal for men; limit added sugars to less than 6% of calories.)"
+    url: "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/sugar/added-sugars"
+    accessed: "2026-08-09"
+  - id: masld-nomenclature-2023
+    name: "Rinella ME, Lazarus JV, Ratziu V, et al. A multisociety Delphi consensus statement on new fatty liver disease nomenclature. J Hepatol / Hepatology 2023. (NAFLD -> MASLD, NASH -> MASH; hepatic steatosis plus at least one of five cardiometabolic risk factors, of which type 2 diabetes is one; alcohol thresholds <=20 g/day for women and <=30 g/day for men; MetALD 140-350 g/week female and 210-420 g/week male.)"
+    url: "https://www.journal-of-hepatology.eu/article/S0168-8278(23)00418-X/fulltext"
+    accessed: "2026-08-09"
+  - id: younossi-t2d-prevalence-2024
+    name: "Younossi ZM, et al. The Global Epidemiology of Nonalcoholic Fatty Liver Disease and Nonalcoholic Steatohepatitis Among Patients With Type 2 Diabetes. Clin Gastroenterol Hepatol 2024. (Pooled global NAFLD/MASLD prevalence in type 2 diabetes 65.33%, 95% CI 62.35-68.18; Western countries 72.65%; rose from 55.86% in 1990-2004 to 68.81% in 2016-2021.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/38521116/"
+    accessed: "2026-08-09"
+  - id: geidl-fructose-rct-2021
+    name: "Geidl-Flueck B, et al. Fructose- and sucrose- but not glucose-sweetened beverages promote hepatic de novo lipogenesis: a randomized controlled trial. J Hepatol 2021;75:46-54. (94 healthy men; 80 g/day of a fructose-, sucrose- or glucose-sweetened beverage for 7 weeks in addition to the usual diet, at stable total calorie intake; fructose and sucrose raised basal hepatic fatty-acid synthesis, glucose did not.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33684506/"
+    accessed: "2026-08-09"
+  - id: niddk-nafld-diet
+    name: "NIDDK (NIH). Eating, Diet, & Nutrition for NAFLD & NASH. (Replace saturated and trans fats with unsaturated fats, especially omega-3 fatty acids; eat more low-glycemic-index foods such as most fruits, vegetables and whole grains; avoid foods and drinks that contain large amounts of simple sugars, especially fructose, found in sweetened soft drinks, sports drinks, sweetened tea and juices; table sugar (sucrose) is rapidly changed to glucose and fructose and is therefore a major source of fructose; minimize alcohol use.)"
+    url: "https://www.niddk.nih.gov/health-information/liver-disease/nafld-nash/eating-diet-nutrition"
+    accessed: "2026-08-09"
+  - id: ryan-med-diet-2013
+    name: "Ryan MC, et al. The Mediterranean diet improves hepatic steatosis and insulin sensitivity in individuals with non-alcoholic fatty liver disease. J Hepatol 2013;59:138-143. (Randomized 6-week cross-over in biopsy-proven NAFLD; the Mediterranean diet reduced hepatic steatosis and improved insulin sensitivity versus a low-fat/high-carbohydrate control diet WITHOUT weight loss.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/23485520/"
+    accessed: "2026-08-09"
+  - id: markova-protein-2017
+    name: "Markova M, Pivovarova O, Hornemann S, et al. Isocaloric Diets High in Animal or Plant Protein Reduce Liver Fat and Inflammation in Individuals With Type 2 Diabetes. Gastroenterology 2017;152:571-585. (37 adults with type 2 diabetes; 6 weeks isocaloric 30% protein / 40% carbohydrate / 30% fat; liver fat and markers of insulin resistance and hepatic necroinflammation fell with BOTH animal- and plant-protein diets, independently of body weight. The exact percentage reductions could not be retrieved and must not be printed.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/27765690/"
+    accessed: "2026-08-09"
+  - id: upf-nafld-meta-2023
+    name: "Henney AE, et al. Ultra-Processed Food Intake Is Associated with Non-Alcoholic Fatty Liver Disease in Adults: A Systematic Review and Meta-Analysis. Nutrients 2023. (9 studies, 60,961 individuals; both moderate and high ultra-processed food intake significantly increased NAFLD risk, with a dose-response association.)"
+    url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10224355/"
+    accessed: "2026-08-09"
+  - id: coffee-fibrosis-meta-2021
+    name: "Hayat U, et al. Effect of Coffee Consumption on Non-Alcoholic Fatty Liver Disease Incidence, Prevalence and Risk of Significant Liver Fibrosis: Systematic Review with Meta-Analysis of Observational Studies, 2021. (Coffee associated with roughly 35% decreased odds of significant liver fibrosis; benefit above about 2-3 cups/day. Observational evidence only.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34578919/"
+    accessed: "2026-08-09"
+  - id: essence-semaglutide-2025
+    name: "Newsome PN, Sanyal AJ, et al. Phase 3 Trial of Semaglutide in Metabolic Dysfunction-Associated Steatohepatitis (ESSENCE). N Engl J Med 2025;392:2089-2099. (Week 72: steatohepatitis resolution without worsening fibrosis 62.9% vs 34.3% placebo; fibrosis improvement without worsening steatohepatitis 36.8% vs 22.4%; mean body-weight change -10.5% vs -2.0%.)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/40305708/"
+    accessed: "2026-08-09"
+  - id: issn-protein-2017
+    name: "Jager R, et al. ISSN Position Stand: Protein and Exercise. J Int Soc Sports Nutr 2017. (Per-meal 0.25 g/kg or 20-40 g high-quality protein; 1.4-2.0 g/kg/day is not harmful to kidney or bone in healthy adults.)"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5477153/"
+    accessed: "2026-08-09"
+  - id: ajcn-leidy-protein
+    name: "Leidy HJ, et al. The role of protein in weight loss and maintenance. Am J Clin Nutr. (1.2-1.6 g/kg/day preserves lean mass and improves satiety during weight loss; ~25-30 g protein per meal is the satiety threshold, below ~25 g little effect.)"
+    url: "https://ajcn.nutrition.org/article/S0002-9165(23)27427-4/fulltext"
+    accessed: "2026-08-09"
+  - id: iom-dri-fiber
+    name: "IOM/NASEM DRI for fiber — Adequate Intake 14 g per 1,000 kcal, summarized by the Linus Pauling Institute."
+    url: "https://lpi.oregonstate.edu/mic/other-nutrients/fiber"
+    accessed: "2026-08-09"
+  - id: kdoqi-ckd-2020
+    name: "NKF KDOQI Clinical Practice Guideline for Nutrition in CKD, 2020 (AJKD). Metabolically stable CKD 3-5: protein 0.55-0.60 g/kg/day, or 0.6-0.8 g/kg/day with diabetes, under clinician guidance — the protein caveat for readers with diabetic kidney disease."
+    url: "https://www.ajkd.org/article/S0272-6386(20)30726-5/fulltext"
+    accessed: "2026-08-09"
+  - id: aha-fish-omega3
+    name: "American Heart Association. Fish and Omega-3 Fatty Acids (two ~3.5 oz cooked servings per week of non-fried fish, preferring fatty fish)."
+    url: "https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/fish-and-omega-3-fatty-acids"
+    accessed: "2026-08-09"
+  - id: mayo-healthy-cooking
+    name: "Mayo Clinic. Healthy cooking basics (prefer bake/roast/grill/broil/steam/poach/saute in minimal oil; increase fiber gradually with adequate fluids)."
+    url: "https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/basics/healthy-cooking/hlv-20049477"
+    accessed: "2026-08-09"
+  - id: usda-fdc
+    name: "USDA FoodData Central. Foundation Foods + SR Legacy + FNDDS for generic ingredients; per-100 g values; no added-sugars value for generic foods, so added sugar is estimated."
+    url: "https://fdc.nal.usda.gov/"
+    accessed: "2026-08-09"
+
+audience:
+  description: >-
+    US adults with type 2 diabetes who have been told they have fatty liver and were sent home
+    without a menu. Usually overweight or living with obesity, commonly on metformin and often on
+    a GLP-1 receptor agonist, SGLT2 inhibitor, insulin or a sulfonylurea. They cook ordinary
+    supermarket food, have about half an hour, and have already found the internet arguing with
+    itself about carbs, fat and keto. The book's job is to be the one plan the appointment did
+    not have time to write.
+  primary_demographic: "US adults with type 2 diabetes and diagnosed fatty liver (MASLD/MASH), not cirrhotic"
+  secondary_demographics:
+    - "Partners and family members cooking the same meals"
+    - "Adults with prediabetes and fatty liver"
+    - "Readers told to 'lose some weight' with no dietary instruction"
+  nomenclature:
+    note: >-
+      The 2023 multi-society Delphi consensus retired NAFLD for MASLD and NASH for MASH. MASLD =
+      hepatic steatosis plus at least one of five cardiometabolic criteria, and TYPE 2 DIABETES IS
+      ITSELF ONE OF THEM. The book says "fatty liver" on the cover and in recipes, and introduces
+      MASLD/MASH once in the front matter as the terms the reader's clinician will use.
+      Do not scatter acronyms through recipe copy.
+    sources: [masld-nomenclature-2023]
+  why_it_matters:
+    - id: one-root-two-conditions
+      summary: >-
+        Fatty liver and type 2 diabetes are the same metabolic problem seen from two sides: insulin
+        resistance leaves fat in the liver and glucose in the blood. Pooled global MASLD prevalence
+        among people with type 2 diabetes is 65.33% (95% CI 62.35-68.18), 72.65% in Western
+        countries; the ADA's consensus report puts it at about 70% of US adults with type 2
+        diabetes, roughly half with the progressive MASH form. "One way of eating, both conditions"
+        is the book's central promise and it is an epidemiological fact.
+      sources: [younossi-t2d-prevalence-2024, ada-masld-consensus-2025, masld-nomenclature-2023]
+    - id: weight-loss-is-dose-responsive
+      summary: >-
+        Weight loss is the therapy and it is dose-responsive: >=5% reduces liver fat, 7-10% improves
+        liver inflammation, >=10% improves fibrosis. AASLD frames the same gradient as 3-5% for
+        steatosis with >10% generally required for MASH and fibrosis. Everything about recipe
+        energy density follows from this.
+      sources: [easl-easd-easo-2024, aga-2021-lifestyle, ada-masld-consensus-2025, aasld-2023]
+    - id: fructose-is-the-liver-specific-macronutrient
+      summary: >-
+        Excessive fructose raises the risk of MASLD, MASH and advanced fibrosis INDEPENDENT of
+        calorie intake. In a 7-week RCT, 80 g/day of fructose- or sucrose-sweetened beverage raised
+        basal hepatic fatty-acid synthesis at stable total calorie intake, while the same dose of
+        glucose did not. NIDDK adds that table sugar is itself a major source of fructose. This is
+        why added sugar, not total carbohydrate, is this book's tightest axis.
+      sources: [aasld-2023, geidl-fructose-rct-2021, niddk-nafld-diet, aga-2021-lifestyle]
+    - id: diet-quality-moves-liver-fat-without-the-scale
+      summary: >-
+        A 6-week randomized cross-over trial in biopsy-proven NAFLD found a Mediterranean pattern
+        reduced hepatic steatosis and improved insulin sensitivity versus a low-fat/high-carbohydrate
+        control WITHOUT weight loss. The Mediterranean pattern is the diet named by EASL-EASD-EASO,
+        AGA and the ADA MASLD consensus alike. Ultra-processed food moves the same needle the other
+        way, dose-responsively.
+      sources: [ryan-med-diet-2013, easl-easd-easo-2024, aga-2021-lifestyle, ada-masld-consensus-2025, upf-nafld-meta-2023]
+    - id: protein-is-protective-here
+      summary: >-
+        Isocaloric diets at 30% protein — animal OR plant — reduced liver fat and markers of hepatic
+        necroinflammation and insulin resistance in adults with type 2 diabetes over 6 weeks,
+        independently of body weight. DGA 2025-2030 raised its protein figure to 1.2-1.6 g/kg/day.
+        Protein also carries the satiety that makes a hypocaloric plan survivable and protects lean
+        mass while the reader loses the 7-10% the liver needs. It must come from fish, poultry,
+        eggs, legumes, tofu and low-fat dairy — NOT from red and processed meat, which the AGA
+        singles out.
+      sources: [markova-protein-2017, dga-2025-2030, ajcn-leidy-protein, aga-2021-lifestyle]
+  goals: ["lower liver fat", "keep blood sugar steady", "lose weight without hunger", "cook it in under 30 minutes from everyday ingredients"]
+
+daily_targets:
+  weight_loss_thresholds:
+    reduce_liver_fat_pct: 5
+    improve_inflammation_pct: "7-10"
+    improve_fibrosis_pct: 10
+    lean_patients_pct: "3-5"
+    unit: "% of body weight"
+    note: >-
+      Dose-responsive and probabilistic, from trials. The book's honest verb is "helps lower liver
+      fat". Never "reverses" or "cures".
+    sources: [easl-easd-easo-2024, aga-2021-lifestyle, ada-masld-consensus-2025, aasld-2023]
+  energy_kcal_per_day:
+    hypocaloric_absolute: {min: 1200, max: 1500}
+    deficit_from_baseline: {min: 500, max: 1000}
+    book_plan_day: {min: 1635, max: 1725}
+    unit: kcal/day
+    note: >-
+      The AGA gives two routes. This book's printed plan uses the DEFICIT route: a ~1,635-1,725 kcal
+      day is a 500-1,000 kcal deficit for a reader whose maintenance sits at 2,150-2,700 kcal, which
+      is typical for this audience. The absolute 1,200-1,500 band is the alternative for smaller or
+      less active readers and is what src/planning/personalization.py will compute toward for them.
+    sources: [aga-2021-lifestyle, ada-soc-2026-s5]
+  protein_g_per_kg_bodyweight:
+    min: 1.2
+    max: 1.6
+    unit: g/kg/day
+    note: >-
+      DGA 2025-2030 figure. Corroborated by the weight-loss literature (1.2-1.6 g/kg/day preserves
+      lean mass in a deficit) and by the isocaloric high-protein liver-fat trial. NOT for readers
+      with chronic kidney disease, where protein is deliberately restricted under clinician guidance.
+    sources: [dga-2025-2030, ajcn-leidy-protein, markova-protein-2017, kdoqi-ckd-2020]
+  protein_g_per_meal_main:
+    floor: 25
+    target: 30
+    note: "Satiety and muscle-protein-synthesis threshold: ~0.25 g/kg or 20-40 g per meal; below ~25 g the satiety effect is minimal."
+    sources: [issn-protein-2017, ajcn-leidy-protein]
+  fiber:
+    g_per_1000_kcal: 14
+    g_per_day_at_book_plan: 25
+    unit: g
+    note: >-
+      ADA's route (>=14 g/1,000 kcal from minimally processed, nutrient-dense sources) is the one
+      this book uses, because it scales with the reader's energy target. FDA Daily Value is 28 g.
+      IOM Adequate Intake is the same 14 g/1,000 kcal. Increase gradually with fluids.
+    sources: [ada-soc-2026-s5, iom-dri-fiber, fda-daily-values, mayo-healthy-cooking]
+  carbohydrate:
+    position: "moderate, quality-forward, with a FLOOR — deliberately not low-carbohydrate and never ketogenic"
+    very_low_carb_threshold_pct_kcal: 26
+    amdr_pct_kcal: {min: 45, max: 65}
+    book_day_at_floors_pct_kcal: 27.6
+    book_day_at_targets_pct_kcal: 39.4
+    book_day_at_maxima_pct_kcal: 50.6
+    note: >-
+      ADA: there is no ideal percentage of calories from carbohydrate; emphasize quality. The floor
+      exists for safety and for positioning: ketogenic patterns are discouraged for readers on SGLT2
+      inhibitors, carbohydrate that drops unannounced causes hypoglycemia in readers on insulin or a
+      sulfonylurea, and the book explicitly refuses the "cut all carbs / try keto" advice its reader
+      already found. A DAY BUILT ENTIRELY OF FLOOR-HUGGING RECIPES STILL LANDS ABOVE 26% OF ENERGY.
+    sources: [ada-soc-2026-s5, dga-2025-2030, niddk-nafld-diet]
+  added_sugar:
+    dga_g_per_meal_max: 10
+    aha_g_per_day_max: {women: 25, men: 36}
+    fda_dv_g_per_day: 50
+    book_day_total_g: 22
+    note: >-
+      The tightest axis in the book, because fructose acts on the liver independently of calories.
+      DGA 2025-2030 sets a PER-MEAL figure (<=10 g) and states no amount of added sugars is
+      recommended. Every recipe in this book sits far inside that; the full day lands at 22 g, under
+      the AHA's 25 g women's limit.
+    sources: [dga-2025-2030, aha-added-sugar, fda-daily-values, aasld-2023, geidl-fructose-rct-2021]
+  saturated_fat_pct_kcal_max:
+    value: 10
+    also: "FDA DV <20 g/day; book day = 18-19 g = 9.9% of energy even with every recipe at its ceiling"
+    note: "Minimize saturated fat specifically from red and processed meat; replace with unsaturated fat, especially omega-3."
+    sources: [dga-2025-2030, aga-2021-lifestyle, niddk-nafld-diet, fda-daily-values]
+  sodium_mg_per_day_max:
+    value: 2300
+    book_day_total_mg: 2050
+    note: "DGA 2025-2030 (ages 14+) and ADA both. Achieved by limiting processed foods; the book's day sits ~11% under."
+    sources: [dga-2025-2030, ada-soc-2026-s5, fda-daily-values]
+  alcohol:
+    position: "restrict or eliminate; ZERO as a recipe ingredient in this book"
+    masld_definition_thresholds_g_per_day: {women: 20, men: 30}
+    note: >-
+      AGA: alcohol consumption should be restricted or eliminated. AASLD: moderate use increases the
+      probability of advanced fibrosis and heavy use should be avoided. EASL: stopped completely and
+      permanently with advanced fibrosis or cirrhosis. The 20/30 g figures are the MASLD-definition
+      boundary, not a permission. The book's editorial position is zero in recipes and
+      "ask your clinician" in the front matter.
+    sources: [aga-2021-lifestyle, aasld-2023, easl-easd-easo-2024, masld-nomenclature-2023, niddk-nafld-diet]
+  physical_activity_per_week:
+    moderate_min: {min: 150, max: 300}
+    vigorous_min: {min: 75, max: 150}
+    note: "Front-matter content, not a recipe rule. Resistance training complements aerobic exercise."
+    sources: [aga-2021-lifestyle, easl-easd-easo-2024]
+  coffee:
+    cups_per_day: "3+"
+    association: "~35% lower odds of significant liver fibrosis; observational only (EASL grades it LoE 4)"
+    note: "May be mentioned ONCE in front matter with the observational caveat. Never a treatment claim; never a recipe rule."
+    sources: [aasld-2023, coffee-fibrosis-meta-2021, easl-easd-easo-2024]
+  fish_servings_per_week: {value: 2, serving: "~3.5 oz cooked", prefer: "fatty fish", sources: [aha-fish-omega3, niddk-nafld-diet]}
+  fda_daily_values:
+    note: "For optional %DV display; 2,000-kcal reference. Total sugars and trans fat carry no DV."
+    values: {fiber_g: 28, protein_g: 50, total_carb_g: 275, total_fat_g: 78, saturated_fat_g: 20, added_sugar_g: 50, sodium_mg: 2300, cholesterol_mg: 300, vitamin_d_mcg: 20, calcium_mg: 1300, iron_mg: 18, potassium_mg: 4700}
+    sources: [fda-daily-values, fda-nutrition-facts-101-9]
+
+per_recipe_constraints:
+  notes: >-
+    PER SERVING (recipe serves 2). Values are DERIVED by splitting the daily targets across the
+    day's eating occasions; all are severity: soft (warnings that keep the recipe). Only hard_blocks
+    reject a recipe. TWO DAY SHAPES are supported and both were checked against every authority
+    figure they claim to respect (see the dossier section 4 arithmetic block):
+      Day A = main (breakfast) + main (lunch) + snack + main (dinner) + dessert  -> 1,725 kcal
+      Day B = main (breakfast) + light_main (soup/salad lunch) + snack + main (dinner) + dessert -> 1,635 kcal
+    total_carbs_g IS A WINDOW AND BOTH ENDS WARN. A recipe that is impressively low in carbohydrate
+    is a DEFECT in this book.
+  meal_categories:
+    main:
+      protein_g:           {floor: 26, target: 31, severity: soft, why: "~25-30 g/meal satiety + MPS threshold with margin; protein independently lowers liver fat in T2D; 'high protein' >=10 g DV", derivation: "1.2-1.6 g/kg/day over the day's occasions; day targets = 1.43-1.53 g/kg at 70 kg", sources: [ajcn-leidy-protein, issn-protein-2017, markova-protein-2017, dga-2025-2030, fda-nutrient-claims-101-54]}
+      fiber_g:             {floor: 7, target: 9, severity: soft, why: "day floors = 25-26 g = 15.1 g/1,000 kcal, clear of ADA's 14; >=5.6 g also qualifies FDA 'high fiber'", derivation: ">=14 g/1,000 kcal at a ~1,700 kcal day", sources: [ada-soc-2026-s5, iom-dri-fiber, fda-nutrient-claims-101-54]}
+      total_carbs_g:       {floor: 32, target: 45, max: 55, severity: soft, why: "A WINDOW, both ends warn. The floor keeps a floor-hugging day at 27.6-27.8% of energy, above the <26% very-low-carbohydrate line — protecting readers on SGLT2 inhibitors (ketogenic patterns discouraged) and on insulin/sulfonylureas (hypoglycemia). The ceiling keeps the day inside the 45-65% AMDR.", derivation: "no ideal percentage per ADA; sized from the day arithmetic", sources: [ada-soc-2026-s5, dga-2025-2030, niddk-nafld-diet]}
+      added_sugar_g_max:   {value: 4, severity: soft, why: "THE TIGHTEST AXIS IN THE BOOK. Fructose drives hepatic de novo lipogenesis independently of calories. Far inside DGA's <=10 g per meal; the day totals 22 g, under AHA's 25 g women's limit.", sources: [dga-2025-2030, aha-added-sugar, aasld-2023, geidl-fructose-rct-2021]}
+      saturated_fat_g_max: {value: 5, severity: soft, why: "<10% of energy; a day at every ceiling is 19 g = 9.9% of 1,725 kcal. Replace with unsaturated fat, especially omega-3.", sources: [dga-2025-2030, aga-2021-lifestyle, niddk-nafld-diet]}
+      sodium_mg_max:       {value: 550, severity: soft, why: "<2,300 mg/day with ~11% margin for brand and database variability; hypertension is a common comorbidity", sources: [dga-2025-2030, ada-soc-2026-s5]}
+      added_oil_tbsp_max:  {value: 1, severity: soft, why: "extra-virgin olive oil first (Mediterranean pattern); keep energy density down", sources: [easl-easd-easo-2024, mayo-healthy-cooking]}
+      energy_kcal:         {min: 380, max: 540, severity: soft, why: "a 1,635-1,725 kcal day is a 500-1,000 kcal deficit for this reader — the AGA route to the >=7-10% weight loss the liver needs", sources: [aga-2021-lifestyle]}
+    light_main:
+      protein_g:           {floor: 20, target: 24, severity: soft, why: "a soup or salad that is a real lunch, not a side", sources: [ajcn-leidy-protein, markova-protein-2017]}
+      fiber_g:             {floor: 6, target: 8, severity: soft, why: "vegetable- and legume-forward formats make this easy; >=5.6 g clears FDA 'high fiber'", sources: [ada-soc-2026-s5, fda-nutrient-claims-101-54]}
+      total_carbs_g:       {floor: 25, target: 35, max: 45, severity: soft, why: "window; the floor keeps a Day B built at floors at 27.6% of energy", sources: [ada-soc-2026-s5]}
+      added_sugar_g_max:   {value: 4, severity: soft, why: "dressings and glazes are where sugar hides in salads and soups", sources: [dga-2025-2030, aha-added-sugar]}
+      saturated_fat_g_max: {value: 4, severity: soft, why: "cheese and creamy dressings are the usual carriers here", sources: [dga-2025-2030]}
+      sodium_mg_max:       {value: 500, severity: soft, why: "broths and canned beans are the usual carriers — specify low-sodium and rinsed", sources: [dga-2025-2030]}
+      added_oil_tbsp_max:  {value: 1, severity: soft, why: "one tablespoon covers a vinaigrette for two", sources: [easl-easd-easo-2024]}
+      energy_kcal:         {min: 300, max: 440, severity: soft, sources: [aga-2021-lifestyle]}
+    snack:
+      protein_g:           {floor: 5, target: 8, severity: soft, why: "the tier also carries vegetable SIDES, which are legitimately low in protein — the floor is a nudge, not a gate", sources: [ajcn-leidy-protein]}
+      fiber_g:             {floor: 3, target: 4, severity: soft, why: ">=2.8 g qualifies FDA 'good source'", sources: [ada-soc-2026-s5, fda-nutrient-claims-101-54]}
+      total_carbs_g:       {floor: 10, target: 16, max: 24, severity: soft, why: "window; the snack slot is part of the plan, not optional — ADA names skipped meals as a hypoglycemia driver", sources: [ada-soc-2026-s5]}
+      added_sugar_g_max:   {value: 3, severity: soft, sources: [dga-2025-2030, aha-added-sugar]}
+      saturated_fat_g_max: {value: 2, severity: soft, sources: [dga-2025-2030]}
+      sodium_mg_max:       {value: 250, severity: soft, why: "also clears FDA's 140 mg/100 g test on most portions", sources: [dga-2025-2030]}
+      added_oil_tbsp_max:  {value: 0.5, severity: soft, sources: [easl-easd-easo-2024]}
+      energy_kcal:         {min: 120, max: 230, severity: soft, sources: [aga-2021-lifestyle]}
+    dessert:
+      protein_g:           {floor: 4, target: 6, severity: soft, why: "Greek yogurt, ricotta, nuts and eggs carry the sweetness instead of sugar", sources: [ajcn-leidy-protein]}
+      fiber_g:             {floor: 2, target: 3, severity: soft, why: "fruit- and nut-based formats; fiber blunts the glucose response", sources: [ada-soc-2026-s5]}
+      total_carbs_g:       {floor: 14, target: 20, max: 28, severity: soft, why: "window; a dessert this book prints is a real portion, not a token", sources: [ada-soc-2026-s5]}
+      added_sugar_g_max:   {value: 7, severity: soft, why: "the single largest added-sugar allowance in the book and still under DGA's 10 g per meal; sweetness must come mostly from whole fruit, spice, vanilla and dairy", sources: [dga-2025-2030, aha-added-sugar]}
+      saturated_fat_g_max: {value: 2, severity: soft, why: "butter, cream and — the trap — coconut are the carriers; the tropical-fat hard block backs this up", sources: [dga-2025-2030]}
+      sodium_mg_max:       {value: 150, severity: soft, sources: [dga-2025-2030]}
+      added_oil_tbsp_max:  {value: 0.5, severity: soft, sources: [easl-easd-easo-2024]}
+      energy_kcal:         {min: 120, max: 220, severity: soft, sources: [aga-2021-lifestyle]}
+  hard_blocks:
+    - rule: no_alcohol_ingredient
+      severity: hard
+      description: >-
+        No alcoholic ingredient at ANY quantity — wine, beer, hard cider, spirits, liqueur, sherry,
+        marsala, mirin, sake, rum, bourbon, "cooking wine", or an alcohol-based extract used by the
+        tablespoon. This is the book's signature rule: alcohol should be restricted or eliminated in
+        fatty liver, moderate use increases the probability of advanced fibrosis, and retention
+        after cooking is unreliable. (Vanilla or almond extract by the teaspoon is exempt.)
+      sources: [aga-2021-lifestyle, aasld-2023, easl-easd-easo-2024, niddk-nafld-diet]
+    - rule: no_deep_fried
+      severity: hard
+      description: >-
+        Not deep-fried, batter-and-fried, or breaded-and-fried, and no shallow-frying in a depth of
+        oil. Prefer bake / roast / sheet-pan / grill / broil / steam / poach / simmer / saute or
+        stir-fry in minimal olive oil / no-cook.
+      sources: [aga-2021-lifestyle, mayo-healthy-cooking, dga-2025-2030]
+    - rule: no_sugar_sweetened_beverage_or_juice_component
+      severity: hard
+      description: >-
+        No sugar-sweetened beverage and no FRUIT JUICE as a recipe component — soda, sweet tea,
+        sports and energy drinks, sweetened coffee drinks, and orange/apple/grape/pineapple/cranberry
+        juice or juice concentrate. NIDDK names juices alongside soda as a source of the simple
+        sugars to avoid. Whole fruit is encouraged instead. Lemon and lime juice as an acid or flavor
+        agent are exempt — they are this book's main salt replacement.
+      sources: [niddk-nafld-diet, dga-2025-2030, easl-easd-easo-2024, aga-2021-lifestyle]
+    - rule: no_high_fructose_sweetener
+      severity: hard
+      description: >-
+        No high-fructose corn syrup, corn syrup, glucose-fructose syrup, or agave nectar/syrup at any
+        quantity. Fructose raises the risk of MASLD, MASH and advanced fibrosis independent of
+        calorie intake, and the AGA asks readers to limit or eliminate commercially produced fructose.
+        These are never necessary and always replaceable.
+      sources: [aasld-2023, aga-2021-lifestyle, geidl-fructose-rct-2021, niddk-nafld-diet]
+    - rule: no_added_sugar_primary_base
+      severity: hard
+      description: >-
+        The recipe is not essentially a sugar-delivery vehicle — added sugar (including honey, maple
+        syrup, molasses, brown sugar and date syrup) is not the primary ingredient by weight.
+        Desserts still respect the dessert added-sugar ceiling.
+      sources: [dga-2025-2030, aha-added-sugar, aasld-2023]
+    - rule: no_refined_grain_base
+      severity: hard
+      description: >-
+        The carbohydrate base is not a refined grain — white bread, white rice, regular pasta, white
+        flour tortillas, instant/extruded cereal. Use whole or intact grains (oats, quinoa, barley,
+        farro, bulgur, brown rice, whole-grain bread and pasta), legumes, or vegetables. The DGA asks
+        for a significant reduction in highly processed refined carbohydrates and NIDDK for more
+        low-glycemic-index foods.
+      sources: [dga-2025-2030, niddk-nafld-diet, ada-soc-2026-s5]
+    - rule: no_processed_cured_meat_base
+      severity: hard
+      description: >-
+        Not built primarily on processed or cured meat — bacon, sausage, hot dogs, deli meats,
+        salami, pancetta, chorizo. The AGA asks readers to minimize saturated fat specifically from
+        red and processed meat; these are also the book's worst sodium category. Small flavoring
+        amounts remain bounded by the soft saturated-fat and sodium ceilings.
+      sources: [aga-2021-lifestyle, dga-2025-2030, niddk-nafld-diet]
+    - rule: no_tropical_saturated_fat_base
+      severity: hard
+      description: >-
+        No coconut oil, palm oil, palm kernel oil or coconut cream as an added culinary fat, and no
+        full-fat coconut milk in quantity. These are the "healthy-sounding" saturated fats — coconut
+        oil is roughly 82-90% saturated — and they would quietly break the <10%-of-energy saturated
+        fat rule while looking virtuous on the ingredient list. Coconut water, coconut aminos,
+        coconut flour and a small scatter of unsweetened shredded coconut are exempt.
+      sources: [dga-2025-2030, aga-2021-lifestyle, niddk-nafld-diet]
+
+nutrition_panel:
+  notes: >-
+    FDA-Nutrition-Facts-style per-serving panel computed via USDA FoodData Central (the LLM picks a
+    food per ingredient; Python does the arithmetic and divides by 2 servings;
+    src/nutrition/qualifiers.py enforces the salted/unsalted and raw/cooked basis of each pick).
+    THE HERO SIX, PRINTED UP FRONT IN THIS ORDER: Calories, Total Carbohydrate, Dietary Fiber,
+    Added Sugars, Protein, Saturated Fat — three liver levers (calories, added sugars, saturated
+    fat) and three blood-sugar levers (total carbohydrate, fiber, protein). added_sugar_g is
+    LLM-estimated because USDA carries no added-sugars value for generic foods.
+    NET CARBS IS DELIBERATELY NOT PRINTED: it has no FDA definition, the ADA counts total
+    carbohydrate, and a reader dosing insulin must not be shown a subtracted number.
+  nutrients:
+    - {key: calories, label_en: "Calories", unit: kcal, tier: core, on_recipe_panel: true, usda_nutrient_id: 1008, why: "hero 1 — weight loss is the therapy and it is dose-responsive", sources: [aga-2021-lifestyle, easl-easd-easo-2024]}
+    - {key: carbs_g, label_en: "Total Carbohydrate", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 1005, why: "hero 2 — the FDA-declared figure; ADA counts TOTAL carbohydrate and readers on insulin dose against it", sources: [fda-nutrition-facts-101-9, ada-soc-2026-s5]}
+    - {key: fiber_g, label_en: "Dietary Fiber", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 1079, why: "hero 3 — carbohydrate quality made visible; >=14 g/1,000 kcal", sources: [ada-soc-2026-s5, iom-dri-fiber]}
+    - {key: added_sugar_g, label_en: "Added Sugars", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: null, status: estimated, why: "hero 4 — THE liver number; fructose acts independently of calories. USDA has no added-sugars value for generic foods, so it is LLM-estimated from the added sweeteners and flagged.", sources: [dga-2025-2030, aha-added-sugar, aasld-2023, geidl-fructose-rct-2021, usda-fdc]}
+    - {key: protein_g, label_en: "Protein", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 1003, why: "hero 5 — lowers liver fat independently of weight, preserves lean mass in a deficit, carries satiety", sources: [markova-protein-2017, ajcn-leidy-protein, dga-2025-2030]}
+    - {key: saturated_fat_g, label_en: "Saturated Fat", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 1258, why: "hero 6 — <10% of energy; minimize from red and processed meat, replace with unsaturated", sources: [dga-2025-2030, aga-2021-lifestyle, niddk-nafld-diet]}
+    - {key: fat_g, label_en: "Total Fat", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 1004, why: "FDA panel item; energy density", sources: [fda-daily-values]}
+    - {key: sodium_mg, label_en: "Sodium", unit: mg, tier: core, on_recipe_panel: true, usda_nutrient_id: 1093, why: "<2,300 mg/day; hypertension is a common comorbidity", sources: [dga-2025-2030, ada-soc-2026-s5]}
+    - {key: sugar_g, label_en: "Total Sugars", unit: g, tier: core, on_recipe_panel: true, usda_nutrient_id: 2000, why: "FDA panel item (no DV); printed so the naturally-occurring vs added split is visible next to Added Sugars", sources: [fda-nutrition-facts-101-9]}
+    - {key: cholesterol_mg, label_en: "Cholesterol", unit: mg, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1253, why: "FDA-panel-mandatory", sources: [fda-daily-values]}
+    - {key: trans_fat_g, label_en: "Trans Fat", unit: g, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1257, why: "FDA-panel-mandatory (no DV); sparse in USDA -> None is acceptable", sources: [fda-daily-values]}
+    - {key: potassium_mg, label_en: "Potassium", unit: mg, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1092, why: "FDA-panel-mandatory; id verified in nutrient.csv 2026-07-19", sources: [fda-daily-values]}
+    - {key: calcium_mg, label_en: "Calcium", unit: mg, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1087, why: "FDA-panel-mandatory", sources: [fda-daily-values]}
+    - {key: iron_mg, label_en: "Iron", unit: mg, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1089, why: "FDA-panel-mandatory", sources: [fda-daily-values]}
+    - {key: vitamin_d_mcg, label_en: "Vitamin D", unit: mcg, tier: extended, on_recipe_panel: true, usda_nutrient_id: 1114, why: "FDA-panel-mandatory; sparse in USDA -> None is acceptable; id verified 2026-07-19", sources: [fda-daily-values]}
+    - {key: net_carbs_g, label_en: "Net Carbs", unit: g, tier: derived, on_recipe_panel: false, usda_nutrient_id: null, derivation: "max(0, carbs_g - fiber_g - sugar_alcohol_g)", why: "COMPUTED BY THE MODEL BUT DELIBERATELY NOT PRINTED. No FDA definition; ADA counts total carbohydrate; showing it to a reader dosing insulin is a safety problem. Retained only so legacy JSON validates.", sources: [fda-nutrition-facts-101-9, ada-soc-2026-s5]}
+    - {key: saturated_fat_pct_kcal, label_en: "Sat fat % kcal", unit: percent, tier: internal, on_recipe_panel: false, usda_nutrient_id: null, derivation: "saturated_fat_g * 9 / calories * 100", why: "the <10%-of-energy frame, per recipe", sources: [dga-2025-2030]}
+    - {key: protein_per_100kcal, label_en: "Protein density", unit: g/100kcal, tier: internal, on_recipe_panel: false, usda_nutrient_id: null, derivation: "protein_g / calories * 100", why: "internal targeting — matters more than usual because GLP-1 RA users eat less volume", sources: [ajcn-leidy-protein, essence-semaglutide-2025]}
+  considered_not_included:
+    - {name: "glycemic index / glycemic load per recipe", reason: "not reliably computable for a mixed cooked dish from a food database, and no guideline body endorses a GI/GL target. NIDDK's 'eat more low-glycemic-index foods' is citable as a food-choice direction, not as a printed number. Fiber + the refined-grain block serve the same goal."}
+    - {name: "net carbs as a printed hero", reason: "no FDA definition; ADA counts total carbohydrate; a reader dosing insulin against a subtracted number is a safety problem. Deliberate divergence from the parent engine."}
+    - {name: "carbohydrate choices / exchanges", reason: "the '15 g = 1 carbohydrate choice' convention could not be sourced to a retrievable primary document. Print total carbohydrate in grams instead."}
+    - {name: "monounsaturated fat", reason: "on-brand for a Mediterranean pattern but USDA coverage is uneven across generic foods and no rule would read it; the olive-oil-first prose and the saturated-fat ceiling carry the message."}
+
+plate_composition:
+  applies_to: [main, light_main]
+  non_starchy_vegetables: ">= 1/2 of the plate (fiber, volume, low energy density)"
+  lean_protein: "~1/4 to 1/3 (fish, poultry, eggs, legumes, tofu, low-fat dairy — not red or processed meat)"
+  quality_carbohydrate: "<= 1/4, a measured portion of whole grain, legume or whole fruit"
+  fat: "extra-virgin olive oil first; nuts, seeds, avocado, fatty fish"
+  severity: soft
+  sources: [easl-easd-easo-2024, aga-2021-lifestyle, niddk-nafld-diet, ada-soc-2026-s5]
+
+recipe_categories:
+  breakfasts:
+    book_title: "Breakfasts"
+    planner_meal_types: [breakfast]
+    nutrient_tier: main
+    target_recipe_count: "15-17"
+    intent: "Start the day with enough protein and fiber that hunger stays gone until lunch, instead of spiking and crashing by ten."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.main"]
+    character: >-
+      Fast savory or lightly sweet breakfasts: eggs and egg whites, Greek yogurt and cottage cheese
+      bowls, steel-cut and rolled oats, whole-grain toast with a real topping, tofu scrambles,
+      vegetable-loaded skillets. >=26 g protein, >=7 g fiber, 32-55 g total carbohydrate, <=4 g added
+      sugar. Sweetness comes from whole fruit, cinnamon and vanilla — never from juice, syrup or
+      sweetened cereal. Many are no-cook or under 15 minutes.
+  soups_salads:
+    book_title: "Soups & Salads"
+    planner_meal_types: [lunch]
+    nutrient_tier: light_main
+    target_recipe_count: "13-15"
+    intent: "Soups and salads that work as an actual light meal, not an afterthought beside something else."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.light_main"]
+    character: >-
+      Brothy and blended vegetable soups, bean and lentil soups, and substantial main-plate salads
+      and grain bowls. Each carries a real protein (chicken, fish, canned tuna or salmon, beans,
+      lentils, eggs, feta in a measured amount) and a measured whole grain or legume. Olive-oil
+      vinaigrettes made in the bowl, not bottled. Low-sodium broth and no-salt-added canned goods,
+      rinsed. >=20 g protein, >=6 g fiber, 25-45 g total carbohydrate, <=500 mg sodium.
+  lunches:
+    book_title: "Lunches"
+    planner_meal_types: [lunch]
+    nutrient_tier: main
+    target_recipe_count: "13-15"
+    intent: "Midday plates you can put together between other things and that hold you through the afternoon."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.main"]
+    character: >-
+      Bowls, wraps in whole-grain tortillas or lettuce, open-faced whole-grain sandwiches, skillet
+      plates, and assembled lunches from things already in the fridge. Half the plate non-starchy
+      vegetables, a lean protein, a measured whole grain or legume. Batch- and desk-friendly:
+      several should travel and be eaten cold or barely reheated.
+  poultry_meat_dinners:
+    book_title: "Chicken, Turkey & Lean Meat Dinners"
+    planner_meal_types: [dinner]
+    nutrient_tier: main
+    target_recipe_count: "12-14"
+    intent: "The weeknight dinners people actually cook — chicken and turkey first, lean pork and beef in measured portions."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.main"]
+    character: >-
+      One-pan, sheet-pan and skillet dinners on skinless chicken breast or thigh, ground turkey or
+      chicken, pork tenderloin, or a lean beef cut in a modest portion, with plenty of non-starchy
+      vegetables and a measured whole grain. Sauces are built from tomato, broth, lemon, vinegar,
+      mustard, herbs and spices — never from cream, cheese sauce or a bottled sweet glaze, and never
+      from wine or beer. Red meat appears in measured portions only and never as bacon, sausage or
+      deli meat.
+  fish_seafood_dinners:
+    book_title: "Fish & Seafood Dinners"
+    planner_meal_types: [dinner]
+    nutrient_tier: main
+    target_recipe_count: "10-12"
+    intent: "The two fatty-fish servings a week, made easy enough that they actually happen."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.main"]
+    character: >-
+      Salmon, trout, sardines, mackerel and tuna for omega-3, plus cod, tilapia, shrimp and scallops
+      for the fast weeknight. Roasted, baked in parchment, broiled, seared in a little olive oil, or
+      simmered in a tomato or broth base. Untreated (not brine-injected) seafood; canned fish
+      specified as low-sodium and drained. Fifteen-minute formats are welcome here — fish is the
+      fastest protein in the book.
+  vegetable_meatless_dinners:
+    book_title: "Vegetable & Meatless Dinners"
+    planner_meal_types: [dinner]
+    nutrient_tier: main
+    target_recipe_count: "9-11"
+    intent: "Dinners built on vegetables, beans and lentils — plant protein lowers liver fat just as animal protein does."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.main"]
+    character: >-
+      Bean and lentil stews, chickpea skillets, tofu and tempeh stir-fries in minimal olive oil,
+      stuffed vegetables, whole-grain bowls, and eggs at dinner. Hitting >=26 g protein without meat
+      is the design problem here: pair legumes with tofu, eggs, Greek yogurt or a measured amount of
+      cheese, and say so in the ingredient list. No-salt-added canned beans, rinsed.
+  snacks_sides:
+    book_title: "Snacks & Sides"
+    planner_meal_types: [snack]
+    nutrient_tier: snack
+    target_recipe_count: "11-13"
+    intent: "The gap between meals, where most plans fall apart — plus the vegetable side that turns a protein into a dinner."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.snack"]
+    character: >-
+      Two kinds of recipe under one roof. SNACKS: Greek-yogurt and cottage-cheese cups, hummus and
+      bean dips with raw vegetables, roasted chickpeas or edamame, nut-and-fruit combinations, a
+      hard-boiled-egg plate. SIDES: roasted, steamed or skillet vegetables, simple slaws, a measured
+      whole-grain side. Sides are legitimately lower in protein than snacks — that is expected and
+      the protein floor is a nudge, not a gate. The snack slot is part of the daily plan, not
+      optional.
+  desserts:
+    book_title: "Desserts"
+    planner_meal_types: [dessert]
+    nutrient_tier: dessert
+    target_recipe_count: "9-11"
+    intent: "A plan you resent is a plan you abandon. Real desserts that fit inside the day's added-sugar budget."
+    dossier_refs: ["doc:section-4", "yaml:per_recipe_constraints.meal_categories.dessert"]
+    character: >-
+      Fruit-forward and dairy-forward: baked or roasted fruit, berry compotes over Greek yogurt or
+      ricotta, chia and yogurt puddings, oat-and-nut crumbles, cocoa and nut-butter bites, poached
+      pears, frozen-fruit "nice cream". Sweetness comes mostly from whole fruit, spice, vanilla and
+      cocoa, with <=7 g added sugar per serving. No coconut oil or coconut cream (the tropical-fat
+      block), no corn syrup or agave, no alcohol. Under 30 minutes hands-on — a chilled dessert must
+      say so as make-ahead time, and most should not need chilling at all.
+
+ingredients:
+  emphasize:
+    - {name: "extra-virgin olive oil", category: fat, why: "the signature fat of the Mediterranean pattern named by all three guideline bodies", sources: [easl-easd-easo-2024, aga-2021-lifestyle, ada-masld-consensus-2025]}
+    - {name: "non-starchy vegetables (leafy greens, broccoli, cauliflower, peppers, zucchini, green beans, tomatoes, mushrooms, onions)", category: vegetable, why: "fiber and volume at low energy density — the plate half", sources: [niddk-nafld-diet, ada-soc-2026-s5]}
+    - {name: "fatty fish (salmon, sardines, mackerel, trout, tuna)", category: lean_protein, why: "omega-3; replace saturated fat with unsaturated, especially omega-3; ~2 servings/week", sources: [niddk-nafld-diet, aha-fish-omega3]}
+    - {name: "white fish and shellfish (cod, tilapia, shrimp, scallops)", category: lean_protein, why: "the fastest lean protein for a 30-minute book", sources: [aha-fish-omega3]}
+    - {name: "skinless poultry (chicken, turkey)", category: lean_protein, why: "lean complete protein without the saturated fat of red meat", sources: [aga-2021-lifestyle]}
+    - {name: "eggs and egg whites", category: lean_protein, why: "high-quality protein, fast, universally stocked", sources: [issn-protein-2017]}
+    - {name: "legumes (beans, lentils, chickpeas) in measured portions", category: plant_protein, why: "plant protein lowers liver fat as effectively as animal protein, and brings viscous fiber", sources: [markova-protein-2017, ada-soc-2026-s5]}
+    - {name: "tofu, tempeh, edamame", category: plant_protein, why: "plant protein plus fiber", sources: [markova-protein-2017]}
+    - {name: "nonfat or low-fat Greek yogurt and cottage cheese", category: lean_protein, why: "protein density with little saturated fat; the backbone of the dessert chapter", sources: [ajcn-leidy-protein, dga-2025-2030]}
+    - {name: "intact whole grains (oats, quinoa, barley, farro, bulgur, brown rice) and whole-grain bread and pasta, in measured portions", category: whole_grain, why: "DGA asks for 2-4 servings/day and a significant reduction in refined carbohydrate; NIDDK asks for more low-glycemic-index foods", sources: [dga-2025-2030, niddk-nafld-diet, ada-soc-2026-s5]}
+    - {name: "whole fruit, especially berries and lower-sugar fruit", category: fruit, why: "fiber and sweetness in the form the liver handles best — whole fruit, never juice", sources: [niddk-nafld-diet, ada-soc-2026-s5]}
+    - {name: "nuts and seeds including walnuts, chia and ground flax", category: fat_fiber, why: "unsaturated fat plus viscous fiber; a Mediterranean staple", sources: [easl-easd-easo-2024]}
+    - {name: "garlic, herbs, spices, vinegar, lemon and lime", category: flavor, why: "the flavor lever that replaces salt and sugar and keeps recipes inside their ceilings", sources: [dga-2025-2030, mayo-healthy-cooking]}
+  limit:
+    - {name: "red meat (lean cuts only)", category: protein, limit_qty: "modest measured portions, a minority of the dinner chapters", why: "the AGA names red meat specifically when asking readers to minimize saturated fat", sources: [aga-2021-lifestyle, niddk-nafld-diet]}
+    - {name: "added sweeteners of any kind (sugar, honey, maple syrup, molasses, date syrup)", category: added_sugar, limit_qty: "counts against the added-sugar ceiling", why: "table sugar is itself a major source of fructose", sources: [niddk-nafld-diet, dga-2025-2030, aha-added-sugar]}
+    - {name: "full-fat dairy, butter, cream, full-fat cheese", category: saturated_fat, limit_qty: "small flavoring amounts only", why: "<10% of energy from saturated fat; replace with unsaturated", sources: [dga-2025-2030, niddk-nafld-diet]}
+    - {name: "dried fruit and higher-sugar tropical fruit (dates, raisins, mango, banana)", category: fruit, limit_qty: "small measured amounts", why: "concentrated sugars in a small volume", sources: [niddk-nafld-diet, ada-soc-2026-s5]}
+    - {name: "starchy vegetables (potato, corn, peas) in large portions", category: carb, limit_qty: "measured, and counted as the carbohydrate portion", why: "carbohydrate quality and the tier window", sources: [ada-soc-2026-s5]}
+    - {name: "salt", category: sodium, limit_qty: "season with acid and aromatics first; specify low-sodium and rinsed for anything canned", why: "<2,300 mg/day", sources: [dga-2025-2030, ada-soc-2026-s5]}
+    - {name: "non-nutritive sweeteners", category: sweetener, limit_qty: "sparingly, and never as a selling point", why: "the DGA 2025-2030 states no amount is recommended as part of a healthy diet; the ADA allows them as a substitute for sugar-sweetened products. Recorded disagreement — this book prefers whole fruit, spice and vanilla and uses NNS rarely if at all.", sources: [dga-2025-2030, ada-soc-2026-s5]}
+  avoid:
+    - {name: "alcohol in any form, including cooking wine, mirin and beer", category: alcohol, why: "restrict or eliminate; moderate use increases the probability of advanced fibrosis", sources: [aga-2021-lifestyle, aasld-2023, easl-easd-easo-2024]}
+    - {name: "sugar-sweetened beverages and fruit juice as a component", category: added_sugar, why: "avoid SSBs; NIDDK names juices alongside soda", sources: [easl-easd-easo-2024, niddk-nafld-diet, dga-2025-2030]}
+    - {name: "high-fructose corn syrup, corn syrup and agave nectar", category: added_sugar, why: "limit or eliminate commercially produced fructose; fructose acts on the liver independently of calories", sources: [aga-2021-lifestyle, aasld-2023, geidl-fructose-rct-2021]}
+    - {name: "refined-grain bases (white bread, white rice, regular pasta, instant cereal)", category: refined_grain, why: "significantly reduce highly processed refined carbohydrates", sources: [dga-2025-2030, niddk-nafld-diet]}
+    - {name: "processed and cured meats (bacon, sausage, hot dogs, deli meats, salami)", category: processed_meat, why: "saturated fat and sodium; named specifically by the AGA", sources: [aga-2021-lifestyle, dga-2025-2030]}
+    - {name: "coconut oil, palm oil, palm kernel oil, coconut cream", category: saturated_fat, why: "~82-90% saturated for coconut oil; the healthy-sounding fats that break the saturated-fat rule", sources: [dga-2025-2030, aga-2021-lifestyle]}
+    - {name: "deep-fried and batter-fried food, heavy cream, cheese and butter sauces", category: fried_fatty, why: "saturated fat and energy density", sources: [aga-2021-lifestyle, mayo-healthy-cooking]}
+    - {name: "ultra-processed snack foods, pastries and packaged sweets", category: ultra_processed, why: "dose-responsive rise in NAFLD risk across 9 studies and 60,961 adults; EASL asks readers to limit UPF", sources: [upf-nafld-meta-2023, easl-easd-easo-2024]}
+
+cooking_methods:
+  prefer: [bake, roast, sheet-pan, grill, broil, steam, poach, simmer, saute-minimal-olive-oil, stir-fry-minimal-olive-oil, no-cook]
+  avoid: [deep-fry, shallow-fry-in-oil, batter-and-fry, bread-and-fry, flambe, deglaze-with-wine-or-beer]
+  oil_guidance: >-
+    Extra-virgin olive oil first, <= ~1 tbsp per serving on mains and light mains. Use a nonstick or
+    well-seasoned pan, brush or mist rather than pour, and deglaze with broth, tomato, citrus or
+    vinegar — never with wine or beer.
+  severity_avoid: hard
+  sources: [easl-easd-easo-2024, aga-2021-lifestyle, mayo-healthy-cooking, aasld-2023]
+
+masld_diabetes_mitigations:
+  liver_fat_steatosis:
+    apply: ["energy inside the tier band", "added sugar at the tightest ceiling in the book", "saturated fat <=10% of energy", "unsaturated-fat-forward, olive oil first", "zero alcohol", "no fructose syrups", "no ultra-processed components"]
+    note: "The dose-responsive weight-loss gradient (>=5% / 7-10% / >=10%) is what the energy ceilings serve."
+    sources: [easl-easd-easo-2024, aga-2021-lifestyle, aasld-2023, geidl-fructose-rct-2021, upf-nafld-meta-2023]
+  blood_sugar_stability:
+    apply: ["carbohydrate present and bounded at BOTH ends", "fiber floor on every recipe", "protein at every eating occasion", "no refined-grain base", "print TOTAL carbohydrate so a dose can be matched to it"]
+    note: "ADA: no ideal carbohydrate percentage; emphasize minimally processed, high-fiber sources at >=14 g/1,000 kcal."
+    sources: [ada-soc-2026-s5, niddk-nafld-diet, dga-2025-2030]
+  glp1_receptor_agonist:
+    apply: ["nutrient-dense per bite", "moderate fat", "nothing that only works at large volume", "a gentle-texture option in every chapter"]
+    note: >-
+      GLP-1 RAs are now preferred for glycemic management in type 2 diabetes with MASH (ESSENCE:
+      62.9% vs 34.3% MASH resolution at 72 weeks). Nausea, early satiety and reduced appetite are
+      the common experience — a low-protein, low-fiber plate fails a reader who eats less volume.
+    sources: [essence-semaglutide-2025, ada-soc-2026-s4, ada-masld-consensus-2025]
+  sglt2_inhibitor:
+    apply: ["carbohydrate FLOOR on every tier", "never market or design a recipe as low-carb or keto"]
+    note: "Ketogenic and very-low-carbohydrate patterns are discouraged on SGLT inhibition (euglycemic ketoacidosis). This is the primary safety reason the carbohydrate floor exists."
+    sources: [ada-soc-2026-s5, ada-soc-2026-s4]
+  insulin_or_sulfonylurea:
+    apply: ["consistent carbohydrate across the day's slots", "the snack slot is part of the plan, not optional", "total carbohydrate printed, never net carbs"]
+    note: "Hypoglycemia risk. A reader dosing insulin against a subtracted 'net carb' number is a safety problem, which is why this book does not print one."
+    sources: [ada-soc-2026-s5, fda-nutrition-facts-101-9]
+  sodium_and_blood_pressure:
+    apply: ["<=550 mg per main", "'no-salt-added' or 'low-sodium' specified on every canned or jarred item, and rinsed", "acid, herbs and aromatics as the flavour lever"]
+    note: "Hypertension is one of the five cardiometabolic criteria that define MASLD, so a large share of readers have it."
+    sources: [dga-2025-2030, ada-soc-2026-s5, masld-nomenclature-2023]
+  safety_boundaries:
+    ckd_caveat: "Chronic kidney disease restricts protein (0.55-0.60 g/kg/day, or 0.6-0.8 with diabetes) under clinician guidance. The book's protein targets assume no such restriction."
+    cirrhosis_caveat: "Advanced fibrosis and cirrhosis INVERT several rules — energy and protein requirements rise (>=35 kcal/kg/day, 1.2-1.5 g/kg/day) and alcohol must stop completely and permanently. This book is written for the pre-cirrhotic reader."
+    fiber_ramp: "Increase fiber gradually with adequate fluids to avoid GI discomfort."
+    sources: [kdoqi-ckd-2020, easl-easd-easo-2024, mayo-healthy-cooking]
+  claims_the_book_must_not_make:
+    banned:
+      - "No 'detox', 'cleanse' or 'flush' language — no food or recipe detoxifies a liver."
+      - "No cure or reversal promise. The weight-loss thresholds are dose-response probabilities from trials. 'Helps lower liver fat' is the honest verb."
+      - "No per-recipe glycemic index or glycemic load number — not reliably computable for a mixed dish and endorsed by no guideline body."
+      - "No vitamin E recommendation — AASLD's 800 IU evidence is for NON-DIABETIC non-cirrhotic patients, the opposite of this reader."
+      - "No named 'liver superfoods' (turmeric, milk thistle, apple cider vinegar, lemon water, beetroot, dandelion)."
+      - "No 'a little alcohol is fine' — moderate use increases the probability of advanced fibrosis."
+      - "Coffee is an association (observational, EASL LoE 4), mentionable once in front matter, never a treatment claim."
+      - "No 'net carbs'."
+      - "No metabolism-boosting or fat-burning language."
+    sources: [aasld-2023, aga-2021-lifestyle, easl-easd-easo-2024, ada-soc-2026-s5, fda-nutrition-facts-101-9]
+  disclaimer: >-
+    This book is for general educational purposes only and is not individualized medical or
+    nutritional advice. It does not diagnose, treat, or replace care from your physician,
+    hepatologist, or registered dietitian. Nutrition information is estimated using USDA data and
+    varies with ingredients, brands, and preparation. Talk to your clinician before making
+    significant dietary changes — especially if you take insulin or a sulfonylurea (eating fewer
+    carbohydrates without adjusting the dose can cause hypoglycemia), take an SGLT2 inhibitor
+    (very-low-carbohydrate and ketogenic patterns are discouraged), have chronic kidney disease
+    (protein is deliberately restricted under clinician guidance), have advanced fibrosis or
+    cirrhosis (energy and protein needs are higher, not lower, and alcohol must stop completely),
+    are pregnant or breastfeeding, or have a history of an eating disorder. Increase fiber gradually
+    and drink plenty of water.
+
+easy_recipe_constraints:
+  is_editorial: true
+  note: >-
+    "100+ Recipes in Under 30 Minutes from Everyday Ingredients" is on the cover, and the description
+    answers the no-time objection with "Under thirty minutes, every recipe, no exceptions."
+    TREAT 30 MINUTES AS A PROMISE, NOT A GUIDELINE. This is the one editorial cap that is tighter
+    than the engine's parent cookbook, which allowed 45.
+  max_ingredients: 10
+  max_active_time_min: 25
+  max_total_time_min: 30
+  max_steps: 7
+  passive_time_rule: >-
+    Optional chilling, marinating or resting lives in the separate `passive_time` field, never in
+    cook time, and never counts toward the 30 minutes. It must be genuinely optional or clearly
+    labelled make-ahead. Most desserts should not need it at all.
+  equipment: >-
+    Common home kitchen only — stovetop, oven, sheet pan, skillet, saucepan, blender. NO air fryer,
+    pressure cooker, sous-vide or specialty gear: the recipe must work for a reader who owns none of
+    them.
+  ingredient_accessibility: >-
+    Every ingredient stocked by a mainstream US supermarket (Walmart, Kroger, Target). No
+    health-food-shop items (protein powder, nutritional yeast, psyllium, specialty flours, vital
+    wheat gluten, aminos) and nothing available only at an international market.
+  formats_to_favor: [one-pan, sheet-pan, skillet, one-bowl, no-cook, assemble-only, meal-prep-friendly]
+  temperature_convention: "Oven temperatures in °F and °C; stovetop heat as a level word plus a sensory cue, never a numeric setpoint."
+  exceptions_allowed: "None on the 30-minute cap. A small number of clearly-labelled make-ahead desserts may carry optional chilling time outside it."
+
+prompt_snippets:
+  ideation: |
+    You are creating recipes for "The Fatty Liver Diet Cookbook for Type 2 Diabetes" — quick,
+    everyday recipes for US adults who have type 2 diabetes AND have been told they have fatty liver
+    (clinically MASLD). Roughly two out of three people with type 2 diabetes have some degree of
+    fatty liver, and both conditions grow from the same root: insulin resistance. THE BOOK'S WHOLE
+    PREMISE IS THAT THIS IS ONE WAY OF EATING, NOT TWO DIETS. Every recipe idea must be:
+    - MEDITERRANEAN IN CHARACTER: vegetables, legumes, fish and seafood, poultry, whole grains,
+      nuts and seeds, and extra-virgin olive oil as the fat. This is the pattern named by every
+      major guideline body for fatty liver, and it lowers liver fat with or without weight loss.
+    - VERY LOW IN ADDED SUGAR: this is the tightest rule in the book, because fructose drives the
+      liver to make fat independently of calories. Sweetness comes from whole fruit, spice, vanilla
+      and cocoa. NEVER from fruit juice, soda, corn syrup, high-fructose corn syrup or agave.
+    - PROTEIN-FORWARD: >=26 g protein on a main. Protein lowers liver fat independently of body
+      weight, protects muscle while the reader loses weight, and is what makes a smaller plate
+      satisfying. From fish, seafood, poultry, eggs, legumes, tofu and low-fat dairy — NOT from
+      bacon, sausage or deli meat, and only occasionally from lean red meat.
+    - HIGH IN FIBER: >=7 g on a main, from vegetables, legumes, whole grains, fruit, nuts and seeds.
+    - CARBOHYDRATE-CONTAINING, NOT LOW-CARB. This book deliberately refuses the "cut all carbs, try
+      keto" advice the reader already found online. Every main carries 32-55 g of total
+      carbohydrate from a QUALITY source — a whole grain, a legume, a starchy vegetable in a
+      measured portion, or whole fruit. AN IDEA THAT IS IMPRESSIVELY LOW IN CARBOHYDRATE IS A
+      DEFECT, NOT A FEATURE: readers on SGLT2 inhibitors are cautioned against ketogenic patterns
+      and readers on insulin or a sulfonylurea can go hypoglycemic.
+    - ALCOHOL-FREE: no wine, beer, cider, spirits, liqueur, mirin, sake or "cooking wine" at any
+      quantity, in any quantity, for any reason. This is a fatty liver book.
+    - MODEST IN SATURATED FAT: no deep-frying, no cream or cheese sauces, no coconut oil or palm
+      oil, no coconut cream.
+    - UNDER 30 MINUTES, EVERYDAY INGREDIENTS: <=10 ingredients, <=25 minutes active, <=30 minutes
+      total, <=7 steps, no air fryer or pressure cooker, and nothing the reader would have to go to
+      a health-food shop to buy. One-pan, sheet-pan, skillet and no-cook formats are welcome.
+    Half the plate is non-starchy vegetables on mains and light mains. Bold, real flavour built from
+    garlic, herbs, spices, citrus and vinegar — never bland "diet food", and never a scare story.
+  drafting: |
+    AIM AT THE TARGETS, DO NOT JUST CLEAR THE FLOORS. Every floor below is a MINIMUM, not a
+    starting line. Land NEAR the target on each axis, inside the band — a main at ~31 g protein
+    and ~460 kcal is exactly right; 49 g protein and 545 kcal is over-portioned, not better.
+    Overshooting protein displaces the carbohydrate and unsaturated fat the day is built on and
+    eats into the energy deficit this reader's liver depends on.
+    Diet rules (must be followed), PER SERVING (recipe serves 2):
+    - MAIN (breakfasts, lunches, all dinner chapters): protein >=26 g (aim 31); fiber >=7 g (aim 9);
+      TOTAL CARBOHYDRATE 32-55 g (aim 45) — this is a WINDOW and the FLOOR MATTERS AS MUCH AS THE
+      CEILING; added sugar <=4 g; saturated fat <=5 g; sodium <=550 mg; <=1 tbsp added olive oil;
+      ~380-540 kcal.
+    - LIGHT MAIN (soups and salads eaten as a lunch): protein >=20 g (aim 24); fiber >=6 g (aim 8);
+      total carbohydrate 25-45 g (aim 35); added sugar <=4 g; saturated fat <=4 g; sodium <=500 mg;
+      <=1 tbsp added olive oil; ~300-440 kcal.
+    - SNACK / SIDE: protein >=5 g (aim 8); fiber >=3 g (aim 4); total carbohydrate 10-24 g (aim 16);
+      added sugar <=3 g; saturated fat <=2 g; sodium <=250 mg; ~120-230 kcal. A vegetable side is
+      legitimately lower in protein than a snack — that is expected.
+    - DESSERT: protein >=4 g (aim 6); fiber >=2 g (aim 3); total carbohydrate 14-28 g (aim 20);
+      added sugar <=7 g; saturated fat <=2 g; sodium <=150 mg; ~120-220 kcal.
+    WHY THE CARBOHYDRATE FLOOR EXISTS: a recipe that is impressively low in carbohydrate is a DEFECT
+    in this book. Readers on SGLT2 inhibitors are cautioned against ketogenic patterns and readers
+    on insulin or a sulfonylurea risk hypoglycemia. Never describe a recipe as low-carb or keto.
+    HARD RULES FOR EVERY RECIPE:
+    - NO ALCOHOL AT ANY QUANTITY — no wine, beer, hard cider, spirits, liqueur, sherry, marsala,
+      mirin, sake or "cooking wine". Deglaze with broth, tomato, citrus or vinegar instead.
+    - No fruit juice, soda, sweet tea, sports or energy drink as a component. (Lemon and lime juice
+      as an acid or flavour agent are fine and are this book's main salt replacement.)
+    - No high-fructose corn syrup, corn syrup or agave nectar, at any quantity.
+    - The recipe is not essentially a sugar-delivery vehicle.
+    - No refined-grain base — no white bread, white rice, regular pasta, white flour tortilla or
+      instant cereal. Use whole or intact grains, legumes or vegetables.
+    - Not built on processed or cured meat (bacon, sausage, hot dogs, deli meats, salami).
+    - No coconut oil, palm oil, palm kernel oil or coconut cream as an added fat, and no full-fat
+      coconut milk in quantity.
+    - Not deep-fried, batter-fried or breaded-and-fried, and no shallow-frying in a depth of oil.
+    - Keep sodium under the ceiling: specify every canned or jarred item as "no-salt-added" or
+      "low-sodium" AND "rinsed and drained", use untreated (not brine-injected) seafood and poultry,
+      use low-sodium broth, and never stack several canned or cured items in one recipe.
+    - Every ingredient must be easy to find at a mainstream US supermarket (Walmart, Kroger,
+      Target). No health-food or specialty items (protein powder, nutritional yeast, psyllium,
+      specialty flours, vital wheat gluten, aminos). No air fryer, pressure cooker or sous-vide —
+      stovetop, oven and no-cook only.
+    - <=10 ingredients, <=25 minutes active, <=30 MINUTES TOTAL (the cover promise), <=7 steps.
+      Optional chilling or marinating goes in `passive_time`, never in cook time.
+    PLATE SHAPE on mains and light mains: >=1/2 non-starchy vegetables, ~1/4-1/3 lean protein,
+    <=1/4 quality carbohydrate. Extra-virgin olive oil is the default fat.
+    REPORT the per-serving panel with these six first, in this order: Calories, Total Carbohydrate,
+    Dietary Fiber, Added Sugars, Protein, Saturated Fat — then the rest of the FDA panel. DO NOT
+    report "net carbs": the ADA and FDA both count TOTAL carbohydrate and a reader dosing insulin
+    must not be shown a subtracted number.
+    VOICE: warm, plain, practical. Never scare the reader about their liver, never promise to
+    "reverse" or "cure" anything, never use "detox", "cleanse", "flush", "fat-burning" or
+    "metabolism-boosting", and never name a single food as a liver cure.
+  critic: |
+    Guideline-fit checklist (judge what the automated checks cannot see; do NOT re-flag the
+    deterministic protein / fiber / carbohydrate / added-sugar / saturated-fat / sodium / energy
+    numbers or the hard bans — those are already enforced by code):
+    1. one_plan_both_conditions: Does the recipe genuinely answer to BOTH the liver and blood sugar
+       at once — Mediterranean in character, vegetable- and protein-forward, quality carbohydrate —
+       rather than being a diabetes recipe with a liver label, or a generic low-calorie dish?
+    2. added_sugar_honesty: Is the sweetness really coming from whole fruit, spice, vanilla or
+       cocoa? Watch for sweetness smuggled in as juice concentrate, a bottled glaze, a sweetened
+       yogurt, a sweetened nut butter, dried fruit by the cupful, or a "naturally sweetened" syrup.
+       This is the book's tightest axis and the keyword checks cannot see a brand assumption.
+    3. carbohydrate_both_directions: Does the recipe carry a real, quality carbohydrate component in
+       the tier's window? NEVER PRAISE A RECIPE FOR BEING LOW IN CARBOHYDRATE — flag it when the
+       carbohydrate component is missing, token, or so small the meal reads as keto. Equally flag a
+       carbohydrate that is quality-poor even if the gram count passes.
+    4. saturated_fat_character: Is the fat unsaturated and olive-oil-led? Flag cream, half-and-half,
+       full-fat cheese by the handful, butter-finished sauces, and anything tropical that slipped
+       past the keyword list.
+    5. alcohol_and_deglazing: Is every liquid alcohol-free? Flag any "splash of wine", beer batter,
+       flambe, bourbon glaze, or a technique that only works with wine.
+    6. sodium_practicality: Are canned, jarred and broth items actually specified as low-sodium or
+       no-salt-added and rinsed? Flag stacked salty items (olives + capers + feta + canned beans)
+       even when the computed number passes, because brand variability will break it.
+    7. thirty_minute_truth: Would a real, unhurried home cook finish this in 30 minutes from a cold
+       start, including prep? Count the chopping. Flag any hidden soak, marinade, chill, rise or
+       long simmer that the time fields do not declare, and flag equipment the book does not allow
+       (air fryer, pressure cooker, sous-vide).
+    8. everyday_ingredients: Would a reader find every single item at a normal Walmart or Kroger?
+       Flag health-food-shop items, international-market-only items, and anything that needs a
+       special trip.
+    9. claims_and_tone: Flag any "detox", "cleanse", "flush", "reverses fatty liver", "cures",
+       "fat-burning", "boosts metabolism", or any single-food liver claim (turmeric, milk thistle,
+       apple cider vinegar, beetroot). Flag scare language about the reader's liver. The honest verb
+       is "helps".

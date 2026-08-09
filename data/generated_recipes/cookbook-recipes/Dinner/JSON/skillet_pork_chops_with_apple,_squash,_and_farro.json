@@ -1,0 +1,186 @@
+{
+  "id": "d6318749-70f0-4f36-9c54-763d5a7d7eb8",
+  "title": "Skillet Pork Chops with Apple, Squash, and Farro",
+  "intro": "Providing fiber and lean protein, this one-pan dinner helps keep your energy steady. Crisp apple naturally balances the savory mustard sauce without requiring added sugar.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 11,
+  "cook_time_max_min": 15,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "boneless pork loin chops",
+      "canonical_name": "Pork, fresh, loin, center rib (chops), boneless, separable lean only, raw",
+      "quantity_g": 283.0,
+      "quantity_display": "10 oz (283 g)",
+      "preparation": "patted dry",
+      "fdc_id": 168302,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 1.0,
+      "quantity_display": "1/8 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 2.0,
+      "quantity_display": "1/2 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "frozen butternut squash chunks",
+      "canonical_name": "Squash, winter, butternut, frozen, unprepared",
+      "quantity_g": 210.0,
+      "quantity_display": "1.5 cups (210 g)",
+      "preparation": null,
+      "fdc_id": 168473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "crisp apple (such as Fuji or Gala)",
+      "canonical_name": "Apples, raw, with skin",
+      "quantity_g": 150.0,
+      "quantity_display": "1 medium (150 g)",
+      "preparation": "cored and diced",
+      "fdc_id": 1105897,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh sage",
+      "canonical_name": "Spices, sage, fresh",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tbsp (2 g)",
+      "preparation": "chopped",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 60.0,
+      "quantity_display": "1/4 cup (60 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "apple cider vinegar",
+      "canonical_name": "Vinegar, cider",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 173469,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, prepared, yellow",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 326698,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "unseasoned ready-to-eat cooked farro",
+      "canonical_name": "Wheat, farro, cooked",
+      "quantity_g": 156.0,
+      "quantity_display": "5.5 oz (156 g)",
+      "preparation": "from a pouch",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Season the pork chops on both sides with salt and garlic powder.",
+    "Heat the extra-virgin olive oil in a large skillet over medium-high heat. Add the pork chops and sear for 4 to 5 minutes per side, flipping halfway, until golden brown. Transfer the pork to a plate and cover to keep warm.",
+    "Add the butternut squash and diced apple to the same skillet. Cook over medium heat for 4 to 5 minutes, stirring, until the squash softens and lightly browns.",
+    "Stir in the fresh sage, low-sodium chicken broth, apple cider vinegar, and Dijon mustard, scraping up any browned bits from the bottom of the pan. Simmer the liquid for 1 to 2 minutes until it thickens.",
+    "Stir in the cooked farro and baby spinach. Toss for 1 to 2 minutes until the spinach wilts and the grains are hot.",
+    "Return the warm pork chops and any resting juices to the skillet. Heat for 1 minute before dividing everything between two plates."
+  ],
+  "variation": "Swap the butternut squash for frozen cubed sweet potatoes.",
+  "conservation": "Keeps 2-3 days refrigerated; reheat gently in a covered skillet.",
+  "nutrition_per_serving": {
+    "calories_kcal": 509.5,
+    "protein_g": 38.3,
+    "carbs_g": 50.4,
+    "fat_g": 17.7,
+    "fiber_g": 7.4,
+    "sodium_mg": 390.7,
+    "sugar_g": 13.0,
+    "saturated_fat_g": 4.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 77.8,
+    "potassium_mg": 1130.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 9.5,
+    "pufa_g": 1.9,
+    "calcium_mg": 70.5,
+    "iron_mg": 2.7,
+    "vitamin_d_mcg": 0.8,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "fresh sage",
+      "unseasoned ready-to-eat cooked farro"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'fresh sage' — values estimated by the LLM.",
+    "No USDA candidate for 'unseasoned ready-to-eat cooked farro' — values estimated by the LLM.",
+    "saturated_fat_g: partial data — 21% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 39% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "[instruction_completeness] The instructions provide good visual cues ('golden brown'), but for lean pork chops, adding an internal temperature cue of 145°F in step 2 is highly recommended to prevent overcooking and drying out the meat.",
+    "[thirty_minute_practicality] The recipe genuinely finishes in under 30 minutes, and using pouch farro is a fantastic, approved shortcut. However, the declared cook time of 11 minutes is mathematically incorrect; the cooking steps (4-5 min per side for pork, plus squash, sauce, and finishing) add up to 15-20 minutes. Update the metadata cook time to 18 minutes."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\skillet_pork_chops_with_apple,_squash,_and_farro.png",
+  "created_at": "2026-08-09T17:41:40.631484",
+  "generation_id": "688ca8e1-3066-48ba-9d5f-fa993b774769"
+}

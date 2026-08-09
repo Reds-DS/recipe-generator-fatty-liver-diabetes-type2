@@ -1,0 +1,144 @@
+{
+  "id": "4c9b5ab4-8c47-4d4a-b97c-8b9fc9024861",
+  "title": "Open-Faced Tomato and Spinach Egg Melts",
+  "intro": "This energizing breakfast transforms a heavy morning sandwich into a satisfying open-faced meal. A mix of eggs piled over whole wheat muffins with fresh tomato, mozzarella, and a side of strawberries keeps you full until lunch.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 4,
+  "cook_time_max_min": 6,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "100% whole wheat English muffins",
+      "canonical_name": "English muffins, whole wheat",
+      "quantity_g": 114.0,
+      "quantity_display": "2 (114 g)",
+      "preparation": "split",
+      "fdc_id": 172762,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 100.0,
+      "quantity_display": "2 large (100 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Liquid egg whites",
+      "canonical_name": "Egg, white, raw, fresh",
+      "quantity_g": 150.0,
+      "quantity_display": "2/3 cup (150 ml)",
+      "preparation": null,
+      "fdc_id": 172183,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh tomato",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 120.0,
+      "quantity_display": "1 medium (120 g)",
+      "preparation": "sliced",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Part-skim mozzarella cheese slices",
+      "canonical_name": "Cheese, mozzarella, part skim milk",
+      "quantity_g": 28.0,
+      "quantity_display": "1 oz (28 g)",
+      "preparation": "halved",
+      "fdc_id": 171244,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh strawberries",
+      "canonical_name": "Strawberries, raw",
+      "quantity_g": 430.0,
+      "quantity_display": "3 cups (430 g)",
+      "preparation": "hulled and halved",
+      "fdc_id": 167762,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toast the English muffin halves until golden and crisp.",
+    "Heat the olive oil in a nonstick skillet over medium heat. Add the spinach and cook for 1 to 2 minutes until wilted.",
+    "Whisk the whole eggs, liquid egg whites, and black pepper in a small bowl. Pour into the skillet with the spinach and scramble for 2 to 3 minutes until mostly set.",
+    "Lay the tomato slices and halved mozzarella cheese slices directly over the eggs. Cover the skillet, remove from the heat, and let sit for 1 minute until the cheese melts.",
+    "Divide the egg and tomato scramble over the open-faced muffin halves.",
+    "Serve immediately with the fresh strawberries on the side."
+  ],
+  "variation": "Swap the strawberries for two cups of sliced fresh peaches.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 417.1,
+    "protein_g": 25.7,
+    "carbs_g": 45.0,
+    "fat_g": 16.7,
+    "fiber_g": 9.6,
+    "sodium_mg": 525.3,
+    "sugar_g": 17.8,
+    "saturated_fat_g": 4.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 195.0,
+    "potassium_mg": 982.5,
+    "trans_fat_g": 0.1,
+    "mufa_g": 8.2,
+    "pufa_g": 2.7,
+    "calcium_mg": 354.3,
+    "iron_mg": 4.3,
+    "vitamin_d_mcg": 1.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "protein 25.7 g/serving < floor 26 g (\"main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\open-faced_tomato_and_spinach_egg_melts.png",
+  "created_at": "2026-08-09T17:07:11.980023",
+  "generation_id": "ea07171d-1d7f-4f6f-9238-b6f5315481c3"
+}

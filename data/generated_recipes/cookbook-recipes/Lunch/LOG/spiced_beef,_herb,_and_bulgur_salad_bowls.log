@@ -1,0 +1,55 @@
+=== RECIPE LOG: Spiced Beef, Herb, and Bulgur Salad Bowls ===
+ID            : b6904e9c-44c7-4414-b27f-1afb6a2dc7c4
+Generation ID : 65dbbd2a-9ab2-4c90-9a61-dd1818bd6f3a
+Generated     : 2026-08-09 17:22:07
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 0
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Lean ground beef (93% lean or higher)
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Spiced Beef, Herb, and Bulgur Salad Bowls
+Technique       : Stovetop sauté and no-cook assembly
+Cuisine style   : Middle Eastern-inspired
+Flavour profile : Savory, herbaceous, and lemony
+Sketch          : Lean ground beef (93% lean or higher), Quick-cooking bulgur wheat, Fresh flat-leaf parsley, English cucumber, Cherry tomatoes, Fresh lemon, Ground cumin, Ground allspice, Extra-virgin olive oil, Sliced almonds
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The two salad bowls are centered and framed for a cookbook, presented at a 3/4 overhead 40-degree angle to clearly display the layered ingredients. One ...

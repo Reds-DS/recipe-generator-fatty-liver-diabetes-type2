@@ -1,0 +1,530 @@
+{
+  "main_ingredient": "Canned sardines",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Lemony Sardine and Avocado Whole-Grain Toast",
+  "recipe_id": "8a04d10a-c2d7-4a18-a593-78bae4fe2542",
+  "generation_id": "9f3d124e-df60-4fd6-b1a9-2cf9a04ed18f",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:02:48.675240",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemony Sardine and Avocado Whole-Grain Toast",
+        "main_ingredient": "Canned sardines",
+        "technique": "No-cook",
+        "flavour_profile": "Briny, bright, savory, and citrusy",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Canned sardines (in water or olive oil, no-salt-added preferred)",
+          "Whole-grain or sprouted bread (low-sodium)",
+          "Avocado",
+          "Fresh lemon (for juice and zest)",
+          "Baby arugula",
+          "Cherry tomatoes",
+          "Fresh strawberries (for serving on the side)",
+          "Crushed red pepper flakes"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned sardines in water' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 68% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 31% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 31% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 31% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned sardines in water"
+        ],
+        "nutrition": {
+          "calories_kcal": 455.7,
+          "protein_g": 36.7,
+          "carbs_g": 40.7,
+          "fat_g": 17.6,
+          "fiber_g": 9.9,
+          "sodium_mg": 417.1,
+          "sugar_g": 9.2,
+          "saturated_fat_g": 3.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 732.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.3,
+          "pufa_g": 2.0,
+          "calcium_mg": 163.2,
+          "iron_mg": 2.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned sardines in water"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 2,
+        "matcher_hits": 6,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.222,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] When offering a skillet as an alternative to a toaster in Step 1, provide a time range and a halfway flip cue. Change to: 'or in a dry skillet over medium heat for 1 to 2 minutes per side until crisp'."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, highly functional Mediterranean breakfast toast that hits all nutritional targets perfectly, but it requires a major adjustment to the sardine quantity to avoid awkward partial cans and overly heavy portions.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavors are beautifully balanced. The combination of briny sardines, creamy avocado, bright lemon, and peppery arugula is a classic and highly coherent Mediterranean profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used correctly in the steps, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "When offering a skillet as an alternative to a toaster in Step 1, provide a time range and a halfway flip cue. Change to: 'or in a dry skillet over medium heat for 1 to 2 minutes per side until crisp'."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent representation of Mediterranean cuisine, utilizing heart-healthy fats, fresh produce, and oily fish."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Toasting the bread and assembling the remaining ingredients no-cook is the ideal method for this fast breakfast."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are accurate for the quantities provided. Note: fixing the sardine quantity (see Overall Appeal) will drop the protein by about 9 g per serving, which still comfortably clears the 26 g breakfast minimum."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive and accurate, and the intro highlights the satiety benefits of the meal's protein and fats without resorting to banned medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Calling for 3 cans of sardines for 2 servings means splitting a can and piling 1.5 cans of fish onto a single serving (2 slices) of toast. This leaves an awkward half-empty can of fish in the fridge and results in a disproportionately massive amount of fish for breakfast. Reduce the ingredient list to 2 cans total (1 can per person) to make the portion practical and appetizing."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly answers both conditions at once: a high-quality whole-grain carbohydrate base for steady blood sugar, paired with liver-friendly monounsaturated fats (avocado) and omega-3s (sardines)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with a robust and high-quality 40.7 g of carbohydrate provided entirely by the 100% whole-wheat bread and whole strawberries."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Breakfast chapter's intent perfectly, delivering a fast, savory, high-protein, and high-fiber start to the day."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Takes less than 15 minutes from a cold start, with zero actual cooking required, using universally accessible supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [overall_appeal] Calling for 3 cans of sardines for 2 servings means splitting a can and piling 1.5 cans of fish onto a single serving (2 slices) of toast. This leaves an awkward half-empty can of fish in the fridge and results in a disproportionately massive amount of fish for breakfast. Reduce the ingredient list to 2 cans total (1 can per person) to make the portion practical and appetizing.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'low-sodium sprouted whole-grain bread' — values estimated by the LLM.",
+        "No USDA candidate for 'no-salt-added canned sardines in water' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 67% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 43% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "low-sodium sprouted whole-grain bread",
+          "no-salt-added canned sardines in water"
+        ],
+        "nutrition": {
+          "calories_kcal": 447.6,
+          "protein_g": 32.5,
+          "carbs_g": 44.9,
+          "fat_g": 17.5,
+          "fiber_g": 12.3,
+          "sodium_mg": 138.4,
+          "sugar_g": 6.6,
+          "saturated_fat_g": 3.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 587.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.9,
+          "pufa_g": 1.0,
+          "calcium_mg": 65.8,
+          "iron_mg": 1.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "low-sodium sprouted whole-grain bread",
+            "no-salt-added canned sardines in water"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.778,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, savory, no-cook breakfast that perfectly hits the nutritional targets for both type 2 diabetes and fatty liver. It utilizes everyday pantry staples and fresh ingredients for a fast, delicious, and highly compliant meal.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The briny sardines, rich avocado, bright lemon, and peppery arugula create a balanced, classic Mediterranean flavor profile. The side of strawberries offers a pleasant, fresh contrast."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used accurately in the instructions, with no missing or phantom ingredients."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions provide clear assembly steps and a solid visual doneness cue for the toast ('golden and crisp'). As a no-cook recipe, it requires no complex timing ranges."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean style, highlighting sardines, olive oil/avocado fats, lemon, and whole grains."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "As an assembly-focused recipe, toasting the bread is the only heat application required, which works flawlessly for the ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values are accurate and align well with the ingredients, accurately reflecting the lean protein from the sardines and healthy fats from the avocado."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish, and the intro provides a positive, benefit-driven message ('steady energy and lasting fullness') without any banned or exaggerated health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent, savory breakfast option that feels substantial and gourmet while being remarkably quick and easy to assemble."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers on both fronts perfectly: rich in omega-3s, fiber, and lean protein, with a solid vegetable presence (arugula and tomatoes) and a quality whole-grain base."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with natural sweetness coming purely from the fresh strawberries. The whole-grain bread provides a high-quality carbohydrate source right in the target window (44.9g)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the 'Breakfasts' main tier perfectly, exceeding both the protein and fiber targets while remaining savory, fast, and highly satiating."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed within the 10-minute prep time. Canned sardines and sprouted bread are widely available everyday ingredients at mainstream supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two rustic ceramic plates centered in the frame, angled at 3/4 overhead to showcase the volume of the dish with generous negative space. The foreground plate is in sharp focus, while the second plate sits slightly behind, softly blurred. The scene is illuminated by soft, natural morning light from a window on the left, casting subtle, gentle shadows. The surface is a textured, aged oak wood tabletop with visible grain. Each plate holds two thick slices of golden-brown, crisp sprouted whole-grain bread, generously spread with a chunky, vibrant green mashed avocado, brightened by fine flecks of lemon zest. Over the avocado sits a layer of fresh, peppery baby arugula and ruby-red halved cherry tomatoes. Large, succulent pieces of silvery-white sardine fillets are arranged atop the vegetables, not stacked, but laid clearly across the toast. A light, rustic sprinkle of crushed red pepper flakes adds tiny specks of color across the fish. Alongside the toast, a small, natural portion of halved fresh strawberries rests directly on the plate. A silver fork lies casually on the wood surface near the plates. Scattered nearby are a few stray baby arugula leaves, a small lemon rind remnant, and a light dusting of red pepper flakes, suggesting a lived-in kitchen environment. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a tiny avocado smudge on the rim, slightly uneven browning on the toast. Warm, golden-hour color temperature, cozy and inviting. No plastic sheen, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

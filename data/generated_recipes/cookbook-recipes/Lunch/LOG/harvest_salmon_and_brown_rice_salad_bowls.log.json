@@ -1,0 +1,530 @@
+{
+  "main_ingredient": "No-salt-added canned pink salmon",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Harvest Salmon and Brown Rice Salad Bowls",
+  "recipe_id": "656848d7-f79c-4afc-b0d6-052c7088e9a4",
+  "generation_id": "629a68ec-0951-4cef-9637-f99d1ad2c46d",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:15:45.776350",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Harvest Salmon and Brown Rice Salad Bowls",
+        "main_ingredient": "No-salt-added canned pink salmon",
+        "technique": "No-cook assembly",
+        "flavour_profile": "Crisp, tangy, slightly sweet, and savory",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "No-salt-added canned pink salmon",
+          "Ready-to-eat brown rice pouch",
+          "Crisp red apple",
+          "Celery",
+          "Walnuts",
+          "Mixed baby greens",
+          "Extra-virgin olive oil",
+          "Apple cider vinegar",
+          "Dijon mustard"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "sugar_g: partial data — 25% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 19% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 20% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 437.9,
+          "protein_g": 25.0,
+          "carbs_g": 41.5,
+          "fat_g": 18.9,
+          "fiber_g": 5.3,
+          "sodium_mg": 150.0,
+          "sugar_g": 10.1,
+          "saturated_fat_g": 3.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 55.0,
+          "potassium_mg": 773.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.8,
+          "pufa_g": 7.8,
+          "calcium_mg": 265.9,
+          "iron_mg": 2.1,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 5.3 g/serving < floor 6 g (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 5.3 g/serving < floor 6 g (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a fresh, convenient, and mostly well-constructed assembly-only bowl that fits the diet's principles beautifully. However, the vinaigrette is far too acidic as written and must be balanced, and the fiber content needs a slight boost to meet the chapter's minimum floor.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The vinaigrette ratio is extremely acidic—2 tablespoons of apple cider vinegar to only 2 teaspoons of olive oil is 3 parts acid to 1 part oil. This will be harshly sour. Change the dressing to equal parts: 1 tablespoon of extra-virgin olive oil and 1 tablespoon of apple cider vinegar. Additionally, consider adding a pinch of salt to the dressing since the recipe's overall sodium is very low (150 mg)."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are properly utilized in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The assembly steps are clear, logical, and provide all the necessary guidance for a no-cook dish."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and flavor profile align perfectly with a Modern American salad bowl."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A no-cook, assembly-only method is perfectly suited for these pantry staples and fresh produce."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values accurately reflect the ingredients and quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish without making any banned health claims or using inappropriate diet language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Once the dressing's acidity is balanced, this will be a highly appealing, crunchy, and refreshing meal that comes together effortlessly."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe effectively combines lean protein, heart-healthy fats (walnuts, olive oil), and quality whole-grain carbohydrates (brown rice) with fresh produce, answering perfectly to the diet's core philosophy."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "There is zero added sugar, with sweetness naturally provided by the whole apple. The brown rice supplies a high-quality, whole-grain carbohydrate base that fits comfortably within the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe misses the chapter's 6g fiber floor, providing only 5.3g per serving. To fix this without significantly increasing calories, increase the baby greens to 4 cups (120 g) and specify a 'large' crisp apple rather than a medium one."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe requires zero cooking and uses ready-to-eat staples like cooked brown rice and canned salmon, making it incredibly practical and easily achievable in under 15 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [taste_coherence] The vinaigrette ratio is extremely acidic—2 tablespoons of apple cider vinegar to only 2 teaspoons of olive oil is 3 parts acid to 1 part oil. This will be harshly sour. Change the dressing to equal parts: 1 tablespoon of extra-virgin olive oil and 1 tablespoon of apple cider vinegar. Additionally, consider adding a pinch of salt to the dressing since the recipe's overall sodium is very low (150 mg).\n2. [chapter_intent_fit] The recipe misses the chapter's 6g fiber floor, providing only 5.3g per serving. To fix this without significantly increasing calories, increase the baby greens to 4 cups (120 g) and specify a 'large' crisp apple rather than a medium one.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "sugar_g: partial data — 26% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 26% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 468.9,
+          "protein_g": 27.1,
+          "carbs_g": 40.8,
+          "fat_g": 21.8,
+          "fiber_g": 5.9,
+          "sodium_mg": 452.7,
+          "sugar_g": 14.1,
+          "saturated_fat_g": 3.6,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 62.1,
+          "potassium_mg": 865.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.5,
+          "pufa_g": 8.4,
+          "calcium_mg": 300.1,
+          "iron_mg": 2.1,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.727,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+        "468.9 kcal/serving > high bound 440 kcal (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+              "468.9 kcal/serving > high bound 440 kcal (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] Very close, but currently misses the fiber floor (5.9g vs 6g) and exceeds the calorie ceiling (469 kcal vs 440 kcal). Suggest reducing the walnuts to 2 tbsp (saves ~45 kcal and reduces fat) and increasing the celery to 3 stalks or adding 1 more cup of baby greens to bump the fiber just over the 6g mark."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A vibrant, satisfying, and wonderfully practical no-cook lunch bowl that expertly meets the dietary goals of the book. A very minor tweak to the walnut and veggie quantities will bring it perfectly into the chapter's specific calorie and fiber targets.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Waldorf-inspired combination of crisp apple, celery, and walnuts pairs beautifully with the rich, savory salmon and earthy brown rice. The simple apple cider vinaigrette balances the flavors with bright acidity."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly listed and used in the instructions, and no surprise ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook assembly instructions are clear, straightforward, and perfectly suited for a beginner cook."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Modern American grain bowl or salad aesthetic."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, toss-and-assemble method is completely appropriate for these ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values closely match the provided ingredients and quantities. The low added sugar and reasonable sodium levels reflect the use of whole foods and no-salt-added canned salmon."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive and accurate, and the intro provides a warm, practical overview without relying on any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, quick, and vibrant lunch option that transforms basic pantry staples into an appetizing meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent fit for both conditions. It utilizes a whole grain, a high-quality lean protein rich in omega-3s, and relies entirely on heart-healthy fats (olive oil, walnuts) while containing no added sugars."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balanced. Zero added sugars (sweetness relies entirely on the fresh apple) and a measured, quality carbohydrate component (brown rice and apple) safely within the target window (40.8g)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Very close, but currently misses the fiber floor (5.9g vs 6g) and exceeds the calorie ceiling (469 kcal vs 440 kcal). Suggest reducing the walnuts to 2 tbsp (saves ~45 kcal and reduces fat) and increasing the celery to 3 stalks or adding 1 more cup of baby greens to bump the fiber just over the 6g mark."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A true 15-minute meal from start to finish. Using a ready-to-eat brown rice pouch and canned salmon ensures this keeps the cookbook's 'under 30 minutes' promise beautifully. All ingredients are easy to find."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, wide-rimmed matte ceramic bowls positioned on an aged, weathered oak kitchen table. The bowls are placed side-by-side at a 3/4 overhead angle, ensuring every component is clearly visible. The foreground bowl is sharp with a shallow depth of field, while the second bowl rests slightly behind in soft focus. Soft natural light streams from a window on the left, casting gentle, diffused shadows across the table. Inside the bowls, a bed of vibrant, mixed baby greens provides a fresh base. A colorful mixture of nutty brown rice, crisp red apple chunks, and bright green sliced celery is spooned over the greens. Generous, rustic flakes of pink salmon sit prominently atop the mixture, showing natural, tender textures. The dish is finished with a scattering of crunchy chopped walnuts. A light, glistening apple cider and Dijon vinaigrette coats the ingredients, providing a subtle, realistic sheen. Props include a wooden spoon resting casually on the table near the bowls, and a few stray walnut fragments and a single slice of apple scattered on the wood surface, appearing as if just prepared. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, and authentic. Includes slight natural imperfections like an asymmetric scatter of walnuts and a tiny drip of vinaigrette on the bowl rim. No plastic sheen, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no hands, no faces. Indistinguishable from professional editorial cookbook photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

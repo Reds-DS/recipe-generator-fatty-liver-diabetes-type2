@@ -1,0 +1,151 @@
+{
+  "id": "eebac7f8-217f-4848-9cca-8b1830838194",
+  "title": "Tuscan Mackerel and White Bean Stuffed Tomatoes",
+  "intro": "This totally zero-cook assembly is ready in minutes with minimal chopping. Flaky mackerel and creamy white beans make a satisfying filling for fresh tomatoes.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "servings": 2,
+  "prep_time_min": 15,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Beefsteak tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 400.0,
+      "quantity_display": "2 large (400 g)",
+      "preparation": null,
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned skinless boneless mackerel in water",
+      "canonical_name": "Fish, mackerel, canned, no salt added",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned cannellini beans",
+      "canonical_name": "Beans, white, mature seeds, canned, no salt added",
+      "quantity_g": 130.0,
+      "quantity_display": "3/4 cup (130 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175203,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kalamata olives",
+      "canonical_name": "Olives, ripe, canned (small-extra large)",
+      "quantity_g": 18.0,
+      "quantity_display": "2 tbsp (18 g)",
+      "preparation": "pitted and finely chopped",
+      "fdc_id": 169094,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh flat-leaf parsley",
+      "canonical_name": "Parsley, fresh",
+      "quantity_g": 15.0,
+      "quantity_display": "1/4 cup (15 g)",
+      "preparation": "chopped",
+      "fdc_id": 170416,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole-wheat pita bread",
+      "canonical_name": "Bread, pita, whole-wheat",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": null,
+      "fdc_id": 174916,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Slice the top off each tomato and scoop out the seeds and core with a spoon, leaving a hollow shell. Set aside.",
+    "Place the beans in a medium bowl and mash lightly with a fork until mostly broken down but still textured.",
+    "Add the drained mackerel, olives, parsley, lemon juice, olive oil, and black pepper to the mashed beans. Fold gently to combine without completely turning the fish to paste.",
+    "Spoon the mackerel mixture evenly into the hollowed tomatoes, pressing lightly to fill the cavities.",
+    "Cut the whole-wheat pita bread into wedges and serve alongside the stuffed tomatoes."
+  ],
+  "variation": "Swap the cannellini beans for no-salt-added canned chickpeas.",
+  "conservation": "Keeps 2 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 515.2,
+    "protein_g": 39.5,
+    "carbs_g": 53.9,
+    "fat_g": 17.1,
+    "fiber_g": 10.1,
+    "sodium_mg": 385.1,
+    "sugar_g": 7.2,
+    "saturated_fat_g": 3.6,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 980.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.4,
+    "pufa_g": 1.7,
+    "calcium_mg": 107.0,
+    "iron_mg": 5.6,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added canned skinless boneless mackerel in water"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'No-salt-added canned skinless boneless mackerel in water' — values estimated by the LLM.",
+    "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\tuscan_mackerel_and_white_bean_stuffed_tomatoes.png",
+  "created_at": "2026-08-09T20:19:20.806760",
+  "generation_id": "70210d51-675a-4e65-8a40-c436be2d96b7"
+}

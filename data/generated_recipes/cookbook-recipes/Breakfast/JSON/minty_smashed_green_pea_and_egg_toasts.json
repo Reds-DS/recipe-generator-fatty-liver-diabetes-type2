@@ -1,0 +1,170 @@
+{
+  "id": "507caee0-b7e6-4c29-90dd-67139383e610",
+  "title": "Minty Smashed Green Pea and Egg Toasts",
+  "intro": "Cool mint and a creamy yogurt-pea mash top crisp whole-grain toast in this savory, satisfying breakfast.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 4,
+  "cook_time_max_min": 6,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "frozen green peas",
+      "canonical_name": "Peas, green, frozen, cooked, boiled, drained, without salt",
+      "quantity_g": 130.0,
+      "quantity_display": "1 cup (130 g)",
+      "preparation": null,
+      "fdc_id": 170017,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "nonfat plain Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 75.0,
+      "quantity_display": "1/3 cup (75 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh mint",
+      "canonical_name": "Peppermint, fresh",
+      "quantity_g": 3.0,
+      "quantity_display": "2 tbsp (3 g)",
+      "preparation": "finely chopped",
+      "fdc_id": 173474,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "large eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 100.0,
+      "quantity_display": "2 large (100 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "liquid egg whites",
+      "canonical_name": "Egg, white, raw, fresh",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": 172183,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "100% whole-wheat bread",
+      "canonical_name": "Bread, whole-wheat, commercially prepared",
+      "quantity_g": 112.0,
+      "quantity_display": "4 slices (112 g)",
+      "preparation": null,
+      "fdc_id": 335240,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "feta cheese",
+      "canonical_name": "Cheese, feta",
+      "quantity_g": 15.0,
+      "quantity_display": "2 tbsp (15 g)",
+      "preparation": "crumbled",
+      "fdc_id": 173420,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh strawberries",
+      "canonical_name": "Strawberries, raw",
+      "quantity_g": 144.0,
+      "quantity_display": "1 cup (144 g)",
+      "preparation": "sliced",
+      "fdc_id": 327699,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Boil water in a small pot over high heat. Add the peas, cook for 2 to 3 minutes until tender, and drain well.",
+    "Transfer the warm peas to a bowl. Add the yogurt, lemon juice, mint, and garlic powder, mashing with a fork until chunky but spreadable.",
+    "Whisk the whole eggs and egg whites together in a small bowl until fully blended.",
+    "Heat the olive oil in a skillet over medium-low heat. Pour in the eggs and cook for 2 to 3 minutes, stirring gently until soft curds form.",
+    "Toast the whole-wheat bread slices.",
+    "Spread the minted pea mash evenly over the warm toasts. Top with the scrambled eggs and crumbled feta.",
+    "Serve immediately alongside the sliced fresh strawberries."
+  ],
+  "variation": "Swap the fresh mint for fresh dill or chopped basil.",
+  "conservation": "Best enjoyed right away; assembled toasts do not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 386.4,
+    "protein_g": 28.6,
+    "carbs_g": 42.5,
+    "fat_g": 11.5,
+    "fiber_g": 7.8,
+    "sodium_mg": 576.4,
+    "sugar_g": 11.2,
+    "saturated_fat_g": 3.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 194.6,
+    "potassium_mg": 522.2,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.4,
+    "pufa_g": 2.3,
+    "calcium_mg": 230.8,
+    "iron_mg": 3.7,
+    "vitamin_d_mcg": 1.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 qualifier: 'frozen green peas': recipe asks for a no-salt-added/low-sodium product and the match does not say so, while an explicitly unsalted candidate is available — switched from [170419] Peas, green, raw to [170017] Peas, green, frozen, cooked, boiled, drained, without salt.",
+    "Stage 4 coverage: 'nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 36% of recipe weight has no USDA value for it.",
+    "sodium 576.4 mg/serving > ceiling 550 mg (\"main\")",
+    "[chapter_intent_fit] The recipe slightly overshoots the breakfast chapter's 550 mg sodium ceiling (currently at 576 mg) due to stacking bread and feta. Fix: Reduce the crumbled feta to 1 tablespoon (7.5 g). This will drop the sodium by roughly 80 mg, bringing it safely into compliance without compromising the flavor."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\minty_smashed_green_pea_and_egg_toasts.png",
+  "created_at": "2026-08-09T17:03:23.050639",
+  "generation_id": "adc9e54a-1ef8-47dc-ab03-bc597ac84a82"
+}

@@ -1,0 +1,123 @@
+{
+  "id": "3544bf2b-7a4d-4c70-baca-d427514bceb7",
+  "title": "Raspberry and Vanilla Yogurt Chia Pudding",
+  "intro": "This refreshing make-ahead dessert is ready in the fridge whenever you need a creamy treat. Chia seeds and Greek yogurt create a spoonable base layered with bright berries.",
+  "diet_tags": [],
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": "Chill 2 hours",
+  "ingredients": [
+    {
+      "name": "Chia seeds",
+      "canonical_name": "Seeds, chia seeds, dried",
+      "quantity_g": 30.0,
+      "quantity_display": "3 tbsp (30 g)",
+      "preparation": null,
+      "fdc_id": 2707590,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unsweetened soy milk",
+      "canonical_name": "Soymilk, original and vanilla, unfortified",
+      "quantity_g": 180.0,
+      "quantity_display": "3/4 cup (180 ml)",
+      "preparation": null,
+      "fdc_id": 173768,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Plain nonfat Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 115.0,
+      "quantity_display": "1/2 cup (115 g)",
+      "preparation": null,
+      "fdc_id": 170894,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pure maple syrup",
+      "canonical_name": "Syrups, maple",
+      "quantity_g": 14.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 169661,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 2.0,
+      "quantity_display": "1/2 tsp (2 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh raspberries",
+      "canonical_name": "Raspberries, raw",
+      "quantity_g": 120.0,
+      "quantity_display": "1 cup (120 g)",
+      "preparation": "rinsed and dried",
+      "fdc_id": 167755,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sliced almonds",
+      "canonical_name": "Nuts, almonds, sliced",
+      "quantity_g": 8.0,
+      "quantity_display": "1 tbsp (8 g)",
+      "preparation": null,
+      "fdc_id": 170567,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the chia seeds, soy milk, Greek yogurt, maple syrup, and vanilla extract together in a medium bowl until smooth.",
+    "Let the mixture sit for 5 minutes, then whisk it again to prevent the seeds from clumping.",
+    "Cover the bowl and refrigerate for at least 2 hours or overnight to allow the chia seeds to hydrate.",
+    "Divide the thickened pudding between serving glasses or bowls.",
+    "Top the pudding with the raspberries and sliced almonds before serving."
+  ],
+  "variation": "Swap the fresh raspberries for diced fresh peaches or strawberries.",
+  "conservation": "Keeps up to 3 days in an airtight container refrigerated.",
+  "nutrition_per_serving": {
+    "calories_kcal": 212.9,
+    "protein_g": 12.3,
+    "carbs_g": 24.7,
+    "fat_g": 8.0,
+    "fiber_g": 10.1,
+    "sodium_mg": 81.4,
+    "sugar_g": 9.6,
+    "saturated_fat_g": 0.8,
+    "added_sugar_g": 4.2,
+    "cholesterol_mg": 2.9,
+    "potassium_mg": 383.7,
+    "trans_fat_g": 0.0,
+    "mufa_g": 1.9,
+    "pufa_g": 4.8,
+    "calcium_mg": 301.6,
+    "iron_mg": 2.2,
+    "vitamin_d_mcg": 0.9,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "[thirty_minute_practicality] While the active time is truly under 30 minutes and the intro correctly labels it 'make-ahead', the mandatory 2-hour chilling period is missing from the recipe's declared time fields. Fix: Add a 'Passive time: 2 hours' (or Chill time) field to the recipe header so the reader is fully informed of the total time commitment at a glance."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dessert\\IMG\\raspberry_and_vanilla_yogurt_chia_pudding.png",
+  "created_at": "2026-08-09T13:22:51.840760",
+  "generation_id": "e1b42311-089c-4f74-9121-ef0420fe03f4"
+}

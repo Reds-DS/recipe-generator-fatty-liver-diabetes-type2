@@ -1,0 +1,62 @@
+=== RECIPE LOG: Balsamic-Mustard Pork Medallions with Asparagus and Couscous ===
+ID            : 1cb177b5-f0f7-43b7-8bd0-ce1ff08256e8
+Generation ID : af78597b-e86b-471a-9e9f-982159fbd53f
+Generated     : 2026-08-09 12:34:20
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : pork tenderloin
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Balsamic-Mustard Pork Medallions with Asparagus and Couscous
+Technique       : Pan-searing
+Cuisine style   : Mediterranean-American
+Flavour profile : tangy, savory, herbaceous
+Sketch          : pork tenderloin, whole wheat couscous, asparagus, extra-virgin olive oil, balsamic vinegar, Dijon mustard, low-sodium chicken broth, garlic powder, dried thyme
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.
+  [WARN] sugar_g: partial data — 12% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] fiber 6.7 g/serving < floor 7 g ("main")
+    [WARN] total carbohydrate 57.9 g/serving > ceiling 55 g ("main")
+    [WARN] 545.1 kcal/serving > high bound 540 kcal ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+  [WARN] Carb base "Whole wheat couscous, dry" (130 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. "brown rice" / "100% whole-wheat pasta" / "whole-grain tortilla", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor.
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 3
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, presented at a 3/4 overhead angle (40°) to showcase the dish volume while keep...

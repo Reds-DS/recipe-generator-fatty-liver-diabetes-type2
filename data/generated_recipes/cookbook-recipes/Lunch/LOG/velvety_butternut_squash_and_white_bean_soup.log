@@ -1,0 +1,129 @@
+=== RECIPE LOG: Velvety Butternut Squash and White Bean Soup ===
+ID            : 166f0c6b-bb2a-4695-a4de-4411b35fe565
+Generation ID : 8055c287-e4a3-4cb5-81ee-aa35791c94b3
+Generated     : 2026-08-09 19:43:16
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 9
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen diced butternut squash and no-salt-added canned Great Northern beans
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Velvety Butternut Squash and White Bean Soup
+Technique       : Simmering and blending
+Cuisine style   : Modern American
+Flavour profile : Earthy, naturally sweet, and herbaceous
+Sketch          : Frozen diced butternut squash, No-salt-added canned Great Northern beans, Low-sodium vegetable broth, Dried sage, Garlic powder, Onion powder, Unsalted roasted pumpkin seeds (pepitas), Nonfat plain Greek yogurt, Extra-virgin olive oil
+
+--- Draft (3 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [overall_appeal] Swirling a full 1/2 cup (113g) of cold, thick Greek yogurt into a single bowl of hot soup as a garnish is a culinary...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [taste_coherence] Using 8 oz (a full half-cup per serving) of Greek yogurt, plus apple cider vinegar, will make this soup overwhelmin...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 38% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 38% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 38% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 38% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] total carbohydrate 52.6 g/serving > ceiling 45 g ("light_main")
+    [WARN] sodium 555.6 mg/serving > ceiling 500 mg ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 30% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] total carbohydrate 62.7 g/serving > ceiling 45 g ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+  [WARN] cholesterol_mg: partial data — 44% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 44% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 44% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 44% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] total carbohydrate 49.3 g/serving > ceiling 45 g ("light_main")
+    [WARN] sodium 538.7 mg/serving > ceiling 500 mg ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic soup bowls placed on an aged oak wood surface with visible grain and slight use marks. The camera angle is ...

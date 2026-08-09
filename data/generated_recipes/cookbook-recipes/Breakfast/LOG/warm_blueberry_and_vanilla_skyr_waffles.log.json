@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "Frozen 100% whole-wheat waffles",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Warm Blueberry and Vanilla Skyr Waffles",
+  "recipe_id": "d669db74-043c-4e39-b087-e88524f9dbea",
+  "generation_id": "4a957541-3e60-463e-aba3-1bc71cad59c1",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:01:50.530119",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Warm Blueberry and Vanilla Skyr Waffle Plates",
+        "main_ingredient": "Frozen 100% whole-wheat waffles",
+        "technique": "Toasting and quick-heating",
+        "flavour_profile": "Naturally sweet, warmly spiced, and creamy",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Frozen 100% whole-wheat waffles",
+          "Nonfat plain Skyr",
+          "Frozen blueberries",
+          "Pure vanilla extract",
+          "Ground cinnamon",
+          "Hemp hearts",
+          "Chopped walnuts"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 548.9,
+          "protein_g": 35.5,
+          "carbs_g": 59.2,
+          "fat_g": 20.5,
+          "fiber_g": 7.6,
+          "sodium_mg": 473.9,
+          "sugar_g": 20.1,
+          "saturated_fat_g": 2.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 11.3,
+          "potassium_mg": 738.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.8,
+          "pufa_g": 13.6,
+          "calcium_mg": 387.6,
+          "iron_mg": 6.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.714,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 59.2 g/serving > ceiling 55 g (\"main\")",
+        "548.9 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 59.2 g/serving > ceiling 55 g (\"main\")",
+              "548.9 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional breakfast recipe that perfectly bridges comfort-food appeal with rigorous nutritional standards. It requires zero prep, easily meets the time constraints, and uses whole foods to deliver massive protein without a single gram of added sugar.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classic and well-balanced. The tartness of the Skyr, the sweetness of the blueberries, and the warmth of the cinnamon and vanilla work beautifully with the nutty whole-wheat waffles."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients appear perfectly in the instructions, and no unexpected ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The steps are comprehensive. Cooking times include appropriate ranges with check points (e.g., 'Check at 4 minutes'), and strong visual doneness cues are provided ('golden and crisp', 'soften, burst, and form a warm, jammy sauce')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American breakfast style, utilizing standard contemporary ingredients like Skyr, whole-wheat waffles, and hemp hearts."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Toasting frozen waffles and reducing frozen fruit into a quick compote on the stovetop are highly suitable, reliable methods that work exactly as described."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are consistent with the heavy protein load of 2 cups of Skyr and the carbohydrate load of 4 whole-wheat waffles plus fruit."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish. The intro uses the book's approved tone ('helps keep your morning energy steady'), focuses on practical benefits, and contains no banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, comforting breakfast that feels like a weekend treat but is fast enough and nutritious enough for a weekday."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent alignment with the dietary guidelines. It provides a massive amount of lean protein (Skyr), a quality whole-grain carbohydrate base (100% whole-wheat), and avoids all refined sugars and saturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers perfectly on this axis: zero added sugars, drawing sweetness entirely from whole fruit and vanilla/cinnamon, while providing a genuine, substantial, high-quality carbohydrate component."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Breakfasts' chapter intent beautifully by delivering over 35g of satiating protein. While the automated checks note a 4g carbohydrate and 9 kcal overage against the ceiling, this is negligible and comes entirely from whole fruit and yogurt, so it does not hurt the recipe."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Requires no chopping or complicated prep. It easily delivers on the under-30-minute promise, clocking in at around 10 minutes total, using entirely accessible supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two plates, one sharp in the foreground and one slightly blurred in the background, set on a rustic aged oak table. Camera angle is a 3/4 overhead view, capturing the full arrangement. The scene is bathed in soft, natural light from a window on the left, creating gentle shadows. Each plate holds two whole-wheat waffles toasted to a golden-brown, crisp texture. A generous dollop of smooth, thick white Skyr, swirled with vanilla and cinnamon, is dolloped artfully over the waffles, with a warm, dark purple blueberry compote spooned on top, showing softened, burst berries and syrupy juices dripping down the sides. The dish is topped with a rustic scattering of nutty hemp hearts and coarse, earthy chopped walnuts. Props include a small, rumpled linen napkin tucked under one plate and a small wooden spoon resting casually on the wood surface near a few stray fallen blueberries and walnut crumbs. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the waffles. Include subtle traces of the cooking process: a few stray hemp hearts on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional cookbook photography.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

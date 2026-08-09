@@ -1,0 +1,58 @@
+=== RECIPE LOG: Lemon-Garlic Chicken and White Bean Soup ===
+ID            : bb354b62-e61d-4e0a-9d16-93466bdcddd9
+Generation ID : 37a9ad2f-a814-4d25-9eb2-057ce8375aeb
+Generated     : 2026-08-09 12:22:28
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Lean ground chicken
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Lemon-Garlic Chicken and White Bean Soup
+Technique       : One-pot stovetop simmering
+Cuisine style   : Mediterranean
+Flavour profile : Bright, garlicky, and herbaceous
+Sketch          : Extra-virgin olive oil, Lean ground chicken, Frozen mirepoix blend (diced onion, celery, and carrots), Fresh garlic cloves, Dried Italian seasoning, Low-sodium chicken broth, No-salt-added canned Great Northern beans (or navy beans), Fresh baby spinach, Fresh lemon
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : dried Italian seasoning
+  [WARN] No USDA candidate for 'dried Italian seasoning' — values estimated by the LLM.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] 446.9 kcal/serving > high bound 440 kcal ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, matte ceramic bowls of Lemon-Garlic Chicken and White Bean Soup centered in the frame with generous...

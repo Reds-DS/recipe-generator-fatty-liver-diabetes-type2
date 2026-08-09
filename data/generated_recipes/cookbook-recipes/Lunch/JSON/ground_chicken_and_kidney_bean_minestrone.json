@@ -1,0 +1,166 @@
+{
+  "id": "792d3b48-af78-45be-87a9-83d063df11da",
+  "title": "Ground Chicken and Kidney Bean Minestrone",
+  "intro": "A satisfying lunch or quick weeknight dinner, this one-pot soup brings Italian-inspired comfort without heavy meats. Lean chicken and fiber-rich kidney beans help stabilize afternoon energy levels.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 16,
+  "cook_time_max_min": 19,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Yellow onion",
+      "canonical_name": "Onions, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "1/2 medium (80 g)",
+      "preparation": "chopped",
+      "fdc_id": 790646,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic cloves",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lean ground chicken",
+      "canonical_name": "Chicken, ground, raw",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": null,
+      "fdc_id": 171116,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Italian seasoning blend",
+      "canonical_name": "Spices, italian seasoning",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 360.0,
+      "quantity_display": "1 1/2 cups (360 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned diced tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": "with juices",
+      "fdc_id": 170138,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned dark red kidney beans",
+      "canonical_name": "Beans, kidney, all types, mature seeds, canned, no salt added",
+      "quantity_g": 130.0,
+      "quantity_display": "1/2 cup (130 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Whole wheat short pasta (like rotini)",
+      "canonical_name": "Macaroni, whole-wheat, dry",
+      "quantity_g": 42.0,
+      "quantity_display": "1.5 oz (42 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen chopped spinach",
+      "canonical_name": "Spinach, frozen, chopped or leaf, unprepared",
+      "quantity_g": 75.0,
+      "quantity_display": "1/2 cup (75 g)",
+      "preparation": null,
+      "fdc_id": 169287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat olive oil in a medium pot over medium-high heat.",
+    "Add chopped onion, minced garlic, and ground chicken, and cook for 5 to 6 minutes while breaking the meat apart with a wooden spoon until browned.",
+    "Stir in Italian seasoning, chicken broth, diced tomatoes, kidney beans, and pasta.",
+    "Bring the soup to a boil, then reduce the heat to low, cover, and simmer for 9 to 11 minutes, checking the pasta for tenderness at 9 minutes.",
+    "Stir in frozen spinach and simmer for 2 more minutes until wilted and heated through."
+  ],
+  "variation": "Swap the spinach for chopped kale or the chicken for turkey.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 394.1,
+    "protein_g": 27.5,
+    "carbs_g": 37.3,
+    "fat_g": 16.8,
+    "fiber_g": 9.1,
+    "sodium_mg": 154.9,
+    "sugar_g": 7.1,
+    "saturated_fat_g": 3.6,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 73.1,
+    "potassium_mg": 1004.2,
+    "trans_fat_g": 0.1,
+    "mufa_g": 9.1,
+    "pufa_g": 2.4,
+    "calcium_mg": 105.2,
+    "iron_mg": 2.6,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Italian seasoning blend",
+      "No-salt-added canned dark red kidney beans",
+      "Whole wheat short pasta (like rotini)"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'Italian seasoning blend' — values estimated by the LLM.",
+    "No USDA candidate for 'No-salt-added canned dark red kidney beans' — values estimated by the LLM.",
+    "No USDA candidate for 'Whole wheat short pasta (like rotini)' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 16% of recipe weight has no USDA value for it.",
+    "[taste_coherence] The Italian flavor profile is classic and well-conceived, but because the recipe relies strictly on no-salt-added canned goods, low-sodium broth, and zero added salt, it may taste noticeably flat. The computed sodium is only 155 mg per serving. Suggest adding 1/4 tsp kosher salt to step 3; this will enhance the flavors while keeping the sodium (~300 mg per serving) safely under the 500 mg ceiling.",
+    "[cooking_method_suitability] In step 2, adding minced garlic at the exact same time as raw chicken and onions over medium-high heat for 5-6 minutes risks scorching the garlic before the chicken finishes cooking. Fix: Add the minced garlic during the final 1 minute of browning."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\ground_chicken_and_kidney_bean_minestrone.png",
+  "created_at": "2026-08-09T19:26:12.065648",
+  "generation_id": "d1519639-8218-46ba-a270-5c1c4034866a"
+}

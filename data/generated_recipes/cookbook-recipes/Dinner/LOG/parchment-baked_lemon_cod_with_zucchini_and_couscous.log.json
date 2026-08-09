@@ -1,0 +1,530 @@
+{
+  "main_ingredient": "Skinless cod fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Parchment-Baked Lemon Cod with Zucchini and Couscous",
+  "recipe_id": "9cf7c4f9-aa74-4bb0-bc5b-f4fe7f845dac",
+  "generation_id": "3c38d867-08e9-436b-807a-8674fa6cc4ed",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:43:38.169650",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Parchment-Baked Lemon Cod with Zucchini and Couscous",
+        "main_ingredient": "Skinless cod fillets",
+        "technique": "Parchment baking (en papillote)",
+        "flavour_profile": "Bright, citrusy, and herbaceous with a mild briny note",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Skinless cod fillets",
+          "Whole wheat couscous",
+          "Zucchini",
+          "Cherry tomatoes",
+          "Kalamata olives",
+          "Fresh lemon",
+          "Dried oregano",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Low-sodium Kalamata olives' — values estimated by the LLM."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium Kalamata olives"
+        ],
+        "nutrition": {
+          "calories_kcal": 498.1,
+          "protein_g": 40.9,
+          "carbs_g": 57.6,
+          "fat_g": 11.4,
+          "fiber_g": 6.4,
+          "sodium_mg": 163.1,
+          "sugar_g": 6.8,
+          "saturated_fat_g": 1.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 73.1,
+          "potassium_mg": 1459.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.7,
+          "pufa_g": 1.6,
+          "calcium_mg": 95.2,
+          "iron_mg": 2.5,
+          "vitamin_d_mcg": 1.5,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium Kalamata olives"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.556,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 6.4 g/serving < floor 7 g (\"main\")",
+        "total carbohydrate 57.6 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 6.4 g/serving < floor 7 g (\"main\")",
+              "total carbohydrate 57.6 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[taste_coherence] The flavor profile is a classic, bright Mediterranean combination. However, at only 163mg of sodium, the water-dense zucchini and couscous may taste slightly bland despite the lemon and oregano. Consider adding 1/8 to 1/4 teaspoon of kosher salt to the vegetable toss—this will enhance the flavors immensely while keeping the dish safely under the 550mg sodium ceiling.",
+        "[instruction_completeness] The steps are mostly excellent and include good visual cues, but lack two small timing details for beginners. In step 1, note the preheat duration so cooks know it runs in parallel with prep (e.g., 'Preheat the oven... which takes about 10 to 15 minutes'). In step 6, provide an expected time range for the couscous (e.g., 'let stand for about 5 minutes, or until the water is absorbed')."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical weeknight fish packet that perfectly fits the Mediterranean dietary profile with minimal cleanup. A couple of minor quantity tweaks are needed to rein in the carbohydrates (reducing the couscous) and boost the fiber (increasing the vegetables) so the dish strictly complies with the 'main' tier nutrient windows.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The flavor profile is a classic, bright Mediterranean combination. However, at only 163mg of sodium, the water-dense zucchini and couscous may taste slightly bland despite the lemon and oregano. Consider adding 1/8 to 1/4 teaspoon of kosher salt to the vegetable toss—this will enhance the flavors immensely while keeping the dish safely under the 550mg sodium ceiling."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly utilized in the instructions, including clear directions on splitting the lemon juice."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The steps are mostly excellent and include good visual cues, but lack two small timing details for beginners. In step 1, note the preheat duration so cooks know it runs in parallel with prep (e.g., 'Preheat the oven... which takes about 10 to 15 minutes'). In step 6, provide an expected time range for the couscous (e.g., 'let stand for about 5 minutes, or until the water is absorbed')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with the Mediterranean style, utilizing an en papillote technique with classic Mediterranean staple ingredients."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Parchment baking (en papillote) is an ideal, gentle method for cooking cod and quick-cooking vegetables like zucchini and tomatoes without drying them out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients accurately reflect the ingredients provided, particularly the high carbohydrate load from the 3/4 cup of dry couscous."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is fully representative, and the intro's tone is warm, practical, and devoid of any banned health claims or diet language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, fresh, and colorful weeknight dinner that requires virtually no cleanup."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely addresses both conditions with a lean protein source, excellent non-starchy vegetable volume, unsaturated fats from olive oil and olives, and a high-quality whole grain."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe features an excellent complex carbohydrate (whole wheat couscous), but the 3/4 cup dry portion pushes the per-serving total carbohydrates (57.6 g) slightly above the 55 g ceiling for a main dish. Reduce the dry couscous to 1/2 cup (and the boiling water to 1/2 cup) to bring the carbohydrates down to around 45 g per serving, landing perfectly in the middle of the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "While the recipe perfectly fits the 'fast weeknight seafood' brief, it misses the 'main' tier 7 g fiber floor (coming in at 6.4 g). Increase the zucchini to 12 oz (340 g) and the cherry tomatoes to 8 oz (225 g) to add enough vegetable fiber to clear the floor and balance out the plate."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits comfortably within the 30-minute promise. Prep involves simple chopping and tossing that can easily be done in 10 minutes while the oven preheats, followed by a hands-off 12-minute bake."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [added_sugar_and_carb_balance] The recipe features an excellent complex carbohydrate (whole wheat couscous), but the 3/4 cup dry portion pushes the per-serving total carbohydrates (57.6 g) slightly above the 55 g ceiling for a main dish. Reduce the dry couscous to 1/2 cup (and the boiling water to 1/2 cup) to bring the carbohydrates down to around 45 g per serving, landing perfectly in the middle of the target window.\n2. [chapter_intent_fit] While the recipe perfectly fits the 'fast weeknight seafood' brief, it misses the 'main' tier 7 g fiber floor (coming in at 6.4 g). Increase the zucchini to 12 oz (340 g) and the cherry tomatoes to 8 oz (225 g) to add enough vegetable fiber to clear the floor and balance out the plate.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Kalamata olives, low-sodium' — values estimated by the LLM."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Kalamata olives, low-sodium"
+        ],
+        "nutrition": {
+          "calories_kcal": 460.0,
+          "protein_g": 39.4,
+          "carbs_g": 46.9,
+          "fat_g": 13.1,
+          "fiber_g": 7.0,
+          "sodium_mg": 484.4,
+          "sugar_g": 8.0,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 73.1,
+          "potassium_mg": 1542.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.4,
+          "pufa_g": 1.5,
+          "calcium_mg": 103.6,
+          "iron_mg": 2.7,
+          "vitamin_d_mcg": 1.5,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Kalamata olives, low-sodium"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.727,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "warning",
+      "warnings": [
+        "Carb base \"Whole wheat couscous, dry\" (85 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. \"brown rice\" / \"100% whole-wheat pasta\" / \"whole-grain tortilla\", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor."
+      ],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, highly practical weeknight recipe. It perfectly hits the Mediterranean brief, is rich in quality protein and whole-grain carbohydrates, requires very little cleanup, and easily meets the 30-minute time constraint.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is a classic, well-balanced Mediterranean combination. The acidity of the lemon cuts nicely through the olives and olive oil, and the oregano perfectly complements the cod and zucchini."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly deployed in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. They include a time range for baking (12 to 15 minutes), a specific check-time prompt (Check at 12 minutes), clear visual doneness cues (opaque and flakes easily), and correct steeping instructions for the couscous."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with the Mediterranean style, utilizing characteristic ingredients (EVOO, olives, lemon, oregano) and an appropriate culinary technique (en papillote)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Cooking en papillote is an ideal method for lean fish like cod, ensuring it steams in its own juices and does not dry out. Pour-over steeping is the correct preparation for couscous."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are completely plausible and align well with the lean protein, whole grain, and olive oil quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the recipe and its cooking method without relying on any exaggerated health claims, detox language, or 'diet' framing."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing weeknight dinner. The parchment packet method provides an elegant, flavorful result with minimal cleanup, making it very approachable for a home cook."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Strongly fits the book's dual-purpose goal. It features lean protein, healthy unsaturated fats, a quality whole-grain carbohydrate, and a solid vegetable presence without relying on heavy saturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, relying on fresh lemon and herbs for flavor. The whole wheat couscous provides an excellent, high-quality complex carbohydrate that perfectly hits the target window. (The automated warning can be safely ignored, as 'whole wheat' denotes a whole grain product)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter intent flawlessly, delivering a fast, easy, nutrient-dense seafood meal within the target macro tiers."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable within 30 minutes from start to finish. Prep is minimal (halving cherry tomatoes, dicing zucchini), and the active cooking and steeping happen concurrently. All ingredients are standard supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is captured from a 3/4 overhead angle (40 degrees) to showcase the volume and texture of two white ceramic plates resting on an aged oak table. Each plate features a generous base of fluffy, light brown whole wheat couscous, with a delicate, opaque white cod fillet placed alongside a vibrant, colorful heap of roasted diced zucchini, halved cherry tomatoes, and halved Kalamata olives. The cod is perfectly cooked, showing tender, flaky white layers with a light sheen from a squeeze of lemon juice. The diced zucchini cubes are tender with slight caramelization and charred edges from the oven. The cherry tomatoes are softened, their juices mingling slightly with the olive oil and couscous. A fresh, bright yellow lemon wedge sits at the edge of each plate. Shallow depth of field keeps the front plate in crisp focus while the second plate behind is softly blurred. Soft natural light from a window to the left creates gentle, realistic shadows. Props include a stainless steel fork resting on the linen cloth and a few stray grains of couscous and a single kalamata olive half on the wood surface. Photorealistic, not AI-generated looking. The scene reflects a lived-in, warm, authentic home kitchen. Includes subtle imperfections: a tiny sauce drip on the rim, slightly uneven browning, and a natural crumb trail. Warm, golden-hour color temperature. No plastic sheen, no artificial symmetry, no hands, no faces, no text.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

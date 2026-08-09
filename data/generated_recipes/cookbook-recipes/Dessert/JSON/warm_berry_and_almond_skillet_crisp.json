@@ -1,0 +1,135 @@
+{
+  "id": "b06d220a-d722-4ebb-84ee-b23d77570c56",
+  "title": "Warm Berry and Almond Skillet Crisp",
+  "intro": "For a cozy weeknight dessert, this quick stovetop crumble hits all the right comfort notes. Lightly toasting the oats and nuts adds a satisfying crunch over tangy Greek yogurt and naturally sweet fruit.",
+  "diet_tags": [],
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 7,
+  "cook_time_max_min": 11,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Frozen mixed berries",
+      "canonical_name": "Berries, mixed, frozen",
+      "quantity_g": 180.0,
+      "quantity_display": "6 1/2 oz (180 g)",
+      "preparation": null,
+      "fdc_id": 2709271,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Old-fashioned rolled oats",
+      "canonical_name": "Oats, raw",
+      "quantity_g": 20.0,
+      "quantity_display": "3/4 oz (20 g)",
+      "preparation": null,
+      "fdc_id": 2708489,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sliced almonds",
+      "canonical_name": "Nuts, almonds, sliced",
+      "quantity_g": 20.0,
+      "quantity_display": "3/4 oz (20 g)",
+      "preparation": null,
+      "fdc_id": 170567,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 7.0,
+      "quantity_display": "1/2 tbsp (7 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pure maple syrup",
+      "canonical_name": "Syrups, maple",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 169661,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pure vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 2.5,
+      "quantity_display": "1/2 tsp (2.5 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Nonfat plain Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 120.0,
+      "quantity_display": "4 1/4 oz (120 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Combine the oats, almonds, and extra-virgin olive oil in a small skillet over medium heat.",
+    "Toast the mixture for 4 to 6 minutes, stirring frequently, until the oats are golden and fragrant. Transfer the oat mixture to a small bowl and set aside.",
+    "Return the skillet to medium heat and add the frozen berries, cinnamon, and maple syrup. Simmer for 3 to 5 minutes, mashing slightly with a spoon, until the fruit softens and the juices begin to bubble and thicken. Check at 3 minutes.",
+    "Remove the skillet from the heat and stir the vanilla extract directly into the warm berries.",
+    "Divide the Greek yogurt between two serving bowls, spoon the warm fruit over the yogurt, and top evenly with the toasted crisp mixture."
+  ],
+  "variation": "Swap the sliced almonds for chopped pecans or walnuts.",
+  "conservation": "Best enjoyed right away; the crisp topping does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 214.3,
+    "protein_g": 10.2,
+    "carbs_g": 22.7,
+    "fat_g": 9.6,
+    "fiber_g": 4.6,
+    "sodium_mg": 22.9,
+    "sugar_g": 9.8,
+    "saturated_fat_g": 1.1,
+    "added_sugar_g": 1.5,
+    "cholesterol_mg": 3.0,
+    "potassium_mg": 329.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 5.9,
+    "pufa_g": 1.9,
+    "calcium_mg": 125.8,
+    "iron_mg": 1.2,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "[instruction_completeness] Step 3 correctly includes 'Check at 3 minutes' for its time range, but Step 2 is missing the explicit check instruction for the 4 to 6 minute range. Fix: Add 'Check at 4 minutes' to Step 2, as oats and nuts can burn quickly."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dessert\\IMG\\warm_berry_and_almond_skillet_crisp.png",
+  "created_at": "2026-08-09T13:13:21.684056",
+  "generation_id": "852e3066-4c95-4045-8835-84c3b8eb41d5"
+}

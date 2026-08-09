@@ -1,0 +1,480 @@
+{% set book_display = manifest.display_name or plan.cookbook_name %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ plan.days|length }}-Day Plan — {{ book_display }}</title>
+</head>
+<body data-book-name="{{ book_display }}">
+
+  <section class="cover">
+    <p class="eyebrow"><span class="count">{{ plan.days|length }}-day</span> meal plan</p>
+    <h1>{{ book_display }}</h1>
+    <p class="objective">{{ manifest.objective }}</p>
+  </section>
+
+  <section class="brief">
+    <p class="eyebrow">How this plan works</p>
+    <h2>{{ plan.days|length }} days, {{ manifest.meal_structure|length }} meals a day,
+        nothing to calculate</h2>
+
+    <p class="lead">
+      Every day of this plan is built from the recipes in
+      <em>{{ book_display }}</em> — {{ manifest.meal_structure|length }} meals a day,
+      assembled so the daily totals do both jobs at once: <strong>steady, gradual
+      weight loss</strong> and <strong>very little added sugar</strong> for your liver,
+      with <strong>real carbohydrate, plenty of fiber and protein at every meal</strong>
+      for your blood sugar. Nothing here asks you to cut carbohydrate out. Every recipe
+      serves {{ manifest.servings_per_recipe }}; the numbers below are one
+      person's portion.
+    </p>
+
+    <h3>What a day on this plan delivers</h3>
+    <table class="targets">
+      <thead>
+        <tr>
+          <th>Nutrient</th>
+          <th class="col-value">This plan, per day</th>
+          <th>Why that number</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in target_rows %}
+          <tr>
+            <td class="label">{{ row.label }}</td>
+            <td class="value">
+              {{ row.value }}
+              {% if row.note %}<span class="pct">{{ row.note }}</span>{% endif %}
+            </td>
+            <td class="source">{{ row.guideline }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <p class="table-note">
+      Averages across all {{ plan.days|length }} days. Individual days vary —
+      that is normal and intended; what matters is the weekly picture.
+    </p>
+
+    <h3>How to use it</h3>
+    <ul class="how-to">
+      {% if optional_labels %}
+        <li class="optional-rule"><strong>The
+            {{ optional_labels|join(" and the ") }} are optional.</strong>
+            Not hungry? Skip {% if optional_labels|length > 1 %}them{% else %}it{% endif %} —
+            never force yourself to eat on schedule.
+            {% if core_day %}
+              Without {% if optional_labels|length > 1 %}them{% else %}it{% endif %} a day
+              still gives {{ core_day.kcal|round|int }} kcal,
+              {{ core_day.protein_g|round|int }} g protein and
+              {{ core_day.fiber_g|round|int }} g fiber.
+            {% endif %}</li>
+      {% endif %}
+      <li><strong>Shop once a week.</strong> Each week opens with its own
+          shopping list, already totalled across that week's recipes. Buy from
+          that list and you have the week covered.</li>
+      <li><strong>Cook two portions, eat one.</strong> Every recipe serves
+          {{ manifest.servings_per_recipe }} — either share it, or keep the
+          second portion for the next day's lunch.</li>
+      <li><strong>Swap within a column.</strong> Do not fancy the Tuesday
+          dinner? Trade it for any other dinner in the book. The macros are
+          close enough that the week still works.</li>
+      <li><strong>Drink more water than usual.</strong> This plan carries about
+          {{ plan.avg_daily_nutrition.fiber_g|round|int }} g of fiber a day.
+          Fiber needs water to do its job comfortably — aim for 6-8 glasses.</li>
+    </ul>
+  </section>
+
+  {% if plan.pantry and plan.pantry.total_items %}
+    <section class="pantry">
+      <p class="eyebrow">Before you start</p>
+      <h2>Stock your pantry once</h2>
+
+      <p class="lead">
+        These {{ plan.pantry.total_items }} ingredients come up again and again
+        across the {{ plan.days|length }} days. Buy them at the start and most
+        evenings become a 20-minute job instead of a shopping trip. They are
+        <strong>not</strong> repeated on the weekly shopping lists — each week
+        ends with a short pantry check instead, so the main list stays fresh
+        food only.
+      </p>
+
+      <div class="pantry-grid">
+        {% for category, items in plan.pantry.items_by_category.items() %}
+          <div class="pantry-cat">
+            <h4>{{ category }}</h4>
+            <ul>
+              {% for item in items %}
+                <li>
+                  <span class="ingredient">{{ item.display_name }}</span>
+                  <span class="meta">
+                    <span class="uses">{{ item.recipe_count }} recipes</span>
+                    <span class="qty">{{ item.total_quantity_display }}</span>
+                  </span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </div>
+
+      <p class="table-note">
+        Quantities are the total across all {{ plan.days|length }} days — a
+        guide to what size to buy, not a single shopping trip.
+      </p>
+    </section>
+  {% endif %}
+
+  {% if plan.user_profile and plan.targets %}
+    {% set p = plan.user_profile %}
+    {% set t = plan.targets %}
+    {% set i = plan.insights %}
+    <section class="profile">
+      <h2>Your profile and your plan</h2>
+
+      <h3 class="profile-section">About you</h3>
+      <p class="profile-line">
+        <strong>{{ p.name }}</strong>, {{ p.age }}-year-old
+        {{ sex_labels[p.sex]|lower }}, {{ p.height_cm|round|int }} cm tall.
+        You currently weigh <strong>{{ "%.1f"|format(p.weight_kg) }} kg</strong>
+        and your target is <strong>{{ "%.1f"|format(p.target_weight_kg) }} kg</strong>.
+      </p>
+      <p class="profile-line">
+        Your day-to-day activity level is
+        <strong>{{ activity_labels[p.activity_level] }}</strong>
+        {% if p.activity_level == "sedentary" %}(very little walking, no regular exercise){% endif %}
+        {%- if p.activity_level == "light" %}(some walking, occasional exercise){% endif %}
+        {%- if p.activity_level == "moderate" %}(daily walking plus some exercise){% endif %}
+        {%- if p.activity_level == "active" %}(a lot of walking, regular exercise){% endif %}
+        {%- if p.activity_level == "very_active" %}(intensive exercise almost daily){% endif -%}
+        .
+      </p>
+
+      <h3 class="profile-section">Your numeric goal</h3>
+      <p class="profile-line">
+        {% if i and p.target_date %}
+          Reach <strong>{{ "%.1f"|format(p.target_weight_kg) }} kg</strong>
+          by <strong>{{ p.target_date.isoformat() }}</strong>, by
+          {% if i.direction == "lose" %}losing{% else %}gaining{% endif %}
+          about {{ "%.1f"|format(i.weekly_loss_kg|abs) }} kg per week.
+        {% elif i %}
+          {% if i.direction == "lose" %}Lose{% elif i.direction == "gain" %}Gain{% else %}Maintain{% endif %}
+          weight at a safe pace of
+          <strong>{{ "%.1f"|format(i.weekly_loss_kg|abs) }} kg per week</strong>.
+        {% endif %}
+      </p>
+
+      <h3 class="profile-section">Your new daily target</h3>
+      <p class="profile-line">
+        To reach your goal, you'll eat
+        <strong>{{ t.daily_kcal }} calories per day</strong>, split as:
+        <strong>{{ t.protein_g|round|int }} g protein</strong>
+        (lean meat, fish, eggs, Greek yogurt, cottage cheese, legumes) ·
+        <strong>{{ t.carbs_g|round|int }} g carbohydrate</strong>
+        (whole grains, starchy vegetables, fruit) ·
+        <strong>{{ t.fat_g|round|int }} g healthy fats</strong>
+        (olive oil, nuts, fatty fish) ·
+        <strong>{{ t.fiber_g|round|int }} g fiber</strong>
+        (vegetables, fruit, whole grains).
+      </p>
+
+      <h3 class="profile-section">Per-meal breakdown</h3>
+      <p class="profile-line">
+        {% for mt in manifest.meal_structure %}
+          {% set pt = t.per_meal.get(mt) %}
+          {% if pt %}
+            <strong>{{ meal_labels[mt] }}</strong> {{ pt.kcal|round|int }} calories{% if not loop.last %} ·
+            {% endif %}
+          {% endif %}
+        {% endfor %}.
+      </p>
+
+      {% if t.warnings %}
+        <h3 class="adjustments-title">Important notes</h3>
+        <ul class="warnings">
+          {% for w in t.warnings %}
+            <li>⚠ {{ w }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      {% if plan.generation_warnings %}
+        <h3 class="adjustments-title">Notes on your plan</h3>
+        <ul class="warnings adjustments">
+          {% for w in plan.generation_warnings %}
+            <li>⚠ {{ w }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+  {% endif %}
+
+  {% if plan.insights and plan.user_profile and plan.targets %}
+    {% set p = plan.user_profile %}
+    {% set t = plan.targets %}
+    {% set i = plan.insights %}
+    <section class="insights">
+      <p class="eyebrow">How to succeed</p>
+      <h2>{{ p.name }}, here's how to reach your goal</h2>
+
+      <div class="insights-grid">
+
+        <div class="insights-block insights-goal">
+          <h3>Where you're headed, and when</h3>
+          {% if i.direction == "maintain" %}
+            <p>You'll maintain your weight around
+               <strong>{{ "%.1f"|format(p.weight_kg) }} kg</strong>.</p>
+          {% else %}
+            <p>You'll go from <strong>{{ "%.1f"|format(p.weight_kg) }} kg</strong>
+               to <strong>{{ "%.1f"|format(p.target_weight_kg) }} kg</strong> —
+               that's <strong>{{ "%.1f"|format(i.delta_kg|abs) }} kg
+               to {% if i.direction == "lose" %}lose{% else %}gain{% endif %}</strong>
+               over about <strong>{{ i.weeks_to_target|round|int }} weeks</strong>.</p>
+            {% if i.projected_target_date %}
+              <p>If you follow the plan, you'll reach your goal around
+                 <strong>{{ i.projected_target_date.isoformat() }}</strong>.</p>
+            {% endif %}
+            <p>One <strong>month in</strong>, you should weigh about
+               {{ "%.1f"|format(i.checkpoint_1_month_kg) }} kg.</p>
+            {% if i.initial_water_loss_caveat %}
+              <p class="hint">Tip — in your first week, you may lose 1-3 kg
+                 more than expected: that's just water weight. After that,
+                 the pace settles to about {{ "%.1f"|format(i.weekly_loss_kg|abs) }} kg
+                 per week.</p>
+            {% endif %}
+          {% endif %}
+        </div>
+
+        <div class="insights-block insights-energy">
+          <h3>Daily calories, explained</h3>
+          <p>At rest, your body burns about
+             <strong>{{ t.bmr|round|int }} calories</strong> per day just
+             keeping you alive (breathing, digesting, heartbeat).</p>
+          <p>With your day-to-day activity ({{ activity_labels[p.activity_level] }}),
+             you burn <strong>{{ t.tdee|round|int }} calories total</strong>.</p>
+          {% if i.direction == "lose" %}
+            <p>To lose weight safely, you'll eat
+               <strong>{{ i.daily_deficit_kcal }} calories per day</strong>
+               less than you burn.</p>
+            <p>→ Your target: <strong>{{ t.daily_kcal }} calories per day</strong>.</p>
+          {% elif i.direction == "gain" %}
+            <p>To gain weight, you'll eat
+               <strong>{{ -i.daily_deficit_kcal }} calories per day</strong>
+               more than you burn.</p>
+            <p>→ Your target: <strong>{{ t.daily_kcal }} calories per day</strong>.</p>
+          {% else %}
+            <p>→ Your target: <strong>{{ t.daily_kcal }} calories per day</strong>
+               (maintenance — neither losing nor gaining).</p>
+          {% endif %}
+        </div>
+
+        <div class="insights-block insights-macros">
+          <h3>Your new daily target</h3>
+          <p>
+            To reach your goal, you'll eat
+            <strong>{{ t.daily_kcal }} calories per day</strong>, split as:
+          </p>
+          <ul>
+            <li><strong>Protein: {{ t.protein_g|round|int }} g</strong>
+                (fish, poultry, eggs, Greek yogurt, cottage cheese, beans and
+                lentils) — aim for about <strong>{{ i.protein_per_main_meal }} g
+                per main meal</strong>. Around 25-30 g per meal is what keeps you
+                from losing muscle while you lose weight, and it helps steady
+                your blood sugar.</li>
+            <li><strong>Healthy fats: {{ t.fat_g|round|int }} g</strong>
+                (olive oil first, plus nuts, fatty fish and avocado). Swapping
+                saturated fat for unsaturated is one of the few food changes that
+                acts directly on liver fat.</li>
+            <li><strong>Carbohydrate: {{ t.carbs_g|round|int }} g</strong>
+                (whole grains, legumes, vegetables, fruit).
+                {{ i.cookbook_diet_note }}</li>
+            <li><strong>Fiber: {{ t.fiber_g|round|int }} g</strong>
+                (vegetables, fruit, whole grains, legumes). Keeps you full,
+                slows digestion so hunger stays away longer, and steadies your
+                energy — increase gradually with plenty of fluids.</li>
+          </ul>
+        </div>
+
+        <div class="insights-block insights-levers">
+          <h3>5 habits for success</h3>
+          <ul class="levers">
+            <li><span class="lever-ico">💧</span>
+                <strong>Drink {{ "%.1f"|format(i.water_l_per_day) }} liters of
+                water per day</strong> (about {{ (i.water_l_per_day * 4)|round|int }}
+                large glasses), on a schedule — not just when you feel thirsty.
+                A higher-fiber diet needs plenty of water to stay comfortable.
+                Plan ~16 oz with each main meal plus a glass mid-morning
+                and mid-afternoon.</li>
+
+            <li><span class="lever-ico">🏋️</span>
+                <strong>Add resistance training 2-3 days per week</strong>
+                (light weights, resistance bands, or bodyweight exercises like
+                squats, wall push-ups, or step-ups). In a calorie deficit, a large
+                share of the weight you lose can be muscle unless you train —
+                strength work is what keeps muscle on your body while you lose
+                fat. Combine it with the protein target above and you preserve
+                both muscle and strength.</li>
+
+            <li><span class="lever-ico">🚶</span>
+                <strong>Walk at least
+                {{ "{:,}".format(i.daily_steps_target).replace(",", ",") }} steps
+                per day</strong>
+                (about {{ (i.daily_steps_target * 0.7 / 1000)|round|int }} km,
+                or roughly an hour). Daily movement protects your weight loss
+                and your joints.</li>
+
+            <li><span class="lever-ico">😴</span>
+                <strong>Sleep 7 to 9 hours per night.</strong> Poor sleep raises
+                next-day hunger by about 20%.</li>
+
+            {% if i.direction == "lose" %}
+              <li><span class="lever-ico">🍷</span>
+                  <strong>Watch sweetened drinks and alcohol.</strong>
+                  A glass of wine, a soda, or a fruit juice can add 100-200
+                  hidden calories, with little protein or fiber to show for it.
+                  They're the #1 trap.</li>
+            {% else %}
+              <li><span class="lever-ico">🥑</span>
+                  <strong>Eat energy-dense.</strong> Add nuts, olive oil, and
+                  whole-grain starches to reach your target without forcing
+                  yourself to over-eat.</li>
+            {% endif %}
+          </ul>
+        </div>
+
+        <div class="insights-block insights-track">
+          <h3>Tracking your progress</h3>
+          <p><strong>Weigh yourself once a week</strong>, in the morning before
+             eating, under the same conditions (same scale, same clothing).</p>
+          <p>Your weight naturally varies by ±1 kg from day to day (water, salt,
+             hormonal cycle) — that's normal, don't worry about it.</p>
+          {% if i.direction != "maintain" %}
+            <p>If you don't {% if i.direction == "lose" %}lose{% else %}gain{% endif %}
+               weight for 3 weeks in a row, update your plan with your new
+               weight — your body burns less as you
+               {% if i.direction == "lose" %}slim down{% else %}grow{% endif %}
+               (about {{ i.bmr_drop_estimate }} calories per day less
+               at {{ "%.1f"|format(p.target_weight_kg) }} kg).</p>
+          {% endif %}
+        </div>
+
+      </div>
+    </section>
+  {% endif %}
+
+  {% set daily_target = plan.targets.daily_kcal if plan.targets else None %}
+  {% for week in plan.weeks %}
+  <section class="week">
+    <header class="week-header">
+      <h2>{{ week.label }}</h2>
+      <p class="week-stats">
+        Average: {{ week.avg_daily_nutrition.calories_kcal|round|int }} kcal/day ·
+        {{ week.days|length }} days
+      </p>
+    </header>
+
+    <h3 class="section-label">Schedule</h3>
+    <table>
+      <thead>
+        <tr>
+          <th class="col-day">Day</th>
+          {% for mt in manifest.meal_structure %}
+            <th>{{ meal_labels[mt] }}
+              {%- if mt in optional_meals %}<span class="opt-flag">optional</span>{% endif %}</th>
+          {% endfor %}
+          <th class="col-total">Total</th>
+          {% if daily_target %}<th class="col-delta">Δ</th>{% endif %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for day in week.days %}
+          {% set total_kcal = day.daily_totals.calories_kcal|round|int %}
+          {% set delta = (total_kcal - daily_target) if daily_target else 0 %}
+          <tr>
+            <td class="day">{{ day.day_number }}</td>
+            {% for mt in manifest.meal_structure %}
+              {% set slot = (day.slots | selectattr("meal_type", "equalto", mt) | list | first) %}
+              <td class="meal">
+                {% if slot %}
+                  {% set img = image_urls.get(slot.recipe_id) %}
+                  {% if img %}
+                    <img class="thumb" src="{{ img }}" alt="">
+                  {% else %}
+                    <span class="thumb thumb-placeholder"></span>
+                  {% endif %}
+                  <span class="meal-text">
+                    <span class="title">{{ slot.recipe_title }}</span>
+                    <span class="kcal">{{ slot.nutrition_per_serving.calories_kcal|round|int }} kcal</span>
+                  </span>
+                {% else %}
+                  <span class="dash">—</span>
+                {% endif %}
+              </td>
+            {% endfor %}
+            <td class="total">{{ total_kcal }} kcal</td>
+            {% if daily_target %}
+              <td class="delta {% if delta|abs > daily_target * 0.10 %}delta-warn{% endif %}">
+                {% if delta >= 0 %}+{% else %}−{% endif %}{{ delta|abs }}
+              </td>
+            {% endif %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h3 class="section-label">Shopping list</h3>
+    <div class="courses">
+      {% for category, items in week.course_list.items_by_category.items() %}
+        <div class="category">
+          <h4>{{ category }}</h4>
+          <ul>
+            {% for item in items %}
+              <li>
+                <span class="ingredient">{{ item.display_name }}</span>
+                <span class="qty">{{ item.total_quantity_display }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+
+      {% if week.course_list.pantry_items %}
+        <div class="category pantry-check">
+          <h4>Pantry check — you should already have these</h4>
+          <p class="pantry-note">
+            From your pantry page. Check you have enough for the week; only buy
+            more if you are running low.
+          </p>
+          <ul class="pantry-check-list">
+            {% for item in week.course_list.pantry_items %}
+              <li>
+                <span class="ingredient">{{ item.display_name }}</span>
+                <span class="qty">{{ item.total_quantity_display }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+
+      {% if week.course_list.optional_items %}
+        <div class="category optional">
+          <h4>Condiments and optional ingredients</h4>
+          <ul class="optional">
+            {% for item in week.course_list.optional_items %}
+              <li>
+                <span class="ingredient">{{ item.display_name }}</span>
+                <span class="qty">{{ item.total_quantity_display }}</span>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+  {% endfor %}
+
+  <section class="back">
+    <p class="thanks">Enjoy your meals.</p>
+  </section>
+
+</body>
+</html>

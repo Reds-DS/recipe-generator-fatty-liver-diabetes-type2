@@ -1,0 +1,56 @@
+=== RECIPE LOG: Open-Faced Tomato and Spinach Egg Melts ===
+ID            : 4c9b5ab4-8c47-4d4a-b97c-8b9fc9024861
+Generation ID : ea07171d-1d7f-4f6f-9238-b6f5315481c3
+Generated     : 2026-08-09 17:07:11
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Whole wheat English muffins and whole eggs
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Open-Faced Tomato and Spinach Egg Melts
+Technique       : Skillet and toasting
+Cuisine style   : Mediterranean-American
+Flavour profile : Savory, fresh, and slightly cheesy
+Sketch          : 100% whole wheat English muffins, Whole eggs, Liquid egg whites (carton), Baby spinach, Fresh tomato slices, Part-skim mozzarella cheese slices, Extra-virgin olive oil, Fresh strawberries (for serving)
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] protein 25.7 g/serving < floor 26 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding an open-faced whole wheat English muffin topped with a generous, fluffy portion of spinach-infused scrambled...

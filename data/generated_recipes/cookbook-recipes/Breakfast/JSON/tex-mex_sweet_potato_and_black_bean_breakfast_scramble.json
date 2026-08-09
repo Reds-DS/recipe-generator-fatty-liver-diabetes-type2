@@ -1,0 +1,147 @@
+{
+  "id": "03192645-c3e1-45b6-855b-73416f96a437",
+  "title": "Tex-Mex Sweet Potato and Black Bean Breakfast Scramble",
+  "intro": "Smoky cumin and vibrant salsa deliver bold southwestern flavor to this protein-packed, vegetable-forward breakfast. Pairing convenient frozen sweet potatoes with pantry black beans creates a hearty, high-fiber foundation that helps prevent mid-morning energy crashes.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 9,
+  "cook_time_max_min": 12,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 4.5,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen diced sweet potatoes",
+      "canonical_name": "Sweet potato, frozen, unprepared",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": null,
+      "fdc_id": 169306,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned black beans",
+      "canonical_name": "Beans, black, mature seeds, canned, low sodium",
+      "quantity_g": 260.0,
+      "quantity_display": "1 cup (260 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175238,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Liquid egg whites",
+      "canonical_name": "Egg, white, raw, fresh",
+      "quantity_g": 300.0,
+      "quantity_display": "10 oz (300 g)",
+      "preparation": null,
+      "fdc_id": 172183,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 100.0,
+      "quantity_display": "2 large (100 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Mild chunky salsa",
+      "canonical_name": "Salsa",
+      "quantity_g": 60.0,
+      "quantity_display": "1/4 cup (60 ml)",
+      "preparation": null,
+      "fdc_id": 174524,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 75.0,
+      "quantity_display": "2.5 oz (75 g)",
+      "preparation": "diced",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 10.0,
+      "quantity_display": "1/4 cup (10 g)",
+      "preparation": "chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the liquid egg whites and whole eggs together in a bowl until uniformly smooth.",
+    "Heat a large nonstick skillet over medium-high heat with the olive oil until the oil shimmers.",
+    "Add the sweet potatoes and cook, stirring occasionally, until tender and browned at the edges, 6 to 8 minutes. Check at 6 minutes.",
+    "Reduce the burner to medium. Stir the cumin and black beans into the skillet, tossing gently until the beans are warmed through.",
+    "Pour the egg mixture over the vegetables. Cook gently, pushing the eggs across the bottom with a silicone spatula as they begin to set, until fully cooked but still soft, 3 to 4 minutes. Check at 3 minutes.",
+    "Remove the skillet from the heat.",
+    "Divide the scramble between two plates and top evenly with the salsa, avocado, and cilantro before serving."
+  ],
+  "variation": "Swap the black beans for rinsed, no-salt-added pinto beans.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 457.3,
+    "protein_g": 33.7,
+    "carbs_g": 51.0,
+    "fat_g": 13.6,
+    "fiber_g": 14.0,
+    "sodium_mg": 725.4,
+    "sugar_g": 3.1,
+    "saturated_fat_g": 2.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 186.0,
+    "potassium_mg": 1387.2,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.3,
+    "pufa_g": 2.2,
+    "calcium_mg": 147.2,
+    "iron_mg": 5.1,
+    "vitamin_d_mcg": 1.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "sugar_g: partial data — 20% of recipe weight has no USDA value for it.",
+    "sodium 725.4 mg/serving > ceiling 550 mg (\"main\")",
+    "[nutrition_plausibility] The automated check flagged sodium at 725 mg, which exceeds the 550 mg breakfast ceiling. This is likely a database artifact (failing to register the 'no-salt-added' black bean modifier, or assuming a heavily salted commercial salsa). To guarantee it stays under the limit, consider updating the ingredient to read 'Low-sodium mild chunky salsa'."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\tex-mex_sweet_potato_and_black_bean_breakfast_scramble.png",
+  "created_at": "2026-08-09T19:11:44.760681",
+  "generation_id": "639c049e-2ec1-4e01-b61c-0dcfe662d725"
+}

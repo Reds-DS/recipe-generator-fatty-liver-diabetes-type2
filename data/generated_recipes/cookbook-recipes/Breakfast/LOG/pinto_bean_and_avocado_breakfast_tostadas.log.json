@@ -1,0 +1,782 @@
+{
+  "main_ingredient": "No-salt-added canned pinto beans",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Pinto Bean and Avocado Breakfast Tostadas",
+  "recipe_id": "14bfb995-a476-4e9b-bbab-8fd84e7890c3",
+  "generation_id": "a4b75c5b-5c87-419e-95e6-86825e1f7bf4",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T16:46:49.205374",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Pinto Bean and Avocado Breakfast Tostadas",
+        "main_ingredient": "No-salt-added canned pinto beans",
+        "technique": "Stovetop skillet and quick-warming",
+        "flavour_profile": "Earthy, savory, and brightly spiced",
+        "cuisine_style": "Mexican-American",
+        "ingredients_sketch": [
+          "No-salt-added canned pinto beans",
+          "Baby spinach",
+          "Yellow corn tortillas",
+          "Whole eggs",
+          "Fresh pico de gallo",
+          "Avocado",
+          "Raw pepitas (pumpkin seeds)",
+          "Ground cumin",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'No-salt-added canned pinto beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [175200] Beans, pinto, mature seeds, cooked, boiled, without salt to [175247] Beans, pinto, mature seeds, canned, solids and liquids, low sodium.",
+        "No USDA candidate for 'Fresh pico de gallo' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 11% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Fresh pico de gallo"
+        ],
+        "nutrition": {
+          "calories_kcal": 517.9,
+          "protein_g": 30.3,
+          "carbs_g": 50.5,
+          "fat_g": 23.2,
+          "fiber_g": 13.1,
+          "sodium_mg": 756.6,
+          "sugar_g": 4.4,
+          "saturated_fat_g": 5.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 372.0,
+          "potassium_mg": 1091.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 10.1,
+          "pufa_g": 5.8,
+          "calcium_mg": 214.3,
+          "iron_mg": 6.8,
+          "vitamin_d_mcg": 2.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Fresh pico de gallo"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.636,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 756.6 mg/serving > ceiling 550 mg (\"main\")",
+        "saturated fat 5.3 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 756.6 mg/serving > ceiling 550 mg (\"main\")",
+              "saturated fat 5.3 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flavorful, fiber-packed, and highly appealing breakfast that perfectly captures the book's dual-condition dietary philosophy. However, minor ingredient adjustments (dropping the added salt and swapping one egg yolk for a white) are required to bring the sodium and saturated fat strictly within the target nutrient tier ceilings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic Mexican-American flavors work wonderfully together; the earthy beans, creamy avocado, and bright pico de gallo provide a perfectly balanced, savory profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. They provide time ranges, precise visual doneness cues (e.g., 'soft, fluffy curds', 'warmed through and slightly crisp'), and reminders to check early to prevent overcooking."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with the stated Mexican-American style, delivering a wholesome, quick take on huevos rancheros."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Toasting tortillas in a dry skillet and wilting spinach into mashed beans are standard, effective stovetop techniques that match the equipment constraints perfectly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are highly plausible for the ingredients listed. The high sodium flag is expected given the combination of added kosher salt and store-bought pico de gallo."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro highlights its protein and fiber assets in an encouraging, practical tone without making any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It offers fantastic textural variety (crunchy pepitas, crisp tortillas, creamy beans, fluffy eggs) and bold flavors for a satisfying morning meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of eating for both conditions: it provides high protein, substantial fiber from beans and whole-grain corn, and leans on healthy fats (avocado, olive oil, pepitas) instead of processed breakfast meats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly zero added sugar. The complex carbohydrates (50.5g) coming from corn tortillas and beans sit ideally in the target window, providing sustained energy."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe exceeds the chapter's 'main' nutrient tier ceilings for sodium (757mg vs 550mg limit) and saturated fat (5.3g vs 5.0g limit). Fix this by omitting the 1/8 tsp kosher salt entirely (let the pico de gallo season the dish) and changing the egg ratio to 3 whole eggs and 3 egg whites to safely duck under the saturated fat ceiling."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable within 30 minutes from start to finish. All ingredients are standard supermarket staples, and the single-skillet sequence is highly practical for a busy morning."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe exceeds the chapter's 'main' nutrient tier ceilings for sodium (757mg vs 550mg limit) and saturated fat (5.3g vs 5.0g limit). Fix this by omitting the 1/8 tsp kosher salt entirely (let the pico de gallo season the dish) and changing the egg ratio to 3 whole eggs and 3 egg whites to safely duck under the saturated fat ceiling.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned pinto beans' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 coverage: 'Egg whites': [747997] Eggs, Grade A, Large, egg white has no USDA value for fiber_g (which would be summed as zero) — switched to [748967] Eggs, Grade A, Large, egg whole.",
+        "cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 27% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 27% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 27% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned pinto beans"
+        ],
+        "nutrition": {
+          "calories_kcal": 592.1,
+          "protein_g": 32.4,
+          "carbs_g": 52.4,
+          "fat_g": 30.0,
+          "fiber_g": 13.5,
+          "sodium_mg": 404.8,
+          "sugar_g": 2.7,
+          "saturated_fat_g": 6.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 511.7,
+          "potassium_mg": 788.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 12.6,
+          "pufa_g": 7.1,
+          "calcium_mg": 153.1,
+          "iron_mg": 5.8,
+          "vitamin_d_mcg": 3.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned pinto beans"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.4,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "saturated fat 6.8 g/serving > ceiling 5 g (\"main\")",
+        "592.1 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "saturated fat 6.8 g/serving > ceiling 5 g (\"main\")",
+              "592.1 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] The skillet is wiped completely dry in step 4 before cooking the eggs in step 5. Even in a non-stick skillet, egg whites tend to stick without a tiny amount of lubrication. Suggest adding a quick mist of cooking spray before pouring in the eggs."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A bright and satisfying Mexican-American breakfast with excellent fiber and protein. However, it requires a small adjustment to the eggs and pepitas to meet the chapter's calorie and saturated fat limits, and a technical correction to avoid scratching the non-stick skillet with a metal fork.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of earthy pinto beans, toasted tortillas, cumin, and fresh pico de gallo is a classic, highly flavorful, and perfectly balanced profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The skillet is wiped completely dry in step 4 before cooking the eggs in step 5. Even in a non-stick skillet, egg whites tend to stick without a tiny amount of lubrication. Suggest adding a quick mist of cooking spray before pouring in the eggs."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Mexican-American flavors and techniques are very well-represented and aligned with the intended style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Step 3 instructs the reader to lightly mash the beans with a fork in a non-stick skillet. Using a metal fork will scratch and ruin the non-stick coating. Change the instruction to mash with a wooden spoon or a heat-safe silicone spatula instead."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition panel accurately reflects the ingredients, capturing the protein from the eggs and beans, as well as the fats from the avocado and pepitas."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro is appealing, highlighting the metabolic benefits without relying on any banned or sensationalist diet language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a vibrant, satiating, and delicious-sounding breakfast that looks like a substantial, enjoyable meal rather than \"diet food.\""
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The dish successfully provides a high-fiber, vegetable-and-legume-forward meal with excellent quality carbohydrates that serves both insulin resistance and liver health perfectly."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrates (52.4g) fall beautifully into the upper end of the target window, sourced entirely from high-quality whole-grain corn and legumes."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe overshoots the saturated fat and calorie ceilings for a main breakfast (6.8g > 5g ceiling, 592 > 540 kcal ceiling). Reduce the whole eggs from 3 to 2 (while increasing the egg whites from 3 to 4) and decrease the pepitas from 3 tbsp to 1.5 tbsp to bring the numbers back within the chapter's targets."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe uses easily accessible supermarket ingredients and easily fits within the 30-minute promise from start to finish."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [cooking_method_suitability] Step 3 instructs the reader to lightly mash the beans with a fork in a non-stick skillet. Using a metal fork will scratch and ruin the non-stick coating. Change the instruction to mash with a wooden spoon or a heat-safe silicone spatula instead.\n2. [chapter_intent_fit] The recipe overshoots the saturated fat and calorie ceilings for a main breakfast (6.8g > 5g ceiling, 592 > 540 kcal ceiling). Reduce the whole eggs from 3 to 2 (while increasing the egg whites from 3 to 4) and decrease the pepitas from 3 tbsp to 1.5 tbsp to bring the numbers back within the chapter's targets.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned pinto beans' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 29% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 29% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 29% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 29% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned pinto beans"
+        ],
+        "nutrition": {
+          "calories_kcal": 526.8,
+          "protein_g": 32.9,
+          "carbs_g": 64.0,
+          "fat_g": 17.6,
+          "fiber_g": 18.7,
+          "sodium_mg": 500.7,
+          "sugar_g": 3.2,
+          "saturated_fat_g": 3.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 186.0,
+          "potassium_mg": 890.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.8,
+          "pufa_g": 4.1,
+          "calcium_mg": 154.4,
+          "iron_mg": 4.8,
+          "vitamin_d_mcg": 1.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned pinto beans"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 64 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 64 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly appealing savory breakfast with a strong fiber and protein profile, though it requires a slight reduction in beans to meet the breakfast chapter's carbohydrate ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic Mexican-American breakfast flavors are well-balanced; earthy cumin, rich beans, eggs, and creamy avocado work perfectly together."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is properly integrated into the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Every step includes accurate time ranges and clear visual doneness cues (e.g., 'golden and fragrant', 'pliable and lightly toasted')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Accurately represents Mexican-American flavor profiles, ingredients, and techniques."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The sequential single-skillet method is highly suitable, keeping prep logical and cleanup minimal."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are completely consistent with the stated ingredients and quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title highlights the hero ingredients, and the intro uses warm, practical language focused on steady energy without any banned medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appetizing, colorful, and texturally diverse savory breakfast."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with the dietary spine: leverages plant and egg protein, immense dietary fiber from beans, and healthy monounsaturated fats from avocado and olive oil."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Contains zero added sugar, and relies entirely on high-quality complex carbohydrates (corn tortillas and beans)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe overshoots the breakfast chapter's 55g carbohydrate ceiling, landing at 64g. Additionally, 3/4 cup of mashed beans per person is quite thick for just two small tortillas. Reduce the pinto beans from 1.5 cups (255g) to 1 cup (170g). This will improve the bean-to-tortilla ratio and bring the carbohydrates cleanly into the 45-55g target window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in under 25 minutes from a cold start using everyday supermarket ingredients and a single skillet."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is a 3/4 overhead view at 40 degrees, centered to ensure all four tostadas are fully visible, with generous negative space. The depth of field is shallow, keeping the front-most tostada in tack-sharp focus while the secondary plate slightly behind melts into a soft, creamy bokeh. Lighting is soft, directional natural light from a window to the left, casting gentle, elongated shadows that emphasize the texture of the food. The setting is a rustic, weathered oak tabletop with visible grain. The tostadas are served on two matte, off-white ceramic plates. Each plate holds two corn tortillas, lightly toasted to a golden-brown with slight charring. Each tortilla is generously topped with a base of rustic, roughly mashed pinto beans seasoned with cumin, followed by a layer of bright, vibrantly wilted baby spinach, a mound of soft, fluffy yellow-white scrambled egg curds, a heap of fresh pico de gallo with ruby-red tomato and green onion specks, slices of pale-green creamy avocado, and a scatter of golden-brown toasted pepitas. Props include a small wooden spoon resting beside a plate and a scattering of fallen pepitas and a small piece of spinach on the wood surface. The scene is lived-in and authentic, featuring a stray crumb, a tiny splash of pico de gallo juice, and natural, uneven layering. No plastic sheen, no excessive styling, no artificial lighting. Warm, inviting golden-hour tones. Photorealistic, not AI-generated looking. Indistinguishable from professional editorial cookbook photography.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

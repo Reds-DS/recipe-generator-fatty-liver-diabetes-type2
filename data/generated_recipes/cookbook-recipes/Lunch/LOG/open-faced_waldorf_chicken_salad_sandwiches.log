@@ -1,0 +1,60 @@
+=== RECIPE LOG: Open-Faced Waldorf Chicken Salad Sandwiches ===
+ID            : 9ff2155e-bd03-4aaf-8402-d1d29b9037bb
+Generation ID : 88886d31-3aae-4145-a4ea-66f109741a4c
+Generated     : 2026-08-09 17:30:57
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 5
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned chicken breast
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Open-Faced Waldorf Chicken Salad Toasts
+Technique       : No-cook / Assembly
+Cuisine style   : Modern American
+Flavour profile : Creamy, crunchy, and naturally sweet-and-savory
+Sketch          : No-salt-added canned chicken breast, Plain nonfat Greek yogurt, Dijon mustard, Fresh lemon juice, Diced celery, Halved red grapes, Chopped walnuts, Dense whole-grain bread, Baby arugula, Black pepper
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : No-salt-added canned chicken breast
+  [WARN] No USDA candidate for 'No-salt-added canned chicken breast' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 26% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, captured from a 3/4 overhead angle (40°) to display the height and volume of the ing...

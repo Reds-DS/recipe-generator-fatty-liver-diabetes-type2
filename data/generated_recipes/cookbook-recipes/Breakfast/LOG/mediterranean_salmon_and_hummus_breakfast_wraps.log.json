@@ -1,0 +1,763 @@
+{
+  "main_ingredient": "Canned pink salmon (no-salt-added)",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Mediterranean Salmon and Hummus Breakfast Wraps",
+  "recipe_id": "6162b3dc-4865-430b-bd00-c370ace4daac",
+  "generation_id": "a0eea347-0cac-4958-8249-fed8af3ca906",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T16:54:00.628463",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Mediterranean Salmon and Hummus Breakfast Wraps",
+        "main_ingredient": "Canned pink salmon (no-salt-added)",
+        "technique": "No-cook",
+        "flavour_profile": "Savory, bright, and herbaceous",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Whole-wheat tortillas",
+          "Canned pink salmon (no-salt-added)",
+          "Plain hummus",
+          "Baby spinach",
+          "English cucumber",
+          "Red onion",
+          "Fresh dill",
+          "Fresh mixed berries"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "sugar_g: partial data — 38% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 50% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 504.0,
+          "protein_g": 38.0,
+          "carbs_g": 42.2,
+          "fat_g": 21.3,
+          "fiber_g": 10.4,
+          "sodium_mg": 631.8,
+          "sugar_g": 10.3,
+          "saturated_fat_g": 5.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 78.1,
+          "potassium_mg": 1117.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.9,
+          "pufa_g": 6.7,
+          "calcium_mg": 483.6,
+          "iron_mg": 4.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 631.8 mg/serving > ceiling 550 mg (\"main\")",
+        "saturated fat 5.4 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 631.8 mg/serving > ceiling 550 mg (\"main\")",
+              "saturated fat 5.4 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A fresh, savory, no-cook breakfast that beautifully utilizes pantry staples, but needs slight ingredient reductions to meet the strict sodium and saturated fat ceilings for the Breakfast chapter.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Salmon, dill, lemon, and cucumber form a classic Mediterranean combination, and the hummus provides a savory, creamy anchor that brings it all together."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are used appropriately in the instructions, and no surprise ingredients are introduced in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook instructions are clear and complete. The rolling technique for the wraps is well-described for beginners."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean-American style, emphasizing fresh herbs, lemon, hummus, and healthy seafood."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook assembly method is completely suited to these ingredients and perfect for a fast morning meal."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macro values are plausible for the ingredients listed. The slightly higher sodium and saturated fat numbers align with the use of 6 tbsp of hummus, whole wheat tortillas, and 10 oz of salmon."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro provides a helpful, encouraging explanation of the meal's nutritional benefits without resorting to banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. A savory, substantial, non-egg breakfast that uses pantry staples to get food on the table in minutes is exactly what many readers want."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe delivers a high-quality whole-grain carbohydrate, lean protein, and heart-healthy unsaturated fats, accompanied by plenty of fiber. It addresses both insulin resistance and liver health perfectly."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar with all sweetness coming from the side of fresh strawberries. The carbohydrate load (42.2 g) sits beautifully in the center of the target window (32-55 g) and comes from high-quality sources (whole wheat, fruit, hummus)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe currently overshoots the breakfast chapter's strict ceilings for sodium (632 mg vs 550 mg limit) and saturated fat (5.4 g vs 5.0 g limit). To fix this while maintaining flavor and keeping protein well above the 26 g floor, reduce the canned salmon from 10 oz to 8 oz, and reduce the hummus from 6 tbsp to 4 tbsp."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Requires no cooking and uses widely available supermarket staples. The 10-minute prep time is accurate and highly practical for busy mornings."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe currently overshoots the breakfast chapter's strict ceilings for sodium (632 mg vs 550 mg limit) and saturated fat (5.4 g vs 5.0 g limit). To fix this while maintaining flavor and keeping protein well above the 26 g floor, reduce the canned salmon from 10 oz to 8 oz, and reduce the hummus from 6 tbsp to 4 tbsp.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "sugar_g: partial data — 35% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 12% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 19% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 527.9,
+          "protein_g": 33.6,
+          "carbs_g": 57.0,
+          "fat_g": 19.5,
+          "fiber_g": 12.2,
+          "sodium_mg": 684.2,
+          "sugar_g": 14.6,
+          "saturated_fat_g": 5.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 62.4,
+          "potassium_mg": 997.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.2,
+          "pufa_g": 5.4,
+          "calcium_mg": 462.1,
+          "iron_mg": 4.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 57 g/serving > ceiling 55 g (\"main\")",
+        "sodium 684.2 mg/serving > ceiling 550 mg (\"main\")",
+        "saturated fat 5.9 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 57 g/serving > ceiling 55 g (\"main\")",
+              "sodium 684.2 mg/serving > ceiling 550 mg (\"main\")",
+              "saturated fat 5.9 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a fantastic, highly appealing savory breakfast wrap that perfectly leverages Mediterranean staples for a fast morning meal. However, it requires a minor specification change to a smaller whole-wheat tortilla size to pull its sodium, saturated fat, and carbohydrate counts down into the strict chapter ceilings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Mediterranean flavor profile is excellent. Salmon, hummus, dill, and lemon are a classic and delicious combination, and hummus acts as a perfect creamy, nutrient-dense binder in place of mayonnaise."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly utilized in the instructions in a logical order."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The assembly instructions are clear, properly sequenced, and cover all necessary steps for a no-cook wrap."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The dish perfectly aligns with a Mediterranean-American style, heavily utilizing core staples like hummus, dill, spinach, and whole grains."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a no-cook, assembly-based recipe, and the method matches the ingredient prep ideally."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macro values are plausible, although 70g per tortilla (140g for 2) suggests a rather heavy/large burrito-style tortilla rather than a standard 8-inch wrap (which usually weighs around 40-45g)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive, and the intro accurately reflects the hassle-free, no-cook nature of the dish without making banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It offers a fast, savory, and satisfying break from typical sweet breakfasts."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the dietary overlap perfectly: high in lean protein (salmon) and fiber (whole grains, vegetables, berries), with healthy fats from the hummus, explicitly satisfying both liver and blood sugar needs."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the recipe includes excellent complex carbohydrates through the whole-wheat tortilla and fresh berries."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe slightly exceeds the main breakfast tier ceilings for total carbohydrates (57g vs 55g), sodium (684mg vs 550mg), and saturated fat (5.9g vs 5g). The primary source for all three overages is the large 70g tortilla assumption (140g total). Fix: Reduce the specification to 2 smaller whole-wheat tortillas (target around 45g each, often sold as 6-inch or 'fajita/taco' size). This single adjustment will neatly pull all macros under the ceilings without sacrificing the meal's integrity."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 10 minutes with entirely everyday supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe slightly exceeds the main breakfast tier ceilings for total carbohydrates (57g vs 55g), sodium (684mg vs 550mg), and saturated fat (5.9g vs 5g). The primary source for all three overages is the large 70g tortilla assumption (140g total). Fix: Reduce the specification to 2 smaller whole-wheat tortillas (target around 45g each, often sold as 6-inch or 'fajita/taco' size). This single adjustment will neatly pull all macros under the ceilings without sacrificing the meal's integrity.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Canned pink salmon (no-salt-added), rinsed and drained' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 42% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 28% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Canned pink salmon (no-salt-added), rinsed and drained"
+        ],
+        "nutrition": {
+          "calories_kcal": 470.8,
+          "protein_g": 38.1,
+          "carbs_g": 43.0,
+          "fat_g": 18.0,
+          "fiber_g": 13.9,
+          "sodium_mg": 557.9,
+          "sugar_g": 8.9,
+          "saturated_fat_g": 4.2,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 717.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.0,
+          "pufa_g": 3.8,
+          "calcium_mg": 205.0,
+          "iron_mg": 4.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Canned pink salmon (no-salt-added), rinsed and drained"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 557.9 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 557.9 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a nutritionally superb, savory Mediterranean breakfast that brilliantly uses hummus as a mayonnaise alternative for canned salmon. However, the recipe must be revised for physical practicality: it asks the cook to stuff 2.5 cups of filling into a tiny 6-inch tortilla, which will burst instantly. Adjusting the tortilla size or presentation format will make this a perfect recipe.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavors are highly cohesive and balanced. Lemon and dill brighten the canned salmon, while hummus acts as an excellent, flavorful, and fiber-rich binder instead of mayonnaise."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions exactly as specified."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Assembly steps are clear and straightforward. As a no-cook recipe, heat cues and cook times are not applicable."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with Mediterranean-American flavor profiles (hummus, lemon, dill, cucumber, spinach)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The volume of filling is a physical impossibility for the specified tortilla size. Each serving calls for half the mix: 1 cup spinach, 1/2 cup cucumber, over 1/8 cup onion, and about 3/4 cup of the salmon/hummus mixture. That is roughly 2.5 cups of filling per person. You cannot tightly roll 2.5 cups of filling into a single 6-inch fajita tortilla without it completely bursting. Fix: Change to 8-inch (soft taco) tortillas (which will keep carbs within the 55g ceiling), or serve as two 6-inch open-faced tostadas/flatbreads per person."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Macros are completely plausible. The sodium at 558mg is a negligible 8mg over the ceiling and is perfectly acceptable as a database artifact, given that the recipe already specifies no-salt-added salmon."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and the introduction is appealing, practical, and avoids any banned health or diet claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a fantastic, savory, functional weekday breakfast for someone who is tired of eggs or sweet oats but still needs significant protein to stay full."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent dual-condition design. It relies on unsaturated fats (hummus, salmon), high vegetable content, zero added sugar, and high-quality carbohydrates (berries, whole-wheat)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect balance. Zero added sugar, and 43g of total carbohydrate lands squarely in the middle of the 32-55g window, coming entirely from whole-wheat, legumes, vegetables, and whole fruit."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers flawlessly on the 'Breakfast' chapter intent: very fast, high protein (38.1g), and very high fiber (13.9g) to prevent mid-morning hunger."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 10 minutes with no cooking required. Ingredients are widely accessible."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two Mediterranean salmon breakfast wraps are positioned centrally on a warm, weathered oak wood surface, shot from a 3/4 overhead angle to showcase the texture of the tortillas and the vibrant contents. Each whole-wheat tortilla is tightly rolled, with the earthy, toasted brown color of the wheat bread providing a rustic contrast to the bright green baby spinach, pearly-pink flaked salmon, and translucent red onion slices peeking out from the ends. The wraps are placed side-by-side, one in focus and the other slightly blurred in the background, mirroring a meal for two. A generous portion of fresh, glistening mixed berries—blackberries, raspberries, and blueberries—is scattered casually on the side of each plate. The scene includes a small, crumpled linen napkin tucked beneath one edge of the plate and a few stray sprigs of fresh dill and a slice of lemon on the table surface. Soft, natural side light from a nearby window creates gentle shadows and highlights the moist, creamy texture of the hummus-salmon filling. The plates are simple, matte white ceramic. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a few berries have rolled away from the main pile, a small trace of fresh dill on the wood, and the wraps have a handmade, non-uniform shape. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature—cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography for a high-end cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

@@ -1,0 +1,303 @@
+{
+  "main_ingredient": "No-salt-added canned pink salmon",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Smoky Salmon and Sweet Corn Chowder",
+  "recipe_id": "7c1af84f-f2d6-4d69-98c8-2d3db3c7f331",
+  "generation_id": "528827d2-3765-4839-938b-60eaa5c26a1c",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:21:47.485981",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Salmon and Sweet Corn Chowder",
+        "main_ingredient": "No-salt-added canned pink salmon",
+        "technique": "Simmering",
+        "flavour_profile": "Smoky, creamy, and savory",
+        "cuisine_style": "New England-Inspired",
+        "ingredients_sketch": [
+          "No-salt-added canned pink salmon",
+          "Baby red potatoes",
+          "Frozen sweet corn",
+          "Low-sodium vegetable broth",
+          "Low-fat (1%) milk",
+          "Celery",
+          "Yellow onion",
+          "Extra-virgin olive oil",
+          "Smoked paprika",
+          "Fresh chives"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "sugar_g: partial data — 14% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 19% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 19% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 19% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 416.5,
+          "protein_g": 26.7,
+          "carbs_g": 47.1,
+          "fat_g": 15.1,
+          "fiber_g": 6.1,
+          "sodium_mg": 252.8,
+          "sugar_g": 14.4,
+          "saturated_fat_g": 3.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 52.8,
+          "potassium_mg": 1312.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.6,
+          "pufa_g": 3.2,
+          "calcium_mg": 381.5,
+          "iron_mg": 2.5,
+          "vitamin_d_mcg": 1.4,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 47.1 g/serving > ceiling 45 g (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 47.1 g/serving > ceiling 45 g (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a remarkably well-designed recipe that captures the comforting essence of a chowder while strictly adhering to both fatty liver and type 2 diabetes guidelines. The use of smoked paprika to replace bacon and partial mashing to replace a roux are excellent culinary choices, making it a perfect fit for the book.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent; using smoked paprika is a very smart, liver-friendly way to mimic the traditional bacon flavor in a chowder without the saturated fat and sodium."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly listed and integrated seamlessly into the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are comprehensive and well-paced. Time ranges are provided, a 10-minute doneness check is explicitly stated for the potatoes, and the warning not to boil the milk at the end is an essential, appreciated touch."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the New England chowder inspiration perfectly while elegantly adapting the traditional heavy fats for the dietary guidelines."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop simmering and partial mashing directly in the pot is the ideal technique to thicken a dairy-light chowder without resorting to a refined-flour roux."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition calculation is highly plausible. The automated check correctly flagged the total carbohydrate at 47.1g (just over the 45g ceiling), but because the source is entirely unrefined complex starches (potatoes and corn) alongside high protein and fiber, it does not harm the recipe. If strict numerical compliance is desired, reducing the frozen sweet corn to 5.3 oz (150 g) will perfectly land it inside the 35-45g window."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro accurately describe the dish and set realistic, appealing expectations without any banned health claims or overly clinical language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It is a comforting, satisfying, fast meal that feels rich and indulgent without using heavy cream or excessive butter."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balances liver health (omega-3 fatty acids, low saturated fat) and blood sugar management (high protein, substantial fiber, whole-food carbohydrates)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Outstanding. There are zero added sugars, and the carbohydrates come purely from whole-food sources (potatoes, sweet corn) and the natural lactose in the milk."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'light_main' Soups & Salads chapter perfectly as a complete, substantial bowl that carries its own high-quality protein and complex carbohydrates."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Prep is minimal and utilizes incredibly practical pantry/freezer staples (frozen corn, canned salmon). A home cook will easily finish this well within the 30-minute window."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition: two simple, round, matte-white ceramic bowls are centered on a weathered, aged oak wooden table, arranged for a home-cooked meal for two. The primary bowl in the foreground is in sharp focus, while the second bowl sits slightly behind and blurred to establish depth. The camera angle is a 3/4 overhead at 40 degrees, allowing a clear view into both bowls. Lighting: soft, natural side light from a window to the left, creating gentle highlights on the chowder's surface and subtle, soft shadows. The chowder has a creamy, opaque, off-white base from the milk and mashed potatoes, punctuated by bright yellow kernels of sweet corn, soft-edged cubes of red potato skin, and chunks of tender, pink flaked salmon. The surface features a delicate dusting of reddish smoked paprika and a generous sprinkling of freshly chopped vibrant green chives. Styling: a rumpled, neutral linen napkin is tucked partially under the base of the front bowl, and a rustic wooden spoon rests casually on the table surface next to it. Nearby, a few stray bits of chopped chives and a single, small piece of flaked salmon lie on the wood, suggesting a natural, lived-in cooking process. Realism: photorealistic, not AI-generated looking. The scene reflects a warm, cozy kitchen atmosphere with golden-hour color temperature. Includes realistic, slight imperfections: a tiny splash of broth on the rim of the bowl and uneven texture where the potatoes were mashed. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermarks, no hands, no faces. Indistinguishable from professional editorial cookbook photography.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

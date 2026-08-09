@@ -1,0 +1,162 @@
+{
+  "id": "f4aca2dd-8c31-46fe-8329-719107084f08",
+  "title": "Smoky White Bean and Broccoli Skillet Frittata",
+  "intro": "This simple skillet breakfast requires minimal prep and moves quickly from the stovetop to the oven. Folding white beans into a mix of eggs and broccoli creates a filling base that pairs well with fresh oranges.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 13,
+  "cook_time_max_min": 18,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red onion",
+      "canonical_name": "Onions, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "1/2 cup (80 g)",
+      "preparation": "diced",
+      "fdc_id": 790577,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen chopped broccoli",
+      "canonical_name": "Broccoli, frozen, chopped, unprepared",
+      "quantity_g": 130.0,
+      "quantity_display": "1 1/2 cups (130 g)",
+      "preparation": null,
+      "fdc_id": 169968,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned navy beans",
+      "canonical_name": "Beans, navy, mature seeds, canned, no salt added",
+      "quantity_g": 260.0,
+      "quantity_display": "9 oz (260 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Whole eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 100.0,
+      "quantity_display": "2 large (100 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Liquid egg whites",
+      "canonical_name": "Egg, white, raw, fresh",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 g)",
+      "preparation": null,
+      "fdc_id": 172183,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sharp cheddar cheese",
+      "canonical_name": "Cheese, cheddar",
+      "quantity_g": 14.0,
+      "quantity_display": "1/2 oz (14 g)",
+      "preparation": "shredded",
+      "fdc_id": 170899,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh oranges",
+      "canonical_name": "Oranges, raw, all commercial varieties",
+      "quantity_g": 260.0,
+      "quantity_display": "2 medium (260 g)",
+      "preparation": "peeled and segmented",
+      "fdc_id": 169097,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 400°F / 200°C. Whisk the whole eggs, liquid egg whites, smoked paprika, and black pepper in a medium bowl until combined.",
+    "Heat the olive oil in an oven-safe skillet over medium heat.",
+    "Add the red onion to the skillet and cook until softened, 3 to 4 minutes, checking at 3 minutes.",
+    "Stir in the frozen broccoli and drained navy beans. Cook until warmed through, 2 to 3 minutes, checking at 2 minutes.",
+    "Pour the egg mixture over the vegetables in the skillet. Cook undisturbed on medium-low heat until the edges begin to set, 3 to 4 minutes, checking at 3 minutes.",
+    "Sprinkle the cheddar cheese over the top and transfer the skillet to the oven. Bake until the center sets, 5 to 7 minutes, checking at 5 minutes.",
+    "Remove the skillet from the oven using an oven mitt. Slice the frittata in half and serve warm with the fresh orange segments."
+  ],
+  "variation": "Swap the cheddar cheese for crumbled feta or goat cheese.",
+  "conservation": "Keeps 2 days refrigerated; reheat briefly in the microwave.",
+  "nutrition_per_serving": {
+    "calories_kcal": 453.4,
+    "protein_g": 34.4,
+    "carbs_g": 51.1,
+    "fat_g": 13.4,
+    "fiber_g": 13.1,
+    "sodium_mg": 345.2,
+    "sugar_g": 16.9,
+    "saturated_fat_g": 3.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 192.9,
+    "potassium_mg": 751.3,
+    "trans_fat_g": 0.1,
+    "mufa_g": 6.1,
+    "pufa_g": 1.8,
+    "calcium_mg": 185.9,
+    "iron_mg": 2.0,
+    "vitamin_d_mcg": 1.1,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added canned navy beans"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'No-salt-added canned navy beans' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\smoky_white_bean_and_broccoli_skillet_frittata.png",
+  "created_at": "2026-08-09T18:55:17.119048",
+  "generation_id": "5c178a01-f6d7-4ade-8a21-091cfa859b67"
+}

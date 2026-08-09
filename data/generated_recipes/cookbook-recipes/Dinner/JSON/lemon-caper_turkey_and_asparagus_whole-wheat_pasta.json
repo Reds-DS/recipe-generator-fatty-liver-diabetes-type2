@@ -1,0 +1,145 @@
+{
+  "id": "743bd886-5ce1-449d-8ea8-5820bc8678d6",
+  "title": "Lemon-Caper Turkey and Asparagus Whole-Wheat Pasta",
+  "intro": "This fast dinner requires minimal prep and uses a simple skillet technique. Quick-cooking turkey cutlets and whole-wheat angel hair pasta are tossed with asparagus in a bright lemon-caper reduction.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 10,
+  "cook_time_max_min": 15,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "whole-wheat angel hair pasta",
+      "canonical_name": "Pasta, whole wheat, dry",
+      "quantity_g": 115.0,
+      "quantity_display": "4 oz (115 g)",
+      "preparation": null,
+      "fdc_id": 169738,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh asparagus",
+      "canonical_name": "Asparagus, raw",
+      "quantity_g": 250.0,
+      "quantity_display": "9 oz (250 g)",
+      "preparation": "woody ends trimmed and cut into 2-inch pieces",
+      "fdc_id": 168389,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "turkey breast cutlets",
+      "canonical_name": "Turkey, breast, meat only, raw",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": null,
+      "fdc_id": 174515,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "capers",
+      "canonical_name": "Capers, canned",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 172238,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh flat-leaf parsley",
+      "canonical_name": "Parsley, fresh",
+      "quantity_g": 5.0,
+      "quantity_display": "2 tbsp (5 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 170416,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Bring water to a boil in a medium pot over high heat. Add the pasta and cook for 3 to 5 minutes.",
+    "Stir the asparagus into the boiling water during the final 2 minutes of the cooking time. Drain the pasta and asparagus and set aside.",
+    "Heat the olive oil in a large skillet over medium-high heat. Cook the turkey cutlets for 2 to 3 minutes per side, flipping at the halfway point. Transfer the turkey to a plate.",
+    "Reduce the heat to medium. Add the garlic and cook for 30 to 60 seconds, stirring constantly.",
+    "Pour the broth, lemon juice, and capers into the skillet. Simmer for 2 to 3 minutes, scraping the pan to release any browned bits.",
+    "Return the turkey, pasta, and asparagus to the skillet. Toss for 1 to 2 minutes to coat the ingredients in the sauce.",
+    "Remove the skillet from the heat. Divide the meal between plates and garnish with the parsley."
+  ],
+  "variation": "Swap the turkey breast cutlets for thinly sliced chicken breast.",
+  "conservation": "Keeps 2 days refrigerated; reheat gently in a covered skillet.",
+  "nutrition_per_serving": {
+    "calories_kcal": 423.3,
+    "protein_g": 35.8,
+    "carbs_g": 50.3,
+    "fat_g": 11.7,
+    "fiber_g": 8.3,
+    "sodium_mg": 276.2,
+    "sugar_g": 4.5,
+    "saturated_fat_g": 1.7,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 53.0,
+    "potassium_mg": 865.0,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.1,
+    "pufa_g": 2.2,
+    "calcium_mg": 70.9,
+    "iron_mg": 6.0,
+    "vitamin_d_mcg": 0.2,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\lemon-caper_turkey_and_asparagus_whole-wheat_pasta.png",
+  "created_at": "2026-08-09T17:37:31.218017",
+  "generation_id": "c9eeb32f-cc01-48ba-82e9-d035983bf06a"
+}

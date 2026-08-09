@@ -1,0 +1,286 @@
+{
+  "main_ingredient": "Fresh baby spinach",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Garlicky Spinach and Brown Rice Pilaf",
+  "recipe_id": "79646836-357e-4fed-8d58-11aed7d5eff8",
+  "generation_id": "f9037f39-e5c5-450a-ac9f-51906af8a56f",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T13:10:18.790602",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Garlicky Spinach and Brown Rice Pilaf",
+        "main_ingredient": "Fresh baby spinach",
+        "technique": "Skillet sauté",
+        "flavour_profile": "Garlicky, lemony, nutty",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Fresh baby spinach",
+          "Microwaveable brown rice pouch",
+          "Extra-virgin olive oil",
+          "Garlic cloves",
+          "Lemon (for juice and zest)",
+          "Chopped walnuts",
+          "Black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 209.0,
+          "protein_g": 5.8,
+          "carbs_g": 25.1,
+          "fat_g": 10.7,
+          "fiber_g": 3.8,
+          "sodium_mg": 71.1,
+          "sugar_g": 1.0,
+          "saturated_fat_g": 1.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 594.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.6,
+          "pufa_g": 4.3,
+          "calcium_mg": 101.6,
+          "iron_mg": 3.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.875,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 25.1 g/serving > ceiling 24 g (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 25.1 g/serving > ceiling 24 g (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, straightforward recipe that perfectly leverages an everyday supermarket shortcut (the pre-cooked rice pouch) to deliver a balanced, high-fiber side dish well under the 30-minute limit.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Mediterranean and well-balanced: the earthiness of the brown rice and spinach is lifted by bright lemon juice/zest and grounded by savory garlic and rich walnuts."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are accurately listed and used appropriately in the steps. No omissions or additions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent step-by-step instructions. Every cooking step includes a specific time range, a minimum-time check instruction, and clear visual/textural doneness cues (e.g., 'fragrant but not browned', 'fully wilted')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean-American style, leaning on extra-virgin olive oil, fresh lemon, garlic, and leafy greens."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A quick skillet sauté is the ideal method for wilting fresh spinach and gently warming the pre-cooked rice without drying it out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel accurately reflects the ingredients and portions. The macronutrient breakdown is entirely plausible."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is clear and accurate. The intro is warm, practical, and appropriately focuses on energy stability and fiber without making any exaggerated health or 'detox' claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, effortless everyday side dish. The walnuts add essential crunch, contrasting nicely with the soft rice and wilted greens."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Beautifully executes the book's dual mandate: it provides a measured, high-quality complex carbohydrate (brown rice) paired with abundant vegetables and heart-healthy unsaturated fats (olive oil, walnuts)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar. The carbohydrate component is high-quality (whole-grain brown rice) and appropriately portioned to provide stable energy for the T2D reader."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits perfectly in the 'Snacks & Sides' chapter as a measured whole-grain vegetable side. Note on the automated warning: while 25.1g of carbs is marginally over the 24g ceiling for a pure 'snack', it is entirely appropriate for a 'side' dish, which the intro correctly identifies it as."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in 10 minutes. The use of a ready-to-eat cooked brown rice pouch is a smart, explicitly permitted everyday shortcut that delivers on the book's strict under-30-minute promise."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte white ceramic plates placed on an aged oak wood table, capturing a 3/4 overhead perspective at a 40-degree angle to showcase the texture of the pilaf. The primary plate is in sharp focus, while the second plate sits slightly behind and to the side, softly blurred. The pilaf consists of perfectly cooked brown rice grains with a distinct nutty texture, interspersed with bright, emerald-green wilted spinach. The spinach is tender and naturally wilted, not overcooked or mushy. Studded throughout are small, rustic chunks of toasted walnuts, providing golden-brown textural contrast. The rice is lightly tossed with shimmering extra-virgin olive oil, visible as subtle, reflective droplets catching the natural window light from the left. A faint dusting of cracked black pepper and finely grated lemon zest is visible on the surface. The scene is illuminated by soft, natural morning side light, creating gentle shadows and a warm, inviting atmosphere. Props include a rumpled linen napkin partially tucked under the main plate, a wooden spoon resting on the table next to the plate, and a few stray walnut fragments and a small garlic skin scattered near the rim. Photorealistic, not AI-generated looking. The presentation is lived-in and authentic, with a small, natural sauce drip on the rim and an asymmetric distribution of ingredients, avoiding artificial symmetry. The overall tone is golden-hour warm, cozy, and professional editorial quality. No watermarks, no hands, no text, no synthetic plastic look.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

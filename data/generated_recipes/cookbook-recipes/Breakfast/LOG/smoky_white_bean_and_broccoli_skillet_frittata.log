@@ -1,0 +1,61 @@
+=== RECIPE LOG: Smoky White Bean and Broccoli Skillet Frittata ===
+ID            : f4aca2dd-8c31-46fe-8329-719107084f08
+Generation ID : 5c178a01-f6d7-4ade-8a21-091cfa859b67
+Generated     : 2026-08-09 18:55:17
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 6
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Liquid egg whites and no-salt-added canned white beans
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky White Bean and Broccoli Skillet Frittata
+Technique       : Stovetop-to-broiler skillet
+Cuisine style   : Modern American
+Flavour profile : Savory, smoky, and mildly cheesy
+Sketch          : Extra-virgin olive oil, Red onion, Frozen chopped broccoli, No-salt-added canned navy or cannellini beans, Whole eggs, Liquid egg whites, Smoked paprika, Sharp cheddar cheese, Fresh oranges (for serving)
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : No-salt-added canned navy beans
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'No-salt-added canned navy beans' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 24% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 24% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 24% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte ceramic plates placed on a warm, aged oak wood table. The composition is a 3/4 overhead angle, ensuring both plates are ful...

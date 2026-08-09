@@ -1,0 +1,284 @@
+{
+  "main_ingredient": "old-fashioned rolled oats and liquid egg whites",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Fluffy Egg White Oatmeal with Berries and Walnuts",
+  "recipe_id": "4c9b3a6b-fb71-46a3-a783-ec313155d9ff",
+  "generation_id": "8e80c17e-c39e-46fe-bd5a-f23a6633eaeb",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:06:01.159436",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Fluffy Egg White Oatmeal with Berries and Walnuts",
+        "main_ingredient": "old-fashioned rolled oats and liquid egg whites",
+        "technique": "stovetop whisking",
+        "flavour_profile": "warmly spiced, naturally sweet, and nutty",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "old-fashioned rolled oats",
+          "liquid egg whites",
+          "frozen mixed berries",
+          "unsweetened almond milk",
+          "chopped walnuts",
+          "vanilla extract",
+          "ground cinnamon",
+          "kosher salt"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 417.4,
+          "protein_g": 29.1,
+          "carbs_g": 43.9,
+          "fat_g": 13.8,
+          "fiber_g": 7.8,
+          "sodium_mg": 527.9,
+          "sugar_g": 8.8,
+          "saturated_fat_g": 1.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 776.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.9,
+          "pufa_g": 8.3,
+          "calcium_mg": 302.3,
+          "iron_mg": 2.9,
+          "vitamin_d_mcg": 1.2,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.556,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding recipe that flawlessly meets the stringent dietary targets and editorial guidelines of the book. The egg white oatmeal technique genuinely supports both blood sugar control and liver health while delivering a satisfying, fast, and accessible breakfast.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and balanced. Cinnamon, vanilla, walnuts, and berries provide a comforting, classic oatmeal flavor, while the egg whites add a neutral creaminess without impacting the taste."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless consistency. Every ingredient listed is utilized properly in the instructions, and no surprise ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are exceptionally complete. Time ranges are provided, check-times are listed at the minimums, and excellent visual cues ('fully opaque', 'thick, creamy, and voluminous') are included so the home cook knows exactly what to look for."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits beautifully within the Modern American breakfast category, utilizing a popular and effective technique for boosting protein."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop simmering is the right method here. The specific direction to stir 'continuously and vigorously' while adding the egg whites is crucial to prevent scrambling, and the recipe notes this perfectly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros align perfectly with the ingredients. 400g of liquid egg whites alongside oats and walnuts easily accounts for the ~29g of protein per serving, and the fiber content aligns with the rolled oats and berries."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is clear and accurate. The intro explains the technique nicely and promises an alternative to protein powders, which sets realistic, food-first expectations without relying on disallowed health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It solves the common problem of oatmeal causing blood sugar spikes and mid-morning hunger by transforming it into a high-protein, satiating meal with a creamy, voluminous texture."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe perfectly balances both conditions. It utilizes a whole-grain complex carbohydrate (rolled oats) paired with lean protein (egg whites) and healthy fats (walnuts), keeping saturated fat very low (1.5g) to support liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Spot on. Sweetness relies entirely on whole fruit (berries), cinnamon, and vanilla, keeping added sugars at 0g. The carbohydrate component (43.9g) sits comfortably in the target window, providing quality fuel without straying into keto territory."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits every target for the 'Breakfasts' chapter: fast, no syrups, hits the 26g protein floor and 7g fiber floor, and lands perfectly within the 32-55g carbohydrate window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 15 minutes. All ingredients are readily available staples at standard American supermarkets (cartoned egg whites, frozen berries, oats)."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition and framing: Two round, matte ceramic bowls are centered in the frame, angled at 35-45 degrees to clearly display the contents. One bowl is in sharp focus in the foreground, with the second bowl slightly blurred in the background. Generous negative space around the bowls. Lighting: Soft natural side light streaming from a window to the left, casting gentle, natural shadows and creating a slight sheen on the moist surface of the oatmeal. Setting and styling: The bowls sit on a rustic, weathered oak wooden surface with visible grain. Props include a tarnished silver spoon resting casually on the linen tablecloth beside the bowl and a few loose, scattered walnut fragments and a single stray raspberry on the wood surface. The oatmeal is thick and creamy with a slightly airy, fluffy texture from the egg whites, displaying a soft beige color with warm cinnamon flecks. The mixed berries—blueberries and raspberries—are partially thawed, creating streaks of deep violet and bright crimson swirls throughout the porridge. Chopped walnuts are sprinkled generously over the top of each serving. Realism and anti-AI: Photorealistic, not AI-generated looking. The scene appears lived-in and authentic, as if just prepared in a home kitchen. Subtle imperfections include a slight smudge of berry juice on the side of one bowl, uneven distribution of the chopped nuts, and a few stray crumbs on the oak table. The color temperature is warm and golden-hour cozy. No plastic sheen, no perfect symmetry, no artificial lighting, no text, no hands, no faces. Indistinguishable from professional editorial food photography for a high-end cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 0,
+  "total_corrections": 0
+}

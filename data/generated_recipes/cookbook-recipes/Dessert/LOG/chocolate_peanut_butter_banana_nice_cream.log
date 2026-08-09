@@ -1,0 +1,58 @@
+=== RECIPE LOG: Chocolate Peanut Butter Banana Nice Cream ===
+ID            : 2b70d6e4-5f8f-4169-849b-29d2b1d0521f
+Generation ID : 316a9326-c236-48d3-8858-a8b4c3e64b24
+Generated     : 2026-08-09 13:15:43
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen bananas
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Chocolate Peanut Butter Banana Nice Cream
+Technique       : Blending
+Cuisine style   : Modern American
+Flavour profile : Rich chocolate and roasted peanut
+Sketch          : Frozen sliced bananas, Nonfat plain Greek yogurt, Unsweetened cocoa powder, Natural creamy peanut butter, Vanilla extract, Unsweetened almond milk, Dark chocolate chips
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+    [WARN] saturated fat 2.1 g/serving > ceiling 2 g ("dessert")
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, white matte ceramic bowls placed side-by-side on an aged, dark-stained oak wood kitchen table with subtle...

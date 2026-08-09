@@ -1,0 +1,164 @@
+{
+  "id": "7c1af84f-f2d6-4d69-98c8-2d3db3c7f331",
+  "title": "Smoky Salmon and Sweet Corn Chowder",
+  "intro": "This hearty New England-inspired chowder relies on tender potatoes and a partial mash to build creaminess naturally. Salmon and sweet corn keep the bowl satisfying without the need for heavy cream.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 18,
+  "cook_time_max_min": 22,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Yellow onion",
+      "canonical_name": "Onions, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": "finely chopped",
+      "fdc_id": 790646,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Celery",
+      "canonical_name": "Celery, raw",
+      "quantity_g": 120.0,
+      "quantity_display": "4.2 oz (120 g)",
+      "preparation": "chopped",
+      "fdc_id": 169988,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 4.0,
+      "quantity_display": "2 tsp (4 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby red potatoes",
+      "canonical_name": "Potatoes, red, flesh and skin, raw",
+      "quantity_g": 150.0,
+      "quantity_display": "5.3 oz (150 g)",
+      "preparation": "diced small",
+      "fdc_id": 170029,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen sweet corn",
+      "canonical_name": "Corn, sweet, yellow, frozen, unprepared",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": null,
+      "fdc_id": 168398,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned pink salmon",
+      "canonical_name": "Fish, salmon, pink, canned, drained solids",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": "drained and flaked",
+      "fdc_id": 174225,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-fat (1%) milk",
+      "canonical_name": "Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 ml)",
+      "preparation": null,
+      "fdc_id": 170872,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh chives",
+      "canonical_name": "Chives, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 tbsp (6 g)",
+      "preparation": "chopped",
+      "fdc_id": 169994,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the oil in a medium pot over medium heat until shimmering, then add the onion and celery and cook for 4 to 5 minutes until softened.",
+    "Stir in the smoked paprika and cook for 30 seconds until fragrant.",
+    "Add the potatoes, sweet corn, and vegetable broth, and bring the mixture to a gentle simmer over medium-high heat.",
+    "Reduce the heat to medium-low, cover the pot, and simmer for 10 to 12 minutes, checking the potatoes with a fork to ensure they are tender.",
+    "Mash a portion of the potatoes and corn directly in the pot using a potato masher or the back of a large spoon to naturally thicken the chowder.",
+    "Stir in the flaked salmon and the milk, and warm the chowder over medium-low heat for 3 to 4 minutes, ensuring the liquid does not boil.",
+    "Remove the pot from the heat, divide the chowder between bowls, and top with the fresh chives."
+  ],
+  "variation": "Swap the pink salmon for drained no-salt-added canned white tuna.",
+  "conservation": "Keeps 2-3 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 416.5,
+    "protein_g": 26.7,
+    "carbs_g": 47.1,
+    "fat_g": 15.1,
+    "fiber_g": 6.1,
+    "sodium_mg": 252.8,
+    "sugar_g": 14.4,
+    "saturated_fat_g": 3.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 52.8,
+    "potassium_mg": 1312.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.6,
+    "pufa_g": 3.2,
+    "calcium_mg": 381.5,
+    "iron_mg": 2.5,
+    "vitamin_d_mcg": 1.4,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Low-sodium vegetable broth"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+    "sugar_g: partial data — 14% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 19% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 19% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 19% of recipe weight has no USDA value for it.",
+    "total carbohydrate 47.1 g/serving > ceiling 45 g (\"light_main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\smoky_salmon_and_sweet_corn_chowder.png",
+  "created_at": "2026-08-09T18:21:47.485981",
+  "generation_id": "528827d2-3765-4839-938b-60eaa5c26a1c"
+}

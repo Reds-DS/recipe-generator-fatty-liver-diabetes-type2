@@ -1,0 +1,55 @@
+=== RECIPE LOG: Blueberry-Oat Cottage Cheese Pancakes ===
+ID            : b8d8a10a-535f-4137-997c-b9bff76c7eea
+Generation ID : 92f48076-f53e-419c-8907-9d8a59ee4f88
+Generated     : 2026-08-09 11:57:07
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Low-fat cottage cheese
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Blueberry-Oat Cottage Cheese Pancakes
+Technique       : Griddling
+Cuisine style   : Classic American
+Flavour profile : Lightly sweet, vanilla, cinnamon
+Sketch          : Low-fat cottage cheese, Rolled oats, Large eggs, Baking powder, Ground cinnamon, Vanilla extract, Hemp hearts, Frozen blueberries, Chia seeds, Extra-virgin olive oil
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is captured from a 3/4 overhead angle, ensuring all pancakes on the two plates are clearly visible with generous negative space surrounding th...

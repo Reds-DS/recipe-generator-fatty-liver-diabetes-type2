@@ -1,0 +1,298 @@
+{
+  "main_ingredient": "Tempeh",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Smoky Tempeh, White Bean, and Kale Soup",
+  "recipe_id": "154ee997-9383-4aeb-a268-27c4fc37ee4b",
+  "generation_id": "5d643b5e-9ea0-48d7-8262-4d388bbd68b6",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:48:18.001443",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Tempeh, White Bean, and Kale Soup",
+        "main_ingredient": "Tempeh",
+        "technique": "Simmering",
+        "flavour_profile": "Smoky, hearty, and savory",
+        "cuisine_style": "Spanish-Inspired",
+        "ingredients_sketch": [
+          "Tempeh (crumbled)",
+          "Extra-virgin olive oil",
+          "Smoked paprika",
+          "Garlic powder",
+          "No-salt-added canned diced tomatoes",
+          "No-salt-added canned cannellini beans",
+          "Low-sodium vegetable broth",
+          "Fresh chopped kale (or baby spinach)"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "fiber_g: partial data — 15% of recipe weight has no USDA value for it.",
+        "sugar_g: partial data — 15% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 43% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 42% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 42% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 42% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 395.4,
+          "protein_g": 29.4,
+          "carbs_g": 40.5,
+          "fat_g": 15.5,
+          "fiber_g": 9.8,
+          "sodium_mg": 468.2,
+          "sugar_g": 4.8,
+          "saturated_fat_g": 3.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 1242.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.5,
+          "pufa_g": 4.7,
+          "calcium_mg": 279.0,
+          "iron_mg": 7.3,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, deeply flavorful recipe that perfectly embodies the book's dietary philosophy. It successfully uses everyday supermarket staples to deliver a fast, hearty, and compliant Spanish-inspired meal in well under 30 minutes.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and highly coherent. The smoked paprika and garlic mimic the savory depth of Spanish chorizo, while the splash of red wine vinegar at the end provides the perfect acidic lift to balance the earthy tempeh and beans."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless consistency. Every ingredient listed in the ingredients section is explicitly used in the instructions at the correct time."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. They include clear time ranges ('4 to 5 minutes', '5 to 7 minutes'), precise visual cues ('lightly browned and toasted', 'kale is tender'), and a prompt to check at the minimum time."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Spanish-inspired label perfectly. The combination of smoked paprika (pimentón), white beans, kale, and a vinegar finish is a classic Iberian flavor profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The one-pot stovetop method works perfectly here. Browning the tempeh first in olive oil before adding the liquids ensures it develops a savory crust and doesn't just turn to mush in the broth."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros align well with the ingredients. The high protein comes legitimately from the combination of tempeh and cannellini beans, and the sodium is kept in check by the strict use of low-sodium and no-salt-added products alongside a measured 1/4 tsp of added salt."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and appetizing. The intro clearly explains the culinary function of the tempeh (replacing cured sausage) and correctly frames the dish's benefits without making any disallowed or exaggerated medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a fantastic, highly appealing recipe. It feels like real, hearty food rather than 'diet food', offering great textures and deep, savory flavors in a very short timeframe."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the dual-condition book philosophy. It's rich in plant-based protein and fiber, uses extra-virgin olive oil as its healthy fat, avoids saturated fat from meat, and relies on complex carbohydrates that won't spike blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate component is top-tier. At 40.5g of total carbs largely derived from beans and tempeh, it provides excellent sustained energy and hits the chapter's carbohydrate window exactly."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a textbook 'light main' soup. It hits every macro requirement for the chapter (protein, fiber, carbs, and sodium) and functions as a standalone, satisfying meal rather than a side dish."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very practical for a weeknight. With only a little chopping (kale) and opening cans, the 10-minute prep and 12-minute cook times are highly realistic from a cold start. All ingredients are easy to find at mainstream supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two rustic, wide-rimmed matte ceramic bowls of smoky tempeh, white bean, and kale soup, centered in the frame with generous negative space. The camera is at a 3/4 overhead angle to show the vibrant contents of both bowls clearly, with the primary bowl sharp in the foreground and the second bowl softly blurred behind it. Shallow depth of field creates a beautiful natural bokeh. Soft, natural light enters from a window on the left, casting subtle, gentle shadows and highlighting the sheen of olive oil droplets on the broth surface. The setting is an aged oak wood table with visible grain and natural wear. Props include a tarnished silver soup spoon resting casually beside the front bowl, a rumpled, off-white linen napkin tucked slightly under one side, and a few stray, bright green kale fragments scattered naturally on the wood. The soup itself is a rich, warm mosaic: tender, dark green kale ribbons, plump pearly white cannellini beans, and golden-brown, crumbled tempeh bits with a subtle smoky paprika-infused crust, all swimming in a savory, translucent broth tinted with the deep red of diced tomatoes. The dish looks hearty and steam-softened, with the ingredients clearly visible and identifiable. Photorealistic, not AI-generated looking. The scene captures a home-cooked meal, warm, authentic, and lived-in. Includes slight natural imperfections: an asymmetric garnish, a tiny broth droplet on the bowl's rim, and a stray grain of smoked paprika on the table. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

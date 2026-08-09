@@ -1,0 +1,58 @@
+=== RECIPE LOG: Mediterranean Lentil Salad Stuffed Mini Peppers ===
+ID            : 7a192d4e-f48f-414d-97b6-7a5908196f17
+Generation ID : c5f8bdfd-bbc6-47a8-a815-72e9f073de5a
+Generated     : 2026-08-09 18:41:44
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 3
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned brown lentils
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Mediterranean Lentil Salad Stuffed Mini Peppers
+Technique       : No-cook / Assembly
+Cuisine style   : Mediterranean
+Flavour profile : Tangy, bright, and herbaceous
+Sketch          : No-salt-added canned brown lentils, Mini sweet peppers, Fresh cucumber, Kalamata olives, Extra-virgin olive oil, Red wine vinegar, Dried oregano, Black pepper
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 qualifier: 'No-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 30.4 g/serving > ceiling 24 g ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two rustic, matte ceramic plates arranged with a slight depth perspective: one plate in the foreground is sharp, and ...

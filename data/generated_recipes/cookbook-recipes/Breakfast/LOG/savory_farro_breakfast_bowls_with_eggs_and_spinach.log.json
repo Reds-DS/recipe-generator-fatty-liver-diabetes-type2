@@ -1,0 +1,304 @@
+{
+  "main_ingredient": "Whole Eggs and Ready-to-Eat Farro",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Savory Farro Breakfast Bowls with Eggs and Spinach",
+  "recipe_id": "5c744381-a19c-425e-b53b-c4ed9679408e",
+  "generation_id": "f7e3d3ce-2101-41d9-81c4-dbe6d8d339f2",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T16:39:47.044390",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Savory Farro Breakfast Bowls with Eggs and Spinach",
+        "main_ingredient": "Whole Eggs and Ready-to-Eat Farro",
+        "technique": "Skillet",
+        "flavour_profile": "Savory, bright, and slightly spicy",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Ready-to-eat cooked farro pouch",
+          "Whole eggs",
+          "Liquid egg whites",
+          "Fresh baby spinach",
+          "Cherry tomatoes",
+          "Hemp hearts",
+          "Extra-virgin olive oil",
+          "Fresh lemon",
+          "Crushed red pepper flakes"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Ready-to-eat cooked farro' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 26% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Ready-to-eat cooked farro"
+        ],
+        "nutrition": {
+          "calories_kcal": 486.0,
+          "protein_g": 32.9,
+          "carbs_g": 46.9,
+          "fat_g": 20.7,
+          "fiber_g": 8.1,
+          "sodium_mg": 605.6,
+          "sugar_g": 4.6,
+          "saturated_fat_g": 3.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 186.0,
+          "potassium_mg": 981.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.6,
+          "pufa_g": 7.6,
+          "calcium_mg": 105.0,
+          "iron_mg": 3.8,
+          "vitamin_d_mcg": 1.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Ready-to-eat cooked farro"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 605.6 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 605.6 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] Hits the chapter's character and macronutrient goals (protein, fiber, carbs) beautifully, but drifts slightly above the 550mg sodium ceiling. Fix: Reduce the added salt from 1/4 tsp to 1/8 tsp to safely duck under the limit."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical savory breakfast bowl that smartly leverages a pre-cooked grain pouch to meet the 30-minute promise while delivering a solid dose of protein and fiber. The only required tweak is halving the added salt to safely clear the chapter's sodium ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavor profile makes culinary sense. The addition of lemon juice at the end provides bright acidity that pairs nicely with the spinach, blistered tomatoes, and farro without curdling the eggs."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly and logically utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions with clear timing ranges, check prompts at the minimum time, and precise visual doneness cues for both the vegetables and the eggs."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Mediterranean-American profile perfectly with its foundation of olive oil, farro, tomatoes, spinach, and lemon."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The push-to-center technique is highly effective for scrambling the eggs in the same skillet without dirtying a second pan or overcooking the grains."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is accurate and consistent with the ingredients. The flagged sodium overage is not a computation error; it results accurately from combining 1 cup of liquid egg whites (which naturally contain around 400mg sodium) with the added table salt."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro are perfectly aligned, honest, plain-spoken, and avoid any banned health claims or scare language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appetizing. This is a texturally interesting, colorful, and highly practical everyday savory breakfast."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Exactly fits the dual mandate: Mediterranean-style veggies and unsaturated fat (olive oil) to respect the liver, balanced with a substantial whole-grain base and very high protein to manage blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers a high-quality complex carbohydrate (farro) that hits squarely in the middle of the chapter's target window (46.9 g), with absolutely zero added sugar."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Hits the chapter's character and macronutrient goals (protein, fiber, carbs) beautifully, but drifts slightly above the 550mg sodium ceiling. Fix: Reduce the added salt from 1/4 tsp to 1/8 tsp to safely duck under the limit."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "True to the 30-minute promise. Brilliantly leverages a pre-cooked grain pouch as a first-class shortcut to make a normally slow-cooking grain perfectly accessible for a quick weekday breakfast."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, captured from a 3/4 overhead angle (40-degree) to showcase the volume and texture of two rustic, shallow ceramic bowls. One bowl is in sharp focus in the foreground, while the second is slightly softened in the background. Shallow depth of field creates a beautiful, natural bokeh. Soft, natural light streams from a window on the left, casting gentle shadows and highlighting the glistening sheen of olive oil on the food. The setting is a worn, rustic oak tabletop with natural wood grain. Props include a single wooden spoon resting naturally beside the front bowl and a few stray, vibrant green baby spinach leaves and a dusting of hemp hearts scattered on the wood. The dish features a hearty mixture of farro grains and tender, wilted baby spinach, interspersed with halved cherry tomatoes that show soft, blistered skins and exposed, juicy interiors with visible seeds. Softly scrambled, creamy yellow eggs are folded throughout the mixture. The colors are earthy: warm amber tones from the farro, bright pops of red from the tomato segments, and deep forest green from the wilted spinach, all finished with a light dusting of black pepper and red chili flakes. The final assembly looks like a nutritious, home-cooked meal for two. Photorealistic, not AI-generated looking. The scene reflects a lived-in, warm kitchen atmosphere. Include subtle, authentic details like a tiny smudge of olive oil on the table surface, an asymmetric garnish of hemp hearts, and natural, uneven textures of the scrambled eggs. Warm, golden-hour color temperature, cozy and inviting. No text, no watermarks, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

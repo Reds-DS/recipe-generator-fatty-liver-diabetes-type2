@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "Tilapia fillets",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Spiced Tilapia and Orange Quinoa Bowls",
+  "recipe_id": "403121a9-ec1d-4526-901a-b550dec44158",
+  "generation_id": "84c793d0-4d0e-4dd0-9ec5-03db97db672f",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:45:36.172726",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Spiced Tilapia and Orange Quinoa Bowls",
+        "main_ingredient": "Tilapia fillets",
+        "technique": "Quick pan-searing and bowl assembly",
+        "flavour_profile": "Warmly spiced, citrusy, and bright",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Tilapia fillets (fresh or thawed)",
+          "Microwaveable cooked quinoa pouch",
+          "Navel orange (peeled and segmented)",
+          "Baby arugula",
+          "Avocado (sliced)",
+          "Radishes (thinly sliced)",
+          "Extra-virgin olive oil",
+          "Fresh lime (for juice)",
+          "Smoked paprika and ground cumin"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 437.8,
+          "protein_g": 31.0,
+          "carbs_g": 42.7,
+          "fat_g": 17.6,
+          "fiber_g": 9.0,
+          "sodium_mg": 286.3,
+          "sugar_g": 9.2,
+          "saturated_fat_g": 2.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 56.2,
+          "potassium_mg": 1098.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 10.3,
+          "pufa_g": 3.4,
+          "calcium_mg": 150.8,
+          "iron_mg": 4.1,
+          "vitamin_d_mcg": 3.5,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.545,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptionally well-crafted recipe that perfectly fits the book's dietary framework, time constraints, and culinary standards. The use of a ready-to-eat quinoa pouch combined with a quick fish sear delivers a vibrant, structurally sound meal with superb flavor balance.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of earthy cumin and smoked paprika on the fish pairs beautifully with the sweet navel orange, peppery arugula, and creamy avocado. Excellent balance of acid, fat, and flavor."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly accounted for in the instructions, with the divided olive oil clearly allocated between the pan and the dressing."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough and helpful. They feature a cook time range (3 to 4 minutes per side), a check time at 6 minutes, and clear visual doneness cues (golden crust, flakes easily)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with the Mediterranean-American style, utilizing olive oil, fresh citrus, arugula, and whole grains with warm spices."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Pan-searing is the ideal quick-cooking method for thin tilapia fillets. Utilizing a microwaveable quinoa pouch is a highly suitable and efficient shortcut."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values are well-calculated and accurately reflect the ingredients used, correctly capturing the macros from the lean tilapia, quinoa, avocado, and olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro accurately describe the dish and highlight its key ingredients without employing any banned health claims, detox language, or diet framing."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe is highly appetizing and vibrant. It offers a wonderful mix of textures, colors, and temperatures that will make for a very satisfying meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely addresses both insulin resistance and liver health by providing lean protein, high-quality complex carbohydrates, heart-healthy unsaturated fats, and ample fresh vegetables."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Passes flawlessly. Zero added sugar; all sweetness comes naturally from the whole navel orange. The carbohydrate load is a high-quality 42.7g, sitting perfectly in the target 25-45g window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Soups & Salads' light main tier perfectly. The macros align seamlessly with the goals (under 440 calories, adequate protein, excellent fiber, and appropriate sodium)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in under 30 minutes from a cold start. The use of a ready-to-eat quinoa pouch is a smart, permitted shortcut that keeps active prep minimal. All ingredients are standard supermarket items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two wide, shallow matte ceramic bowls placed on an aged oak table, with one bowl sharp in the foreground and the second bowl softly blurred in the background to show two servings. The composition is a 3/4 overhead angle, ensuring every component is clearly visible without being obscured. Each bowl contains a fluffy bed of warm quinoa and vibrant baby arugula, topped with a tender, pan-seared tilapia fillet displaying a vibrant, spiced, golden-brown crust from the paprika and cumin. Beside the fish, slices of pearly-green avocado, bright orange segments, and crisp, translucent-thin radish slices are arranged to show off their distinct colors and textures. A light drizzle of lime-olive oil dressing glistens on the surfaces. A wooden spoon rests casually on the table next to the foreground bowl, and a few scattered quinoa grains and a stray radish slice lie on the oak surface. The lighting is soft natural side light from a window on the left, casting gentle, realistic shadows. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small oil droplet on the bowl rim, slightly uneven browning on the fish. Include subtle traces of the cooking process: a crumb trail on the surface, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 0,
+  "total_corrections": 0
+}

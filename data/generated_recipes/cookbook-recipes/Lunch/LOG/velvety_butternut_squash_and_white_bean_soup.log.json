@@ -1,0 +1,784 @@
+{
+  "main_ingredient": "Frozen diced butternut squash and no-salt-added canned Great Northern beans",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Velvety Butternut Squash and White Bean Soup",
+  "recipe_id": "166f0c6b-bb2a-4695-a4de-4411b35fe565",
+  "generation_id": "8055c287-e4a3-4cb5-81ee-aa35791c94b3",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:43:16.189672",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Velvety Butternut Squash and White Bean Soup",
+        "main_ingredient": "Frozen diced butternut squash and no-salt-added canned Great Northern beans",
+        "technique": "Simmering and blending",
+        "flavour_profile": "Earthy, naturally sweet, and herbaceous",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Frozen diced butternut squash",
+          "No-salt-added canned Great Northern beans",
+          "Low-sodium vegetable broth",
+          "Dried sage",
+          "Garlic powder",
+          "Onion powder",
+          "Unsalted roasted pumpkin seeds (pepitas)",
+          "Nonfat plain Greek yogurt",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 38% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 38% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 38% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 38% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 427.7,
+          "protein_g": 26.7,
+          "carbs_g": 52.6,
+          "fat_g": 14.9,
+          "fiber_g": 8.3,
+          "sodium_mg": 555.6,
+          "sugar_g": 10.8,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 5.7,
+          "potassium_mg": 962.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.4,
+          "pufa_g": 3.8,
+          "calcium_mg": 244.5,
+          "iron_mg": 4.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.727,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 52.6 g/serving > ceiling 45 g (\"light_main\")",
+        "sodium 555.6 mg/serving > ceiling 500 mg (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 52.6 g/serving > ceiling 45 g (\"light_main\")",
+              "sodium 555.6 mg/serving > ceiling 500 mg (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[chapter_intent_fit] Escalating the automated warnings: The recipe overshoots both the sodium and carbohydrate ceilings for a 'Light Main'. Reduce the added salt from 1/4 tsp to 1/8 tsp to easily drop below the 500mg sodium ceiling without losing flavor, and reduce the frozen squash slightly (to 8 oz) to bring carbohydrates closer to the 45g target."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A smart, fast weeknight soup that cleverly uses white beans instead of cream and frozen squash to save time. However, requiring a massive half-cup of cold Greek yogurt as a garnish per bowl will ruin the temperature and texture of the soup; the yogurt must be blended smoothly into the pot off-heat, and minor reductions to the squash and salt are needed to hit the chapter's macro limits.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sage, butternut squash, and white beans form a classic, coherent flavor profile, nicely anchored by the savory garlic and onion powders."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every ingredient listed in the ingredients section is correctly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Cook times are given as ranges, a check time is provided, and excellent visual cues ('shimmering', 'completely tender', 'velvety and completely smooth') guide the reader."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and pureed soup format perfectly match a Modern American soup profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Simmering pre-diced frozen squash until tender and pureeing with beans is a highly reliable and rapid method for achieving a creamy texture."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values align logically with the specified quantities of squash, beans, and Greek yogurt."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is fully accurate, and the intro highlights the culinary mechanics (bean puree for creaminess) and convenience without resorting to banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Swirling a full 1/2 cup (113g) of cold, thick Greek yogurt into a single bowl of hot soup as a garnish is a culinary flaw—it will drastically cool the soup and clump rather than swirl elegantly. To keep the protein high without ruining the eating experience, direct the reader to blend or whisk the yogurt directly into the warm pot (off the heat) before ladling."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of Mediterranean principles applied to American flavors, using high-fiber legumes and vegetables for a creamy texture instead of saturated fat."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugars, and the carbohydrate load is sourced entirely from high-quality, fiber-rich whole foods (squash and beans)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Escalating the automated warnings: The recipe overshoots both the sodium and carbohydrate ceilings for a 'Light Main'. Reduce the added salt from 1/4 tsp to 1/8 tsp to easily drop below the 500mg sodium ceiling without losing flavor, and reduce the frozen squash slightly (to 8 oz) to bring carbohydrates closer to the 45g target."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Using frozen diced butternut squash brilliantly eliminates the most time-consuming prep step. This easily finishes in under 20 minutes from ordinary supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [overall_appeal] Swirling a full 1/2 cup (113g) of cold, thick Greek yogurt into a single bowl of hot soup as a garnish is a culinary flaw—it will drastically cool the soup and clump rather than swirl elegantly. To keep the protein high without ruining the eating experience, direct the reader to blend or whisk the yogurt directly into the warm pot (off the heat) before ladling.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 30% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 411.5,
+          "protein_g": 26.6,
+          "carbs_g": 62.7,
+          "fat_g": 8.3,
+          "fiber_g": 10.7,
+          "sodium_mg": 383.0,
+          "sugar_g": 11.0,
+          "saturated_fat_g": 1.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 5.8,
+          "potassium_mg": 1068.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.4,
+          "pufa_g": 1.7,
+          "calcium_mg": 259.8,
+          "iron_mg": 4.1,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 62.7 g/serving > ceiling 45 g (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 62.7 g/serving > ceiling 45 g (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "[nutrition_plausibility] The flagged 62.7g of carbohydrates is a database computation error. A drained 9 oz can of beans (~40g carbs) plus 10.5 oz of squash (~30g) yields roughly 40-42g of total carbohydrates per serving, which safely fits the 45g ceiling. The database likely used raw bean values instead of canned/cooked. No recipe adjustments are needed to chase this number."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A fantastic, genuinely fast weeknight soup that makes smart, realistic use of everyday shortcuts like frozen squash and canned beans. However, whisking a large volume of nonfat Greek yogurt into the hot broth will curdle and make the soup far too sour; reducing the yogurt and moving it to a garnish will perfect the recipe.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Using 8 oz (a full half-cup per serving) of Greek yogurt, plus apple cider vinegar, will make this soup overwhelmingly tart and mask the delicate flavors of the butternut squash and sage. Reduce the yogurt to 2 to 4 oz total and omit the apple cider vinegar entirely."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent, providing helpful time ranges, a midpoint check, and clear visual cues for doneness."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavors and ingredients (squash, sage, white beans, pumpkin seeds) align well with a Modern American profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Whisking nonfat Greek yogurt directly into a hot pot of soup (Step 5) will cause the yogurt's proteins to coagulate and curdle, resulting in a grainy texture. Since the intro promises the blended beans provide the creamy texture, omit whisking the yogurt into the pot. Instead, serve a smaller amount of yogurt as a cool dollop on top of the individual bowls."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The flagged 62.7g of carbohydrates is a database computation error. A drained 9 oz can of beans (~40g carbs) plus 10.5 oz of squash (~30g) yields roughly 40-42g of total carbohydrates per serving, which safely fits the 45g ceiling. The database likely used raw bean values instead of canned/cooked. No recipe adjustments are needed to chase this number."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish without relying on any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Once the yogurt curdling issue is resolved, this is a highly appealing, comforting, and visually attractive weeknight soup."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely addresses both conditions perfectly: relies on high-quality complex carbohydrates (beans and squash) and healthy fats (olive oil and pumpkin seeds) while avoiding refined ingredients."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugars, and it utilizes excellent, whole-food carbohydrate sources (squash and beans) that offer substantial fiber."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'light_main' soup chapter perfectly by blending a measured legume (beans) for protein and fiber, making it a complete, satiating bowl."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliant use of frozen diced butternut squash and canned beans ensures this genuinely cooks in under 20 minutes from start to finish."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [taste_coherence] Using 8 oz (a full half-cup per serving) of Greek yogurt, plus apple cider vinegar, will make this soup overwhelmingly tart and mask the delicate flavors of the butternut squash and sage. Reduce the yogurt to 2 to 4 oz total and omit the apple cider vinegar entirely.\n2. [cooking_method_suitability] Whisking nonfat Greek yogurt directly into a hot pot of soup (Step 5) will cause the yogurt's proteins to coagulate and curdle, resulting in a grainy texture. Since the intro promises the blended beans provide the creamy texture, omit whisking the yogurt into the pot. Instead, serve a smaller amount of yogurt as a cool dollop on top of the individual bowls.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "cholesterol_mg: partial data — 44% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 44% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 44% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 44% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 402.5,
+          "protein_g": 22.3,
+          "carbs_g": 49.3,
+          "fat_g": 15.6,
+          "fiber_g": 8.5,
+          "sodium_mg": 538.7,
+          "sugar_g": 8.6,
+          "saturated_fat_g": 2.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 2.8,
+          "potassium_mg": 898.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.9,
+          "pufa_g": 4.7,
+          "calcium_mg": 180.0,
+          "iron_mg": 4.7,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 49.3 g/serving > ceiling 45 g (\"light_main\")",
+        "sodium 538.7 mg/serving > ceiling 500 mg (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 49.3 g/serving > ceiling 45 g (\"light_main\")",
+              "sodium 538.7 mg/serving > ceiling 500 mg (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical recipe that leverages frozen vegetables and pantry staples to deliver a rich, blood-sugar-friendly meal in under 30 minutes. The slight macronutrient overages flagged by the automated system are completely acceptable given the high quality of the whole-food complex carbohydrates.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of earthy butternut squash, creamy white beans, and savory sage works beautifully. The cooling yogurt and crunchy pepitas provide a great contrast in temperature and texture."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly listed and accounted for in the step-by-step instructions, with no missing items or phantom ingredients."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Cook times are appropriately ranged with midpoint checks, and visual cues (shimmering, fragrant, completely smooth) guide the reader perfectly."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly matches a Modern American flavor profile with its use of butternut squash, sage, and pumpkin seeds."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sautéing the spices with the frozen squash blooms the flavors effectively without burning. Immersion blending directly in the pot is a practical, mess-free technique for this style of soup."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is plausible. The slight overages in carbs and sodium flagged by the automated checks are not problematic and align with the whole-food ingredients used."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and highlight its practical convenience. The tone is perfectly aligned with the book's requirements, devoid of any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, quick, and comforting soup. Using yogurt and pepitas as a garnish elevates it from a basic purée to a textured, satisfying meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of addressing both conditions. It relies on extra-virgin olive oil, packs high-quality complex carbohydrates (beans and squash), and delivers a robust protein hit without excess saturated fat."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrates come entirely from nutrient-dense whole foods. The slightly high carbohydrate count (49.3g) is a non-issue given the excellent fiber and protein buffering it."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Soups & Salads' light main intent perfectly. It provides substantial protein (22.3g) and fiber (8.5g), making it a legitimate standalone meal rather than just an afterthought."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fully delivers on the 30-minute promise by utilizing pre-diced frozen squash to eliminate chopping. The active time is minimal, and all ingredients are standard supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic soup bowls placed on an aged oak wood surface with visible grain and slight use marks. The camera angle is a 3/4 overhead view at 40 degrees, ensuring the bowls are fully visible and perfectly framed. A shallow depth of field keeps the front bowl sharp while the second bowl behind it is softly blurred. Lighting is soft, natural side light from a window on the left, casting gentle shadows and highlighting the velvety sheen of the soup. The soup is a vibrant, smooth, opaque sunset-orange color, thick and uniform. In the center of each bowl sits a deliberate, slightly imperfect swirl of white Greek yogurt, topped with a rustic scattering of dark green, roasted pumpkin seeds that provide a crunchy texture. Props include a tarnished silver soup spoon resting casually on the wood near the foreground bowl and a small, rumpled linen napkin placed off-center. A few stray pumpkin seeds are scattered naturally on the tabletop near a small, half-full ceramic ramekin of additional seeds in the background. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: a tiny splash of soup on the rim of the bowl, an asymmetric yogurt dollop, uneven seed distribution. Include subtle traces of the cooking process: a small smudge of spice on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature—cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 9,
+  "total_corrections": 0
+}

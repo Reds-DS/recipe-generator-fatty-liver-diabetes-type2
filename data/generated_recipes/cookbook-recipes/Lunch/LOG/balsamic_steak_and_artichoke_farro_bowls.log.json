@@ -1,0 +1,299 @@
+{
+  "main_ingredient": "Lean sirloin steak",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Balsamic Steak and Artichoke Farro Bowls",
+  "recipe_id": "dde53b30-00ae-48c4-aa1d-ad867ebd24ab",
+  "generation_id": "a1c78eac-3507-48ae-809e-f683af0d79d7",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:28:35.405217",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Balsamic Steak and Artichoke Farro Bowls",
+        "main_ingredient": "Lean sirloin steak",
+        "technique": "Pan-searing and assembly",
+        "flavour_profile": "Savory, tangy, and peppery",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Lean sirloin steak strips",
+          "Ready-to-eat cooked farro pouch",
+          "Baby arugula",
+          "Cherry tomatoes",
+          "Canned artichoke hearts (in water)",
+          "Balsamic vinegar",
+          "Extra-virgin olive oil",
+          "Dijon mustard",
+          "Garlic powder"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Ready-to-eat cooked farro pouch' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'Canned artichoke hearts (in water, no-salt-added)': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 29% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 23% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 23% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 23% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Ready-to-eat cooked farro pouch"
+        ],
+        "nutrition": {
+          "calories_kcal": 535.1,
+          "protein_g": 42.3,
+          "carbs_g": 54.5,
+          "fat_g": 17.8,
+          "fiber_g": 12.2,
+          "sodium_mg": 222.4,
+          "sugar_g": 3.9,
+          "saturated_fat_g": 3.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 85.5,
+          "potassium_mg": 1164.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.7,
+          "pufa_g": 1.6,
+          "calcium_mg": 133.7,
+          "iron_mg": 3.8,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Ready-to-eat cooked farro pouch"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "matcher",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb recipe that perfectly captures the book's dietary philosophy and culinary standards. It delivers a fast, flavorful, and fiber-rich meal utilizing smart supermarket shortcuts without sacrificing quality.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent, classic combination of flavors. The tangy balsamic and Dijon work perfectly with beef, peppery arugula, and earthy artichoke hearts."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are present and correctly utilized in the instructions. The division of the olive oil is handled clearly and logically."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Exceptional instruction completeness. Cook times feature ranges, specific visual cues, timely checks, and a proper resting period for the steak."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Aligns perfectly with the stated Mediterranean cuisine style, utilizing farro, arugula, artichokes, and an olive oil-balsamic vinaigrette."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Quick skillet searing is ideal for lean steak strips, and the no-cook assembly of the salad base is perfectly suited for a fast lunch bowl."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values align logically with the listed ingredients and quantities, particularly the high fiber from the farro and artichokes."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and appetizing. The intro highlights the nutritional mechanics (fiber slowing digestion) in a practical way without making prohibited health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appetizing and practical. It offers a great contrast of textures and temperatures, resulting in a bistro-quality meal at home."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers beautifully on the brief: a lean protein paired with a robust whole grain and abundant vegetable fiber, supporting both liver and blood sugar goals."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect carbohydrate profile. Farro provides high-quality complex carbs sitting nicely at the top of the target window, and there are no hidden added sugars."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An outstanding fit for the Lunches chapter. The bowl format is convenient, filling, and meets all target macronutrient thresholds for a midday main."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved within 30 minutes from a cold start. The inclusion of a ready-to-eat farro pouch is a smart, fully acceptable everyday shortcut."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic bowls set on an aged, dark oak wood tabletop. The composition is a 3/4 overhead angle, perfectly capturing the contents of both bowls with a shallow depth of field, keeping the front bowl in sharp focus while the second is softly blurred in the background. Soft, natural light streams from a window on the left, casting gentle shadows and highlighting the glistening balsamic-coated ingredients. In each bowl, a base of fresh, vibrant baby arugula is tossed with halved, glossy cherry tomatoes and tender, halved artichoke hearts. A generous, warm serving of nutty, golden-brown farro is spooned over the salad base, with seared, caramelized sirloin steak strips placed neatly alongside the farro, not stacked, revealing their dark, crusty edges and succulent, tender centers. A slight, dark balsamic glaze shimmer clings to the tomatoes and greens. Props include a single wooden fork resting casually on the wood surface, a small, slightly messy spill of a few farro grains near the bowl, and a stray arugula leaf on the table. The image radiates a warm, inviting, lived-in aesthetic. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a small balsamic drip on the bowl rim, slightly uneven searing on the steak. Include subtle traces of the cooking process: a few scattered farro grains on the surface, no plastic sheen, no unnaturally smooth surfaces. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

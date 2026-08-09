@@ -1,0 +1,98 @@
+# Pre-seeded USDA food picks for ingredients this book uses constantly and that
+# Stage 4's FTS shortlist does NOT reliably surface.
+#
+# WHY THIS FILE EXISTS (found by the 8-recipe pilot, 2026-08-09)
+# --------------------------------------------------------------
+# Two distinct failures showed up, both on canned goods, both with real sodium
+# consequences on a book whose main-meal ceiling is 550 mg:
+#
+#  1. The drafting model INVENTS plausible USDA descriptions. It wrote
+#     "Beans, white, mature seeds, canned, no salt added" — a description that
+#     does not exist in FoodData Central. Stage 4 fell back to a cooked-from-dry
+#     record, which is a different weight basis (drained home-cooked beans carry
+#     less water than canned), slightly overstating protein, fibre and calories.
+#  2. The shortlist misses the no-salt-added record even when it DOES exist.
+#     The pilot logged "No USDA candidate for 'No-salt-added canned diced
+#     tomatoes'" — yet 170138 (10 mg sodium/100 g) is right there. The engine
+#     instead settles for a 125-186 mg record. On a recipe carrying 200 g of
+#     tomato per serving that is a 230-350 mg sodium error against a 550 mg
+#     ceiling: the panel OVERSTATES sodium, making recipes look far closer to
+#     the ceiling than they are.
+#
+# `register_alias()` keeps the FIRST-stored fdc_id stable, so seeding before a
+# run wins over a bad shortlist for the whole book.
+#
+# Apply with:  uv run python scripts/seed_usda_aliases.py
+# Re-run it after any `build-nutrition-db`, which recreates the alias DB.
+#
+# EVERY fdc_id BELOW WAS READ OUT OF THE BUILT data/usda.db, not recalled.
+# Verify with:  uv run python cli.py usda-lookup "<description>"
+
+meta:
+  seeded_for: "The Fatty Liver Diet Cookbook for Type 2 Diabetes"
+  usda_bundle: "FoodData_Central_csv_2026-04-30"
+  note: >-
+    Sodium figures in the comments are mg per 100 g as stored in the built DB.
+    They are the reason each pick was chosen, and they are what makes the
+    difference visible on the per-serving panel.
+
+aliases:
+
+  # ── Canned tomatoes ────────────────────────────────────────────────────────
+  # The single highest-impact entry in this file. Tomatoes appear in shakshuka,
+  # every braise, every tomato-based sauce the book uses INSTEAD of wine.
+  - canonical_name: "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added"
+    fdc_id: 170138          # 10 mg Na — the no-salt-added record the shortlist misses
+  - canonical_name: "Tomatoes, canned, red, ripe, diced, no salt added"
+    fdc_id: 170138          # same record; the model writes this name too
+  - canonical_name: "No-salt-added canned diced tomatoes"
+    fdc_id: 170138          # the plain-English name, seen in the pilot
+  - canonical_name: "Tomatoes, crushed, canned, no salt added"
+    fdc_id: 170138
+
+  # ── Canned legumes WITH a genuine low-sodium record ────────────────────────
+  - canonical_name: "Beans, black, mature seeds, canned, low sodium"
+    fdc_id: 175238          # 138 mg Na  (vs 384 for the plain canned record)
+  - canonical_name: "No-salt-added canned black beans"
+    fdc_id: 175238
+  - canonical_name: "Beans, kidney, red, mature seeds, canned, solids and liquid, low sodium"
+    fdc_id: 175245          # 117 mg Na  (vs 296)
+  - canonical_name: "No-salt-added canned kidney beans"
+    fdc_id: 175245
+  - canonical_name: "Beans, pinto, mature seeds, canned, solids and liquids, low sodium"
+    fdc_id: 175247          # 146 mg Na  (vs 268)
+  - canonical_name: "No-salt-added canned pinto beans"
+    fdc_id: 175247
+  - canonical_name: "Beans, great northern, mature seeds, canned, low sodium"
+    fdc_id: 173791          # 177 mg Na  (vs 370)
+  - canonical_name: "No-salt-added canned great northern beans"
+    fdc_id: 173791
+  - canonical_name: "Chickpeas, from canned, reduced sodium"
+    fdc_id: 2707419         # 212 mg Na  (vs 315-327)
+  - canonical_name: "No-salt-added canned chickpeas"
+    fdc_id: 2707419
+  - canonical_name: "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids"
+    fdc_id: 173800          # 246 mg Na — the drained record, correct after rinsing
+
+  # ── Canned legumes with NO low-sodium record in FoodData Central ───────────
+  # Recorded deliberately so nobody re-derives this. Cannellini/white and navy
+  # beans have ONLY the full-sodium canned record. The engine must not silently
+  # substitute a cooked-from-dry record to make the number look better — the
+  # honest options are to accept ~340 mg, or to steer recipes toward the beans
+  # above, which is what `ingredients.emphasize` in the spec should prefer.
+  - canonical_name: "Beans, white, mature seeds, canned"
+    fdc_id: 175204          # 340 mg Na — the ONLY canned white-bean record
+  - canonical_name: "No-salt-added canned cannellini beans"
+    fdc_id: 175204          # same; there is no lower-sodium cannellini record
+  - canonical_name: "Beans, navy, mature seeds, canned"
+    fdc_id: 173747          # 336 mg Na — likewise no low-sodium variant
+
+  # ── Staples whose Foundation record has sparse coverage ────────────────────
+  # Stage 4 already swaps these correctly at runtime (it notices the Foundation
+  # record carries no fibre/protein and switches). Seeding them just removes the
+  # warning noise from every log and saves the extra lookup.
+  - canonical_name: "Oil, olive, extra virgin"
+    fdc_id: 171413          # 'Oil, olive, salad or cooking' — full coverage,
+                            # nutritionally equivalent on every axis this book uses
+  - canonical_name: "Extra-virgin olive oil"
+    fdc_id: 171413

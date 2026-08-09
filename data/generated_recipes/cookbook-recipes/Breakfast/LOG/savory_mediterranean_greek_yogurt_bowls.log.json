@@ -1,0 +1,302 @@
+{
+  "main_ingredient": "Nonfat plain Greek yogurt",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Savory Mediterranean Greek Yogurt Bowls",
+  "recipe_id": "5944a200-34db-4b78-a9ad-bda3fb58420c",
+  "generation_id": "548f01a1-97b2-4f9e-bb06-153c5cd65a65",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:59:56.777373",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Savory Mediterranean Greek Yogurt Bowls",
+        "main_ingredient": "Nonfat plain Greek yogurt",
+        "technique": "No-cook",
+        "flavour_profile": "Savory, tangy, and herbal",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Nonfat plain Greek yogurt",
+          "100% whole-wheat pita bread",
+          "English cucumber",
+          "Cherry tomatoes",
+          "Canned artichoke hearts (water-packed)",
+          "Kalamata olives",
+          "Shelled pumpkin seeds (pepitas)",
+          "Extra-virgin olive oil",
+          "Dried oregano"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "No USDA candidate for 'Low-sodium canned artichoke hearts' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 22% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium canned artichoke hearts"
+        ],
+        "nutrition": {
+          "calories_kcal": 442.7,
+          "protein_g": 30.2,
+          "carbs_g": 58.4,
+          "fat_g": 12.6,
+          "fiber_g": 11.7,
+          "sodium_mg": 477.1,
+          "sugar_g": 11.9,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 8.5,
+          "potassium_mg": 714.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.1,
+          "pufa_g": 3.1,
+          "calcium_mg": 245.5,
+          "iron_mg": 4.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium canned artichoke hearts"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 58.4 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 58.4 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a fantastic, straightforward, and highly appealing breakfast recipe that aligns perfectly with the dietary goals of the book. It requires almost no cooking time and utilizes accessible Mediterranean staples to deliver excellent protein, fiber, and quality carbohydrates.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor profile. The combination of tangy yogurt, lemon, and savory Mediterranean vegetables with briny olives and earthy pumpkin seeds creates a well-balanced, classic tzatziki/Greek salad flavor."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly used in the instructions and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The steps are thorough for a zero-cook recipe. The toasting instruction includes clear visual doneness cues ('slightly crisp and warm')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with Mediterranean cuisine, utilizing classic ingredients like Greek yogurt, cucumber, cherry tomatoes, olive oil, and oregano."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook approach (with just a quick toast of the pita) is highly suitable for these fresh, raw, and canned ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values align perfectly with the ingredients. The high protein comes from the yogurt and pita; the fiber from the vegetables, seeds, and whole-wheat pita."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive and accurate. The intro is warm, highlights the functional ingredients (lean protein, fiber, artichokes, pita), and uses the appropriate tone without making banned medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. Savory yogurt bowls are modern, visually attractive, fresh, and offer great textures."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely serves both conditions well. It relies on nonfat dairy, unsaturated fats from olive oil and pumpkin seeds, and includes a significant volume of vegetables along with a whole-grain carbohydrate source."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugar is used, which is perfect. The carbohydrate content (58.4g) slightly exceeds the 55g target chapter ceiling, but because the source is 100% whole-wheat pita, yogurt, and non-starchy vegetables, it represents extremely high-quality, high-fiber carbohydrates that fit the book's dietary ethos perfectly. No changes necessary."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Breakfast intent wonderfully. It hits the high protein and fiber targets for steady morning energy and utilizes the requested 100% whole-grain toast/pita."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily executable in 10 minutes from a cold start. The ingredients are simple, everyday pantry and fridge staples available in any standard supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two bowls are placed slightly offset on a weathered oak tabletop, centered in the frame with generous negative space to ensure the composition is perfectly suited for a circular cookbook crop. The camera angle is a 3/4 overhead view at 40 degrees, allowing for full visibility of all ingredients within the bowls. Soft natural light from a window on the left side casts gentle shadows and emphasizes the cool, creamy texture of the yogurt. The setting features a slightly rumpled, light-grey linen napkin tucked beneath one bowl and a small handful of stray pumpkin seeds and a few halved cherry tomatoes scattered naturally across the wood surface, as if prep just finished. The main focus is two wide, shallow matte ceramic bowls; the first is sharp, the second slightly blurred in the background. Each bowl features a smooth, thick base of white Greek yogurt swirled with lemon juice. Resting on the surface of the yogurt, arranged in intentional clusters, are crisp chunks of chopped English cucumber, vibrant red halved cherry tomatoes, and tender, pale green quartered artichoke hearts. The vegetables are not layered, but arranged side-by-side on the yogurt. A golden drizzle of extra-virgin olive oil pools in the crevices between vegetables, catching the light. The dish is topped with a rustic scattering of dark, briny minced Kalamata olives, crunchy forest-green pumpkin seeds, and a dusting of dried oregano. Beside each bowl, a fan of warm, lightly toasted whole-wheat pita wedges provides a rustic, textured contrast. The image is photorealistic, displaying slight natural imperfections like a tiny smear of yogurt on the inner rim and an asymmetric distribution of ingredients. Warm, natural color palette, authentic home-cooked feel, cozy morning atmosphere. No plastic sheen, no faces, no hands, no text, no logos. Professional editorial quality.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

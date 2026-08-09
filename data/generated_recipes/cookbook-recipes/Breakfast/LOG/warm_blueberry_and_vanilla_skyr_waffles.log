@@ -1,0 +1,57 @@
+=== RECIPE LOG: Warm Blueberry and Vanilla Skyr Waffles ===
+ID            : d669db74-043c-4e39-b087-e88524f9dbea
+Generation ID : 4a957541-3e60-463e-aba3-1bc71cad59c1
+Generated     : 2026-08-09 19:01:50
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen 100% whole-wheat waffles
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Warm Blueberry and Vanilla Skyr Waffle Plates
+Technique       : Toasting and quick-heating
+Cuisine style   : Modern American
+Flavour profile : Naturally sweet, warmly spiced, and creamy
+Sketch          : Frozen 100% whole-wheat waffles, Nonfat plain Skyr, Frozen blueberries, Pure vanilla extract, Ground cinnamon, Hemp hearts, Chopped walnuts
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 59.2 g/serving > ceiling 55 g ("main")
+    [WARN] 548.9 kcal/serving > high bound 540 kcal ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two plates, one sharp in the foreground and one slightly blurred in the background, set on a rustic aged oak table. C...

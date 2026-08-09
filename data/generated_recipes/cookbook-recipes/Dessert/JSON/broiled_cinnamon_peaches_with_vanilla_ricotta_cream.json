@@ -1,0 +1,112 @@
+{
+  "id": "21bd6147-6b35-4064-87c8-ccee5db0ae05",
+  "title": "Broiled Cinnamon Peaches with Vanilla Ricotta Cream",
+  "intro": "With minimal prep, this warm dessert is ready in under 15 minutes. Broiling fresh peaches concentrates their natural juices, pairing well with the vanilla ricotta and crunchy almonds.",
+  "diet_tags": [],
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 5,
+  "cook_time_max_min": 7,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "fresh peaches",
+      "canonical_name": "Peaches, raw",
+      "quantity_g": 300.0,
+      "quantity_display": "10.5 oz (300 g)",
+      "preparation": "halved and pitted",
+      "fdc_id": 169928,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "part-skim ricotta cheese",
+      "canonical_name": "Cheese, ricotta, part skim milk",
+      "quantity_g": 60.0,
+      "quantity_display": "1/4 cup (60 g)",
+      "preparation": null,
+      "fdc_id": 171248,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "ground cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "sliced almonds",
+      "canonical_name": "Nuts, almonds",
+      "quantity_g": 15.0,
+      "quantity_display": "2 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 170158,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "pure maple syrup",
+      "canonical_name": "Syrups, maple",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 169661,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven broiler to High (500°F / 260°C) for 3 minutes. Line a baking sheet with foil.",
+    "Place the peaches cut-side up on the prepared baking sheet. Dust evenly with the cinnamon.",
+    "Broil for 5 to 7 minutes, checking at 5 minutes, until the fruit is tender and the edges are lightly golden.",
+    "Whisk the ricotta cheese and vanilla extract in a bowl until smooth and creamy.",
+    "Toast the sliced almonds in a dry skillet over medium heat for 2 to 3 minutes, shaking the pan frequently, until lightly browned and fragrant.",
+    "Divide the warm peaches between serving plates. Top each half with the vanilla ricotta, maple syrup, and toasted almonds."
+  ],
+  "variation": "Swap the fresh peaches for halved and cored fresh plums.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 166.2,
+    "protein_g": 6.4,
+    "carbs_g": 21.5,
+    "fat_g": 6.7,
+    "fiber_g": 3.3,
+    "sodium_mg": 30.8,
+    "sugar_g": 16.4,
+    "saturated_fat_g": 1.8,
+    "added_sugar_g": 3.4,
+    "cholesterol_mg": 9.3,
+    "potassium_mg": 392.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 3.3,
+    "pufa_g": 1.2,
+    "calcium_mg": 121.1,
+    "iron_mg": 0.8,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dessert\\IMG\\broiled_cinnamon_peaches_with_vanilla_ricotta_cream.png",
+  "created_at": "2026-08-09T11:30:30.311444",
+  "generation_id": "cf114e94-7c76-4dc8-9c16-b34ed80ae09e"
+}

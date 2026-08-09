@@ -1,0 +1,303 @@
+{
+  "main_ingredient": "pork tenderloin",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Balsamic-Mustard Pork Medallions with Asparagus and Couscous",
+  "recipe_id": "1cb177b5-f0f7-43b7-8bd0-ce1ff08256e8",
+  "generation_id": "af78597b-e86b-471a-9e9f-982159fbd53f",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:34:20.804227",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Balsamic-Mustard Pork Medallions with Asparagus and Couscous",
+        "main_ingredient": "pork tenderloin",
+        "technique": "Pan-searing",
+        "flavour_profile": "tangy, savory, herbaceous",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "pork tenderloin",
+          "whole wheat couscous",
+          "asparagus",
+          "extra-virgin olive oil",
+          "balsamic vinegar",
+          "Dijon mustard",
+          "low-sodium chicken broth",
+          "garlic powder",
+          "dried thyme"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+        "sugar_g: partial data — 12% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 545.1,
+          "protein_g": 48.7,
+          "carbs_g": 57.9,
+          "fat_g": 12.4,
+          "fiber_g": 6.7,
+          "sodium_mg": 205.0,
+          "sugar_g": 2.9,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 110.5,
+          "potassium_mg": 1157.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.2,
+          "pufa_g": 1.8,
+          "calcium_mg": 75.1,
+          "iron_mg": 6.1,
+          "vitamin_d_mcg": 0.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.545,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 6.7 g/serving < floor 7 g (\"main\")",
+        "total carbohydrate 57.9 g/serving > ceiling 55 g (\"main\")",
+        "545.1 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 6.7 g/serving < floor 7 g (\"main\")",
+              "total carbohydrate 57.9 g/serving > ceiling 55 g (\"main\")",
+              "545.1 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "warning",
+      "warnings": [
+        "Carb base \"Whole wheat couscous, dry\" (130 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. \"brown rice\" / \"100% whole-wheat pasta\" / \"whole-grain tortilla\", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor."
+      ],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] The recipe slightly misses the nutrient tier bounds: calories (545 > 540), carbs (57.9g > 55g), and fiber (6.7g < 7g). To perfect this, reduce the couscous from 3/4 cup dry to 1/2 cup (or 2/3 cup), and increase the asparagus to 12 oz. This will drop the carbs and calories into the target window while bumping the fiber up to the floor."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptionally well-written, flavorful recipe that beautifully demonstrates how to build deep flavor without heavy saturated fats. With a very minor tweak to the couscous and asparagus proportions to perfectly hit the chapter's macronutrient windows, it is ready for print.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Tangy Dijon, sweet-tart balsamic, and herbaceous thyme pair beautifully with lean pork and asparagus."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are properly utilized in the instructions, and no unexpected ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough and helpful. Time ranges, halfway flips, visual doneness cues, and 'check at' prompts are all perfectly executed."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The dish aligns perfectly with the stated Mediterranean-American profile through its use of olive oil, balsamic vinegar, Dijon, and couscous."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Slicing the tenderloin into medallions and searing them is a perfect technique for lean pork, ensuring it cooks rapidly without drying out. Building the pan sauce in the same skillet efficiently captures fond."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are consistent with the quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish, and the intro smartly explains the culinary mechanics of the pan sauce without resorting to diet rhetoric or banned claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It feels like a thoughtful, restaurant-style weeknight dinner that comes together easily."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe delivers beautifully on both fronts: a lean protein, healthy unsaturated fat (olive oil), a pan sauce naturally free of excess saturated fat, and a measured whole-grain presence."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugars are present. Despite the automated warning, 'Whole wheat couscous' clearly specifies it is a whole/intact grain, providing a quality carbohydrate base."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe slightly misses the nutrient tier bounds: calories (545 > 540), carbs (57.9g > 55g), and fiber (6.7g < 7g). To perfect this, reduce the couscous from 3/4 cup dry to 1/2 cup (or 2/3 cup), and increase the asparagus to 12 oz. This will drop the carbs and calories into the target window while bumping the fiber up to the floor."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The total prep and cook time easily fits into the 30-minute promise. Using couscous, which steams passively off-heat, and quick-cooking pork medallions are smart strategies for weeknight speed."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 3,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, presented at a 3/4 overhead angle (40°) to showcase the dish volume while keeping all components clearly visible. Two matte ceramic plates are arranged side-by-side, one sharp in the foreground and one softly blurred in the background. Each plate features a generous mound of fluffy, light-brown whole wheat couscous as a base. Beside the couscous, three golden-brown, pan-seared pork medallions with visible thyme flecks and spice crust rest next to a portion of bright green, 2-inch chopped asparagus segments. The meat and vegetables are separately identifiable, not stacked. A rich, glossy, amber-toned balsamic-mustard glaze clings to the pork and asparagus, with a small pool of sauce pooled near the couscous. Surface details include glistening oil droplets and subtle, caramelized brown bits from the skillet. Lighting is soft, natural side light from a window on the left, casting gentle, diffused shadows. The setting is a rustic, aged oak tabletop with visible wood grain. Props include a wooden spatula resting casually on the table, a slightly rumpled, off-white linen napkin tucked under one plate, and a few stray grains of couscous and a single loose piece of asparagus on the surface. Photorealistic, not AI-generated looking. The scene reflects a home-cooked, lived-in meal. Slight natural imperfections: an asymmetric garnish of fresh herbs, a tiny balsamic glaze drip on the rim, and uneven searing on the pork. No plastic sheen, no artificial studio lighting, no symmetry. Warm, golden-hour color temperature. No text, no watermark, no faces, no hands. Indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

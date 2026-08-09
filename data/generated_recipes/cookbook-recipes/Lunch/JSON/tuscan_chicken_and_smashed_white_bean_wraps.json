@@ -1,0 +1,160 @@
+{
+  "id": "d7def962-64ef-4970-97a5-5afcf76d9dd6",
+  "title": "Tuscan Chicken and Smashed White Bean Wraps",
+  "intro": "This satisfying lunch is perfect to assemble ahead of time and eat at your desk. Smashed cannellini beans stand in for mayonnaise to bind this herb-packed chicken salad while keeping you full for hours.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "No-salt-added canned cannellini beans",
+      "canonical_name": "Beans, white, mature seeds, canned",
+      "quantity_g": 130.0,
+      "quantity_display": "1/2 cup (130 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175203,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 2.0,
+      "quantity_display": "1/2 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Skinless rotisserie chicken breast",
+      "canonical_name": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "quantity_g": 150.0,
+      "quantity_display": "5.5 oz (150 g)",
+      "preparation": "chopped",
+      "fdc_id": 171477,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sun-dried tomatoes (dry-packed)",
+      "canonical_name": "Tomatoes, sun-dried",
+      "quantity_g": 20.0,
+      "quantity_display": "1/4 cup (20 g)",
+      "preparation": "chopped",
+      "fdc_id": 168567,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned artichoke hearts (water-packed)",
+      "canonical_name": "Artichokes, (globe or french), canned",
+      "quantity_g": 100.0,
+      "quantity_display": "1/2 cup (100 g)",
+      "preparation": "rinsed, drained, and roughly chopped",
+      "fdc_id": 168386,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "100% whole-wheat tortillas",
+      "canonical_name": "Tortillas, ready-to-bake or -fry, whole wheat",
+      "quantity_g": 120.0,
+      "quantity_display": "2 large (120 g)",
+      "preparation": null,
+      "fdc_id": 174081,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 40.0,
+      "quantity_display": "2 cups (40 g)",
+      "preparation": null,
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place the beans in a medium bowl and mash with a fork until mostly smooth.",
+    "Stir the olive oil, lemon juice, garlic powder, and oregano into the mashed beans until combined.",
+    "Fold the chicken, sun-dried tomatoes, and artichoke hearts into the bean mixture until coated.",
+    "Lay the whole-wheat tortillas flat on a clean work surface and divide the spinach between them.",
+    "Spoon the chicken and bean salad over the spinach and spread into an even layer.",
+    "Fold the sides of each tortilla inward and roll tightly from the bottom to form a wrap.",
+    "Slice the wraps in half diagonally and serve."
+  ],
+  "variation": "Swap the artichoke hearts for chopped roasted red peppers.",
+  "conservation": "Keeps up to 2 days refrigerated; enjoy cold.",
+  "nutrition_per_serving": {
+    "calories_kcal": 524.7,
+    "protein_g": 39.1,
+    "carbs_g": 57.5,
+    "fat_g": 16.4,
+    "fiber_g": 14.7,
+    "sodium_mg": 493.5,
+    "sugar_g": 6.2,
+    "saturated_fat_g": 4.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 63.8,
+    "potassium_mg": 1341.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 8.0,
+    "pufa_g": 2.2,
+    "calcium_mg": 260.6,
+    "iron_mg": 6.5,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 qualifier: 'No-salt-added canned artichoke hearts (water-packed)': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")",
+    "[instruction_completeness] Dry-packed sun-dried tomatoes can be quite tough and leathery if chopped and eaten raw in a cold wrap. Consider either adding a quick step to soak them in hot water for 5 minutes before chopping, or simply change the ingredient to 'oil-packed (rinsed and drained)'.",
+    "[chapter_intent_fit] The recipe embodies the lunch chapter's 'make-ahead desk lunch' goal perfectly. However, the 57.5g total carbohydrate slightly exceeds the 55g main-tier ceiling. Consider reducing the tortilla weight spec from 120g to 100g (two 50g medium tortillas) to bring it cleanly under the cap."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\tuscan_chicken_and_smashed_white_bean_wraps.png",
+  "created_at": "2026-08-09T20:04:00.863528",
+  "generation_id": "447bde77-cfb6-4022-ae25-0085a65a72d2"
+}

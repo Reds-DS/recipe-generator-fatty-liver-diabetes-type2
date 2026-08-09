@@ -1,0 +1,131 @@
+{
+  "id": "1a3def4e-969a-4d03-8dd4-823c492698a0",
+  "title": "Rosemary Almond and Pepita Mix with Pear",
+  "intro": "This fast and simple snack requires just a single skillet. Raw almonds and pumpkin seeds are toasted with savory herbs and served alongside fresh pear for an enjoyable crunch.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 4,
+  "cook_time_max_min": 6,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Raw whole almonds",
+      "canonical_name": "Nuts, almonds",
+      "quantity_g": 25.0,
+      "quantity_display": "3 tbsp (25 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Raw pumpkin seeds (pepitas)",
+      "canonical_name": "Seeds, pumpkin and squash seed kernels, dried",
+      "quantity_g": 25.0,
+      "quantity_display": "3 tbsp (25 g)",
+      "preparation": null,
+      "fdc_id": 170556,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh rosemary",
+      "canonical_name": "Rosemary, fresh",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": "finely chopped",
+      "fdc_id": 173473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 0.7,
+      "quantity_display": "1/4 tsp (0.7 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kosher salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.3,
+      "quantity_display": "1/8 tsp (0.3 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh pear",
+      "canonical_name": "Pears, raw",
+      "quantity_g": 180.0,
+      "quantity_display": "1 medium (180 g)",
+      "preparation": "cored and sliced",
+      "fdc_id": 169118,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Combine the almonds, pumpkin seeds, olive oil, rosemary, garlic powder, and salt in a small bowl and stir until evenly coated.",
+    "Heat a medium dry skillet over medium heat.",
+    "Add the nut mixture to the skillet and toast for 4 to 6 minutes. Stir frequently, checking at 4 minutes, until the seeds begin to pop and smell fragrant.",
+    "Remove the skillet from the heat and immediately transfer the hot nut mixture to a plate to prevent burning.",
+    "Divide the sliced pear between two plates and serve alongside the warm toasted nuts."
+  ],
+  "variation": "Swap the sliced pear for a crisp Granny Smith apple.",
+  "conservation": "Store leftover cooled nuts up to 3 days at room temperature.",
+  "nutrition_per_serving": {
+    "calories_kcal": 218.1,
+    "protein_g": 6.8,
+    "carbs_g": 18.2,
+    "fat_g": 15.1,
+    "fiber_g": 5.3,
+    "sodium_mg": 60.6,
+    "sugar_g": 9.5,
+    "saturated_fat_g": 2.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 216.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 3.9,
+    "pufa_g": 3.0,
+    "calcium_mg": 17.4,
+    "iron_mg": 1.4,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Raw whole almonds"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Raw whole almonds' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "[cooking_method_suitability] Tossing the nuts in garlic powder before toasting them for 4 to 6 minutes in a skillet risks burning the delicate garlic powder, which turns bitter quickly. Concrete fix: Toast the raw almonds and pepitas in the oil first, and toss them with the fresh rosemary, garlic powder, and salt immediately after removing them from the heat while they are still hot."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\rosemary_almond_and_pepita_mix_with_pear.png",
+  "created_at": "2026-08-09T18:07:20.701844",
+  "generation_id": "15e03652-ae81-456d-8a6d-0b94a09f9e13"
+}

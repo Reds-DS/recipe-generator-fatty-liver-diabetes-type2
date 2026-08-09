@@ -1,0 +1,57 @@
+=== RECIPE LOG: Almond Butter and Cocoa Stuffed Dates ===
+ID            : ffaf13bd-6aa1-4252-8475-70c0802ac44f
+Generation ID : ea179af0-107b-41b8-8ff5-087eeefa216c
+Generated     : 2026-08-09 18:29:43
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Medjool dates
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Almond Butter and Cocoa Stuffed Dates
+Technique       : No-cook assembly
+Cuisine style   : Mediterranean-American
+Flavour profile : Rich, chocolaty, and sweet-salty
+Sketch          : Medjool dates (pitted), natural almond butter (no added sugar), unsweetened cocoa powder, vanilla extract, chopped walnuts, flaky sea salt
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] saturated_fat_g: partial data — 48% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 48% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition is centered, shot from a 3/4 overhead angle (40-degree) to capture the volume of the stuffed dates while maintaining generous negative space...

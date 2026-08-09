@@ -1,0 +1,537 @@
+{
+  "main_ingredient": "Lean ground turkey (93% lean or leaner)",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Southwestern Turkey, Corn, and White Bean Chili",
+  "recipe_id": "d23de622-2c37-4c5e-8762-7ed88c364dac",
+  "generation_id": "941ff6a6-2135-4efb-af93-eb668dde01c1",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:35:26.271334",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Southwestern Turkey, Corn, and White Bean Chili",
+        "main_ingredient": "Lean ground turkey (93% lean or leaner)",
+        "technique": "Simmered (one-pot stovetop)",
+        "flavour_profile": "Earthy, savory, and mildly spiced with a hint of tang",
+        "cuisine_style": "Southwestern-American",
+        "ingredients_sketch": [
+          "Lean ground turkey (93% lean or leaner)",
+          "Yellow onion",
+          "No-salt-added canned cannellini beans",
+          "Frozen sweet corn",
+          "Canned diced green chiles (mild)",
+          "Low-sodium chicken broth",
+          "Ground cumin",
+          "Garlic powder",
+          "Extra-virgin olive oil",
+          "Fresh cilantro"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 403.9,
+          "protein_g": 31.1,
+          "carbs_g": 43.8,
+          "fat_g": 13.7,
+          "fiber_g": 8.7,
+          "sodium_mg": 786.2,
+          "sugar_g": 6.6,
+          "saturated_fat_g": 3.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 62.9,
+          "potassium_mg": 1189.6,
+          "trans_fat_g": 0.1,
+          "mufa_g": 6.5,
+          "pufa_g": 3.2,
+          "calcium_mg": 132.0,
+          "iron_mg": 6.1,
+          "vitamin_d_mcg": 0.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.636,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 786.2 mg/serving > ceiling 500 mg (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 786.2 mg/serving > ceiling 500 mg (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A flavorful, fast Southwestern chili that successfully hits the protein, fiber, and carbohydrate targets with high-quality ingredients, but requires adjustment to its canned components to meet the chapter's strict sodium ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Southwestern and perfectly coherent. The earthy cumin, savory turkey, and sweet corn are well-balanced by the bright acid of the lime juice and the fresh cilantro."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly introduced and utilized in the instructions, with no missing or orphaned items."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The steps are thorough. Cook times are given as ranges, visual doneness cues are present ('lightly browned and no longer pink'), and there is an explicit check instruction during the simmer."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Southwestern-American style, utilizing foundational ingredients like cumin, green chiles, corn, and cilantro."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Building a chili in a single pot on the stovetop is the ideal method for these ingredients, allowing for both the browning of the turkey and the melding of flavors during the simmer."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed values are plausible for the ingredients used. The high sodium count makes sense given the combination of regular canned green chiles (undrained) and commercial low-sodium broth."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro provides excellent, tone-appropriate context without relying on banned health claims or 'diet' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, comforting, and quick weeknight meal that readers will likely want to add to their regular rotation."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe successfully executes the book's dual-purpose mandate: it utilizes extra-virgin olive oil, swaps red meat for 93% lean turkey to control saturated fat, and brings in excellent fiber and nutrients from whole-food vegetables and legumes."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugars are present, and the carbohydrate component (43.8 g) lands perfectly within the chapter's target window (25-45 g). Crucially, the carbs come from high-quality sources: cannellini beans and sweet corn."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe overshoots the chapter's strict 500 mg sodium ceiling by over 50% (786 mg). The culprits are likely the undrained canned green chiles and the broth volume. Fix: Specify 'low-sodium' or 'no-salt-added' diced green chiles, instruct the reader to drain them, and consider swapping 1/2 cup of the broth for water to bring the sodium down into the target tier."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe comfortably meets the 30-minute promise from a cold start. The prep is minimal, the active cooking is fast, and the ingredients are widely available everyday items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe overshoots the chapter's strict 500 mg sodium ceiling by over 50% (786 mg). The culprits are likely the undrained canned green chiles and the broth volume. Fix: Specify 'low-sodium' or 'no-salt-added' diced green chiles, instruct the reader to drain them, and consider swapping 1/2 cup of the broth for water to bring the sodium down into the target tier.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "No USDA candidate for 'Low-sodium diced green chiles' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 17% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 10% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 10% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 10% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium diced green chiles"
+        ],
+        "nutrition": {
+          "calories_kcal": 462.4,
+          "protein_g": 35.1,
+          "carbs_g": 44.3,
+          "fat_g": 18.3,
+          "fiber_g": 8.5,
+          "sodium_mg": 150.3,
+          "sugar_g": 6.3,
+          "saturated_fat_g": 3.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 84.0,
+          "potassium_mg": 1081.8,
+          "trans_fat_g": 0.1,
+          "mufa_g": 9.0,
+          "pufa_g": 4.2,
+          "calcium_mg": 128.2,
+          "iron_mg": 5.9,
+          "vitamin_d_mcg": 0.5,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium diced green chiles"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.917,
+        "alias_hit_rate": 0.75,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "462.4 kcal/serving > high bound 440 kcal (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "462.4 kcal/serving > high bound 440 kcal (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] The recipe perfectly captures the essence of a 'light main' soup, but at 462 kcal it slightly overshoots the 440 kcal tier ceiling. Consider either reducing the olive oil to 2 tsp or swapping the 93% lean turkey for 99% lean ground turkey to shave off the remaining 22 calories and bring it strictly in bounds."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a robust, flavorful, and incredibly practical 30-minute chili that strongly aligns with the cookbook's dietary goals. A very minor ingredient adjustment will bring its calorie count perfectly under the chapter's specific nutrient ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is well-balanced and classic for a Southwestern chili, utilizing earthy cumin, sweet corn, umami-rich broth, and a bright, acidic lime finish."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every ingredient listed in the ingredients section is correctly used in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. They include precise visual doneness cues ('starts to soften', 'no longer pink') and utilize time ranges and check prompts appropriately for the protein and simmer steps."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques closely align with a Southwestern-American flavor profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A one-pot stovetop method is highly suitable and efficient for a quick chili."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are completely plausible for the ingredients and quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro highlights the nutritional benefits in a practical, encouraging tone without resorting to banned health claims or detox language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, hearty, and satisfying lunch option that home cooks will genuinely enjoy making and eating."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe successfully answers to both conditions by delivering ample dietary fiber through legumes and corn, lean protein, and heart-healthy fat from the olive oil."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "There is zero added sugar, and the complex carbohydrates provided by the cannellini beans and corn land perfectly within the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe perfectly captures the essence of a 'light main' soup, but at 462 kcal it slightly overshoots the 440 kcal tier ceiling. Consider either reducing the olive oil to 2 tsp or swapping the 93% lean turkey for 99% lean ground turkey to shave off the remaining 22 calories and bring it strictly in bounds."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The total time is well under 30 minutes. It efficiently utilizes standard supermarket pantry staples and requires minimal active prep time."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is captured from a 3/4 overhead perspective at 40 degrees, ensuring the texture and contents of two rustic ceramic bowls are fully visible. The primary bowl is sharp in the foreground, with the second bowl slightly out of focus behind it. The depth of field is shallow, creating a soft, natural bokeh background. Lighting is soft and directional, streaming from a window on the left, casting gentle shadows and creating a subtle sheen on the broth surface. The setting is a rustic kitchen featuring an aged oak wood surface with visible grain. Props include a weathered wooden spoon resting casually against the bowl and a few scattered, bright green cilantro leaves and a small stray yellow corn kernel on the wood grain. The chili displays a rich, savory aesthetic; the lean ground turkey is broken into small, tender morsels and is mixed with plump, pearly white cannellini beans and vibrant, bright yellow sweet corn. Small flecks of green chiles and freshly chopped, verdant cilantro are distributed throughout the warm, amber-colored broth, which has a natural, slightly thick consistency. One bowl shows a tiny, realistic drip of broth on the outer matte ceramic rim. The overall color palette is warm and inviting, dominated by earthy browns, golden yellows, and fresh green accents. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: asymmetric garnish placement, an uneven distribution of ingredients, a slight oil sheen on the surface. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 9,
+  "total_corrections": 0
+}

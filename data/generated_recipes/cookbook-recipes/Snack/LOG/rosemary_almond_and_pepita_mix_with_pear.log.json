@@ -1,0 +1,294 @@
+{
+  "main_ingredient": "Raw whole almonds",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Rosemary Almond and Pepita Mix with Pear",
+  "recipe_id": "1a3def4e-969a-4d03-8dd4-823c492698a0",
+  "generation_id": "15e03652-ae81-456d-8a6d-0b94a09f9e13",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:07:20.701844",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Rosemary Almond and Pepita Mix with Pear",
+        "main_ingredient": "Raw whole almonds",
+        "technique": "Skillet toasting",
+        "flavour_profile": "Savory, herbaceous, and naturally sweet",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Raw whole almonds",
+          "Raw pumpkin seeds (pepitas)",
+          "Fresh pear",
+          "Extra-virgin olive oil",
+          "Fresh rosemary",
+          "Garlic powder",
+          "Kosher salt"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Raw whole almonds' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 11% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Raw whole almonds"
+        ],
+        "nutrition": {
+          "calories_kcal": 218.1,
+          "protein_g": 6.8,
+          "carbs_g": 18.2,
+          "fat_g": 15.1,
+          "fiber_g": 5.3,
+          "sodium_mg": 60.6,
+          "sugar_g": 9.5,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 216.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.9,
+          "pufa_g": 3.0,
+          "calcium_mg": 17.4,
+          "iron_mg": 1.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Raw whole almonds"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.857,
+        "alias_hit_rate": 0.714,
+        "match_sources": [
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[cooking_method_suitability] Tossing the nuts in garlic powder before toasting them for 4 to 6 minutes in a skillet risks burning the delicate garlic powder, which turns bitter quickly. Concrete fix: Toast the raw almonds and pepitas in the oil first, and toss them with the fresh rosemary, garlic powder, and salt immediately after removing them from the heat while they are still hot."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, highly appealing whole-food snack that perfectly balances the dietary needs of the target audience with just a few everyday ingredients. A minor culinary tweak to add the garlic powder after toasting rather than before will prevent the spices from burning and ensure a perfect result.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The pairing of savory, herbaceous, and slightly salty toasted nuts with the sweet, crisp freshness of a pear is a classic, highly appetizing culinary combination."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are used in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent: they provide a cooking time range, a prompt to check at the minimum time, specific sensory doneness cues (popping seeds, fragrance), and a crucial step to remove the nuts from the hot skillet immediately to prevent carryover burning."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients (almonds, olive oil, rosemary, fresh pear) align perfectly with a Mediterranean flavor profile and snacking style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Tossing the nuts in garlic powder before toasting them for 4 to 6 minutes in a skillet risks burning the delicate garlic powder, which turns bitter quickly. Concrete fix: Toast the raw almonds and pepitas in the oil first, and toss them with the fresh rosemary, garlic powder, and salt immediately after removing them from the heat while they are still hot."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values perfectly align with the ingredients provided (especially the 18g carbohydrate coming from half a medium pear and the seeds/nuts)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the recipe, and the intro is warm, practical, and devoid of any banned diet-culture or exaggerated health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a fantastic, elegant, and highly appealing snack that requires very little effort but yields a complex flavor profile."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the therapeutic requirements for both conditions: heart-healthy unsaturated fats from the nuts and olive oil, solid plant protein, and a quality, high-fiber carbohydrate source from the whole fruit."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with all sweetness coming naturally from the whole pear. The carbohydrate count (18.2 g) sits beautifully in the ideal 10-24 g snack window, offering exactly the right balance."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the Snack chapter targets perfectly, providing a well-measured fruit-and-nut combination that meets the protein (>5g), fiber (>3g), and calorie window requirements."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily prepared in under 10 minutes from a cold start. All ingredients are affordable and widely available in standard supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is centered with generous negative space, captured at a 3/4 overhead angle to clearly display the entire plate's contents. Shallow depth of field with the primary plate sharp and the second plate softly blurred in the background. Lighting is soft, natural side light from a nearby window, creating subtle shadows and a gentle sheen on the olive oil-coated nuts. The setting is a warm, aged oak wood surface with a few scattered pepitas and a stray rosemary leaf. The dish is presented on two simple, matte ceramic plates, each holding half the recipe. On each plate, a portion of sliced, crisp pear with pale, juicy flesh is arranged side-by-side with a generous mound of toasted almond and pepita mix. The almonds are golden-brown with visible toasted textures, and the pumpkin seeds are flecked with fine green specks of chopped rosemary and tiny grains of garlic powder. A light drizzle of olive oil creates a slight sheen on the nuts. The pear slices are fresh and pale, offering a contrast to the warm, toasted hues of the nuts. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a few asymmetric nut placements, a slight variation in the browning of the almonds, and scattered crumb trails. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional food photograph for a high-end cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

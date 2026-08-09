@@ -1,0 +1,126 @@
+{
+  "id": "d669db74-043c-4e39-b087-e88524f9dbea",
+  "title": "Warm Blueberry and Vanilla Skyr Waffles",
+  "intro": "Packing plenty of protein and fiber, this comforting breakfast helps keep your morning energy steady until lunch. Tangy Skyr and warm berries replace sugary syrup for a naturally sweet start.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 4,
+  "cook_time_max_min": 5,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Frozen 100% whole-wheat waffles",
+      "canonical_name": "Waffles, whole wheat, frozen, ready-to-heat",
+      "quantity_g": 140.0,
+      "quantity_display": "4 waffles (140 g)",
+      "preparation": null,
+      "fdc_id": 174085,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen blueberries",
+      "canonical_name": "Blueberries, frozen, unsweetened",
+      "quantity_g": 210.0,
+      "quantity_display": "1 1/2 cups (210 g)",
+      "preparation": null,
+      "fdc_id": 173950,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Nonfat plain Skyr",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 454.0,
+      "quantity_display": "2 cups (454 g)",
+      "preparation": null,
+      "fdc_id": 170894,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pure vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 4.0,
+      "quantity_display": "1 tsp (4 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Hemp hearts",
+      "canonical_name": "Seeds, hemp seed, hulled",
+      "quantity_g": 30.0,
+      "quantity_display": "3 tbsp (30 g)",
+      "preparation": null,
+      "fdc_id": 170148,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chopped walnuts",
+      "canonical_name": "Nuts, walnuts, english",
+      "quantity_g": 28.0,
+      "quantity_display": "1/4 cup (28 g)",
+      "preparation": null,
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toast the whole-wheat waffles in a toaster or oven according to the package directions until golden and crisp.",
+    "Place the frozen blueberries in a small saucepan over medium heat while the waffles toast.",
+    "Cook the blueberries, stirring occasionally, for 4 to 5 minutes until the berries soften and burst. Remove the saucepan from the heat.",
+    "Whisk the Skyr, vanilla extract, and ground cinnamon in a medium bowl until smooth.",
+    "Divide the warm toasted waffles between two plates.",
+    "Spoon the vanilla Skyr mixture over the waffles, then ladle the warm blueberry sauce on top.",
+    "Sprinkle the hemp hearts and chopped walnuts over the waffles before serving."
+  ],
+  "variation": "Swap the chopped walnuts for sliced almonds or toasted pecans.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 548.9,
+    "protein_g": 35.5,
+    "carbs_g": 59.2,
+    "fat_g": 20.5,
+    "fiber_g": 7.6,
+    "sodium_mg": 473.9,
+    "sugar_g": 20.1,
+    "saturated_fat_g": 2.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 11.3,
+    "potassium_mg": 738.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 2.8,
+    "pufa_g": 13.6,
+    "calcium_mg": 387.6,
+    "iron_mg": 6.5,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "total carbohydrate 59.2 g/serving > ceiling 55 g (\"main\")",
+    "548.9 kcal/serving > high bound 540 kcal (\"main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\warm_blueberry_and_vanilla_skyr_waffles.png",
+  "created_at": "2026-08-09T19:01:50.530119",
+  "generation_id": "4a957541-3e60-463e-aba3-1bc71cad59c1"
+}

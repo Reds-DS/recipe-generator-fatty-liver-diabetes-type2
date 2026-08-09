@@ -1,0 +1,525 @@
+{
+  "main_ingredient": "No-salt-added canned navy beans",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Smoky Tomato Navy Beans and Eggs on Toast",
+  "recipe_id": "fa4f160b-4e3c-4be5-8a8b-304574c4bfa8",
+  "generation_id": "02f301e9-e263-4330-b8bb-5f3c71ca6224",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:07:30.287843",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Tomato Navy Beans and Eggs on Toast",
+        "main_ingredient": "No-salt-added canned navy beans",
+        "technique": "Skillet simmering and pan-searing",
+        "flavour_profile": "Smoky, savory, and lightly tangy",
+        "cuisine_style": "Mediterranean-Inspired Comfort",
+        "ingredients_sketch": [
+          "No-salt-added canned navy beans",
+          "Large eggs",
+          "Whole-wheat bread",
+          "Fresh baby spinach",
+          "No-salt-added tomato paste",
+          "Apple cider vinegar",
+          "Smoked paprika",
+          "Garlic powder",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'no-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "cholesterol_mg: partial data — 32% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 542.2,
+          "protein_g": 33.4,
+          "carbs_g": 58.9,
+          "fat_g": 19.7,
+          "fiber_g": 17.9,
+          "sodium_mg": 576.2,
+          "sugar_g": 5.9,
+          "saturated_fat_g": 4.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 373.5,
+          "potassium_mg": 1157.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.6,
+          "pufa_g": 4.2,
+          "calcium_mg": 287.2,
+          "iron_mg": 7.5,
+          "vitamin_d_mcg": 2.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.75,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 58.9 g/serving > ceiling 55 g (\"main\")",
+        "sodium 576.2 mg/serving > ceiling 550 mg (\"main\")",
+        "542.2 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 58.9 g/serving > ceiling 55 g (\"main\")",
+              "sodium 576.2 mg/serving > ceiling 550 mg (\"main\")",
+              "542.2 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a brilliant, highly appealing savory breakfast that cleverly uses pantry spices and vinegar to mimic traditional baked beans without the added sugar. A small adjustment to the bread quantity is required to bring the carbohydrates, sodium, and calories strictly within the chapter's ceilings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of tomato paste, apple cider vinegar, and smoked paprika is a highly clever way to mimic the tangy, smoky profile of traditional baked beans without relying on added sugar."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is properly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Cook times are provided as ranges with minimum-time check points, and visual doneness cues (wilted spinach, set whites but soft yolks) are clearly stated."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Strongly aligns with Mediterranean-inspired comfort by utilizing olive oil, legumes, dark leafy greens, and yogurt."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A stovetop skillet is the ideal vessel for quickly simmering a sauce and poaching eggs within it."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are entirely plausible and align correctly with the provided ingredient quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the introduction appropriately highlights the blood-sugar stabilizing benefits of the fiber-rich ingredients without resorting to banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, comforting, and practical savory breakfast option that feels substantial."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balances both conditions: it provides robust protein and fiber, relies on olive oil rather than saturated fats, and utilizes high-quality complex carbohydrates."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Achieves a zero-added-sugar profile by relying on pantry spices for flavor, while keeping carbohydrates strictly to whole-food sources (beans, spinach, whole-wheat bread)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "While the dish perfectly matches the chapter's character, it slightly overshoots the main-breakfast ceilings for calories, carbohydrates, and sodium flagged by the automated checks. To fix this without hurting the recipe: reduce the whole-wheat bread from 3 oz to 2 oz (which gives each person exactly one standard 1-oz slice). This will easily pull all three metrics below the strict chapter ceilings."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Exceptionally practical. The recipe requires only about 12 minutes from start to finish, uses everyday pantry staples, and demands minimal prep."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] While the dish perfectly matches the chapter's character, it slightly overshoots the main-breakfast ceilings for calories, carbohydrates, and sodium flagged by the automated checks. To fix this without hurting the recipe: reduce the whole-wheat bread from 3 oz to 2 oz (which gives each person exactly one standard 1-oz slice). This will easily pull all three metrics below the strict chapter ceilings.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'No-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "cholesterol_mg: partial data — 37% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 495.4,
+          "protein_g": 28.5,
+          "carbs_g": 52.4,
+          "fat_g": 19.6,
+          "fiber_g": 17.1,
+          "sodium_mg": 485.7,
+          "sugar_g": 4.0,
+          "saturated_fat_g": 4.6,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 411.0,
+          "potassium_mg": 1074.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.5,
+          "pufa_g": 3.8,
+          "calcium_mg": 223.0,
+          "iron_mg": 7.0,
+          "vitamin_d_mcg": 2.5,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flawless, highly appealing recipe that hits every macronutrient target and editorial guideline for the book. It offers a fast, satisfying, and deeply nourishing savory breakfast that perfectly addresses both fatty liver and blood sugar management.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Smoked paprika, garlic, tomato paste, and apple cider vinegar mimic the tangy, smoky sweetness of traditional baked beans perfectly without any sugar, pairing beautifully with the eggs and spinach."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are successfully integrated into the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are fully complete for a beginner cook. You provide excellent time ranges (3-4 minutes, 4-6 minutes), include a crucial midway check ('Check at 4 minutes'), and offer clear visual doneness cues (tomato paste darkened, spinach wilted, egg whites completely set)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Mediterranean-Inspired Comfort style. Poaching eggs in a tomato and vegetable base is highly characteristic of the region (akin to Shakshuka)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop simmering in a covered skillet is the ideal method for quickly hydrating the tomato paste into a sauce and poaching the eggs evenly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values are well-aligned with the ingredients. 17g of fiber and 28g of protein is an extremely strong profile for a breakfast, driven heavily by the navy beans and whole wheat bread."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is precise and appetizing. The intro is wonderfully written—warm, engaging, completely devoid of banned health claims, and correctly identifies that this dish provides steady energy through its high fiber content."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a fantastic, savory, hearty breakfast. It reimagines a beloved comfort food (baked beans on toast) in a way that is profoundly healthy, fast, and satisfying."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe perfectly addresses both insulin resistance and fatty liver. It features lean protein (eggs), massive amounts of fiber (beans and whole wheat), healthy fats (olive oil), and a meaningful vegetable presence (spinach and tomato)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, achieving flavor through spices and acidity instead. The carbohydrates are perfectly positioned in the 32-55g window and come from exceptionally high-quality sources (legumes and whole grains)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits all the chapter targets for a 'main' tier breakfast beautifully: >26g protein, >7g fiber, completely savory, and fits the carb window flawlessly."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly practical. Uses basic pantry staples (canned beans, tomato paste, spices) and eggs. Total time is well under 20 minutes from a cold start. An excellent quick breakfast."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding a slice of golden-brown toasted whole-wheat bread topped with a rustic, hearty portion of smoky navy beans and eggs. One plate is sharp in the foreground, showing the detailed texture of the beans and a perfectly poached egg, while the second plate is slightly blurred in the background. The dish is captured from a 3/4 overhead angle, ensuring every component is visible: the beans are coated in a rich, deep-red sauce made from tomato paste and smoked paprika, studded with bright green wilted baby spinach leaves. Two large eggs are nestled into the bean mixture on each plate, with opaque, firm white edges and vibrant, soft, runny golden yolks. The toast is visible beneath the beans, its crisp texture evident at the edges. Soft natural side light from a window on the left creates subtle highlights on the moist bean sauce and a gentle sheen on the yolks. The plates are set on a weathered, dark-stained oak table with visible wood grain. Props include a simple, slightly tarnished stainless steel fork resting casually on a rumpled, off-white linen napkin beside the front plate, and a few stray specks of smoked paprika and a single wilted spinach leaf scattered naturally on the wood. The scene is cozy and lived-in, with a small, stray sauce drip on the rim of the plate. Photorealistic, not AI-generated looking. Warm, golden-hour color temperature. No plastic sheen, no perfect symmetry, no hands, no text, no watermark.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

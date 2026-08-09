@@ -1,0 +1,166 @@
+{
+  "id": "10c7c1b2-d0df-49cc-8d7f-275c6d0a6339",
+  "title": "Spiced Red Lentil and Spinach Stew",
+  "intro": "This simple one-pot stew relies on quick-cooking dry red lentils and pre-chopped onion for a fast weeknight dinner. Nonfat Greek yogurt adds creamy richness and protein while skipping the saturated fat of coconut milk.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 18,
+  "cook_time_max_min": 23,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pre-chopped yellow onion",
+      "canonical_name": "Onions, yellow, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": null,
+      "fdc_id": 790646,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Minced garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Curry powder",
+      "canonical_name": "Spices, curry powder",
+      "quantity_g": 6.0,
+      "quantity_display": "1 tbsp (6 g)",
+      "preparation": null,
+      "fdc_id": 170924,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dry red lentils",
+      "canonical_name": "Lentils, raw",
+      "quantity_g": 120.0,
+      "quantity_display": "4.2 oz (120 g)",
+      "preparation": "rinsed",
+      "fdc_id": 174284,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned diced tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added",
+      "quantity_g": 240.0,
+      "quantity_display": "8.5 oz (240 g)",
+      "preparation": "with juices",
+      "fdc_id": 170138,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 480.0,
+      "quantity_display": "2 cups (480 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": null,
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Nonfat plain Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 300.0,
+      "quantity_display": "10.6 oz (300 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 10.0,
+      "quantity_display": "0.4 oz (10 g)",
+      "preparation": "chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a medium pot over medium heat until shimmering. Add the yellow onion and minced garlic, and cook until softened, about 3 to 4 minutes.",
+    "Stir in the curry powder and cook for 30 seconds.",
+    "Pour in the dry red lentils, diced tomatoes with their juices, and vegetable broth. Increase the heat to medium-high and bring to a gentle boil.",
+    "Reduce the heat to low, cover the pot tightly, and simmer until the lentils are tender and the liquid is absorbed. Check at 12 minutes, cooking for 12 to 15 minutes total.",
+    "Remove the pot from the heat. Fold in the baby spinach, stirring until the residual heat wilts the leaves, then let the stew sit for 2 minutes to cool.",
+    "Fold in the Greek yogurt and chopped cilantro until the stew becomes creamy and uniform in color. Plate and serve immediately."
+  ],
+  "variation": "Swap the baby spinach for chopped kale or Swiss chard.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently over low heat without boiling.",
+  "nutrition_per_serving": {
+    "calories_kcal": 453.1,
+    "protein_g": 33.8,
+    "carbs_g": 60.6,
+    "fat_g": 10.2,
+    "fiber_g": 12.3,
+    "sodium_mg": 466.9,
+    "sugar_g": 12.2,
+    "saturated_fat_g": 1.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 7.5,
+    "potassium_mg": 1296.7,
+    "trans_fat_g": 0.0,
+    "mufa_g": 5.8,
+    "pufa_g": 1.7,
+    "calcium_mg": 301.2,
+    "iron_mg": 6.7,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Low-sodium vegetable broth"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "sugar_g: partial data — 16% of recipe weight has no USDA value for it.",
+    "saturated_fat_g: partial data — 15% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 49% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 35% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 35% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 35% of recipe weight has no USDA value for it.",
+    "total carbohydrate 60.6 g/serving > ceiling 55 g (\"main\")",
+    "[added_sugar_and_carb_balance] There is zero added sugar and the carbohydrate quality is exceptional. However, the 60.6 g total carbohydrate slightly exceeds the 55 g ceiling for the 'main' tier. To bring it strictly into the 32-55 g window without falling below the 26 g protein floor, consider reducing the dry red lentils from 4.2 oz (120 g) to 3.5 oz (100 g)."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\spiced_red_lentil_and_spinach_stew.png",
+  "created_at": "2026-08-09T17:48:32.424582",
+  "generation_id": "7cf30c26-454b-4ddd-b969-43c89bf9219b"
+}

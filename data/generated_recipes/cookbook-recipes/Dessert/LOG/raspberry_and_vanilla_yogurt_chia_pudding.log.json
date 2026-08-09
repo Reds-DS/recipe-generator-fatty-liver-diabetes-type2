@@ -1,0 +1,725 @@
+{
+  "main_ingredient": "Chia seeds",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Raspberry and Vanilla Yogurt Chia Pudding",
+  "recipe_id": "3544bf2b-7a4d-4c70-baca-d427514bceb7",
+  "generation_id": "e1b42311-089c-4f74-9121-ef0420fe03f4",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T13:22:51.840760",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Raspberry and Vanilla Yogurt Chia Pudding",
+        "main_ingredient": "Chia seeds",
+        "technique": "No-cook mixing",
+        "flavour_profile": "Creamy, fruity, and gently sweet",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Chia seeds",
+          "Plain nonfat Greek yogurt",
+          "Unsweetened soy milk",
+          "Vanilla extract",
+          "Pure maple syrup",
+          "Fresh raspberries",
+          "Sliced almonds"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 221.7,
+          "protein_g": 12.5,
+          "carbs_g": 25.2,
+          "fat_g": 8.5,
+          "fiber_g": 10.3,
+          "sodium_mg": 81.1,
+          "sugar_g": 9.6,
+          "saturated_fat_g": 0.8,
+          "added_sugar_g": 4.2,
+          "cholesterol_mg": 2.8,
+          "potassium_mg": 393.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.2,
+          "pufa_g": 4.9,
+          "calcium_mg": 304.2,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.9,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.571,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "221.7 kcal/serving > high bound 220 kcal (\"dessert\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "221.7 kcal/serving > high bound 220 kcal (\"dessert\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An otherwise outstanding, nutrient-dense dessert that perfectly nails the macro requirements for fatty liver and diabetes. It just needs a 'passive time' field to account for the fridge time required for the chia seeds to actually set into a pudding.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavors are classic and complementary. The tanginess of the yogurt and raspberries balances the gentle sweetness of the maple syrup and vanilla."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is properly utilized in the instructions without any omissions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent, particularly the specific guidance to let the mixture rest and stir vigorously a second time to prevent chia clumps."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American approach to health-conscious desserts."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook method is perfectly suited for a chia-based pudding."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is highly accurate and reflects the high-fiber impact of the chia seeds and raspberries alongside the high-protein Greek yogurt."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and highlight the right nutritional benefits in an encouraging, appropriate tone."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, quick, and satisfying dessert that provides great texture contrasts with the seeds, almonds, and fresh fruit."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliant execution of the core philosophy: it uses real whole foods, is very rich in protein and fiber, keeps saturated fat well under control, and provides high-quality carbohydrates."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the metrics beautifully. Added sugar is strictly controlled at 4.2 g (from just 1 tsp maple syrup per person), while delivering over 25 g of quality carbohydrates and 10+ grams of fiber."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the dessert chapter perfectly. The very minor calorie overage (221.7 vs. the 220 limit) is statistically insignificant and does not hurt the recipe's standing."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The intro promises the dessert 'sets up fast in the fridge,' but there is an undeclared wait. Chia pudding requires resting time to fully hydrate into a 'pudding' texture, meaning it cannot realistically be ready to eat in 10 minutes from a cold start. Fix: Add a 'Passive time' field (e.g., 30 minutes, or overnight) and explicitly label it as a make-ahead recipe, or clarify in the text that eating it immediately will yield a softer, thinner consistency."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [thirty_minute_practicality] The intro promises the dessert 'sets up fast in the fridge,' but there is an undeclared wait. Chia pudding requires resting time to fully hydrate into a 'pudding' texture, meaning it cannot realistically be ready to eat in 10 minutes from a cold start. Fix: Add a 'Passive time' field (e.g., 30 minutes, or overnight) and explicitly label it as a make-ahead recipe, or clarify in the text that eating it immediately will yield a softer, thinner consistency.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 190.1,
+          "protein_g": 11.0,
+          "carbs_g": 20.0,
+          "fat_g": 7.6,
+          "fiber_g": 7.9,
+          "sodium_mg": 62.0,
+          "sugar_g": 8.3,
+          "saturated_fat_g": 0.8,
+          "added_sugar_g": 4.2,
+          "cholesterol_mg": 2.8,
+          "potassium_mg": 302.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 1.9,
+          "pufa_g": 4.5,
+          "calcium_mg": 256.2,
+          "iron_mg": 1.8,
+          "vitamin_d_mcg": 0.6,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.857,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A nutritionally superb and highly appealing chia pudding that perfectly balances the requirements for fatty liver and diabetes. However, it requires a minor but essential fix: explicitly stating the required chilling duration in both the instructions and the time header so the reader is prepared for the wait.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classic and well-balanced. The tartness of the raspberries and yogurt pairs beautifully with the vanilla, almond, and a modest touch of maple."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is explicitly used in the instructions exactly as required."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Step 3 instructs to refrigerate the pudding to hydrate the chia seeds, but fails to provide a timeframe. Fix: Add a specific duration to Step 3 (e.g., 'refrigerate for at least 2 hours, or overnight')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Chia pudding is a staple of Modern American healthy eating; the ingredients and technique match the stated cuisine perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook chilling method is the standard and correct way to hydrate chia seeds for a pudding."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values align seamlessly with the ingredients. High fiber (from chia and berries) and good protein (from Greek yogurt and soy milk) are accurately reflected."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is precise. The intro correctly positions it as a make-ahead option with a gentle, supportive tone that avoids banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "It is a highly appealing, refreshing, and incredibly easy dessert that looks beautiful in a glass jar."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent dual-condition compliance. It delivers nearly 8g of fiber and 11g of protein with under 1g of saturated fat, utilizing high-quality complex carbs from chia seeds and fruit."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the dessert carbohydrate window at 20g, leaning heavily on fiber rather than sugar. The added sugar is honestly derived from a measured amount of pure maple syrup (4.2g, well under the 7g limit)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe fits the Dessert chapter's intent perfectly, showcasing a dairy- and fruit-forward profile with no tropical fats and tightly controlled added sugar."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "major",
+            "feedback": "While the intro mentions this is 'make-ahead', the actual chill time required to hydrate the chia seeds is completely missing from the time fields and instructions. Fix: Add a declared 'Chilling time' to the header (e.g., 2 hours) so the mandatory passive time is clearly accounted for, ensuring the reader knows it cannot be eaten in 5 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [instruction_completeness] Step 3 instructs to refrigerate the pudding to hydrate the chia seeds, but fails to provide a timeframe. Fix: Add a specific duration to Step 3 (e.g., 'refrigerate for at least 2 hours, or overnight').\n2. [thirty_minute_practicality] While the intro mentions this is 'make-ahead', the actual chill time required to hydrate the chia seeds is completely missing from the time fields and instructions. Fix: Add a declared 'Chilling time' to the header (e.g., 2 hours) so the mandatory passive time is clearly accounted for, ensuring the reader knows it cannot be eaten in 5 minutes.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 212.9,
+          "protein_g": 12.3,
+          "carbs_g": 24.7,
+          "fat_g": 8.0,
+          "fiber_g": 10.1,
+          "sodium_mg": 81.4,
+          "sugar_g": 9.6,
+          "saturated_fat_g": 0.8,
+          "added_sugar_g": 4.2,
+          "cholesterol_mg": 2.9,
+          "potassium_mg": 383.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 1.9,
+          "pufa_g": 4.8,
+          "calcium_mg": 301.6,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.9,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.857,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A structurally excellent, delicious, and highly compliant dessert that perfectly marries blood-sugar management with liver health. The only necessary fix is adding a 'Passive time' field to the recipe header to account for the 2-hour chill time.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavors are highly coherent. Vanilla, raspberry, almond, and a touch of maple syrup are a classic, proven combination that works beautifully with the creamy soy milk and yogurt base."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are accurately deployed in the instructions, with no unlisted items appearing."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. Whisking, resting for 5 minutes, and whisking again is the correct technique to prevent chia clumping. The visual cue 'thickened pudding' is helpful."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits Modern American perfectly as a wholesome, crossover dessert/breakfast dish."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, chill-to-set method is exactly how chia pudding must be made. Completely suitable."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros map perfectly to the ingredients. High fiber (10.1 g) from chia and berries, solid protein from Greek yogurt and soy milk, and 4.2 g added sugar corresponds nicely to the 2 tsp of maple syrup."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title is accurate. The intro is warm, clear, and accurately flags this as a 'make-ahead' dessert, which justifies the chill time. No banned health claims are present."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very appealing. It looks great, tastes satisfying, and delivers a creamy, rich mouthfeel without excess saturated fat."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent alignment with the diet's core tenets: high in protein and fiber, remarkably low in saturated fat (0.8 g), and heavily reliant on whole plant foods (berries, chia, almonds)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the brief. Added sugar is kept honest (just a splash of maple), and the total carbohydrates (24.7 g) fall safely within the target window, sourced mostly from high-quality whole berries and seeds."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Desserts' intent flawlessly. It uses whole fruit and dairy/chia for sweetness and texture, staying well within the <7g added sugar and 14-28g carbohydrate window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "major",
+            "feedback": "While the active time is truly under 30 minutes and the intro correctly labels it 'make-ahead', the mandatory 2-hour chilling period is missing from the recipe's declared time fields. Fix: Add a 'Passive time: 2 hours' (or Chill time) field to the recipe header so the reader is fully informed of the total time commitment at a glance."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte-white ceramic bowls centered on an aged oak wood tabletop. The camera is at a 3/4 overhead angle to showcase the contents of both bowls, with one bowl sharp in the foreground and the second bowl slightly blurred in the background, creating a shallow depth of field. Soft, natural side light enters from a window on the left, casting gentle, elongated shadows and highlighting the creamy, pudding-like texture of the chia mixture. Each bowl is filled with a generous, thick, pearly-white chia and Greek yogurt pudding base, showing the tiny black specks of hydrated chia seeds. Scattered naturally on top of the pudding are plump, vibrant crimson raspberries and delicate, thin, toasted-beige sliced almonds. One bowl has a small, realistic smudge of yogurt on its inner rim. Beside the bowls, a worn linen napkin is rumpled casually, and a few stray fresh raspberries and almond slices are scattered on the wooden surface near a small stainless steel teaspoon. The atmosphere is warm, inviting, and cozy, with a golden-hour color palette. The scene looks like someone just finished prepping dessert at home, with slight, authentic imperfections: a small drop of maple syrup near the base of one bowl and uneven distribution of the fruit. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

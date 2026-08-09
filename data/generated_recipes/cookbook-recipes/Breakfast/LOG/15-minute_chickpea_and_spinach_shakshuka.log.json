@@ -1,0 +1,305 @@
+{
+  "main_ingredient": "Eggs and canned chickpeas",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "15-Minute Chickpea and Spinach Shakshuka",
+  "recipe_id": "a94fa35b-8ee7-46ac-b09b-9c5045760fc5",
+  "generation_id": "28d5902b-a5c9-4a8e-ba2a-d8d56d665fb6",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:10:16.549905",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "15-Minute Chickpea and Spinach Shakshuka",
+        "main_ingredient": "Eggs and canned chickpeas",
+        "technique": "Stovetop skillet simmering",
+        "flavour_profile": "Savory, spiced, and tangy-tomato",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Yellow onion",
+          "Ground cumin",
+          "Smoked paprika",
+          "No-salt-added canned diced tomatoes",
+          "No-salt-added canned chickpeas",
+          "Baby spinach",
+          "Large eggs",
+          "Nonfat plain Greek yogurt",
+          "Whole wheat pita bread"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'No-salt-added canned diced tomatoes' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.",
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "saturated_fat_g: partial data — 13% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 52% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 38% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 38% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 38% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned diced tomatoes"
+        ],
+        "nutrition": {
+          "calories_kcal": 445.3,
+          "protein_g": 28.3,
+          "carbs_g": 41.5,
+          "fat_g": 20.0,
+          "fiber_g": 8.7,
+          "sodium_mg": 458.6,
+          "sugar_g": 11.8,
+          "saturated_fat_g": 4.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 374.8,
+          "potassium_mg": 716.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.7,
+          "pufa_g": 3.7,
+          "calcium_mg": 197.0,
+          "iron_mg": 5.0,
+          "vitamin_d_mcg": 2.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned diced tomatoes"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 0,
+        "matcher_hits": 11,
+        "food_db_hit_rate": 0.917,
+        "alias_hit_rate": 0.0,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "llm_estimate",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[title_intro_accuracy] The title calls this a '15-Minute' shakshuka, but the listed prep (5 minutes) and minimum cook time (13 minutes) equal 18 minutes, and the cumulative step times can stretch to 19 minutes. Consider renaming it to '20-Minute Chickpea and Spinach Shakshuka' or 'Quick Chickpea and Spinach Shakshuka' to maintain strict honesty."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb, guideline-compliant breakfast recipe that elegantly addresses both insulin resistance and fatty liver with real, everyday ingredients. The only minor flaw is a slight mathematical mismatch between the '15-Minute' title and the actual 18-minute total time.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor combinations are excellent. Cumin, smoked paprika, tomatoes, and a splash of red wine vinegar create a classic, punchy Mediterranean base for the eggs, while the creamy Greek yogurt serves as a cooling counterpoint."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions, and no surprise ingredients are introduced in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are thorough. Each step includes a time range, a minimum-time check, and clear visual doneness cues (e.g., 'bright green and wilted', 'whites are firm but the yolks remain soft')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean style, utilizing olive oil, chickpeas, spinach, tomatoes, and warming spices."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A stovetop skillet is the traditional and ideal method for shakshuka. The sequence of building the sauce, wilting the greens, and poaching the eggs works flawlessly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values align well with the ingredients. Two eggs, greek yogurt, chickpeas, and a half pita per person comfortably yield the 28.3 g of protein and 41.5 g of carbohydrate listed."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The title calls this a '15-Minute' shakshuka, but the listed prep (5 minutes) and minimum cook time (13 minutes) equal 18 minutes, and the cumulative step times can stretch to 19 minutes. Consider renaming it to '20-Minute Chickpea and Spinach Shakshuka' or 'Quick Chickpea and Spinach Shakshuka' to maintain strict honesty."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, colorful, and satisfying breakfast that feels like a substantial meal while remaining quick to throw together."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An outstanding fit for both conditions. It delivers excellent fiber and high-quality complex carbohydrates from the chickpeas, spinach, and whole-wheat pita, alongside lean protein and heart-healthy olive oil, with no refined grains or heavy saturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Contains zero added sugars and provides a robust 41.5 g of high-quality carbohydrate per serving from legumes, vegetables, and whole-wheat bread, sitting perfectly within the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the Breakfasts chapter goals precisely: a savory, vegetable-loaded skillet that meets the high protein (28.3 g) and fiber (8.7 g) targets to keep readers full until lunch."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes total. The prep involves only dicing an onion and mincing garlic, and all ingredients are standard pantry staples readily available at any mainstream supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic plates set on an aged oak wood tabletop, captured at a 3/4 overhead angle (40°). The dish is centered to allow for circular cropping. Shallow depth of field keeps the foreground plate sharp, while the second plate is slightly out of focus in the background. Lighting is soft, natural side light from a window to the left, creating subtle shadows and highlights on the tomato sauce. The shakshuka consists of a vibrant red, chunky tomato and chickpea base with ribbons of wilted, bright green spinach throughout. Two large eggs are nestled into the sauce per plate, with firm, opaque whites and glistening, jammy, soft-set golden yolks. A generous dollop of thick, creamy white Greek yogurt is swirled onto the side of the tomato mixture on each plate. Two halves of toasted, lightly charred whole-wheat pita bread are tucked against the side of each plate. Props include a small, rustic wooden spoon resting on the table near a stray chickpea and a few tiny spinach fragments. The scene reflects a home-cooked, warm meal. There is a small, natural sauce drip on the rim of the plate and an imperfect swirl of yogurt. The atmosphere is cozy, golden-hour, and authentic. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

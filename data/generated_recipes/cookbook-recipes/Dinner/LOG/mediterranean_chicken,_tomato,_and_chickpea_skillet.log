@@ -1,0 +1,91 @@
+=== RECIPE LOG: Mediterranean Chicken, Tomato, and Chickpea Skillet ===
+ID            : d0772ab3-5ac4-4f3e-875e-b2c87b87cfb8
+Generation ID : deb985a4-b658-48bb-add7-c408f89a1d94
+Generated     : 2026-08-09 17:34:41
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 3
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : boneless, skinless chicken thighs
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Mediterranean Chicken, Tomato, and Chickpea Skillet
+Technique       : One-skillet simmer
+Cuisine style   : Mediterranean
+Flavour profile : Savory, bright, herbaceous, and slightly briny
+Sketch          : boneless, skinless chicken thighs, extra-virgin olive oil, zucchini, garlic powder, dried oregano, no-salt-added canned diced tomatoes, no-salt-added canned chickpeas, pitted kalamata olives, fresh lemon
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [added_sugar_and_carb_balance] The recipe contains zero added sugar, which is excellent, but it fails the carbohydrate floor (26.2g v...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : no-salt-added canned diced tomatoes
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'no-salt-added canned diced tomatoes' — values estimated by the LLM.
+  [WARN] Stage 4 qualifier: 'no-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.
+  [WARN] cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 25% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 25% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 25% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] UNDER-CARBOHYDRATE: total carbohydrate 26.2 g/serving < floor 32 g ("main"). This is a DEFECT, not a success — this book is deliberately not low-carbohydrate. Add a quality carbohydrate (whole grain, legume, starchy vegetable or fruit) in a measured portion.
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed as a 3/4 overhead shot at a 40-degree angle, capturing two rustic matte ceramic bowls placed on an aged oak wooden surface with vi...

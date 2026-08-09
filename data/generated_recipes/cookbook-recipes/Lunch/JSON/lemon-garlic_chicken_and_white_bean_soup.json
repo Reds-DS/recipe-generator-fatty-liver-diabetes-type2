@@ -1,0 +1,148 @@
+{
+  "id": "bb354b62-e61d-4e0a-9d16-93466bdcddd9",
+  "title": "Lemon-Garlic Chicken and White Bean Soup",
+  "intro": "This comforting soup relies on fiber-rich white beans and lean ground chicken to provide steady energy and keep you full. Lemon juice and aromatic herbs build deep flavor without relying on heavy cream or extra salt.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 14,
+  "cook_time_max_min": 18,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "93% lean ground chicken",
+      "canonical_name": "Chicken, ground, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": null,
+      "fdc_id": 171116,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "frozen mirepoix blend",
+      "canonical_name": "Vegetables, mixed, frozen, unprepared",
+      "quantity_g": 115.0,
+      "quantity_display": "1 cup (115 g)",
+      "preparation": null,
+      "fdc_id": 170471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 9.0,
+      "quantity_display": "3 cloves (9 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "dried Italian seasoning",
+      "canonical_name": "Spice blend, Italian seasoning, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 480.0,
+      "quantity_display": "2 cups (480 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "no-salt-added canned Great Northern beans",
+      "canonical_name": "Beans, great northern, mature seeds, canned, low sodium",
+      "quantity_g": 255.0,
+      "quantity_display": "9 oz (255 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 173791,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a medium pot or Dutch oven over medium-high heat until shimmering.",
+    "Add the ground chicken and break it apart with a wooden spoon. Cook for 3 to 4 minutes until no longer pink.",
+    "Stir in the frozen mirepoix blend and minced garlic. Sauté for 3 to 4 minutes until the vegetables soften and smell fragrant.",
+    "Mix in the dried Italian seasoning, low-sodium chicken broth, and rinsed Great Northern beans. Bring the liquid to a rolling boil over medium-high heat.",
+    "Reduce the heat to medium-low to maintain a gentle simmer. Cover the pot partially and cook for 8 to 10 minutes to allow the flavors to combine.",
+    "Remove the pot from the heat. Stir in the fresh baby spinach and fresh lemon juice, folding until the spinach wilts.",
+    "Ladle the soup into bowls and serve immediately."
+  ],
+  "variation": "Swap the ground chicken for lean ground turkey or tofu.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 446.9,
+    "protein_g": 37.0,
+    "carbs_g": 40.9,
+    "fat_g": 16.5,
+    "fiber_g": 9.5,
+    "sodium_mg": 417.0,
+    "sugar_g": 2.5,
+    "saturated_fat_g": 4.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 96.8,
+    "potassium_mg": 1556.3,
+    "trans_fat_g": 0.1,
+    "mufa_g": 8.4,
+    "pufa_g": 2.9,
+    "calcium_mg": 136.6,
+    "iron_mg": 4.9,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "dried Italian seasoning"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'dried Italian seasoning' — values estimated by the LLM.",
+    "446.9 kcal/serving > high bound 440 kcal (\"light_main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\lemon-garlic_chicken_and_white_bean_soup.png",
+  "created_at": "2026-08-09T12:22:28.506891",
+  "generation_id": "37a9ad2f-a814-4d25-9eb2-057ce8375aeb"
+}

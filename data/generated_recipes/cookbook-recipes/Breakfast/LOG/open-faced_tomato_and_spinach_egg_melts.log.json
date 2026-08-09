@@ -1,0 +1,288 @@
+{
+  "main_ingredient": "Whole wheat English muffins and whole eggs",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Open-Faced Tomato and Spinach Egg Melts",
+  "recipe_id": "4c9b5ab4-8c47-4d4a-b97c-8b9fc9024861",
+  "generation_id": "ea07171d-1d7f-4f6f-9238-b6f5315481c3",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:07:11.980023",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Open-Faced Tomato and Spinach Egg Melts",
+        "main_ingredient": "Whole wheat English muffins and whole eggs",
+        "technique": "Skillet and toasting",
+        "flavour_profile": "Savory, fresh, and slightly cheesy",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "100% whole wheat English muffins",
+          "Whole eggs",
+          "Liquid egg whites (carton)",
+          "Baby spinach",
+          "Fresh tomato slices",
+          "Part-skim mozzarella cheese slices",
+          "Extra-virgin olive oil",
+          "Fresh strawberries (for serving)"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 417.1,
+          "protein_g": 25.7,
+          "carbs_g": 45.0,
+          "fat_g": 16.7,
+          "fiber_g": 9.6,
+          "sodium_mg": 525.3,
+          "sugar_g": 17.8,
+          "saturated_fat_g": 4.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 195.0,
+          "potassium_mg": 982.5,
+          "trans_fat_g": 0.1,
+          "mufa_g": 8.2,
+          "pufa_g": 2.7,
+          "calcium_mg": 354.3,
+          "iron_mg": 4.3,
+          "vitamin_d_mcg": 1.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "protein 25.7 g/serving < floor 26 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "protein 25.7 g/serving < floor 26 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical breakfast recipe that perfectly bridges the liver and blood-sugar dietary needs. It makes smart use of whole and partial egg whites to control saturated fat, hits the carbohydrate window with quality whole foods, and delivers an appealing, quick meal.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavors are classic, coherent Mediterranean-American breakfast staples. Spinach, tomato, mozzarella, and eggs naturally complement each other, and a side of fresh strawberries provides a bright, acidic contrast to the savory muffins."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions exactly as described."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are clear, include proper visual cues ('golden and crisp', 'just wilted', 'mostly set', 'lightly melts'), and provide appropriate time ranges for the cooking steps."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The use of extra-virgin olive oil, spinach, tomato, and mozzarella aligns perfectly with the stated Mediterranean-American profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Scrambling the eggs and wilting the spinach in a skillet, then using residual covered heat to melt the cheese, is an excellent, foolproof technique for a fast breakfast."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are accurate for the quantities provided. The balance of whole eggs and egg whites effectively keeps the saturated fat down while yielding a substantial portion."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the recipe. The intro is warm, practical, and avoids any banned health claims or 'diet' framing."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, satisfying breakfast. The open-faced presentation makes the meal feel generous, and the generous side of strawberries makes it visually attractive."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of serving both conditions: the saturated fat is kept to 4.4g by substituting some whole eggs with egg whites and using part-skim mozzarella, while the carbohydrate base is built on high-quality 100% whole wheat and whole fruit."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect balance. There is 0g of added sugar, and the 45g of carbohydrate lands squarely in the middle of the target window, sourced from high-quality whole grains and fresh fruit."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the chapter intent beautifully. Note: The protein yields 25.7g, slightly triggering the automated 26g floor warning. This is a negligible 0.3g difference and does not harm the recipe at all, though you could bump the egg whites to 3/4 cup if strict adherence is preferred."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 15 minutes. The ingredients are standard staples available in any mainstream supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding an open-faced whole wheat English muffin topped with a generous, fluffy portion of spinach-infused scrambled eggs. The eggs are studded with wilted, bright green baby spinach, topped with slices of ruby-red fresh tomato and patches of melted, slightly golden-brown mozzarella cheese. The 3/4 overhead angle shows the full composition, with the egg mixture piled neatly onto the toasted, golden-brown muffin halves. Beside each muffin on the matte ceramic plate is a portion of halved, vibrant red fresh strawberries. The second plate is slightly blurred in the background, creating a natural depth of field. Soft, natural side light from a window to the left highlights the glistening, molten texture of the cheese and the tender, airy structure of the scrambled eggs. The plates rest on a rustic, aged oak wood surface with visible wood grain and faint scratch marks. A rumpled linen napkin lies casually beneath one plate, and a few scattered strawberry seeds and a tiny stray leaf of spinach sit on the wooden table. There is a small, realistic sauce drip on the rim of the foreground plate. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, slightly uneven browning on the muffins. Include subtle traces of the cooking process: a few crumbs on the surface. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

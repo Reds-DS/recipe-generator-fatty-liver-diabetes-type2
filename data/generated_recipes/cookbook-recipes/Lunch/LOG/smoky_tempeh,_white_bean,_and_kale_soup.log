@@ -1,0 +1,63 @@
+=== RECIPE LOG: Smoky Tempeh, White Bean, and Kale Soup ===
+ID            : 154ee997-9383-4aeb-a268-27c4fc37ee4b
+Generation ID : 5d643b5e-9ea0-48d7-8262-4d388bbd68b6
+Generated     : 2026-08-09 19:48:18
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Tempeh
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky Tempeh, White Bean, and Kale Soup
+Technique       : Simmering
+Cuisine style   : Spanish-Inspired
+Flavour profile : Smoky, hearty, and savory
+Sketch          : Tempeh (crumbled), Extra-virgin olive oil, Smoked paprika, Garlic powder, No-salt-added canned diced tomatoes, No-salt-added canned cannellini beans, Low-sodium vegetable broth, Fresh chopped kale (or baby spinach)
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] fiber_g: partial data — 15% of recipe weight has no USDA value for it.
+  [WARN] sugar_g: partial data — 15% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 43% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 42% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 42% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 42% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two rustic, wide-rimmed matte ceramic bowls of smoky tempeh, white bean, and kale soup, centered in the frame with generous...

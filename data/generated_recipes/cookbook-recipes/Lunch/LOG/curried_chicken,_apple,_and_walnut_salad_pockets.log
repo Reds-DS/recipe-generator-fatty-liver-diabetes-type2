@@ -1,0 +1,58 @@
+=== RECIPE LOG: Curried Chicken, Apple, and Walnut Salad Pockets ===
+ID            : 572503a8-6bf5-4bbf-8934-4143437f6099
+Generation ID : 18a56f94-c7b4-490c-8835-62243a2754f1
+Generated     : 2026-08-09 20:25:26
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 3
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Skinless rotisserie chicken breast
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Curried Chicken, Apple, and Walnut Salad Pockets
+Technique       : No-cook / Assembly
+Cuisine style   : Modern American
+Flavour profile : Creamy, savory-sweet, tangy, and mildly spiced
+Sketch          : Skinless rotisserie chicken breast, Plain nonfat Greek yogurt, Mild curry powder, Crisp apple (such as Fuji or Honeycrisp), Celery, Chopped walnuts, Whole-wheat pita pockets, Baby spinach, Lemon juice
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+  [WARN] saturated_fat_g: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding two halved whole-wheat pita pockets positioned in a 3/4 overhead view to showcase the generous, textured fil...

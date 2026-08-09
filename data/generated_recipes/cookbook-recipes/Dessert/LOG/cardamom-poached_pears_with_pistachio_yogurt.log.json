@@ -1,0 +1,303 @@
+{
+  "main_ingredient": "Fresh pears",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Cardamom-Poached Pears with Pistachio Yogurt",
+  "recipe_id": "19d67e2e-4698-47c2-a3a6-22bec6b26ea9",
+  "generation_id": "0b854abf-74ba-458c-b6f9-693db784aee0",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T13:18:28.556991",
+  "draft_attempts": 2,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Cardamom-Poached Pears with Pistachio Yogurt",
+        "main_ingredient": "Fresh pears",
+        "technique": "Stovetop poaching",
+        "flavour_profile": "Warm, spiced, and floral with a creamy finish",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Fresh firm pears (such as Bosc or Anjou)",
+          "Water",
+          "Cardamom pods (or ground cardamom)",
+          "Cinnamon sticks",
+          "Orange peel strips",
+          "Vanilla extract",
+          "Nonfat plain Greek yogurt",
+          "Pure maple syrup",
+          "Shelled pistachios"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "Total raw weight suspect: 841g for 2 people (420g/person). The recipe may have been written for 4 people."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Total raw weight suspect: 841g for 2 people (420g/person). The recipe may have been written for 4 people.\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 157.1,
+          "protein_g": 7.3,
+          "carbs_g": 28.3,
+          "fat_g": 2.3,
+          "fiber_g": 5.3,
+          "sodium_mg": 25.7,
+          "sugar_g": 18.2,
+          "saturated_fat_g": 0.3,
+          "added_sugar_g": 3.0,
+          "cholesterol_mg": 2.9,
+          "potassium_mg": 300.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 1.1,
+          "pufa_g": 0.7,
+          "calcium_mg": 101.6,
+          "iron_mg": 0.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.556,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 28.3 g/serving > ceiling 28 g (\"dessert\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 28.3 g/serving > ceiling 28 g (\"dessert\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An exceptionally well-crafted recipe that perfectly represents the cookbook's philosophy. It delivers an elegant, flavorful dessert within the time constraints and nutritional guidelines, relying on smart culinary techniques rather than excessive added sugar or saturated fat.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor profile. The combination of pear, cardamom, orange, and pistachio is a classic Mediterranean pairing, and the yogurt provides a much-needed tangy, creamy counterbalance to the sweet fruit."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless consistency. Every ingredient listed is used correctly in the steps, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly written instructions. The cook time is presented as a range (10 to 12 minutes) with a prompt to check at the minimum time, a clear visual doneness cue (tender when pierced with a fork) is provided, and a resting step is included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Strong alignment. The use of Greek yogurt, pistachios, cardamom, and orange zest firmly anchors the dish in Eastern Mediterranean culinary traditions."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The shallow 'steam-bath' method (1/2 cup water in a covered saucepan over medium-low heat) is a great, gentle way to poach firm fruit quickly without waterlogging it."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients align perfectly with the specified quantities. A half-cup of nonfat Greek yogurt, a teaspoon of maple syrup, and one small pear per person precisely generate the reported nutrition panel."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish. The phrase 'blood-sugar-stabilizing' is acceptable here in context, as the protein and fiber genuinely help flatten the glucose response, but 'blood-sugar-friendly' could be an even safer phrasing."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It feels elegant and deliberate, completely dodging the 'diet food' trap while remaining incredibly fast and simple to prepare."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Answers both conditions perfectly. The saturated fat is virtually zero (great for the liver), while the robust protein from the yogurt and fiber from the pear provide a great glycemic anchor for the blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent added-sugar honesty. With just 1 teaspoon of maple syrup per serving (amounting to 3g added sugar), the sweetness appropriately leans on the whole fruit and aromatic spices. The carbohydrate is entirely whole-food sourced."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Desserts chapter beautifully. Note on the automated warning: the 28.3g of total carbohydrate slightly overshoots the 28g ceiling, but since the overage is functionally a rounding error derived entirely from whole fruit (pear), it is perfectly acceptable and requires no adjustment."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Completely practical. Prep involves basic chopping, measuring, and whisking, and the 10-12 minute simmer easily keeps the entire process well under the 30-minute guarantee. Ingredients are common and accessible."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two shallow, matte ceramic bowls set on an aged, dark oak tabletop, centered to allow for circular cropping. Camera angle is a 3/4 overhead view, capturing the full depth of the bowls. Depth of field is shallow, with the front bowl in sharp focus and the second bowl slightly blurred behind. Lighting is soft, natural side light from a window on the left, creating gentle, realistic shadows and highlighting the texture of the fruit. The setting includes a rumpled linen napkin tucked beside the bowls and a few scattered, roughly chopped bright green pistachios on the wood surface. Inside each bowl, a smooth, thick layer of creamy white Greek yogurt serves as the base. Two tender, pearly-off-white poached pear halves are nestled into the yogurt, showing delicate, soft edges from the poaching process. A piece of curled orange peel and a small fragment of cinnamon stick are placed artfully near the pears for color contrast. The dish is finished with a generous sprinkle of vivid green chopped pistachios over the top. The overall color palette is warm, featuring earthy browns, creamy whites, and bright pops of herb green. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: an asymmetric placement of the pears, a small smudge of yogurt on the bowl rim, and a stray grain of spice. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

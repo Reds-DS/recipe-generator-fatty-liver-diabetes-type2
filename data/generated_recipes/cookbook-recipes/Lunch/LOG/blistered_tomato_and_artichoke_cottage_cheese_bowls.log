@@ -1,0 +1,63 @@
+=== RECIPE LOG: Blistered Tomato and Artichoke Cottage Cheese Bowls ===
+ID            : dd136fbd-629a-4f11-8fb3-4e84aaf9a754
+Generation ID : 6f671152-bd64-4b47-8dc7-e481b9d6ef75
+Generated     : 2026-08-09 19:54:47
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 7
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Low-fat cottage cheese
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Blistered Tomato and Artichoke Cottage Cheese Bowls
+Technique       : Quick-skillet blistering / No-cook assembly
+Cuisine style   : Mediterranean
+Flavour profile : Savory, tangy, and fresh with warm bursts of sweet tomato
+Sketch          : Low-fat cottage cheese, Cherry tomatoes, Canned quartered artichoke hearts (in water), Whole-wheat pita bread, Pistachios (shelled), Fresh basil or parsley, Extra-virgin olive oil, Balsamic vinegar, Garlic powder
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Canned no-salt-added artichoke hearts
+  [WARN] No USDA candidate for 'Canned no-salt-added artichoke hearts' — values estimated by the LLM.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.
+  [WARN] cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 22% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 22% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 22% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two shallow, matte ceramic bowls placed on a rustic, aged oak wood tabletop, with one bowl in sharp focus in th...

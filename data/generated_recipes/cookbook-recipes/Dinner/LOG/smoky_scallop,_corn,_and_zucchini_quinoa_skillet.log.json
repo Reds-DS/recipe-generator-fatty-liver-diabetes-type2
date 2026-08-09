@@ -1,0 +1,303 @@
+{
+  "main_ingredient": "sea scallops",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Smoky Scallop, Corn, and Zucchini Quinoa Skillet",
+  "recipe_id": "f45c7e92-ccbc-4b05-9cf4-35ff26e195f9",
+  "generation_id": "fe3c9e35-9938-4cf6-bfc9-5116920c7087",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:46:12.770409",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Scallop, Corn, and Zucchini Quinoa Skillet",
+        "main_ingredient": "sea scallops",
+        "technique": "One-skillet sauté",
+        "flavour_profile": "Smoky, garlicky, and bright with fresh lime",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "sea scallops",
+          "extra-virgin olive oil",
+          "zucchini",
+          "frozen sweet corn",
+          "red bell pepper",
+          "ready-to-eat microwaveable quinoa pouch",
+          "smoked paprika",
+          "garlic powder",
+          "fresh lime"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Sea scallops, untreated / no salt added' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 30% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 30% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Sea scallops, untreated / no salt added"
+        ],
+        "nutrition": {
+          "calories_kcal": 474.2,
+          "protein_g": 38.6,
+          "carbs_g": 57.8,
+          "fat_g": 12.0,
+          "fiber_g": 8.3,
+          "sodium_mg": 299.5,
+          "sugar_g": 9.0,
+          "saturated_fat_g": 1.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 867.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.0,
+          "pufa_g": 2.6,
+          "calcium_mg": 53.7,
+          "iron_mg": 3.3,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Sea scallops, untreated / no salt added"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 57.8 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 57.8 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] Step 1 calls for 'a pinch of black pepper', but black pepper is missing from the ingredient list. Add 'Black pepper, to taste' or a specific measurement to the ingredients."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, flavorful, and fast weeknight skillet that perfectly utilizes high-quality convenience items like a quinoa pouch to meet the 30-minute promise. The nutritional profile is strong, and the slight carbohydrate overage comes entirely from wholesome sources. Just one minor inconsistency with unlisted black pepper needs a quick edit.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is highly coherent and appealing. Smoked paprika, garlic, and sweet corn play beautifully with the natural sweetness of the scallops, balanced by the bright acidity of the lime juice."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 1 calls for 'a pinch of black pepper', but black pepper is missing from the ingredient list. Add 'Black pepper, to taste' or a specific measurement to the ingredients."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless execution of the instructional guidelines. Cook times are provided as ranges, checks are specified at the minimum times, and clear visual cues (e.g., 'deeply golden brown', 'mostly opaque in the center') are included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques align perfectly with a Modern American / Southwestern-leaning profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Searing the scallops first and then using the same skillet for the vegetables to pick up the residual flavors is an excellent, highly suitable method for this dish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are completely plausible given the 12 oz of scallops, the quinoa pouch, and the starchy corn."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro is warm, practical, and appropriately positioned without any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a vibrant, appetizing, and thoughtfully constructed recipe that home cooks will likely want to make."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe perfectly serves both conditions: it features lean protein, uses extra-virgin olive oil as its primary fat, and relies on high-quality complex carbohydrates and vegetables rather than refined bases."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugars, and the carbohydrate component is robust and high-quality (quinoa and sweet corn). While the automated check flagged a minor overage past the 55g ceiling (57.8g), this is completely acceptable because the carbohydrates are entirely from fiber-rich, intact whole foods."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter intent perfectly, offering a fast weeknight option using untreated scallops and hitting the high-protein and high-fiber targets."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The total time is easily under 30 minutes. The use of a ready-to-eat cooked quinoa pouch is exactly the kind of first-class shortcut encouraged for this book."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features a rustic, well-seasoned cast iron skillet placed in the center of the frame, occupying most of the composition with generous negative space around the edges for a cookbook crop. Camera angle is a 3/4 overhead at 40 degrees, ensuring every component in the skillet is clearly visible and identifiable. The depth of field is shallow, keeping the texture of the food in sharp focus while the background is softly blurred. Soft, natural side light streams from a window on the left, casting gentle, natural shadows and creating a slight sheen on the surface of the scallops and the olive oil-glazed vegetables. The skillet rests on an aged, weathered oak wood tabletop with visible grain and natural use marks. Included props: a wooden spoon resting casually against the side of the skillet, and a few scattered cilantro leaves and a discarded, squeezed lime half placed naturally on the wood surface near the skillet. The dish contains a vibrant base of quinoa mixed with charred diced zucchini, red bell pepper, and bright yellow sweet corn, all seasoned with a dusting of deep red smoked paprika. Three perfectly seared, golden-brown sea scallops with visible caramelization and grill marks are placed clearly on top of the quinoa mixture, not submerged or stacked. The dish is finished with a light drizzle of lime juice and a generous scatter of freshly chopped green cilantro. The presentation is authentic, showing enough food for two. Photorealistic, not AI-generated looking. The scene captures a lived-in, warm, and authentic atmosphere after cooking. Includes slight natural imperfections: an asymmetric garnish, a tiny oil droplet on the skillet rim, and uneven browning on the zucchini. No plastic sheen, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no hands, no faces, indistinguishable from professional editorial food photography.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

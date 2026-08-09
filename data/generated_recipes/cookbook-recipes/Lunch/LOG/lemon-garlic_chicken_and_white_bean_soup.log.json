@@ -1,0 +1,295 @@
+{
+  "main_ingredient": "Lean ground chicken",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Lemon-Garlic Chicken and White Bean Soup",
+  "recipe_id": "bb354b62-e61d-4e0a-9d16-93466bdcddd9",
+  "generation_id": "37a9ad2f-a814-4d25-9eb2-057ce8375aeb",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:22:28.506891",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemon-Garlic Chicken and White Bean Soup",
+        "main_ingredient": "Lean ground chicken",
+        "technique": "One-pot stovetop simmering",
+        "flavour_profile": "Bright, garlicky, and herbaceous",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Lean ground chicken",
+          "Frozen mirepoix blend (diced onion, celery, and carrots)",
+          "Fresh garlic cloves",
+          "Dried Italian seasoning",
+          "Low-sodium chicken broth",
+          "No-salt-added canned Great Northern beans (or navy beans)",
+          "Fresh baby spinach",
+          "Fresh lemon"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'dried Italian seasoning' — values estimated by the LLM."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "dried Italian seasoning"
+        ],
+        "nutrition": {
+          "calories_kcal": 446.9,
+          "protein_g": 37.0,
+          "carbs_g": 40.9,
+          "fat_g": 16.5,
+          "fiber_g": 9.5,
+          "sodium_mg": 417.0,
+          "sugar_g": 2.5,
+          "saturated_fat_g": 4.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 96.8,
+          "potassium_mg": 1556.3,
+          "trans_fat_g": 0.1,
+          "mufa_g": 8.4,
+          "pufa_g": 2.9,
+          "calcium_mg": 136.6,
+          "iron_mg": 4.9,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "dried Italian seasoning"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "446.9 kcal/serving > high bound 440 kcal (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "446.9 kcal/serving > high bound 440 kcal (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly practical recipe that completely nails the brief. It perfectly balances Mediterranean flavors with the precise nutritional guardrails required for the target audience, coming together easily in under 30 minutes.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically balanced. The savory chicken and earthy white beans pair beautifully with the bright lemon juice, garlic, and aromatic Italian herbs."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are thorough. Time ranges are provided, doneness cues (e.g., 'no longer pink', 'completely wilted') are present, and the check instruction at the minimum simmer time is included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Mediterranean flavor profile, utilizing olive oil, garlic, lemon, spinach, and white beans."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A one-pot stovetop method (sautéing the aromatics and protein, then simmering) is the ideal technique for this style of quick soup."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values align well with the ingredients. The 37g of protein and nearly 10g of fiber are plausible for the amounts of ground chicken and white beans used."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish, and the intro provides warm, supportive framing that highlights the functional benefits (steady energy, staying full) without making inappropriate health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, extremely practical, and comforting soup that a home cook would realistically enjoy making on a weeknight."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fully delivers on the dual-purpose brief: high in fiber, rich in lean protein, well-controlled in saturated fat (relying on olive oil and lean chicken), with plenty of vegetable volume."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the white beans provide an excellent, high-quality complex carbohydrate source that lands perfectly in the 25-45g target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'light_main' soup criteria perfectly. The slight 7 kcal overage (447 vs 440) flagged by the automated check is trivial and does not hurt the recipe's function in this chapter."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very fast recipe that genuinely takes under 30 minutes from start to finish. Using a frozen mirepoix blend is an excellent, practical shortcut for the intended audience."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, matte ceramic bowls of Lemon-Garlic Chicken and White Bean Soup centered in the frame with generous negative space for a circular crop. Shot from a 3/4 overhead angle at 40 degrees, ensuring every component is clearly identifiable within the broth. Shallow depth of field with one bowl in sharp focus in the foreground and the second bowl softly blurred behind it. Soft natural side lighting coming from a window to the left, casting gentle shadows and creating a subtle, appetizing sheen on the broth's surface. Set on an aged, rustic oak table with visible wood grain and wear. Props include a wooden spoon resting casually against the side of the front bowl and a crumpled linen napkin tucked partially underneath. A single, fresh-looking garlic clove and a few scattered dried Italian herbs sit naturally on the table surface near the bowl. The soup features tender, small crumbles of browned ground chicken, soft mirepoix vegetables, creamy white Great Northern beans, and vibrant, wilted ribbons of baby spinach in a translucent, golden-hued chicken broth. The colors are earthy and warm, with the deep green of the spinach contrasting against the pale white beans and light brown chicken. Small oil droplets float on the surface, catching the natural window light. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a tiny splash of broth on the rim of one bowl, a stray spinach leaf on the table, and uneven ingredient distribution. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography for a cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

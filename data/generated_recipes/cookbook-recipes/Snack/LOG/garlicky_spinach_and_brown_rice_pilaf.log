@@ -1,0 +1,56 @@
+=== RECIPE LOG: Garlicky Spinach and Brown Rice Pilaf ===
+ID            : 79646836-357e-4fed-8d58-11aed7d5eff8
+Generation ID : f9037f39-e5c5-450a-ac9f-51906af8a56f
+Generated     : 2026-08-09 13:10:18
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Fresh baby spinach
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Garlicky Spinach and Brown Rice Pilaf
+Technique       : Skillet sauté
+Cuisine style   : Mediterranean-American
+Flavour profile : Garlicky, lemony, nutty
+Sketch          : Fresh baby spinach, Microwaveable brown rice pouch, Extra-virgin olive oil, Garlic cloves, Lemon (for juice and zest), Chopped walnuts, Black pepper
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 25.1 g/serving > ceiling 24 g ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte white ceramic plates placed on an aged oak wood table, capturing a 3/4 overhead perspective at a 40-degree angle to...

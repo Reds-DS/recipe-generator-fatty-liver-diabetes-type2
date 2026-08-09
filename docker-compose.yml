@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    env_file: .env
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/app/data
+      - ./usda_source_data:/app/usda_source_data:ro

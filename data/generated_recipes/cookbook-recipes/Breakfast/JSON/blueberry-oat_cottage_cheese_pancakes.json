@@ -1,0 +1,155 @@
+{
+  "id": "b8d8a10a-535f-4137-997c-b9bff76c7eea",
+  "title": "Blueberry-Oat Cottage Cheese Pancakes",
+  "intro": "For a satisfying breakfast that feels like a weekend treat, these hearty pancakes deliver lasting morning fuel. Whole oats and cottage cheese blend into a protein-rich batter topped with an instant blueberry jam.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 10,
+  "cook_time_max_min": 15,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Frozen blueberries",
+      "canonical_name": "Blueberries, frozen, unsweetened",
+      "quantity_g": 210.0,
+      "quantity_display": "1 1/2 cups (210 g)",
+      "preparation": null,
+      "fdc_id": 173950,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chia seeds",
+      "canonical_name": "Seeds, chia seeds, dried",
+      "quantity_g": 12.0,
+      "quantity_display": "1 tbsp (12 g)",
+      "preparation": null,
+      "fdc_id": 2707590,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added low-fat cottage cheese",
+      "canonical_name": "Cheese, cottage, lowfat, 1% milkfat, no sodium added",
+      "quantity_g": 226.0,
+      "quantity_display": "1 cup (226 g)",
+      "preparation": null,
+      "fdc_id": 168114,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Rolled oats",
+      "canonical_name": "Oats, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "1 cup (80 g)",
+      "preparation": null,
+      "fdc_id": 2708489,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Large eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 150.0,
+      "quantity_display": "3 large (150 g)",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Hemp hearts",
+      "canonical_name": "Seeds, hemp seed, hulled",
+      "quantity_g": 30.0,
+      "quantity_display": "3 tbsp (30 g)",
+      "preparation": null,
+      "fdc_id": 170148,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baking powder",
+      "canonical_name": "Leavening agents, baking powder, double-acting, sodium aluminum sulfate",
+      "quantity_g": 4.0,
+      "quantity_display": "1 tsp (4 g)",
+      "preparation": null,
+      "fdc_id": 172803,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Combine the frozen blueberries and chia seeds in a microwave-safe bowl, then microwave on high for 2 to 3 minutes until bubbling and bursting.",
+    "Blend the cottage cheese, oats, eggs, hemp hearts, baking powder, cinnamon, and vanilla extract in a blender on high until the batter is smooth.",
+    "Heat a large nonstick skillet over medium heat and brush with the olive oil until shimmering.",
+    "Pour the batter into the pan in small circles to form the pancakes.",
+    "Cook the pancakes in batches for 4 to 6 minutes per batch, flipping halfway through when the edges appear set and the bottoms are golden brown.",
+    "Transfer the finished pancakes to a plate and repeat until all the batter is used.",
+    "Divide the warm pancakes between plates and spoon the thickened blueberry-chia jam over the top."
+  ],
+  "variation": "Swap the frozen blueberries for frozen dark sweet cherries.",
+  "conservation": "Keeps 2 days refrigerated; reheat pancakes in a dry skillet.",
+  "nutrition_per_serving": {
+    "calories_kcal": 538.7,
+    "protein_g": 34.9,
+    "carbs_g": 49.0,
+    "fat_g": 23.2,
+    "fiber_g": 10.1,
+    "sodium_mg": 338.7,
+    "sugar_g": 13.3,
+    "saturated_fat_g": 4.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 283.5,
+    "potassium_mg": 615.0,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.7,
+    "pufa_g": 10.1,
+    "calcium_mg": 316.3,
+    "iron_mg": 5.3,
+    "vitamin_d_mcg": 1.5,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "[instruction_completeness] Almost perfect (includes ranges, checks, and great visual cues), but the skillet preheat step is missing a duration. Fix: Update step 3 to say 'Heat a large nonstick skillet over medium heat for 1 to 2 minutes and brush...'"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\blueberry-oat_cottage_cheese_pancakes.png",
+  "created_at": "2026-08-09T11:57:07.636027",
+  "generation_id": "92f48076-f53e-419c-8907-9d8a59ee4f88"
+}

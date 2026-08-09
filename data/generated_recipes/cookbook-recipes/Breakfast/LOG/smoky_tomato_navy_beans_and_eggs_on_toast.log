@@ -1,0 +1,88 @@
+=== RECIPE LOG: Smoky Tomato Navy Beans and Eggs on Toast ===
+ID            : fa4f160b-4e3c-4be5-8a8b-304574c4bfa8
+Generation ID : 02f301e9-e263-4330-b8bb-5f3c71ca6224
+Generated     : 2026-08-09 19:07:30
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned navy beans
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky Tomato Navy Beans and Eggs on Toast
+Technique       : Skillet simmering and pan-searing
+Cuisine style   : Mediterranean-Inspired Comfort
+Flavour profile : Smoky, savory, and lightly tangy
+Sketch          : No-salt-added canned navy beans, Large eggs, Whole-wheat bread, Fresh baby spinach, No-salt-added tomato paste, Apple cider vinegar, Smoked paprika, Garlic powder, Extra-virgin olive oil
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [chapter_intent_fit] While the dish perfectly matches the chapter's character, it slightly overshoots the main-breakfast ceilings for...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 qualifier: 'no-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] cholesterol_mg: partial data — 32% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 58.9 g/serving > ceiling 55 g ("main")
+    [WARN] sodium 576.2 mg/serving > ceiling 550 mg ("main")
+    [WARN] 542.2 kcal/serving > high bound 540 kcal ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 qualifier: 'No-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] cholesterol_mg: partial data — 37% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding a slice of golden-brown toasted whole-wheat bread topped with a rustic, hearty portion of smoky navy beans a...

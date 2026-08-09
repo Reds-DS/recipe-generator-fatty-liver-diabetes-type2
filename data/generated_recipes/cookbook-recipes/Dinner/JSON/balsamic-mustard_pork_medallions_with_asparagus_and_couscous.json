@@ -1,0 +1,172 @@
+{
+  "id": "1cb177b5-f0f7-43b7-8bd0-ce1ff08256e8",
+  "title": "Balsamic-Mustard Pork Medallions with Asparagus and Couscous",
+  "intro": "Building a pan sauce from tangy mustard and balsamic vinegar gives this skillet dinner deep flavor without excess saturated fat. Slicing a lean pork tenderloin into quick-cooking medallions keeps the meat tender and speeds up weeknight prep.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 12,
+  "cook_time_max_min": 16,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Whole wheat couscous, dry",
+      "canonical_name": "Couscous, dry",
+      "quantity_g": 130.0,
+      "quantity_display": "3/4 cup (130 g)",
+      "preparation": null,
+      "fdc_id": 169699,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Water, boiling",
+      "canonical_name": "Water, tap, drinking",
+      "quantity_g": 180.0,
+      "quantity_display": "3/4 cup (180 ml)",
+      "preparation": null,
+      "fdc_id": 173647,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pork tenderloin",
+      "canonical_name": "Pork, fresh, loin, tenderloin, separable lean only, raw",
+      "quantity_g": 340.0,
+      "quantity_display": "12 oz (340 g)",
+      "preparation": "cut into 1-inch thick medallions",
+      "fdc_id": 168249,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 1.5,
+      "quantity_display": "1/2 tsp (1.5 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried thyme",
+      "canonical_name": "Spices, thyme, dried",
+      "quantity_g": 0.5,
+      "quantity_display": "1/2 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170938,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Asparagus",
+      "canonical_name": "Asparagus, raw",
+      "quantity_g": 280.0,
+      "quantity_display": "10 oz (280 g)",
+      "preparation": "tough ends snapped off, cut into 2-inch pieces",
+      "fdc_id": 168389,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Balsamic vinegar",
+      "canonical_name": "Vinegar, balsamic",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, prepared, yellow",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 326698,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Combine the dry couscous and boiling water in a heatproof bowl. Cover tightly and set aside to steam.",
+    "Season the pork medallions evenly with the garlic powder, dried thyme, and black pepper.",
+    "Heat the olive oil in a large skillet over medium-high heat. Add the seasoned pork and cook for 6 to 8 minutes, flipping halfway, before transferring to a plate.",
+    "Place the asparagus pieces into the same skillet over medium heat. Cook for 4 to 5 minutes, tossing occasionally, until tender-crisp, then transfer to the plate with the pork.",
+    "Lower the heat to medium-low and whisk the chicken broth, balsamic vinegar, and Dijon mustard into the skillet, scraping up any browned bits from the bottom.",
+    "Simmer the liquid for 2 to 3 minutes until slightly thickened into a pan sauce. Return the pork and asparagus to the skillet, turning them to coat evenly.",
+    "Fluff the steeped couscous with a fork and divide it between plates. Top with the glazed pork, asparagus, and any remaining pan sauce."
+  ],
+  "variation": "Swap the asparagus for fresh green beans.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 545.1,
+    "protein_g": 48.7,
+    "carbs_g": 57.9,
+    "fat_g": 12.4,
+    "fiber_g": 6.7,
+    "sodium_mg": 205.0,
+    "sugar_g": 2.9,
+    "saturated_fat_g": 2.5,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 110.5,
+    "potassium_mg": 1157.2,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.2,
+    "pufa_g": 1.8,
+    "calcium_mg": 75.1,
+    "iron_mg": 6.1,
+    "vitamin_d_mcg": 0.3,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+    "sugar_g: partial data — 12% of recipe weight has no USDA value for it.",
+    "fiber 6.7 g/serving < floor 7 g (\"main\")",
+    "total carbohydrate 57.9 g/serving > ceiling 55 g (\"main\")",
+    "545.1 kcal/serving > high bound 540 kcal (\"main\")",
+    "Carb base \"Whole wheat couscous, dry\" (130 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. \"brown rice\" / \"100% whole-wheat pasta\" / \"whole-grain tortilla\", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor.",
+    "[chapter_intent_fit] The recipe slightly misses the nutrient tier bounds: calories (545 > 540), carbs (57.9g > 55g), and fiber (6.7g < 7g). To perfect this, reduce the couscous from 3/4 cup dry to 1/2 cup (or 2/3 cup), and increase the asparagus to 12 oz. This will drop the carbs and calories into the target window while bumping the fiber up to the floor."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\balsamic-mustard_pork_medallions_with_asparagus_and_couscous.png",
+  "created_at": "2026-08-09T12:34:20.804227",
+  "generation_id": "af78597b-e86b-471a-9e9f-982159fbd53f"
+}

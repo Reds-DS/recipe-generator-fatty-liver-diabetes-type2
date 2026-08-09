@@ -1,0 +1,306 @@
+{
+  "main_ingredient": "Lean ground chicken",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Ground Chicken and Kidney Bean Minestrone",
+  "recipe_id": "792d3b48-af78-45be-87a9-83d063df11da",
+  "generation_id": "d1519639-8218-46ba-a270-5c1c4034866a",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:26:12.065648",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Hearty Ground Chicken and Kidney Bean Minestrone",
+        "main_ingredient": "Lean ground chicken",
+        "technique": "One-pot simmering",
+        "flavour_profile": "Savory tomato and Italian herbs",
+        "cuisine_style": "Italian-American",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Yellow onion",
+          "Lean ground chicken",
+          "Italian seasoning blend",
+          "Low-sodium chicken broth",
+          "No-salt-added canned diced tomatoes",
+          "No-salt-added canned dark red kidney beans",
+          "Whole wheat short pasta (such as macaroni or rotini)",
+          "Frozen chopped spinach"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Italian seasoning blend' — values estimated by the LLM.",
+        "No USDA candidate for 'No-salt-added canned dark red kidney beans' — values estimated by the LLM.",
+        "No USDA candidate for 'Whole wheat short pasta (like rotini)' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 16% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Italian seasoning blend",
+          "No-salt-added canned dark red kidney beans",
+          "Whole wheat short pasta (like rotini)"
+        ],
+        "nutrition": {
+          "calories_kcal": 394.1,
+          "protein_g": 27.5,
+          "carbs_g": 37.3,
+          "fat_g": 16.8,
+          "fiber_g": 9.1,
+          "sodium_mg": 154.9,
+          "sugar_g": 7.1,
+          "saturated_fat_g": 3.6,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 73.1,
+          "potassium_mg": 1004.2,
+          "trans_fat_g": 0.1,
+          "mufa_g": 9.1,
+          "pufa_g": 2.4,
+          "calcium_mg": 105.2,
+          "iron_mg": 2.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Italian seasoning blend",
+            "No-salt-added canned dark red kidney beans",
+            "Whole wheat short pasta (like rotini)"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.7,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "llm_estimate",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[taste_coherence] The Italian flavor profile is classic and well-conceived, but because the recipe relies strictly on no-salt-added canned goods, low-sodium broth, and zero added salt, it may taste noticeably flat. The computed sodium is only 155 mg per serving. Suggest adding 1/4 tsp kosher salt to step 3; this will enhance the flavors while keeping the sodium (~300 mg per serving) safely under the 500 mg ceiling.",
+        "[cooking_method_suitability] In step 2, adding minced garlic at the exact same time as raw chicken and onions over medium-high heat for 5-6 minutes risks scorching the garlic before the chicken finishes cooking. Fix: Add the minced garlic during the final 1 minute of browning."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptionally strong, well-formulated recipe that nails both the book's dietary philosophy and the 30-minute practicality promise. With a minor adjustment to when the garlic is added to prevent scorching and a small pinch of salt to round out the flavors, it is ready for publication.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The Italian flavor profile is classic and well-conceived, but because the recipe relies strictly on no-salt-added canned goods, low-sodium broth, and zero added salt, it may taste noticeably flat. The computed sodium is only 155 mg per serving. Suggest adding 1/4 tsp kosher salt to step 3; this will enhance the flavors while keeping the sodium (~300 mg per serving) safely under the 500 mg ceiling."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are fully accounted for in the instructions without any undeclared additions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent step writing. Time ranges are provided, the midpoint check for pasta tenderness is clearly stated, and visual cues (shimmering, lightly browned, cooked through, wilted) are present for every action."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques fit cleanly into the stated Italian-American soup profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "In step 2, adding minced garlic at the exact same time as raw chicken and onions over medium-high heat for 5-6 minutes risks scorching the garlic before the chicken finishes cooking. Fix: Add the minced garlic during the final 1 minute of browning."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel accurately reflects the chosen ingredients. The macro profile aligns perfectly with the amounts of chicken, olive oil, beans, and whole wheat pasta."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title matches the recipe precisely. The intro strikes the right tone—focusing on stabilizing energy and providing comfort—without making any banned liver-health or weight-loss claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly practical, comforting, one-pot dish that readers will appreciate for a fast lunch or weeknight dinner."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe perfectly captures the book's dual-action nutritional mandate: lean protein, a substantial fiber contribution from both beans and whole grain pasta, and heart-healthy olive oil, all while remaining an authentic, satisfying dish."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugars, and the carbohydrate load (37.3 g) is beautifully anchored in the middle of the target window by high-quality sources (kidney beans and whole wheat pasta)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Soups & Salads' light_main tier perfectly. The dish is a genuine light meal, bringing both a measured protein and a measured quality carbohydrate as expected."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A realistic 20-25 minute recipe from a cold start, including chopping half an onion. All ingredients are pantry staples readily available at mainstream supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow, matte ceramic bowls set on an aged, dark oak wood tabletop, centered in the frame with generous negative space. The camera is at a 3/4 overhead angle (40°), ensuring the full interior of both bowls is visible and well-defined. Soft, natural side light from a window on the left creates a gentle sheen on the broth and soft shadows. The soup is a hearty, rustic combination of lean, golden-browned ground chicken crumbles, vibrant dark red kidney beans, tender whole wheat rotini, soft diced tomatoes, and dark green ribbons of wilted spinach submerged in a clear, golden-hued chicken broth. The ingredients are evenly distributed, not layered, showing texture and individual components. Beside the bowls, a worn wooden spoon rests casually on the table, with a few stray spinach leaves and a faint drop of broth near the edge of the wood. The background is softly blurred, showing a linen napkin. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: a small broth drip on the rim of the bowl, uneven browning on the chicken pieces. NO carrots, NO celery, NO unlisted vegetables, no plastic sheen, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography for a cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

@@ -1,0 +1,63 @@
+=== RECIPE LOG: Smoky Scallop, Corn, and Zucchini Quinoa Skillet ===
+ID            : f45c7e92-ccbc-4b05-9cf4-35ff26e195f9
+Generation ID : fe3c9e35-9938-4cf6-bfc9-5116920c7087
+Generated     : 2026-08-09 17:46:12
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : sea scallops
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky Scallop, Corn, and Zucchini Quinoa Skillet
+Technique       : One-skillet sauté
+Cuisine style   : Modern American
+Flavour profile : Smoky, garlicky, and bright with fresh lime
+Sketch          : sea scallops, extra-virgin olive oil, zucchini, frozen sweet corn, red bell pepper, ready-to-eat microwaveable quinoa pouch, smoked paprika, garlic powder, fresh lime
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Sea scallops, untreated / no salt added
+  [WARN] No USDA candidate for 'Sea scallops, untreated / no salt added' — values estimated by the LLM.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 30% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 30% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 57.8 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features a rustic, well-seasoned cast iron skillet placed in the center of the frame, occupying most of the composition with g...

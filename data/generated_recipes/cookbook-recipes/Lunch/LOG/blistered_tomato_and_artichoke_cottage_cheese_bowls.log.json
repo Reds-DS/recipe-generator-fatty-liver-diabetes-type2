@@ -1,0 +1,298 @@
+{
+  "main_ingredient": "Low-fat cottage cheese",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Blistered Tomato and Artichoke Cottage Cheese Bowls",
+  "recipe_id": "dd136fbd-629a-4f11-8fb3-4e84aaf9a754",
+  "generation_id": "6f671152-bd64-4b47-8dc7-e481b9d6ef75",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:54:47.719349",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Blistered Tomato and Artichoke Cottage Cheese Bowls",
+        "main_ingredient": "Low-fat cottage cheese",
+        "technique": "Quick-skillet blistering / No-cook assembly",
+        "flavour_profile": "Savory, tangy, and fresh with warm bursts of sweet tomato",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Low-fat cottage cheese",
+          "Cherry tomatoes",
+          "Canned quartered artichoke hearts (in water)",
+          "Whole-wheat pita bread",
+          "Pistachios (shelled)",
+          "Fresh basil or parsley",
+          "Extra-virgin olive oil",
+          "Balsamic vinegar",
+          "Garlic powder"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Canned no-salt-added artichoke hearts' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+        "cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 22% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Canned no-salt-added artichoke hearts"
+        ],
+        "nutrition": {
+          "calories_kcal": 470.8,
+          "protein_g": 33.1,
+          "carbs_g": 51.1,
+          "fat_g": 17.2,
+          "fiber_g": 11.0,
+          "sodium_mg": 305.3,
+          "sugar_g": 10.9,
+          "saturated_fat_g": 3.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 7.0,
+          "potassium_mg": 652.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.6,
+          "pufa_g": 3.5,
+          "calcium_mg": 151.9,
+          "iron_mg": 2.9,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Canned no-salt-added artichoke hearts"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A structurally flawless, highly appetizing recipe that perfectly balances flavor, speed, and strict adherence to the book's dietary and editorial guidelines.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor profile. The warm, tangy burst of blistered tomatoes and artichokes with balsamic and basil is a classic Mediterranean combination that pairs perfectly with the cool, creamy neutrality of the cottage cheese."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly integrated into the instructions, and no unexpected ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly written instructions. A clear cooking range (4 to 6 minutes) is provided, along with a prompt to check at the minimum time. Visual cues ('begin to burst' and 'lightly browned') ensure foolproof execution, and deglazing off the heat prevents the balsamic from burning."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Strongly aligned with the Mediterranean diet, utilizing olive oil, fresh tomatoes, artichokes, balsamic, and fresh basil."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A quick skillet sauté over medium-high heat is the ideal method for blistering cherry tomatoes and getting a nice sear on the artichokes without turning them to mush."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition aligns tightly with the ingredients. Specifying 'low-sodium' cottage cheese and 'no-salt-added' artichokes is crucial here and keeps the sodium strictly in bounds."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title matches the dish perfectly, and the intro provides warm, appealing context about texture and satisfaction without resorting to any banned health claims or 'diet' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. The contrast between hot/cold, soft/crunchy, and savory/tangy makes this a lunch that people would genuinely look forward to eating."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely addresses both conditions. It relies on lean protein, high-quality complex carbohydrates, fiber-rich non-starchy vegetables, and heart-healthy unsaturated fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Carbohydrates are well-balanced and derived from high-quality sources (whole-wheat pitas, vegetables, and dairy), providing steady energy to prevent hypoglycemia. There are zero added sugars."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits all the marks for the 'Lunches' chapter. It is incredibly quick to assemble, offers a substantial main-tier nutrient profile, and hits the target macronutrient windows beautifully."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in 15 minutes total. All ingredients, including low-sodium cottage cheese and canned no-salt artichokes, are readily available at mainstream supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two shallow, matte ceramic bowls placed on a rustic, aged oak wood tabletop, with one bowl in sharp focus in the foreground and the second bowl softly blurred behind it. The camera angle is a 3/4 overhead view (40°), ensuring the full contents of the bowls are clearly visible. Shallow depth of field creates a soft natural bokeh background. Soft natural light flows from a window on the left, casting gentle shadows and highlighting the glossy sheen of the balsamic reduction and olive oil. Inside the bowl, a generous layer of creamy, pearly white 2% cottage cheese sits at the base. Topped precisely over the cheese, but not fully covering it, is a warm mixture of blistered cherry tomatoes—some split and juicy, others holding their shape—and browned, tender artichoke heart pieces. A drizzle of dark, syrupy balsamic vinegar clings to the vegetables, with visible specks of black pepper. The dish is finished with a scatter of vibrant green, roughly chopped fresh basil leaves and coarsely crushed, pale-green pistachios. Beside the bowls, a few warm, toasted whole-wheat pita wedges are stacked casually on the wood. A linen napkin is rumpled beneath one bowl, and a small, stray tomato and a few crushed pistachio fragments rest naturally on the surface. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small balsamic drip on the bowl rim, slightly uneven browning on the artichokes. Include subtle traces of the cooking process: a crumb trail on the surface, a stray basil leaf on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

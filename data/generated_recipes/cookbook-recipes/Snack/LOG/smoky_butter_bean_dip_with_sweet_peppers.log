@@ -1,0 +1,63 @@
+=== RECIPE LOG: Smoky Butter Bean Dip with Sweet Peppers ===
+ID            : c35d1292-30d7-46fd-abb7-578cd25adef1
+Generation ID : 013d264f-6bf3-4ba5-8b7e-8e55503dcd4b
+Generated     : 2026-08-09 12:55:51
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Canned butter beans
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Smoky Butter Bean Dip with Sweet Peppers
+Technique       : No-cook / Blending
+Cuisine style   : Mediterranean
+Flavour profile : Smoky, lemony, and creamy
+Sketch          : canned no-salt-added butter beans, fresh lemon, extra-virgin olive oil, smoked paprika, garlic, red bell pepper, carrot sticks, roasted pumpkin seeds (pepitas)
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Canned no-salt-added butter beans
+  [WARN] No USDA candidate for 'Canned no-salt-added butter beans' — values estimated by the LLM.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] sugar_g: partial data — 23% of recipe weight has no USDA value for it.
+  [WARN] saturated_fat_g: partial data — 23% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 67% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 44% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 44% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 44% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed at a 3/4 overhead angle, ensuring all components are clearly visible while maintaining a shallow depth of field where the foregrou...

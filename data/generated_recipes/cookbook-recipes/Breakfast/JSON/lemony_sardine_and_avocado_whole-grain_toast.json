@@ -1,0 +1,153 @@
+{
+  "id": "8a04d10a-c2d7-4a18-a593-78bae4fe2542",
+  "title": "Lemony Sardine and Avocado Whole-Grain Toast",
+  "intro": "Start the day with a substantial hit of lean protein and fiber for steady energy and lasting fullness.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "low-sodium sprouted whole-grain bread",
+      "canonical_name": "Bread, wheat, sprouted",
+      "quantity_g": 136.0,
+      "quantity_display": "4 slices (136 g)",
+      "preparation": "toasted",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": "pitted and peeled",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh lemon zest",
+      "canonical_name": "Lemon peel, raw",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": "finely grated",
+      "fdc_id": 167749,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "baby arugula",
+      "canonical_name": "Arugula, raw",
+      "quantity_g": 40.0,
+      "quantity_display": "1.5 oz (40 g)",
+      "preparation": null,
+      "fdc_id": 2710822,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 150.0,
+      "quantity_display": "5 oz (150 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "no-salt-added canned sardines in water",
+      "canonical_name": "Fish, sardine, Atlantic, canned in water, drained solids with bone",
+      "quantity_g": 212.0,
+      "quantity_display": "2 cans (212 g)",
+      "preparation": "drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "crushed red pepper flakes",
+      "canonical_name": "Spices, pepper, red or cayenne",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170932,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh strawberries",
+      "canonical_name": "Strawberries, raw",
+      "quantity_g": 150.0,
+      "quantity_display": "5 oz (150 g)",
+      "preparation": "hulled and halved",
+      "fdc_id": 327699,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toast the bread until golden and crisp.",
+    "Mash the avocado in a bowl with the lemon juice and lemon zest until combined but slightly chunky.",
+    "Spread the mashed avocado evenly across the toast slices.",
+    "Layer the baby arugula and halved cherry tomatoes over the avocado.",
+    "Break the drained sardines into large pieces with a fork and arrange them on top of the vegetables.",
+    "Sprinkle the crushed red pepper flakes evenly over the toasts.",
+    "Serve immediately with the fresh strawberries on the side."
+  ],
+  "variation": "Trade the baby arugula for fresh baby spinach leaves.",
+  "conservation": "Best enjoyed right away; assembled toast does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 447.6,
+    "protein_g": 32.5,
+    "carbs_g": 44.9,
+    "fat_g": 17.5,
+    "fiber_g": 12.3,
+    "sodium_mg": 138.4,
+    "sugar_g": 6.6,
+    "saturated_fat_g": 3.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 587.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.9,
+    "pufa_g": 1.0,
+    "calcium_mg": 65.8,
+    "iron_mg": 1.0,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "low-sodium sprouted whole-grain bread",
+      "no-salt-added canned sardines in water"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'low-sodium sprouted whole-grain bread' — values estimated by the LLM.",
+    "No USDA candidate for 'no-salt-added canned sardines in water' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 67% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 43% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 43% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\lemony_sardine_and_avocado_whole-grain_toast.png",
+  "created_at": "2026-08-09T12:02:48.675240",
+  "generation_id": "9f3d124e-df60-4fd6-b1a9-2cf9a04ed18f"
+}

@@ -1,0 +1,279 @@
+{
+  "main_ingredient": "Part-skim ricotta cheese",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Broiled Cinnamon Peaches with Vanilla Ricotta Cream",
+  "recipe_id": "21bd6147-6b35-4064-87c8-ccee5db0ae05",
+  "generation_id": "cf114e94-7c76-4dc8-9c16-b34ed80ae09e",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:30:30.311444",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Broiled Cinnamon Peaches with Vanilla Ricotta Cream",
+        "main_ingredient": "Part-skim ricotta cheese",
+        "technique": "Broiling and whipping",
+        "flavour_profile": "Warm, spiced, creamy, naturally sweet",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Fresh or thawed frozen peach halves",
+          "Part-skim ricotta cheese",
+          "Vanilla extract",
+          "Ground cinnamon",
+          "Sliced almonds",
+          "Pure maple syrup"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 166.2,
+          "protein_g": 6.4,
+          "carbs_g": 21.5,
+          "fat_g": 6.7,
+          "fiber_g": 3.3,
+          "sodium_mg": 30.8,
+          "sugar_g": 16.4,
+          "saturated_fat_g": 1.8,
+          "added_sugar_g": 3.4,
+          "cholesterol_mg": 9.3,
+          "potassium_mg": 392.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.3,
+          "pufa_g": 1.2,
+          "calcium_mg": 121.1,
+          "iron_mg": 0.8,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 3,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, beautifully structured dessert recipe that perfectly hits all dietary, nutritional, and culinary guidelines with clear, beginner-friendly instructions.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of peaches, cinnamon, vanilla, ricotta, and almonds is classic, balanced, and highly coherent. The flavors work beautifully together."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used appropriately in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. They include a preheat step with time, cook time ranges (5 to 7 minutes; 2 to 3 minutes), check-in points, and clear visual doneness cues (tender and lightly golden, lightly browned and fragrant)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Mediterranean-American profile perfectly, leaning heavily on fresh fruit, nuts, and a light dairy element for a satisfying dessert."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Broiling is an excellent method for quickly softening and caramelizing the peaches without drying them out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutritional values align perfectly with the ingredients. 1/4 cup part-skim ricotta and 2 tbsp almonds appropriately yield the listed protein and saturated fat numbers."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is fully representative of the dish. The intro is warm, inviting, highlights the main ingredients, and makes no exaggerated health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, simple, and elegant dessert. It looks and sounds delicious and is incredibly accessible for a home cook."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly addresses both liver health (low saturated fat, nutrient-dense) and blood sugar (quality fiber-rich carbohydrates from the peaches, balanced by protein and healthy fats from the ricotta and almonds)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Carbohydrates (21.5g) are squarely in the optimal 14-28g window, supplied by high-quality fresh fruit. Added sugar is well within limits (3.4g), utilizing just a small drizzle of maple syrup while relying on whole fruit, cinnamon, and vanilla for primary sweetness."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Desserts chapter mandate precisely. It is fruit-and-dairy-forward, under the 7g added sugar and 2g saturated fat limits, and meets the 4g protein / 2g fiber floors."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Well under the 30-minute limit (15 minutes total). Ingredients are affordable, ubiquitous supermarket staples, and the equipment required is minimal."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte white ceramic dessert plates positioned on an aged, rustic oak wood table. The camera angle is 3/4 overhead, capturing the full arrangement of the dessert while maintaining a shallow depth of field where the front plate is tack-sharp and the second plate is softly blurred in the background. Lighting is soft natural window light from the left, casting gentle shadows and highlighting the warm, caramelized textures of the dish. Each plate holds two warm, broiled peach halves, placed side-by-side but not touching. Each peach half features a generous, rustic dollop of smooth, pearly-white vanilla-infused ricotta cream resting in the center well. A delicate drizzle of amber maple syrup pools slightly around the ricotta, with some drops catching the light. Toasted, golden-brown sliced almonds are scattered unevenly over the top, adding a textural crunch. The peach skins are a natural, vibrant orange-yellow with lightly charred, caramelized brown edges from the broiler. Props include a small, rumpled linen napkin off to one side and a few stray toasted almond slivers scattered naturally on the oak surface. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small smear of maple syrup on the plate rim, slightly uneven browning on the fruit. Include subtle traces of the cooking process: a few toasted almond crumbs on the wooden table, a light dusting of cinnamon on the surface. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 0,
+  "total_corrections": 0
+}

@@ -1,0 +1,163 @@
+{
+  "id": "6162b3dc-4865-430b-bd00-c370ace4daac",
+  "title": "Mediterranean Salmon and Hummus Breakfast Wraps",
+  "intro": "This fast, no-cook breakfast is ready to eat as quickly as you can mix and assemble the ingredients. Flaky canned salmon and creamy hummus replace traditional breakfast meats to create a morning wrap that prevents mid-morning hunger.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Whole-wheat tortillas, 6-inch fajita size",
+      "canonical_name": "Tortillas, ready-to-bake or -fry, whole wheat",
+      "quantity_g": 90.0,
+      "quantity_display": "2 (90 g)",
+      "preparation": null,
+      "fdc_id": 174081,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Canned pink salmon (no-salt-added), rinsed and drained",
+      "canonical_name": "Fish, salmon, pink, canned, drained solids, without added salt",
+      "quantity_g": 240.0,
+      "quantity_display": "8.5 oz (240 g)",
+      "preparation": "flaked",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Plain hummus",
+      "canonical_name": "Hummus, commercial",
+      "quantity_g": 80.0,
+      "quantity_display": "1/3 cup (80 g)",
+      "preparation": null,
+      "fdc_id": 321358,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh dill",
+      "canonical_name": "Dill weed, fresh",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tbsp (3 g)",
+      "preparation": "chopped",
+      "fdc_id": 172233,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "English cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "1 cup (100 g)",
+      "preparation": "diced",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red onion",
+      "canonical_name": "Onions, red, raw",
+      "quantity_g": 40.0,
+      "quantity_display": "1/4 cup (40 g)",
+      "preparation": "thinly sliced",
+      "fdc_id": 790577,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh mixed berries",
+      "canonical_name": "Blackberries, raw",
+      "quantity_g": 220.0,
+      "quantity_display": "1 1/2 cups (220 g)",
+      "preparation": null,
+      "fdc_id": 173946,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Flake the salmon with a fork in a medium bowl.",
+    "Stir the hummus, lemon juice, dill, and black pepper into the salmon until combined.",
+    "Lay the whole-wheat tortillas flat on a clean workspace and distribute the baby spinach evenly over each.",
+    "Spoon the salmon and hummus mixture evenly over the spinach.",
+    "Top with the diced cucumber and sliced red onion.",
+    "Roll the tortillas tightly to form firm wraps.",
+    "Serve the wraps immediately with the fresh berries on the side."
+  ],
+  "variation": "Swap the baby spinach for fresh arugula or baby kale.",
+  "conservation": "Best enjoyed right away; does not keep well once assembled.",
+  "nutrition_per_serving": {
+    "calories_kcal": 470.8,
+    "protein_g": 38.1,
+    "carbs_g": 43.0,
+    "fat_g": 18.0,
+    "fiber_g": 13.9,
+    "sodium_mg": 557.9,
+    "sugar_g": 8.9,
+    "saturated_fat_g": 4.2,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 717.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.0,
+    "pufa_g": 3.8,
+    "calcium_mg": 205.0,
+    "iron_mg": 4.0,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Canned pink salmon (no-salt-added), rinsed and drained"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "No USDA candidate for 'Canned pink salmon (no-salt-added), rinsed and drained' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 42% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "sodium 557.9 mg/serving > ceiling 550 mg (\"main\")",
+    "[cooking_method_suitability] The volume of filling is a physical impossibility for the specified tortilla size. Each serving calls for half the mix: 1 cup spinach, 1/2 cup cucumber, over 1/8 cup onion, and about 3/4 cup of the salmon/hummus mixture. That is roughly 2.5 cups of filling per person. You cannot tightly roll 2.5 cups of filling into a single 6-inch fajita tortilla without it completely bursting. Fix: Change to 8-inch (soft taco) tortillas (which will keep carbs within the 55g ceiling), or serve as two 6-inch open-faced tostadas/flatbreads per person."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\mediterranean_salmon_and_hummus_breakfast_wraps.png",
+  "created_at": "2026-08-09T16:54:00.628463",
+  "generation_id": "a0eea347-0cac-4958-8249-fed8af3ca906"
+}

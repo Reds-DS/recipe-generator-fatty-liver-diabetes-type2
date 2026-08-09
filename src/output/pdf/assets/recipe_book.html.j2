@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ section_title }} — {{ book_name }}</title>
+</head>
+<body data-book-name="{{ book_name }}">
+
+  {%- macro nf(value, unit, dec=1) -%}
+    {%- if value is none -%}—{%- else -%}
+      {{- (value|round(dec)) if dec > 0 else (value|round|int) }} {{ unit -}}
+    {%- endif -%}
+  {%- endmacro -%}
+
+  {# One item of the small run-in line under the nutrition band. Emits nothing
+     when the nutrient is unknown, so the `:last-child` separator reset in the
+     stylesheet still lands on the last item actually printed. #}
+  {%- macro micro(label, value, unit, dec=1, mark='') -%}
+    {%- if value is not none -%}
+      <span class="m">{{ label }} <b>{{ nf(value, unit, dec) }}{{ mark }}</b></span>
+    {%- endif -%}
+  {%- endmacro -%}
+
+  {# ── Cover ────────────────────────────────────────────── #}
+  <section class="cover">
+    <p class="eyebrow"><span class="count">{{ recipes|length }}</span> Recipes</p>
+    <h1>{{ section_title }}</h1>
+    <p class="subtitle">{{ book_name }}</p>
+  </section>
+
+  {# ── Table of contents ────────────────────────────────── #}
+  <section class="toc">
+    <h2>Contents</h2>
+    <ol>
+      {% for recipe in recipes %}
+        <li><span class="toc-title">{{ recipe.title }}</span></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  {# ── Recipe pages ─────────────────────────────────────── #}
+  {% for recipe in recipes %}
+  <section class="recipe-page">
+    <div class="recipe-header">
+      {% set img = image_urls.get(recipe.id) %}
+      {% if img %}
+        <img class="recipe-image" src="{{ img }}" alt="{{ recipe.title }}">
+      {% endif %}
+
+      <h2>{{ recipe.title }}</h2>
+      <p class="intro">{{ recipe.intro }}</p>
+
+      <div class="info-bar">
+        <div class="info-item">
+          <span class="info-value">{{ recipe.prep_time_min }} min</span>
+          Prep
+        </div>
+        {# `cook_time_*` is active heat only and is 0 for a no-cook recipe —
+           printing "Cook 0 min" beside a chilled dessert reads as an error. #}
+        {% if recipe.cook_time_min or recipe.cook_time_max_min %}
+        <div class="info-item">
+          {% if recipe.cook_time_max_min and recipe.cook_time_max_min != recipe.cook_time_min %}
+            <span class="info-value">{{ recipe.cook_time_min }}–{{ recipe.cook_time_max_min }} min</span>
+          {% else %}
+            <span class="info-value">{{ recipe.cook_time_min }} min</span>
+          {% endif %}
+          Cook
+        </div>
+        {% endif %}
+        {% if recipe.passive_time %}
+        <div class="info-item">
+          <span class="info-value">{{ recipe.passive_time }}</span>
+          Hands-off
+        </div>
+        {% endif %}
+        <div class="info-item">
+          <span class="info-value">{{ recipe.servings }}</span>
+          Servings
+        </div>
+      </div>
+    </div>
+
+    <div class="recipe-body">
+      <div class="col-ingredients">
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+          {% for ing in recipe.ingredients %}
+            <li>
+              <span class="qty">{{ ing.quantity_display }}</span> {{ ing.name }}
+              {%- if ing.preparation %}, {{ ing.preparation }}{% endif %}
+              {%- if ing.is_optional %} <span class="optional-tag">(optional)</span>{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-instructions">
+        <h3>Instructions</h3>
+        <ol class="instructions-list">
+          {% for step in recipe.instructions %}
+            <li>{{ step }}</li>
+          {% endfor %}
+        </ol>
+      </div>
+    </div>
+
+    {% if recipe.nutrition_per_serving %}
+      {% set n = recipe.nutrition_per_serving %}
+      {% set good_fats = ((n.mufa_g or 0) + (n.pufa_g or 0)) if (n.mufa_g is not none or n.pufa_g is not none) else none %}
+      <div class="nutrition-section">
+        <h3>Nutrition (per serving){% if n.confidence != 'high' %} <span class="nutrition-confidence">(confidence: {{ n.confidence }})</span>{% endif %}</h3>
+        <table class="nutrition-table">
+          <thead>
+            <tr>
+              <th>Calories</th>
+              <th>Protein</th>
+              <th>Fiber</th>
+              <th>Carbs</th>
+              <th>Sugars</th>
+              <th>Fat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ nf(n.calories_kcal, 'kcal', 0) }}</td>
+              <td class="hero">{{ nf(n.protein_g, 'g') }}</td>
+              <td class="hero">{{ nf(n.fiber_g, 'g') }}</td>
+              <td>{{ nf(n.carbs_g, 'g') }}</td>
+              <td>{{ nf(n.sugar_g, 'g') }}</td>
+              <td>{{ nf(n.fat_g, 'g') }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="nutrition-micros">
+          {{- micro('Net carbs', n.net_carbs_g, 'g') -}}
+          {{- micro('Added sugars', n.added_sugar_g, 'g', mark='*') -}}
+          {{- micro('Saturated fat', n.saturated_fat_g, 'g') -}}
+          {{- micro('Trans fat', n.trans_fat_g, 'g') -}}
+          {{- micro('Good fats (mono + poly)', good_fats, 'g') -}}
+          {{- micro('Cholesterol', n.cholesterol_mg, 'mg', 0) -}}
+          {{- micro('Sodium', n.sodium_mg, 'mg', 0) -}}
+          {{- micro('Potassium', n.potassium_mg, 'mg', 0, mark='†') -}}
+          {{- micro('Calcium', n.calcium_mg, 'mg', 0) -}}
+          {{- micro('Iron', n.iron_mg, 'mg', 2) -}}
+          {{- micro('Vitamin D', n.vitamin_d_mcg, 'mcg', 2) -}}
+        </p>
+        {# One paragraph, not two — a second block costs its own margin and is
+           enough to tip the footnotes onto a page of their own. #}
+        <p class="nutrition-notes">
+          {%- if n.added_sugar_g is not none %}*Estimated. {% endif -%}
+          {%- if n.potassium_mg is not none %}†Potassium: ask your care team if you have kidney disease. {% endif -%}
+          Net carbs = carbs − fiber (informal term).
+          {%- if n.missing_ingredients %} No nutrition data for: {{ n.missing_ingredients|join(', ') }}.{% endif -%}
+        </p>
+      </div>
+    {% endif %}
+  </section>
+  {% endfor %}
+
+  {# ── Back page ────────────────────────────────────────── #}
+  <section class="back">
+    <p class="thanks">Enjoy your meal.</p>
+  </section>
+
+</body>
+</html>

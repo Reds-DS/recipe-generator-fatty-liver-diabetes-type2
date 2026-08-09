@@ -1,0 +1,92 @@
+=== RECIPE LOG: Lemon-Dill Shrimp and Cucumber Bites ===
+ID            : ef395841-0e4d-4293-a85b-1296d0445a9d
+Generation ID : f383ff4e-a164-4d0d-b0d2-be4e11967079
+Generated     : 2026-08-09 18:25:43
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 6
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen cooked shrimp (tail-off)
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Lemon-Dill Shrimp and Cucumber Bites
+Technique       : No-cook / Assembly
+Cuisine style   : Mediterranean
+Flavour profile : Bright, citrusy, herbaceous
+Sketch          : Frozen cooked shrimp (peeled, tail-off), English cucumber, Whole-wheat woven crackers, Fresh dill, Fresh lemon, Extra-virgin olive oil, Black pepper
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [nutrition_plausibility] The computed nutrition values are inconsistent with the physical ingredients, triggering multiple automated ...
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Frozen cooked small shrimp (peeled, tail-off, untreated)': [175180] Crustaceans, shrimp, cooked has no USDA value for fiber_g (which would be summed as zero) — switched to [171970] Crustaceans, shrimp, mixed species, cooked, breaded and fried.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] total carbohydrate 29.7 g/serving > ceiling 24 g ("snack")
+    [WARN] sodium 424.4 mg/serving > ceiling 250 mg ("snack")
+    [WARN] saturated fat 2.2 g/serving > ceiling 2 g ("snack")
+    [WARN] 295.6 kcal/serving > high bound 230 kcal ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Frozen cooked shrimp (untreated, peeled, tail-off)': [175180] Crustaceans, shrimp, cooked has no USDA value for fiber_g (which would be summed as zero) — switched to [171972] Crustaceans, shrimp, mixed species, canned.
+  [WARN] Stage 4 qualifier: 'Low-sodium whole-wheat woven crackers': recipe asks for a no-salt-added/low-sodium product but the match carries 186 mg sodium/100 g — switched from [172823] Crackers, whole-wheat, low salt to [172750] Cracker, meal.
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+    [WARN] fiber 1 g/serving < floor 3 g ("snack")
+    [WARN] sodium 505.9 mg/serving > ceiling 250 mg ("snack")
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is a 3/4 overhead view at a 40-degree angle, centering two simple matte ceramic plates on an aged, weathered oak kitchen table...

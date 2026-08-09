@@ -1,0 +1,114 @@
+{
+  "id": "ffaf13bd-6aa1-4252-8475-70c0802ac44f",
+  "title": "Almond Butter and Cocoa Stuffed Dates",
+  "intro": "Relying on whole fruit for sweetness provides steady energy without a sugar crash. These Medjool dates deliver a rich chocolate center alongside satisfying fiber and lean protein.",
+  "diet_tags": [],
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Medjool dates",
+      "canonical_name": "Dates, medjool",
+      "quantity_g": 48.0,
+      "quantity_display": "2 large (48 g)",
+      "preparation": "pitted and halved lengthwise",
+      "fdc_id": 168191,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "natural almond butter",
+      "canonical_name": "Nuts, almond butter, plain, without salt added",
+      "quantity_g": 32.0,
+      "quantity_display": "2 tbsp (32 g)",
+      "preparation": null,
+      "fdc_id": 168588,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "unsweetened cocoa powder",
+      "canonical_name": "Cocoa, dry powder, unsweetened",
+      "quantity_g": 4.0,
+      "quantity_display": "2 tsp (4 g)",
+      "preparation": null,
+      "fdc_id": 169593,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "vanilla extract",
+      "canonical_name": "Vanilla extract",
+      "quantity_g": 2.0,
+      "quantity_display": "1/2 tsp (2 ml)",
+      "preparation": null,
+      "fdc_id": 173471,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "chopped walnuts",
+      "canonical_name": "Walnuts, English",
+      "quantity_g": 14.0,
+      "quantity_display": "2 tbsp (14 g)",
+      "preparation": "chopped",
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "flaky sea salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.5,
+      "quantity_display": "1/8 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Arrange the date halves cut-side up on a small plate. Press the centers to widen the cavities.",
+    "Mix the almond butter, cocoa powder, and vanilla extract in a small bowl until the ingredients form a thick paste.",
+    "Divide the almond-cocoa mixture evenly among the date halves. Press the filling into the hollowed centers.",
+    "Sprinkle the chopped walnuts over the filled dates. Press the nuts into the almond butter so they stick.",
+    "Top each piece with flaky sea salt before serving."
+  ],
+  "variation": "Swap the chopped walnuts for raw unsalted pumpkin seeds.",
+  "conservation": "Keeps 4 to 5 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 217.9,
+    "protein_g": 5.2,
+    "carbs_g": 23.2,
+    "fat_g": 13.8,
+    "fiber_g": 4.5,
+    "sodium_mg": 98.9,
+    "sugar_g": 17.0,
+    "saturated_fat_g": 1.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 349.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 5.9,
+    "pufa_g": 5.5,
+    "calcium_mg": 80.5,
+    "iron_mg": 1.3,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "saturated_fat_g: partial data — 48% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 48% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dessert\\IMG\\almond_butter_and_cocoa_stuffed_dates.png",
+  "created_at": "2026-08-09T18:29:43.347220",
+  "generation_id": "ea179af0-107b-41b8-8ff5-087eeefa216c"
+}

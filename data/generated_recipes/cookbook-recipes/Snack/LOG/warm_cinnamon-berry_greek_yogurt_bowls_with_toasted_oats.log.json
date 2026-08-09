@@ -1,0 +1,281 @@
+{
+  "main_ingredient": "Nonfat plain Greek yogurt",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Warm Cinnamon-Berry Greek Yogurt Bowls with Toasted Oats",
+  "recipe_id": "8ed109be-6c07-4cfb-b71c-b1f891f35396",
+  "generation_id": "550f7a3d-8870-4644-acd9-c2f0d9ccbc44",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:27:33.055940",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Warm Cinnamon-Berry Greek Yogurt Bowls with Toasted Oats",
+        "main_ingredient": "Nonfat plain Greek yogurt",
+        "technique": "Microwave and dry-toasting",
+        "flavour_profile": "Sweet-tart, warmly spiced, creamy, and crunchy",
+        "cuisine_style": "American",
+        "ingredients_sketch": [
+          "Nonfat plain Greek yogurt",
+          "Frozen mixed berries",
+          "Old-fashioned rolled oats",
+          "Sliced almonds",
+          "Ground cinnamon",
+          "Vanilla extract"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 202.3,
+          "protein_g": 20.4,
+          "carbs_g": 21.4,
+          "fat_g": 4.0,
+          "fiber_g": 3.2,
+          "sodium_mg": 61.9,
+          "sugar_g": 10.1,
+          "saturated_fat_g": 0.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 8.5,
+          "potassium_mg": 412.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 1.8,
+          "pufa_g": 0.8,
+          "calcium_mg": 222.9,
+          "iron_mg": 1.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 1,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.167,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, practical recipe that perfectly hits the brief: it delivers great temperature and texture contrast in under 10 minutes while hitting ideal protein, fiber, and carbohydrate targets with zero added sugar.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of tart berries, creamy yogurt, and warm spices with toasted oats creates a balanced and classic flavor profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All six ingredients are logically and accurately used in the step-by-step instructions exactly as listed."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions with clear time ranges (3 to 5 minutes, 1 to 2 minutes), midpoint checks, and explicit visual doneness cues ('golden and fragrant', 'hot and juicy')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with an American-style healthy snack or breakfast bowl."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Dry-toasting the oats and microwaving frozen berries for a quick compote are highly effective, reliable techniques for this application."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macro values accurately reflect the ingredients, particularly the high protein from the nonfat Greek yogurt and the carbohydrate/fiber from the berries and oats."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro faithfully describe the dish and its quick execution without resorting to banned health claims or 'diet' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appetizing. The contrast in temperatures (warm berries, cold yogurt) and textures (creamy base, crunchy oats) makes this a compelling snack."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers exactly what the dual condition requires: lean protein, quality complex carbohydrates, and zero saturated fat or added sugars."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sweetness relies honestly on the berries, cinnamon, and vanilla without syrups or honey. The oats provide a necessary, high-quality carbohydrate component."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Snacks & Sides chapter perfectly, hitting the targeted 10-24g carbohydrate window and providing an excellent 20.4g of satiating protein per serving."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 10 minutes total using universally available supermarket ingredients and basic equipment."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two Greek yogurt bowls are positioned side-by-side in the center of the frame on an aged, rustic oak wood tabletop, with plenty of negative space around the edges. The camera angle is 3/4 overhead, perfectly capturing the depth of the bowls. A shallow depth of field keeps the primary bowl in sharp focus while the second bowl sits slightly behind it with soft, natural bokeh. Soft, natural light streams in from a window on the left, casting gentle shadows and highlighting the natural sheen of the warm berry compote. The setting features a rumpled linen napkin draped loosely beside the bowls and a few stray toasted oats and sliced almond shards scattered naturally on the wood surface to suggest a casual breakfast preparation. The dish consists of two simple matte ceramic bowls filled with thick, white, nonfat Greek yogurt. A generous swirl of warm, dark-ruby berry compote is spooned onto the surface, creating a beautiful marbled effect as the warm juices bleed into the cool, creamy yogurt. The compote is textured with mashed, softened berries showing deep purple and vibrant red hues. The bowls are finished with a crunchy topping of golden-brown toasted rolled oats and delicate, paper-thin sliced almonds; no whole almonds are present. The presentation is home-style, featuring slight, realistic imperfections like a tiny smear of yogurt on the inner rim and an asymmetric distribution of the oat topping. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking—lived-in, warm, and authentic. Includes subtle traces of the process like a few runaway oats on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional cookbook photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

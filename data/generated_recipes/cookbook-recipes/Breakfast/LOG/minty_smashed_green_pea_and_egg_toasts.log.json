@@ -1,0 +1,298 @@
+{
+  "main_ingredient": "frozen green peas",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Minty Smashed Green Pea and Egg Toasts",
+  "recipe_id": "507caee0-b7e6-4c29-90dd-67139383e610",
+  "generation_id": "adc9e54a-1ef8-47dc-ab03-bc597ac84a82",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:03:23.050639",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Minty Smashed Green Pea and Egg Toasts",
+        "main_ingredient": "frozen green peas",
+        "technique": "Stovetop and simple mash",
+        "flavour_profile": "Bright, herbaceous, and savory",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "frozen green peas",
+          "100% whole-wheat bread",
+          "large eggs",
+          "liquid egg whites",
+          "nonfat plain Greek yogurt",
+          "fresh mint",
+          "lemon",
+          "crumbled feta cheese",
+          "fresh strawberries"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'frozen green peas': recipe asks for a no-salt-added/low-sodium product and the match does not say so, while an explicitly unsalted candidate is available — switched from [170419] Peas, green, raw to [170017] Peas, green, frozen, cooked, boiled, drained, without salt.",
+        "Stage 4 coverage: 'nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 36% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 386.4,
+          "protein_g": 28.6,
+          "carbs_g": 42.5,
+          "fat_g": 11.5,
+          "fiber_g": 7.8,
+          "sodium_mg": 576.4,
+          "sugar_g": 11.2,
+          "saturated_fat_g": 3.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 194.6,
+          "potassium_mg": 522.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.4,
+          "pufa_g": 2.3,
+          "calcium_mg": 230.8,
+          "iron_mg": 3.7,
+          "vitamin_d_mcg": 1.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 576.4 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 576.4 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] The recipe slightly overshoots the breakfast chapter's 550 mg sodium ceiling (currently at 576 mg) due to stacking bread and feta. Fix: Reduce the crumbled feta to 1 tablespoon (7.5 g). This will drop the sodium by roughly 80 mg, bringing it safely into compliance without compromising the flavor."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, vibrant Mediterranean breakfast that perfectly balances fiber, complex carbohydrates, and lean protein. A minor adjustment to the feta quantity is recommended to bring the sodium strictly under the chapter's ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Mint, peas, lemon, yogurt, and feta create a classic, bright Mediterranean flavor profile. Excellent balance of fresh herbs, acid, and savory umami notes."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are perfectly accounted for in the steps, and the strawberry side is correctly noted at the end."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Cook times are given as ranges, doneness cues ('tender', 'soft curds', 'shimmering') are clear, and the workflow is logical for a beginner."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Spot-on Mediterranean alignment with the use of olive oil, feta, Greek yogurt, mint, and peas."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Quick-boiling the peas and gently scrambling the eggs in a skillet are ideal, straightforward methods for this dish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed values are accurate. The stacked sodium from the 100% whole-wheat bread and feta cheese correctly reflects the 576 mg total."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is highly appetizing and descriptive. The intro is warm and focuses on culinary enjoyment without any inappropriate 'diet' language or health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A delicious, modern, cafe-style breakfast. It is visually vibrant (green mash, yellow eggs, red fruit) and highly appealing."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent execution. Delivers a quality carbohydrate base (100% whole-wheat bread, peas, strawberries) paired with strong lean protein (egg whites, whole eggs, Greek yogurt) and healthy fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the carbohydrate window at 42.5g using whole grains, fruit, and legumes. Sweetness comes entirely from the whole strawberries."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe slightly overshoots the breakfast chapter's 550 mg sodium ceiling (currently at 576 mg) due to stacking bread and feta. Fix: Reduce the crumbled feta to 1 tablespoon (7.5 g). This will drop the sodium by roughly 80 mg, bringing it safely into compliance without compromising the flavor."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Extremely practical. Easily prepared within 15 minutes total time using standard, everyday supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 3,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is a 3/4 overhead view at a 40-degree angle, showing two individual plates of whole-grain toast side-by-side, with the foreground plate in sharp focus and the background plate softened by a shallow depth of field. The scene features four thick, golden-brown toasted slices of whole-wheat bread, spread with a generous, chunky, vibrant bright-green mash of smashed peas, Greek yogurt, and finely flecked fresh mint. Resting on top of the pea-smeared toast are soft, fluffy, pale-yellow scrambled eggs in distinct, delicate curds, sprinkled with snowy-white crumbles of feta cheese. Next to the toasts on each plate, a small pile of freshly sliced, deep-red, glossy strawberry halves sits directly on the ceramic surface. The plates are simple, matte white ceramic. The setting is a rustic, aged oak wood table with visible grain and small, scattered crumbs from the toasted bread. Props include a single stainless steel fork with a wooden handle resting casually beside one plate and a small, rustic ramekin containing a few remaining whole green peas blurred in the background. Lighting is soft, directional natural light from a window on the left, creating gentle shadows and highlighting the moisture on the strawberries and the creamy texture of the pea mash. Photorealistic, not AI-generated looking. The scene captures a lived-in, warm, authentic home kitchen atmosphere. Included are slight natural imperfections: a tiny, stray green pea on the table, a slight oil sheen on the scrambled eggs, and crumbs scattered unevenly across the wood. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

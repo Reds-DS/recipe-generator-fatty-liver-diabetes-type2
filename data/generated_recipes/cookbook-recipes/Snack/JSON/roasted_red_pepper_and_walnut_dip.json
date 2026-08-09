@@ -1,0 +1,161 @@
+{
+  "id": "6d9f9297-90b9-4754-ab03-71d416eaa7a3",
+  "title": "Roasted Red Pepper and Walnut Dip",
+  "intro": "An ideal mid-afternoon snack to bridge the gap until dinner, this Mediterranean spread recreates the rich flavors of muhammara without the wait. Walnuts lend a creamy body to the dip while providing supportive omega-3 fatty acids.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Jarred roasted red peppers, no-salt-added",
+      "canonical_name": "Peppers, sweet, red, roasted, canned, no-salt-added",
+      "quantity_g": 120.0,
+      "quantity_display": "3/4 cup (120 g)",
+      "preparation": "rinsed and drained well",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Shelled raw walnuts",
+      "canonical_name": "Nuts, walnuts, English, halves and pieces, raw",
+      "quantity_g": 40.0,
+      "quantity_display": "1/3 cup (40 g)",
+      "preparation": null,
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 3.0,
+      "quantity_display": "1 clove (3 g)",
+      "preparation": "peeled",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed, crushed or ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red pepper flakes",
+      "canonical_name": "Spices, pepper, red or cayenne",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170932,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.5,
+      "quantity_display": "1/8 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole-wheat pita bread",
+      "canonical_name": "Bread, pita, whole-wheat",
+      "quantity_g": 50.0,
+      "quantity_display": "1 small pita (50 g)",
+      "preparation": "cut into wedges",
+      "fdc_id": 174916,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 200.0,
+      "quantity_display": "1 medium (200 g)",
+      "preparation": "sliced into thick rounds",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place the drained roasted red peppers, walnuts, garlic, lemon juice, extra-virgin olive oil, cumin, red pepper flakes, and salt into a small food processor or blender.",
+    "Blend on high speed until smooth, scraping down the sides of the bowl with a spatula as needed.",
+    "Transfer the dip to a small serving bowl.",
+    "Arrange the cucumber rounds and whole-wheat pita wedges on a plate alongside the dip.",
+    "Serve immediately using the cucumber and pita to scoop up the dip."
+  ],
+  "variation": "Swap the cucumber slices for crisp celery or carrot sticks.",
+  "conservation": "Keeps 3-4 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 255.0,
+    "protein_g": 7.0,
+    "carbs_g": 24.7,
+    "fat_g": 16.4,
+    "fiber_g": 4.4,
+    "sodium_mg": 208.8,
+    "sugar_g": 5.6,
+    "saturated_fat_g": 1.7,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 305.5,
+    "trans_fat_g": 0.0,
+    "mufa_g": 3.8,
+    "pufa_g": 10.0,
+    "calcium_mg": 47.6,
+    "iron_mg": 2.0,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Jarred roasted red peppers, no-salt-added"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Jarred roasted red peppers, no-salt-added' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "total carbohydrate 24.7 g/serving > ceiling 24 g (\"snack\")",
+    "255 kcal/serving > high bound 230 kcal (\"snack\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\roasted_red_pepper_and_walnut_dip.png",
+  "created_at": "2026-08-09T18:10:23.355538",
+  "generation_id": "50fdc31e-1174-4fae-ac94-8811150bba9f"
+}

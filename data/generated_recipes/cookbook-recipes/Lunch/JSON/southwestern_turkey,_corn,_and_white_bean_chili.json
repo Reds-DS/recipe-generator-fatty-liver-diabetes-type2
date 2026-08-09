@@ -1,0 +1,183 @@
+{
+  "id": "d23de622-2c37-4c5e-8762-7ed88c364dac",
+  "title": "Southwestern Turkey, Corn, and White Bean Chili",
+  "intro": "A hearty serving of lean protein and dietary fiber helps keep your energy steady through the afternoon. Using low-sodium canned staples means this earthy, comforting bowl is ready without the traditional all-day simmer.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 13,
+  "cook_time_max_min": 16,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Yellow onion",
+      "canonical_name": "Onions, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "1/2 cup (80 g)",
+      "preparation": "chopped",
+      "fdc_id": 790646,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lean ground turkey (93% lean)",
+      "canonical_name": "Ground turkey, 93% lean, 7% fat, raw",
+      "quantity_g": 227.0,
+      "quantity_display": "8 oz (227 g)",
+      "preparation": null,
+      "fdc_id": 172850,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 1.5,
+      "quantity_display": "1/2 tsp (1.5 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned cannellini beans",
+      "canonical_name": "Beans, white, mature seeds, canned, no salt added",
+      "quantity_g": 170.0,
+      "quantity_display": "1 cup (170 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175203,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen sweet corn",
+      "canonical_name": "Corn, sweet, yellow, frozen, unprepared",
+      "quantity_g": 130.0,
+      "quantity_display": "1 cup (130 g)",
+      "preparation": null,
+      "fdc_id": 168398,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium diced green chiles",
+      "canonical_name": "Peppers, hot chili, green, canned, drained solids",
+      "quantity_g": 113.0,
+      "quantity_display": "4 oz (113 g)",
+      "preparation": "drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Water",
+      "canonical_name": "Water, tap, drinking",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": 173647,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 5.0,
+      "quantity_display": "2 tbsp (5 g)",
+      "preparation": "chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat oil in a medium pot or Dutch oven over medium-high heat. Add chopped onion and cook until it starts to soften, about 3 minutes.",
+    "Add turkey, cumin, and garlic powder to the pot. Cook, breaking meat apart with a spoon, until no longer pink, about 4 to 5 minutes.",
+    "Stir in drained beans, corn, drained green chiles, broth, and water. Bring mixture to a rolling boil.",
+    "Reduce heat to medium-low to maintain a gentle simmer. Cook uncovered to blend flavors, about 6 to 8 minutes.",
+    "Remove pot from heat. Stir in lime juice and chopped cilantro just before serving."
+  ],
+  "variation": "Swap the ground turkey for an equal amount of ground chicken.",
+  "conservation": "Keeps 3 days refrigerated; reheat on the stovetop or microwave.",
+  "nutrition_per_serving": {
+    "calories_kcal": 462.4,
+    "protein_g": 35.1,
+    "carbs_g": 44.3,
+    "fat_g": 18.3,
+    "fiber_g": 8.5,
+    "sodium_mg": 150.3,
+    "sugar_g": 6.3,
+    "saturated_fat_g": 3.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 84.0,
+    "potassium_mg": 1081.8,
+    "trans_fat_g": 0.1,
+    "mufa_g": 9.0,
+    "pufa_g": 4.2,
+    "calcium_mg": 128.2,
+    "iron_mg": 5.9,
+    "vitamin_d_mcg": 0.5,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Low-sodium diced green chiles"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "No USDA candidate for 'Low-sodium diced green chiles' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 17% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 10% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 10% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 10% of recipe weight has no USDA value for it.",
+    "462.4 kcal/serving > high bound 440 kcal (\"light_main\")",
+    "[chapter_intent_fit] The recipe perfectly captures the essence of a 'light main' soup, but at 462 kcal it slightly overshoots the 440 kcal tier ceiling. Consider either reducing the olive oil to 2 tsp or swapping the 93% lean turkey for 99% lean ground turkey to shave off the remaining 22 calories and bring it strictly in bounds."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\southwestern_turkey,_corn,_and_white_bean_chili.png",
+  "created_at": "2026-08-09T19:35:26.271334",
+  "generation_id": "941ff6a6-2135-4efb-af93-eb668dde01c1"
+}

@@ -1,0 +1,60 @@
+=== RECIPE LOG: Warm Pumpkin Spice Oat Mug Cakes ===
+ID            : d4ab4aec-837a-4c08-95fa-9a56470a4af5
+Generation ID : 64279020-30fc-4e56-b072-cbd5d50fd109
+Generated     : 2026-08-09 18:45:52
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 5
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Canned pure pumpkin
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Warm Pumpkin Spice Oat Mug Cakes
+Technique       : Microwave baking
+Cuisine style   : Modern American
+Flavour profile : Warm, spiced, cozy, and mildly sweet
+Sketch          : Canned pure pumpkin (not pie filling), Oat flour, Baking powder, Pumpkin pie spice, Vanilla extract, Pure maple syrup, Large egg, Chopped pecans, Nonfat plain Greek yogurt
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+  [WARN] sugar_g: partial data — 12% of recipe weight has no USDA value for it.
+  [WARN] saturated_fat_g: partial data — 12% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 12% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+    [WARN] sodium 156.8 mg/serving > ceiling 150 mg ("dessert")
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The two pumpkin spice oat mug cakes are centered in the frame, placed side-by-side on a rustic, aged oak wood surface, leaving enough negative space for...

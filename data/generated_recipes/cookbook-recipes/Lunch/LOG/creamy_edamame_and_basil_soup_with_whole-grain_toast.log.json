@@ -1,0 +1,299 @@
+{
+  "main_ingredient": "Frozen shelled edamame",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Creamy Edamame and Basil Soup with Whole-Grain Toast",
+  "recipe_id": "5f9e5016-f552-441b-978e-8269222c6676",
+  "generation_id": "80f493ff-6a84-43b4-a4cb-49172255dc87",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:10:30.691172",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Creamy Edamame and Basil Soup with Whole-Grain Toast",
+        "main_ingredient": "Frozen shelled edamame",
+        "technique": "Simmer and blend",
+        "flavour_profile": "Bright, herbaceous, and savory",
+        "cuisine_style": "Modern Mediterranean",
+        "ingredients_sketch": [
+          "Frozen shelled edamame",
+          "Low-sodium vegetable broth",
+          "Garlic cloves",
+          "Fresh baby spinach",
+          "Fresh basil leaves",
+          "Lemon",
+          "Extra-virgin olive oil",
+          "Unsalted pumpkin seeds (pepitas)",
+          "Hearty whole-grain bread"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.",
+        "saturated_fat_g: partial data — 31% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 87% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 49% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 391.5,
+          "protein_g": 25.2,
+          "carbs_g": 33.0,
+          "fat_g": 19.7,
+          "fiber_g": 10.7,
+          "sodium_mg": 428.7,
+          "sugar_g": 6.9,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 1082.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.9,
+          "pufa_g": 2.9,
+          "calcium_mg": 201.0,
+          "iron_mg": 5.8,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.636,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, practical recipe that perfectly aligns with the book's nutritional pillars and culinary style. It makes clever use of high-protein freezer staples to deliver a fast, satisfying, and blood-sugar-friendly meal.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Edamame blends into a naturally creamy, slightly sweet base that pairs beautifully with the bright, herbaceous notes of fresh basil and lemon. The garlic and pumpkin seeds provide necessary savory depth and crunch."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect consistency. Every ingredient listed is deployed in the instructions, and no surprise ingredients are introduced in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough and beginner-friendly. Time ranges are provided with early check times (e.g., 'Check at 5 minutes'), and visual cues ('fragrant and softened', 'spinach wilts', 'completely smooth') are clear."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Edamame is traditionally Asian, but combining it with olive oil, basil, lemon, and garlic perfectly executes the 'Modern Mediterranean' brief. It acts as an accessible, high-protein legume base."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop boiling and blending is the right technique here. Edamame cooks quickly and purees to a velvety texture. Offering the immersion blender option makes it very practical."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are highly plausible and well-calculated. The high protein and fiber are accurately driven by the substantial 10.5 oz of edamame, and the carbs correctly reflect the whole-grain bread and legumes."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro is warm and practical, rightly highlighting the use of 'convenient freezer staples.' No problematic health claims are made."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, vibrant green soup that looks beautiful in the bowl and offers great textures with the pumpkin seeds and side of toast. It feels like a real meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A perfect fit for the book's dual-focus. It relies heavily on plant-based protein and fiber, uses unsaturated olive oil and pumpkin seeds for fat, and delivers a complex, high-quality carbohydrate source without any heavy creams or refined grains."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Added sugar is properly at zero. The carbohydrate component (33g) sits right in the golden window for this meal tier, supplied intelligently by the edamame and whole-grain toast. It is fully blood-sugar friendly without falling into keto territory."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nails the 'Soups & Salads' light_main criteria perfectly. It acts as a substantial, stand-alone light meal with >20g protein and >6g fiber, utilizing low-sodium broth as required."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very fast and realistic. With minimal chopping (just minced garlic) and the use of frozen edamame and pre-washed baby spinach, an unhurried cook will easily have this on the table in 15 to 20 minutes from a cold start."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte ceramic bowls filled with a vibrant, velvety bright green edamame and basil soup, centered and captured from a 3/4 overhead angle (40°). One bowl is in the sharp foreground, the second bowl is slightly recessed and softly blurred in the background. Beside each bowl, a slice of rustic, hearty whole-grain toast with a crisp, slightly uneven browned crust rests on the surface. The soup is topped with a scattering of raw, unsalted green pumpkin seeds, which are dispersed naturally and unevenly across the surface. The surface is a warm, aged oak wood table with visible grain and a few scattered crumbs from the toasted bread and a stray fresh basil leaf. Lighting is soft, natural side light from a window on the left, creating gentle shadows and highlighting the smooth, opaque texture of the pureed soup. A wooden spoon rests casually on the table near the foreground bowl. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: a tiny splash mark on the inner rim of one bowl, slightly unevenly shaped toasted bread slices. Include subtle traces of the cooking process: a few stray pumpkin seeds on the wood grain. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

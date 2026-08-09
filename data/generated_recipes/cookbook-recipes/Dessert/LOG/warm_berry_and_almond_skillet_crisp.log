@@ -1,0 +1,57 @@
+=== RECIPE LOG: Warm Berry and Almond Skillet Crisp ===
+ID            : b06d220a-d722-4ebb-84ee-b23d77570c56
+Generation ID : 852e3066-4c95-4045-8835-84c3b8eb41d5
+Generated     : 2026-08-09 13:13:21
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 3
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen mixed berries
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Warm Berry and Almond Skillet Crisp
+Technique       : Stovetop simmering and toasting
+Cuisine style   : Modern American
+Flavour profile : Sweet, tart, and warmly spiced
+Sketch          : frozen mixed berries, old-fashioned rolled oats, sliced almonds, extra-virgin olive oil, pure maple syrup, ground cinnamon, pure vanilla extract, nonfat plain Greek yogurt
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two ceramic bowls containing the warm berry and almond skillet crisp, centered in the frame with generous negative space to accommoda...

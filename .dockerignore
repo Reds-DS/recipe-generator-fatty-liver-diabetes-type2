@@ -1,0 +1,13 @@
+.env
+.git
+.venv
+__pycache__
+*.py[cod]
+data/generated_recipes/
+data/*.db
+data/ciqual_2025.csv
+tests/
+*.md
+.mypy_cache
+.ruff_cache
+.pytest_cache

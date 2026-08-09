@@ -1,0 +1,528 @@
+{
+  "main_ingredient": "boneless, skinless chicken thighs",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Mediterranean Chicken, Tomato, and Chickpea Skillet",
+  "recipe_id": "d0772ab3-5ac4-4f3e-875e-b2c87b87cfb8",
+  "generation_id": "deb985a4-b658-48bb-add7-c408f89a1d94",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:34:41.960930",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Mediterranean Chicken, Tomato, and Chickpea Skillet",
+        "main_ingredient": "boneless, skinless chicken thighs",
+        "technique": "One-skillet simmer",
+        "flavour_profile": "Savory, bright, herbaceous, and slightly briny",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "boneless, skinless chicken thighs",
+          "extra-virgin olive oil",
+          "zucchini",
+          "garlic powder",
+          "dried oregano",
+          "no-salt-added canned diced tomatoes",
+          "no-salt-added canned chickpeas",
+          "pitted kalamata olives",
+          "fresh lemon"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'no-salt-added canned diced tomatoes' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'no-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.",
+        "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 25% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 25% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 25% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "no-salt-added canned diced tomatoes"
+        ],
+        "nutrition": {
+          "calories_kcal": 384.3,
+          "protein_g": 33.4,
+          "carbs_g": 26.2,
+          "fat_g": 17.0,
+          "fiber_g": 8.1,
+          "sodium_mg": 433.4,
+          "sugar_g": 8.2,
+          "saturated_fat_g": 3.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 119.8,
+          "potassium_mg": 710.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.9,
+          "pufa_g": 3.2,
+          "calcium_mg": 88.0,
+          "iron_mg": 4.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "no-salt-added canned diced tomatoes"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "UNDER-CARBOHYDRATE: total carbohydrate 26.2 g/serving < floor 32 g (\"main\"). This is a DEFECT, not a success — this book is deliberately not low-carbohydrate. Add a quality carbohydrate (whole grain, legume, starchy vegetable or fruit) in a measured portion."
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "UNDER-CARBOHYDRATE: total carbohydrate 26.2 g/serving < floor 32 g (\"main\"). This is a DEFECT, not a success — this book is deliberately not low-carbohydrate. Add a quality carbohydrate (whole grain, legume, starchy vegetable or fruit) in a measured portion."
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A highly flavorful, practical, and fast weeknight Mediterranean skillet that just needs a modest serving of a quality whole grain (like a whole-wheat pita) added to safely meet the carbohydrate floor for blood sugar stability.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Mediterranean and very well balanced. The acidity of the lemon and tomatoes perfectly cuts the richness of the chicken and olives, while garlic and oregano provide a strong savory backbone."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used properly in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. Every cooking step includes a time range, a specific check time, and clear visual/textural doneness cues (e.g., 'lightly browned on the edges', 'begins to soften')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with the stated Mediterranean cuisine style, relying on olive oil, herbs, tomatoes, olives, and lemon."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The one-pan skillet braise is an ideal method here. Using bite-sized chicken thighs ensures they remain tender and juicy while simmering in the tomato liquid."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are completely plausible for the ingredients and quantities listed."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the main ingredients, and the intro is practical, appetizing, and perfectly aligned with the book's realistic tone without making any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, straightforward, and comforting weeknight dinner that requires minimal cleanup. It reads like real, good food."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe hits the dual-condition goal well: it is vegetable-forward, relies on healthy unsaturated fats from olive oil and olives, uses lean protein, and avoids refined carbohydrates."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe contains zero added sugar, which is excellent, but it fails the carbohydrate floor (26.2g vs. 32g target). For patients on insulin or sulfonylureas, going too low in carbohydrates can risk hypoglycemia. To fix this and hit the 35-45g sweet spot, instruct the reader to serve the stew with 1 small whole-wheat pita (halved) per person, or add a 1/2 cup of quinoa from a ready-to-eat microwave pouch."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Aside from the easily fixed carbohydrate deficit, this fits the weeknight chicken skillet dinner intent perfectly."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "With only 10 minutes of prep (chopping one zucchini and the chicken) and about 15 minutes of cooking, this will genuinely be on the table in under 30 minutes. The ingredients are accessible at any standard supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [added_sugar_and_carb_balance] The recipe contains zero added sugar, which is excellent, but it fails the carbohydrate floor (26.2g vs. 32g target). For patients on insulin or sulfonylureas, going too low in carbohydrates can risk hypoglycemia. To fix this and hit the 35-45g sweet spot, instruct the reader to serve the stew with 1 small whole-wheat pita (halved) per person, or add a 1/2 cup of quinoa from a ready-to-eat microwave pouch.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 440.1,
+          "protein_g": 39.3,
+          "carbs_g": 39.7,
+          "fat_g": 15.1,
+          "fiber_g": 9.8,
+          "sodium_mg": 514.9,
+          "sugar_g": 9.5,
+          "saturated_fat_g": 3.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 141.0,
+          "potassium_mg": 1107.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.2,
+          "pufa_g": 3.2,
+          "calcium_mg": 130.1,
+          "iron_mg": 5.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.9,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[title_intro_accuracy] The intro describes a 'ready-made sauce of crushed tomatoes', but the recipe actually uses canned 'diced' tomatoes. Change the intro to read 'quick pan sauce of diced tomatoes' to accurately reflect the ingredient list."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptionally strong, weeknight-friendly recipe that perfectly hits the brief for both conditions with zero dietary compromises. It is fast, practical, and highly appetizing.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Mediterranean and very well balanced. The acidity from the lemon and tomatoes works perfectly with the umami of the chicken and Kalamata olives."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is properly utilized in the instructions in the correct order."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. They provide time ranges, minimum-time checks, and clear visual cues for doneness (e.g., 'lightly browned', 'begins to soften')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients (olive oil, oregano, chickpeas, kalamata olives, lemon, pita) firmly root the dish in Mediterranean cuisine as stated."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet braising/simmering is an ideal method for chicken thighs, which remain tender, and for marrying the flavors of the vegetables and legumes quickly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macro numbers align perfectly with the ingredients. The protein comes squarely from the chicken and chickpeas, and the carbohydrates properly reflect the legumes, tomatoes, zucchini, and pita."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The intro describes a 'ready-made sauce of crushed tomatoes', but the recipe actually uses canned 'diced' tomatoes. Change the intro to read 'quick pan sauce of diced tomatoes' to accurately reflect the ingredient list."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a vibrant, appealing, and satisfying weeknight dinner that uses familiar ingredients to create something cohesive and comforting."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of the dietary approach: lean protein, vegetable-forward, rich in legumes, paired with a whole grain, and extremely low in saturated fat."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugar is present. The carbohydrate profile (39.7 g) is solidly inside the target window and comes from excellent, high-quality sources: chickpeas, whole-wheat pita, and vegetables."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the 'Chicken & Lean Meat Dinners' brief: a quick, one-pan chicken dish with a measured whole grain and zero reliance on heavy sauces or butter."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Active prep is very fast (just chopping chicken and zucchini), and the 14-18 minute simmer leaves the total time comfortably under the 30-minute ceiling. All ingredients are standard supermarket items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed as a 3/4 overhead shot at a 40-degree angle, capturing two rustic matte ceramic bowls placed on an aged oak wooden surface with visible grain and natural use marks. The main bowl is in sharp focus, while the second bowl sits slightly behind and to the side, softly blurred. Each bowl contains a generous, rustic portion of the Mediterranean chicken and chickpea stew; the chicken thighs, cut into irregular, bite-sized pieces, are visible alongside tender, softened half-moon zucchini slices and plump chickpeas coated in a vibrant, textured crushed tomato sauce. The dish features a rich, deep red color from the tomatoes, contrasted by the golden-brown edges of the sautéed chicken and the deep purple of the halved kalamata olives. A few vibrant green specks of dried oregano are scattered throughout. Propped casually beside the primary bowl is a rumpled, off-white linen napkin and two halves of warm, slightly charred whole-wheat pita bread. Lighting is soft and natural, originating from a window on the left, casting gentle, subtle shadows and creating a slight sheen on the tomato sauce. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the bowl rim, slightly uneven browning on the chicken. Include subtle traces of the cooking process: a few rogue chickpeas and a small pita crumb on the wooden surface. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

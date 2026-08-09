@@ -1,0 +1,61 @@
+=== RECIPE LOG: Garlicky Shrimp, Spinach, and White Bean Quesadillas ===
+ID            : 7bc8a122-ae54-451e-ba1b-eeced5a07b4c
+Generation ID : 4b2612cb-b1a5-42ff-9981-13835adf4a8d
+Generated     : 2026-08-09 19:58:45
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 7
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen cooked shrimp
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Garlicky Shrimp, Spinach, and White Bean Quesadillas
+Technique       : Skillet toasting (no-cook filling assembly)
+Cuisine style   : Mediterranean-American
+Flavour profile : Garlicky, herby, and mildly tangy
+Sketch          : Frozen cooked peeled shrimp, No-salt-added canned cannellini beans, Whole-wheat tortillas, Fresh baby spinach, Crumbled feta cheese, Garlic powder, Dried oregano, Extra-virgin olive oil
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Frozen cooked peeled shrimp, untreated': [175180] Crustaceans, shrimp, cooked has no USDA value for fiber_g (which would be summed as zero) — switched to [171970] Crustaceans, shrimp, mixed species, cooked, breaded and fried.
+  [WARN] Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 66.4 g/serving > ceiling 55 g ("main")
+    [WARN] sodium 716.6 mg/serving > ceiling 550 mg ("main")
+    [WARN] saturated fat 5.8 g/serving > ceiling 5 g ("main")
+    [WARN] 589.3 kcal/serving > high bound 540 kcal ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The two quesadillas are centered in the frame, cut into neat halves, displayed on two simple matte ceramic plates. One plate is in sharp focus in the im...

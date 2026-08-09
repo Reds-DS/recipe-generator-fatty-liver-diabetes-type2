@@ -1,0 +1,301 @@
+{
+  "main_ingredient": "Jarred roasted red peppers",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Roasted Red Pepper and Walnut Dip",
+  "recipe_id": "6d9f9297-90b9-4754-ab03-71d416eaa7a3",
+  "generation_id": "50fdc31e-1174-4fae-ac94-8811150bba9f",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:10:23.355538",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Roasted Red Pepper and Walnut Dip",
+        "main_ingredient": "Jarred roasted red peppers",
+        "technique": "Blending (No-cook)",
+        "flavour_profile": "Smoky, nutty, and tangy",
+        "cuisine_style": "Mediterranean-inspired",
+        "ingredients_sketch": [
+          "Jarred roasted red peppers",
+          "Shelled walnuts",
+          "Fresh garlic",
+          "Lemon",
+          "Ground cumin",
+          "Red pepper flakes",
+          "Whole-wheat pita bread",
+          "Cucumber"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Jarred roasted red peppers, no-salt-added' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 28% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Jarred roasted red peppers, no-salt-added"
+        ],
+        "nutrition": {
+          "calories_kcal": 255.0,
+          "protein_g": 7.0,
+          "carbs_g": 24.7,
+          "fat_g": 16.4,
+          "fiber_g": 4.4,
+          "sodium_mg": 208.8,
+          "sugar_g": 5.6,
+          "saturated_fat_g": 1.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 305.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.8,
+          "pufa_g": 10.0,
+          "calcium_mg": 47.6,
+          "iron_mg": 2.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Jarred roasted red peppers, no-salt-added"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.9,
+        "match_sources": [
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 24.7 g/serving > ceiling 24 g (\"snack\")",
+        "255 kcal/serving > high bound 230 kcal (\"snack\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 24.7 g/serving > ceiling 24 g (\"snack\")",
+              "255 kcal/serving > high bound 230 kcal (\"snack\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, straightforward, and highly appealing snack recipe. It perfectly aligns with the book's Mediterranean, whole-food approach to managing fatty liver and type 2 diabetes without requiring any complicated cooking steps or hard-to-find ingredients.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The muhammara-inspired flavor profile is excellent and cohesive. Omitting the traditional pomegranate molasses is a smart culinary choice that brilliantly keeps the added sugar at zero while maintaining the tangy, smoky character."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is accurately accounted for and correctly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Clear and direct. The instruction to scrape down the sides of the food processor is a helpful detail for beginner cooks to ensure a smooth dip."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly matches the Mediterranean-inspired style, authentically utilizing classic Eastern Mediterranean ingredients."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Blending is the ideal and only necessary method for this no-cook dip, yielding a perfectly creamy texture."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values accurately reflect the ingredients. The slight caloric overage (255 vs 230 kcal) and carbohydrate overage (24.7g vs 24g) flagged by the system are negligible and entirely acceptable because they derive from high-quality whole foods (walnuts and whole-wheat pita)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish. The mention of omega-3s is a grounded nutritional fact that supports the book's dietary goals, safely avoiding any banned 'detox' or 'cure' hyperbole."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A vibrant, quick, and appetizing snack that readers will actually look forward to making and eating."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Demonstrates excellent balance for both conditions: whole-wheat pita and cucumber provide complex carbs and fiber for blood-sugar management, while walnuts and olive oil offer healthy unsaturated fats for liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Outstanding. There is zero added sugar, and the recipe features a high-quality, whole-grain carbohydrate component in a highly appropriate portion size for a snack."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Snacks & Sides' intent perfectly, providing a satiating, fiber-rich, and protein-forward bridge between meals."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly practical. Requires only 5 minutes of active prep and uses entirely standard, easy-to-find supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, presented from a 3/4 overhead angle (40°) to clearly show the textures of the dip, pita, and cucumber. A shallow depth of field keeps the foreground plate sharp while the background blurs softly. Soft, natural side light from a window on the left creates subtle highlights on the dip and gentle, realistic shadows. The setting is a rustic kitchen featuring an aged oak wood surface with visible grain. The dip is a smooth, creamy, vibrant sunset-orange puree served in a simple matte ceramic bowl, positioned slightly to the left on a neutral stone platter. Arranged naturally beside the bowl are two portions of thick-cut, crisp cucumber rounds and toasted whole-wheat pita wedges, placed side-by-side without stacking. A worn wooden spoon rests casually on the surface near the plate, with a few stray crumbs of pita and a single walnut half scattered nearby to imply preparation. The dip shows a rich, uniform texture with tiny, subtle flecks of red pepper flakes and a slight sheen from the olive oil. The scene looks authentic, lived-in, and warm with a golden-hour color temperature. No green herbs, no parsley, no cilantro, no green garnish. Photorealistic, not AI-generated looking. Slight natural imperfections: a small smudge of dip on the bowl rim, uneven placement of the pita wedges. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional cookbook photography.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

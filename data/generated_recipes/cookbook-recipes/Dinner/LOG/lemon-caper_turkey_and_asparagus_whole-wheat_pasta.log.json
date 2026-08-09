@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "turkey breast cutlets",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Lemon-Caper Turkey and Asparagus Whole-Wheat Pasta",
+  "recipe_id": "743bd886-5ce1-449d-8ea8-5820bc8678d6",
+  "generation_id": "c9eeb32f-cc01-48ba-82e9-d035983bf06a",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:37:31.218017",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemon-Caper Turkey and Asparagus Whole-Wheat Pasta",
+        "main_ingredient": "turkey breast cutlets",
+        "technique": "skillet sear and quick-boil",
+        "flavour_profile": "bright lemon, briny capers, and garlic",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "turkey breast cutlets",
+          "whole-wheat angel hair pasta",
+          "fresh asparagus",
+          "capers",
+          "fresh lemon",
+          "low-sodium chicken broth",
+          "garlic cloves",
+          "extra-virgin olive oil",
+          "fresh parsley"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 423.3,
+          "protein_g": 35.8,
+          "carbs_g": 50.3,
+          "fat_g": 11.7,
+          "fiber_g": 8.3,
+          "sodium_mg": 276.2,
+          "sugar_g": 4.5,
+          "saturated_fat_g": 1.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 53.0,
+          "potassium_mg": 865.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.1,
+          "pufa_g": 2.2,
+          "calcium_mg": 70.9,
+          "iron_mg": 6.0,
+          "vitamin_d_mcg": 0.2,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, print-ready recipe. It perfectly captures the book's dietary philosophy with bright, Mediterranean flavors, hits all macronutrient targets effortlessly, and delivers on the 30-minute weeknight promise with accessible ingredients.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically balanced and coherent. Lemon, capers, garlic, and parsley create a bright, savory piccata-style pan sauce that pairs perfectly with lean turkey and asparagus."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used properly in the instructions, and no surprise ingredients are introduced in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent, with good time ranges and visual cues ('until tender', 'shimmering', 'liquid slightly reduces'). As a minor enhancement for beginners, consider adding an internal temperature check (165°F) for the turkey in step 3."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with a Mediterranean-American style, emphasizing olive oil, lemon, whole grains, and lean protein."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The quick boil for the pasta and asparagus, combined with a fast pan-sear for thin turkey cutlets, is an optimal and practically foolproof method for these ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are highly plausible. Specifying low-sodium broth and rinsed capers keeps the sodium count reliably under the ceiling despite the briny profile."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish. The intro is warm, descriptive, and avoids any gimmicky health claims, fitting the book's realistic tone beautifully."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It reads like a bright, fresh, and satisfying weeknight meal that doesn't feel remotely like 'diet food'."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely answers to both blood sugar and liver health. It utilizes a measured, high-quality whole grain, plenty of green vegetables, a lean protein, and is built on heart-healthy olive oil without relying on heavy creams or butter."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar is achieved without relying on artificial sweeteners, and the 50.3g of carbohydrate comes from high-quality sources (whole-wheat pasta and vegetables), sitting perfectly within the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits every target for the 'Chicken, Turkey & Lean Meat Dinners' chapter. Macros are entirely within the specified windows, and the sauce is built exactly as expected (broth, lemon, aromatics)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Extremely practical. Thin turkey cutlets, angel hair pasta, and asparagus all cook in under 10 minutes. The minimal prep and simultaneous boiling/searing mean a home cook can comfortably finish this in 20-25 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition is a 3/4 overhead shot at a 40-degree angle, showing two white matte ceramic plates placed on an aged oak wood surface. The primary plate in the foreground is centered, with the second plate slightly blurred in the background. Each plate features a heap of very thin, delicate golden-brown whole-wheat angel hair pasta tossed with tender, bright green 2-inch asparagus segments and pieces of pan-seared turkey breast cutlets with golden-brown, caramelized edges. The components are intermingled but distinct, showing texture variation between the firm turkey and soft pasta. A glossy, light lemon-caper reduction clings to the pasta strands, with visible small, dark caper buds and flecks of minced garlic scattered throughout. A fresh dusting of roughly chopped flat-leaf parsley garnishes the top. Soft natural side light from a window on the left creates subtle highlights on the sauce-coated pasta and soft, realistic shadows. Props include a single wooden fork resting casually next to the foreground plate and a small pile of whole capers and a halved lemon sitting on the wood surface. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the turkey. Include subtle traces of the cooking process: a stray parsley leaf on the table, a slight oil sheen on the wood. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

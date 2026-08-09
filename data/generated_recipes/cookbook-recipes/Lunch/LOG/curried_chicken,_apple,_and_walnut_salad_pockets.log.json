@@ -1,0 +1,290 @@
+{
+  "main_ingredient": "Skinless rotisserie chicken breast",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Curried Chicken, Apple, and Walnut Salad Pockets",
+  "recipe_id": "572503a8-6bf5-4bbf-8934-4143437f6099",
+  "generation_id": "18a56f94-c7b4-490c-8835-62243a2754f1",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T20:25:26.187855",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Curried Chicken, Apple, and Walnut Salad Pockets",
+        "main_ingredient": "Skinless rotisserie chicken breast",
+        "technique": "No-cook / Assembly",
+        "flavour_profile": "Creamy, savory-sweet, tangy, and mildly spiced",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Skinless rotisserie chicken breast",
+          "Plain nonfat Greek yogurt",
+          "Mild curry powder",
+          "Crisp apple (such as Fuji or Honeycrisp)",
+          "Celery",
+          "Chopped walnuts",
+          "Whole-wheat pita pockets",
+          "Baby spinach",
+          "Lemon juice"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "saturated_fat_g: partial data — 30% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 449.2,
+          "protein_g": 39.1,
+          "carbs_g": 51.2,
+          "fat_g": 11.6,
+          "fiber_g": 7.6,
+          "sodium_mg": 396.0,
+          "sugar_g": 14.0,
+          "saturated_fat_g": 1.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 74.1,
+          "potassium_mg": 797.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.3,
+          "pufa_g": 6.3,
+          "calcium_mg": 121.5,
+          "iron_mg": 3.7,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, highly practical recipe that perfectly hits the brief. It provides a satisfying, no-cook lunch option using accessible ingredients and a smart rotisserie chicken shortcut, while successfully managing both blood sugar and liver health requirements.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically successful: curry powder, sweet crisp apple, earthy walnuts, and tangy yogurt create a well-balanced, vibrant chicken salad."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every ingredient listed in the ingredients section is utilized correctly and in order within the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "As a no-cook assembly recipe, the instructions are straightforward, clear, and perfectly adequate for a beginner cook. The prompt to open the pita gently to avoid tearing is a nice practical touch."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with Modern American cuisine, offering a fresh, health-conscious update to the classic deli-style chicken salad."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, bowl-to-pita assembly method is ideal for these ingredients and perfectly suited for a quick midday meal."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros are highly plausible. The 51.2g of carbohydrates aligns nicely with one large whole-wheat pita and half an apple per person, while the 3oz of chicken and yogurt provide the ~39g of protein."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and the introduction is warm, practical, and appropriately focuses on sustained energy rather than employing any banned 'diet' or 'detox' rhetoric."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's colorful, texturally diverse (crisp, crunchy, and creamy elements), and feels like a satisfying, real-food lunch."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent adherence to the dual-condition philosophy. It avoids saturated fat by trading mayo for nonfat Greek yogurt, leans heavily on fibrous fruit and veg, and uses lean protein and a quality whole grain."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with all sweetness naturally derived from the Fuji/Honeycrisp apple. It also delivers a robust 51.2g of high-quality carbohydrates (from the whole-wheat pita and fruit), providing safe, sustained energy without dipping into keto territory."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Lunches' chapter targets perfectly. It works well as a desk lunch, travels nicely, and lands squarely within the strict macro windows (protein >26g, fiber >7g, carbs 32-55g, sodium <550mg)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very practical. With pre-cooked rotisserie chicken (a permitted, first-class shortcut) and minimal chopping, this easily comes together from a cold start in 15 minutes. All ingredients are standard supermarket items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates, each holding two halved whole-wheat pita pockets positioned in a 3/4 overhead view to showcase the generous, textured filling. The pitas are slightly angled, revealing layers of dark green, fresh baby spinach at the base, topped with a creamy, pale yellow curried chicken salad mixture. Inside the salad, one can clearly identify chunks of crisp, ivory-colored Fuji apple, bright green diced celery, and earthy, rustic walnut pieces coated in a light, spiced yogurt dressing. The camera angle is 35-45 degrees, capturing the volume of the filling without hiding the ingredients. The background includes a second plate slightly blurred, emphasizing a realistic serving for two. Soft natural side light from a window to the left highlights the glistening, moist texture of the yogurt dressing and the crispness of the apple. The plates rest on an aged, rustic wooden surface with visible grain. Props include a small wooden spoon resting near a plate, a few stray walnut fragments, and a single vibrant spinach leaf on the table. Photorealistic, not AI-generated looking. The scene feels lived-in and authentic, captured just after preparation. Slight natural imperfections include an uneven crumb edge on the pita, a tiny drop of curry-tinted yogurt on the plate rim, and a scattered crumb trail. Warm, golden-hour color temperature. No plastic sheen, no artificial symmetry, no hands, no text, no logos. Indistinguishable from professional cookbook editorial photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

@@ -1,0 +1,157 @@
+{
+  "id": "d0772ab3-5ac4-4f3e-875e-b2c87b87cfb8",
+  "title": "Mediterranean Chicken, Tomato, and Chickpea Skillet",
+  "intro": "Simmering bite-sized chicken thighs with crushed tomatoes and chickpeas creates a hearty stew in a single pan. Serve this simple, comforting meal with warm whole-wheat pitas for dipping.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 14,
+  "cook_time_max_min": 18,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Boneless, skinless chicken thighs",
+      "canonical_name": "Chicken, broilers or fryers, thigh, meat only, raw",
+      "quantity_g": 300.0,
+      "quantity_display": "10.5 oz (300 g)",
+      "preparation": "chopped into bite-sized pieces",
+      "fdc_id": 173627,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 9.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Zucchini",
+      "canonical_name": "Squash, summer, zucchini, includes skin, raw",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": "sliced into half-moons",
+      "fdc_id": 169291,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned diced tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, canned, packed in tomato juice, no salt added",
+      "quantity_g": 300.0,
+      "quantity_display": "10.5 oz (300 g)",
+      "preparation": "undrained",
+      "fdc_id": 170138,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned chickpeas",
+      "canonical_name": "Chickpeas (garbanzo beans), mature seeds, canned, without salt",
+      "quantity_g": 150.0,
+      "quantity_display": "5.3 oz (150 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175250,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kalamata olives",
+      "canonical_name": "Olives, ripe, canned (small-extra large)",
+      "quantity_g": 30.0,
+      "quantity_display": "1 oz (30 g)",
+      "preparation": "pitted and halved",
+      "fdc_id": 169094,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Small whole-wheat pitas",
+      "canonical_name": "Bread, pita, whole-wheat",
+      "quantity_g": 66.0,
+      "quantity_display": "2 small (66 g)",
+      "preparation": "warmed and halved",
+      "fdc_id": 174916,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a large skillet over medium-high heat until shimmering.",
+    "Add the chicken pieces and cook for 4 to 5 minutes until lightly browned on all sides.",
+    "Stir in the zucchini, garlic powder, and dried oregano, and cook for 2 to 3 minutes until the zucchini begins to soften.",
+    "Pour in the diced tomatoes and chickpeas, stir well to combine, and bring to a rolling simmer.",
+    "Reduce the heat to medium-low, cover the skillet, and simmer for 8 to 10 minutes until the chicken is cooked through.",
+    "Remove the skillet from the heat, then stir in the kalamata olives and fresh lemon juice.",
+    "Serve the warm stew in bowls accompanied by the whole-wheat pitas."
+  ],
+  "variation": "Swap the zucchini for diced eggplant and simmer until tender.",
+  "conservation": "Keeps 3-4 days refrigerated; reheat in a skillet over low heat.",
+  "nutrition_per_serving": {
+    "calories_kcal": 440.1,
+    "protein_g": 39.3,
+    "carbs_g": 39.7,
+    "fat_g": 15.1,
+    "fiber_g": 9.8,
+    "sodium_mg": 514.9,
+    "sugar_g": 9.5,
+    "saturated_fat_g": 3.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 141.0,
+    "potassium_mg": 1107.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.2,
+    "pufa_g": 3.2,
+    "calcium_mg": 130.1,
+    "iron_mg": 5.6,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.",
+    "[title_intro_accuracy] The intro describes a 'ready-made sauce of crushed tomatoes', but the recipe actually uses canned 'diced' tomatoes. Change the intro to read 'quick pan sauce of diced tomatoes' to accurately reflect the ingredient list."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\mediterranean_chicken,_tomato,_and_chickpea_skillet.png",
+  "created_at": "2026-08-09T17:34:41.960930",
+  "generation_id": "deb985a4-b658-48bb-add7-c408f89a1d94"
+}

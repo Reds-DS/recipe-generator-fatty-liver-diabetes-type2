@@ -1,0 +1,164 @@
+{
+  "id": "dde53b30-00ae-48c4-aa1d-ad867ebd24ab",
+  "title": "Balsamic Steak and Artichoke Farro Bowls",
+  "intro": "Most bistros serve steak with heavy fries, but pairing it with hearty farro and fiber-rich artichokes creates a more balanced meal.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 4,
+  "cook_time_max_min": 6,
+  "passive_time": "Rest 3 min",
+  "ingredients": [
+    {
+      "name": "Lean sirloin steak strips",
+      "canonical_name": "Beef, top sirloin, steak, separable lean only, trimmed to 1/8\" fat, raw",
+      "quantity_g": 285.0,
+      "quantity_display": "10 oz (285 g)",
+      "preparation": "cut into 1-inch strips",
+      "fdc_id": 174055,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked farro pouch",
+      "canonical_name": "Farro, cooked",
+      "quantity_g": 240.0,
+      "quantity_display": "8.5 oz (240 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Canned artichoke hearts (in water, no-salt-added)",
+      "canonical_name": "Artichokes (globe or french), canned, no salt added, drained",
+      "quantity_g": 240.0,
+      "quantity_display": "1 can, drained (240 g)",
+      "preparation": "halved",
+      "fdc_id": 168386,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby arugula",
+      "canonical_name": "Arugula, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 2710822,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Balsamic vinegar",
+      "canonical_name": "Vinegar, balsamic",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 20.0,
+      "quantity_display": "1 tbsp plus 1 tsp (20 ml)",
+      "preparation": "divided",
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, dijon",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 g)",
+      "preparation": null,
+      "fdc_id": 2710085,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the balsamic vinegar, olive oil, Dijon mustard, garlic powder, and black pepper in a large mixing bowl to create a dressing.",
+    "Add the artichoke hearts, cherry tomatoes, and arugula to the bowl. Toss to coat, then divide the salad mixture into serving bowls.",
+    "Heat the farro according to the pouch instructions. Spoon the warm grain over the salad bases.",
+    "Pat the steak strips dry with a paper towel. Heat the olive oil in a skillet over medium-high heat.",
+    "Add the steak in a single layer. Sear for 4 to 6 minutes, flipping halfway through, until browned.",
+    "Remove the skillet from the heat and let the meat rest in the pan to retain its juices.",
+    "Top each bowl with the rested steak strips and serve immediately."
+  ],
+  "variation": "Swap the sirloin steak strips for boneless, skinless chicken breast.",
+  "conservation": "Keeps 2 days refrigerated; pack the steak and farro separately.",
+  "nutrition_per_serving": {
+    "calories_kcal": 535.1,
+    "protein_g": 42.3,
+    "carbs_g": 54.5,
+    "fat_g": 17.8,
+    "fiber_g": 12.2,
+    "sodium_mg": 222.4,
+    "sugar_g": 3.9,
+    "saturated_fat_g": 3.7,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 85.5,
+    "potassium_mg": 1164.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 9.7,
+    "pufa_g": 1.6,
+    "calcium_mg": 133.7,
+    "iron_mg": 3.8,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Ready-to-eat cooked farro pouch"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Ready-to-eat cooked farro pouch' — values estimated by the LLM.",
+    "Stage 4 qualifier: 'Canned artichoke hearts (in water, no-salt-added)': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 29% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 23% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 23% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 23% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\balsamic_steak_and_artichoke_farro_bowls.png",
+  "created_at": "2026-08-09T12:28:35.405217",
+  "generation_id": "a1c78eac-3507-48ae-809e-f683af0d79d7"
+}

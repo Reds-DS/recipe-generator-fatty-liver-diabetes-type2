@@ -1,0 +1,167 @@
+{
+  "id": "b533b2e6-7ec7-4af1-9064-5dd6533f9c3e",
+  "title": "Ginger-Garlic Tofu and Edamame Stir-Fry",
+  "intro": "Crisp broccoli, tender edamame, and golden tofu soak up a ginger-sesame sauce in this easy skillet meal. Combining two plant proteins provides a satisfying meatless dinner, and a microwave brown rice pouch serves as a quick base.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 9,
+  "cook_time_max_min": 13,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-firm tofu",
+      "canonical_name": "Tofu, raw, extra firm, prepared with calcium",
+      "quantity_g": 340.0,
+      "quantity_display": "12 oz (340 g)",
+      "preparation": "drained, pressed, and cubed",
+      "fdc_id": 174290,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen shelled edamame",
+      "canonical_name": "Edamame, frozen, unprepared",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": null,
+      "fdc_id": 168410,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Broccoli florets",
+      "canonical_name": "Broccoli, raw",
+      "quantity_g": 180.0,
+      "quantity_display": "2 cups (180 g)",
+      "preparation": "chopped small",
+      "fdc_id": 170379,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Microwave brown rice",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 250.0,
+      "quantity_display": "1 pouch (250 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium soy sauce",
+      "canonical_name": "Soy sauce made from soy and wheat, low sodium",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 172473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Rice vinegar",
+      "canonical_name": "Vinegar, rice",
+      "quantity_g": 22.0,
+      "quantity_display": "1.5 tbsp (22 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Water",
+      "canonical_name": "Water, tap",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 2710707,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 9.0,
+      "quantity_display": "3 cloves (9 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh ginger",
+      "canonical_name": "Ginger root, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "1 tbsp (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169231,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Toasted sesame oil",
+      "canonical_name": "Oil, sesame, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171016,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, extra virgin",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 2710186,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the low-sodium soy sauce, rice vinegar, water, garlic, ginger, and sesame oil in a small bowl.",
+    "Heat the extra-virgin olive oil in a large skillet over medium-high heat.",
+    "Add the tofu and cook for 5 to 7 minutes, stirring occasionally, until golden brown on most sides.",
+    "Stir in the broccoli and frozen edamame, and cook for 3 to 4 minutes until the broccoli turns bright green and the edamame thaws.",
+    "Pour the sauce into the skillet and cook for 1 to 2 minutes until the liquid reduces and coats the tofu and vegetables.",
+    "Warm the brown rice in the microwave according to the package instructions.",
+    "Divide the warm brown rice between plates and top with the tofu and vegetable stir-fry."
+  ],
+  "variation": "Swap the broccoli florets for chopped fresh bok choy.",
+  "conservation": "Keeps 2-3 days refrigerated; reheat in the microwave or a skillet.",
+  "nutrition_per_serving": {
+    "calories_kcal": 511.1,
+    "protein_g": 32.1,
+    "carbs_g": 48.1,
+    "fat_g": 24.1,
+    "fiber_g": 9.8,
+    "sodium_mg": 228.4,
+    "sugar_g": 5.1,
+    "saturated_fat_g": 3.5,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 1030.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 8.9,
+    "pufa_g": 6.9,
+    "calcium_mg": 581.9,
+    "iron_mg": 6.6,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.",
+    "saturated_fat_g: partial data — 15% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 15% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\ginger-garlic_tofu_and_edamame_stir-fry.png",
+  "created_at": "2026-08-09T11:24:32.501245",
+  "generation_id": "d1ce1944-2d37-487a-ae5b-877c44c5bd0a"
+}

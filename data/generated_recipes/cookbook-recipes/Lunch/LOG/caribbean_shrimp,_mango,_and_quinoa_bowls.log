@@ -1,0 +1,85 @@
+=== RECIPE LOG: Caribbean Shrimp, Mango, and Quinoa Bowls ===
+ID            : 6ed524fa-68fb-426c-94a6-c3fab1bcb6fe
+Generation ID : c28f9573-9974-47ba-b55b-d9642a7155f9
+Generated     : 2026-08-09 19:31:09
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Pre-cooked peeled shrimp
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Caribbean Shrimp, Mango, and Quinoa Bowls
+Technique       : No-cook / Assembly
+Cuisine style   : Caribbean-inspired
+Flavour profile : Bright, zesty, and naturally sweet-and-spicy
+Sketch          : Pre-cooked peeled shrimp (tail-off), Microwaveable plain quinoa pouch, No-salt-added canned black beans, Fresh or frozen mango chunks, Red bell pepper, Scallions (green onions), Fresh cilantro, Limes (for juice), Extra-virgin olive oil, Crushed red pepper flakes
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [nutrition_plausibility] The sodium is computed at 1168 mg per serving, vastly exceeding the 500 mg ceiling. Since the recipe calls f...
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] sodium 1168 mg/serving > ceiling 500 mg ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Raw peeled shrimp (tail-off)': [175179] Crustaceans, shrimp, raw has no USDA value for fiber_g (which would be summed as zero) — switched to [174210] Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture).
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+    [WARN] sodium 738.2 mg/serving > ceiling 500 mg ("light_main")
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. Two shallow, matte ceramic bowls are positioned on a rustic, aged oak tabletop, one sharp in the foreground and one slightly blurred behind it...

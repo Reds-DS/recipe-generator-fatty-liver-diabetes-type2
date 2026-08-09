@@ -1,0 +1,283 @@
+{
+  "main_ingredient": "Dark chocolate chips (≥70% cocoa)",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Sea Salt Dark Chocolate and Apricot Clusters",
+  "recipe_id": "82e08ced-a509-46c0-83e7-e61db9c59d0a",
+  "generation_id": "8e5f6504-8605-40e1-b4ea-b0ae6928830d",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:48:19.591755",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Sea Salt Dark Chocolate and Apricot Clusters",
+        "main_ingredient": "Dark chocolate chips (≥70% cocoa)",
+        "technique": "Microwave melting and rapid freezer setting",
+        "flavour_profile": "Rich, bittersweet, and salty-sweet",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Dark chocolate chips (≥70% cocoa)",
+          "Unsweetened dried apricots",
+          "Dry-roasted unsalted almonds",
+          "Dry-roasted pumpkin seeds (pepitas)",
+          "Flaky sea salt"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 190.7,
+          "protein_g": 5.0,
+          "carbs_g": 22.8,
+          "fat_g": 10.4,
+          "fiber_g": 4.1,
+          "sodium_mg": 102.0,
+          "sugar_g": 16.7,
+          "saturated_fat_g": 2.3,
+          "added_sugar_g": 1.4,
+          "cholesterol_mg": 0.2,
+          "potassium_mg": 473.2,
+          "trans_fat_g": 0.0,
+          "mufa_g": 4.9,
+          "pufa_g": 2.4,
+          "calcium_mg": 49.0,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 1,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.2,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "saturated fat 2.3 g/serving > ceiling 2 g (\"dessert\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "saturated fat 2.3 g/serving > ceiling 2 g (\"dessert\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[thirty_minute_practicality] The recipe falls easily under the 30-minute total threshold (10 min prep + 15 min freeze). However, the 10-to-15-minute freezer setting time is a 'chill' that is not declared in the time metadata. Fix by adding a 15-minute 'passive time' or 'chill time' field to account for this."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly appealing no-bake dessert that smartly utilizes dried fruit, nuts, and dark chocolate to deliver a satisfying sweet treat within strict nutritional guardrails. The minor saturated fat overage is perfectly acceptable given its whole-food sources, needing only a small metadata update to properly declare the freezer set time.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor combination. Apricot, almond, pumpkin seeds, and dark chocolate provide a balanced sweet, bitter, and nutty profile, beautifully enhanced by the flaky sea salt."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are listed in the ingredients section and used accurately in the step-by-step instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are clear and complete. Microwaving the chocolate in 15-second bursts is the correct technique to prevent scorching, and helpful visual cues ('completely smooth', 'lightly coated') are included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Aligns perfectly with the Mediterranean-American style, relying on whole foods like nuts, seeds, dried fruit, and a modest amount of dark chocolate."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Microwaving the chocolate and utilizing the freezer to quickly set the clusters are highly suitable, efficient methods for this type of no-bake dessert."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are accurate and mathematically plausible for the ingredient quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the recipe. The language ('without the sugar crash') correctly contextualizes the nutrition benefit for the target audience without crossing into banned medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It delivers a quick, satisfying candy-bar-like experience with excellent texture and flavor contrasts."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Answers to both conditions perfectly. The fiber-rich dried fruit and nuts provide quality carbohydrates for blood-sugar management, while healthy plant fats support liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sweetness responsibly comes from whole dried apricots and a minimal amount of dark chocolate, yielding just 1.4g of added sugar. The 22.8g of carbohydrate per serving is robust, high-quality, and squarely within the 14–28g target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the dessert chapter perfectly. The slight saturated fat overage (2.3g vs the 2.0g ceiling) flagged by automated checks is entirely acceptable here because it originates from nuts and 70% dark chocolate (which contains neutral stearic acid), not from dairy or tropical oils."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe falls easily under the 30-minute total threshold (10 min prep + 15 min freeze). However, the 10-to-15-minute freezer setting time is a 'chill' that is not declared in the time metadata. Fix by adding a 15-minute 'passive time' or 'chill time' field to account for this."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic plates set at a 3/4 overhead angle of 40 degrees, centered to ensure all contents are visible. Each plate holds three distinct, irregularly shaped dark chocolate and apricot clusters. The clusters have a deep, rich matte brown color from the 70% dark chocolate, with vibrant golden-orange bits of finely chopped dried apricot and tan pieces of roasted almond protruding from the hardened chocolate surface. Dark green pumpkin seeds are visible embedded within the chocolate, and each cluster is topped with a light dusting of coarse, translucent flakes of sea salt that catch the light. The depth of field is shallow, with the nearest plate perfectly sharp and the second plate slightly blurred in the background. Lighting is soft, natural side light from a window on the left, casting gentle, natural shadows. The plates rest on a rustic, aged oak wood table with visible grain and natural wear. Props include a small, rumpled linen napkin pushed to the side, a few loose, chopped almond fragments and a single stray pumpkin seed scattered naturally near the plate rim. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Not a sterile studio setup. Includes slight natural imperfections: a tiny smudge of chocolate on the plate, uneven cluster shapes, and scattered ingredients. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

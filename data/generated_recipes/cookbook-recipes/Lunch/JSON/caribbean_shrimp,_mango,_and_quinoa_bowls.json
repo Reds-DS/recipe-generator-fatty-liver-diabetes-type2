@@ -1,0 +1,155 @@
+{
+  "id": "6ed524fa-68fb-426c-94a6-c3fab1bcb6fe",
+  "title": "Caribbean Shrimp, Mango, and Quinoa Bowls",
+  "intro": "This incredibly fast bowl requires only a quick sear for the shrimp. Sweet mango balances zesty lime, mild quinoa, and hearty black beans for a refreshing, flavor-packed meal.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 3,
+  "cook_time_max_min": 4,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Raw peeled shrimp (tail-off)",
+      "canonical_name": "Crustaceans, shrimp, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": null,
+      "fdc_id": 174210,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked plain quinoa",
+      "canonical_name": "Quinoa, cooked",
+      "quantity_g": 130.0,
+      "quantity_display": "4.5 oz (130 g)",
+      "preparation": null,
+      "fdc_id": 168917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned black beans",
+      "canonical_name": "Beans, black, mature seeds, canned, low sodium",
+      "quantity_g": 130.0,
+      "quantity_display": "4.6 oz (130 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175238,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh mango",
+      "canonical_name": "Mangos, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": "diced",
+      "fdc_id": 169910,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red bell pepper",
+      "canonical_name": "Peppers, sweet, red, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": "diced",
+      "fdc_id": 170108,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Scallions",
+      "canonical_name": "Onions, spring or scallions (includes tops and bulb), raw",
+      "quantity_g": 28.0,
+      "quantity_display": "1 oz (28 g)",
+      "preparation": "thinly sliced",
+      "fdc_id": 170005,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 8.0,
+      "quantity_display": "0.3 oz (8 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Crushed red pepper flakes",
+      "canonical_name": "Spices, pepper, red or cayenne",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170932,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat half the olive oil in a nonstick skillet over medium-high heat until shimmering.",
+    "Add the shrimp and red pepper flakes, cooking for 3 to 4 minutes, flipping once, until the shrimp are pink and opaque throughout.",
+    "Remove the skillet from the heat and set aside.",
+    "Whisk the lime juice and the remaining olive oil together in a large mixing bowl.",
+    "Add the quinoa, black beans, mango, bell pepper, scallions, and cilantro to the bowl, tossing gently to coat the ingredients evenly in the dressing.",
+    "Divide the quinoa and mango salad between two shallow bowls, top with the seared shrimp, and serve immediately."
+  ],
+  "variation": "Swap the shrimp for diced boneless, skinless chicken breast.",
+  "conservation": "Keeps up to 2 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 332.6,
+    "protein_g": 23.5,
+    "carbs_g": 38.9,
+    "fat_g": 10.1,
+    "fiber_g": 8.8,
+    "sodium_mg": 738.2,
+    "sugar_g": 10.3,
+    "saturated_fat_g": 1.6,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 141.8,
+    "potassium_mg": 715.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 5.8,
+    "pufa_g": 2.0,
+    "calcium_mg": 119.2,
+    "iron_mg": 3.1,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Raw peeled shrimp (tail-off)': [175179] Crustaceans, shrimp, raw has no USDA value for fiber_g (which would be summed as zero) — switched to [174210] Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture).",
+    "sodium 738.2 mg/serving > ceiling 500 mg (\"light_main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\caribbean_shrimp,_mango,_and_quinoa_bowls.png",
+  "created_at": "2026-08-09T19:31:09.128854",
+  "generation_id": "c28f9573-9974-47ba-b55b-d9642a7155f9"
+}

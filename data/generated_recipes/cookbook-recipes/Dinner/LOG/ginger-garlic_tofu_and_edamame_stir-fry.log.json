@@ -1,0 +1,306 @@
+{
+  "main_ingredient": "Extra-firm tofu",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Ginger-Garlic Tofu and Edamame Stir-Fry",
+  "recipe_id": "b533b2e6-7ec7-4af1-9064-5dd6533f9c3e",
+  "generation_id": "d1ce1944-2d37-487a-ae5b-877c44c5bd0a",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:24:32.501245",
+  "draft_attempts": 2,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Ginger-Garlic Tofu and Edamame Stir-Fry",
+        "main_ingredient": "Extra-firm tofu",
+        "technique": "Skillet stir-fry",
+        "flavour_profile": "Umami, savory, ginger, and sesame",
+        "cuisine_style": "Asian-American",
+        "ingredients_sketch": [
+          "Extra-firm tofu",
+          "Frozen shelled edamame",
+          "Broccoli florets",
+          "Microwave brown rice pouch",
+          "Low-sodium soy sauce",
+          "Rice vinegar",
+          "Fresh ginger",
+          "Garlic",
+          "Toasted sesame oil",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 11.5g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 11.5g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.",
+        "saturated_fat_g: partial data — 15% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 15% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 511.1,
+          "protein_g": 32.1,
+          "carbs_g": 48.1,
+          "fat_g": 24.1,
+          "fiber_g": 9.8,
+          "sodium_mg": 228.4,
+          "sugar_g": 5.1,
+          "saturated_fat_g": 3.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 1030.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.9,
+          "pufa_g": 6.9,
+          "calcium_mg": 581.9,
+          "iron_mg": 6.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 1,
+        "matcher_hits": 10,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.091,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding recipe that hits every requirement. It uses smart, accessible shortcuts like microwave brown rice and frozen edamame to deliver a fast, satisfying, plant-protein-forward meal completely aligned with the dietary guidelines.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classic and balanced. Soy sauce, rice vinegar, ginger, garlic, and sesame oil create a coherent, umami-rich sauce that perfectly complements tofu and broccoli."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is accounted for in the steps, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. Cook times are provided as ranges, every step has a minimum-time check instruction, and there are clear visual cues ('golden brown', 'bright green', 'liquid reduces')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques flawlessly align with an easy Asian-American stir-fry."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet stir-frying is the ideal method for cooking extra-firm tofu and quick-cooking vegetables like broccoli."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros perfectly match the ingredients. The 32.1g of protein makes sense given the large portions of tofu and edamame."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate, and the intro provides excellent, practical context on 'stacking plant proteins' without resorting to medicalized jargon or banned claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a colorful, fast, and familiar weeknight staple that readers will actively want to cook."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nails the brief for both conditions: uses extra-virgin olive oil as the primary cooking fat, provides a high-quality whole grain, and features substantial plant protein and fiber."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the dish successfully provides a real, high-quality carbohydrate base (brown rice) that lands perfectly inside the 32-55g target window for a healthy blood-sugar response."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawlessly hits the 'Vegetable & Meatless Dinners' brief. It achieves the challenging target of >=26g protein in a vegan meal by smartly combining tofu and edamame."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. Using a microwave brown rice pouch and frozen shelled edamame are perfect, book-approved shortcuts."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte ceramic plates set on an aged oak table with a visible wood grain. The camera is positioned at a 3/4 overhead angle (40°), ensuring the full contents of both plates are visible with a shallow depth of field, keeping the primary plate in the foreground sharp while the second plate behind it is softly blurred. Soft natural light streams from a window on the left, casting gentle shadows and creating a slight sheen on the ginger-sesame glazed components. On the plates, a base of steamed brown rice is topped side-by-side with cubes of extra-firm tofu, fried to a deep golden-brown, and a vibrant mixture of bright green broccoli florets and tender edamame. The soy-ginger sauce clings to the ingredients, leaving tiny, realistic glaze droplets on the plate surface. Props include a wooden spatula resting casually beside the primary plate, a small, slightly messy ramekin containing a bit of leftover sesame-ginger sauce, and a few stray edamame beans and a tiny sliver of fresh ginger scattered naturally on the oak surface near a minor sauce drip. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the tofu. Include subtle traces of the cooking process: a crumb trail on the surface, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

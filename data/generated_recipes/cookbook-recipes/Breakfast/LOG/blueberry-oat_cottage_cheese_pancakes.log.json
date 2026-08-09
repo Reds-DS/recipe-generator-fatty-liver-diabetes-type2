@@ -1,0 +1,289 @@
+{
+  "main_ingredient": "Low-fat cottage cheese",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Blueberry-Oat Cottage Cheese Pancakes",
+  "recipe_id": "b8d8a10a-535f-4137-997c-b9bff76c7eea",
+  "generation_id": "92f48076-f53e-419c-8907-9d8a59ee4f88",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:57:07.636027",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Blueberry-Oat Cottage Cheese Pancakes",
+        "main_ingredient": "Low-fat cottage cheese",
+        "technique": "Griddling",
+        "flavour_profile": "Lightly sweet, vanilla, cinnamon",
+        "cuisine_style": "Classic American",
+        "ingredients_sketch": [
+          "Low-fat cottage cheese",
+          "Rolled oats",
+          "Large eggs",
+          "Baking powder",
+          "Ground cinnamon",
+          "Vanilla extract",
+          "Hemp hearts",
+          "Frozen blueberries",
+          "Chia seeds",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 538.7,
+          "protein_g": 34.9,
+          "carbs_g": 49.0,
+          "fat_g": 23.2,
+          "fiber_g": 10.1,
+          "sodium_mg": 338.7,
+          "sugar_g": 13.3,
+          "saturated_fat_g": 4.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 283.5,
+          "potassium_mg": 615.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.7,
+          "pufa_g": 10.1,
+          "calcium_mg": 316.3,
+          "iron_mg": 5.3,
+          "vitamin_d_mcg": 1.5,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] Almost perfect (includes ranges, checks, and great visual cues), but the skillet preheat step is missing a duration. Fix: Update step 3 to say 'Heat a large nonstick skillet over medium heat for 1 to 2 minutes and brush...'"
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An outstanding breakfast recipe that hits every nutritional and culinary target for the book. It cleverly uses cottage cheese and oats for a protein-rich base and a quick microwave chia jam to replace sugary syrups, resulting in a delicious, fully compliant meal.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Cottage cheese and oats make a mild, neutral batter that pairs perfectly with the cinnamon, vanilla, and sweet-tart blueberry jam."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly utilized in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Almost perfect (includes ranges, checks, and great visual cues), but the skillet preheat step is missing a duration. Fix: Update step 3 to say 'Heat a large nonstick skillet over medium heat for 1 to 2 minutes and brush...'"
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Classic American breakfast profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Blending oats and cottage cheese is a proven method for high-protein pancakes, and skillet-cooking them works beautifully. The microwave chia jam is an effective, fast technique."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macro values align perfectly with the ingredients. Cottage cheese, eggs, oats, and hemp hearts easily account for the high protein and fat content."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish without making any inappropriate health claims or using banned 'diet' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. The instant blueberry-chia jam is a smart, appetizing way to deliver moisture and sweetness without needing maple syrup."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of the book's nutritional philosophy: complex carbohydrates (oats), high-quality protein (eggs, cottage cheese), healthy fats (olive oil, hemp, chia), and plenty of fiber to protect both the liver and blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless. Zero added sugar (sweetness comes entirely from whole blueberries, vanilla, and cinnamon) while delivering a robust 49g of high-quality carbohydrate from the oats and fruit."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the main breakfast tier targets. Protein (34.9g) and fiber (10.1g) are well over their floors, and carbohydrates are ideally situated in the 32-55g window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Can be realistically prepped, blended, and cooked (even in batches) comfortably under the 30-minute mark. Hemp hearts and chia seeds are readily available at mainstream supermarkets like Walmart and Kroger."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is captured from a 3/4 overhead angle, ensuring all pancakes on the two plates are clearly visible with generous negative space surrounding them for circular cropping. The main pancake stack in the foreground is in sharp focus, while the second plate sits slightly blurred in the background. Lighting is soft, natural side light from a window to the left, creating subtle shadows and a gentle sheen on the warm blueberry jam. The setting is a cozy kitchen with a rustic, aged oak wood surface showing faint wear marks. Two simple, matte cream-colored ceramic plates are set on the wood. Each plate holds a small stack of three pancakes, each with a smooth, uniform, and tender golden-brown surface, slightly unevenly browned from the skillet. The pancakes are topped with a generous, thick, deep-purple blueberry and chia seed jam, with some berries still visibly bursting and whole. A few stray blueberries and a scattering of hemp hearts rest naturally on the wooden surface near the plates. A wooden spoon with a tiny bit of blueberry jam rests casually on the table. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric stack, a small drip of blueberry syrup on the plate rim, slightly uneven browning on the pancake edges. Include subtle traces of the cooking process: a few stray hemp hearts on the surface, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

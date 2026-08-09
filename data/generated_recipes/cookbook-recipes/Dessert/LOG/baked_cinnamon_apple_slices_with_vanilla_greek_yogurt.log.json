@@ -1,0 +1,285 @@
+{
+  "main_ingredient": "Fresh apples",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Baked Cinnamon Apple Slices with Vanilla Greek Yogurt",
+  "recipe_id": "723ebcf3-83d4-4eed-9b57-526d0384f63a",
+  "generation_id": "7607b9e2-6d7c-481a-95e9-7eec15566166",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:43:46.801683",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Baked Cinnamon Apple Slices with Vanilla Greek Yogurt",
+        "main_ingredient": "Fresh apples",
+        "technique": "Baking",
+        "flavour_profile": "Warm, spiced, and comforting with sweet vanilla",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Fresh apples",
+          "Ground cinnamon",
+          "Ground nutmeg",
+          "Nonfat plain Greek yogurt",
+          "Vanilla extract",
+          "Chopped pecans",
+          "Maple syrup"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "saturated_fat_g: partial data — 58% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 58% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 191.0,
+          "protein_g": 8.6,
+          "carbs_g": 25.8,
+          "fat_g": 6.0,
+          "fiber_g": 3.9,
+          "sodium_mg": 27.7,
+          "sugar_g": 19.3,
+          "saturated_fat_g": 0.6,
+          "added_sugar_g": 2.4,
+          "cholesterol_mg": 3.8,
+          "potassium_mg": 284.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.1,
+          "pufa_g": 1.6,
+          "calcium_mg": 111.5,
+          "iron_mg": 0.4,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.714,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, book-ready recipe. It elegantly handles the stringent dessert constraints by using plain Greek yogurt and vanilla extract to avoid the added sugars of commercial flavored yogurts, delivering a comforting, compliant dish within the 30-minute ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic, comforting combination of apples, cinnamon, nutmeg, maple, and pecans. The flavor profile is perfectly balanced and coherent."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly listed and properly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. The bake time provides a functional range (15 to 20 minutes) with a clear visual doneness cue ('tender and lightly browned') and a mid-point check."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Modern American dessert profile, mimicking apple pie flavors."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Baking 1/4-inch apple slices on parchment at 400°F works well. The parchment is critical here to prevent sticking since the recipe doesn't use oil to coat the apples."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are highly accurate and align perfectly with the ingredient weights."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish. The intro uses a warm, practical tone without any disallowed health or 'diet' claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, realistic weeknight dessert that feels satisfying without being overly heavy."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent adherence to the mandate. High-quality fruit carbohydrates and lean Greek yogurt protein create a dessert that respects both blood sugar and liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliant execution of the sugar constraint. By flavoring plain Greek yogurt with vanilla extract instead of using pre-sweetened commercial vanilla yogurt, the added sugar stays extremely low (2.4g) while retaining the intended flavor. The 25.8g carbohydrate load is high-quality and falls nicely into the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A perfect fit for the Desserts chapter. It easily hits all nutrient targets (protein > 4g, carbs in the 14-28g window, added sugar well under 7g) and matches the expected fruit/dairy-forward style."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Prep takes about 10 minutes, which perfectly overlaps with the oven preheating. A 15-minute bake brings this to the table right at the 25-30 minute mark. Ingredients are standard pantry staples available at any supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two small, matte white ceramic bowls placed on a rustic, aged oak wooden table with visible wood grain and small scratches. One bowl is in the sharp foreground, and the second is slightly out of focus in the background, both centered to allow for circular cropping. Camera angle is a 3/4 overhead view at 40 degrees, clearly displaying the contents. The lighting is soft, natural window light from the left, casting gentle shadows and highlighting the warm texture of the food. Inside each bowl, a base of thick, creamy, nonfat Greek yogurt is visible. Arranged neatly on top of the yogurt are tender, 1/4-inch thick apple slices that have been baked until they reach a warm, caramelized amber color with subtle golden-brown edges. The apples are coated in a light dusting of cinnamon and nutmeg, with occasional small, dark spice grains visible. A fine drizzle of maple syrup adds a natural sheen to the apple surface. The dish is finished with a rustic scattering of crunchy, toasted chopped pecans over the apples. Props include a small wooden spoon resting casually against the side of the foreground bowl and a few stray pecan fragments and a tiny dusting of cinnamon scattered on the oak surface near the bowls. Photorealistic, not AI-generated looking. The scene looks like a cozy, home-cooked dessert just finished in the kitchen. Subtle natural imperfections include an asymmetric apple placement and a tiny, realistic drip of yogurt on the bowl's edge. Warm, golden-hour color temperature. No plastic sheen, no perfect symmetry, no text, no watermarks, no hands or faces. Indistinguishable from professional editorial food photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

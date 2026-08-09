@@ -1,0 +1,282 @@
+{
+  "main_ingredient": "Medjool dates",
+  "meal_type": "dessert",
+  "chapter": "desserts",
+  "exclusions": [],
+  "recipe_title": "Almond Butter and Cocoa Stuffed Dates",
+  "recipe_id": "ffaf13bd-6aa1-4252-8475-70c0802ac44f",
+  "generation_id": "ea179af0-107b-41b8-8ff5-087eeefa216c",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:29:43.347220",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Almond Butter and Cocoa Stuffed Dates",
+        "main_ingredient": "Medjool dates",
+        "technique": "No-cook assembly",
+        "flavour_profile": "Rich, chocolaty, and sweet-salty",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Medjool dates (pitted)",
+          "natural almond butter (no added sugar)",
+          "unsweetened cocoa powder",
+          "vanilla extract",
+          "chopped walnuts",
+          "flaky sea salt"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "saturated_fat_g: partial data — 48% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 48% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 217.9,
+          "protein_g": 5.2,
+          "carbs_g": 23.2,
+          "fat_g": 13.8,
+          "fiber_g": 4.5,
+          "sodium_mg": 98.9,
+          "sugar_g": 17.0,
+          "saturated_fat_g": 1.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 349.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.9,
+          "pufa_g": 5.5,
+          "calcium_mg": 80.5,
+          "iron_mg": 1.3,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[dessert]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An outstanding, completely compliant dessert recipe that perfectly demonstrates how to satisfy a sweet tooth using whole foods. It requires no cooking, zero added sugar, and perfectly balances carbohydrates with healthy plant fats.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of dates, almond butter, cocoa, walnuts, and sea salt is a classic, highly coherent flavor profile. The bitterness of cocoa and walnuts beautifully balances the intense sweetness of the dates, enhanced by the sea salt."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions, and no unlisted ingredients appear. The prep state of the dates (pitted and halved) matches the assembly steps perfectly."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "As a no-cook recipe, heat and timing instructions are not applicable. The assembly steps are clear, concise, and easy for a beginner to follow."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stuffed dates are a traditional Mediterranean concept; filling them with almond butter and cocoa gives a recognizable, approachable American twist that fits the stated style well."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, simple assembly method is perfectly suited for these ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition aligns perfectly with the ingredient quantities. The calories, carbohydrates, fiber, and protein are accurate for two large dates paired with a tablespoon of almond butter and a tablespoon of walnuts per person."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the recipe. The intro correctly highlights the whole-fruit sweetness, fiber, and protein, using an appropriate, encouraging tone without any disallowed health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's an effortless, elegant, and satisfying dessert that feels decadent but remains entirely whole-food based."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of eating for both conditions: the dates provide a whole, fiber-rich carbohydrate, while the unsaturated fats and plant protein from the almond butter and walnuts ensure a steady blood sugar response."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balanced. Zero added sugar, with all sweetness coming from the dates. The 23.2g of carbohydrates per serving sits comfortably inside the dessert tier's 14-28g window, preventing both spikes and hypoglycemia."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawlessly fits the Dessert chapter. It hits the nutrient targets exactly, relies on fruit and nut butter as requested by the brief, and contains zero added sugar."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in under 10 minutes from a cold start. All ingredients are mainstream staples readily available in any standard US supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition is centered, shot from a 3/4 overhead angle (40-degree) to capture the volume of the stuffed dates while maintaining generous negative space around the edges. Shallow depth of field keeps the front date in sharp focus with the background softly blurred. Lighting is soft, natural side light from a window on the left, casting subtle, gentle shadows across the surface. Setting features a weathered, warm-toned dark oak wooden board with subtle wood grain. A matte ceramic plate holds the dish. Props include a small, rustic ramekin containing a smear of leftover almond-cocoa paste in the background and a few stray, irregularly chopped walnut pieces scattered naturally near the plate. The dish consists of two large, succulent, dark amber Medjool dates, halved lengthwise and laid flat, cut-side up. The cavities are generously filled with a rich, velvety dark-chocolate-colored almond butter paste. Each date is topped with unevenly scattered, crunchy brown walnut chunks pressed slightly into the filling. A light, delicate dusting of white flaky sea salt crystals glitters on the surface. The presentation is casual and homemade, not stylized. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a small smudge of cocoa-almond butter on the plate rim. Subtle traces of the process include a faint crumb trail on the wood. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional food photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

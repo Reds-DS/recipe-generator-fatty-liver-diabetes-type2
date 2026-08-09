@@ -1,0 +1,26 @@
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+# Generated books stay local, EXCEPT the delivered one below. Note the `/*` — excluding the
+# directory itself would make the negation below a no-op (git never descends into an
+# excluded directory, so a file inside it cannot be re-included).
+#
+# The negation is re-pointed at THIS book's delivered folder. Scratch/pilot books
+# (`test*`, `test-pilot`, future runs) stay ignored. If this repo is ever made public,
+# everything under the tracked folder is published — decide that deliberately.
+data/generated_recipes/*
+!data/generated_recipes/cookbook-recipes/
+data/*.db
+data/*.log
+data/batch_state/
+data/users/
+.claude/
+
+# USDA FoodData Central raw CSV bundle (downloaded separately, multi-GB)
+usda_source_data/

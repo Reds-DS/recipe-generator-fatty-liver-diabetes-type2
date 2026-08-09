@@ -1,0 +1,304 @@
+{
+  "main_ingredient": "Frozen pre-cooked shrimp",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Smoky Shrimp, Tomato, and Whole Grain Stew",
+  "recipe_id": "bda82668-0852-4270-8242-3f1b5b70ae3d",
+  "generation_id": "fa82059a-ddce-42e8-b711-9a01ab7ad421",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:19:37.653475",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Shrimp, Tomato, and Whole Grain Stew",
+        "main_ingredient": "Frozen pre-cooked shrimp",
+        "technique": "One-pot stovetop simmer",
+        "flavour_profile": "Smoky, savory, and slightly tangy",
+        "cuisine_style": "Spanish-Inspired Mediterranean",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Frozen bell pepper and onion blend",
+          "Smoked paprika",
+          "Garlic powder",
+          "No-salt-added canned diced tomatoes",
+          "Low-sodium vegetable broth",
+          "Ready-to-eat brown rice and quinoa pouch",
+          "Frozen pre-cooked shrimp",
+          "Sherry vinegar (or red wine vinegar)",
+          "Fresh parsley"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Frozen bell pepper and onion blend' — values estimated by the LLM.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "No USDA candidate for 'Frozen pre-cooked shrimp (untreated / no salt added)' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 50% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 49% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Frozen bell pepper and onion blend",
+          "Low-sodium vegetable broth",
+          "Frozen pre-cooked shrimp (untreated / no salt added)"
+        ],
+        "nutrition": {
+          "calories_kcal": 395.2,
+          "protein_g": 36.5,
+          "carbs_g": 42.5,
+          "fat_g": 9.8,
+          "fiber_g": 8.1,
+          "sodium_mg": 243.9,
+          "sugar_g": 9.6,
+          "saturated_fat_g": 1.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 586.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.0,
+          "pufa_g": 1.5,
+          "calcium_mg": 87.5,
+          "iron_mg": 2.8,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Frozen bell pepper and onion blend",
+            "Low-sodium vegetable broth",
+            "Frozen pre-cooked shrimp (untreated / no salt added)"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.7,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding recipe that perfectly meets the book's culinary and dietary criteria. It brilliantly leverages everyday convenience items (frozen vegetables, grain pouches) to deliver a sophisticated, flavorful, and compliant Spanish-inspired stew in under 20 minutes.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and highly coherent. The smoky paprika and garlic provide the warm base, while the sherry vinegar offers a necessary acidic lift to brighten the earthy grains and rich tomatoes."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are used in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough. Excellent use of time ranges, check times (e.g., '3 to 4 minutes, checking at 3 minutes'), and visual doneness cues ('softened', 'highly fragrant', 'hot and opaque'). Pulling the pot from the heat immediately to avoid rubbery shrimp is a great culinary touch."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Spanish-inspired Mediterranean style. The use of sherry vinegar, smoked paprika, tomatoes, and olive oil is classic and authentic to the region."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop simmering is the right method for a quick stew. Using pre-cooked shrimp and adding them at the very end to gently warm through prevents them from overcooking and becoming tough."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is highly plausible. The macro profile perfectly reflects a heavy vegetable base, lean shrimp protein, and a moderate portion of whole grains."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive and accurate. The intro is culinary, engaging, and devoid of banned health claims, 'detox' language, or scare tactics. It expertly focuses on the flavor swap (sherry vinegar/paprika for chorizo)."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a fast, comforting, and flavorful one-pot meal that looks great in a bowl and offers sophisticated flavors with minimal effort."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly executes the dual mandate. It uses lean protein (shrimp), a quality complex carbohydrate (brown rice and quinoa), and plenty of vegetables, anchored by heart-healthy olive oil."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, as required. The carbohydrate component (42.5 g) lands perfectly in the upper end of the 25-45 g window, supplied by high-quality whole grains and vegetables rather than refined sources."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the 'light_main' tier perfectly. At 36.5 g protein, 8.1 g fiber, and 244 mg sodium, it firmly meets the chapter targets for a substantial soup that serves as an actual meal."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 30 minutes from a cold start. The use of a frozen pepper/onion blend and a ready-to-eat grain pouch are excellent, first-class shortcuts that fit the book's everyday ingredient ethos. Thawing pre-cooked shrimp under cold water takes about 5 minutes, keeping the total time well within bounds."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The stew is presented in two simple, wide-rimmed matte ceramic bowls, centered on the surface to ensure full visibility of the contents for a 3/4 overhead perspective at 40 degrees. One bowl is in sharp focus in the foreground, with the second bowl softly blurred behind it to represent two servings. The stew features a vibrant, thick base of softened diced bell peppers and onions, with hearty brown rice and quinoa grains visibly hydrated by the rich, amber-hued tomato and vegetable broth. Plump, opaque pink shrimp are nestled amongst the grains and vegetables, not stacked, ensuring each component is distinct and recognizable. A generous scattering of bright green chopped fresh parsley adds a pop of color. Shallow depth of field, with soft natural light streaming from the left, highlighting the slight sheen of extra-virgin olive oil on the surface of the stew and the soft texture of the cooked tomatoes. The setting is a rustic, aged oak tabletop with visible wood grain. Props include a tarnished silver fork resting casually beside the front bowl, a slightly rumpled linen napkin underneath the bowl, and a few stray grains of brown rice and a single green parsley leaf scattered near the rim. A small, blurred ramekin of extra sherry vinegar sits in the background. Photorealistic, not AI-generated looking. The scene captures the warmth of a home-cooked meal, with slight natural imperfections: a tiny, realistic splash of red broth on the bowl's rim and an asymmetric distribution of ingredients. Warm, golden-hour lighting. No plastic sheen, no artificial symmetry, no text, no watermarks, no hands.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

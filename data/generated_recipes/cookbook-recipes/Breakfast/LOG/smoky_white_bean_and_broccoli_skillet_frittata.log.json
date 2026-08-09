@@ -1,0 +1,297 @@
+{
+  "main_ingredient": "Liquid egg whites and no-salt-added canned white beans",
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "exclusions": [],
+  "recipe_title": "Smoky White Bean and Broccoli Skillet Frittata",
+  "recipe_id": "f4aca2dd-8c31-46fe-8329-719107084f08",
+  "generation_id": "5c178a01-f6d7-4ade-8a21-091cfa859b67",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T18:55:17.119048",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky White Bean and Broccoli Skillet Frittata",
+        "main_ingredient": "Liquid egg whites and no-salt-added canned white beans",
+        "technique": "Stovetop-to-broiler skillet",
+        "flavour_profile": "Savory, smoky, and mildly cheesy",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Extra-virgin olive oil",
+          "Red onion",
+          "Frozen chopped broccoli",
+          "No-salt-added canned navy or cannellini beans",
+          "Whole eggs",
+          "Liquid egg whites",
+          "Smoked paprika",
+          "Sharp cheddar cheese",
+          "Fresh oranges (for serving)"
+        ],
+        "diversity_attempts": 2,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'No-salt-added canned navy beans' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned navy beans"
+        ],
+        "nutrition": {
+          "calories_kcal": 453.4,
+          "protein_g": 34.4,
+          "carbs_g": 51.1,
+          "fat_g": 13.4,
+          "fiber_g": 13.1,
+          "sodium_mg": 345.2,
+          "sugar_g": 16.9,
+          "saturated_fat_g": 3.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 192.9,
+          "potassium_mg": 751.3,
+          "trans_fat_g": 0.1,
+          "mufa_g": 6.1,
+          "pufa_g": 1.8,
+          "calcium_mg": 185.9,
+          "iron_mg": 2.0,
+          "vitamin_d_mcg": 1.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned navy beans"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, highly compliant breakfast recipe that creatively uses white beans and frozen broccoli to deliver a high-fiber, high-protein start to the day. It perfectly respects the book's nutritional targets, flavor profile requirements, and 30-minute timeframe.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory, smoky flavor profile of the frittata pairs excellently with the bright, sweet acidity of the fresh orange segments served on the side."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are perfectly matched between the ingredient list and the step-by-step instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instruction design. Time ranges, mid-point checks, and clear visual doneness cues (e.g., 'edges begin to set', 'center is fully set') are used throughout."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A skillet frittata with beans and broccoli fits the Modern American breakfast profile seamlessly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Starting the frittata on the stovetop to cook the vegetables and set the edges, then finishing it in the oven, is the ideal and standard method for this dish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macronutrient values are highly plausible and align correctly with the ingredients and quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and introduction accurately reflect the ingredients and process. The tone is warm and practical, avoiding any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing and visually pleasing recipe. Folding hearty white beans into a frittata is a clever, delicious way to boost morning fiber."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Outstanding alignment with the dual-condition goal. It limits saturated fat by diluting whole eggs with liquid whites and using just a garnish of cheese, while providing superb fiber via beans and broccoli."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect handling of carbohydrates. Zero added sugar, with a robust 51.1g of total carbs coming from extremely high-quality sources (navy beans and whole fresh oranges), fitting the target window flawlessly."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nails the breakfast chapter intent: 34g of protein and 13g of fiber easily meet the tier's minimums, ensuring a filling meal that prevents mid-morning blood sugar crashes."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fully realistic within 30 minutes. The prep is minimal thanks to frozen broccoli, and the oven preheats while the stovetop steps take place. All ingredients are easy to find at any mainstream supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte ceramic plates placed on a warm, aged oak wood table. The composition is a 3/4 overhead angle, ensuring both plates are fully visible with the foreground plate sharp and the second plate slightly blurred in the background. The dish is a rustic, thick-cut wedge of Smoky White Bean and Broccoli Frittata, served with a portion of fresh orange segments to the side. The frittata displays a golden-brown, lightly caramelized surface with bubbling, melted sharp cheddar patches. Small navy beans and flecks of emerald-green broccoli are distributed throughout the egg mixture, which has a firm but tender, slightly rustic texture. A dusting of smoky paprika gives the eggs an inviting, warm amber hue. Beside each portion, vibrant, juicy orange segments are arranged, adding a pop of bright color. Soft, natural side light from a window to the left illuminates the texture of the eggs and the glistening moisture of the orange segments. Props include a simple wooden spoon resting on the wood surface near a stray fragment of broccoli and a few scattered specks of black pepper. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning. Include subtle traces of the cooking process: a crumb trail on the surface, a small piece of broccoli on the table, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature—cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

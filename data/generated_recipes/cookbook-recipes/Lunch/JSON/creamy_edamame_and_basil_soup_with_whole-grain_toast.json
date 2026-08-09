@@ -1,0 +1,171 @@
+{
+  "id": "5f9e5016-f552-441b-978e-8269222c6676",
+  "title": "Creamy Edamame and Basil Soup with Whole-Grain Toast",
+  "intro": "Velvety and vibrant, this bright green soup transforms convenient freezer staples into a deeply savory, herb-forward bowl.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 6,
+  "cook_time_max_min": 9,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "frozen shelled edamame",
+      "canonical_name": "Edamame, frozen, prepared",
+      "quantity_g": 300.0,
+      "quantity_display": "10.5 oz (300 g)",
+      "preparation": null,
+      "fdc_id": 168410,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, low sodium, canned",
+      "quantity_g": 480.0,
+      "quantity_display": "2 cups (480 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh basil leaves",
+      "canonical_name": "Basil, fresh",
+      "quantity_g": 15.0,
+      "quantity_display": "1/2 cup (15 g)",
+      "preparation": null,
+      "fdc_id": 172232,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.5,
+      "quantity_display": "1/8 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "unsalted pumpkin seeds (pepitas)",
+      "canonical_name": "Seeds, pumpkin and squash seed kernels, dried",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 170557,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "hearty whole-grain bread",
+      "canonical_name": "Bread, whole-wheat, commercially prepared",
+      "quantity_g": 70.0,
+      "quantity_display": "2 slices (70 g)",
+      "preparation": "toasted",
+      "fdc_id": 335240,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a medium pot over medium heat until shimmering. Add the garlic and cook for 1 to 2 minutes until fragrant and softened. Check at 1 minute.",
+    "Add the frozen shelled edamame and low-sodium vegetable broth. Bring to a rolling boil over medium-high heat, then reduce the heat to low. Simmer for 5 to 7 minutes until the edamame is thoroughly heated and tender. Check at 5 minutes.",
+    "Remove the pot from the heat. Stir in the fresh baby spinach, fresh basil leaves, fresh lemon juice, salt, and black pepper until the spinach wilts from the residual heat.",
+    "Transfer the mixture carefully to a blender, or use an immersion blender directly in the pot. Blend until the soup is velvety and completely smooth.",
+    "Divide the soup between two bowls. Garnish with the unsalted pumpkin seeds and serve immediately with the whole-grain bread on the side."
+  ],
+  "variation": "Swap the pumpkin seeds for toasted slivered almonds.",
+  "conservation": "Keeps 3 days refrigerated in an airtight container; reheat gently.",
+  "nutrition_per_serving": {
+    "calories_kcal": 391.5,
+    "protein_g": 25.2,
+    "carbs_g": 33.0,
+    "fat_g": 19.7,
+    "fiber_g": 10.7,
+    "sodium_mg": 428.7,
+    "sugar_g": 6.9,
+    "saturated_fat_g": 2.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 1082.3,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.9,
+    "pufa_g": 2.9,
+    "calcium_mg": 201.0,
+    "iron_mg": 5.8,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "low-sodium vegetable broth"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.",
+    "saturated_fat_g: partial data — 31% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 87% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 49% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 49% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\creamy_edamame_and_basil_soup_with_whole-grain_toast.png",
+  "created_at": "2026-08-09T17:10:30.691172",
+  "generation_id": "80f493ff-6a84-43b4-a4cb-49172255dc87"
+}

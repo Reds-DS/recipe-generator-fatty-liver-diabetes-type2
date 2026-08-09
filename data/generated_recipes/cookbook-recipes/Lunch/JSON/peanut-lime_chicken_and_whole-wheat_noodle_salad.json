@@ -1,0 +1,145 @@
+{
+  "id": "928be940-6d24-46fa-90f0-6c363d00a656",
+  "title": "Peanut-Lime Chicken and Whole-Wheat Noodle Salad",
+  "intro": "This incredibly simple lunch relies on a no-cook dressing and quick boiling to keep prep time short. It combines whole-wheat spaghetti, lean rotisserie chicken breast, and crisp pre-shredded cabbage slaw in a tangy peanut sauce.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 10,
+  "cook_time_max_min": 12,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "100% whole-wheat spaghetti",
+      "canonical_name": "Pasta, whole wheat, dry",
+      "quantity_g": 100.0,
+      "quantity_display": "3.5 oz (100 g)",
+      "preparation": null,
+      "fdc_id": 169738,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Skinless rotisserie chicken breast",
+      "canonical_name": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": "shredded or chopped",
+      "fdc_id": 171477,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pre-shredded cabbage slaw mix",
+      "canonical_name": "Cabbage, raw",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": null,
+      "fdc_id": 169975,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "English cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 115.0,
+      "quantity_display": "4 oz (115 g)",
+      "preparation": "thinly sliced into half-moons",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Natural peanut butter",
+      "canonical_name": "Peanut butter, smooth style, without salt",
+      "quantity_g": 24.0,
+      "quantity_display": "1.5 tbsp (24 g)",
+      "preparation": "no added sugar",
+      "fdc_id": 172470,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium soy sauce",
+      "canonical_name": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 172473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 3.0,
+      "quantity_display": "1 clove (3 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red pepper flakes",
+      "canonical_name": "Spices, pepper, red or cayenne",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170932,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Bring a medium pot of water to a rolling boil over high heat.",
+    "Add the spaghetti and cook for 10 to 12 minutes, or until tender.",
+    "Drain the pasta and rinse briefly under cold water to cool it down quickly. Transfer to a large mixing bowl.",
+    "Whisk the peanut butter, lime juice, soy sauce, garlic, red pepper flakes, and 1 tablespoon of warm water in a small bowl until smooth.",
+    "Add the shredded chicken, cabbage slaw mix, and sliced cucumber to the bowl with the cooled pasta.",
+    "Pour the peanut dressing over the salad and toss well to coat all the ingredients evenly.",
+    "Divide the noodle salad between two plates and serve immediately, or pack for lunch."
+  ],
+  "variation": "Swap the chicken for shelled edamame to make it vegetarian.",
+  "conservation": "Keeps 2-3 days refrigerated; best enjoyed cold or at room temperature.",
+  "nutrition_per_serving": {
+    "calories_kcal": 428.3,
+    "protein_g": 38.1,
+    "carbs_g": 48.7,
+    "fat_g": 10.9,
+    "fiber_g": 7.9,
+    "sodium_mg": 265.0,
+    "sugar_g": 6.7,
+    "saturated_fat_g": 2.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 72.2,
+    "potassium_mg": 781.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.4,
+    "pufa_g": 2.8,
+    "calcium_mg": 83.4,
+    "iron_mg": 3.6,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "[instruction_completeness] The pasta cooking time provides a range ('10 to 12 minutes') and a doneness cue ('until tender'), but it lacks an explicit check instruction at the minimum time. Change Step 2 to: 'Add the spaghetti and cook for 10 to 12 minutes, checking at 10 minutes to see if it is tender.'"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\peanut-lime_chicken_and_whole-wheat_noodle_salad.png",
+  "created_at": "2026-08-09T17:28:03.070732",
+  "generation_id": "e5198e76-bbb9-4695-b39a-1c08cae7087a"
+}

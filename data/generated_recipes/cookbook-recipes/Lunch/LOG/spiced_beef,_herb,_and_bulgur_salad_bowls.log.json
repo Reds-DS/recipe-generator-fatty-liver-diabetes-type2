@@ -1,0 +1,290 @@
+{
+  "main_ingredient": "Lean ground beef (93% lean or higher)",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Spiced Beef, Herb, and Bulgur Salad Bowls",
+  "recipe_id": "b6904e9c-44c7-4414-b27f-1afb6a2dc7c4",
+  "generation_id": "65dbbd2a-9ab2-4c90-9a61-dd1818bd6f3a",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:22:07.211600",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Spiced Beef, Herb, and Bulgur Salad Bowls",
+        "main_ingredient": "Lean ground beef (93% lean or higher)",
+        "technique": "Stovetop sauté and no-cook assembly",
+        "flavour_profile": "Savory, herbaceous, and lemony",
+        "cuisine_style": "Middle Eastern-inspired",
+        "ingredients_sketch": [
+          "Lean ground beef (93% lean or higher)",
+          "Quick-cooking bulgur wheat",
+          "Fresh flat-leaf parsley",
+          "English cucumber",
+          "Cherry tomatoes",
+          "Fresh lemon",
+          "Ground cumin",
+          "Ground allspice",
+          "Extra-virgin olive oil",
+          "Sliced almonds"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 420.6,
+          "protein_g": 31.9,
+          "carbs_g": 37.4,
+          "fat_g": 17.4,
+          "fiber_g": 7.2,
+          "sodium_mg": 391.2,
+          "sugar_g": 4.3,
+          "saturated_fat_g": 3.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 69.8,
+          "potassium_mg": 1004.5,
+          "trans_fat_g": 0.2,
+          "mufa_g": 9.9,
+          "pufa_g": 2.3,
+          "calcium_mg": 103.2,
+          "iron_mg": 5.9,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.692,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A superb, flavorful grain bowl that perfectly balances convenience with the specific carbohydrate and saturated fat guardrails of the book. The instructions are complete, the timeline is realistic, and the Mediterranean profile is spot-on.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent flavor profile. The combination of allspice, cumin, parsley, and lemon creates a classic, cohesive Middle Eastern/Mediterranean taste that balances umami (beef), acid (lemon), and herbaceous notes perfectly."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are accounted for in the instructions, and no surprise ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough and helpful for beginners. Both cooking steps include precise time ranges, early check times, and clear visual/textural doneness cues (e.g., 'liquid is absorbed', 'no pink remains')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the stated Middle Eastern-inspired cuisine. Bulgur, abundant fresh parsley, lemon, cumin, and allspice are textbook staples for this style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Simmering quick-cooking bulgur and quickly sautéing ground beef in a skillet are highly suitable, reliable methods that will succeed within the allotted time."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition aligns perfectly with the recipe. The high protein comes from the beef and almonds, the carbohydrates from the bulgur and vegetables, and the saturated fat is kept properly under the 4g ceiling by utilizing 95% lean beef and portioned olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish. The intro highlights the main ingredients and avoids any banned health, 'detox', or 'cure' claims, focusing on culinary appeal and basic nutrition."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, fresh, and hearty grain bowl that eats like a satisfying meal rather than 'diet food'. The contrast of warm spiced beef with cool, crisp vegetables is great."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Successfully serves both conditions. It relies on a genuine whole grain (bulgur), leans on olive oil and almonds for healthy fats, includes a robust vegetable presence, and controls saturated fat tightly with extra-lean beef."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent carbohydrate quality. Bulgur delivers a substantial, slow-digesting whole grain portion bringing the carbs to an ideal 37.4g per serving, avoiding the keto trap. Added sugar is genuinely zero."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Soups & Salads' light_main tier perfectly. It functions as a substantial main-plate salad/grain bowl built with a real protein, a measured whole grain, and an in-the-bowl olive oil vinaigrette. All macros hit the chapter's tight windows."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The quick-cooking bulgur takes 10-12 minutes, during which the beef is cooked and vegetables are chopped. All ingredients are readily available at mainstream supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two salad bowls are centered and framed for a cookbook, presented at a 3/4 overhead 40-degree angle to clearly display the layered ingredients. One bowl is in the sharp foreground, the second slightly blurred behind it. Shallow depth of field with a soft bokeh background. Lighting is soft, natural side light from a window on the left, casting gentle shadows and highlighting the sheen of the lemon-olive oil dressing. Set on an aged, dark oak wood surface with subtle, authentic wear marks. Props include a single wooden spoon resting casually beside the primary bowl, a small discarded garlic skin near the edge, and a few scattered fresh flat-leaf parsley sprigs. Each matte ceramic bowl contains a base of tender, golden-hued cooked bulgur tossed with vibrant red cherry tomato halves, cool green diced English cucumber, and flecks of bright green parsley. The savory, crumbly brown ground beef, seasoned with aromatic cumin and allspice, is piled generously to one side of the bowl, distinct from the vegetable and grain mixture. The dish is finished with a scattering of toasted, crisp sliced almonds on top. Photorealistic, not AI-generated looking. The scene captures a lived-in, warm, authentic home kitchen atmosphere. Includes slight natural imperfections: an asymmetric garnish placement, a tiny trace of oil on the bowl rim, and a few stray crumbs on the wooden table. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 0,
+  "total_corrections": 0
+}

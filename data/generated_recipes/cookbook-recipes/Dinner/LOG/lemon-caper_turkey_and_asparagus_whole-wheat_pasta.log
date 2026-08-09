@@ -1,0 +1,57 @@
+=== RECIPE LOG: Lemon-Caper Turkey and Asparagus Whole-Wheat Pasta ===
+ID            : 743bd886-5ce1-449d-8ea8-5820bc8678d6
+Generation ID : c9eeb32f-cc01-48ba-82e9-d035983bf06a
+Generated     : 2026-08-09 17:37:31
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : turkey breast cutlets
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Lemon-Caper Turkey and Asparagus Whole-Wheat Pasta
+Technique       : skillet sear and quick-boil
+Cuisine style   : Mediterranean-American
+Flavour profile : bright lemon, briny capers, and garlic
+Sketch          : turkey breast cutlets, whole-wheat angel hair pasta, fresh asparagus, capers, fresh lemon, low-sodium chicken broth, garlic cloves, extra-virgin olive oil, fresh parsley
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. Composition is a 3/4 overhead shot at a 40-degree angle, showing two white matte ceramic plates placed on an aged oak wood surface. The ...

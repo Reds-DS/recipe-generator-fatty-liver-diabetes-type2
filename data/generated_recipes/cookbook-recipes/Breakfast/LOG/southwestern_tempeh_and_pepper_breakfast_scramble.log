@@ -1,0 +1,120 @@
+=== RECIPE LOG: Southwestern Tempeh and Pepper Breakfast Scramble ===
+ID            : 5cebb566-d595-48ad-8283-26d85e16d420
+Generation ID : d547ab9d-1c15-4464-95b2-2ffa0a977480
+Generated     : 2026-08-09 12:15:46
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 3
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Original tempeh
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Southwestern Tempeh and Pepper Breakfast Scramble
+Technique       : Sautéing (Skillet)
+Cuisine style   : Southwestern-inspired
+Flavour profile : Smoky, savory, and mildly spiced with a bright, fresh finish
+Sketch          : Original tempeh, Frozen bell pepper and onion blend, Cherry tomatoes, Extra-virgin olive oil, Ground cumin, Smoked paprika, Hass avocado, Fresh cilantro, 100% whole-wheat tortillas
+
+--- Draft (3 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [thirty_minute_practicality] The recipe calls for 10 oz of tempeh, but standard US tempeh is sold in 8 oz blocks. Requiring 10 oz for...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [chapter_intent_fit] The recipe significantly overshoots the breakfast ceilings for calories (665 > 540 kcal), carbohydrates (60.3 > ...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] fiber_g: partial data — 40% of recipe weight has no USDA value for it.
+  [WARN] sugar_g: partial data — 62% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] saturated fat 7.2 g/serving > ceiling 5 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] fiber_g: partial data — 29% of recipe weight has no USDA value for it.
+  [WARN] sugar_g: partial data — 51% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 60.3 g/serving > ceiling 55 g ("main")
+    [WARN] saturated fat 8.6 g/serving > ceiling 5 g ("main")
+    [WARN] 665.4 kcal/serving > high bound 540 kcal ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] fiber_g: partial data — 36% of recipe weight has no USDA value for it.
+  [WARN] sugar_g: partial data — 61% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] saturated fat 7 g/serving > ceiling 5 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, matte ceramic plates positioned side by side, centered in the frame with generous negative space for a 3/...

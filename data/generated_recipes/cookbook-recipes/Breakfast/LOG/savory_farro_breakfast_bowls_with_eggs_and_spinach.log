@@ -1,0 +1,62 @@
+=== RECIPE LOG: Savory Farro Breakfast Bowls with Eggs and Spinach ===
+ID            : 5c744381-a19c-425e-b53b-c4ed9679408e
+Generation ID : f7e3d3ce-2101-41d9-81c4-dbe6d8d339f2
+Generated     : 2026-08-09 16:39:47
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Whole Eggs and Ready-to-Eat Farro
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Savory Farro Breakfast Bowls with Eggs and Spinach
+Technique       : Skillet
+Cuisine style   : Mediterranean-American
+Flavour profile : Savory, bright, and slightly spicy
+Sketch          : Ready-to-eat cooked farro pouch, Whole eggs, Liquid egg whites, Fresh baby spinach, Cherry tomatoes, Hemp hearts, Extra-virgin olive oil, Fresh lemon, Crushed red pepper flakes
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Ready-to-eat cooked farro
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Ready-to-eat cooked farro' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 26% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 26% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] sodium 605.6 mg/serving > ceiling 550 mg ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, captured from a 3/4 overhead angle (40-degree) to showcase the volume and texture of...

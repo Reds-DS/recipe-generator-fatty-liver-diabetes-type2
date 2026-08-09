@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "Rainbow trout fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Pan-Seared Trout with Lemon-Dill Quinoa and Peas",
+  "recipe_id": "e1ce0cf2-405a-48bf-91b1-1b688cfd409d",
+  "generation_id": "bad6ebe2-9ddf-46bc-80e1-31cd7a4e7183",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:43:49.182628",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Pan-Seared Trout with Lemon-Dill Quinoa and Peas",
+        "main_ingredient": "Rainbow trout fillets",
+        "technique": "Pan-searing",
+        "flavour_profile": "Bright, herbaceous, and lemony",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Rainbow trout fillets",
+          "Ready-to-eat quinoa pouch",
+          "Frozen green peas",
+          "Fresh baby spinach",
+          "Lemon",
+          "Fresh dill",
+          "Dijon mustard",
+          "Extra-virgin olive oil",
+          "Black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 482.3,
+          "protein_g": 37.6,
+          "carbs_g": 42.7,
+          "fat_g": 18.1,
+          "fiber_g": 9.3,
+          "sodium_mg": 299.4,
+          "sugar_g": 6.7,
+          "saturated_fat_g": 3.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 75.2,
+          "potassium_mg": 1125.5,
+          "trans_fat_g": 0.1,
+          "mufa_g": 8.5,
+          "pufa_g": 4.3,
+          "calcium_mg": 128.4,
+          "iron_mg": 5.2,
+          "vitamin_d_mcg": 20.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional recipe that perfectly balances culinary appeal, practical weeknight timing, and exact adherence to the book's dietary requirements. The one-pan technique utilizing a grain pouch is smart and user-friendly.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Lemon, dill, and Dijon are classic flavor pairings for trout, and the use of the residual pan juices to flavor the quinoa is an excellent culinary choice."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are listed and utilized accurately in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are thorough, providing time ranges, doneness cues (e.g., 'skin is crisp', 'flakes easily'), and clear check times for the cook."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The pan-seared technique with warm grain salad perfectly aligns with a Modern American culinary style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet cooking the fish and using the residual heat and juices to warm the pouch quinoa and vegetables is a highly efficient, suitable one-pan method."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients accurately reflect the ingredients used, specifically the protein from the trout and complex carbohydrates from the quinoa and peas."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is precise, and the intro provides a helpful, warm framing of the pantry shortcut without resorting to any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a bright, appetizing, and highly practical weeknight meal with minimal cleanup."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers exactly what the book requires: a Mediterranean-style, vegetable-and-protein-forward plate with an olive oil base and high-quality complex carbohydrates."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugars. The carbohydrate load of 42.7g is perfectly centered in the target window, sourced from high-quality whole grains (quinoa) and legumes (peas)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter beautifully, providing a fast, easy way to get a serving of fatty fish into the weekly routine."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 20 minutes from start to finish. Using a ready-to-eat quinoa pouch is a smart, standard-supermarket shortcut that saves significant time."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is a 3/4 overhead view at a 40-degree angle, centered perfectly in the frame with generous negative space for cropping, ensuring the entire dish is visible. The scene features two matte ceramic plates set on an aged oak table with a visible wood grain. In the primary sharp plate, a golden-brown, pan-seared rainbow trout fillet with a crisp, slightly irregular skin texture rests next to a vibrant bed of quinoa, bright green peas, and just-wilted dark green baby spinach. The quinoa has a light coating of Dijon-lemon dressing that glistens under soft, natural window light from the left. A second plate is visible but softly blurred in the background. Props include a small ramekin with extra chopped fresh dill and a stainless steel fork resting on a rumpled linen napkin beside the plate. The trout shows a tender, pearly white, flaky interior. A few stray peas and a small green dill sprig are scattered naturally on the table surface. Soft, natural side lighting creates gentle shadows and highlights the moisture of the pan juices. Photorealistic, not AI-generated looking. The scene reflects a home-cooked, warm, and authentic atmosphere. Small, realistic imperfections like a tiny sauce drip on the rim, uneven browning on the trout, and slight organic scattering of the greens. No plastic sheen, no unnatural smoothness. Warm, golden-hour color temperature. No text, watermarks, hands, or faces. Indistinguishable from professional cookbook photography.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

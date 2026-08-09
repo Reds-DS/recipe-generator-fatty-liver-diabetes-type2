@@ -1,0 +1,56 @@
+=== RECIPE LOG: Broiled Cinnamon Peaches with Vanilla Ricotta Cream ===
+ID            : 21bd6147-6b35-4064-87c8-ccee5db0ae05
+Generation ID : cf114e94-7c76-4dc8-9c16-b34ed80ae09e
+Generated     : 2026-08-09 11:30:30
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 0
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Part-skim ricotta cheese
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Broiled Cinnamon Peaches with Vanilla Ricotta Cream
+Technique       : Broiling and whipping
+Cuisine style   : Mediterranean-American
+Flavour profile : Warm, spiced, creamy, naturally sweet
+Sketch          : Fresh or thawed frozen peach halves, Part-skim ricotta cheese, Vanilla extract, Ground cinnamon, Sliced almonds, Pure maple syrup
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte white ceramic dessert plates positioned on an aged, rustic oak wood table. The camera ...

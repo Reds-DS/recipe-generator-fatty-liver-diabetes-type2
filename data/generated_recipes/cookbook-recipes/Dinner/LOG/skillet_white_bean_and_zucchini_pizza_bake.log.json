@@ -1,0 +1,795 @@
+{
+  "main_ingredient": "No-salt-added canned navy beans and part-skim mozzarella",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Skillet White Bean and Zucchini Pizza Bake",
+  "recipe_id": "2aee853a-688f-4fa2-8495-0c205dd84a42",
+  "generation_id": "214e82f2-6398-45e9-89af-abe3ec0065cd",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:59:34.153733",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Skillet White Bean and Zucchini Pizza Bake",
+        "main_ingredient": "No-salt-added canned navy beans and part-skim mozzarella",
+        "technique": "Skillet simmer and broil (One-pan)",
+        "flavour_profile": "Savory, herbaceous, and cheesy with a rich tomato base",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "No-salt-added canned navy beans",
+          "Zucchini",
+          "Cremini mushrooms",
+          "No-salt-added canned crushed tomatoes",
+          "Shredded part-skim mozzarella cheese",
+          "Grated Parmesan cheese",
+          "Dried oregano",
+          "Garlic powder",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_3",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned navy beans' — values estimated by the LLM.",
+        "No USDA candidate for 'No-salt-added canned crushed tomatoes' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 58% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 58% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 58% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 58% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned navy beans",
+          "No-salt-added canned crushed tomatoes"
+        ],
+        "nutrition": {
+          "calories_kcal": 479.3,
+          "protein_g": 30.5,
+          "carbs_g": 63.7,
+          "fat_g": 13.5,
+          "fiber_g": 15.4,
+          "sodium_mg": 335.4,
+          "sugar_g": 7.8,
+          "saturated_fat_g": 5.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 22.2,
+          "potassium_mg": 689.2,
+          "trans_fat_g": 0.2,
+          "mufa_g": 5.6,
+          "pufa_g": 1.0,
+          "calcium_mg": 284.5,
+          "iron_mg": 1.2,
+          "vitamin_d_mcg": 0.2,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned navy beans",
+            "No-salt-added canned crushed tomatoes"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.778,
+        "alias_hit_rate": 0.556,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 63.7 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 63.7 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] Step 2 gives a cooking time range ('5 to 7 minutes') but lacks a specific check instruction. Add 'Check at 5 minutes' to ensure beginners do not overcook the vegetables.",
+        "[chapter_intent_fit] While it currently fits the chapter's meatless protein goals, fixing the carbohydrate overshoot by reducing the beans to one can will drop the per-serving protein below the 26 g floor. When you reduce the beans, increase the part-skim mozzarella to 3 oz (85 g) to successfully maintain the required protein target."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A highly appealing, comforting, and fiber-rich skillet dinner that smartly bridges blood sugar control and liver health. However, the drained weight for the canned beans is highly inaccurate (representing nearly two cans rather than one), which artificially drives the carbohydrates past the permissible ceiling; this must be corrected alongside a slight bump in cheese to maintain the protein floor.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic Mediterranean-American pizza flavor profile; zucchini, mushrooms, and tomatoes pair perfectly with the mild navy beans and cheese."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients appear in the instructions and are used in a logical order."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 2 gives a cooking time range ('5 to 7 minutes') but lacks a specific check instruction. Add 'Check at 5 minutes' to ensure beginners do not overcook the vegetables."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Mediterranean-American style perfectly, applying classic Italian-American pizza flavors to a wholesome vegetable and bean base."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Stovetop-to-oven in a skillet is a highly effective, standard method for a bubbly, cheesy vegetable bake."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The ingredient list specifies '17 oz (480 g)' for the canned navy beans, marked as rinsed and drained. A standard 15-oz can yields only about 1.5 cups (250 g) once drained. 480 g of drained beans requires nearly two full cans, which is confusing for the reader and skews the nutrition. Update the listing to '1 (15-oz / 425 g) can no-salt-added navy beans, rinsed and drained (about 1 1/2 cups / 250 g)'."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro accurately reflect the finished dish without using any exaggerated or banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very appetizing. It delivers comforting, cheesy flavors while sneaking in a massive amount of fiber and vegetables."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent balance. The dish uses olive oil as its primary fat, relies on high-fiber vegetables and legumes, and controls saturated fat via part-skim mozzarella."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe currently exceeds the 55 g carbohydrate ceiling (at 63.7 g), entirely due to the inflated 480 g drained weight of the navy beans. Reducing the beans to one standard 15-oz can (approx. 250 g drained) will correctly bring the carbohydrate load into the 32-55 g target window while maintaining a high-quality carb source."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "While it currently fits the chapter's meatless protein goals, fixing the carbohydrate overshoot by reducing the beans to one can will drop the per-serving protein below the 26 g floor. When you reduce the beans, increase the part-skim mozzarella to 3 oz (85 g) to successfully maintain the required protein target."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable within a 30-minute window from a cold start. The ingredients are everyday staples found in any standard supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [nutrition_plausibility] The ingredient list specifies '17 oz (480 g)' for the canned navy beans, marked as rinsed and drained. A standard 15-oz can yields only about 1.5 cups (250 g) once drained. 480 g of drained beans requires nearly two full cans, which is confusing for the reader and skews the nutrition. Update the listing to '1 (15-oz / 425 g) can no-salt-added navy beans, rinsed and drained (about 1 1/2 cups / 250 g)'.\n2. [added_sugar_and_carb_balance] The recipe currently exceeds the 55 g carbohydrate ceiling (at 63.7 g), entirely due to the inflated 480 g drained weight of the navy beans. Reducing the beans to one standard 15-oz can (approx. 250 g drained) will correctly bring the carbohydrate load into the 32-55 g target window while maintaining a high-quality carb source.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 415.2,
+          "protein_g": 25.3,
+          "carbs_g": 48.6,
+          "fat_g": 15.3,
+          "fiber_g": 17.0,
+          "sodium_mg": 370.2,
+          "sugar_g": 7.9,
+          "saturated_fat_g": 6.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 28.7,
+          "potassium_mg": 1455.8,
+          "trans_fat_g": 0.3,
+          "mufa_g": 6.2,
+          "pufa_g": 1.8,
+          "calcium_mg": 478.3,
+          "iron_mg": 4.8,
+          "vitamin_d_mcg": 0.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "protein 25.3 g/serving < floor 26 g (\"main\")",
+        "saturated fat 6 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "protein 25.3 g/serving < floor 26 g (\"main\")",
+              "saturated fat 6 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a delicious, highly appealing comfort-food recipe with excellent instructions and a great vegetable-forward base. However, the cheese quantity needs a slight reduction to bring the saturated fat down to the strict <=5g limit for the diet plan.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients combine beautifully. Zucchini, mushrooms, and navy beans make a hearty, neutral base that perfectly carries the classic pizza flavors of oregano, tomato, and mozzarella."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are listed properly and appear exactly as measured in the step-by-step instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. Cook times are provided as ranges, mid-point checks are specified, and clear visual cues ('shimmering', 'tender and lightly browned', 'bubbling', 'melted and golden brown') are given for every step."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Mediterranean-American flavor profile, relying on olive oil, herbs, tomatoes, and vegetables."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The stovetop-to-broiler skillet method is highly suitable here, ensuring the vegetables cook properly before the cheese is melted and browned on top. The instruction correctly specifies an oven-safe skillet."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition panel aligns well with the ingredients. 48.6g of carbohydrates is accurate for 15oz of beans plus vegetables and tomato sauce, and the 15g of total fat accurately reflects the olive oil and cheese."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish. The intro uses appealing, comforting language without resorting to banned health claims, and correctly highlights the high-fiber benefit of the navy beans."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, comforting, and practical weeknight dinner that cleverly answers the craving for pizza while delivering massive amounts of fiber and vegetables."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Successfully addresses both conditions: the navy beans offer slow-digesting, high-quality carbohydrates for blood sugar control, while the vegetable density and olive oil align with the liver-protective Mediterranean pattern."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Passes easily. There are zero added sugars (tomatoes provide natural sweetness) and the 48.6g of high-quality complex carbohydrates falls squarely within the target window of 32–55g."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe relies slightly too heavily on cheese, pushing the saturated fat to 6.0g (over the 5.0g ceiling for this chapter). Reduce the shredded mozzarella from 2/3 cup to 1/2 cup to bring the saturated fat within the liver-safe window. The slight protein miss (25.3g vs 26g) is an acceptable variance given the robust 17g of fiber, but the saturated fat ceiling must be respected."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 30 minutes from a cold start. The ingredients are easily found at any standard supermarket, and relying on canned no-salt-added beans and tomatoes is a perfect 30-minute practicality win."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe relies slightly too heavily on cheese, pushing the saturated fat to 6.0g (over the 5.0g ceiling for this chapter). Reduce the shredded mozzarella from 2/3 cup to 1/2 cup to bring the saturated fat within the liver-safe window. The slight protein miss (25.3g vs 26g) is an acceptable variance given the robust 17g of fiber, but the saturated fat ceiling must be respected.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 407.7,
+          "protein_g": 23.6,
+          "carbs_g": 48.4,
+          "fat_g": 15.5,
+          "fiber_g": 17.4,
+          "sodium_mg": 304.6,
+          "sugar_g": 8.5,
+          "saturated_fat_g": 5.2,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 22.2,
+          "potassium_mg": 1566.4,
+          "trans_fat_g": 0.2,
+          "mufa_g": 7.3,
+          "pufa_g": 2.0,
+          "calcium_mg": 409.1,
+          "iron_mg": 4.8,
+          "vitamin_d_mcg": 0.2,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 1.0,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "protein 23.6 g/serving < floor 26 g (\"main\")",
+        "saturated fat 5.2 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "protein 23.6 g/serving < floor 26 g (\"main\")",
+              "saturated fat 5.2 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A smart, Mediterranean-inspired meatless main that makes excellent use of fiber-rich beans as a satisfying pizza base. However, the vegetables and beans desperately need basic seasoning to avoid tasting bland, and a slight ratio tweak would easily clear the automated macronutrient warnings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe includes over 1.5 lbs of watery vegetables (zucchini, mushrooms), beans, and tomatoes, but specifies zero added salt or black pepper, relying entirely on a small amount of cheese for seasoning. This will result in a very bland, unbalanced base. Fix: Add 1/8 tsp salt and 1/4 tsp black pepper in step 3 to draw out the mushroom moisture and properly season the vegetables. This adds ~145 mg sodium per serving, keeping the total (450 mg) safely below the 550 mg chapter ceiling."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfect consistency. All nine listed ingredients appear in the step-by-step instructions exactly as expected."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are well-written, with excellent visual cues ('shimmering', 'thickens slightly', 'melted and bubbling'), solid time ranges, and the mandatory minimum check time included in step 7."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Mediterranean-American style is highly accurate, leaning on the classic combination of olive oil, zucchini, garlic, oregano, tomatoes, and mozzarella."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The stovetop-to-oven skillet method is ideal here, allowing the vegetables to sauté and the sauce to thicken before finishing with a quick cheese melt in the oven."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients accurately reflect the ingredients provided. The calories, carbohydrates, and fiber map sensibly to the beans and vegetables."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is clear and appealing, and the intro accurately describes the nutritional benefits of the high-fiber bean base without resorting to banned health or detox claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Using creamy white beans instead of a refined crust for 'pizza' flavors is a comforting, high-appeal concept that readers will genuinely want to cook on a weeknight."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent intersection dish for blood sugar and liver health: extremely high in fiber, completely plant/legume-driven, and relies on olive oil as the primary cooking fat."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly executed. Zero added sugars are present, and the robust 48.4 g of carbohydrate comes entirely from slow-digesting, high-quality whole foods (navy beans, tomatoes, vegetables) with a massive 17.4 g of fiber."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe delivers the exact character expected of the 'Vegetable & Meatless Dinners' chapter. To resolve the automated warnings without changing the dish's identity, simply increase the navy beans to 12.5 oz (pushing protein above 26g) and reduce the mozzarella to 1/3 cup (dropping saturated fat below 5g)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved within the 30-minute promise. The active prep (chopping zucchini and mushrooms) is minimal, and the brief 12-16 minutes of total cooking time fits nicely alongside the oven's background preheating time."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features a rustic, seasoned cast-iron skillet centered in the frame, containing a hearty serving of white bean and zucchini pizza bake for two people. The composition is captured at a 3/4 overhead angle, ensuring the texture of the bubbling, golden-brown melted mozzarella and parmesan layer is fully visible across the entire surface. Beneath the molten cheese, chunks of caramelized cremini mushrooms, sautéed tender zucchini, and creamy navy beans are visible, coated in a rich, rustic crushed tomato sauce. The dish is placed on a worn, weathered oak wood table. Shallow depth of field keeps the skillet sharp while the background softly blurs. Soft, natural side light from a window on the left creates subtle highlights on the bubbling cheese and oil droplets. Props include a casual, worn wooden spoon resting beside the skillet and a slightly rumpled linen napkin tucked near the base. A few scattered dried oregano flakes and a small stray piece of sautéed zucchini lie naturally on the wood surface near the skillet. The scene reflects a lived-in, warm home kitchen. Photorealistic, not AI-generated looking. The dish shows authentic signs of home cooking: slight sauce drips on the skillet rim, uneven browning of the cheese, and a rustic, non-symmetrical arrangement. Warm, golden-hour color temperature, cozy and inviting. No plastic sheen, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. The image is indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 6,
+  "total_corrections": 0
+}

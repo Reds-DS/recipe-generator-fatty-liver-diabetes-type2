@@ -1,0 +1,117 @@
+=== RECIPE LOG: Creamy Mixed Berry and Almond Smoothie Bowls ===
+ID            : 5b23380d-0e87-465f-9315-8f833f0fb8d3
+Generation ID : 0aa95306-ad25-4c98-9819-49fc2cf67919
+Generated     : 2026-08-09 17:00:24
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Silken tofu
+Meal type       : breakfast
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Creamy Mixed Berry and Almond Smoothie Bowls
+Technique       : Blending (No-cook)
+Cuisine style   : Modern American
+Flavour profile : Naturally sweet, nutty, and bright
+Sketch          : Silken tofu, Frozen mixed berries, Unsweetened soy milk, Banana, Creamy almond butter, Chia seeds, Old-fashioned rolled oats, Cinnamon
+
+--- Draft (4 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Rejected
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [cooking_method_suitability] The liquid ratio is much too high for a 'smoothie bowl' that can be eaten with a spoon. Combining 2 cups...
+    [WARN] High oil / fat amount: 24g/person (recommended at most 18g/person for a main meal).
+  [Attempt 2] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. High oil / fat amount: 24g/person (recommended at most 18g/person for a main meal).
+
+Revise the quantities so they match exact...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [cooking_method_suitability] The liquid-to-solid ratio is heavily skewed toward a drinkable, thin smoothie rather than the promised s...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] potassium_mg: partial data — 37% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] protein 24 g/serving < floor 26 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 56.4 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic bowls centered in the frame, filled with a thick, vibrant purple mixed-berry smoothie base, c...

@@ -1,0 +1,125 @@
+{
+  "id": "d5776dad-0d77-468f-b4e6-7799fe6c8fc9",
+  "title": "Hummus, Crispbread, and Vegetable Snack Plates",
+  "intro": "A balance of plant protein, healthy fats, and complex carbohydrates provides steady afternoon energy without a blood sugar spike. Plenty of fresh vegetables and whole grains deliver lasting fullness.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Store-bought traditional hummus",
+      "canonical_name": "Hummus, commercial",
+      "quantity_g": 80.0,
+      "quantity_display": "1/3 cup (80 g)",
+      "preparation": null,
+      "fdc_id": 321358,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole-grain crispbreads",
+      "canonical_name": "Crackers, crispbread, rye",
+      "quantity_g": 18.0,
+      "quantity_display": "2 slices (18 g)",
+      "preparation": null,
+      "fdc_id": 172739,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "English cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 100.0,
+      "quantity_display": "1 cup (100 g)",
+      "preparation": "sliced",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 100.0,
+      "quantity_display": "2/3 cup (100 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Raw unsalted almonds",
+      "canonical_name": "Nuts, almonds",
+      "quantity_g": 18.0,
+      "quantity_display": "2 tbsp (18 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Za'atar seasoning or dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Divide the hummus evenly between two snack plates or airtight meal-prep containers.",
+    "Arrange one crispbread slice, the prepared cucumber, cherry tomatoes, and almonds around the hummus on each plate.",
+    "Sprinkle the za'atar or oregano evenly over the hummus and the fresh vegetables.",
+    "Drizzle the lemon juice lightly over the vegetables just before serving."
+  ],
+  "variation": "Swap the almonds for raw unsalted walnuts or pumpkin seeds.",
+  "conservation": "Keeps 2 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 195.0,
+    "protein_g": 6.4,
+    "carbs_g": 19.6,
+    "fat_g": 11.6,
+    "fiber_g": 5.8,
+    "sodium_mg": 215.8,
+    "sugar_g": 2.9,
+    "saturated_fat_g": 1.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 345.2,
+    "trans_fat_g": 0.0,
+    "mufa_g": 2.6,
+    "pufa_g": 3.1,
+    "calcium_mg": 40.3,
+    "iron_mg": 1.6,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Raw unsalted almonds"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Raw unsalted almonds' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 30% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\hummus,_crispbread,_and_vegetable_snack_plates.png",
+  "created_at": "2026-08-09T18:17:24.216022",
+  "generation_id": "fb28f1f0-30c8-481f-a8c1-70f41d413b69"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "5cebb566-d595-48ad-8283-26d85e16d420",
+  "title": "Southwestern Tempeh and Pepper Breakfast Scramble",
+  "intro": "This energizing breakfast replaces eggs with hearty crumbled tempeh to keep you full well past mid-morning. Smoky cumin and paprika bring bold Southwestern flavor to the skillet without relying on heavy sauces.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 8,
+  "cook_time_max_min": 11,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen bell pepper and onion blend",
+      "canonical_name": "Peppers, sweet, green, frozen, chopped, unprepared",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": null,
+      "fdc_id": 170022,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Original tempeh",
+      "canonical_name": "Tempeh",
+      "quantity_g": 255.0,
+      "quantity_display": "9 oz (255 g)",
+      "preparation": "crumbled",
+      "fdc_id": 174272,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 113.0,
+      "quantity_display": "4 oz (113 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "100% whole-wheat tortillas",
+      "canonical_name": "Tortillas, ready-to-bake or -fry, whole wheat",
+      "quantity_g": 85.0,
+      "quantity_display": "3 oz (85 g)",
+      "preparation": null,
+      "fdc_id": 174081,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Hass avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 57.0,
+      "quantity_display": "2 oz (57 g)",
+      "preparation": "diced",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 4.0,
+      "quantity_display": "1/4 cup (4 g)",
+      "preparation": "chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the olive oil in a large nonstick skillet over medium heat until shimmering.",
+    "Add the frozen pepper and onion blend. Cook for 3 to 4 minutes, stirring occasionally, until softened and any ice has evaporated.",
+    "Stir in the crumbled tempeh, ground cumin, and smoked paprika. Cook for 4 to 5 minutes until the tempeh is browned and aromatic.",
+    "Fold in the halved cherry tomatoes. Cook for 1 to 2 minutes until they begin to soften.",
+    "Warm the whole-wheat tortillas in a dry skillet or microwave until pliable.",
+    "Divide the tempeh scramble between plates. Top with the diced avocado and chopped cilantro, and serve alongside the warm tortillas."
+  ],
+  "variation": "Swap the cherry tomatoes for a handful of baby spinach.",
+  "conservation": "Keeps 2-3 days refrigerated; reheat in a skillet over medium.",
+  "nutrition_per_serving": {
+    "calories_kcal": 516.8,
+    "protein_g": 32.3,
+    "carbs_g": 38.4,
+    "fat_g": 29.7,
+    "fiber_g": 8.4,
+    "sodium_mg": 285.9,
+    "sugar_g": 2.8,
+    "saturated_fat_g": 7.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 1025.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 13.5,
+    "pufa_g": 7.4,
+    "calcium_mg": 273.8,
+    "iron_mg": 6.2,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "fiber_g: partial data — 36% of recipe weight has no USDA value for it.",
+    "sugar_g: partial data — 61% of recipe weight has no USDA value for it.",
+    "saturated fat 7 g/serving > ceiling 5 g (\"main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\southwestern_tempeh_and_pepper_breakfast_scramble.png",
+  "created_at": "2026-08-09T12:15:46.788150",
+  "generation_id": "d547ab9d-1c15-4464-95b2-2ffa0a977480"
+}

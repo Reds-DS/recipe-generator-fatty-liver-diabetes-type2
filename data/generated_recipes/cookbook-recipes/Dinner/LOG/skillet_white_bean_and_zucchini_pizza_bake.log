@@ -1,0 +1,137 @@
+=== RECIPE LOG: Skillet White Bean and Zucchini Pizza Bake ===
+ID            : 2aee853a-688f-4fa2-8495-0c205dd84a42
+Generation ID : 214e82f2-6398-45e9-89af-abe3ec0065cd
+Generated     : 2026-08-09 17:59:34
+LLM model     : gemini-3.1-pro-preview
+Validation    : FAIL
+Warnings      : 6
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned navy beans and part-skim mozzarella
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Skillet White Bean and Zucchini Pizza Bake
+Technique       : Skillet simmer and broil (One-pan)
+Cuisine style   : Mediterranean-American
+Flavour profile : Savory, herbaceous, and cheesy with a rich tomato base
+Sketch          : No-salt-added canned navy beans, Zucchini, Cremini mushrooms, No-salt-added canned crushed tomatoes, Shredded part-skim mozzarella cheese, Grated Parmesan cheese, Dried oregano, Garlic powder, Extra-virgin olive oil
+
+--- Draft (5 attempt(s)) ---
+  [Attempt 1] Rejected
+    [WARN] Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).
+  [Attempt 2] Rejected
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).
+
+Revise the quantit...
+    [WARN] Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).
+  [Attempt 3] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. Low protein amount: 58g/person of protein-rich ingredients (expected at least 70g/person for a main meal).
+
+Revise the quantit...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [nutrition_plausibility] The ingredient list specifies '17 oz (480 g)' for the canned navy beans, marked as rinsed and drained. A sta...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [chapter_intent_fit] The recipe relies slightly too heavily on cheese, pushing the saturated fat to 6.0g (over the 5.0g ceiling for t...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : No-salt-added canned navy beans, No-salt-added canned crushed tomatoes
+  [WARN] No USDA candidate for 'No-salt-added canned navy beans' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'No-salt-added canned crushed tomatoes' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 58% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 58% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 58% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 58% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 63.7 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 qualifier: 'No-salt-added canned navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] cholesterol_mg: partial data — 27% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] protein 25.3 g/serving < floor 26 g ("main")
+    [WARN] saturated fat 6 g/serving > ceiling 5 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 qualifier: 'No-salt-added navy beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [173746] Beans, navy, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] protein 23.6 g/serving < floor 26 g ("main")
+    [WARN] saturated fat 5.2 g/serving > ceiling 5 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : failed
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features a rustic, seasoned cast-iron skillet centered in the frame, containing a hearty serving of white bean and zucchini pi...

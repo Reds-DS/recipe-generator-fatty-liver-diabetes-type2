@@ -1,0 +1,169 @@
+{
+  "id": "656848d7-f79c-4afc-b0d6-052c7088e9a4",
+  "title": "Harvest Salmon and Brown Rice Salad Bowls",
+  "intro": "Swapping heavy mayonnaise for a bright apple cider vinaigrette turns the classic Waldorf salad into a fresh grain bowl. This no-cook recipe relies on pantry staples for a simple, fiber-rich lunch.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 15,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Apple cider vinegar",
+      "canonical_name": "Vinegar, cider",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 173469,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, prepared, yellow",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 g)",
+      "preparation": null,
+      "fdc_id": 172234,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 1.5,
+      "quantity_display": "1/4 tsp (1.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Large crisp red apple",
+      "canonical_name": "Apples, raw, with skin",
+      "quantity_g": 220.0,
+      "quantity_display": "1 large (220 g)",
+      "preparation": "cored and chopped",
+      "fdc_id": 1105781,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Celery",
+      "canonical_name": "Celery, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "2 medium stalks (80 g)",
+      "preparation": "sliced",
+      "fdc_id": 169988,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked brown rice",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned pink salmon",
+      "canonical_name": "Fish, salmon, pink, canned, drained solids without bone",
+      "quantity_g": 226.0,
+      "quantity_display": "8 oz (226 g)",
+      "preparation": "drained",
+      "fdc_id": 174225,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Mixed baby greens",
+      "canonical_name": "Lettuce, spring mix",
+      "quantity_g": 120.0,
+      "quantity_display": "4 cups (120 g)",
+      "preparation": null,
+      "fdc_id": 2709789,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Walnuts",
+      "canonical_name": "Nuts, walnuts, english",
+      "quantity_g": 21.0,
+      "quantity_display": "3 tbsp (21 g)",
+      "preparation": "chopped",
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the extra-virgin olive oil, apple cider vinegar, Dijon mustard, salt, and black pepper in a large mixing bowl until smooth.",
+    "Add the chopped apple, celery, and brown rice to the vinaigrette and toss to coat the ingredients.",
+    "Flake the drained salmon with a fork, leaving some larger chunks intact.",
+    "Divide the mixed baby greens between two serving bowls.",
+    "Spoon the dressed rice, apple, and celery mixture over the greens.",
+    "Top each bowl with the flaked salmon and sprinkle with the chopped walnuts."
+  ],
+  "variation": "Swap the pink salmon for drained no-salt-added canned tuna.",
+  "conservation": "Best enjoyed right away to keep the greens crisp.",
+  "nutrition_per_serving": {
+    "calories_kcal": 468.9,
+    "protein_g": 27.1,
+    "carbs_g": 40.8,
+    "fat_g": 21.8,
+    "fiber_g": 5.9,
+    "sodium_mg": 452.7,
+    "sugar_g": 14.1,
+    "saturated_fat_g": 3.6,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 62.1,
+    "potassium_mg": 865.2,
+    "trans_fat_g": 0.0,
+    "mufa_g": 8.5,
+    "pufa_g": 8.4,
+    "calcium_mg": 300.1,
+    "iron_mg": 2.1,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "sugar_g: partial data — 26% of recipe weight has no USDA value for it.",
+    "saturated_fat_g: partial data — 26% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it.",
+    "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+    "468.9 kcal/serving > high bound 440 kcal (\"light_main\")",
+    "[chapter_intent_fit] Very close, but currently misses the fiber floor (5.9g vs 6g) and exceeds the calorie ceiling (469 kcal vs 440 kcal). Suggest reducing the walnuts to 2 tbsp (saves ~45 kcal and reduces fat) and increasing the celery to 3 stalks or adding 1 more cup of baby greens to bump the fiber just over the 6g mark."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\harvest_salmon_and_brown_rice_salad_bowls.png",
+  "created_at": "2026-08-09T17:15:45.776350",
+  "generation_id": "629a68ec-0951-4cef-9637-f99d1ad2c46d"
+}

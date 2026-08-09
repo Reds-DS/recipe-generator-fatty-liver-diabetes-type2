@@ -1,0 +1,109 @@
+=== RECIPE LOG: Raspberry and Vanilla Yogurt Chia Pudding ===
+ID            : 3544bf2b-7a4d-4c70-baca-d427514bceb7
+Generation ID : e1b42311-089c-4f74-9121-ef0420fe03f4
+Generated     : 2026-08-09 13:22:51
+LLM model     : gemini-3.1-pro-preview
+Validation    : FAIL
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Chia seeds
+Meal type       : dessert
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Raspberry and Vanilla Yogurt Chia Pudding
+Technique       : No-cook mixing
+Cuisine style   : Modern American
+Flavour profile : Creamy, fruity, and gently sweet
+Sketch          : Chia seeds, Plain nonfat Greek yogurt, Unsweetened soy milk, Vanilla extract, Pure maple syrup, Fresh raspberries, Sliced almonds
+
+--- Draft (3 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [thirty_minute_practicality] The intro promises the dessert 'sets up fast in the fridge,' but there is an undeclared wait. Chia puddi...
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [instruction_completeness] Step 3 instructs to refrigerate the pudding to hydrate the chia seeds, but fails to provide a timeframe. F...
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+    [WARN] 221.7 kcal/serving > high bound 220 kcal ("dessert")
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[dessert]] OK
+  [masld.added_sugar[dessert]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_3 ---
+Status : failed
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte-white ceramic bowls centered on an aged oak wood tabletop. The camera is at a 3/4 overhead angle to sh...

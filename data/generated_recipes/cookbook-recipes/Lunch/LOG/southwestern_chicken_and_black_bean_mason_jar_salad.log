@@ -1,0 +1,57 @@
+=== RECIPE LOG: Southwestern Chicken and Black Bean Mason Jar Salad ===
+ID            : ef00a217-86a2-4058-bc89-6256158cb701
+Generation ID : e76bfec8-428f-481d-9ffd-308f6c74efd1
+Generated     : 2026-08-09 11:12:46
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Chicken breast and black beans
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Southwestern Chicken and Black Bean Mason Jar Salad
+Technique       : No-cook / Assembly
+Cuisine style   : Southwestern
+Flavour profile : Zesty, citrusy, and herbaceous
+Sketch          : cooked chicken breast, no-salt-added canned black beans, pre-cooked plain quinoa, frozen whole kernel corn, cherry tomatoes, romaine lettuce, fresh cilantro, lime, extra-virgin olive oil, ground cumin
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two glass mason jars, one sharply in focus and the other slightly blurred behind it, displayed on a rustic, age...

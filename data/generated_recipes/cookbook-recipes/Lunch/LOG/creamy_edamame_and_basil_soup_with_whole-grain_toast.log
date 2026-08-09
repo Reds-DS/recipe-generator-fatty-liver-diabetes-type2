@@ -1,0 +1,62 @@
+=== RECIPE LOG: Creamy Edamame and Basil Soup with Whole-Grain Toast ===
+ID            : 5f9e5016-f552-441b-978e-8269222c6676
+Generation ID : 80f493ff-6a84-43b4-a4cb-49172255dc87
+Generated     : 2026-08-09 17:10:30
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 7
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Frozen shelled edamame
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Creamy Edamame and Basil Soup with Whole-Grain Toast
+Technique       : Simmer and blend
+Cuisine style   : Modern Mediterranean
+Flavour profile : Bright, herbaceous, and savory
+Sketch          : Frozen shelled edamame, Low-sodium vegetable broth, Garlic cloves, Fresh baby spinach, Fresh basil leaves, Lemon, Extra-virgin olive oil, Unsalted pumpkin seeds (pepitas), Hearty whole-grain bread
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : low-sodium vegetable broth
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] saturated_fat_g: partial data — 31% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 87% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 49% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 49% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 49% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte ceramic bowls filled with a vibrant, velvety bright green edamame and basil soup, centered a...

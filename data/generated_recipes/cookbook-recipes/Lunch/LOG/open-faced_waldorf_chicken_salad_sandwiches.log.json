@@ -1,0 +1,297 @@
+{
+  "main_ingredient": "No-salt-added canned chicken breast",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Open-Faced Waldorf Chicken Salad Sandwiches",
+  "recipe_id": "9ff2155e-bd03-4aaf-8402-d1d29b9037bb",
+  "generation_id": "88886d31-3aae-4145-a4ea-66f109741a4c",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:30:57.804911",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Open-Faced Waldorf Chicken Salad Toasts",
+        "main_ingredient": "No-salt-added canned chicken breast",
+        "technique": "No-cook / Assembly",
+        "flavour_profile": "Creamy, crunchy, and naturally sweet-and-savory",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "No-salt-added canned chicken breast",
+          "Plain nonfat Greek yogurt",
+          "Dijon mustard",
+          "Fresh lemon juice",
+          "Diced celery",
+          "Halved red grapes",
+          "Chopped walnuts",
+          "Dense whole-grain bread",
+          "Baby arugula",
+          "Black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned chicken breast' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 26% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 26% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned chicken breast"
+        ],
+        "nutrition": {
+          "calories_kcal": 490.1,
+          "protein_g": 43.4,
+          "carbs_g": 50.5,
+          "fat_g": 14.3,
+          "fiber_g": 7.1,
+          "sodium_mg": 483.8,
+          "sugar_g": 18.1,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 2.9,
+          "potassium_mg": 663.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 1.9,
+          "pufa_g": 7.9,
+          "calcium_mg": 251.6,
+          "iron_mg": 3.0,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned chicken breast"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A highly practical, no-cook lunch that perfectly balances the flavor profile of a classic Waldorf salad while effortlessly hitting all the required nutritional targets for liver and blood sugar management.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is a classic, well-balanced Waldorf: creamy yogurt, sharp Dijon and lemon, sweet grapes, and savory walnuts, offset nicely by the peppery bite of the arugula base."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the instructions, and no surprise ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook instructions are clear, properly sequenced, and cover everything a beginner needs to prep and assemble the dish."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American cafe-style lunch."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook assembly method is perfectly suited for canned chicken and fresh ingredients."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition panel aligns well with the ingredients; 43g of protein makes sense for 7oz of chicken and Greek yogurt, and the carbohydrates properly reflect the whole-grain bread and grapes."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and the intro sets realistic, appetizing expectations without making banned health claims. Calling out the fresh grapes vs. dried fruit highlights the diabetes-friendly swap gracefully."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, quick, and crunchy lunch option that feels like a treat while staying strictly on plan."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent dual-purpose design. It replaces saturated fat (mayo) with a lean protein source (yogurt) for the liver, and utilizes whole-grain complex carbs and intact fruit for steady blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Spot on. Zero added sugar (sweetness relies entirely on whole fresh grapes) and it successfully provides a robust, quality carbohydrate base (50.5g) to fuel the reader through the afternoon without risking hypoglycemia."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Lunches chapter perfectly. It's a classic open-faced sandwich that travels well if the components are kept separate until lunchtime."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in the stated 10 minutes from cold start to plate. Uses readily available supermarket staples (canned chicken, standard produce, regular yogurt)."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, captured from a 3/4 overhead angle (40°) to display the height and volume of the ingredients. The focus is sharp on the foreground sandwich, with the second plate softly blurred in the background, creating a shallow depth of field. Soft natural light flows from a window on the left, casting gentle, natural shadows across the scene. The setting features a rustic, aged oak wood tabletop with visible wood grain and faint knife marks. Two slices of dense, toasted whole-grain bread are laid flat on matte ceramic plates. Each slice is topped with a vibrant layer of fresh, peppery baby arugula, followed by a generous, rustic scoop of creamy chicken salad. The salad reveals a textured mix of tender, flaked chicken breast, crisp diced green celery, halved ruby-red grapes with glossy skins, and rough-chopped toasted walnuts, all lightly bound by a creamy Greek yogurt and Dijon dressing. A stray walnut piece and a few fallen arugula leaves rest on the wood surface near the plates. A stainless steel fork with a slight sheen rests casually on the linen napkin beside the front plate. The presentation is authentic and home-cooked, featuring a tiny, realistic drip of mustard-yogurt dressing on the rim of the plate and slightly asymmetric ingredient placement. The color palette is warm and inviting, dominated by earthy browns, deep greens, and jewel-toned reds. Photorealistic, not AI-generated looking. The scene feels lived-in and cozy, capturing the moment just after preparation. Slight natural imperfections like a crumb trail or a misplaced grape ensure an authentic, non-commercial feel. No plastic sheen, no perfect symmetry, no artificial lighting, no hands, no text.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 5,
+  "total_corrections": 0
+}

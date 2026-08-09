@@ -1,0 +1,527 @@
+{
+  "main_ingredient": "Canned skinless, boneless mackerel",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Tuscan Mackerel and White Bean Stuffed Tomatoes",
+  "recipe_id": "eebac7f8-217f-4848-9cca-8b1830838194",
+  "generation_id": "70210d51-675a-4e65-8a40-c436be2d96b7",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T20:19:20.806760",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Tuscan Mackerel and White Bean Stuffed Tomatoes",
+        "main_ingredient": "Canned skinless, boneless mackerel",
+        "technique": "No-cook / Assembly",
+        "flavour_profile": "Briny, bright, and herbaceous",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Canned skinless, boneless mackerel (in water or olive oil)",
+          "No-salt-added canned cannellini beans",
+          "Large beefsteak tomatoes",
+          "Kalamata olives",
+          "Fresh flat-leaf parsley",
+          "Lemon",
+          "Extra-virgin olive oil",
+          "Whole-wheat pita bread (for serving)"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 455.1,
+          "protein_g": 32.4,
+          "carbs_g": 51.3,
+          "fat_g": 14.8,
+          "fiber_g": 9.8,
+          "sodium_mg": 596.1,
+          "sugar_g": 7.6,
+          "saturated_fat_g": 3.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 67.2,
+          "potassium_mg": 1139.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.0,
+          "pufa_g": 2.9,
+          "calcium_mg": 309.4,
+          "iron_mg": 7.1,
+          "vitamin_d_mcg": 6.2,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 596.1 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 596.1 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] The ingredient list specifies 'hollowed' tomatoes, but beginners might not know what to do with the scooped-out tomato flesh. Add a brief note in the instructions to either discard the core/seeds or chop the usable flesh and fold it into the mackerel salad to reduce food waste."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A fresh, appealing, and well-designed Mediterranean lunch that uses excellent quality carbohydrates and healthy fats. It just needs a minor ingredient specification change (no-salt-added mackerel) to stay strictly under the required sodium ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The combination of mackerel, white beans, olives, and lemon is a classic, bright Mediterranean flavor profile that works perfectly."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are used in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The ingredient list specifies 'hollowed' tomatoes, but beginners might not know what to do with the scooped-out tomato flesh. Add a brief note in the instructions to either discard the core/seeds or chop the usable flesh and fold it into the mackerel salad to reduce food waste."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and flavors strongly align with the stated Mediterranean style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a no-cook assembly recipe, and the ingredients perfectly suit this straightforward approach."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients accurately reflect the specified ingredients and their quantities."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and are completely free of any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, fresh, and visually attractive no-cook lunch."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Provides an excellent balance of omega-3s, lean protein, healthy unsaturated fats, and high-quality complex carbohydrates from the beans, tomatoes, and whole-wheat pita."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Contains zero added sugar and delivers a robust 51.3 g of quality complex carbohydrates from the beans and pita, landing comfortably in the tier window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe exceeds the Lunch chapter's strict 550 mg sodium ceiling (hitting 596 mg). This is due to stacking salty items: standard canned mackerel, olives, and pita bread. Fix: Specify 'no-salt-added canned skinless, boneless mackerel in water' to comfortably bring the sodium within the tier's limits and prevent brand variability from spiking it further."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "At just 15 minutes of prep and assembly, this easily meets the under-30-minute promise using widely available supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe exceeds the Lunch chapter's strict 550 mg sodium ceiling (hitting 596 mg). This is due to stacking salty items: standard canned mackerel, olives, and pita bread. Fix: Specify 'no-salt-added canned skinless, boneless mackerel in water' to comfortably bring the sodium within the tier's limits and prevent brand variability from spiking it further.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned skinless boneless mackerel in water' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'No-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned skinless boneless mackerel in water"
+        ],
+        "nutrition": {
+          "calories_kcal": 515.2,
+          "protein_g": 39.5,
+          "carbs_g": 53.9,
+          "fat_g": 17.1,
+          "fiber_g": 10.1,
+          "sodium_mg": 385.1,
+          "sugar_g": 7.2,
+          "saturated_fat_g": 3.6,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 980.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.4,
+          "pufa_g": 1.7,
+          "calcium_mg": 107.0,
+          "iron_mg": 5.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned skinless boneless mackerel in water"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.889,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, zero-cook recipe that perfectly answers the book's mandate. It hits the necessary Mediterranean flavor profile, provides excellent complex carbohydrates and lean protein, and is easily achievable in 15 minutes with accessible supermarket staples.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flavors are very well balanced. The brininess of the olives, the bright acidity of the lemon and tomatoes, and the richness of the mackerel and olive oil create a classic, cohesive Mediterranean profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are clear and actionable. The direction to gently fold the mixture to avoid turning the fish to paste is an excellent culinary detail for a no-cook assembly."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Mediterranean diet style, using fish, legumes, olive oil, lemon, fresh herbs, and whole grains."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook, fresh assembly method is perfectly suited to these ingredients, creating a vibrant and textural cold lunch."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros reflect the ingredients accurately. The generous protein (39.5g) logically comes from the 8oz of mackerel plus the beans, while the carbs (53.9g) map perfectly to the 100g of pita, beans, and large tomatoes."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the main ingredients. The intro is warm, descriptive, and accurately conveys the zero-cook convenience without any banned dietary or medical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, quick, and satisfying lunch that feels elevated but takes only minutes to put together."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent execution of the book's dual-purpose spine. It supplies heart- and liver-healthy Omega-3s and monounsaturated fats alongside high-quality, blood-sugar-stabilizing complex carbohydrates and plenty of protein."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar is accurate. The carbohydrate count is perfect (53.9g against a 32-55g window), anchored solidly by high-quality whole-wheat pita and legumes to prevent hypoglycemia."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Lunches' chapter brief exactly: a no-cook, desk-friendly plate that holds up well, relies on pantry staples, and meets all nutrient-tier targets for a main lunch."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in 15 minutes. Canned mackerel, beans, and standard beefsteak tomatoes are accessible at any standard grocery store. Specifying no-salt-added cans works perfectly here to keep sodium down."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two stuffed beefsteak tomatoes are centered in the frame, angled at 3/4 overhead to showcase their volume and the vibrant filling within the hollowed cavities. The depth of field is shallow, keeping the foreground tomato crisp and the second tomato slightly softer in the background. Lighting is soft, natural side light from a window to the left, casting gentle, natural shadows and creating a subtle sheen on the olive oil-slicked mackerel mixture. The tomatoes are bright red and firm, overflowing with a rustic, textured filling of flaky, pearly-white mackerel, creamy mashed cannellini beans, dark purple chopped Kalamata olives, and flecks of vibrant green flat-leaf parsley. A few stray bits of parsley and a small smear of olive oil are visible on the matte, off-white ceramic plates. Beside the plates, several golden-brown whole-wheat pita wedges are artfully arranged, showing a slight, natural tear in the crust. The setting is an aged oak wood table with visible grain and subtle wear marks. Props include a slightly used wooden spoon resting near the pita and a small ramekin containing a bit of leftover parsley, blurred in the background. The scene reflects a home-cooked, warm meal. Photorealistic, not AI-generated looking. The arrangement is authentic, featuring slight imperfections like a small, realistic sauce drip on the plate rim and an asymmetric scatter of crumbs. No plastic sheen, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography for a high-end cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

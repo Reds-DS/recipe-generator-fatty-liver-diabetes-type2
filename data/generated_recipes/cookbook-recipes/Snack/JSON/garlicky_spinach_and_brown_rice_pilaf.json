@@ -1,0 +1,135 @@
+{
+  "id": "79646836-357e-4fed-8d58-11aed7d5eff8",
+  "title": "Garlicky Spinach and Brown Rice Pilaf",
+  "intro": "Providing steady complex carbohydrates and fiber, this quick side dish helps keep energy levels stable between meals. It transforms simple brown rice with fresh spinach, bright lemon, and crunchy walnuts into an effortless, vegetable-heavy plate.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 4,
+  "cook_time_max_min": 6,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic cloves",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked brown rice pouch",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon zest",
+      "canonical_name": "Lemon peel, raw",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 167749,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chopped walnuts",
+      "canonical_name": "Nuts, walnuts, english",
+      "quantity_g": 14.0,
+      "quantity_display": "2 tbsp (14 g)",
+      "preparation": null,
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a large skillet over medium heat until shimmering.",
+    "Add the garlic and sauté for 30 to 60 seconds until fragrant but not browned. Check at 30 seconds.",
+    "Add the baby spinach in handfuls, tossing constantly for 1 to 2 minutes until fully wilted. Check at 1 minute.",
+    "Stir in the cooked brown rice, breaking up any clumps. Cook for 2 to 3 minutes until heated through. Check at 2 minutes.",
+    "Remove the skillet from the heat.",
+    "Stir in the lemon zest, lemon juice, chopped walnuts, and black pepper.",
+    "Divide the pilaf between plates and serve warm."
+  ],
+  "variation": "Swap the chopped walnuts for toasted pine nuts or almonds.",
+  "conservation": "Keeps 2 to 3 days refrigerated; reheat in the microwave.",
+  "nutrition_per_serving": {
+    "calories_kcal": 209.0,
+    "protein_g": 5.8,
+    "carbs_g": 25.1,
+    "fat_g": 10.7,
+    "fiber_g": 3.8,
+    "sodium_mg": 71.1,
+    "sugar_g": 1.0,
+    "saturated_fat_g": 1.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 594.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.6,
+    "pufa_g": 4.3,
+    "calcium_mg": 101.6,
+    "iron_mg": 3.0,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "total carbohydrate 25.1 g/serving > ceiling 24 g (\"snack\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\garlicky_spinach_and_brown_rice_pilaf.png",
+  "created_at": "2026-08-09T13:10:18.790602",
+  "generation_id": "f9037f39-e5c5-450a-ac9f-51906af8a56f"
+}

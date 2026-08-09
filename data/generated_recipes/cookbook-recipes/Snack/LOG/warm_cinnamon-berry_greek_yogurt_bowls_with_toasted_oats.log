@@ -1,0 +1,56 @@
+=== RECIPE LOG: Warm Cinnamon-Berry Greek Yogurt Bowls with Toasted Oats ===
+ID            : 8ed109be-6c07-4cfb-b71c-b1f891f35396
+Generation ID : 550f7a3d-8870-4644-acd9-c2f0d9ccbc44
+Generated     : 2026-08-09 11:27:33
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Nonfat plain Greek yogurt
+Meal type       : snack
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Warm Cinnamon-Berry Greek Yogurt Bowls with Toasted Oats
+Technique       : Microwave and dry-toasting
+Cuisine style   : American
+Flavour profile : Sweet-tart, warmly spiced, creamy, and crunchy
+Sketch          : Nonfat plain Greek yogurt, Frozen mixed berries, Old-fashioned rolled oats, Sliced almonds, Ground cinnamon, Vanilla extract
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[snack]] OK
+  [masld.added_sugar[snack]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The two Greek yogurt bowls are positioned side-by-side in the center of the frame on an aged, rustic oak wood tabletop, with plenty of negative space ar...

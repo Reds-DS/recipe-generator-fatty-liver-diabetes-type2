@@ -1,0 +1,284 @@
+{
+  "main_ingredient": "Shaved Brussels sprouts",
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "exclusions": [],
+  "recipe_title": "Citrus and Pistachio Shaved Brussels Sprouts Slaw",
+  "recipe_id": "7aaddc3b-672e-46ae-95b4-f037c98dacf9",
+  "generation_id": "f2ebb235-05bf-479b-b359-102743a975db",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T13:06:41.908261",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Citrus and Pistachio Shaved Brussels Sprouts Slaw",
+        "main_ingredient": "Shaved Brussels sprouts",
+        "technique": "No-cook",
+        "flavour_profile": "Crisp, tangy, and brightly citrusy",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Bagged shaved Brussels sprouts",
+          "Fresh orange",
+          "Shelled pistachios",
+          "Extra-virgin olive oil",
+          "Apple cider vinegar",
+          "Dijon mustard",
+          "Black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 224.9,
+          "protein_g": 7.3,
+          "carbs_g": 21.2,
+          "fat_g": 14.3,
+          "fiber_g": 7.1,
+          "sodium_mg": 199.4,
+          "sugar_g": 9.5,
+          "saturated_fat_g": 1.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 0.0,
+          "potassium_mg": 670.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.9,
+          "pufa_g": 2.9,
+          "calcium_mg": 87.4,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 3,
+        "matcher_hits": 5,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.375,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[snack]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] There is a minor redundancy. The ingredients list specifies '1 oz (30 g) Shelled pistachios (roughly chopped)', but step 5 instructs the reader to 'Chop the pistachios roughly.' Fix: Either list them whole and have the reader chop them in step 5, or keep them chopped in the ingredients and remove step 5."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A superb, highly practical recipe that hits every nutritional and culinary target for the book. Aside from a minor instruction redundancy regarding chopping the pistachios, this no-cook slaw is ready for print.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. The bitterness of the Brussels sprouts is perfectly balanced by the sweetness and acidity of the orange and apple cider vinegar, while the olive oil and pistachios provide grounding richness."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "There is a minor redundancy. The ingredients list specifies '1 oz (30 g) Shelled pistachios (roughly chopped)', but step 5 instructs the reader to 'Chop the pistachios roughly.' Fix: Either list them whole and have the reader chop them in step 5, or keep them chopped in the ingredients and remove step 5."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are clear and practical. The cue to 'massage lightly... to soften' the Brussels sprouts is exactly what a home cook needs to know to make a raw sprout salad work."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with Modern American cuisine, where shaved Brussels sprout salads with fruit and nuts are a staple."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook method is ideal for these ingredients. Massaging the slaw is the correct technique for raw Brussels sprouts."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macro calculations are highly accurate for the stated ingredients. The calorie, carbohydrate, and fat counts perfectly reflect the oil, nuts, orange, and sprouts."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish, and the intro is practical, encouraging, and free of any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a vibrant, texturally interesting, and refreshing dish that feels elevated but takes almost no time to make."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An exemplary recipe for this dietary profile. It provides a massive 7.1g of fiber, uses heart-healthy unsaturated fats (olive oil and pistachios), and centers on whole vegetables and fruit."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly executed. Added sugar is genuinely zero, utilizing the whole fresh orange to provide all the necessary sweetness. The carbohydrate component (21.2g) sits right in the optimal window and comes entirely from high-quality, high-fiber whole foods."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Snacks & Sides' chapter nicely. While categorized as a snack (and it works as a large, filling one), it also functions beautifully as one of the simple slaws promised in the chapter's 'Sides' intro."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Extremely practical. Utilizing pre-bagged shaved Brussels sprouts is a fantastic, accessible supermarket shortcut that keeps the active time well under the 10-minute mark."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, round, matte ceramic plates positioned on a worn, rustic aged oak kitchen table. The main plate is centered and sharp in the foreground, with the second plate slightly blurred in the background. The camera angle is a 3/4 overhead view (40°) to capture the volume and texture of the slaw. Soft natural side light from a window on the left creates gentle highlights on the dressing-coated vegetables and subtle, natural shadows. The slaw consists of finely shaved, bright green Brussels sprouts, visibly massaged and tenderized, tossed with glistening, juicy orange segments that provide bright pops of amber-orange color. The surface has a realistic sheen from the olive oil and Dijon vinaigrette. Coarsely chopped green and purple-hued pistachios are sprinkled unevenly over the top, adding crunchy texture. A rumpled, neutral-toned linen napkin is tucked partially under the plate, and a few stray, bright green Brussels sprout leaves and a single piece of orange segment lie naturally on the wooden surface near the plate, suggesting a lived-in preparation. No sterile or artificial elements. Includes slight imperfections like a tiny, realistic sauce drip on the rim of the plate and a scattering of finely ground black pepper on the wood. The color temperature is warm and inviting, consistent with golden-hour kitchen light. Photorealistic, not AI-generated looking. The scene captures an authentic, home-cooked moment. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography for a high-end cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

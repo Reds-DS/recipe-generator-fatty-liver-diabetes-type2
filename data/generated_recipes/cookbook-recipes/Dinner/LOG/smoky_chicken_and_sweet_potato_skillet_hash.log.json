@@ -1,0 +1,294 @@
+{
+  "main_ingredient": "Boneless, skinless chicken thighs",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Smoky Chicken and Sweet Potato Skillet Hash",
+  "recipe_id": "c83bd748-620f-4000-9563-2c74935aa839",
+  "generation_id": "6b8b66e0-763a-442d-ab9f-cbc5a27cebf9",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T12:38:25.846786",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smoky Chicken and Sweet Potato Skillet Hash",
+        "main_ingredient": "Boneless, skinless chicken thighs",
+        "technique": "One-skillet sauté and steam",
+        "flavour_profile": "Smoky, earthy, and lightly tangy",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Boneless, skinless chicken thighs",
+          "Sweet potatoes",
+          "Bagged chopped kale",
+          "Red onion",
+          "Low-sodium chicken broth",
+          "Apple cider vinegar",
+          "Smoked paprika",
+          "Extra-virgin olive oil",
+          "Raw pumpkin seeds (pepitas)"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 507.1,
+          "protein_g": 41.5,
+          "carbs_g": 42.1,
+          "fat_g": 19.6,
+          "fiber_g": 8.7,
+          "sodium_mg": 584.8,
+          "sugar_g": 9.4,
+          "saturated_fat_g": 3.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 159.8,
+          "potassium_mg": 1345.7,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.3,
+          "pufa_g": 4.7,
+          "calcium_mg": 207.9,
+          "iron_mg": 4.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 6,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 584.8 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 584.8 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] Mostly on-brief for the main dinner chapter, but the automated check flags it as slightly overshooting the strict 550 mg sodium ceiling (hitting ~585 mg). Reduce the added salt from 1/4 tsp to 1/8 tsp to cleanly clear the gate; the dish will remain plenty savory thanks to the smoked paprika, broth, and vinegar."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, expertly crafted weeknight skillet recipe that perfectly embraces the book's dietary philosophy. A minor reduction in the added salt will bring it safely within the chapter's strict sodium ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is well-balanced and cohesive. The smoky spices pair beautifully with the natural sweetness of the sweet potato, while the apple cider vinegar provides essential acidity to cut through the richness of the chicken thighs and earthy kale."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used logically in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Cook times are provided as ranges, visual doneness cues are clear (e.g., 'moisture has mostly evaporated'), and the crucial check at the minimum steaming time is explicitly stated."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques perfectly match the Modern American profile, delivering a classic skillet hash."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Using a covered skillet to steam the sweet potatoes in a splash of broth after browning the chicken is a highly effective method to ensure everything cooks quickly and evenly in one pan without burning."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros perfectly align with the ingredients and quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is appetizing and accurate, and the intro provides a warm, practical framing without relying on any banned health claims or diet buzzwords."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, vibrant, and highly satisfying weeknight dinner that readers will likely add to their regular rotation."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Beautifully fulfills the dual mandate: appropriate protein (chicken thighs), a high-quality complex carbohydrate base (sweet potatoes), plenty of fiber-rich non-starchy vegetables (kale), and unsaturated fats (olive oil, pumpkin seeds)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Provides an ideal 42g of high-quality carbohydrates per serving from whole sweet potatoes, with excellent fiber (8.7g) and absolutely zero added sugar."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Mostly on-brief for the main dinner chapter, but the automated check flags it as slightly overshooting the strict 550 mg sodium ceiling (hitting ~585 mg). Reduce the added salt from 1/4 tsp to 1/8 tsp to cleanly clear the gate; the dish will remain plenty savory thanks to the smoked paprika, broth, and vinegar."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The prep relies on quick, straightforward chopping, the ingredients are common supermarket staples, and there are no hidden time sinks."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two simple, matte ceramic plates filled with the Smoky Chicken and Sweet Potato Skillet Hash, positioned at a 3/4 overhead angle to showcase the full volume of the hash. One plate is in sharp focus in the foreground, with the second plate slightly blurred in the background. The hash is a rustic, integrated mix of tender, golden-browned sweet potato cubes, bite-sized cubes of sautéed chicken thighs showing slight char, finely diced translucent red onion, and ribbons of dark, wilted kale. The components are thoroughly tossed together in a hearty, authentic jumble, topped with a generous sprinkle of raw green pumpkin seeds. The scene is lit by soft, natural side light from a nearby window, creating a subtle sheen on the oil-coated surfaces and soft, natural shadows. The plates sit on an aged, warm oak wood table with visible grain and small nicks. Props include a casual wooden spoon resting on the surface next to the plates and a small, rumpled linen napkin partially tucked beneath one plate. A few scattered fallen pumpkin seeds and a stray bit of kale leaf sit naturally on the wood. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric heap of hash on the plate, a small, accidental sauce drip on the rim, and slightly uneven browning on the sweet potatoes. Include subtle traces of the cooking process: a few microscopic spice grains on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

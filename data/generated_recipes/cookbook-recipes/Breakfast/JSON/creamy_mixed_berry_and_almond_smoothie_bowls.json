@@ -1,0 +1,132 @@
+{
+  "id": "5b23380d-0e87-465f-9315-8f833f0fb8d3",
+  "title": "Creamy Mixed Berry and Almond Smoothie Bowls",
+  "intro": "This simple no-cook breakfast requires only a quick blitz in the blender. Silken tofu, frozen berries, and creamy almond butter combine into a remarkably thick base that keeps hunger away until lunch.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Silken tofu",
+      "canonical_name": "Tofu, silken, firm",
+      "quantity_g": 450.0,
+      "quantity_display": "16 oz (450 g)",
+      "preparation": "drained",
+      "fdc_id": 172461,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unsweetened soy milk",
+      "canonical_name": "Soymilk (all flavors), unsweetened, with added calcium, vitamins A and D",
+      "quantity_g": 180.0,
+      "quantity_display": "3/4 cup (180 ml)",
+      "preparation": null,
+      "fdc_id": 175215,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen mixed berries",
+      "canonical_name": "Berries, mixed, frozen",
+      "quantity_g": 280.0,
+      "quantity_display": "2 cups (280 g)",
+      "preparation": null,
+      "fdc_id": 2709271,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Banana",
+      "canonical_name": "Bananas, raw",
+      "quantity_g": 118.0,
+      "quantity_display": "1 medium (118 g)",
+      "preparation": "peeled and broken into pieces",
+      "fdc_id": 173944,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Creamy almond butter",
+      "canonical_name": "Nuts, almond butter, plain, without salt added",
+      "quantity_g": 32.0,
+      "quantity_display": "2 tbsp (32 g)",
+      "preparation": null,
+      "fdc_id": 168588,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chia seeds",
+      "canonical_name": "Seeds, chia seeds, dried",
+      "quantity_g": 24.0,
+      "quantity_display": "2 tbsp (24 g)",
+      "preparation": null,
+      "fdc_id": 2707590,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Old-fashioned rolled oats",
+      "canonical_name": "Oats, raw",
+      "quantity_g": 40.0,
+      "quantity_display": "1/2 cup (40 g)",
+      "preparation": null,
+      "fdc_id": 2708489,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cinnamon",
+      "canonical_name": "Spices, cinnamon, ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171320,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place the drained silken tofu, unsweetened soy milk, frozen mixed berries, banana, creamy almond butter, chia seeds, rolled oats, and cinnamon into a high-speed blender.",
+    "Blend on low speed to incorporate the dry and frozen ingredients into the liquids.",
+    "Increase the speed to high and blend until completely smooth and remarkably thick, stopping once or twice to scrape down the sides or use a blender tamper as needed.",
+    "Divide the thick mixture evenly between two bowls and serve immediately."
+  ],
+  "variation": "Swap the creamy almond butter for unsweetened natural peanut butter.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 516.9,
+    "protein_g": 27.7,
+    "carbs_g": 56.4,
+    "fat_g": 21.9,
+    "fiber_g": 13.1,
+    "sodium_mg": 119.2,
+    "sugar_g": 20.2,
+    "saturated_fat_g": 2.5,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 1192.0,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.5,
+    "pufa_g": 9.8,
+    "calcium_mg": 355.6,
+    "iron_mg": 5.7,
+    "vitamin_d_mcg": 1.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "total carbohydrate 56.4 g/serving > ceiling 55 g (\"main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\creamy_mixed_berry_and_almond_smoothie_bowls.png",
+  "created_at": "2026-08-09T17:00:24.027515",
+  "generation_id": "0aa95306-ad25-4c98-9819-49fc2cf67919"
+}

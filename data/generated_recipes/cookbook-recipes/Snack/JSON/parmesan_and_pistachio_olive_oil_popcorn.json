@@ -1,0 +1,137 @@
+{
+  "id": "f68c6e6e-3d91-467b-9e63-15c99aaf98c1",
+  "title": "Parmesan and Pistachio Olive Oil Popcorn",
+  "intro": "Bringing Mediterranean ingredients to a movie-night classic turns a simple whole grain into a savory, fiber-rich snack. Popping the corn in olive oil and tossing it with crushed pistachios delivers a satisfying crunch that supports steady blood sugar.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 3,
+  "cook_time_max_min": 5,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Shelled pistachios",
+      "canonical_name": "Nuts, pistachio nuts, dry roasted, without salt added",
+      "quantity_g": 30.0,
+      "quantity_display": "1/4 cup (30 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 170185,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, extra virgin",
+      "quantity_g": 9.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 2710186,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Popcorn kernels",
+      "canonical_name": "Snacks, popcorn, unpopped",
+      "quantity_g": 50.0,
+      "quantity_display": "1/4 cup (50 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Grated parmesan cheese",
+      "canonical_name": "Cheese, parmesan, grated",
+      "quantity_g": 15.0,
+      "quantity_display": "3 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 171247,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 2.0,
+      "quantity_display": "1/2 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried thyme",
+      "canonical_name": "Spices, thyme, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170938,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the extra-virgin olive oil in a large pot with a tight-fitting lid over medium-high heat. Drop in the test popcorn kernels.",
+    "Add the remaining popcorn kernels when the test kernels pop. Cover the pot and remove from the heat for 30 seconds to equalize the temperature.",
+    "Return the pot to medium heat.",
+    "Shake the pot continuously as the corn pops for 2 to 4 minutes. Check the progress at 2 minutes, and stop shaking when the popping slows to one pop every 2 to 3 seconds.",
+    "Remove the pot from the heat immediately. Add the chopped pistachios, grated parmesan cheese, garlic powder, dried thyme, and black pepper directly into the hot pot.",
+    "Toss the mixture well so the residual heat warms the nuts and helps the cheese stick.",
+    "Transfer the popcorn to a large bowl and serve warm."
+  ],
+  "variation": "Trade the dried thyme for a pinch of smoked paprika.",
+  "conservation": "Best enjoyed right away; does not keep.",
+  "nutrition_per_serving": {
+    "calories_kcal": 255.0,
+    "protein_g": 7.9,
+    "carbs_g": 25.2,
+    "fat_g": 14.7,
+    "fiber_g": 5.6,
+    "sodium_mg": 138.5,
+    "sugar_g": 1.4,
+    "saturated_fat_g": 2.9,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 6.5,
+    "potassium_mg": 187.2,
+    "trans_fat_g": 0.1,
+    "mufa_g": 7.3,
+    "pufa_g": 2.5,
+    "calcium_mg": 92.5,
+    "iron_mg": 1.4,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Popcorn kernels"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [2710186] Olive oil.",
+    "No USDA candidate for 'Popcorn kernels' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 46% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 46% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 46% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 46% of recipe weight has no USDA value for it.",
+    "total carbohydrate 25.2 g/serving > ceiling 24 g (\"snack\")",
+    "saturated fat 2.9 g/serving > ceiling 2 g (\"snack\")",
+    "255 kcal/serving > high bound 230 kcal (\"snack\")",
+    "[cooking_method_suitability] Tossing dry spices and grated cheese directly onto hot, essentially dry popped corn (since the 2 tsp of oil is absorbed during popping) means the flavorings will fall to the bottom of the bowl. Fix: Add an instruction to lightly mist the popped corn with olive oil spray (or drizzle a tiny bit of reserved oil) immediately before tossing so the cheese and spices stick.",
+    "[chapter_intent_fit] The recipe slightly overshoots three strict snack-tier ceilings: saturated fat (2.9g vs 2.0g ceiling), carbohydrates (25.2g vs 24g ceiling), and calories (255 vs 230 ceiling). Fix: Reduce the popcorn kernels from 1/4 cup to 3 tablespoons, and reduce the Parmesan cheese from 3 tablespoons to 1.5 or 2 tablespoons to bring all three values into compliance."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\parmesan_and_pistachio_olive_oil_popcorn.png",
+  "created_at": "2026-08-09T19:22:48.135014",
+  "generation_id": "25d45976-6fb6-4687-8a45-e0be35ae05fc"
+}

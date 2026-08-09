@@ -1,0 +1,556 @@
+{
+  "main_ingredient": "Boneless pork loin chops",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Skillet Pork Chops with Apple, Squash, and Farro",
+  "recipe_id": "d6318749-70f0-4f36-9c54-763d5a7d7eb8",
+  "generation_id": "688ca8e1-3066-48ba-9d5f-fa993b774769",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T17:41:40.631484",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Skillet Pork Chops with Apple, Squash, and Farro",
+        "main_ingredient": "Boneless pork loin chops",
+        "technique": "One-Skillet Pan-Sear",
+        "flavour_profile": "Savory-sweet, earthy, and slightly tangy",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Boneless pork loin chops",
+          "Microwaveable farro pouch",
+          "Frozen butternut squash chunks",
+          "Crisp apple (e.g., Fuji or Gala)",
+          "Fresh baby spinach",
+          "Apple cider vinegar",
+          "Dijon mustard",
+          "Fresh sage",
+          "Extra-virgin olive oil",
+          "Garlic powder"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Dijon mustard' — values estimated by the LLM.",
+        "No USDA candidate for 'Fresh sage' — values estimated by the LLM.",
+        "No USDA candidate for 'Ready-to-eat cooked farro pouch' — values estimated by the LLM.",
+        "saturated_fat_g: partial data — 21% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 42% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 21% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 21% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 21% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Dijon mustard",
+          "Fresh sage",
+          "Ready-to-eat cooked farro pouch"
+        ],
+        "nutrition": {
+          "calories_kcal": 520.8,
+          "protein_g": 45.4,
+          "carbs_g": 58.0,
+          "fat_g": 13.5,
+          "fiber_g": 7.7,
+          "sodium_mg": 725.5,
+          "sugar_g": 12.0,
+          "saturated_fat_g": 2.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 84.0,
+          "potassium_mg": 1092.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.6,
+          "pufa_g": 1.3,
+          "calcium_mg": 68.5,
+          "iron_mg": 2.2,
+          "vitamin_d_mcg": 0.9,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Dijon mustard",
+            "Fresh sage",
+            "Ready-to-eat cooked farro pouch"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.769,
+        "alias_hit_rate": 0.538,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "llm_estimate",
+          "llm_estimate",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 58 g/serving > ceiling 55 g (\"main\")",
+        "sodium 725.5 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 58 g/serving > ceiling 55 g (\"main\")",
+              "sodium 725.5 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A comforting, well-designed skillet meal that successfully leverages smart shortcuts to hit the 30-minute promise. However, minor adjustments to the added salt and farro quantities are required to meet the chapter's strict sodium and carbohydrate ceilings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is highly coherent, relying on classic autumnal pairings. The Dijon mustard and apple cider vinegar provide essential acidity to balance the natural sweetness of the apple and butternut squash."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the instructions, and no surprise ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are well-written, providing accurate cook time ranges, a halfway check for the squash, and clear visual and textural doneness cues."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe perfectly aligns with a Modern American profile, utilizing a familiar mix of pork, orchard fruit, and hearty grains."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The skillet searing followed by a covered simmer works perfectly to brown the meat and then steam-cook the frozen squash and fresh apples evenly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values are plausible. The high sodium count makes sense given the combination of added salt, Dijon mustard, and potentially seasoned broth/farro."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately describes the dish, and the intro sets realistic expectations for a quick, one-pan weeknight meal without relying on any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe sounds delicious and comforting. It offers excellent texture contrast between the soft squash, chewy farro, crisp-tender apple, and wilted spinach."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of eating for both conditions simultaneously. It utilizes lean pork, olive oil, a high-quality whole grain, and plenty of produce rather than relying on heavy sauces or refined carbs."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sweetness comes entirely from whole fruit and vegetables (apple and squash), and the recipe features a robust, high-quality complex carbohydrate base in the farro."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe overshoots the chapter's sodium ceiling (726mg vs 550mg max) and slightly exceeds the carbohydrate ceiling (58g vs 55g max). Fix: Reduce the added salt in the seasoning step from 1/4 tsp to 1/8 tsp (relying on the Dijon for savory punch), and specify 'unseasoned' for the farro pouch while reducing its volume slightly from 7 oz to 5.5 oz to bring carbohydrates back into the target window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "With the smart use of frozen squash and a ready-to-eat farro pouch, prep is minimal. This easily hits the table in under 30 minutes from a cold start, and all ingredients are simple to find."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe overshoots the chapter's sodium ceiling (726mg vs 550mg max) and slightly exceeds the carbohydrate ceiling (58g vs 55g max). Fix: Reduce the added salt in the seasoning step from 1/4 tsp to 1/8 tsp (relying on the Dijon for savory punch), and specify 'unseasoned' for the farro pouch while reducing its volume slightly from 7 oz to 5.5 oz to bring carbohydrates back into the target window.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'fresh sage' — values estimated by the LLM.",
+        "No USDA candidate for 'unseasoned ready-to-eat cooked farro' — values estimated by the LLM.",
+        "saturated_fat_g: partial data — 21% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 39% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 16% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "fresh sage",
+          "unseasoned ready-to-eat cooked farro"
+        ],
+        "nutrition": {
+          "calories_kcal": 509.5,
+          "protein_g": 38.3,
+          "carbs_g": 50.4,
+          "fat_g": 17.7,
+          "fiber_g": 7.4,
+          "sodium_mg": 390.7,
+          "sugar_g": 13.0,
+          "saturated_fat_g": 4.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 77.8,
+          "potassium_mg": 1130.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.5,
+          "pufa_g": 1.9,
+          "calcium_mg": 70.5,
+          "iron_mg": 2.7,
+          "vitamin_d_mcg": 0.8,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "fresh sage",
+            "unseasoned ready-to-eat cooked farro"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.833,
+        "alias_hit_rate": 0.583,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] The instructions provide good visual cues ('golden brown'), but for lean pork chops, adding an internal temperature cue of 145°F in step 2 is highly recommended to prevent overcooking and drying out the meat.",
+        "[thirty_minute_practicality] The recipe genuinely finishes in under 30 minutes, and using pouch farro is a fantastic, approved shortcut. However, the declared cook time of 11 minutes is mathematically incorrect; the cooking steps (4-5 min per side for pork, plus squash, sauce, and finishing) add up to 15-20 minutes. Update the metadata cook time to 18 minutes."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, highly flavorful recipe that beautifully balances lean protein, whole grains, and produce while keeping both type 2 diabetes and MASLD guidelines in mind. A minor fix to the cook time math and the addition of a temperature doneness cue for the pork will make it perfect.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Pork, apple, sage, and squash paired with a mustard-vinegar pan sauce is a classic, highly coherent, and balanced savory-sweet flavor profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every ingredient listed is properly utilized in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The instructions provide good visual cues ('golden brown'), but for lean pork chops, adding an internal temperature cue of 145°F in step 2 is highly recommended to prevent overcooking and drying out the meat."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Matches the Modern American style perfectly with its classic harvest ingredients (apples, butternut squash, sage, pork)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet searing the pork and using the resulting fond to build a quick pan sauce for the vegetables and grains is a textbook, highly effective cooking method."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition aligns perfectly with the ingredients. Lean pork loin, pouch farro, and minimal olive oil keep the saturated fat and calories nicely in check."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate, and the intro highlights the dietary benefits (fiber, blood sugar) well without using any banned health claims or buzzwords."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, comforting, and nutrient-dense weeknight dinner that uses accessible flavors beautifully."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly answers the brief: features lean protein (pork loin), healthy whole grains (farro), plenty of produce (spinach, squash, apple), and olive oil instead of butter for the sauce."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with natural sweetness elegantly provided by the apple and squash. Carbohydrates are anchored by a high-quality whole grain (farro) and hit the tier window perfectly."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Lean Meat Dinners' chapter perfectly as a one-pan meal with a measured lean cut and a sauce built from vinegar, broth, and mustard rather than heavy cream."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe genuinely finishes in under 30 minutes, and using pouch farro is a fantastic, approved shortcut. However, the declared cook time of 11 minutes is mathematically incorrect; the cooking steps (4-5 min per side for pork, plus squash, sauce, and finishing) add up to 15-20 minutes. Update the metadata cook time to 18 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two white matte ceramic plates placed side-by-side on an aged oak wood surface with visible grain and small nicks. The camera angle is a 3/4 overhead view at 40 degrees, ensuring all ingredients on both plates are fully visible and clear. The main foreground plate shows a tender, golden-brown seared pork loin chop placed next to a generous portion of colorful, rustic sides. The pork has a slightly caramelized, dark-brown crust with visible seasoning flecks. Alongside the pork, there is a hearty mix of soft-roasted amber butternut squash cubes, crisp-looking diced apple, and warm, chewy-textured farro leaves coated in a light, glossy mustard-based pan sauce. Deep green baby spinach leaves are partially wilted, intermingled with the grains. The scene is lit by soft natural light from a window to the left, creating gentle shadows and highlighting the sheen of the mustard glaze and natural pork juices. Props include a rumpled beige linen napkin tucked beneath the edge of one plate and a small wooden spoon resting casually on the table nearby. A few scattered sage leaves and a small stray piece of diced apple sit on the wood near the plates. The background is softly blurred with a hint of a kitchen setting. Photorealistic, not AI-generated looking. The scene captures an authentic home-cooked meal, warm and inviting. Includes slight natural imperfections: a tiny sauce drip on the rim, uneven browning on the squash, and an asymmetric plating style. No plastic sheen, no perfect symmetry, no cold tones. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

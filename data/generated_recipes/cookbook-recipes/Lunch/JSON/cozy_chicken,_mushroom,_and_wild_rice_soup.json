@@ -1,0 +1,156 @@
+{
+  "id": "d3a7f0fb-0368-40ee-9df0-6b38677169a3",
+  "title": "Cozy Chicken, Mushroom, and Wild Rice Soup",
+  "intro": "Relying on a single pot and ready-to-use ingredients, this quick-simmering soup is simple to prepare. It pairs lean chicken breast, earthy mushrooms, and wild rice for a comforting, balanced bowl.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 13,
+  "cook_time_max_min": 18,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Thin-sliced boneless, skinless chicken breasts",
+      "canonical_name": "Chicken, broilers or fryers, breast, meat only, raw",
+      "quantity_g": 170.0,
+      "quantity_display": "6 oz (170 g)",
+      "preparation": "chopped into bite-sized pieces",
+      "fdc_id": 171077,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cremini mushrooms",
+      "canonical_name": "Mushrooms, brown, italian, or crimini, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "sliced",
+      "fdc_id": 168434,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Carrots",
+      "canonical_name": "Carrots, raw",
+      "quantity_g": 165.0,
+      "quantity_display": "1 1/2 cups (165 g)",
+      "preparation": "pre-shredded",
+      "fdc_id": 170393,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh thyme",
+      "canonical_name": "Thyme, fresh",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": "chopped",
+      "fdc_id": 173470,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium chicken broth",
+      "canonical_name": "Soup, chicken broth, low sodium, canned",
+      "quantity_g": 720.0,
+      "quantity_display": "3 cups (720 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Pre-cooked brown and wild rice blend",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 210.0,
+      "quantity_display": "1 1/2 cups (210 g)",
+      "preparation": "from a ready-to-eat pouch",
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 90.0,
+      "quantity_display": "3 cups (90 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Apple cider vinegar",
+      "canonical_name": "Vinegar, cider",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 173469,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat oil in a pot over medium-high heat until shimmering. Add chicken and cook for 3 to 4 minutes, checking at 3 minutes, until lightly browned.",
+    "Stir in mushrooms and carrots. Cook for 4 to 5 minutes, checking at 4 minutes, until the mushrooms soften and release their liquid.",
+    "Stir in garlic powder and thyme. Cook for 1 to 2 minutes, checking at 1 minute, until fragrant.",
+    "Pour in broth and wild rice. Bring to a rolling boil, then reduce heat to low and simmer for 5 to 7 minutes, checking at 5 minutes, until heated through.",
+    "Remove the pot from the heat. Stir in spinach and vinegar until the leaves are wilted, then portion into bowls."
+  ],
+  "variation": "Swap the chicken for a can of rinsed cannellini beans.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 426.6,
+    "protein_g": 34.3,
+    "carbs_g": 46.8,
+    "fat_g": 12.9,
+    "fiber_g": 5.9,
+    "sodium_mg": 251.1,
+    "sugar_g": 6.8,
+    "saturated_fat_g": 2.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 62.0,
+    "potassium_mg": 1729.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.1,
+    "pufa_g": 2.1,
+    "calcium_mg": 117.6,
+    "iron_mg": 3.8,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+    "total carbohydrate 46.8 g/serving > ceiling 45 g (\"light_main\")",
+    "[chapter_intent_fit] The recipe embodies a 'light main' perfectly, but barely misses the tier's guardrails (carbohydrates at 46.8g vs the 45g ceiling; fiber at 5.9g vs the 6g floor). Fix: Reduce the rice blend to 1 1/4 cups and increase the spinach to 4 cups to gently correct both numbers into the target window."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\cozy_chicken,_mushroom,_and_wild_rice_soup.png",
+  "created_at": "2026-08-09T19:51:09.998194",
+  "generation_id": "6b65ecb7-766a-4807-88f3-5469e8fe6c36"
+}

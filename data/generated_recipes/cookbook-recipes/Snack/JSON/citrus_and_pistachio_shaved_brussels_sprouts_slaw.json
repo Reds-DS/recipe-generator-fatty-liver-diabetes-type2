@@ -1,0 +1,134 @@
+{
+  "id": "7aaddc3b-672e-46ae-95b4-f037c98dacf9",
+  "title": "Citrus and Pistachio Shaved Brussels Sprouts Slaw",
+  "intro": "This simple no-cook slaw requires minimal prep and uses convenient ingredients. Pre-shaved Brussels sprouts tenderize perfectly when tossed with fresh orange segments and a tangy vinaigrette.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": "Rest 5-10 min",
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Apple cider vinegar",
+      "canonical_name": "Vinegar, cider",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 173469,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, prepared, yellow",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 g)",
+      "preparation": null,
+      "fdc_id": 172234,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table, iodized",
+      "quantity_g": 0.75,
+      "quantity_display": "1/8 tsp (0.75 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Black pepper",
+      "canonical_name": "Spices, pepper, black",
+      "quantity_g": 0.5,
+      "quantity_display": "1/4 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 170931,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh orange",
+      "canonical_name": "Oranges, raw, all commercial varieties",
+      "quantity_g": 130.0,
+      "quantity_display": "1 medium (130 g)",
+      "preparation": "peeled",
+      "fdc_id": 169097,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Bagged shaved Brussels sprouts",
+      "canonical_name": "Brussels sprouts, raw",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": null,
+      "fdc_id": 170383,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Shelled pistachios",
+      "canonical_name": "Nuts, pistachio nuts, dry roasted, without salt added",
+      "quantity_g": 30.0,
+      "quantity_display": "1 oz (30 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 170185,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the extra-virgin olive oil, apple cider vinegar, Dijon mustard, salt, and black pepper in a large mixing bowl until smooth.",
+    "Cut the peeled orange into bite-sized segments and discard any seeds.",
+    "Add the shaved Brussels sprouts and orange segments to the bowl with the dressing.",
+    "Toss the salad thoroughly and massage the Brussels sprouts to help them absorb the liquid and soften.",
+    "Chop the pistachios.",
+    "Sprinkle the chopped pistachios over the slaw before serving."
+  ],
+  "variation": "Swap the orange segments for diced crisp green apple.",
+  "conservation": "Keeps 2-3 days refrigerated; add pistachios just before serving.",
+  "nutrition_per_serving": {
+    "calories_kcal": 224.9,
+    "protein_g": 7.3,
+    "carbs_g": 21.2,
+    "fat_g": 14.3,
+    "fiber_g": 7.1,
+    "sodium_mg": 199.4,
+    "sugar_g": 9.5,
+    "saturated_fat_g": 1.9,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 670.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 8.9,
+    "pufa_g": 2.9,
+    "calcium_mg": 87.4,
+    "iron_mg": 2.2,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "[ingredient_instruction_consistency] There is a minor redundancy. The ingredients list specifies '1 oz (30 g) Shelled pistachios (roughly chopped)', but step 5 instructs the reader to 'Chop the pistachios roughly.' Fix: Either list them whole and have the reader chop them in step 5, or keep them chopped in the ingredients and remove step 5."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\citrus_and_pistachio_shaved_brussels_sprouts_slaw.png",
+  "created_at": "2026-08-09T13:06:41.908261",
+  "generation_id": "f2ebb235-05bf-479b-b359-102743a975db"
+}

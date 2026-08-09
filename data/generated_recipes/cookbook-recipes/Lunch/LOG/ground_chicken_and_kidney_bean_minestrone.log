@@ -1,0 +1,63 @@
+=== RECIPE LOG: Ground Chicken and Kidney Bean Minestrone ===
+ID            : 792d3b48-af78-45be-87a9-83d063df11da
+Generation ID : d1519639-8218-46ba-a270-5c1c4034866a
+Generated     : 2026-08-09 19:26:12
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 10
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Lean ground chicken
+Meal type       : lunch
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Hearty Ground Chicken and Kidney Bean Minestrone
+Technique       : One-pot simmering
+Cuisine style   : Italian-American
+Flavour profile : Savory tomato and Italian herbs
+Sketch          : Extra-virgin olive oil, Yellow onion, Lean ground chicken, Italian seasoning blend, Low-sodium chicken broth, No-salt-added canned diced tomatoes, No-salt-added canned dark red kidney beans, Whole wheat short pasta (such as macaroni or rotini), Frozen chopped spinach
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Italian seasoning blend, No-salt-added canned dark red kidney beans, Whole wheat short pasta (like rotini)
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Italian seasoning blend' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'No-salt-added canned dark red kidney beans' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Whole wheat short pasta (like rotini)' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 24% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 16% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 16% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 16% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[light_main]] OK
+  [masld.added_sugar[light_main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow, matte ceramic bowls set on an aged, dark oak wood tabletop, centered in the frame with generous negative space. The came...

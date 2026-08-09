@@ -1,0 +1,163 @@
+{
+  "id": "403121a9-ec1d-4526-901a-b550dec44158",
+  "title": "Spiced Tilapia and Orange Quinoa Bowls",
+  "intro": "This quick bowl relies on a fast stovetop sear and a ready-to-eat grain base for an easy dinner. Warm, spiced tilapia fillets pair perfectly with juicy navel orange segments and peppery arugula for a satisfying meal.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 6,
+  "cook_time_max_min": 8,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Tilapia fillets",
+      "canonical_name": "Fish, tilapia, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": null,
+      "fdc_id": 175176,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed, crushed or ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kosher salt",
+      "canonical_name": "Salt, table, kosher",
+      "quantity_g": 1.0,
+      "quantity_display": "1/4 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": "divided",
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked quinoa",
+      "canonical_name": "Quinoa, cooked",
+      "quantity_g": 250.0,
+      "quantity_display": "8.8 oz (250 g)",
+      "preparation": "from a microwaveable pouch",
+      "fdc_id": 168917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby arugula",
+      "canonical_name": "Arugula, raw",
+      "quantity_g": 85.0,
+      "quantity_display": "3 oz (85 g)",
+      "preparation": null,
+      "fdc_id": 169387,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Navel orange",
+      "canonical_name": "Oranges, raw, navel",
+      "quantity_g": 150.0,
+      "quantity_display": "1 large (150 g)",
+      "preparation": "peeled and segmented",
+      "fdc_id": 169917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 70.0,
+      "quantity_display": "1/2 medium (70 g)",
+      "preparation": "sliced",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Radishes",
+      "canonical_name": "Radishes, raw",
+      "quantity_g": 45.0,
+      "quantity_display": "3 medium (45 g)",
+      "preparation": "thinly sliced",
+      "fdc_id": 169276,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Pat the tilapia dry with a paper towel. Rub both sides evenly with the smoked paprika, ground cumin, and salt.",
+    "Heat a portion of the olive oil in a large nonstick skillet over medium-high heat until shimmering. Add the tilapia and cook for 3 to 4 minutes per side, flipping halfway through, until the crust is golden and the fish flakes easily with a fork.",
+    "Warm the cooked quinoa in the microwave according to the pouch instructions.",
+    "Whisk the lime juice and the remaining olive oil in a small bowl to create a dressing.",
+    "Divide the arugula and warmed quinoa between two wide, shallow bowls.",
+    "Arrange the seared tilapia, orange segments, sliced avocado, and radishes over the greens and grains.",
+    "Drizzle the lime dressing evenly across both bowls just before serving."
+  ],
+  "variation": "Swap the tilapia for peeled shrimp and sear until pink.",
+  "conservation": "Best enjoyed right away; greens will wilt if stored dressed.",
+  "nutrition_per_serving": {
+    "calories_kcal": 437.8,
+    "protein_g": 31.0,
+    "carbs_g": 42.7,
+    "fat_g": 17.6,
+    "fiber_g": 9.0,
+    "sodium_mg": 286.3,
+    "sugar_g": 9.2,
+    "saturated_fat_g": 2.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 56.2,
+    "potassium_mg": 1098.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 10.3,
+    "pufa_g": 3.4,
+    "calcium_mg": 150.8,
+    "iron_mg": 4.1,
+    "vitamin_d_mcg": 3.5,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\spiced_tilapia_and_orange_quinoa_bowls.png",
+  "created_at": "2026-08-09T19:45:36.172726",
+  "generation_id": "84c793d0-4d0e-4dd0-9ec5-03db97db672f"
+}

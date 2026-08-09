@@ -1,0 +1,293 @@
+{
+  "main_ingredient": "Salmon fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Sheet-Pan Lemon-Dill Salmon with Potatoes and Green Beans",
+  "recipe_id": "1b60b8ab-fbeb-4e6d-b431-66f5c7cc6676",
+  "generation_id": "0e071f21-1d84-4015-ad46-e8a3d9cc30b6",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T11:20:56.662233",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Sheet-Pan Lemon-Dill Salmon with Potatoes and Green Beans",
+        "main_ingredient": "Salmon fillets",
+        "technique": "Sheet-pan roasting",
+        "flavour_profile": "Bright, lemony, and herbaceous with savory mustard notes",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "salmon fillets",
+          "baby potatoes",
+          "fresh green beans",
+          "extra-virgin olive oil",
+          "whole grain mustard",
+          "lemon",
+          "fresh dill",
+          "garlic powder",
+          "sliced almonds",
+          "black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "sugar_g: partial data — 29% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 469.7,
+          "protein_g": 36.0,
+          "carbs_g": 46.6,
+          "fat_g": 16.4,
+          "fiber_g": 8.3,
+          "sodium_mg": 456.9,
+          "sugar_g": 6.0,
+          "saturated_fat_g": 2.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 78.4,
+          "potassium_mg": 1876.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.8,
+          "pufa_g": 4.9,
+          "calcium_mg": 105.8,
+          "iron_mg": 4.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 7,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.364,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] The instruction 'Preheat the oven to 425°F / 220°C for 5 minutes' is confusing, as ovens take varying times to preheat. Simply state 'Preheat the oven to 425°F / 220°C.' Additionally, direct the reader to lightly toss the green beans in the pan's residual oil when adding them so they do not roast completely dry."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A highly practical, delicious, and perfectly aligned weeknight dinner that requires only a minor tweak to the preheating language to be ready for print.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic and perfectly coherent flavor profile. Lemon, dill, mustard, and salmon are a timeless, reliable combination."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are accurately accounted for in the instruction steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The instruction 'Preheat the oven to 425°F / 220°C for 5 minutes' is confusing, as ovens take varying times to preheat. Simply state 'Preheat the oven to 425°F / 220°C.' Additionally, direct the reader to lightly toss the green beans in the pan's residual oil when adding them so they do not roast completely dry."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Aligns seamlessly with the Mediterranean-American style, utilizing olive oil, fresh herbs, and wholesome ingredients."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Sheet-pan roasting at 425°F works excellently. Staggering the cooking times (potatoes first, then salmon and beans) ensures everything finishes beautifully without overcooking the fish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel accurately reflects the ingredients and quantities provided."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro are inviting, accurate, and completely free of disallowed health claims or 'diet' framing."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, practical weeknight dinner. It offers a great mix of textures and bright, vibrant colors on the plate."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent example of the book's dual-action philosophy: skin-on potatoes for quality complex carbs and fiber, ample greens, and omega-3 rich salmon."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the potatoes provide 46.6g of high-quality carbohydrates, landing the meal perfectly within the targeted carbohydrate window for stable blood sugar."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the Fish & Seafood Main nutrient targets flawlessly and delivers on the promise of an easy weeknight seafood meal."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Very realistic for a 30-minute timeframe. Chopping baby potatoes and trimming beans takes about 8 minutes, leaving 22 minutes for the staggered roast."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The two plates are arranged in a 3/4 overhead perspective at a 40-degree angle, with the primary serving in sharp focus and the second plate slightly blurred in the background, ensuring all components are clearly visible. The camera captures a shallow depth of field with soft, natural side lighting from a window on the left, casting gentle, realistic shadows. The setting features a rustic, aged oak tabletop with slight wood grain textures. One simple, matte ceramic plate sits beside a rumpled, neutral-toned linen napkin and a scattered few fresh dill fronds and a halved, squeezed lemon. The salmon fillet is placed at the center, coated in a glistening mustard-dill glaze with visible whole-grain mustard seeds and bright green specks of chopped dill; the flesh is a pale, flaky coral pink. Resting to one side of the fish, not atop it, are crisp, golden-brown roasted baby potato cubes with caramelized edges and seasoned with flecks of garlic powder and black pepper. Beside the potatoes, bright, tender-crisp green beans add a fresh color contrast. Toasted almond slivers are scattered over the salmon and beans. The scene includes minor, authentic imperfections: a tiny sauce drip on the plate edge and a few loose crumbs, conveying a home-cooked, lived-in feel. Photorealistic, not AI-generated looking. Warm, golden-hour color temperature. No plastic sheen, no symmetry, no hands, no text, no watermarks, indistinguishable from professional cookbook editorial photography.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

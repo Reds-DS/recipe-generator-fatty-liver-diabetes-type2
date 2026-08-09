@@ -1,0 +1,296 @@
+{
+  "main_ingredient": "Thin-sliced boneless, skinless chicken breasts",
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "exclusions": [],
+  "recipe_title": "Cozy Chicken, Mushroom, and Wild Rice Soup",
+  "recipe_id": "d3a7f0fb-0368-40ee-9df0-6b38677169a3",
+  "generation_id": "6b65ecb7-766a-4807-88f3-5469e8fe6c36",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-09T19:51:09.998194",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Cozy Chicken, Mushroom, and Wild Rice Soup",
+        "main_ingredient": "Thin-sliced boneless, skinless chicken breasts",
+        "technique": "One-pot simmering",
+        "flavour_profile": "Earthy, savory, and herbaceous",
+        "cuisine_style": "Classic American",
+        "ingredients_sketch": [
+          "Thin-sliced boneless, skinless chicken breasts",
+          "Sliced cremini mushrooms",
+          "Pre-cooked brown and wild rice blend (ready-to-eat pouch)",
+          "Pre-shredded carrots",
+          "Fresh baby spinach",
+          "Low-sodium chicken broth",
+          "Fresh thyme",
+          "Garlic powder",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 426.6,
+          "protein_g": 34.3,
+          "carbs_g": 46.8,
+          "fat_g": 12.9,
+          "fiber_g": 5.9,
+          "sodium_mg": 251.1,
+          "sugar_g": 6.8,
+          "saturated_fat_g": 2.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 62.0,
+          "potassium_mg": 1729.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.1,
+          "pufa_g": 2.1,
+          "calcium_mg": 117.6,
+          "iron_mg": 3.8,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+        "total carbohydrate 46.8 g/serving > ceiling 45 g (\"light_main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 5.9 g/serving < floor 6 g (\"light_main\")",
+              "total carbohydrate 46.8 g/serving > ceiling 45 g (\"light_main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[light_main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] The recipe embodies a 'light main' perfectly, but barely misses the tier's guardrails (carbohydrates at 46.8g vs the 45g ceiling; fiber at 5.9g vs the 6g floor). Fix: Reduce the rice blend to 1 1/4 cups and increase the spinach to 4 cups to gently correct both numbers into the target window."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A beautifully constructed, comforting soup that successfully utilizes a ready-to-eat grain pouch to deliver deep, simmered flavor well under the 30-minute limit, while perfectly honoring the dietary needs of both conditions.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The earthy mushrooms, thyme, and wild rice create a classic, savory foundation, and the splash of apple cider vinegar at the end provides exactly the right amount of acidity to brighten the broth."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is cleanly and clearly accounted for in the instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The steps are thoroughly written with appropriate time ranges, specific check times, and clear visual and textural doneness cues for every cooking phase."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with Classic American soup profiles, using standard, recognizable aromatics and techniques."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The one-pot simmering method is entirely appropriate for this type of quick soup, allowing the flavors to meld rapidly without drying anything out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients are accurate and reflect the ingredients provided, especially the protein from the chicken and the carbohydrates from the rice blend."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish in a warm, appealing, and practical way without relying on any banned or sensational health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It reads as a comforting, hearty, and highly accessible weeknight or lunch option that home cooks will actually want to make."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers wonderfully for both blood sugar and the liver: leans entirely on extra-virgin olive oil, provides plenty of vegetables, features lean protein, and uses a whole, unrefined grain."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate component (the brown and wild rice blend) is a high-quality, fiber-rich, whole-grain choice."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe embodies a 'light main' perfectly, but barely misses the tier's guardrails (carbohydrates at 46.8g vs the 45g ceiling; fiber at 5.9g vs the 6g floor). Fix: Reduce the rice blend to 1 1/4 cups and increase the spinach to 4 cups to gently correct both numbers into the target window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent use of the pre-cooked rice pouch—a first-class shortcut that allows a traditionally slow-cooking ingredient to feature in a genuinely under-30-minute soup. The prep and cook times are realistic."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two rustic, wide-rimmed matte ceramic bowls of chicken, mushroom, and wild rice soup, centered in the frame with generous negative space for cropping. The camera angle is a 3/4 overhead view, roughly 40 degrees, allowing a clear look into the textures of both bowls. One bowl is in sharp focus in the immediate foreground, while the second is softly blurred just behind it. Shallow depth of field creates a beautiful, natural bokeh. Soft, natural side light spills from a window on the left, casting gentle, diffused shadows. The surface is a worn, aged oak tabletop with visible wood grain and small, authentic imperfections. Props include a single wooden spoon resting naturally on the table next to the bowls, a slightly rumpled linen napkin tucked partially under the foreground bowl, and a few stray fresh thyme leaves and a small piece of a cremini mushroom scattered near the edge of the wood surface. Inside the bowls, the soup is a comforting, rustic blend: bite-sized, lightly sautéed white chunks of skinless chicken breast are visible amidst soft, earthy brown cremini mushroom slices and vibrant orange shredded carrots. The wild rice grains are dark and distinct, swimming in a clear, savory golden-amber broth, with bright green spinach leaves wilted gently into the mixture. The broth shows a slight, appetizing sheen of olive oil. The scene is photorealistic, not AI-generated looking; it feels like a lived-in, warm home kitchen. Include slight natural imperfections: a tiny splash mark on the rim of the bowl and unevenly distributed ingredients. No plastic sheen, no artificial symmetry, no hands, no faces. The color palette is cozy and warm, reflecting a golden-hour glow. Indistinguishable from professional editorial food photography for a cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 4,
+  "total_corrections": 0
+}

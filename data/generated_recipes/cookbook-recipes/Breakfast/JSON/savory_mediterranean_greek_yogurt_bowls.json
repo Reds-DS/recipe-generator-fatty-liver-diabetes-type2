@@ -1,0 +1,163 @@
+{
+  "id": "5944a200-34db-4b78-a9ad-bda3fb58420c",
+  "title": "Savory Mediterranean Greek Yogurt Bowls",
+  "intro": "Starting your morning with a generous serving of lean protein and fiber helps maintain steady energy right through to lunch. This fresh, zero-cook bowl relies on artichokes and whole-wheat pita to deliver lasting fullness without weighing you down.",
+  "diet_tags": [],
+  "meal_type": "breakfast",
+  "chapter": "breakfasts",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Nonfat plain Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 340.0,
+      "quantity_display": "1 1/2 cups (340 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "English cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 140.0,
+      "quantity_display": "1 cup (140 g)",
+      "preparation": "chopped",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium canned artichoke hearts",
+      "canonical_name": "Artichokes, canned, water pack, no salt added",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "rinsed, drained, and quartered",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kalamata olives",
+      "canonical_name": "Olives, ripe, canned (small-extra large)",
+      "quantity_g": 18.0,
+      "quantity_display": "2 tbsp (18 g)",
+      "preparation": "pitted and minced",
+      "fdc_id": 169094,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Shelled pumpkin seeds (pepitas)",
+      "canonical_name": "Seeds, pumpkin and squash seeds, whole, roasted, without salt",
+      "quantity_g": 18.0,
+      "quantity_display": "2 tbsp (18 g)",
+      "preparation": null,
+      "fdc_id": 170557,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "100% whole-wheat pita bread",
+      "canonical_name": "Bread, pita, whole-wheat",
+      "quantity_g": 120.0,
+      "quantity_display": "2 pitas (120 g)",
+      "preparation": null,
+      "fdc_id": 174916,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Whisk the Greek yogurt and lemon juice together in a small bowl until completely smooth.",
+    "Spread the yogurt mixture evenly across the bottoms of two wide, shallow bowls.",
+    "Arrange the chopped cucumber, halved cherry tomatoes, and quartered artichoke hearts generously over the yogurt.",
+    "Drizzle the extra-virgin olive oil over the vegetables, then scatter the minced olives, pumpkin seeds, and dried oregano on top.",
+    "Toast the whole-wheat pitas in a toaster until slightly crisp and warm, then cut them into wedges.",
+    "Serve the bowls immediately with the warm pita wedges on the side for scooping."
+  ],
+  "variation": "Swap the whole-wheat pita for a side of cooked quinoa.",
+  "conservation": "Keeps 2 days refrigerated; toast the pita just before serving.",
+  "nutrition_per_serving": {
+    "calories_kcal": 442.7,
+    "protein_g": 30.2,
+    "carbs_g": 58.4,
+    "fat_g": 12.6,
+    "fiber_g": 11.7,
+    "sodium_mg": 477.1,
+    "sugar_g": 11.9,
+    "saturated_fat_g": 2.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 8.5,
+    "potassium_mg": 714.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.1,
+    "pufa_g": 3.1,
+    "calcium_mg": 245.5,
+    "iron_mg": 4.0,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Low-sodium canned artichoke hearts"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "No USDA candidate for 'Low-sodium canned artichoke hearts' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "total carbohydrate 58.4 g/serving > ceiling 55 g (\"main\")"
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Breakfast\\IMG\\savory_mediterranean_greek_yogurt_bowls.png",
+  "created_at": "2026-08-09T18:59:56.777373",
+  "generation_id": "548f01a1-97b2-4f9e-bb06-153c5cd65a65"
+}

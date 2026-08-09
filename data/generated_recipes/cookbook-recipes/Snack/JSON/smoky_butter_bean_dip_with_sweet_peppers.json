@@ -1,0 +1,162 @@
+{
+  "id": "c35d1292-30d7-46fd-abb7-578cd25adef1",
+  "title": "Smoky Butter Bean Dip with Sweet Peppers",
+  "intro": "Silky and boldly spiced, this creamy dip uses tender butter beans to create a satisfying, high-fiber snack.",
+  "diet_tags": [],
+  "meal_type": "snack",
+  "chapter": "snacks_sides",
+  "servings": 2,
+  "prep_time_min": 5,
+  "cook_time_min": 0,
+  "cook_time_max_min": 0,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Canned no-salt-added butter beans",
+      "canonical_name": "Lima beans, large, mature seeds, canned, no salt added",
+      "quantity_g": 150.0,
+      "quantity_display": "5 oz (150 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Water",
+      "canonical_name": "Water, tap, drinking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 173647,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unsalted roasted pumpkin seeds (pepitas)",
+      "canonical_name": "Seeds, pumpkin and squash seed kernels, roasted, without salt added",
+      "quantity_g": 10.0,
+      "quantity_display": "1 tbsp (10 g)",
+      "preparation": null,
+      "fdc_id": 170557,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 3.0,
+      "quantity_display": "1 clove (3 g)",
+      "preparation": "peeled and smashed",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.5,
+      "quantity_display": "1/8 tsp (0.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red bell pepper",
+      "canonical_name": "Peppers, bell, red, raw",
+      "quantity_g": 80.0,
+      "quantity_display": "3 oz (80 g)",
+      "preparation": "sliced into strips",
+      "fdc_id": 2258590,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Carrots",
+      "canonical_name": "Carrots, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 oz (60 g)",
+      "preparation": "cut into sticks",
+      "fdc_id": 170393,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place the butter beans, lemon juice, olive oil, garlic, smoked paprika, and salt in a food processor or blender.",
+    "Blend on high speed until completely smooth and creamy, pulsing in the water if the mixture is too thick.",
+    "Transfer the dip to a serving bowl.",
+    "Garnish the surface with the roasted pumpkin seeds.",
+    "Serve immediately alongside the red bell pepper and carrots for dipping."
+  ],
+  "variation": "Trade the smoked paprika for ground cumin and fresh cilantro.",
+  "conservation": "Keeps up to 3 days refrigerated in an airtight container.",
+  "nutrition_per_serving": {
+    "calories_kcal": 160.5,
+    "protein_g": 6.0,
+    "carbs_g": 18.7,
+    "fat_g": 7.8,
+    "fiber_g": 5.5,
+    "sodium_mg": 127.1,
+    "sugar_g": 2.9,
+    "saturated_fat_g": 1.1,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 0.0,
+    "potassium_mg": 245.7,
+    "trans_fat_g": 0.0,
+    "mufa_g": 4.4,
+    "pufa_g": 1.6,
+    "calcium_mg": 19.7,
+    "iron_mg": 0.8,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Canned no-salt-added butter beans"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Canned no-salt-added butter beans' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "sugar_g: partial data — 23% of recipe weight has no USDA value for it.",
+    "saturated_fat_g: partial data — 23% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 67% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 44% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 44% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 44% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Snack\\IMG\\smoky_butter_bean_dip_with_sweet_peppers.png",
+  "created_at": "2026-08-09T12:55:51.075415",
+  "generation_id": "013d264f-6bf3-4ba5-8b7e-8e55503dcd4b"
+}

@@ -1,0 +1,182 @@
+{
+  "id": "b6904e9c-44c7-4414-b27f-1afb6a2dc7c4",
+  "title": "Spiced Beef, Herb, and Bulgur Salad Bowls",
+  "intro": "Fragrant, warm Mediterranean spices mingle with bright lemon and fresh parsley in these hearty grain bowls. Lean ground beef provides satisfying protein while crisp cucumbers and tomatoes bulk up the salad without adding saturated fat.",
+  "diet_tags": [],
+  "meal_type": "lunch",
+  "chapter": "soups_salads",
+  "servings": 2,
+  "prep_time_min": 15,
+  "cook_time_min": 10,
+  "cook_time_max_min": 12,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Water",
+      "canonical_name": "Water, tap",
+      "quantity_g": 180.0,
+      "quantity_display": "3/4 cup (180 ml)",
+      "preparation": null,
+      "fdc_id": 173647,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Quick-cooking bulgur wheat",
+      "canonical_name": "Bulgur, dry",
+      "quantity_g": 70.0,
+      "quantity_display": "1/2 cup (70 g)",
+      "preparation": null,
+      "fdc_id": 170688,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Lean ground beef (95% lean)",
+      "canonical_name": "Beef, ground, 95% lean meat / 5% fat, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": null,
+      "fdc_id": 171790,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground allspice",
+      "canonical_name": "Spices, allspice, ground",
+      "quantity_g": 1.0,
+      "quantity_display": "1/2 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171315,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 1.5,
+      "quantity_display": "1/4 tsp (1.5 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "English cucumber",
+      "canonical_name": "Cucumber, with peel, raw",
+      "quantity_g": 150.0,
+      "quantity_display": "5 oz (150 g)",
+      "preparation": "diced",
+      "fdc_id": 168409,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh flat-leaf parsley",
+      "canonical_name": "Parsley, fresh",
+      "quantity_g": 30.0,
+      "quantity_display": "1 cup (30 g)",
+      "preparation": "chopped",
+      "fdc_id": 170416,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 167747,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sliced almonds",
+      "canonical_name": "Nuts, almonds",
+      "quantity_g": 14.0,
+      "quantity_display": "2 tbsp (14 g)",
+      "preparation": null,
+      "fdc_id": 170158,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Bring the water to a boil in a small saucepan over high heat. Stir in the bulgur, reduce heat to low, cover, and simmer for 10 to 12 minutes. Check at 10 minutes to ensure the liquid is absorbed and grains are tender; remove from heat.",
+    "Heat a nonstick skillet over medium-high heat. Add the ground beef, garlic, cumin, allspice, and salt.",
+    "Cook for 5 to 7 minutes, breaking the meat apart with a wooden spoon, until browned. Check at 5 minutes to ensure no pink remains; remove from heat.",
+    "Whisk the lemon juice and olive oil together in a large mixing bowl.",
+    "Add the cooked bulgur, cherry tomatoes, cucumber, and parsley to the dressing; toss gently to coat.",
+    "Divide the bulgur salad between two bowls. Top each with the spiced beef and sprinkle with the sliced almonds before serving."
+  ],
+  "variation": "Swap the ground beef for lean ground turkey breast.",
+  "conservation": "Keeps 2 to 3 days refrigerated; store beef and salad separately.",
+  "nutrition_per_serving": {
+    "calories_kcal": 420.6,
+    "protein_g": 31.9,
+    "carbs_g": 37.4,
+    "fat_g": 17.4,
+    "fiber_g": 7.2,
+    "sodium_mg": 391.2,
+    "sugar_g": 4.3,
+    "saturated_fat_g": 3.9,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 69.8,
+    "potassium_mg": 1004.5,
+    "trans_fat_g": 0.2,
+    "mufa_g": 9.9,
+    "pufa_g": 2.3,
+    "calcium_mg": 103.2,
+    "iron_mg": 5.9,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Lunch\\IMG\\spiced_beef,_herb,_and_bulgur_salad_bowls.png",
+  "created_at": "2026-08-09T17:22:07.211600",
+  "generation_id": "65dbbd2a-9ab2-4c90-9a61-dd1818bd6f3a"
+}
