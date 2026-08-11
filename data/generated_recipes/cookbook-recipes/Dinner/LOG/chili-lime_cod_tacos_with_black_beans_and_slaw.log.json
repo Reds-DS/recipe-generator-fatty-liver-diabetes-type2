@@ -1,0 +1,514 @@
+{
+  "main_ingredient": "Fresh or frozen cod fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Chili-Lime Cod Tacos with Black Beans and Slaw",
+  "recipe_id": "c7424f23-3ca2-4adb-8f2e-b609112903e4",
+  "generation_id": "aaf1d0d3-eabf-42cb-a6f0-549c64f0b9e2",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:21:13.906551",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Chili-Lime Cod Tacos with Black Beans and Slaw",
+        "main_ingredient": "Fresh or frozen cod fillets",
+        "technique": "Skillet-seared",
+        "flavour_profile": "Zesty, smoky, and bright",
+        "cuisine_style": "Mexican-American",
+        "ingredients_sketch": [
+          "Fresh or frozen cod fillets",
+          "Chili powder",
+          "Extra-virgin olive oil",
+          "Corn tortillas",
+          "No-salt-added canned black beans",
+          "Pre-shredded red cabbage",
+          "Fresh limes",
+          "Fresh cilantro",
+          "Avocado"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 500.7,
+          "protein_g": 40.8,
+          "carbs_g": 50.0,
+          "fat_g": 16.8,
+          "fiber_g": 14.4,
+          "sodium_mg": 619.9,
+          "sugar_g": 3.9,
+          "saturated_fat_g": 2.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 73.1,
+          "potassium_mg": 1505.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.8,
+          "pufa_g": 3.0,
+          "calcium_mg": 150.6,
+          "iron_mg": 4.3,
+          "vitamin_d_mcg": 1.5,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 619.9 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 619.9 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb, high-fiber, fast weeknight seafood recipe that aligns perfectly with the dietary philosophy of the book. The only needed adjustment is reducing the added salt slightly to clear the strict 550 mg sodium ceiling.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The chili, lime, cod, avocado, and black bean flavor profile is a classic, coherent Mexican-American pairing with excellent balance of acid, fat, and spice."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used in the steps exactly as expected, including the divided lime juice."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. Ranges are provided for all cook times, visual cues ('pliable', 'golden and opaque') are present, and there is a clear mid-point check instruction."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the stated Mexican-American style, utilizing corn tortillas, cilantro, avocado, and lime."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Dry-toasting tortillas and then quick-searing the cod in the same skillet is efficient and well-suited for a fast weeknight meal."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The automated check flagged sodium at 620 mg, exceeding the strict 550 mg chapter ceiling. While the recipe smartly uses no-salt-added beans, the 1/4 tsp added salt combined with the natural sodium of the fish and tortillas pushes it over the edge. Fix: Reduce the salt in the ingredient list to 1/8 tsp to reliably drop the sodium below the 550 mg threshold."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate, and the intro perfectly matches the book's practical, food-focused tone without making any banned or overly clinical claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appetizing. The contrast between the warm, spicy cod, creamy avocado, and crisp, bright slaw makes this an excellent, appealing meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of addressing both conditions at once: lean protein from the cod, high-fiber complex carbohydrates from the beans and corn tortillas, and healthy fats from the EVOO and avocado."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the total carbohydrate (50 g) sits beautifully in the target window (32-55 g). The carbs come entirely from high-quality sources (black beans, cabbage, corn tortillas)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' mandate perfectly, demonstrating how fast and accessible weeknight seafood can be."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily executable in under 20 minutes from a cold start. Using pre-shredded cabbage and canned beans keeps the prep lightning-fast. All ingredients are standard supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [nutrition_plausibility] The automated check flagged sodium at 620 mg, exceeding the strict 550 mg chapter ceiling. While the recipe smartly uses no-salt-added beans, the 1/4 tsp added salt combined with the natural sodium of the fish and tortillas pushes it over the edge. Fix: Reduce the salt in the ingredient list to 1/8 tsp to reliably drop the sodium below the 550 mg threshold.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 489.8,
+          "protein_g": 37.8,
+          "carbs_g": 52.5,
+          "fat_g": 15.6,
+          "fiber_g": 16.0,
+          "sodium_mg": 470.9,
+          "sugar_g": 3.3,
+          "saturated_fat_g": 2.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 61.3,
+          "potassium_mg": 1426.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.5,
+          "pufa_g": 2.8,
+          "calcium_mg": 143.5,
+          "iron_mg": 4.5,
+          "vitamin_d_mcg": 1.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 10,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 1.0,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[title_intro_accuracy] The title and intro accurately describe the dish, but the phrase 'steady metabolism' in the intro skirts too close to banned 'boosts metabolism' diet language. Fix: Change to 'steady energy' or 'steady blood sugar'."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "An excellent, vibrant weeknight taco recipe that perfectly balances high-fiber carbohydrates, lean protein, and healthy fats. It requires only a minor tweak to the intro text to remove a borderline metabolism claim.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classic and well-balanced, combining acidity from lime, healthy fats from avocado and olive oil, and earthy warmth from the chili powder and black beans."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are accurately represented in the instructions, and the divided lime juice is handled perfectly across the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent. They include precise temperature settings, accurate time ranges, mid-point checks, and clear visual doneness cues for the fish, beans, and tortillas."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques align perfectly with a fresh, vibrant Mexican-American flavor profile."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Pan-searing the cod followed by flaking is an optimal, foolproof technique for quick weeknight fish tacos. Reusing the skillet for the beans efficiently builds flavor while minimizing cleanup."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients are highly plausible. The calories, protein, and carbohydrates align precisely with the quantities of cod, black beans, corn tortillas, and avocado."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish, but the phrase 'steady metabolism' in the intro skirts too close to banned 'boosts metabolism' diet language. Fix: Change to 'steady energy' or 'steady blood sugar'."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, colorful, and satisfying taco night recipe that readers will genuinely look forward to eating."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This recipe perfectly addresses both conditions simultaneously: it relies on lean protein and heart-healthy unsaturated fats (olive oil, avocado) for the liver, paired with a robust fiber load from the beans and cabbage for glycemic control."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the recipe boldly provides a meaningful, high-quality carbohydrate base (52.5g) through the black beans and corn tortillas, completely avoiding the 'low-carb keto' trap."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the Fish & Seafood Dinners brief flawlessly, offering a highly accessible, fast-cooking white fish application that feels like a treat rather than diet food."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The ingredients are simple, affordable, and readily available at any mainstream supermarket."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two plates centered in the frame with generous negative space, presented at a 3/4 overhead angle of 40 degrees, ensuring every component is clearly identifiable. Shallow depth of field keeps the foreground plate sharp while the second plate behind is softly blurred. Soft natural side light enters from the left, casting gentle shadows and highlighting the sheen of lime juice and olive oil. The setting is a rustic aged oak table with visible wood grain and small crumbs. Props include a rumpled linen napkin tucked under a plate, a discarded lime half, and a small, rustic ceramic ramekin containing extra black beans. The dish consists of two warm, toasted corn tortillas per plate, overflowing with tender, golden-brown flaked cod seasoned with vibrant red chili powder. Beside the fish, a generous scoop of deep-purple red cabbage slaw mixed with creamy, mashed avocado and bright green cilantro creates a colorful contrast. A small serving of earthy black beans sits in a distinct pile on the plate, separated from the tacos. Surfaces show authentic textures: the cod is opaque and flaky with charred spice edges, while the avocado-slaw is creamy and bright. Photorealistic, not AI-generated looking. The scene captures the moment after cooking, with a few stray cilantro leaves on the table and a small, natural sauce drip on the plate rim. Warm, golden-hour color temperature. No plastic sheen, no perfect symmetry, no text, no hands, no logos. The image is indistinguishable from a professional cookbook photograph.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

@@ -1,0 +1,63 @@
+=== RECIPE LOG: Spanish-Style Butter Bean and Quinoa Egg Skillet ===
+ID            : 9e005a49-1eda-48fa-9802-a744f5e886a8
+Generation ID : 15998629-4195-4617-af88-2b8b80020940
+Generated     : 2026-08-11 09:59:56
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 7
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Canned butter beans and eggs
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Spanish-Style Butter Bean and Quinoa Egg Skillet
+Technique       : Simmered skillet with poached eggs
+Cuisine style   : Spanish-Inspired Mediterranean
+Flavour profile : Smoky, rich tomato, and garlicky
+Sketch          : No-salt-added canned butter beans (or large lima beans), Microwaveable quinoa pouch, Canned crushed tomatoes (no-salt-added), Eggs, Garlic, Smoked paprika, Fresh baby spinach, Extra-virgin olive oil, Red wine vinegar, Fresh parsley
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : No-salt-added canned butter beans
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'No-salt-added canned butter beans' — values estimated by the LLM.
+  [WARN] Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+  [WARN] cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 24% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 24% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 24% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow, matte ceramic bowls set on an aged oak wood table with visible grain and small nicks. The composition is...

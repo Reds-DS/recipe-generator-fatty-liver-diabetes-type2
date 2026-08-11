@@ -1,0 +1,145 @@
+{
+  "id": "e1920b73-cac3-4ac8-a000-a15cebc5297c",
+  "title": "Italian White Bean Stuffed Portobellos with Quinoa",
+  "intro": "Few ingredients and minimal prep make this plant-based dinner a fast weeknight staple. Meaty portobello caps serve as edible bowls for a savory bean and spinach filling, paired with a convenient quinoa pouch.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 15,
+  "cook_time_max_min": 18,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "large portobello mushroom caps",
+      "canonical_name": "Mushrooms, portabella, raw",
+      "quantity_g": 340.0,
+      "quantity_display": "4 caps (340 g)",
+      "preparation": "wiped clean and stems removed",
+      "fdc_id": 169255,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 9.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "no-salt-added canned cannellini beans",
+      "canonical_name": "Beans, white, mature seeds, canned",
+      "quantity_g": 250.0,
+      "quantity_display": "9 oz (250 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175203,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": "roughly chopped",
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "no-added-sugar marinara sauce",
+      "canonical_name": "Tomato sauce, no salt added",
+      "quantity_g": 125.0,
+      "quantity_display": "1/2 cup (125 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "shredded part-skim mozzarella cheese",
+      "canonical_name": "Cheese, mozzarella, part skim milk",
+      "quantity_g": 70.0,
+      "quantity_display": "2.5 oz (70 g)",
+      "preparation": null,
+      "fdc_id": 170900,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "ready-to-eat cooked quinoa pouch",
+      "canonical_name": "Quinoa, cooked",
+      "quantity_g": 90.0,
+      "quantity_display": "1/2 cup (90 g)",
+      "preparation": null,
+      "fdc_id": 168917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 400°F / 200°C. Line a baking sheet with parchment paper.",
+    "Brush the outsides of the portobello caps with the extra-virgin olive oil and place them gill-side up on the prepared baking sheet.",
+    "Mash half of the cannellini beans in a medium bowl using a fork. Stir in the remaining whole beans, spinach, marinara sauce, and garlic powder until combined.",
+    "Divide the bean and spinach mixture among the mushroom caps. Sprinkle the shredded mozzarella over the tops.",
+    "Bake for 15 to 18 minutes until the mushrooms are tender and the cheese is melted and bubbling.",
+    "Warm the quinoa in the microwave according to the pouch instructions while the mushrooms bake.",
+    "Serve the stuffed portobellos alongside the warm quinoa."
+  ],
+  "variation": "Swap the baby spinach for finely chopped fresh kale.",
+  "conservation": "Keeps 2 days refrigerated; reheat in the oven for 10 minutes.",
+  "nutrition_per_serving": {
+    "calories_kcal": 447.5,
+    "protein_g": 28.0,
+    "carbs_g": 56.5,
+    "fat_g": 14.1,
+    "fiber_g": 13.2,
+    "sodium_mg": 517.8,
+    "sugar_g": 8.4,
+    "saturated_fat_g": 5.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 22.8,
+    "potassium_mg": 1635.8,
+    "trans_fat_g": 0.2,
+    "mufa_g": 5.4,
+    "pufa_g": 2.0,
+    "calcium_mg": 397.6,
+    "iron_mg": 6.4,
+    "vitamin_d_mcg": 0.7,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "no-added-sugar marinara sauce"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 qualifier: 'no-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "No USDA candidate for 'no-added-sugar marinara sauce' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 20% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "total carbohydrate 56.5 g/serving > ceiling 55 g (\"main\")",
+    "[title_intro_accuracy] The intro refers to the recipe as a 'plant-based dinner', but it contains dairy (mozzarella cheese). While perfectly fine for this diet, 'plant-based' usually implies vegan to modern readers. Change 'plant-based' to 'meatless' or 'vegetarian'."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\italian_white_bean_stuffed_portobellos_with_quinoa.png",
+  "created_at": "2026-08-11T10:05:23.921572",
+  "generation_id": "3571c849-fda0-4ccb-8c96-ccd34c604bf9"
+}

@@ -1,0 +1,156 @@
+{
+  "id": "ae340df4-3f31-40b7-9f8e-678666e1478e",
+  "title": "Cuban-Spiced Pork Medallions with Black Beans and Rice",
+  "intro": "Pairing lean pork with a base of black beans and brown rice delivers helpful fiber and steady-digesting carbohydrates to keep your energy stable. Slicing the tenderloin into thin medallions ensures it cooks rapidly without drying out.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 11,
+  "cook_time_max_min": 15,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Pork tenderloin",
+      "canonical_name": "Pork, fresh, loin, tenderloin, separable lean only, raw",
+      "quantity_g": 283.0,
+      "quantity_display": "10 oz (283 g)",
+      "preparation": "cut crosswise into 1/2-inch medallions",
+      "fdc_id": 168249,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ground cumin",
+      "canonical_name": "Spices, cumin seed",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 170923,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Red onion",
+      "canonical_name": "Onions, red, raw",
+      "quantity_g": 55.0,
+      "quantity_display": "1/2 medium (55 g)",
+      "preparation": "chopped",
+      "fdc_id": 790577,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Green bell pepper",
+      "canonical_name": "Peppers, sweet, green, raw",
+      "quantity_g": 119.0,
+      "quantity_display": "1 medium (119 g)",
+      "preparation": "chopped",
+      "fdc_id": 170427,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned black beans",
+      "canonical_name": "Beans, black, mature seeds, canned, low sodium",
+      "quantity_g": 195.0,
+      "quantity_display": "3/4 cup (195 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175238,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked brown rice",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 140.0,
+      "quantity_display": "1 cup (140 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toss the pork medallions with the cumin, oregano, and black pepper in a bowl to coat evenly.",
+    "Heat the olive oil in a large skillet over medium-high heat. Add the pork in a single layer and cook for 4 to 6 minutes, flipping halfway, until the meat is browned, then transfer to a plate.",
+    "Reduce the heat to medium and add the red onion and green bell pepper to the skillet. Cook for 4 to 5 minutes, stirring occasionally, until the vegetables soften.",
+    "Stir the minced garlic into the skillet and cook for 1 minute until fragrant.",
+    "Add the rinsed black beans, brown rice, and water to the pan. Cook for 2 to 3 minutes, stirring constantly, until the mixture is steaming and heated through.",
+    "Remove the skillet from the heat. Stir in the fresh lime juice, then return the pork medallions and resting juices to the pan, tossing gently to combine.",
+    "Divide the rice and vegetable mixture evenly between warm plates, and top with the pork medallions."
+  ],
+  "variation": "Swap the pork tenderloin for boneless, skinless chicken breast pieces.",
+  "conservation": "Keeps 3 days refrigerated; reheat in the microwave until warmed through.",
+  "nutrition_per_serving": {
+    "calories_kcal": 429.6,
+    "protein_g": 38.7,
+    "carbs_g": 42.9,
+    "fat_g": 11.5,
+    "fiber_g": 10.1,
+    "sodium_mg": 217.3,
+    "sugar_g": 3.8,
+    "saturated_fat_g": 2.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 92.0,
+    "potassium_mg": 1143.5,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.7,
+    "pufa_g": 1.7,
+    "calcium_mg": 86.8,
+    "iron_mg": 5.0,
+    "vitamin_d_mcg": 0.3,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "[ingredient_instruction_consistency] Step 1 calls for 'a pinch of black pepper,' but black pepper is not included in the ingredient list. Add it to the list to ensure complete consistency."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\cuban-spiced_pork_medallions_with_black_beans_and_rice.png",
+  "created_at": "2026-08-11T09:14:24.366503",
+  "generation_id": "fb609a4a-a8d3-4a8f-bf23-e6ce755bd1ef"
+}

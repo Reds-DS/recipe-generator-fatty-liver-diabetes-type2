@@ -1,0 +1,176 @@
+{
+  "id": "d8d66067-8ba6-4620-bbe4-8d6759a019d5",
+  "title": "Ginger-Soy Poached Haddock with Bok Choy and Brown Rice",
+  "intro": "This simple skillet meal provides lean protein and dietary fiber for a satisfying dinner. The savory ginger broth infuses the fish with flavor without adding excess sodium.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 6,
+  "cook_time_max_min": 8,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 5.0,
+      "quantity_display": "1 tsp (5 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh ginger",
+      "canonical_name": "Ginger root, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "1 tbsp (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169231,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Reduced-sodium soy sauce",
+      "canonical_name": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 172473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unseasoned rice vinegar",
+      "canonical_name": "Vinegar, rice",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Haddock fillets",
+      "canonical_name": "Fish, haddock, raw",
+      "quantity_g": 255.0,
+      "quantity_display": "9 oz (255 g)",
+      "preparation": null,
+      "fdc_id": 171964,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen shelled edamame",
+      "canonical_name": "Edamame, frozen, prepared",
+      "quantity_g": 155.0,
+      "quantity_display": "1 cup (155 g)",
+      "preparation": null,
+      "fdc_id": 168410,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby bok choy",
+      "canonical_name": "Cabbage, chinese (pak-choi), raw",
+      "quantity_g": 227.0,
+      "quantity_display": "8 oz (227 g)",
+      "preparation": "quartered",
+      "fdc_id": 170390,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat brown rice pouch",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 290.0,
+      "quantity_display": "1.5 cups (290 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Scallions",
+      "canonical_name": "Onions, spring or scallions (includes tops and bulb), raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 medium (30 g)",
+      "preparation": "thinly sliced",
+      "fdc_id": 170005,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Chop the baby bok choy, mince the garlic and ginger, and slice the scallions.",
+    "Heat the olive oil in a large skillet over medium heat, then add the garlic and ginger and cook for 1 minute until fragrant.",
+    "Pour in the vegetable broth, reduced-sodium soy sauce, and rice vinegar, and bring the liquid to a simmer.",
+    "Nestle the haddock fillets and frozen edamame into the skillet, then cover and simmer for 2 minutes.",
+    "Scatter the baby bok choy over the fish and edamame. Cover the skillet and simmer for 3 to 5 minutes, checking at the 3-minute mark to ensure the fish is opaque and flakes easily and the greens are wilted.",
+    "Heat the brown rice in the microwave according to the package directions while the fish finishes cooking.",
+    "Divide the warm brown rice between serving bowls. Top with the haddock, edamame, and baby bok choy, spoon the broth over the bowls, and garnish with the scallions."
+  ],
+  "variation": "Trade the haddock for cod or peeled large shrimp.",
+  "conservation": "Keeps 2 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 413.1,
+    "protein_g": 36.3,
+    "carbs_g": 49.0,
+    "fat_g": 8.5,
+    "fiber_g": 7.7,
+    "sodium_mg": 572.4,
+    "sugar_g": 4.5,
+    "saturated_fat_g": 0.9,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 68.8,
+    "potassium_mg": 1237.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 2.5,
+    "pufa_g": 1.1,
+    "calcium_mg": 202.8,
+    "iron_mg": 4.0,
+    "vitamin_d_mcg": 0.6,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added vegetable broth"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'No-salt-added vegetable broth' — values estimated by the LLM.",
+    "saturated_fat_g: partial data — 14% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 11% of recipe weight has no USDA value for it.",
+    "sodium 572.4 mg/serving > ceiling 550 mg (\"main\")",
+    "[ingredient_instruction_consistency] The ingredient list specifies the baby bok choy as '(quartered)', but Step 1 instructs the reader to 'Chop the baby bok choy'. Change Step 1 to omit the bok choy since it is already prepped, or change the ingredient list to '(trimmed)' and leave the chopping in Step 1.",
+    "[chapter_intent_fit] Fits the chapter beautifully as a fast, lean-seafood weeknight option. However, the sodium comes in at 572 mg (just over the 550 mg limit). Consider reducing the soy sauce slightly to 1.5 tsp to easily duck under the ceiling, or keep as is if the culinary team prefers to absorb the minor 22 mg overage."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\ginger-soy_poached_haddock_with_bok_choy_and_brown_rice.png",
+  "created_at": "2026-08-11T09:35:52.391088",
+  "generation_id": "c14629a1-9940-4a11-a8ca-4cd73556f803"
+}

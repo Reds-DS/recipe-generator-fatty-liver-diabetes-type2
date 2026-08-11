@@ -1,0 +1,287 @@
+{
+  "main_ingredient": "turkey breast cutlets",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Skillet Turkey Puttanesca with Zucchini and Quinoa",
+  "recipe_id": "63dda4e1-6d2f-48d5-9ccd-ffdef1db7633",
+  "generation_id": "b2e6d88e-f0b2-4b68-b834-6aaa13e6641a",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T08:58:24.996546",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Skillet Turkey Puttanesca with Zucchini and Quinoa",
+        "main_ingredient": "turkey breast cutlets",
+        "technique": "Pan-sear and skillet simmer",
+        "flavour_profile": "Briny, savory, and tomato-forward",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "turkey breast cutlets",
+          "microwaveable quinoa pouch",
+          "zucchini",
+          "no-salt-added canned diced tomatoes",
+          "Kalamata olives",
+          "capers",
+          "garlic",
+          "extra-virgin olive oil",
+          "fresh basil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 439.1,
+          "protein_g": 39.0,
+          "carbs_g": 39.8,
+          "fat_g": 15.4,
+          "fiber_g": 9.4,
+          "sodium_mg": 345.3,
+          "sugar_g": 10.1,
+          "saturated_fat_g": 2.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 67.6,
+          "potassium_mg": 1364.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.0,
+          "pufa_g": 3.4,
+          "calcium_mg": 151.3,
+          "iron_mg": 5.7,
+          "vitamin_d_mcg": 0.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 10,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.909,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional, cookbook-ready recipe. It perfectly leverages pantry staples and a pre-cooked quinoa pouch to deliver a vibrant, Mediterranean-style plate well under 30 minutes, cleanly hitting all nutritional targets for both blood sugar and liver health.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The puttanesca flavor profile (tomatoes, garlic, olives, capers, vinegar) is a classic combination that pairs beautifully with the mild turkey and zucchini. Excellent balance of acid, brine, and umami."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are correctly utilized in the instructions, and no surprise ingredients are introduced in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are exemplary: cook times have clear ranges, halfway flips are mentioned, visual doneness cues are present, and minimum time checks are included."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with a Mediterranean style, relying on olive oil, garlic, tomatoes, olives, and fresh basil."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet cooking is the ideal method for lean turkey cutlets and a fast pan-sauce, ensuring the meat doesn't dry out while the flavors meld rapidly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Computed nutrition values are highly plausible and align well with the lean turkey, portioned quinoa, and non-starchy vegetables."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is perfectly descriptive, and the intro is warm, accurate, and highlights the use of pantry staples without making any unapproved health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an incredibly appetizing, vibrant, and practical weeknight meal. The flavors are punchy and satisfying."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nails the dual mandate: completely olive-oil-led with lean protein, packed with non-starchy vegetables, and grounded by a measured, high-quality whole grain."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Contains zero added sugar and relies on a robust serving of quinoa (providing ~40g total carbohydrates), safely avoiding the keto zone while delivering high-quality fiber."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Chicken, Turkey & Lean Meat Dinners' chapter flawlessly. Nutrition values are perfectly within the main meal tier's target windows (39.8g carbs, 9.4g fiber, 39g protein)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The brilliant use of a ready-to-eat quinoa pouch and quick-cooking turkey cutlets guarantees this meal can easily be prepped and cooked well within the 30-minute promise from everyday supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The dish is centered with generous negative space, captured at a 3/4 overhead angle to showcase all components. The foreground features one plate clearly, with a second identical serving plate softly blurred in the background. Shallow depth of field creates a natural bokeh. Lighting is soft natural side light from a window on the left, casting gentle shadows and highlighting the sheen of the puttanesca sauce. The setting is a rustic aged oak table with visible wood grain. Props include a wooden spoon resting casually beside the plates and a few scattered kalamata olive halves and a stray caper on the table surface. The dish features a base of fluffy, light-brown cooked quinoa. Tender turkey breast cutlets with golden-brown seared edges are nestled directly next to the quinoa, not covered by it. A chunky, rustic puttanesca sauce—rich with red tomato pieces, dark purple kalamata olive halves, and bright green capers—is spooned over the turkey. Diced zucchini, slightly softened and caramelized, are visible within the sauce. The dish is topped with fresh, vibrant green chopped basil. The scene is photorealistic, not AI-generated looking. It reflects a home-cooked, warm, and authentic meal. Includes slight natural imperfections like a small sauce drip on the rim and uneven browning on the turkey. Features a warm, golden-hour color temperature. No plastic sheen, no perfect symmetry, no text, no watermarks, no hands, no faces.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 0,
+  "total_corrections": 0
+}

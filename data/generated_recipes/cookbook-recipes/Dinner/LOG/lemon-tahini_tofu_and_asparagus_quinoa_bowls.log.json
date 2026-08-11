@@ -1,0 +1,312 @@
+{
+  "main_ingredient": "Extra-firm tofu",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Lemon-Tahini Tofu and Asparagus Quinoa Bowls",
+  "recipe_id": "b1542c27-080b-4999-b186-a126a172082e",
+  "generation_id": "2397a188-fa3b-4ea1-bb46-b70c4b235590",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:43:55.104920",
+  "draft_attempts": 2,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemon-Tahini Tofu and Asparagus Quinoa Bowls",
+        "main_ingredient": "Extra-firm tofu",
+        "technique": "Skillet pan-searing",
+        "flavour_profile": "Lemony, nutty, and savory",
+        "cuisine_style": "Mediterranean-inspired",
+        "ingredients_sketch": [
+          "Extra-firm tofu",
+          "Fresh asparagus spears",
+          "Cherry tomatoes",
+          "Microwaveable plain quinoa pouch",
+          "Tahini",
+          "Fresh lemon",
+          "Dried oregano",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High oil / fat amount: 22g/person (recommended at most 18g/person for a main meal)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High oil / fat amount: 22g/person (recommended at most 18g/person for a main meal).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Low-sodium canned chickpeas' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 15% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 15% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 15% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 15% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium canned chickpeas"
+        ],
+        "nutrition": {
+          "calories_kcal": 413.5,
+          "protein_g": 28.6,
+          "carbs_g": 50.3,
+          "fat_g": 13.5,
+          "fiber_g": 12.3,
+          "sodium_mg": 116.0,
+          "sugar_g": 10.3,
+          "saturated_fat_g": 1.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 2.5,
+          "potassium_mg": 793.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 3.6,
+          "pufa_g": 5.1,
+          "calcium_mg": 416.1,
+          "iron_mg": 6.6,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium canned chickpeas"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.727,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, practical, and highly nutritious recipe. It skillfully uses standard supermarket shortcuts (ready-to-eat quinoa) to deliver a well-balanced, plant-forward meal in under 30 minutes, meeting all the chapter's rigorous macronutrient goals perfectly.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The Mediterranean flavors—lemon, tahini, oregano, and garlic—are perfectly balanced and pair wonderfully with the neutral tofu, earthy asparagus, and quinoa base."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are fully accounted for in the instructions, and no surprise ingredients are introduced in the text."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are exemplary: they include clear cook time ranges, mid-point check instructions, and distinct visual doneness cues (e.g., 'golden brown', 'tender-crisp')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns beautifully with the Mediterranean-inspired style, substituting standard Mediterranean proteins with tofu to maintain the structural profile while matching the flavor."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Searing tofu and steaming the asparagus directly in the skillet with a splash of water is a solid, efficient one-pan cooking strategy."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The nutrition values are well-aligned with the quantities provided. The combination of tofu, quinoa, chickpeas, and Greek yogurt plausibly gets the protein near 29g."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is highly accurate, and the intro smartly explains the culinary rationale for stretching the tahini with yogurt. The tone fits perfectly."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, high-protein, vibrant dish. The creamy tahini-yogurt dressing will bring the whole bowl together nicely."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Successfully balances both conditions: it utilizes extra virgin olive oil, relies on robust whole grains and vegetables, and remains lean in saturated fats while providing a quality complex carb."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "No added sugars. The carbohydrate presence (50.3g) is superb, originating entirely from whole, fibrous sources like quinoa, chickpeas, and vegetables, hitting the desired window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Vegetable & Meatless Dinners' intent precisely. It solves the plant-based protein challenge by strategically stacking tofu, beans, grains, and yogurt to exceed the 26g floor."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved within 30 minutes from a cold start. Utilizing a ready-to-eat quinoa pouch is a highly practical, book-approved strategy to save time on a weeknight."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two ceramic bowls centered on an aged oak table, with one bowl sharp in the foreground and the second softly blurred in the background. The camera angle is a 3/4 overhead view at 40 degrees, ensuring every component is visible with generous negative space around the bowls. Soft, natural side light from a window to the left creates gentle shadows and highlights the creamy texture of the dressing. The dish consists of golden-brown, pan-seared tofu cubes resting beside tender, vibrant green asparagus pieces and a hearty base of fluffy cooked quinoa. The bowl is packed with bright red halved cherry tomatoes and plump chickpeas, all tossed with dried oregano and aromatic garlic powder. A generous swirl of pale, creamy tahini-yogurt dressing is drizzled over the top, with small drips clinging to the side of the ceramic bowl. Props include a rumpled linen napkin tucked beside the bowl and a few scattered herb leaves and a small piece of squeezed lemon on the wood surface. The textures are authentic: crispy tofu edges, softened tomato skins, and matte quinoa grains. Photorealistic, not AI-generated looking. The scene captures a warm, lived-in kitchen atmosphere, reflecting a meal just finished. Include slight imperfections like uneven tofu browning, a small sauce drip on the rim, and a stray crumb trail. Warm, golden-hour lighting. No plastic sheen, no artificial symmetry, no hands, no text, no logos. The image is indistinguishable from a professional cookbook photograph.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

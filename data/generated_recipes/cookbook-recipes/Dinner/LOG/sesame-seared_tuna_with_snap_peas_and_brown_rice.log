@@ -1,0 +1,74 @@
+=== RECIPE LOG: Sesame-Seared Tuna with Snap Peas and Brown Rice ===
+ID            : fb090d76-ab00-46d6-9ef7-675ec6151ba7
+Generation ID : aaf0541f-fc8b-4747-923b-146a0764179e
+Generated     : 2026-08-11 09:25:19
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 8
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Fresh or frozen tuna steaks
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Sesame-Seared Tuna with Snap Peas and Brown Rice
+Technique       : Skillet sear and quick stir-fry
+Cuisine style   : Asian-American
+Flavour profile : Umami, ginger, and toasted sesame
+Sketch          : Fresh or frozen (thawed) tuna steaks, Sesame seeds, Low-sodium soy sauce, Fresh ginger paste (or minced ginger), Fresh sugar snap peas, Frozen shelled edamame, Microwaveable brown rice pouch, Scallions, Extra-virgin olive oil
+
+--- Draft (3 attempt(s)) ---
+  [Attempt 1] Rejected
+    [WARN] High salt / salty-sauce amount: 11.0g/person (recommended at most 5g/person).
+  [Attempt 2] Rejected
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. High salt / salty-sauce amount: 11.0g/person (recommended at most 5g/person).
+
+Revise the quantities so they match exactly 2 s...
+    [WARN] High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person).
+  [Attempt 3] Accepted
+    Feedback: The recipe's quantities look wrong for 2 people. Required corrections:
+1. High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person).
+
+Revise the quantities so they match exactly 2 se...
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Fresh sugar snap peas, Unseasoned rice vinegar
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Fresh sugar snap peas' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Unseasoned rice vinegar' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 28% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two ceramic plates arranged in a warm, lived-in kitchen environment. The primary plate is centered in the frame, angled at a 35-degre...

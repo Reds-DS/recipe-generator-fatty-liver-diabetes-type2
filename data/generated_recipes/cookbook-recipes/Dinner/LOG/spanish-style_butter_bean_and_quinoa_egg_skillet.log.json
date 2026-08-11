@@ -1,0 +1,300 @@
+{
+  "main_ingredient": "Canned butter beans and eggs",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Spanish-Style Butter Bean and Quinoa Egg Skillet",
+  "recipe_id": "9e005a49-1eda-48fa-9802-a744f5e886a8",
+  "generation_id": "15998629-4195-4617-af88-2b8b80020940",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:59:56.390505",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Spanish-Style Butter Bean and Quinoa Egg Skillet",
+        "main_ingredient": "Canned butter beans and eggs",
+        "technique": "Simmered skillet with poached eggs",
+        "flavour_profile": "Smoky, rich tomato, and garlicky",
+        "cuisine_style": "Spanish-Inspired Mediterranean",
+        "ingredients_sketch": [
+          "No-salt-added canned butter beans (or large lima beans)",
+          "Microwaveable quinoa pouch",
+          "Canned crushed tomatoes (no-salt-added)",
+          "Eggs",
+          "Garlic",
+          "Smoked paprika",
+          "Fresh baby spinach",
+          "Extra-virgin olive oil",
+          "Red wine vinegar",
+          "Fresh parsley"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'No-salt-added canned butter beans' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned butter beans"
+        ],
+        "nutrition": {
+          "calories_kcal": 469.3,
+          "protein_g": 30.5,
+          "carbs_g": 45.3,
+          "fat_g": 19.1,
+          "fiber_g": 11.7,
+          "sodium_mg": 237.3,
+          "sugar_g": 7.4,
+          "saturated_fat_g": 4.4,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 374.9,
+          "potassium_mg": 817.8,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.3,
+          "pufa_g": 3.7,
+          "calcium_mg": 209.2,
+          "iron_mg": 4.6,
+          "vitamin_d_mcg": 2.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned butter beans"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional, ready-to-publish recipe. It brilliantly utilizes ready-to-eat quinoa and canned beans to deliver a complex, protein-rich Mediterranean skillet meal well under the 30-minute threshold, perfectly satisfying both the culinary and nutritional demands of the book.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. The smoky paprika, garlic, and tomato create a classic Spanish-inspired base (reminiscent of huevos a la flamenca), while the red wine vinegar adds necessary acidity and the Greek yogurt provides a creamy, cooling finish."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions exactly as stated, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are thorough and well-cued, providing proper time ranges (2 to 3 minutes; 5 to 7 minutes), a specific mid-point check for the eggs, and clear visual cues for doneness (fragrant, wilted, firmly set whites with soft yolks)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with its Spanish-inspired Mediterranean billing, utilizing olive oil, garlic, smoked paprika, tomatoes, and beans."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A stovetop covered skillet is the ideal, proven method for gently poaching eggs in a thick tomato and bean base."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The calculated nutrition accurately reflects the ingredients. Protein (30.5 g) correctly accounts for the eggs, yogurt, beans, and quinoa, while the saturated fat remains within limits."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the main components of the dish. The intro is warm, practical, and focuses appropriately on fiber and lasting fullness without using banned 'diet' or 'detox' claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, comforting, and visually attractive one-pan meal that feels robust and satisfying."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely serves both conditions well. It provides plenty of vegetable volume and fiber for fatty liver, while delivering steady, complex carbohydrates alongside lean proteins to manage blood sugar."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balanced. Zero added sugars, and the carbohydrate load (45.3 g) falls squarely in the target window, sourced entirely from high-quality whole foods (beans and quinoa)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An exemplary fit for the 'Vegetable & Meatless Dinners' chapter. It successfully hits the challenging >=26g meatless protein target by smartly combining legumes, quinoa, eggs, and Greek yogurt, while staying perfectly within the calorie, saturated fat, and sodium parameters."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Comfortably achievable in under 30 minutes from a cold start. The use of a ready-to-eat cooked quinoa pouch is a first-class strategy to meet the strict time constraint using easily accessible supermarket ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow, matte ceramic bowls set on an aged oak wood table with visible grain and small nicks. The composition is a 3/4 overhead angle, ensuring every component of the Spanish-style skillet meal is clearly visible. The bowls are filled with a hearty mixture of tomato-based sauce, creamy butter beans, and fluffy quinoa, with wilted baby spinach leaves interspersed throughout. Four eggs are nestled into the mixture, their whites cooked to a firm opaque white with soft, runny, golden-orange yolks visible. Dollops of thick Greek yogurt are placed strategically around the edges of the skillet mixture, creating a creamy contrast against the deep red tomato sauce. The dish is garnished with a fresh, irregular scatter of chopped bright green parsley. Shallow depth of field keeps the foreground bowl sharp while the second bowl and a wooden spoon resting on the table are softly blurred. Soft natural light flows from a window on the left, casting gentle, natural shadows and creating a subtle sheen on the oil-kissed sauce. The atmosphere is warm, cozy, and lived-in, with a few stray grains of quinoa and a small splash of red sauce on the wooden surface near the bowls. No plastic sheen, no perfect symmetry, no artificial lighting. Photorealistic, not AI-generated looking. Warm, golden-hour color temperature. Indistinguishable from a photograph taken by a professional food photographer for a printed cookbook. No text, no watermark, no logo, no hands, no faces.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

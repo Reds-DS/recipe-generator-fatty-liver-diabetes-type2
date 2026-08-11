@@ -1,0 +1,168 @@
+{
+  "id": "b7657081-58e8-4521-8dd6-bd04d929b46d",
+  "title": "Creamy Dijon Mushroom and Lentils Over Farro",
+  "intro": "Trading heavy cream and beef for nonfat Greek yogurt and lentils turns a classic stroganoff into a satisfying weekday dinner. This earthy dish delivers a comforting tang alongside plenty of plant-based protein and fiber.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 8,
+  "cook_time_max_min": 11,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "cremini mushrooms",
+      "canonical_name": "Mushrooms, brown, italian, or crimini, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "sliced",
+      "fdc_id": 168434,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "fresh thyme",
+      "canonical_name": "Thyme, fresh",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": "chopped",
+      "fdc_id": 173470,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Dijon mustard",
+      "canonical_name": "Mustard, prepared, dijon",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "no-salt-added canned brown lentils",
+      "canonical_name": "Lentils, mature seeds, cooked, boiled, without salt",
+      "quantity_g": 200.0,
+      "quantity_display": "1 cup (200 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 172421,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "plain nonfat Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 225.0,
+      "quantity_display": "1 cup (225 g)",
+      "preparation": "at room temperature",
+      "fdc_id": 170894,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "ready-to-eat cooked farro pouch",
+      "canonical_name": "Wheat, spelt, cooked, boiled",
+      "quantity_g": 140.0,
+      "quantity_display": "1 cup (140 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "chopped walnuts",
+      "canonical_name": "Nuts, walnuts, english",
+      "quantity_g": 28.0,
+      "quantity_display": "1 oz (28 g)",
+      "preparation": null,
+      "fdc_id": 170187,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat the oil in a large skillet over medium-high heat until shimmering.",
+    "Add the mushrooms and cook for 5 to 7 minutes, stirring occasionally, until deeply browned and the moisture evaporates.",
+    "Stir in the garlic and thyme, and cook for 1 minute until fragrant.",
+    "Pour in the broth and mustard, scraping up any browned bits from the bottom of the pan, and bring to a simmer.",
+    "Reduce the heat to medium-low, stir in the lentils, and simmer for 2 to 3 minutes. Remove the skillet from the heat.",
+    "Warm the farro in the microwave according to the pouch directions. Let the lentil skillet cool off the heat, then stir in the yogurt until smoothly combined so it does not curdle.",
+    "Divide the warm farro between serving bowls, top with the mushroom and lentil mixture, and garnish with the walnuts."
+  ],
+  "variation": "Swap the farro for a ready-to-eat brown rice pouch.",
+  "conservation": "Keeps 3 days refrigerated; reheat gently over low heat.",
+  "nutrition_per_serving": {
+    "calories_kcal": 485.0,
+    "protein_g": 29.8,
+    "carbs_g": 53.3,
+    "fat_g": 18.9,
+    "fiber_g": 12.7,
+    "sodium_mg": 269.8,
+    "sugar_g": 8.5,
+    "saturated_fat_g": 2.2,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 5.6,
+    "potassium_mg": 1111.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.8,
+    "pufa_g": 7.6,
+    "calcium_mg": 186.3,
+    "iron_mg": 4.5,
+    "vitamin_d_mcg": 0.1,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "low-sodium vegetable broth",
+      "Dijon mustard",
+      "ready-to-eat cooked farro pouch"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.",
+    "No USDA candidate for 'Dijon mustard' — values estimated by the LLM.",
+    "Stage 4 qualifier: 'no-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "No USDA candidate for 'ready-to-eat cooked farro pouch' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "[instruction_completeness] The steps are well written and include visual cues, but the cook time header (8 minutes) only reflects the minimum possible time (5+1+2). Update the cook time header to 11 minutes (7+1+3) to reflect the maximum range. Additionally, add a 'Check at 5 minutes' prompt to step 2 to strictly follow the minimum-time-check rule."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\creamy_dijon_mushroom_and_lentils_over_farro.png",
+  "created_at": "2026-08-11T10:09:29.679786",
+  "generation_id": "91cf2726-8242-4824-b604-6325162e8259"
+}

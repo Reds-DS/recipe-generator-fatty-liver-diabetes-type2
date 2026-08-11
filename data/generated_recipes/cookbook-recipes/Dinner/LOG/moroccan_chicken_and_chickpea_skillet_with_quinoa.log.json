@@ -1,0 +1,291 @@
+{
+  "main_ingredient": "Chicken tenderloins",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Moroccan Chicken and Chickpea Skillet with Quinoa",
+  "recipe_id": "28fe2c01-06ea-4ef9-9900-cb95987987bd",
+  "generation_id": "20902eec-a4c8-49fd-8011-473e6c084878",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:05:28.739028",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Moroccan Chicken and Chickpea Skillet with Quinoa",
+        "main_ingredient": "Chicken tenderloins",
+        "technique": "One-skillet simmer",
+        "flavour_profile": "Warm and earthy spices with a bright lemon finish",
+        "cuisine_style": "North African-Inspired Mediterranean",
+        "ingredients_sketch": [
+          "Chicken tenderloins",
+          "Extra-virgin olive oil",
+          "Ground cumin",
+          "Smoked paprika",
+          "Ground cinnamon",
+          "No-salt-added diced tomatoes",
+          "No-salt-added canned chickpeas",
+          "Fresh baby spinach",
+          "Microwaveable quinoa pouch",
+          "Fresh lemon"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 404.9,
+          "protein_g": 34.8,
+          "carbs_g": 37.0,
+          "fat_g": 13.8,
+          "fiber_g": 9.4,
+          "sodium_mg": 483.1,
+          "sugar_g": 6.1,
+          "saturated_fat_g": 2.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 80.3,
+          "potassium_mg": 1162.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.9,
+          "pufa_g": 3.1,
+          "calcium_mg": 148.4,
+          "iron_mg": 5.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 11,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.917,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptionally well-crafted recipe that perfectly balances the book's dietary requirements, strict time constraints, and culinary appeal, using smart convenience items like pouch quinoa to deliver a robust weeknight dinner.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Cumin, smoked paprika, and cinnamon combined with tomatoes and a bright lemon finish create a classic, highly coherent North African flavor profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are correctly and sequentially used in the instructions, with no missing or phantom items."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructions. All cook times are given as ranges with minimum-time checks, and clear visual doneness cues (e.g., 'opaque throughout', 'thoroughly wilted') are provided for every step."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques align perfectly with the stated North African-Inspired Mediterranean style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A covered skillet braise is an ideal method here, gently cooking the lean chicken tenderloins in the tomato juices while simultaneously warming the quinoa and chickpeas without drying anything out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macros perfectly align with the ingredients and quantities (e.g., 34.8g protein from 4oz chicken + quinoa + chickpeas per serving)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and highlight key ingredients. The tone is warm, engaging, and entirely free of banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A vibrant, flavorful, and incredibly practical weeknight dinner. It is highly appetizing and well thought through."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly balances the dietary needs for both conditions: lean protein, quality fiber-rich carbohydrates, healthy unsaturated fat, and plenty of non-starchy vegetables."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrates (37g) sit right in the middle of the target window, sourced safely from high-quality quinoa and chickpeas."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the weeknight lean-meat dinner chapter perfectly, hitting all nutrient tier targets and stylistic expectations for a one-pan meal."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The use of a ready-to-eat quinoa pouch is a smart, fully compliant shortcut that respects the book's strict time limit."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed at a 3/4 overhead angle, ensuring the entirety of two matte ceramic plates is visible. The primary plate is sharp in the foreground, with a second, identical plate slightly blurred in the background. Each serving features a generous portion of the Moroccan-style braise: succulent, bite-sized chicken tenderloin chunks, perfectly opaque and tender, are nestled among fluffy grains of cooked quinoa and firm, golden-toned chickpeas. All ingredients are coated in a rich, vibrant tomato-based sauce that is deeply colored by the warm hues of cumin, smoked paprika, and cinnamon. Fresh baby spinach is wilted throughout the mixture, adding splashes of deep, dark green. Soft natural light from a window on the left highlights the glistening sheen of the olive oil and lemon juice within the sauce. The plates sit on a weathered, aged oak wood table with visible grain and natural use marks. Beside the front plate lies a wooden spoon resting casually, along with a few stray chickpeas and a small, unpeeled garlic clove on the wood surface. The depth of field is shallow, creating a soft, creamy bokeh. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the chicken. Include subtle traces of the cooking process: a crumb trail on the surface, a small spinach leaf on the table, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

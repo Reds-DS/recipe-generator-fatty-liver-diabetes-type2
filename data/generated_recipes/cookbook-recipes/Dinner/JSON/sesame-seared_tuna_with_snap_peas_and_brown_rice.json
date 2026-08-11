@@ -1,0 +1,164 @@
+{
+  "id": "fb090d76-ab00-46d6-9ef7-675ec6151ba7",
+  "title": "Sesame-Seared Tuna with Snap Peas and Brown Rice",
+  "intro": "A steady supply of lean protein and dietary fiber helps maintain lasting energy throughout the busy week. This quick skillet dinner delivers a steakhouse-style seafood experience using accessible freezer staples.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 5,
+  "cook_time_max_min": 8,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Ready-to-eat cooked brown rice pouch",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 240.0,
+      "quantity_display": "1 pouch (8.5 oz / 240 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh or frozen tuna steaks (thawed)",
+      "canonical_name": "Fish, tuna, fresh, yellowfin, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": null,
+      "fdc_id": 175159,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sesame seeds",
+      "canonical_name": "Seeds, sesame seeds, whole, roasted and toasted",
+      "quantity_g": 9.0,
+      "quantity_display": "1 tbsp (9 g)",
+      "preparation": null,
+      "fdc_id": 170151,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Scallions",
+      "canonical_name": "Onions, spring or scallions (includes tops and bulb), raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 medium (30 g)",
+      "preparation": "sliced",
+      "fdc_id": 170005,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh sugar snap peas",
+      "canonical_name": "Peas, sugar snap, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "trimmed",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Frozen shelled edamame",
+      "canonical_name": "Edamame, frozen, prepared",
+      "quantity_g": 80.0,
+      "quantity_display": "1/2 cup (80 g)",
+      "preparation": "thawed",
+      "fdc_id": 168411,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh ginger paste",
+      "canonical_name": "Ginger, fresh",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": null,
+      "fdc_id": 169231,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium soy sauce",
+      "canonical_name": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 172473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unseasoned rice vinegar",
+      "canonical_name": "Vinegar, rice",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Microwave the brown rice pouch according to the package directions and set aside.",
+    "Pat the tuna steaks dry with a paper towel and press them firmly into the sesame seeds to coat both sides evenly.",
+    "Heat the extra-virgin olive oil in a large skillet over medium-high heat until shimmering. Sear the tuna for 1 to 2 minutes per side, flipping halfway through, until the crust is toasted and the center remains pink, then transfer to a cutting board.",
+    "Reduce the burner heat to medium, then add the scallions, sugar snap peas, edamame, and ginger paste to the skillet.",
+    "Stir-fry for 3 to 4 minutes until the peas are bright green and crisp-tender, then remove from the heat and stir in the low-sodium soy sauce and rice vinegar.",
+    "Slice the seared tuna. Divide the warm brown rice between plates, top with the vegetable mixture, and arrange the tuna slices over the top."
+  ],
+  "variation": "Swap the sugar snap peas for fresh or frozen broccoli florets.",
+  "conservation": "Best enjoyed right away; seared tuna does not reheat well.",
+  "nutrition_per_serving": {
+    "calories_kcal": 472.6,
+    "protein_g": 40.3,
+    "carbs_g": 46.9,
+    "fat_g": 13.8,
+    "fiber_g": 8.1,
+    "sodium_mg": 246.4,
+    "sugar_g": 6.2,
+    "saturated_fat_g": 2.1,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 43.9,
+    "potassium_mg": 885.3,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.4,
+    "pufa_g": 3.2,
+    "calcium_mg": 91.4,
+    "iron_mg": 3.5,
+    "vitamin_d_mcg": 1.9,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Fresh sugar snap peas",
+      "Unseasoned rice vinegar"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'Fresh sugar snap peas' — values estimated by the LLM.",
+    "No USDA candidate for 'Unseasoned rice vinegar' — values estimated by the LLM.",
+    "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 28% of recipe weight has no USDA value for it.",
+    "[instruction_completeness] Cook times are provided as ranges with clear visual cues, but the specific 'check at the minimum time' instruction is missing. Add 'Check at 1 minute' for the tuna searing and 'Check at 3 minutes' for the vegetable stir-fry to align perfectly with the book's house style."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\sesame-seared_tuna_with_snap_peas_and_brown_rice.png",
+  "created_at": "2026-08-11T09:25:19.174987",
+  "generation_id": "aaf0541f-fc8b-4747-923b-146a0764179e"
+}

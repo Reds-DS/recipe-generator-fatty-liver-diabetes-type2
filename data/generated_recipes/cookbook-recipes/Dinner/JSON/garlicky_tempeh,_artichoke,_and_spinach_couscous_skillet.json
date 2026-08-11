@@ -1,0 +1,166 @@
+{
+  "id": "002d2c29-32bf-46ea-8e7c-8ed3311c09b9",
+  "title": "Garlicky Tempeh, Artichoke, and Spinach Couscous Skillet",
+  "intro": "This hearty, plant-based dinner provides lasting energy and fullness by pairing protein-dense tempeh with fiber-rich whole-wheat couscous and artichokes.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 7,
+  "cook_time_max_min": 11,
+  "passive_time": "Rest 5 min",
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Tempeh",
+      "canonical_name": "Tempeh",
+      "quantity_g": 227.0,
+      "quantity_display": "8 oz (227 g)",
+      "preparation": "crumbled",
+      "fdc_id": 174272,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sun-dried tomatoes",
+      "canonical_name": "Tomatoes, sun-dried",
+      "quantity_g": 15.0,
+      "quantity_display": "1/4 cup (15 g)",
+      "preparation": "chopped",
+      "fdc_id": 168567,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned artichoke hearts",
+      "canonical_name": "Artichokes, canned, no salt added",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 can (120 g)",
+      "preparation": "rinsed, drained, and quartered",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 160.0,
+      "quantity_display": "2/3 cup (160 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": null,
+      "fdc_id": 168462,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Whole-wheat couscous (dry)",
+      "canonical_name": "Couscous, dry",
+      "quantity_g": 85.0,
+      "quantity_display": "1/2 cup (85 g)",
+      "preparation": null,
+      "fdc_id": 169699,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Feta cheese",
+      "canonical_name": "Cheese, feta",
+      "quantity_g": 15.0,
+      "quantity_display": "2 tbsp (15 g)",
+      "preparation": "crumbled",
+      "fdc_id": 173420,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat olive oil in a large skillet over medium-high heat until shimmering. Add crumbled tempeh and cook for 5 to 7 minutes, stirring occasionally, until golden brown.",
+    "Reduce heat to medium. Stir in minced garlic, dried oregano, sun-dried tomatoes, and quartered artichoke hearts, and cook for 1 to 2 minutes until the garlic is fragrant.",
+    "Pour in vegetable broth and bring to a simmer. Add baby spinach and stir for 1 to 2 minutes until wilted.",
+    "Stir in dry whole-wheat couscous, ensuring it is fully moistened by the broth and mixed with the vegetables.",
+    "Remove the skillet from the heat and cover tightly with a lid.",
+    "Uncover the skillet after resting and fluff the couscous mixture with a fork. Sprinkle crumbled feta cheese over the top before serving."
+  ],
+  "variation": "Swap the baby spinach for fresh arugula or baby kale.",
+  "conservation": "Keeps 3 days refrigerated; reheat briefly in the microwave.",
+  "nutrition_per_serving": {
+    "calories_kcal": 527.7,
+    "protein_g": 33.6,
+    "carbs_g": 55.2,
+    "fat_g": 22.3,
+    "fiber_g": 7.2,
+    "sodium_mg": 193.8,
+    "sugar_g": 4.1,
+    "saturated_fat_g": 5.0,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 6.7,
+    "potassium_mg": 985.6,
+    "trans_fat_g": 0.0,
+    "mufa_g": 9.5,
+    "pufa_g": 6.0,
+    "calcium_mg": 224.6,
+    "iron_mg": 5.3,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added canned artichoke hearts",
+      "Low-sodium vegetable broth"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": false,
+  "validation_warnings": [
+    "No USDA candidate for 'No-salt-added canned artichoke hearts' — values estimated by the LLM.",
+    "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+    "fiber_g: partial data — 32% of recipe weight has no USDA value for it.",
+    "sugar_g: partial data — 44% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 40% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 40% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 40% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 40% of recipe weight has no USDA value for it.",
+    "total carbohydrate 55.2 g/serving > ceiling 55 g (\"main\")",
+    "[instruction_completeness] Step 6 says 'After resting, uncover the skillet...' but no resting time is specified in Step 5 or 6. Couscous needs a specific rest time (usually 5 minutes). Fix: Update Step 5 or 6 to explicitly state 'Let rest for 5 minutes' before uncovering."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\garlicky_tempeh,_artichoke,_and_spinach_couscous_skillet.png",
+  "created_at": "2026-08-11T09:50:30.125036",
+  "generation_id": "ac29d1d9-0ba6-410c-9852-4406c441598c"
+}

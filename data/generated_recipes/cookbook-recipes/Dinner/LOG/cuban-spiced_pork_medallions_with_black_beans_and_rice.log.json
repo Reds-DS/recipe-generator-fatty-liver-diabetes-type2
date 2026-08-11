@@ -1,0 +1,291 @@
+{
+  "main_ingredient": "Pork tenderloin",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Cuban-Spiced Pork Medallions with Black Beans and Rice",
+  "recipe_id": "ae340df4-3f31-40b7-9f8e-678666e1478e",
+  "generation_id": "fb609a4a-a8d3-4a8f-bf23-e6ce755bd1ef",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:14:24.366503",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Cuban-Spiced Pork Medallions with Black Beans and Rice",
+        "main_ingredient": "Pork tenderloin",
+        "technique": "Skillet pan-searing",
+        "flavour_profile": "Earthy and citrusy with prominent cumin, oregano, and lime",
+        "cuisine_style": "Cuban-Inspired American",
+        "ingredients_sketch": [
+          "Pork tenderloin",
+          "Green bell pepper",
+          "Red onion",
+          "Garlic",
+          "Ground cumin",
+          "Dried oregano",
+          "No-salt-added canned black beans",
+          "Ready-to-eat brown rice pouch",
+          "Fresh lime",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 429.6,
+          "protein_g": 38.7,
+          "carbs_g": 42.9,
+          "fat_g": 11.5,
+          "fiber_g": 10.1,
+          "sodium_mg": 217.3,
+          "sugar_g": 3.8,
+          "saturated_fat_g": 2.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 92.0,
+          "potassium_mg": 1143.5,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.7,
+          "pufa_g": 1.7,
+          "calcium_mg": 86.8,
+          "iron_mg": 5.0,
+          "vitamin_d_mcg": 0.3,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] Step 1 calls for 'a pinch of black pepper,' but black pepper is not included in the ingredient list. Add it to the list to ensure complete consistency."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A superb, practical recipe that perfectly balances the dietary needs for MASLD and type 2 diabetes in a flavorful 20-minute skillet meal. Only a minor fix is needed to add the unlisted black pepper to the ingredient list.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is highly coherent. Cumin, oregano, garlic, and lime paired with pork, black beans, and rice is a classic, foolproof Cuban-inspired combination."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 1 calls for 'a pinch of black pepper,' but black pepper is not included in the ingredient list. Add it to the list to ensure complete consistency."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. They provide proper time ranges (4 to 6 minutes), visual cues (browned and cooked through, softened), check instructions at minimum times, and a halfway flip for the pork."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques align perfectly with a weeknight Cuban-American style, heavily featuring the characteristic mojo profile of citrus and earthy spices."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Pan-searing thin medallions is the ideal way to cook lean pork tenderloin quickly without drying it out. Sautéing the vegetables and warming the beans/rice in the same skillet works perfectly."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values align seamlessly with the specified quantities of pork, brown rice, black beans, and olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish. The intro highlights the main ingredients and focuses on practical, sensible benefits ('steady-digesting carbohydrate', 'energy stable') without using banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appetizing, colorful, and practical weeknight dinner. It transforms simple staples into an exciting meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliantly serves both conditions. It provides the high-quality, high-fiber carbohydrates (brown rice, black beans) needed for stable blood sugar, alongside the lean protein, vegetables, and olive oil required for a liver-friendly profile."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and it hits the carbohydrate window perfectly (42.9 g) using excellent quality sources (whole grain rice and legumes)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits perfectly into the lean meat dinners chapter. It is a true one-pan skillet meal featuring a measured portion of lean pork, whole grains, and a bright pan sauce built from lime juice rather than cream or butter."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The smart use of ready-to-eat cooked brown rice and quick-cooking pork medallions respects the cook's time while using everyday ingredients."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed as a 3/4 overhead angle (40 degrees) capturing two matte ceramic plates on a weathered, dark oak wood table. The primary plate is centered and sharp, while the second plate is slightly blurred in the background. Each plate features a generous base of nutty-brown rice mixed with black beans, vibrant green bell pepper pieces, and translucent softened red onion. Three golden-brown, seared pork medallions are placed neatly to the side of the rice mixture, not stacked, revealing their tender, juicy texture and aromatic spice-crusted surface. Soft natural side light from a window to the left highlights the sheen of lime-infused juices coating the pork and the matte texture of the beans. Props include a single wooden spoon resting on the table near a few stray grains of brown rice and a small garlic clove skin, indicating a freshly plated meal. The atmosphere is warm and lived-in. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the pork. Include subtle traces of the cooking process: a crumb trail on the surface, a small herb leaf on the table, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

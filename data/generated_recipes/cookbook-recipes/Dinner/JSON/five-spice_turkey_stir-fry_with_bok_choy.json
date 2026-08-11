@@ -1,0 +1,167 @@
+{
+  "id": "c98843c0-c44c-47a4-a819-5d42f66e2287",
+  "title": "Five-Spice Turkey Stir-Fry with Bok Choy",
+  "intro": "This fast, single-skillet dinner relies on quick-cooking turkey breast and a convenient brown rice pouch to keep weeknight preparation simple. Warm Chinese five-spice powder and fresh ginger deliver savory flavor without the heavy sugar of standard sauces.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "servings": 2,
+  "prep_time_min": 12,
+  "cook_time_min": 6,
+  "cook_time_max_min": 9,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Turkey breast cutlets",
+      "canonical_name": "Turkey, breast, meat only, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "sliced into thin strips",
+      "fdc_id": 174515,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chinese five-spice powder",
+      "canonical_name": "Spices, chinese five-spice",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh ginger",
+      "canonical_name": "Ginger root, raw",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 g)",
+      "preparation": "peeled and minced",
+      "fdc_id": 169231,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Sugar snap peas",
+      "canonical_name": "Peas, edible-podded, raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "trimmed",
+      "fdc_id": 170010,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby bok choy",
+      "canonical_name": "Cabbage, chinese (pak-choi), raw",
+      "quantity_g": 225.0,
+      "quantity_display": "8 oz (225 g)",
+      "preparation": "chopped",
+      "fdc_id": 170390,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium chicken broth",
+      "canonical_name": "Broth, chicken, low sodium, canned",
+      "quantity_g": 45.0,
+      "quantity_display": "3 tbsp (45 ml)",
+      "preparation": null,
+      "fdc_id": 171609,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Unseasoned rice vinegar",
+      "canonical_name": "Vinegar, rice",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium soy sauce",
+      "canonical_name": "Soy sauce made from soy and wheat (shoyu), low sodium",
+      "quantity_g": 10.0,
+      "quantity_display": "2 tsp (10 ml)",
+      "preparation": null,
+      "fdc_id": 172473,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked brown rice pouch",
+      "canonical_name": "Rice, brown, long-grain, cooked",
+      "quantity_g": 250.0,
+      "quantity_display": "8.8 oz (250 g)",
+      "preparation": null,
+      "fdc_id": 169704,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Toasted sesame seeds",
+      "canonical_name": "Seeds, sesame seeds, whole, roasted and toasted",
+      "quantity_g": 9.0,
+      "quantity_display": "1 tbsp (9 g)",
+      "preparation": null,
+      "fdc_id": 170151,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toss the turkey strips in a bowl with the Chinese five-spice powder until evenly coated.",
+    "Heat the olive oil in a large skillet over medium-high heat. Add the seasoned turkey and cook for 3 to 4 minutes, stirring frequently, until lightly browned.",
+    "Add the ginger, sugar snap peas, and bok choy to the skillet. Cook for 2 to 3 minutes, stirring constantly, until the vegetables turn bright green.",
+    "Pour the chicken broth, rice vinegar, and low-sodium soy sauce into the pan. Simmer for 1 to 2 minutes, tossing well, until the turkey is cooked through and the sauce lightly coats the ingredients.",
+    "Heat the brown rice pouch in the microwave for 1 to 2 minutes until steaming hot.",
+    "Divide the warm brown rice between two plates. Top evenly with the turkey and vegetable stir-fry, then garnish with the toasted sesame seeds."
+  ],
+  "variation": "Swap the turkey breast for lean pork tenderloin strips.",
+  "conservation": "Keeps 2 to 3 days refrigerated; reheat on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 448.6,
+    "protein_g": 36.4,
+    "carbs_g": 46.7,
+    "fat_g": 13.8,
+    "fiber_g": 7.2,
+    "sodium_mg": 355.0,
+    "sugar_g": 6.4,
+    "saturated_fat_g": 2.1,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 59.6,
+    "potassium_mg": 1011.4,
+    "trans_fat_g": 0.0,
+    "mufa_g": 7.1,
+    "pufa_g": 3.1,
+    "calcium_mg": 229.1,
+    "iron_mg": 5.7,
+    "vitamin_d_mcg": 0.2,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Chinese five-spice powder"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Chinese five-spice powder' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\five-spice_turkey_stir-fry_with_bok_choy.png",
+  "created_at": "2026-08-11T08:55:44.873870",
+  "generation_id": "eaaea212-4875-4de1-b2d4-12863ec0fdd7"
+}

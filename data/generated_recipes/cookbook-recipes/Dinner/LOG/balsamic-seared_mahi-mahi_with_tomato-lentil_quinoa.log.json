@@ -1,0 +1,291 @@
+{
+  "main_ingredient": "Fresh or thawed Mahi-Mahi fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Balsamic-Seared Mahi-Mahi with Tomato-Lentil Quinoa",
+  "recipe_id": "b0c7c2b9-5711-4196-95f2-489f7f05b58e",
+  "generation_id": "7416f6e9-7eaf-4626-81b1-a17be64b7ef4",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:16:47.021732",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Balsamic-Seared Mahi-Mahi with Tomato-Lentil Quinoa",
+        "main_ingredient": "Fresh or thawed Mahi-Mahi fillets",
+        "technique": "Skillet pan-sear",
+        "flavour_profile": "Tangy, savory, and naturally sweet from blistered tomatoes",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "Fresh or thawed Mahi-Mahi fillets",
+          "Extra-virgin olive oil",
+          "Cherry tomatoes",
+          "Garlic powder",
+          "Balsamic vinegar",
+          "No-salt-added canned brown lentils",
+          "Fresh baby spinach",
+          "Ready-to-eat microwaveable quinoa pouch"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+        "Stage 4 qualifier: 'No-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "sugar_g: partial data — 32% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 433.2,
+          "protein_g": 38.8,
+          "carbs_g": 46.5,
+          "fat_g": 10.5,
+          "fiber_g": 12.7,
+          "sodium_mg": 161.6,
+          "sugar_g": 5.7,
+          "saturated_fat_g": 1.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 93.1,
+          "potassium_mg": 1534.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.9,
+          "pufa_g": 2.2,
+          "calcium_mg": 95.9,
+          "iron_mg": 7.2,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.667,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] Step 1 mentions seasoning with 'a pinch of black pepper', but black pepper is not included in the ingredient list. Add it to the ingredient list to ensure complete consistency."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb, high-quality recipe that perfectly executes the book's dietary philosophy and time constraints. Fix the minor missing black pepper in the ingredient list, and it is ready for print.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and well-balanced. Balsamic vinegar and blistered tomatoes provide a nice sweet-and-sour tang that pairs beautifully with the earthy lentils, quinoa, and mild fish."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 1 mentions seasoning with 'a pinch of black pepper', but black pepper is not included in the ingredient list. Add it to the ingredient list to ensure complete consistency."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly structured. Cook times are given as ranges with specific minimum-time checks and clear visual doneness cues (opaque/flaky, blistered/burst) for every step."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques firmly align with the stated Mediterranean-American style, making great use of olive oil, tomatoes, garlic, oregano, and balsamic."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A one-skillet stovetop approach is perfect here. Searing the fish first and then using the residual fond to flavor the tomatoes, balsamic, and grains builds great flavor efficiently."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition is highly accurate and plausible for the specified amounts of fish, lentils, quinoa, olive oil, and vegetables."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the recipe. The intro properly highlights the time-saving use of the ready-to-eat quinoa pouch and canned lentils without making any banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appealing, colorful, and satisfying weeknight meal. The balsamic glaze ties the fish and grain base together beautifully."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An exemplary recipe for this book. It delivers high-quality lean protein, exceptional fiber from legumes and whole grains, and healthy fats from olive oil, perfectly serving both blood sugar and liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, with natural sweetness coming strictly from the blistered tomatoes and balsamic reduction. The carbohydrate base (46.5g) is robust, high-quality, and lands perfectly in the target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter flawlessly. It offers a quick, accessible way to get a serving of fish, hitting every single macronutrient target for the main nutrient tier."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from a cold start. The strategic use of a ready-to-eat quinoa pouch and canned lentils successfully bypasses the typical 40-minute grain cook time, honoring the book's strict time promise."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow matte ceramic bowls containing balsamic-seared mahi-mahi fillets served over a warm bed of brown lentils and quinoa. The primary bowl is centered in the frame, 3/4 overhead at a 40-degree angle, with the second bowl softly blurred in the background. The mahi-mahi fillets are golden-brown with visible seasoning grains of garlic powder and oregano, placed directly beside the quinoa-lentil mixture rather than on top. The base consists of a hearty blend of quinoa, tender brown lentils, and wilted, dark green baby spinach, all coated in a rich, dark amber balsamic reduction. Blistered cherry tomatoes, partially burst and caramelized, are tucked throughout the grain base. A shallow depth of field keeps the main fillet sharp while the background fades into a natural bokeh. Lighting is soft, directional natural light from a window on the left, casting subtle shadows and creating a slight sheen on the balsamic glaze. The setting is a rustic, aged oak wooden table with subtle imperfections. Props include a single wooden spoon resting naturally on the linen napkin beside the bowl and a few scattered brown lentils on the wood surface. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a small balsamic reduction drip on the plate rim, slightly uneven browning on the fish. Include subtle traces of the cooking process: a few tiny grains of quinoa on the table, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 5,
+  "total_corrections": 0
+}

@@ -1,0 +1,64 @@
+=== RECIPE LOG: Creamy Dijon Mushroom and Lentils Over Farro ===
+ID            : b7657081-58e8-4521-8dd6-bd04d929b46d
+Generation ID : 91cf2726-8242-4824-b604-6325162e8259
+Generated     : 2026-08-11 10:09:29
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 10
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : No-salt-added canned brown lentils
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Creamy Dijon Mushroom and Lentil Skillet over Farro
+Technique       : Skillet sauté and quick simmer
+Cuisine style   : French-Inspired American
+Flavour profile : Earthy, creamy, savory, and mildly tangy
+Sketch          : No-salt-added canned brown lentils (rinsed), Cremini mushrooms (sliced), Ready-to-eat cooked farro (or brown rice) pouch, Plain nonfat Greek yogurt (for a protein-rich cream sauce), Low-sodium vegetable broth (for deglazing without alcohol), Dijon mustard, Fresh thyme, Garlic, Extra-virgin olive oil, Chopped walnuts (for healthy fats and texture)
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : low-sodium vegetable broth, Dijon mustard, ready-to-eat cooked farro pouch
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Dijon mustard' — values estimated by the LLM.
+  [WARN] Stage 4 qualifier: 'no-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] No USDA candidate for 'ready-to-eat cooked farro pouch' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 28% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 28% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte ceramic bowls centered in the frame, one in clear focus and the second slightly blurred in the background, showcasing the C...

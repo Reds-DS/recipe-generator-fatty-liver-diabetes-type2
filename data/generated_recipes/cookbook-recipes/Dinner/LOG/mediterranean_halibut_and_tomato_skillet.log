@@ -1,0 +1,66 @@
+=== RECIPE LOG: Mediterranean Halibut and Tomato Skillet ===
+ID            : 686c2245-4a4d-489c-b511-f9a87f6dce38
+Generation ID : ebcce4b6-c172-4c00-8363-b08880d490c1
+Generated     : 2026-08-11 09:28:45
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 13
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Fresh halibut fillets
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Mediterranean Halibut and Tomato Skillet with Couscous
+Technique       : Skillet simmer
+Cuisine style   : Mediterranean
+Flavour profile : Bright, savory, and garlicky
+Sketch          : Fresh halibut fillets, Whole-wheat couscous, Cherry tomatoes, Baby spinach, Kalamata olives, Fresh garlic, Lemon, Extra-virgin olive oil, Dried oregano
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : Low-sodium vegetable broth, Low-sodium Kalamata olives
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
+  [WARN] No USDA candidate for 'Low-sodium Kalamata olives' — values estimated by the LLM.
+  [WARN] sugar_g: partial data — 21% of recipe weight has no USDA value for it.
+  [WARN] saturated_fat_g: partial data — 10% of recipe weight has no USDA value for it.
+  [WARN] cholesterol_mg: partial data — 23% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 13% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 13% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 13% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] fiber 6.2 g/serving < floor 7 g ("main")
+    [WARN] total carbohydrate 57.5 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow matte ceramic bowls placed on a rustic, aged oak wooden table with visible grain and slight knife marks. The camera angle...

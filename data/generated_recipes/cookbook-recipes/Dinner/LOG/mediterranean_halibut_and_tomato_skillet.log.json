@@ -1,0 +1,312 @@
+{
+  "main_ingredient": "Fresh halibut fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Mediterranean Halibut and Tomato Skillet",
+  "recipe_id": "686c2245-4a4d-489c-b511-f9a87f6dce38",
+  "generation_id": "ebcce4b6-c172-4c00-8363-b08880d490c1",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:28:45.495990",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Mediterranean Halibut and Tomato Skillet with Couscous",
+        "main_ingredient": "Fresh halibut fillets",
+        "technique": "Skillet simmer",
+        "flavour_profile": "Bright, savory, and garlicky",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Fresh halibut fillets",
+          "Whole-wheat couscous",
+          "Cherry tomatoes",
+          "Baby spinach",
+          "Kalamata olives",
+          "Fresh garlic",
+          "Lemon",
+          "Extra-virgin olive oil",
+          "Dried oregano"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "No USDA candidate for 'Low-sodium Kalamata olives' — values estimated by the LLM.",
+        "sugar_g: partial data — 21% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 10% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 23% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 13% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Low-sodium vegetable broth",
+          "Low-sodium Kalamata olives"
+        ],
+        "nutrition": {
+          "calories_kcal": 487.9,
+          "protein_g": 37.1,
+          "carbs_g": 57.5,
+          "fat_g": 12.1,
+          "fiber_g": 6.2,
+          "sodium_mg": 266.5,
+          "sugar_g": 4.1,
+          "saturated_fat_g": 1.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 68.6,
+          "potassium_mg": 1400.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.2,
+          "pufa_g": 1.5,
+          "calcium_mg": 105.5,
+          "iron_mg": 2.5,
+          "vitamin_d_mcg": 6.6,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Low-sodium vegetable broth",
+            "Low-sodium Kalamata olives"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.818,
+        "alias_hit_rate": 0.545,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "llm_estimate",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "fiber 6.2 g/serving < floor 7 g (\"main\")",
+        "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "fiber 6.2 g/serving < floor 7 g (\"main\")",
+              "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] Step 2 mentions seasoning the halibut with 'black pepper, and a pinch of salt,' but neither salt nor black pepper is included in the ingredient list. Please add them to the ingredients to ensure strict consistency.",
+        "[chapter_intent_fit] The dish is mostly on-brief but slightly drifts past the tier's carbohydrate ceiling (57.5g vs 55g) and undershoots the fiber floor (6.2g vs 7g). Consider reducing the dry couscous to 1/2 cup (80g) and bumping the spinach up to 5 or 6 oz to land perfectly within the target window."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a vibrant, appealing Mediterranean recipe that makes excellent use of quick-cooking halibut and whole-wheat couscous to deliver a well-balanced meal in under 30 minutes. A couple of minor adjustments—adding the missing salt and pepper to the ingredient list and slightly tweaking the couscous-to-spinach ratio to perfectly align with the fiber and carb targets—will make it an outstanding inclusion for the book.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Mediterranean and beautifully balanced. The bright acidity of the lemon and tomatoes complements the umami from the olives and the garlic-oregano aromatic base, making perfect culinary sense with the mild halibut."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 2 mentions seasoning the halibut with 'black pepper, and a pinch of salt,' but neither salt nor black pepper is included in the ingredient list. Please add them to the ingredients to ensure strict consistency."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are excellent for a beginner cook. They include clear time ranges, prompt checks at the minimum times, and distinct visual doneness cues (golden, blister and burst, spinach wilts, completely opaque and flakes easily)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe aligns perfectly with the stated Mediterranean cuisine style, relying on staple ingredients like extra-virgin olive oil, cherry tomatoes, garlic, oregano, olives, lemon, and whole-wheat couscous."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Searing the halibut on one side to develop flavor and then finishing it in a gentle simmer within the tomato pan sauce is an ideal technique to keep this lean fish moist and tender."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed macronutrients are completely consistent with the ingredient quantities. The protein aligns with 5 oz of halibut per serving, and the saturated fat reflects the use of a lean fish and extra-virgin olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title faithfully reflects the dish, and the intro accurately highlights the main ingredients. The tone is warm and practical, successfully avoiding any banned health claims or 'diet food' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a highly appetizing, original, and well-thought-out weeknight meal. The vibrant blistered tomato sauce over fluffy couscous makes it visually appealing and deeply satisfying."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe genuinely addresses both liver health and blood sugar management. It is strongly Mediterranean in character, leads with extra-virgin olive oil, features a lean protein, and relies on a clear, unrefined whole-grain carbohydrate."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "There is zero added sugar in this recipe. Additionally, the inclusion of whole-wheat couscous ensures the dish provides a high-quality carbohydrate base, steering clear of any inappropriate 'keto' or extremely low-carb pitfalls."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The dish is mostly on-brief but slightly drifts past the tier's carbohydrate ceiling (57.5g vs 55g) and undershoots the fiber floor (6.2g vs 7g). Consider reducing the dry couscous to 1/2 cup (80g) and bumping the spinach up to 5 or 6 oz to land perfectly within the target window."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The recipe meets the 30-minute promise comfortably. Prep is minimal, active cooking time is around 14 minutes, there are no hidden waits, and all ingredients are everyday supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 2,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow matte ceramic bowls placed on a rustic, aged oak wooden table with visible grain and slight knife marks. The camera angle is a 3/4 overhead view, capturing the full contents of both bowls. One bowl is in sharp focus in the foreground, while the second is softly blurred in the background. Each bowl contains a generous portion of fluffy, golden-brown whole-wheat couscous as a base, topped with a tender, opaque white halibut fillet that displays a light golden sear from the pan. Beside the fish, a mixture of blistered, bright red cherry tomatoes, dark Kalamata olives, and wilted, deep green baby spinach is spooned, creating a rustic, colorful saucy texture. Small amounts of the tomato-infused vegetable broth pool slightly at the base of the couscous. Props include a tarnished silver fork resting casually on the wood surface near the primary bowl and a few stray, halved cherry tomatoes and a single pitted Kalamata olive scattered naturally on the table nearby. The lighting is soft and natural, streaming from a window on the left, casting gentle shadows and creating a slight, authentic sheen on the olive oil and tomato juices. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the bowl rim, slightly uneven browning on the fish. Include subtle traces of the cooking process: a few grains of couscous and a tiny fragment of spinach leaf on the table. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 13,
+  "total_corrections": 0
+}

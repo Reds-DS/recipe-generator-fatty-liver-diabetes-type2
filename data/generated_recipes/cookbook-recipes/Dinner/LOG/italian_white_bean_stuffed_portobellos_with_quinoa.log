@@ -1,0 +1,94 @@
+=== RECIPE LOG: Italian White Bean Stuffed Portobellos with Quinoa ===
+ID            : e1920b73-cac3-4ac8-a000-a15cebc5297c
+Generation ID : 3571c849-fda0-4ccb-8c96-ccd34c604bf9
+Generated     : 2026-08-11 10:05:23
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 9
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : large portobello mushroom caps and canned cannellini beans
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Italian White Bean Stuffed Portobellos with Quinoa
+Technique       : Oven-roasting
+Cuisine style   : Mediterranean-American
+Flavour profile : Savory, hearty, and comforting with classic tomato and garlic notes
+Sketch          : large portobello mushroom caps, no-salt-added canned cannellini beans, fresh baby spinach, no-added-sugar marinara sauce, shredded part-skim mozzarella cheese, microwaveable quinoa pouch, garlic powder, extra-virgin olive oil
+
+--- Draft (2 attempt(s)) ---
+  [Attempt 1] Accepted
+  [Attempt 1] Accepted
+    Feedback: An expert cookbook critic flagged the following MAJOR problems:
+1. [chapter_intent_fit] The recipe slightly breaches the chapter's ceilings for total carbohydrates (64.8 g vs. 55 g limit) and saturate...
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 qualifier: 'no-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 64.8 g/serving > ceiling 55 g ("main")
+    [WARN] saturated fat 5.3 g/serving > ceiling 5 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+  [WARN] Carb base "low-sodium, no-added-sugar marinara sauce" (120 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. "brown rice" / "100% whole-wheat pasta" / "whole-grain tortilla", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor.
+
+--- critic_attempt_1 ---
+Status : failed
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : no-added-sugar marinara sauce
+  [WARN] Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 qualifier: 'no-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] No USDA candidate for 'no-added-sugar marinara sauce' — values estimated by the LLM.
+  [WARN] cholesterol_mg: partial data — 20% of recipe weight has no USDA value for it.
+  [WARN] potassium_mg: partial data — 13% of recipe weight has no USDA value for it.
+  [WARN] calcium_mg: partial data — 13% of recipe weight has no USDA value for it.
+  [WARN] iron_mg: partial data — 13% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+    [WARN] total carbohydrate 56.5 g/serving > ceiling 55 g ("main")
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_2 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  {
+    "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic plates placed on a warm, aged oak table with visible grain and small nicks. The primary plate...

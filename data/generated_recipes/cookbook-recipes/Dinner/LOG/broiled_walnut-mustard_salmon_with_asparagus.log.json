@@ -1,0 +1,285 @@
+{
+  "main_ingredient": "Fresh salmon fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Broiled Walnut-Mustard Salmon with Asparagus",
+  "recipe_id": "e587e915-8193-4162-bd48-dff9b5875bb3",
+  "generation_id": "68234334-dc36-4d5a-8361-adf17fa20613",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:32:24.382249",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Broiled Walnut-Mustard Salmon with Asparagus and Brown Rice",
+        "main_ingredient": "Fresh salmon fillets",
+        "technique": "Broiling",
+        "flavour_profile": "Nutty, tangy, and bright with a caramelized crust",
+        "cuisine_style": "Modern American / Mediterranean",
+        "ingredients_sketch": [
+          "Fresh salmon fillets",
+          "Asparagus spears",
+          "Crushed walnuts",
+          "Whole-grain mustard",
+          "Extra-virgin olive oil",
+          "Fresh lemon",
+          "Microwaveable brown rice pouch"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 527.9,
+          "protein_g": 33.3,
+          "carbs_g": 43.3,
+          "fat_g": 25.8,
+          "fiber_g": 7.9,
+          "sodium_mg": 454.0,
+          "sugar_g": 5.1,
+          "saturated_fat_g": 4.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 59.6,
+          "potassium_mg": 1041.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 8.8,
+          "pufa_g": 9.4,
+          "calcium_mg": 84.2,
+          "iron_mg": 6.4,
+          "vitamin_d_mcg": 12.4,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 2,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.778,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb, flawlessly executed recipe. It delivers a highly appetizing, nutrient-dense meal using smart techniques and convenient ingredients that completely honor the 30-minute promise and dietary guidelines.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and classic. The mustard and lemon provide a bright, tangy contrast to the rich salmon and walnuts, while the asparagus adds an earthy baseline. Very well balanced."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are fully accounted for in the instructions, and salt and pepper are properly divided between the two components."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The steps are comprehensive. You provide a time range for broiling (6 to 8 minutes), a check-in time (6 minutes), and excellent visual cues for doneness for all three items on the pan (asparagus tender, walnuts toasted, salmon flaking)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with a Modern American / Mediterranean style, focusing on lean proteins, whole grains, nuts, and fresh vegetables."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Broiling works beautifully for both asparagus and salmon. Using the wet mustard mixture to adhere the walnuts helps protect the nuts from burning under the direct heat, though the instruction to check at 6 minutes is a smart, necessary precaution."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros map cleanly to the ingredients. The ~43g of carbohydrate makes sense between the 250g brown rice pouch and the 16 oz of asparagus, and the saturated fat reflects the healthy fats from the salmon and walnuts without breaking the ceiling."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is accurate and the intro is inviting. 'Liver-supporting omega-3s' is an acceptable phrase as it doesn't cross into the banned 'cure' or 'detox' territory, keeping the tone practical and realistic."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. The textural contrast between the crunchy walnuts, tender salmon, and crisp asparagus makes this a deeply satisfying weeknight meal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of eating for both conditions: it features a whole-grain carb for blood sugar control alongside a lean protein, healthy fats, and a large vegetable portion for liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Added sugar is completely zero. The recipe includes a robust, high-quality complex carbohydrate (brown rice) that confidently places the dish in the required 32-55g window without relying on refined grains."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' intent perfectly. It provides the targeted omega-3s in an ultra-fast weeknight format and hits all the macro targets for a 'main' dish."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 30 minutes. Prep is minimal, broiling takes less than 10 minutes, and the microwave rice pouch is exactly the kind of first-class, realistic shortcut this book encourages."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is a 3/4 overhead view at a 40-degree angle, showing two matte ceramic plates placed side-by-side on an aged, dark oak wood table. The primary plate in the foreground is sharp, while the second plate behind it is softly blurred. Each plate features one salmon fillet coated in a golden-brown, crunchy layer of toasted chopped walnuts and whole-grain mustard, placed beside a portion of bright, lightly charred green asparagus spears and a scoop of fluffy brown rice. The salmon skin is visible at the base, with the flesh appearing opaque and flaky. The asparagus shows slight char marks from the broiler. Soft natural side light from a window on the left illuminates the textures, creating a subtle sheen on the mustard glaze. Props include a wooden fork resting casually on the table and a small, blurred ramekin of Dijon mustard in the background. Scattered on the surface are a few stray walnut crumbles and a single fallen asparagus tip. The scene captures a warm, lived-in home kitchen atmosphere with a cozy, golden-hour color temperature. Photorealistic, not AI-generated looking. Includes slight natural imperfections like a small sauce drip on the plate rim, uneven browning on the walnuts, and a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. The image is indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 1,
+  "total_corrections": 0
+}

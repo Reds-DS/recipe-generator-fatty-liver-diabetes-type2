@@ -1,0 +1,172 @@
+{
+  "id": "9e005a49-1eda-48fa-9802-a744f5e886a8",
+  "title": "Spanish-Style Butter Bean and Quinoa Egg Skillet",
+  "intro": "A steady delivery of fiber and lean protein helps maintain lasting fullness, making this robust one-pan dinner a smart weeknight choice.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 9,
+  "cook_time_max_min": 12,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 9.0,
+      "quantity_display": "3 cloves",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Smoked paprika",
+      "canonical_name": "Spices, paprika",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171329,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added crushed tomatoes",
+      "canonical_name": "Tomatoes, crushed, canned, no salt added",
+      "quantity_g": 240.0,
+      "quantity_display": "1 cup (240 g)",
+      "preparation": null,
+      "fdc_id": 170138,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned butter beans",
+      "canonical_name": "Lima beans, large, mature seeds, canned",
+      "quantity_g": 260.0,
+      "quantity_display": "9 oz (260 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Red wine vinegar",
+      "canonical_name": "Vinegar, red wine",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 172240,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked quinoa pouch",
+      "canonical_name": "Quinoa, cooked",
+      "quantity_g": 150.0,
+      "quantity_display": "1 cup (150 g)",
+      "preparation": null,
+      "fdc_id": 168917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 loosely packed cups (60 g)",
+      "preparation": null,
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Large eggs",
+      "canonical_name": "Egg, whole, raw, fresh",
+      "quantity_g": 200.0,
+      "quantity_display": "4",
+      "preparation": null,
+      "fdc_id": 171287,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Plain nonfat Greek yogurt",
+      "canonical_name": "Yogurt, Greek, plain, nonfat",
+      "quantity_g": 115.0,
+      "quantity_display": "1/2 cup (115 g)",
+      "preparation": null,
+      "fdc_id": 2705424,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh parsley",
+      "canonical_name": "Parsley, fresh",
+      "quantity_g": 8.0,
+      "quantity_display": "2 tbsp (8 g)",
+      "preparation": "chopped",
+      "fdc_id": 170416,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Heat olive oil in a large skillet over medium heat until shimmering. Add minced garlic and smoked paprika, stirring constantly for 30 seconds until fragrant.",
+    "Pour in crushed tomatoes, butter beans, and red wine vinegar. Bring the mixture to a gentle simmer.",
+    "Fold quinoa and baby spinach into the simmering sauce. Stir continuously for 2 to 3 minutes until the spinach wilts.",
+    "Form small, deep wells in the bean and quinoa mixture using the back of a spoon. Crack eggs into the wells.",
+    "Cover the skillet tightly with a lid and reduce the heat to medium-low. Cook for 5 to 7 minutes, checking at 5 minutes, until the egg whites are firmly set but the yolks remain soft.",
+    "Remove the skillet from the heat. Dollop Greek yogurt around the edges and scatter chopped parsley over the top before serving in shallow bowls."
+  ],
+  "variation": "Swap the butter beans for low-sodium canned chickpeas.",
+  "conservation": "Best enjoyed right away; soft-cooked eggs do not reheat well.",
+  "nutrition_per_serving": {
+    "calories_kcal": 469.3,
+    "protein_g": 30.5,
+    "carbs_g": 45.3,
+    "fat_g": 19.1,
+    "fiber_g": 11.7,
+    "sodium_mg": 237.3,
+    "sugar_g": 7.4,
+    "saturated_fat_g": 4.4,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 374.9,
+    "potassium_mg": 817.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 9.3,
+    "pufa_g": 3.7,
+    "calcium_mg": 209.2,
+    "iron_mg": 4.6,
+    "vitamin_d_mcg": 2.0,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "No-salt-added canned butter beans"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'No-salt-added canned butter beans' — values estimated by the LLM.",
+    "Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+    "cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 24% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 24% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\spanish-style_butter_bean_and_quinoa_egg_skillet.png",
+  "created_at": "2026-08-11T09:59:56.390505",
+  "generation_id": "15998629-4195-4617-af88-2b8b80020940"
+}

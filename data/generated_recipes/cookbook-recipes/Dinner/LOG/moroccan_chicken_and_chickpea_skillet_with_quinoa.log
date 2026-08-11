@@ -1,0 +1,56 @@
+=== RECIPE LOG: Moroccan Chicken and Chickpea Skillet with Quinoa ===
+ID            : 28fe2c01-06ea-4ef9-9900-cb95987987bd
+Generation ID : 20902eec-a4c8-49fd-8011-473e6c084878
+Generated     : 2026-08-11 09:05:28
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 1
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Chicken tenderloins
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Moroccan Chicken and Chickpea Skillet with Quinoa
+Technique       : One-skillet simmer
+Cuisine style   : North African-Inspired Mediterranean
+Flavour profile : Warm and earthy spices with a bright lemon finish
+Sketch          : Chicken tenderloins, Extra-virgin olive oil, Ground cumin, Smoked paprika, Ground cinnamon, No-salt-added diced tomatoes, No-salt-added canned chickpeas, Fresh baby spinach, Microwaveable quinoa pouch, Fresh lemon
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 qualifier: 'No-salt-added canned chickpeas': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis) — switched from [173757] Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt to [175250] Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed at a 3/4 overhead angle, ensuring the entirety of two matte ceramic plates is visible. The primary plate is sharp in the foregroun...

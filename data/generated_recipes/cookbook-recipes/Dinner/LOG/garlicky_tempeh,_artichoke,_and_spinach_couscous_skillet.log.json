@@ -1,0 +1,813 @@
+{
+  "main_ingredient": "Tempeh (8-ounce block)",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Garlicky Tempeh, Artichoke, and Spinach Couscous Skillet",
+  "recipe_id": "002d2c29-32bf-46ea-8e7c-8ed3311c09b9",
+  "generation_id": "ac29d1d9-0ba6-410c-9852-4406c441598c",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:50:30.125036",
+  "draft_attempts": 1,
+  "critic_attempts": 3,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Garlicky Tempeh, Artichoke, and Spinach Couscous Skillet",
+        "main_ingredient": "Tempeh (8-ounce block)",
+        "technique": "One-skillet sauté and steep",
+        "flavour_profile": "Savory, herbaceous, and tangy",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Tempeh (crumbled or cubed)",
+          "Whole-wheat couscous (dry)",
+          "Canned quartered artichoke hearts (in water, rinsed)",
+          "Fresh baby spinach",
+          "Sun-dried tomatoes",
+          "Low-sodium vegetable broth",
+          "Crumbled feta cheese",
+          "Dried oregano",
+          "Garlic (minced)",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 120.0g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 120.0g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'No-salt-added canned quartered artichoke hearts': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "No USDA candidate for 'Water' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Crumbled feta cheese': [2259796] Cheese, feta, whole milk, crumbled has no USDA value for fiber_g (which would be summed as zero) — switched to [173420] Cheese, feta.",
+        "fiber_g: partial data — 31% of recipe weight has no USDA value for it.",
+        "sugar_g: partial data — 54% of recipe weight has no USDA value for it.",
+        "saturated_fat_g: partial data — 12% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 16% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Water"
+        ],
+        "nutrition": {
+          "calories_kcal": 540.0,
+          "protein_g": 34.7,
+          "carbs_g": 55.6,
+          "fat_g": 23.3,
+          "fiber_g": 7.9,
+          "sodium_mg": 271.9,
+          "sugar_g": 3.8,
+          "saturated_fat_g": 5.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 12.5,
+          "potassium_mg": 1273.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.5,
+          "pufa_g": 6.0,
+          "calcium_mg": 270.5,
+          "iron_mg": 5.5,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Water"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 55.6 g/serving > ceiling 55 g (\"main\")",
+        "saturated fat 5.9 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 55.6 g/serving > ceiling 55 g (\"main\")",
+              "saturated fat 5.9 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A flavorful and well-designed plant-based Mediterranean skillet that perfectly fits the book's nutritional and everyday-cooking goals. However, it requires a necessary fix to add the missing steeping time for the couscous in the instructions.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory, tangy Mediterranean flavors (lemon, sun-dried tomatoes, feta, oregano) are robust enough to beautifully balance the earthy flavor of the tempeh."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used properly in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Step 6 instructs the reader to let the couscous stand off the heat to steep, but provides no time duration. Fix: Add 'for 5 minutes' to Step 6 so the cook knows when the grains are tender. (Also, update the metadata Cook Time from 7 minutes to 12 minutes to account for this steep)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "While tempeh is traditionally Indonesian, it functions perfectly here as a high-protein, plant-based vehicle for classic Mediterranean flavors."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Using the residual heat and cooking liquid to steep the couscous directly in the skillet is a smart, effective one-pan technique."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed values align precisely with the ingredients. The slight overages in saturated fat (5.9g vs 5g ceiling) and carbohydrate (55.6g vs 55g ceiling) are accurate consequences of the feta and couscous, and do not represent a data flaw."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive, and the intro provides a warm, practical, and accurate overview of the nutritional benefits without resorting to banned 'diet' or 'detox' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent, quick weeknight dinner. The one-pan format is highly appealing and cleanup is minimal."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Delivers perfectly on the dual-focus of the book: high-quality complex carbohydrates (whole-wheat couscous), abundant fiber, solid vegetable presence, and a clean plant-based protein."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "There is zero added sugar, and the carbohydrate component is an excellent, intact whole-grain source that fits neatly into the main dinner target window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An ideal meatless dinner delivering 34.7g of protein, well over the 26g floor, proving that plant-based meals can easily hit the required protein tier. (The minor saturated fat overage from the feta is acceptable here)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Even with the 5-minute couscous steep accounted for, this easily clocks in at 22 minutes total from a cold start. All ingredients are readily available at standard supermarkets."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [instruction_completeness] Step 6 instructs the reader to let the couscous stand off the heat to steep, but provides no time duration. Fix: Add 'for 5 minutes' to Step 6 so the cook knows when the grains are tender. (Also, update the metadata Cook Time from 7 minutes to 12 minutes to account for this steep).\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Canned quartered artichoke hearts, no-salt-added' — values estimated by the LLM.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "fiber_g: partial data — 26% of recipe weight has no USDA value for it.",
+        "sugar_g: partial data — 42% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 54% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 47% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 47% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 47% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Canned quartered artichoke hearts, no-salt-added",
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 590.4,
+          "protein_g": 36.9,
+          "carbs_g": 62.3,
+          "fat_g": 24.8,
+          "fiber_g": 8.5,
+          "sodium_mg": 389.9,
+          "sugar_g": 6.6,
+          "saturated_fat_g": 6.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 18.7,
+          "potassium_mg": 1215.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.8,
+          "pufa_g": 6.0,
+          "calcium_mg": 295.3,
+          "iron_mg": 5.7,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Canned quartered artichoke hearts, no-salt-added",
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.8,
+        "alias_hit_rate": 0.7,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 62.3 g/serving > ceiling 55 g (\"main\")",
+        "saturated fat 6.8 g/serving > ceiling 5 g (\"main\")",
+        "590.4 kcal/serving > high bound 540 kcal (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 62.3 g/serving > ceiling 55 g (\"main\")",
+              "saturated fat 6.8 g/serving > ceiling 5 g (\"main\")",
+              "590.4 kcal/serving > high bound 540 kcal (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] Step 2 provides a time range ('4 to 5 minutes') but lacks a specific prompt to check at the minimum time. Update to: 'Cook, stirring occasionally, and check at 4 minutes. Continue cooking up to 5 minutes until golden brown...'"
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flavorful, well-conceived plant-based skillet that uses tempeh cleverly in a Mediterranean context. However, it requires a structural fix to the couscous-to-broth ratio to prevent it from becoming soggy, and slight reductions to the feta and sun-dried tomatoes to meet the book's strict carbohydrate, saturated fat, and calorie ceilings.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavors are well-balanced. Mediterranean ingredients like artichokes, sun-dried tomatoes, feta, and oregano pair nicely with the nutty, savory depth of the tempeh."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used properly in the instructions, and no surprise ingredients are introduced."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Step 2 provides a time range ('4 to 5 minutes') but lacks a specific prompt to check at the minimum time. Update to: 'Cook, stirring occasionally, and check at 4 minutes. Continue cooking up to 5 minutes until golden brown...'"
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "While tempeh is Indonesian, the intro successfully frames it as an 'unexpected anchor' for a Mediterranean flavor profile. The fusion works beautifully for a plant-based chapter."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The ratio of dry couscous (1/2 cup) to broth (1 cup) is too high. Standard couscous uses a 1:1 ratio by volume. Even with the sun-dried tomatoes absorbing some moisture, 1 cup of broth will result in a soupy or mushy texture after a 5-minute rest. Reduce the broth to 1/2 or 2/3 cup."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel aligns logically with the specified ingredients, given the carbohydrate density of dry couscous and sun-dried tomatoes, and the saturated fat from feta."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title names the hero ingredients accurately, and the intro is warmly written without any banned 'detox' or exaggerated health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A fast, hearty, one-skillet dinner with high protein and excellent fiber. The textures of the crumbled tempeh, tender artichokes, and fluffy couscous are highly appealing."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Strongly aligned. It utilizes a high-quality whole grain (whole-wheat couscous), a lean plant protein (tempeh), plenty of vegetables, and heart-healthy olive oil."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the dish centers on a legitimate, complex whole-grain carbohydrate that stabilizes blood sugar."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe exceeds the dinner nutrient ceilings for saturated fat (6.8g vs 5g limit), carbohydrates (62.3g vs 55g limit), and energy (590 kcal vs 540 limit). To pull it into range, reduce the feta cheese to 2 tablespoons (saving ~3g sat fat) and the sun-dried tomatoes to 1/4 cup (saving ~7.5g carbs and ~35 kcal)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in 30 minutes from a cold start. Minimal chopping and a very rapid skillet-to-steam cooking technique make it exceptionally practical."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [cooking_method_suitability] The ratio of dry couscous (1/2 cup) to broth (1 cup) is too high. Standard couscous uses a 1:1 ratio by volume. Even with the sun-dried tomatoes absorbing some moisture, 1 cup of broth will result in a soupy or mushy texture after a 5-minute rest. Reduce the broth to 1/2 or 2/3 cup.\n2. [chapter_intent_fit] The recipe exceeds the dinner nutrient ceilings for saturated fat (6.8g vs 5g limit), carbohydrates (62.3g vs 55g limit), and energy (590 kcal vs 540 limit). To pull it into range, reduce the feta cheese to 2 tablespoons (saving ~3g sat fat) and the sun-dried tomatoes to 1/4 cup (saving ~7.5g carbs and ~35 kcal).\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 3
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned artichoke hearts' — values estimated by the LLM.",
+        "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+        "fiber_g: partial data — 32% of recipe weight has no USDA value for it.",
+        "sugar_g: partial data — 44% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 40% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 40% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 40% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 40% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned artichoke hearts",
+          "Low-sodium vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 527.7,
+          "protein_g": 33.6,
+          "carbs_g": 55.2,
+          "fat_g": 22.3,
+          "fiber_g": 7.2,
+          "sodium_mg": 193.8,
+          "sugar_g": 4.1,
+          "saturated_fat_g": 5.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 6.7,
+          "potassium_mg": 985.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 9.5,
+          "pufa_g": 6.0,
+          "calcium_mg": 224.6,
+          "iron_mg": 5.3,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned artichoke hearts",
+            "Low-sodium vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 0,
+        "food_db_hit_rate": 0.8,
+        "alias_hit_rate": 0.8,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 55.2 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 55.2 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_3",
+      "status": "failed",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "A flavorful and highly practical plant-based dinner that perfectly hits the strict dietary profile, but requires a simple fix to add the missing resting time instruction for the couscous.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory, earthy tempeh pairs beautifully with the tangy artichokes, sun-dried tomatoes, and feta. A very coherent, bright Mediterranean flavor profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are used appropriately in the instructions, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "major",
+            "feedback": "Step 6 says 'After resting, uncover the skillet...' but no resting time is specified in Step 5 or 6. Couscous needs a specific rest time (usually 5 minutes). Fix: Update Step 5 or 6 to explicitly state 'Let rest for 5 minutes' before uncovering."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "While tempeh is traditionally Indonesian, it is widely accepted as a plant-based protein in modern fusion Mediterranean cooking and adopts the oregano and garlic flavors well."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The one-pan skillet method is perfect. Steaming the couscous off-heat in the residual broth is exactly the right technique."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are accurate and plausible for these quantities. The carbohydrate count is 55.2g (just 0.2g over the strict 55g ceiling), which is completely fine and doesn't warrant changing the recipe."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title is descriptive and accurate, and the intro provides a warm, practical, non-clinical explanation of the dish's nutritional benefits."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an appetizing, easy weeknight dinner. It combines great textures and vibrant colors in a single pan."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent adherence to the dual-condition profile: high-quality plant protein (tempeh), plenty of fiber (whole-wheat couscous, vegetables), and healthy unsaturated fats (olive oil)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate load comes from high-quality, fiber-rich sources (whole-wheat couscous and vegetables)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the 'Vegetable & Meatless Dinners' brief perfectly, delivering over 30g of protein without meat while staying under the saturated fat ceiling."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Total active and passive time (even with the missing 5-minute rest added) is comfortably under 25 minutes. Ingredients are straightforward supermarket staples."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two portions of garlicky tempeh and couscous skillet served in two round, simple, matte ceramic bowls. The camera is positioned at a 3/4 overhead angle (about 40°) to clearly show the textures within the bowls, with the primary bowl in focus and the second bowl softly blurred in the background. The couscous is fluffy and golden-brown from the broth, mixed with crumbles of seared golden-brown tempeh, vibrant dark green wilted baby spinach, deep red chopped sun-dried tomatoes, and tender quartered artichoke hearts. A delicate scattering of white crumbled feta cheese rests on top of the mixture. Soft natural side light from a window on the left highlights the glistening oil droplets and the varied textures of the ingredients. The bowls sit on a rustic, aged oak wooden table with visible grain and marks. Props include a wooden spoon resting on the surface next to the bowls and a few scattered crumbs of tempeh and a stray piece of spinach near the edge of the table. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, and authentic. Includes slight natural imperfections like an asymmetric garnish placement and a stray speck of oregano. The color temperature is warm and inviting, characteristic of golden hour. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. Indistinguishable from a photograph taken by a professional food photographer for a high-end cookbook.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": false,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

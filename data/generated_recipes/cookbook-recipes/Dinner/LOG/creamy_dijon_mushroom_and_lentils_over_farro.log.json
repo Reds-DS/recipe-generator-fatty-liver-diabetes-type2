@@ -1,0 +1,307 @@
+{
+  "main_ingredient": "No-salt-added canned brown lentils",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Creamy Dijon Mushroom and Lentils Over Farro",
+  "recipe_id": "b7657081-58e8-4521-8dd6-bd04d929b46d",
+  "generation_id": "91cf2726-8242-4824-b604-6325162e8259",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T10:09:29.679786",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Creamy Dijon Mushroom and Lentil Skillet over Farro",
+        "main_ingredient": "No-salt-added canned brown lentils",
+        "technique": "Skillet sauté and quick simmer",
+        "flavour_profile": "Earthy, creamy, savory, and mildly tangy",
+        "cuisine_style": "French-Inspired American",
+        "ingredients_sketch": [
+          "No-salt-added canned brown lentils (rinsed)",
+          "Cremini mushrooms (sliced)",
+          "Ready-to-eat cooked farro (or brown rice) pouch",
+          "Plain nonfat Greek yogurt (for a protein-rich cream sauce)",
+          "Low-sodium vegetable broth (for deglazing without alcohol)",
+          "Dijon mustard",
+          "Fresh thyme",
+          "Garlic",
+          "Extra-virgin olive oil",
+          "Chopped walnuts (for healthy fats and texture)"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'low-sodium vegetable broth' — values estimated by the LLM.",
+        "No USDA candidate for 'Dijon mustard' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'no-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "No USDA candidate for 'ready-to-eat cooked farro pouch' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 28% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "low-sodium vegetable broth",
+          "Dijon mustard",
+          "ready-to-eat cooked farro pouch"
+        ],
+        "nutrition": {
+          "calories_kcal": 485.0,
+          "protein_g": 29.8,
+          "carbs_g": 53.3,
+          "fat_g": 18.9,
+          "fiber_g": 12.7,
+          "sodium_mg": 269.8,
+          "sugar_g": 8.5,
+          "saturated_fat_g": 2.2,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 5.6,
+          "potassium_mg": 1111.6,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.8,
+          "pufa_g": 7.6,
+          "calcium_mg": 186.3,
+          "iron_mg": 4.5,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "low-sodium vegetable broth",
+            "Dijon mustard",
+            "ready-to-eat cooked farro pouch"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.7,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "llm_estimate",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] The steps are well written and include visual cues, but the cook time header (8 minutes) only reflects the minimum possible time (5+1+2). Update the cook time header to 11 minutes (7+1+3) to reflect the maximum range. Additionally, add a 'Check at 5 minutes' prompt to step 2 to strictly follow the minimum-time-check rule."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional, highly functional recipe that beautifully adapts a creamy stroganoff profile into a high-fiber, plant-protein-forward meal. The use of a ready-to-eat farro pouch and the off-heat yogurt technique show smart culinary design that honors the 30-minute rule and the dual-condition nutrition brief.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent and highly coherent. The combination of earthy mushrooms, thyme, Dijon, and tangy Greek yogurt beautifully mimics a classic stroganoff or fricassee while remaining completely aligned with the diet's principles."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is properly used in the steps, and no unlisted ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The steps are well written and include visual cues, but the cook time header (8 minutes) only reflects the minimum possible time (5+1+2). Update the cook time header to 11 minutes (7+1+3) to reflect the maximum range. Additionally, add a 'Check at 5 minutes' prompt to step 2 to strictly follow the minimum-time-check rule."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The French-inspired American profile is accurately represented through the fricassee technique and classic pairing of mushrooms, Dijon, and thyme."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The skillet method is perfect. The instruction to remove from heat and let cool slightly before adding the nonfat Greek yogurt is an essential and correctly executed culinary technique to prevent curdling."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros compute accurately. Lentils, farro, and a generous portion of nonfat Greek yogurt perfectly explain the high protein (29.8 g) and fiber (12.7 g) counts without meat."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the dish. The phrase 'liver-friendly' safely communicates the book's intent without triggering any banned 'detox' or 'cure' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It offers a fast, comforting, creamy, and filling weekday meal using common pantry staples."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a textbook example of a recipe serving both conditions simultaneously: it relies on high-quality complex carbs (farro, lentils) for blood sugar control, while utilizing plant protein and eliminating heavy cream to manage saturated fat for the liver."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Added sugar is strictly zero. The carbohydrate load (53.3 g) is exceptionally high quality, derived entirely from whole grains, legumes, and dairy, landing perfectly in the top end of the tier's window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the 'Vegetable & Meatless Dinners' intent. Using Greek yogurt alongside lentils to comfortably clear the 26 g plant-based protein floor is a smart, targeted design choice."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achieved in under 30 minutes from a cold start. Utilizing a ready-to-eat cooked farro pouch is exactly the kind of smart, declared shortcut this book encourages."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte ceramic bowls centered in the frame, one in clear focus and the second slightly blurred in the background, showcasing the Creamy Dijon Mushroom and Lentil dish. The camera is positioned at a 3/4 overhead angle, ensuring every component is visible while maintaining a shallow depth of field. The scene is illuminated by soft, natural side light from a window on the left, casting gentle, natural shadows across a rustic, aged oak wood table with visible grain and small, authentic use marks. To the side of the bowls, a worn linen napkin is rumpled naturally, with a few stray fresh thyme leaves and a small pinch of chopped walnuts scattered on the wood surface near the bowls. The farro serves as a warm, chewy base in each bowl, topped with a generous portion of deeply browned, caramelized cremini mushrooms and brown lentils coated in a rich, velvety, pale-creamy Dijon yogurt sauce. The mushrooms display realistic golden-brown edges and a glistening sheen from the olive oil. A scattering of chopped walnuts provides textural contrast on top. There is a small, natural sauce drip on the rim of the foreground bowl. The composition feels lived-in, warm, and authentic, as if just finished in a home kitchen. Photorealistic, not AI-generated looking. Warm, golden-hour color temperature, cozy and inviting. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

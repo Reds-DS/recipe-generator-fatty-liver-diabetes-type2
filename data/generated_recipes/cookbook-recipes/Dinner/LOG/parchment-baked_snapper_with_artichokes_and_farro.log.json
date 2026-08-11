@@ -1,0 +1,296 @@
+{
+  "main_ingredient": "Fresh or frozen red snapper fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Parchment-Baked Snapper with Artichokes and Farro",
+  "recipe_id": "05ac357b-0d1b-4c72-bdfb-d9e57a210e2e",
+  "generation_id": "2d27d345-8852-4f0f-949e-873dd43e281e",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:38:52.514736",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Parchment-Baked Snapper with Artichokes and Farro",
+        "main_ingredient": "Fresh or frozen red snapper fillets",
+        "technique": "Parchment baking (en papillote)",
+        "flavour_profile": "Bright, briny, and lemony",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "Fresh or frozen red snapper fillets (thawed if frozen)",
+          "Ready-to-eat farro pouch (microwaveable)",
+          "Canned or jarred artichoke hearts (rinsed and drained)",
+          "Cherry tomatoes",
+          "Kalamata olives (pitted and sliced)",
+          "Fresh lemon (for juice and slices)",
+          "Extra-virgin olive oil",
+          "Dried oregano"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Ready-to-eat cooked farro pouch, unsalted' — values estimated by the LLM.",
+        "Stage 4 qualifier: 'No-salt-added canned artichoke hearts': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 22% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Ready-to-eat cooked farro pouch, unsalted"
+        ],
+        "nutrition": {
+          "calories_kcal": 438.4,
+          "protein_g": 39.3,
+          "carbs_g": 45.3,
+          "fat_g": 12.2,
+          "fiber_g": 10.7,
+          "sodium_mg": 256.5,
+          "sugar_g": 3.5,
+          "saturated_fat_g": 1.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 55.5,
+          "potassium_mg": 1085.0,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.7,
+          "pufa_g": 1.7,
+          "calcium_mg": 113.7,
+          "iron_mg": 2.5,
+          "vitamin_d_mcg": 15.3,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Ready-to-eat cooked farro pouch, unsalted"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.889,
+        "alias_hit_rate": 0.556,
+        "match_sources": [
+          "matcher",
+          "llm_estimate",
+          "matcher",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is a superb, flawlessly executed recipe. It cleverly uses a pre-cooked grain pouch to meet the 30-minute time constraint while delivering a beautiful, nutrient-dense Mediterranean meal perfectly tailored to the book's dietary goals.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is classically Mediterranean and highly coherent. The acidity from the lemon and tomatoes balances perfectly with the briny olives, aromatic oregano, and earthy farro."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are properly listed and correctly deployed in the instructions. The division of the lemon (half juiced, half sliced) is clearly handled."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are excellent. They include a proper time range (12 to 15 minutes), a specific check time (at 12 minutes), and a clear visual/textural doneness cue for the fish (opaque and flakes easily)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean style, utilizing core ingredients like olive oil, garlic, lemon, tomatoes, artichokes, and whole grains."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The 'en papillote' (parchment packet) method is ideal here. The pre-cooked farro will absorb the aromatic steam and juices from the fish and vegetables without drying out or requiring extra liquid."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The macros are highly plausible for these ingredients and quantities. The low sodium (256mg) is accurately achieved by deliberately specifying unsalted farro and no-salt-added artichoke hearts."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the dish. The intro is warm, practical, and highlights the zero-cleanup benefit without relying on any banned dietary buzzwords or health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, practical weeknight dinner. It delivers a composed, restaurant-quality meal with almost zero active cooking stress and minimal cleanup."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This perfectly addresses both conditions simultaneously: lean protein, a robust portion of high-quality complex carbohydrates (farro), rich in fiber, and driven by healthy unsaturated fats (olive oil, olives)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent carbohydrate quality and quantity. Zero added sugars, and the 45g of carbohydrate lands squarely in the sweet spot for a main meal, provided entirely by whole-grain farro and vegetables."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter flawlessly. It hits every targeted nutrient floor and ceiling while delivering the exact kind of easy weeknight format the chapter promises."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Successfully delivers a whole-grain fish dinner in under 30 minutes from a cold start by intelligently utilizing a ready-to-eat cooked farro pouch. Prep can easily be completed while the oven preheats."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two simple, white matte ceramic plates arranged side-by-side on an aged, dark oak wood surface with visible grain and natural use marks. The camera angle is a 3/4 overhead view, capturing the full volume of the dish from a height that reveals all components clearly while maintaining a shallow depth of field with the second plate softly blurred in the background. Soft, natural side light streams from a window on the left, casting subtle, gentle shadows and highlighting the moist, succulent texture of the snapper. On each plate, a generous base of nutty, cooked farro is mixed with quartered artichoke hearts, vibrant halved cherry tomatoes that show slight roasting, and glossy, dark pitted kalamata olives. Resting beside the farro, not on top, is a tender, pearly white red snapper fillet that flakes naturally. Thin, translucent lemon slices are draped over the fish, with a few drops of olive oil and herb specks visible. Props include a rumpled, off-white linen napkin tucked slightly under one plate, a small wooden spoon resting near the edge, and one squeezed, exhausted lemon half placed naturally on the wooden surface. The scene is lived-in and authentic, featuring small traces of the cooking process like a stray herb leaf and a tiny smear of oil on the wood. Photorealistic, not AI-generated looking. The plates show minor, realistic imperfections like a small sauce drip on the rim. Warm, golden-hour color temperature creates a cozy, inviting atmosphere. No plastic sheen, no unnatural symmetry. No text, no watermark, no logo, no hands, no faces. The image is indistinguishable from a professional cookbook photograph.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 7,
+  "total_corrections": 0
+}

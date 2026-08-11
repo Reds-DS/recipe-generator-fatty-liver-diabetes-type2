@@ -1,0 +1,180 @@
+{
+  "id": "686c2245-4a4d-489c-b511-f9a87f6dce38",
+  "title": "Mediterranean Halibut and Tomato Skillet",
+  "intro": "This satisfying skillet meal relies on blistered cherry tomatoes to build a flavorful pan sauce. The savory broth simmers the lean halibut and perfectly seasons the whole-wheat couscous.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 10,
+  "cook_time_max_min": 14,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Dried whole-wheat couscous",
+      "canonical_name": "Couscous, dry",
+      "quantity_g": 120.0,
+      "quantity_display": "3/4 cup (120 g)",
+      "preparation": null,
+      "fdc_id": 169699,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Boiling water",
+      "canonical_name": "Water, tap, drinking",
+      "quantity_g": 180.0,
+      "quantity_display": "3/4 cup (180 ml)",
+      "preparation": null,
+      "fdc_id": 173647,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh halibut fillets",
+      "canonical_name": "Fish, halibut, raw",
+      "quantity_g": 280.0,
+      "quantity_display": "10 oz (280 g)",
+      "preparation": null,
+      "fdc_id": 174200,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 250.0,
+      "quantity_display": "9 oz (250 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 9.0,
+      "quantity_display": "3 cloves (9 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium vegetable broth",
+      "canonical_name": "Soup, vegetable broth, ready to serve",
+      "quantity_g": 120.0,
+      "quantity_display": "1/2 cup (120 ml)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 120.0,
+      "quantity_display": "4 oz (120 g)",
+      "preparation": null,
+      "fdc_id": 1999632,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Low-sodium Kalamata olives",
+      "canonical_name": "Olives, ripe, canned (small-extra large)",
+      "quantity_g": 30.0,
+      "quantity_display": "1/4 cup (30 g)",
+      "preparation": "pitted, rinsed, drained and halved",
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon juice",
+      "canonical_name": "Lemon juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 2709181,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Place the couscous in a heatproof bowl. Pour in the boiling water, cover tightly, let sit for 5 minutes to hydrate, and fluff with a fork.",
+    "Season the halibut with the dried oregano, black pepper, and salt.",
+    "Heat the olive oil in a large skillet over medium-high heat. Sear the halibut for 3 to 4 minutes on one side until golden, flip the fish, and transfer to a plate.",
+    "Reduce the heat to medium and add the cherry tomatoes and garlic to the skillet. Cook for 4 to 5 minutes, stirring occasionally, until the tomatoes begin to blister and burst.",
+    "Pour in the vegetable broth, scraping up any browned bits from the pan. Stir in the spinach and olives, cooking for 1 to 2 minutes until the spinach wilts.",
+    "Return the halibut to the skillet. Simmer for 2 to 3 minutes, spooning the tomato sauce over the fish, until the fish is completely opaque and flakes easily.",
+    "Remove the skillet from the heat and pour in the lemon juice. Serve the halibut and blistered tomato sauce over the steamed couscous."
+  ],
+  "variation": "Swap the halibut for an equal amount of peeled shrimp.",
+  "conservation": "Keeps 2 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 487.9,
+    "protein_g": 37.1,
+    "carbs_g": 57.5,
+    "fat_g": 12.1,
+    "fiber_g": 6.2,
+    "sodium_mg": 266.5,
+    "sugar_g": 4.1,
+    "saturated_fat_g": 1.9,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 68.6,
+    "potassium_mg": 1400.1,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.2,
+    "pufa_g": 1.5,
+    "calcium_mg": 105.5,
+    "iron_mg": 2.5,
+    "vitamin_d_mcg": 6.6,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Low-sodium vegetable broth",
+      "Low-sodium Kalamata olives"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.",
+    "No USDA candidate for 'Low-sodium Kalamata olives' — values estimated by the LLM.",
+    "sugar_g: partial data — 21% of recipe weight has no USDA value for it.",
+    "saturated_fat_g: partial data — 10% of recipe weight has no USDA value for it.",
+    "cholesterol_mg: partial data — 23% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 13% of recipe weight has no USDA value for it.",
+    "fiber 6.2 g/serving < floor 7 g (\"main\")",
+    "total carbohydrate 57.5 g/serving > ceiling 55 g (\"main\")",
+    "[ingredient_instruction_consistency] Step 2 mentions seasoning the halibut with 'black pepper, and a pinch of salt,' but neither salt nor black pepper is included in the ingredient list. Please add them to the ingredients to ensure strict consistency.",
+    "[chapter_intent_fit] The dish is mostly on-brief but slightly drifts past the tier's carbohydrate ceiling (57.5g vs 55g) and undershoots the fiber floor (6.2g vs 7g). Consider reducing the dry couscous to 1/2 cup (80g) and bumping the spinach up to 5 or 6 oz to land perfectly within the target window."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\mediterranean_halibut_and_tomato_skillet.png",
+  "created_at": "2026-08-11T09:28:45.495990",
+  "generation_id": "ebcce4b6-c172-4c00-8363-b08880d490c1"
+}

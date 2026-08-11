@@ -1,0 +1,56 @@
+=== RECIPE LOG: Cuban-Spiced Pork Medallions with Black Beans and Rice ===
+ID            : ae340df4-3f31-40b7-9f8e-678666e1478e
+Generation ID : fb609a4a-a8d3-4a8f-bf23-e6ce755bd1ef
+Generated     : 2026-08-11 09:14:24
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 2
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Pork tenderloin
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Cuban-Spiced Pork Medallions with Black Beans and Rice
+Technique       : Skillet pan-searing
+Cuisine style   : Cuban-Inspired American
+Flavour profile : Earthy and citrusy with prominent cumin, oregano, and lime
+Sketch          : Pork tenderloin, Green bell pepper, Red onion, Garlic, Ground cumin, Dried oregano, No-salt-added canned black beans, Ready-to-eat brown rice pouch, Fresh lime, Extra-virgin olive oil
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed as a 3/4 overhead angle (40 degrees) capturing two matte ceramic plates on a weathered, dark oak wood table. The primary plate is ...

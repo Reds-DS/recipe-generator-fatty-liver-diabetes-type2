@@ -1,0 +1,55 @@
+=== RECIPE LOG: Skillet Turkey Puttanesca with Zucchini and Quinoa ===
+ID            : 63dda4e1-6d2f-48d5-9ccd-ffdef1db7633
+Generation ID : b2e6d88e-f0b2-4b68-b834-6aaa13e6641a
+Generated     : 2026-08-11 08:58:24
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 0
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : turkey breast cutlets
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Skillet Turkey Puttanesca with Zucchini and Quinoa
+Technique       : Pan-sear and skillet simmer
+Cuisine style   : Mediterranean
+Flavour profile : Briny, savory, and tomato-forward
+Sketch          : turkey breast cutlets, microwaveable quinoa pouch, zucchini, no-salt-added canned diced tomatoes, Kalamata olives, capers, garlic, extra-virgin olive oil, fresh basil
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence high)
+Missing  : none
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : Fallback (original text kept)
+
+--- Image generation ---
+Status    : OK
+Attempts  : 1
+Prompt    : {
+  "prompt": "Shot with a Canon EOS R5, 85mm f/1.8 lens. The dish is centered with generous negative space, captured at a 3/4 overhead angle to showcase all components. The foreground features one pl...

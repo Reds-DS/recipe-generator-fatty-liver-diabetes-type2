@@ -1,0 +1,155 @@
+{
+  "id": "c7424f23-3ca2-4adb-8f2e-b609112903e4",
+  "title": "Chili-Lime Cod Tacos with Black Beans and Slaw",
+  "intro": "Zesty, bright, and deeply savory, these pan-seared cod tacos offer the crisp textures of taco night without deep-frying. The black beans build a high-fiber carbohydrate base that helps provide steady energy.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 10,
+  "cook_time_max_min": 13,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Pre-shredded red cabbage",
+      "canonical_name": "Cabbage, red, raw",
+      "quantity_g": 105.0,
+      "quantity_display": "1 1/2 cups",
+      "preparation": null,
+      "fdc_id": 169977,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh cilantro",
+      "canonical_name": "Coriander (cilantro) leaves, raw",
+      "quantity_g": 4.0,
+      "quantity_display": "1/4 cup",
+      "preparation": "chopped",
+      "fdc_id": 169997,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lime juice",
+      "canonical_name": "Lime juice, raw",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": "divided",
+      "fdc_id": 168156,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Avocado",
+      "canonical_name": "Avocados, raw, all commercial varieties",
+      "quantity_g": 70.0,
+      "quantity_display": "1/2 medium",
+      "preparation": "diced",
+      "fdc_id": 171705,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Untreated fresh or frozen cod fillets",
+      "canonical_name": "Fish, cod, Atlantic, raw",
+      "quantity_g": 285.0,
+      "quantity_display": "10 oz (285 g)",
+      "preparation": "thawed if frozen",
+      "fdc_id": 171955,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Chili powder",
+      "canonical_name": "Spices, chili powder",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171319,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Salt",
+      "canonical_name": "Salt, table",
+      "quantity_g": 0.75,
+      "quantity_display": "1/8 tsp (0.75 g)",
+      "preparation": null,
+      "fdc_id": 173468,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 15.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned black beans",
+      "canonical_name": "Beans, black, mature seeds, canned, low sodium",
+      "quantity_g": 260.0,
+      "quantity_display": "1 cup (260 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 175238,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Corn tortillas",
+      "canonical_name": "Tortillas, ready-to-bake or -fry, corn",
+      "quantity_g": 100.0,
+      "quantity_display": "4 tortillas",
+      "preparation": null,
+      "fdc_id": 175036,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Toss the cabbage, cilantro, half the lime juice, and the avocado in a medium bowl. Mash the avocado into the greens to dress the slaw, then set aside.",
+    "Pat the cod dry with a paper towel. Season on all sides with the chili powder and salt.",
+    "Heat the olive oil in a large nonstick skillet over medium-high heat. Add the cod and cook for 3 to 4 minutes per side, flipping halfway, until golden and opaque.",
+    "Transfer the cod to a clean plate and flake it into bite-sized pieces with a fork. Drizzle the remaining lime juice over the flaked fish.",
+    "Reduce the stovetop heat to medium and add the rinsed black beans to the same skillet. Stir frequently for 2 to 3 minutes until warmed through, then transfer to a serving bowl.",
+    "Wipe out the skillet and place it over medium-high heat. Warm the corn tortillas for 30 seconds per side, flipping halfway, until soft and pliable.",
+    "Divide the warm tortillas between two plates and fill with the flaked cod. Top with the avocado slaw and serve the warm black beans alongside."
+  ],
+  "variation": "Swap the cod fillets for untreated, peeled medium shrimp.",
+  "conservation": "Best enjoyed right away; does not keep well.",
+  "nutrition_per_serving": {
+    "calories_kcal": 489.8,
+    "protein_g": 37.8,
+    "carbs_g": 52.5,
+    "fat_g": 15.6,
+    "fiber_g": 16.0,
+    "sodium_mg": 470.9,
+    "sugar_g": 3.3,
+    "saturated_fat_g": 2.3,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 61.3,
+    "potassium_mg": 1426.8,
+    "trans_fat_g": 0.0,
+    "mufa_g": 9.5,
+    "pufa_g": 2.8,
+    "calcium_mg": 143.5,
+    "iron_mg": 4.5,
+    "vitamin_d_mcg": 1.3,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "high"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "[title_intro_accuracy] The title and intro accurately describe the dish, but the phrase 'steady metabolism' in the intro skirts too close to banned 'boosts metabolism' diet language. Fix: Change to 'steady energy' or 'steady blood sugar'."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\chili-lime_cod_tacos_with_black_beans_and_slaw.png",
+  "created_at": "2026-08-11T09:21:13.906551",
+  "generation_id": "aaf1d0d3-eabf-42cb-a6f0-549c64f0b9e2"
+}

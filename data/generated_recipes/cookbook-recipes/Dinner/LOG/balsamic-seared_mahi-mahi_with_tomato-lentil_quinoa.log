@@ -1,0 +1,59 @@
+=== RECIPE LOG: Balsamic-Seared Mahi-Mahi with Tomato-Lentil Quinoa ===
+ID            : b0c7c2b9-5711-4196-95f2-489f7f05b58e
+Generation ID : 7416f6e9-7eaf-4626-81b1-a17be64b7ef4
+Generated     : 2026-08-11 09:16:47
+LLM model     : gemini-3.1-pro-preview
+Validation    : PASS
+Warnings      : 5
+Corrections   : 0
+
+--- Parameters ---
+Main ingredient : Fresh or thawed Mahi-Mahi fillets
+Meal type       : dinner
+Exclusions      : none
+
+--- Ideation ---
+Title candidate : Balsamic-Seared Mahi-Mahi with Tomato-Lentil Quinoa
+Technique       : Skillet pan-sear
+Cuisine style   : Mediterranean-American
+Flavour profile : Tangy, savory, and naturally sweet from blistered tomatoes
+Sketch          : Fresh or thawed Mahi-Mahi fillets, Extra-virgin olive oil, Cherry tomatoes, Garlic powder, Balsamic vinegar, No-salt-added canned brown lentils, Fresh baby spinach, Ready-to-eat microwaveable quinoa pouch
+
+--- Draft (1 attempt(s)) ---
+  [Attempt 1] Accepted
+
+--- Nutrition ---
+Source   : llm_usda (confidence medium)
+Missing  : none
+  [WARN] Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
+  [WARN] Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.
+  [WARN] Stage 4 qualifier: 'No-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.
+  [WARN] sugar_g: partial data — 32% of recipe weight has no USDA value for it.
+
+--- Diet check (post-nutrition) ---
+Overall status : PASS
+  [masld.no_alcohol_ingredient] OK
+  [masld.no_deep_fried] OK
+  [masld.no_sugar_sweetened_beverage_or_juice_component] OK
+  [masld.no_high_fructose_sweetener] OK
+  [masld.no_added_sugar_primary_base] OK
+  [masld.no_refined_grain_base] OK
+  [masld.no_processed_cured_meat_base] OK
+  [masld.no_tropical_saturated_fat_base] OK
+  [masld.tier_targets[main]] OK
+  [masld.added_sugar[main]] OK
+
+--- Cooking sanity check ---
+Status : OK — no corrections needed
+
+--- critic_attempt_1 ---
+Status : ok
+
+--- Formatting ---
+Prose rewrite : OK
+
+--- Image generation ---
+Status    : OK
+Attempts  : 2
+Prompt    : [
+  "Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow matte ceramic bowls containing balsamic-seared mahi-mahi fillets served over a warm bed of brown lentils and quinoa. The ...

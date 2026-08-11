@@ -1,0 +1,304 @@
+{
+  "main_ingredient": "Extra-firm tofu and canned chickpeas",
+  "meal_type": "lunch",
+  "chapter": "lunches",
+  "exclusions": [],
+  "recipe_title": "Smashed Tofu and Chickpea Dill Salad Pockets",
+  "recipe_id": "21fdff78-9106-4780-be63-eb32642c5966",
+  "generation_id": "b0cebdd0-869d-4f73-8452-e1d45e379f4d",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T08:49:24.544048",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Smashed Tofu and Chickpea Dill Salad Pockets",
+        "main_ingredient": "Extra-firm tofu and canned chickpeas",
+        "technique": "No-cook / Mashing",
+        "flavour_profile": "Creamy, tangy, and herbaceous",
+        "cuisine_style": "Modern American",
+        "ingredients_sketch": [
+          "Extra-firm tofu",
+          "No-salt-added canned chickpeas",
+          "Nonfat plain Greek yogurt",
+          "Dijon mustard",
+          "Fresh dill",
+          "Lemon",
+          "Celery",
+          "Red onion",
+          "Whole-wheat pita breads",
+          "Mixed salad greens"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'No-salt-added canned chickpeas' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "cholesterol_mg: partial data — 20% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 16% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 16% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added canned chickpeas"
+        ],
+        "nutrition": {
+          "calories_kcal": 427.7,
+          "protein_g": 32.7,
+          "carbs_g": 58.4,
+          "fat_g": 9.9,
+          "fiber_g": 11.4,
+          "sodium_mg": 390.2,
+          "sugar_g": 9.8,
+          "saturated_fat_g": 1.5,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 3.8,
+          "potassium_mg": 590.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.0,
+          "pufa_g": 4.1,
+          "calcium_mg": 477.4,
+          "iron_mg": 5.1,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added canned chickpeas"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 6,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.9,
+        "alias_hit_rate": 0.6,
+        "match_sources": [
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 58.4 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 58.4 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[chapter_intent_fit] The recipe slightly overshoots the chapter's 55 g carbohydrate ceiling (coming in at 58.4 g). Given that the carbs come entirely from fiber-rich whole foods, this doesn't hurt the recipe dietarily. To strictly respect the book's numerical ceiling, you could reduce the chickpeas to 3.5 oz (100 g) or specify a slightly lighter pita (e.g., 2 oz/56 g each)."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A stellar, satisfying deli-style lunch pocket that perfectly answers the diet's mandate for high fiber and plant-forward protein. The slight overshoot on carbohydrates is well-mitigated by their high quality, making this an excellent addition to the book.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Classic deli-style 'mock tuna' or egg salad flavor profile using dill, Dijon, and lemon. Highly coherent, well-balanced, and appetizing."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used correctly in the steps. No orphaned ingredients."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero-cook prep steps are clear and straightforward for a beginner."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Modern American deli salad style perfectly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The no-cook method is perfectly suited here. Mashing tofu and chickpeas works well with the tools suggested."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Values align well with the ingredients. The impressive fiber (11.4 g) and protein (32.7 g) are accurate given the tofu, chickpeas, and whole-wheat pitas."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Title and intro accurately describe the dish and set expectations well, with no banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "An excellent, highly appealing desk-friendly lunch. It's fresh, hearty, and satisfying without needing to be reheated."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly models the diet's goals: plant-forward, very high in fiber, utilizing quality whole grains and legumes without any excess saturated fat."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar, and the carbohydrate load comes strictly from excellent, high-fiber sources (chickpeas and whole-wheat pita)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The recipe slightly overshoots the chapter's 55 g carbohydrate ceiling (coming in at 58.4 g). Given that the carbs come entirely from fiber-rich whole foods, this doesn't hurt the recipe dietarily. To strictly respect the book's numerical ceiling, you could reduce the chickpeas to 3.5 oz (100 g) or specify a slightly lighter pita (e.g., 2 oz/56 g each)."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in 15 minutes with standard supermarket ingredients. No specialized equipment required."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 3,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene is composed with two halved whole-wheat pita pockets centered on a rustic, matte grey ceramic plate, leaving generous negative space around the edges. The camera is positioned at a 35-degree 3/4 overhead angle, ensuring every component is clearly identifiable. The depth of field is shallow, keeping the near pita sharp with a soft, creamy bokeh on the background pita. Lighting is soft, natural window light from the left, creating gentle shadows and a slight, appetizing sheen on the yogurt-based salad mixture. The setting is a worn, warm oak kitchen table with natural wood grain. Props include a small, partially used lemon and a scattering of fresh green dill leaves on the table surface, along with a blurred wooden spoon resting on the side. The dish consists of two halved pita pockets standing upright or slightly tilted, stuffed generously with a hearty, textured mixture of smashed chickpeas and crumbled extra-firm tofu, held together by a creamy Greek yogurt dressing. Small, diced bits of bright red onion, vibrant green celery, and chopped fresh dill are clearly visible throughout the chunky, rustic filling, which peeks out from beneath a layer of fresh, crisp mixed salad greens lining the pitas. The mixture is coarse and perfectly imperfect. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a tiny stray piece of onion on the plate rim, slightly uneven filling edges. Include subtle traces of the cooking process: a small herb leaf on the table, a slight smudge of yogurt near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting, not cold or clinical. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

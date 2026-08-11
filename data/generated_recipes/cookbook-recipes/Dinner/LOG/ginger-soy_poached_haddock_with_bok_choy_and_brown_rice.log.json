@@ -1,0 +1,321 @@
+{
+  "main_ingredient": "Haddock fillets",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Ginger-Soy Poached Haddock with Bok Choy and Brown Rice",
+  "recipe_id": "d8d66067-8ba6-4620-bbe4-8d6759a019d5",
+  "generation_id": "c14629a1-9940-4a11-a8ca-4cd73556f803",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:35:52.391088",
+  "draft_attempts": 2,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Ginger-Soy Poached Haddock with Bok Choy and Brown Rice",
+        "main_ingredient": "Haddock fillets",
+        "technique": "Shallow poaching (skillet)",
+        "flavour_profile": "Savory, gingery, and bright with a touch of umami",
+        "cuisine_style": "Asian-American",
+        "ingredients_sketch": [
+          "Haddock fillets",
+          "Baby bok choy",
+          "Frozen shelled edamame",
+          "Reduced-sodium soy sauce",
+          "No-salt-added vegetable broth",
+          "Fresh ginger",
+          "Garlic",
+          "Unseasoned rice vinegar",
+          "Microwaveable brown rice pouch",
+          "Scallions"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'No-salt-added vegetable broth' — values estimated by the LLM.",
+        "saturated_fat_g: partial data — 14% of recipe weight has no USDA value for it.",
+        "cholesterol_mg: partial data — 25% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 11% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 11% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "No-salt-added vegetable broth"
+        ],
+        "nutrition": {
+          "calories_kcal": 413.1,
+          "protein_g": 36.3,
+          "carbs_g": 49.0,
+          "fat_g": 8.5,
+          "fiber_g": 7.7,
+          "sodium_mg": 572.4,
+          "sugar_g": 4.5,
+          "saturated_fat_g": 0.9,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 68.8,
+          "potassium_mg": 1237.9,
+          "trans_fat_g": 0.0,
+          "mufa_g": 2.5,
+          "pufa_g": 1.1,
+          "calcium_mg": 202.8,
+          "iron_mg": 4.0,
+          "vitamin_d_mcg": 0.6,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "No-salt-added vegetable broth"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.818,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "sodium 572.4 mg/serving > ceiling 550 mg (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "sodium 572.4 mg/serving > ceiling 550 mg (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[ingredient_instruction_consistency] The ingredient list specifies the baby bok choy as '(quartered)', but Step 1 instructs the reader to 'Chop the baby bok choy'. Change Step 1 to omit the bok choy since it is already prepped, or change the ingredient list to '(trimmed)' and leave the chopping in Step 1.",
+        "[chapter_intent_fit] Fits the chapter beautifully as a fast, lean-seafood weeknight option. However, the sodium comes in at 572 mg (just over the 550 mg limit). Consider reducing the soy sauce slightly to 1.5 tsp to easily duck under the ceiling, or keep as is if the culinary team prefers to absorb the minor 22 mg overage."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a stellar, weeknight-friendly recipe that perfectly executes the book's medical and culinary brief. It utilizes smart supermarket shortcuts like pre-cooked brown rice to deliver a balanced, high-fiber, lean-protein meal well within the 30-minute mandate, requiring only minor tweaks to phrasing and sodium.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The savory ginger, umami from the soy sauce, and bright acidity from the rice vinegar create a classic and beautifully balanced poaching broth."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The ingredient list specifies the baby bok choy as '(quartered)', but Step 1 instructs the reader to 'Chop the baby bok choy'. Change Step 1 to omit the bok choy since it is already prepped, or change the ingredient list to '(trimmed)' and leave the chopping in Step 1."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent completeness. The recipe provides a clear time range (3 to 5 minutes), a prompt check time (at 3 minutes), and precise visual doneness cues for both the fish flaking and the greens wilting."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned. The ginger-soy flavor profile paired with bok choy and edamame matches the Asian-American styling seamlessly."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Shallow poaching in a skillet is an ideal method for delicate lean white fish like haddock, keeping it moist while infusing it with flavor."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Computed nutrition values track perfectly with the ingredients provided, accurately reflecting the lean protein from the haddock and edamame, and the complex carbohydrates from the brown rice."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title hits all the major components, and the intro's focus on lean protein and steady-energy fiber is accurate and appropriately phrased for the book's tone."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appetizing, quick, and comforting weeknight dinner. It looks composed and thoughtful rather than feeling like 'diet food'."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A textbook example of fulfilling the brief. It pairs a high-quality complex carbohydrate with robust fiber, lean protein, and an unsaturated fat source (olive oil), managing both blood sugar and liver health."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar with all sweetness coming naturally from the ingredients. The brown rice and edamame provide an excellent, high-quality carbohydrate source well within the tier's window."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Fits the chapter beautifully as a fast, lean-seafood weeknight option. However, the sodium comes in at 572 mg (just over the 550 mg limit). Consider reducing the soy sauce slightly to 1.5 tsp to easily duck under the ceiling, or keep as is if the culinary team prefers to absorb the minor 22 mg overage."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliant execution of the time limit. Using a ready-to-eat brown rice pouch completely resolves the 45-minute wait usually associated with whole grains, allowing this fresh, wholesome meal to genuinely land on the table in under 20 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two ceramic bowls centered on an aged, dark oak kitchen table, arranged in a 3/4 overhead perspective that allows for clear visibility of all ingredients. The foreground bowl is sharp, while the second is softly blurred behind it. Each serving contains a base of nutty-brown, textured brown rice topped with a generous, tender fillet of opaque, flaky white haddock. Beside the fish, vibrant, emerald-green wilted baby bok choy and bright, firm edamame beans are nestled, not stacked, ensuring each component is distinct. A light, translucent ginger-soy broth glazes the components, creating a subtle sheen on the surface. Fresh, thin slices of green scallions are scattered casually over the top. The lighting is soft, natural, and diffused from a window on the left, casting gentle, realistic shadows. Props include a rumpled, neutral-colored linen napkin tucked to the side and a small wooden spoon resting naturally on the table surface, along with a few stray green scallion slices and a tiny splash of broth on the rim of the bowl. Photorealistic, not AI-generated looking. The scene reflects a home-cooked, lived-in warmth, with slight imperfections like an asymmetric garnish and an uneven texture to the wilted greens. The color temperature is a cozy, golden-hour amber. No plastic sheen, no perfect symmetry, no text, no watermarks, no hands, no faces. Indistinguishable from a professional cookbook photograph.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 10,
+  "total_corrections": 0
+}

@@ -541,7 +541,41 @@ guidelines and should not move. Tell the drafting model to AIM AT THE TARGETS ra
 floors, and say plainly that overshooting protein displaces the carbohydrate and fat the day is built
 on. NOT YET APPLIED — this is the next change.
 
-### ⛔ HARD STOP — GOOGLE API ACCESS DENIED (2026-08-09)
+### ✅ THE BOOK IS COMPLETE — 100/100 RECIPES (2026-08-11)
+
+Every chapter is at its exact target. `scripts/audit_book.py` reports **96/100 publishable as-is**.
+
+| chapter | count |
+|---|---|
+| breakfasts | 16/16 |
+| soups_salads | 14/14 |
+| lunches | 14/14 |
+| poultry_meat_dinners | 13/13 |
+| fish_seafood_dinners | 11/11 |
+| vegetable_meatless_dinners | 10/10 |
+| snacks_sides | 12/12 |
+| desserts | 10/10 |
+
+**THE 4 REMAINING BLOCKERS — fix before print** (`uv run python scripts/audit_book.py cookbook-recipes`):
+
+| recipe | defect | note |
+|---|---|---|
+| 15-Minute Chickpea and Spinach Shakshuka | time claim in title AND filename | pre-fix pilot |
+| Broiled Cinnamon Peaches with Vanilla Ricotta | fabricated preheat "for 3 minutes" | pre-fix pilot |
+| Sheet-Pan Lemon-Dill Salmon | fabricated preheat "for 5 minutes" | pre-fix pilot |
+| Smoky Salmon and Sweet Corn Chowder | declared total 32 min > the 30 min cover promise | post-fix |
+
+To regenerate any of them: delete the recipe's Md/JSON/IMG/LOG files AND its fingerprint in
+`cookbook-recipes/dedup.db` first, or the replacement is rejected as a duplicate. The shakshuka's
+time claim is in its FILENAME too, so its replacement lands under a new name — delete the old one.
+
+**Also worth an editorial pass before print:** 58 envelope advisories across 42 recipes. Most are
+rounding (28.3 vs 28 g carbohydrate; 2.1 vs 2 g saturated fat) and not defects — the panel is
+computed from a food database with real variance. Sort by magnitude and look only at the outliers.
+
+### THE HISTORICAL FAILURES BELOW ARE RESOLVED — kept for diagnosis, not as current state
+
+### ⛔ RESOLVED: GOOGLE API FAILURES (2026-08-09 to 2026-08-11)
 
 Two DIFFERENT API failures hit in sequence. Do not conflate them, or with the silent background
 kills documented above (which leave no error at all):
@@ -605,13 +639,32 @@ that walked past *"ready in under **ten** minutes"*. First run reported 5 blocke
 
 ### NOT YET DONE — do not assume otherwise
 
-- [ ] **47 of 100 recipes remain** — blocked on the spend cap.
-- [ ] **Fix the 4 audit blockers** (above). For the shakshuka, the time claim is in the FILENAME too,
-      so regenerating produces a new file and the old one must be deleted; delete its `dedup.db`
-      fingerprint first or the replacement will be blocked as a duplicate.
-- [ ] **Re-check whether the aim-at-targets fix worked.** It was applied immediately before this
-      batch, so the 25 post-fix recipes are the sample. Compare main-tier kcal/protein against the
-      pre-fix batch (mains were 500-545 kcal, protein 40-49 g vs a 31 g target).
+- [ ] **Fix the 4 audit blockers** listed at the top of this section, then re-run
+      `scripts/audit_book.py` until it exits 0.
+- [ ] **Editorial pass on the 58 envelope advisories** (42 recipes) — sort by magnitude, most are
+      rounding.
+- [ ] **The three reader bonuses have not been touched** — companion app, 30-day meal plan, desserts
+      PDF. They were deferred to the `cookbook-bonuses` skill and all three read the recipes this
+      engine produced, which now exist. Note the subtitle promises a **30-day** plan, not 60.
+- [ ] **Re-fit `src/planning/pantry.py` thresholds** (`DEFAULT_MIN_RECIPES = 5`,
+      `SPICE_MIN_RECIPES = 3`, `SPICE_MAX_TOTAL_G = 150`) — they were fitted to the parent book's
+      ingredient-frequency distribution. Now that 100 recipes exist, re-fit before the meal-plan bonus.
+- [ ] **Re-sample the PDF palette** in `pdf/assets/meal_plan.css` from this book's cover (flagged in
+      a comment there); it is still the parent cookbook's.
+
+### VERIFIED: THE AIM-AT-TARGETS FIX WORKED
+
+Applied mid-build, which gave a clean before/after on the `main` tier at the time:
+
+| | n | mean kcal | mean protein | mains >=500 kcal |
+|---|---|---|---|---|
+| pre-fix | 19 | 496 | 35.7 g | **10/19 (53%)** |
+| post-fix | 11 | **447** | 34.8 g | **1/11 (9%)** |
+
+Mean energy fell ~50 kcal onto the 460 midpoint and the cluster at the top of the band collapsed,
+while protein barely moved — portions came down without stripping protein out. This closed the last
+open design question from the pilot. Do NOT retune the tier envelopes to "fix" over-portioning; the
+tiers derive from the guidelines, and the lever is the drafting prompt.
 - [ ] **Meal-plan / PDF coaching prose is only partly retargeted.** The claims that were wrong for
       this book were fixed (`meal_plan_formatter.py`, `meal_plan.html.j2`), but the PDF palette in
       `pdf/assets/meal_plan.css` is still the parent book's and is flagged in a comment — re-sample

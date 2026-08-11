@@ -1,0 +1,290 @@
+{
+  "main_ingredient": "part-skim ricotta cheese and frozen green peas",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Lemon-Basil Ricotta and Pea Whole-Wheat Pasta",
+  "recipe_id": "aee5ae9a-8cbb-4b51-8fe1-ead76b26e4ca",
+  "generation_id": "c042257d-2b1e-4a55-9694-da0ddc102031",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:55:51.707790",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Lemon-Basil Ricotta and Pea Whole-Wheat Pasta",
+        "main_ingredient": "part-skim ricotta cheese and frozen green peas",
+        "technique": "Stovetop boiling and one-pot tossing",
+        "flavour_profile": "Bright, herbaceous, and creamy",
+        "cuisine_style": "Mediterranean",
+        "ingredients_sketch": [
+          "whole-wheat penne or rotini",
+          "frozen green peas",
+          "part-skim ricotta cheese",
+          "fresh lemon (for zest and juice)",
+          "fresh basil",
+          "garlic",
+          "extra-virgin olive oil",
+          "black pepper"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Plain non-fat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 427.4,
+          "protein_g": 27.6,
+          "carbs_g": 53.7,
+          "fat_g": 13.1,
+          "fiber_g": 8.8,
+          "sodium_mg": 197.2,
+          "sugar_g": 10.1,
+          "saturated_fat_g": 3.8,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 20.5,
+          "potassium_mg": 594.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 6.5,
+          "pufa_g": 1.6,
+          "calcium_mg": 301.9,
+          "iron_mg": 3.7,
+          "vitamin_d_mcg": 0.1,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 9,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.9,
+        "match_sources": [
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] The instructions are very good and include the crucial time range and check step, but Step 2 is missing a doneness cue for the pasta. Add 'cook until al dente' or 'until tender with a slight bite'."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an excellent, practical, and delicious meatless recipe that successfully leverages Greek yogurt and peas to hit a challenging protein target, while staying strictly within the required carbohydrate and saturated fat limits.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The lemon, basil, pea, and ricotta flavor profile is classic and bright. The non-fat Greek yogurt adds tang that works well here. Tossing 2 cloves of raw minced garlic directly into the warm pasta might be slightly pungent; consider recommending grating or pasting the garlic so it melds into the sauce smoothly."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients are perfectly accounted for in the instructions and used in a logical order."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The instructions are very good and include the crucial time range and check step, but Step 2 is missing a doneness cue for the pasta. Add 'cook until al dente' or 'until tender with a slight bite'."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly aligned with Mediterranean cuisine, relying on staple flavors like lemon, basil, olive oil, and ricotta."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The cooking method is ideal. Adding the non-fat yogurt and ricotta off the heat and tossing with starchy pasta water is exactly the right technique to prevent the yogurt from splitting or curdling."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Computed macros are highly plausible and accurately reflect the weights of the pasta, peas, yogurt, and cheese."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately describe the dish and its preparation. The tone is practical, food-focused, and completely free of disallowed diet or 'detox' language."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A highly appealing, comforting yet fresh weekday dinner. It cleverly uses Greek yogurt to create a 'creamy' sauce without heavy cream, which readers will appreciate."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent crossover dish. It offers the comfort of creamy pasta while keeping saturated fat low for the liver (3.8 g) and relying on high-fiber whole grains and legumes for blood sugar stability."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugars, and the carbohydrate component is high-quality (whole-wheat pasta and peas), fitting perfectly into the top end of the chapter's target window (53.7 g)."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Vegetable & Meatless Dinners' chapter brilliantly. It successfully hits the challenging >=26 g meatless protein target (delivering 27.6 g) by thoughtfully combining Greek yogurt, peas, and a measured amount of cheese."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in roughly 20 minutes total from a cold start. The one-pot nature is practical, and all ingredients are standard supermarket items."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two matte white ceramic bowls placed on an aged, weathered oak tabletop, centered to allow for circular cropping. The camera angle is a 3/4 overhead view, capturing the full depth of the bowls. One bowl is in sharp focus in the foreground, while the second is softly blurred in the background. The dish consists of whole-wheat rotini pasta tossed in a creamy, pale white sauce made of ricotta and Greek yogurt, with bright green peas dispersed throughout. The sauce has a glossy, silken texture, clinging to the ridges of the pasta. Fresh, vibrant green basil leaves are folded through, adding pops of color, with subtle flecks of black pepper and bright yellow lemon zest visible on the surface. A few peas have tumbled slightly onto the wooden surface near a discarded, squeezed half-lemon and a small garlic clove. Soft, natural side light from a window to the left highlights the creaminess of the sauce and the texture of the pasta. The setting is a cozy, warm kitchen environment. Includes minor culinary imperfections: a small drop of sauce on the rim of the foreground bowl, a few stray crumbs of pasta, and non-symmetrical, rustic plating. The overall tone is inviting and warm, with golden-hour hues. Photorealistic, not AI-generated looking. Lived-in, authentic home-cooked atmosphere. No plastic sheen, no artificial symmetry, no hands, no text, no watermarks. Indistinguishable from a professional cookbook photograph.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

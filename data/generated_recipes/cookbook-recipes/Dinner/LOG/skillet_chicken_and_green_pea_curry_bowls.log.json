@@ -1,0 +1,289 @@
+{
+  "main_ingredient": "Boneless, skinless chicken breast tenders",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Skillet Chicken and Green Pea Curry Bowls",
+  "recipe_id": "171e8c7e-c7f3-4ebb-bbb1-1a77d43899eb",
+  "generation_id": "da1dbd1c-e85a-445e-a134-2346e69987a8",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:01:47.758976",
+  "draft_attempts": 1,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Skillet Chicken and Green Pea Curry Bowls",
+        "main_ingredient": "Boneless, skinless chicken breast tenders",
+        "technique": "Skillet simmer",
+        "flavour_profile": "warmly spiced, creamy, savory",
+        "cuisine_style": "Indian-American",
+        "ingredients_sketch": [
+          "boneless, skinless chicken breast tenders",
+          "extra-virgin olive oil",
+          "yellow curry powder",
+          "minced garlic",
+          "no-salt-added canned crushed tomatoes",
+          "frozen green peas",
+          "microwaveable brown rice pouch",
+          "nonfat plain Greek yogurt",
+          "fresh cilantro"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 coverage: 'nonfat plain Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.",
+        "sugar_g: partial data — 25% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 422.4,
+          "protein_g": 37.3,
+          "carbs_g": 45.6,
+          "fat_g": 10.1,
+          "fiber_g": 9.2,
+          "sodium_mg": 153.2,
+          "sugar_g": 7.8,
+          "saturated_fat_g": 1.7,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 84.7,
+          "potassium_mg": 916.1,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.1,
+          "pufa_g": 1.7,
+          "calcium_mg": 136.2,
+          "iron_mg": 3.5,
+          "vitamin_d_mcg": 0.0,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "medium"
+        },
+        "alias_hits": 8,
+        "matcher_hits": 1,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.889,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exemplary recipe for the cookbook. It perfectly balances the nutritional constraints, maximizes flavor, incorporates accessible convenience items like microwavable brown rice, and easily hits the 30-minute weeknight promise.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is well-balanced. The acidity of the tomatoes and yogurt complements the sweetness of the peas and the warmth of the curry powder. Using Greek yogurt as a finishing touch mimics heavy cream effectively."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Every listed ingredient is used properly in the instructions, and no surprise ingredients appear."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Instructions are extremely thorough. Time ranges are provided, minimum check times are noted, doneness cues are clear, and stirring the nonfat yogurt in off-heat prevents curdling."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligns with an everyday Indian-American profile using accessible pantry staples."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A quick skillet simmer is the ideal method here. Taking the pan off the heat before adding the yogurt is a crucial, correctly executed step."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition aligns perfectly with the ingredient amounts. The combination of peas and brown rice easily accounts for the high fiber and complex carbohydrate counts."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro accurately reflect the dish without any banned health claims or scare tactics."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appealing. It's a quick, colorful, comforting, and hearty weeknight dinner that looks good in a bowl."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nails the dual-condition brief perfectly: relies on lean protein, high-quality fiber-rich carbohydrates, olive oil, and loads of vegetables/legumes without heavy fats."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Carbohydrates hit the target window beautifully (45.6 g) using whole brown rice and peas. There is zero added sugar, strictly adhering to the book's core tenet."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Chicken, Turkey & Lean Meat Dinners' chapter effortlessly. It hits all nutrient targets and uses an approved lean poultry cut."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily achievable in under 30 minutes from start to finish. The use of a ready-to-eat brown rice pouch is a smart, explicitly permitted shortcut that honors the reader's time."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 3,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two shallow, matte ceramic bowls set on an aged, weathered oak kitchen table. The bowls are placed side by side, with one in sharp focus in the immediate foreground and the second slightly blurred behind it. The camera angle is a 3/4 overhead view, roughly 40 degrees, ensuring every component in both bowls is clearly visible. Soft, natural side light spills from a window on the left, casting gentle, natural shadows and highlighting the texture of the sauce. Each bowl contains a base of steaming brown rice, topped with tender, golden-brown chicken breast chunks nestled next to vibrant green peas. The chicken and peas are coated in a thick, opaque, warm yellow-orange curry sauce, with the yogurt fully incorporated to create a smooth, creamy consistency. A generous scattering of fresh chopped cilantro sits atop the curry. Beside the bowls lies a slightly crumpled linen napkin and a single garlic clove, with a few stray grains of brown rice and a small fragment of cilantro scattered on the wood surface near the bowls. The scene displays realistic, lived-in imperfections: an asymmetric garnish placement, a tiny, natural sauce drip on the rim of the bowl, and a warm, inviting atmosphere. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 3,
+  "total_corrections": 0
+}

@@ -1,0 +1,153 @@
+{
+  "id": "05ac357b-0d1b-4c72-bdfb-d9e57a210e2e",
+  "title": "Parchment-Baked Snapper with Artichokes and Farro",
+  "intro": "This parchment packet technique creates a fully composed dinner with zero pans to wash. Red snapper steams alongside a bed of Mediterranean vegetables and hearty farro.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 12,
+  "cook_time_max_min": 15,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Fresh or frozen red snapper fillets, thawed",
+      "canonical_name": "Fish, snapper, mixed species, raw",
+      "quantity_g": 300.0,
+      "quantity_display": "10.6 oz (300 g)",
+      "preparation": null,
+      "fdc_id": 173698,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked farro pouch, unsalted",
+      "canonical_name": "Wheat, farro, cooked, unsalted",
+      "quantity_g": 200.0,
+      "quantity_display": "7 oz (200 g)",
+      "preparation": null,
+      "fdc_id": null,
+      "nutrition_source": "llm_estimate",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned artichoke hearts",
+      "canonical_name": "Artichokes, globe or french, cooked, boiled, drained, without salt",
+      "quantity_g": 150.0,
+      "quantity_display": "5.3 oz (150 g)",
+      "preparation": "rinsed, drained, and quartered",
+      "fdc_id": 168386,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 150.0,
+      "quantity_display": "5.3 oz (150 g)",
+      "preparation": "halved",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Kalamata olives, pitted",
+      "canonical_name": "Olives, kalamata, canned, pitted",
+      "quantity_g": 30.0,
+      "quantity_display": "1 oz (30 g)",
+      "preparation": "halved",
+      "fdc_id": 2710088,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh garlic",
+      "canonical_name": "Garlic, raw",
+      "quantity_g": 6.0,
+      "quantity_display": "2 cloves (6 g)",
+      "preparation": "minced",
+      "fdc_id": 169230,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 2.0,
+      "quantity_display": "1 tsp (2 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Fresh lemon",
+      "canonical_name": "Lemons, raw, without peel",
+      "quantity_g": 60.0,
+      "quantity_display": "1 medium (60 g)",
+      "preparation": "cut in half",
+      "fdc_id": 167746,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Preheat the oven to 400°F / 200°C. Cut two large rectangles of parchment paper and lay them flat on a baking sheet.",
+    "Toss the farro, artichoke hearts, cherry tomatoes, olives, minced garlic, olive oil, and dried oregano together in a mixing bowl.",
+    "Divide the farro and vegetable mixture evenly and mound it onto the center of each parchment sheet.",
+    "Place the snapper fillets directly on top of each mound.",
+    "Squeeze half of the lemon over the fillets, then slice the remaining lemon and arrange the slices over the fish.",
+    "Fold the long sides of each parchment paper up and crimp the edges tightly to seal them into airtight packets.",
+    "Bake for 12 to 15 minutes until the fish is opaque and flakes easily with a fork. Open the hot packets carefully and serve."
+  ],
+  "variation": "Swap the red snapper for peeled and deveined medium shrimp.",
+  "conservation": "Keeps 2 days refrigerated in an airtight container; reheat gently.",
+  "nutrition_per_serving": {
+    "calories_kcal": 438.4,
+    "protein_g": 39.3,
+    "carbs_g": 45.3,
+    "fat_g": 12.2,
+    "fiber_g": 10.7,
+    "sodium_mg": 256.5,
+    "sugar_g": 3.5,
+    "saturated_fat_g": 1.8,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 55.5,
+    "potassium_mg": 1085.0,
+    "trans_fat_g": 0.0,
+    "mufa_g": 6.7,
+    "pufa_g": 1.7,
+    "calcium_mg": 113.7,
+    "iron_mg": 2.5,
+    "vitamin_d_mcg": 15.3,
+    "source": "llm_usda",
+    "missing_ingredients": [
+      "Ready-to-eat cooked farro pouch, unsalted"
+    ],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "No USDA candidate for 'Ready-to-eat cooked farro pouch, unsalted' — values estimated by the LLM.",
+    "Stage 4 qualifier: 'No-salt-added canned artichoke hearts': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [168386] Artichokes, (globe or french), cooked, boiled, drained, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "cholesterol_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "potassium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "calcium_mg: partial data — 22% of recipe weight has no USDA value for it.",
+    "iron_mg: partial data — 22% of recipe weight has no USDA value for it."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\parchment-baked_snapper_with_artichokes_and_farro.png",
+  "created_at": "2026-08-11T09:38:52.514736",
+  "generation_id": "2d27d345-8852-4f0f-949e-873dd43e281e"
+}

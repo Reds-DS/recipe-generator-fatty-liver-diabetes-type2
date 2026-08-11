@@ -1,0 +1,309 @@
+{
+  "main_ingredient": "Skinless turkey breast cutlets",
+  "meal_type": "dinner",
+  "chapter": "poultry_meat_dinners",
+  "exclusions": [],
+  "recipe_title": "Five-Spice Turkey Stir-Fry with Bok Choy",
+  "recipe_id": "c98843c0-c44c-47a4-a819-5d42f66e2287",
+  "generation_id": "eaaea212-4875-4de1-b2d4-12863ec0fdd7",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T08:55:44.873870",
+  "draft_attempts": 2,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Five-Spice Turkey Stir-Fry with Bok Choy and Brown Rice",
+        "main_ingredient": "Skinless turkey breast cutlets",
+        "technique": "One-skillet stir-fry",
+        "flavour_profile": "Savory, warm-spiced, umami, and gently bright",
+        "cuisine_style": "Asian-American",
+        "ingredients_sketch": [
+          "Skinless turkey breast cutlets",
+          "Baby bok choy",
+          "Sugar snap peas",
+          "Microwaveable brown rice pouch",
+          "Low-sodium soy sauce",
+          "Unseasoned rice vinegar",
+          "Fresh ginger",
+          "Chinese five-spice powder",
+          "Extra-virgin olive oil",
+          "Toasted sesame seeds"
+        ],
+        "diversity_attempts": 2,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "No USDA candidate for 'Chinese five-spice powder' — values estimated by the LLM.",
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Chinese five-spice powder"
+        ],
+        "nutrition": {
+          "calories_kcal": 448.6,
+          "protein_g": 36.4,
+          "carbs_g": 46.7,
+          "fat_g": 13.8,
+          "fiber_g": 7.2,
+          "sodium_mg": 355.0,
+          "sugar_g": 6.4,
+          "saturated_fat_g": 2.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 59.6,
+          "potassium_mg": 1011.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.1,
+          "pufa_g": 3.1,
+          "calcium_mg": 229.1,
+          "iron_mg": 5.7,
+          "vitamin_d_mcg": 0.2,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Chinese five-spice powder"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 7,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.909,
+        "alias_hit_rate": 0.636,
+        "match_sources": [
+          "alias",
+          "llm_estimate",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "summary": "This is an exceptional recipe that perfectly balances speed, flavor, and the strict nutritional guidelines of the book. It utilizes smart supermarket shortcuts like pouched brown rice to deliver a compliant, delicious, and vegetable-forward stir-fry well under the 30-minute limit.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is highly coherent and classic. Five-spice powder, ginger, soy sauce, and rice vinegar create a balanced, savory umami base with a touch of brightness."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Flawless consistency. Every ingredient listed is explicitly called for in the step-by-step instructions."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent instructional design. Every cooking step includes a specific time range, a minimum-time check, and clear visual/textural doneness cues (e.g., 'lightly browned', 'bright green', 'steaming hot')."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Aligns perfectly with the stated Asian-American style, utilizing staple ingredients (soy, ginger, five-spice, bok choy) in a typical stir-fry format, while seamlessly incorporating the book's Mediterranean-style fat (EVOO)."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Skillet stir-frying is the ideal method for thin turkey cutlets and quick-cooking vegetables like snap peas and bok choy. The medium-high heat will cook the turkey without drying it out."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel accurately reflects the ingredients: the protein comes from the turkey breast, the 46.7g carbohydrate load from the brown rice pouch, and the low saturated fat from lean meat and olive oil."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title and intro are accurate and appealing. The intro highlights the convenience of the brown rice pouch and sets accurate flavor expectations without relying on any banned 'health' or 'detox' claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is a fantastic weeknight recipe. It is vibrant, packed with fresh vegetables, and extremely approachable for home cooks. The use of five-spice offers an easy way to build complex flavor quickly."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly fits the dual mandate. It avoids heavy, sugary sauces that spike blood sugar, relies on olive oil to protect the liver, and delivers a robust volume of vegetables (16 oz for two people) alongside lean protein and whole grains."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Hits the carbohydrate window beautifully at 46.7g per serving, sourced from high-quality, fiber-rich brown rice and vegetables. Zero added sugars; sweetness is naturally derived from the sugar snap peas."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Meets every requirement for the 'Chicken, Turkey & Lean Meat Dinners' chapter. It is a one-pan/skillet meal relying on lean turkey, hits the required nutrient tier perfectly, and utilizes a simple, savory pan sauce."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly realistic within a 30-minute window. Prep is minimal (mincing ginger, chopping bok choy), the 6-minute active cook time is fast, and the ready-to-eat brown rice pouch is exactly the kind of smart shortcut the book encourages."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": true
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "{\n  \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition is centered with generous negative space, framed at a 3/4 overhead angle to clearly display the entirety of the ingredients. The depth of field is shallow, keeping the foreground serving sharp while the second plate behind it is softly blurred. Soft natural side light from a window to the left creates subtle, gentle shadows and a slight sheen on the light soy-based glaze. The scene is set on an aged, dark oak tabletop with visible wood grain. Placed naturally on the table are a wooden spatula and a few loose toasted sesame seeds and a fragment of a bok choy leaf. The dish consists of two simple, matte ceramic plates. Each plate features a base of steaming brown rice, topped with tender, five-spice coated turkey strips and a vibrant mix of bright green snap peas and softened baby bok choy. The turkey is browned and aromatic, positioned next to the glistening vegetables rather than buried. A light, savory glaze coats the ingredients. A scattering of toasted sesame seeds is unevenly sprinkled over the top. The overall color palette is warm and inviting, showing natural, cooked textures like the caramelization on the turkey and the vivid, tender greens of the bok choy. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating—lived-in, warm, authentic. Include slight natural imperfections: an asymmetric garnish, a small, accidental sauce drip on the plate rim, and a few stray sesame seeds on the wood surface. No plastic sheen, no unnaturally smooth surfaces. Warm, golden-hour color temperature, cozy and inviting. No text, no watermark, no logo, no hands, no faces. Indistinguishable from professional editorial food photography.\"\n}",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 2,
+  "total_corrections": 0
+}

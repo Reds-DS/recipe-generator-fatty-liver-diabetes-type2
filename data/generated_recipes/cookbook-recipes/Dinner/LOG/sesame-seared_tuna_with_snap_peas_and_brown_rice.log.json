@@ -1,0 +1,330 @@
+{
+  "main_ingredient": "Fresh or frozen tuna steaks",
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "exclusions": [],
+  "recipe_title": "Sesame-Seared Tuna with Snap Peas and Brown Rice",
+  "recipe_id": "fb090d76-ab00-46d6-9ef7-675ec6151ba7",
+  "generation_id": "aaf0541f-fc8b-4747-923b-146a0764179e",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T09:25:19.174987",
+  "draft_attempts": 3,
+  "critic_attempts": 1,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Sesame-Seared Tuna with Snap Peas and Brown Rice",
+        "main_ingredient": "Fresh or frozen tuna steaks",
+        "technique": "Skillet sear and quick stir-fry",
+        "flavour_profile": "Umami, ginger, and toasted sesame",
+        "cuisine_style": "Asian-American",
+        "ingredients_sketch": [
+          "Fresh or frozen (thawed) tuna steaks",
+          "Sesame seeds",
+          "Low-sodium soy sauce",
+          "Fresh ginger paste (or minced ginger)",
+          "Fresh sugar snap peas",
+          "Frozen shelled edamame",
+          "Microwaveable brown rice pouch",
+          "Scallions",
+          "Extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 11.0g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_2",
+      "status": "failed",
+      "warnings": [
+        "High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person)."
+      ],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 11.0g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": false,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "draft_attempt_3",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "The recipe's quantities look wrong for 2 people. Required corrections:\n1. High salt / salty-sauce amount: 7.5g/person (recommended at most 5g/person).\n\nRevise the quantities so they match exactly 2 servings. Do not write a 4-person recipe.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "No USDA candidate for 'Fresh sugar snap peas' — values estimated by the LLM.",
+        "No USDA candidate for 'Unseasoned rice vinegar' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 28% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 28% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "Fresh sugar snap peas",
+          "Unseasoned rice vinegar"
+        ],
+        "nutrition": {
+          "calories_kcal": 472.6,
+          "protein_g": 40.3,
+          "carbs_g": 46.9,
+          "fat_g": 13.8,
+          "fiber_g": 8.1,
+          "sodium_mg": 246.4,
+          "sugar_g": 6.2,
+          "saturated_fat_g": 2.1,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 43.9,
+          "potassium_mg": 885.3,
+          "trans_fat_g": 0.0,
+          "mufa_g": 7.4,
+          "pufa_g": 3.2,
+          "calcium_mg": 91.4,
+          "iron_mg": 3.5,
+          "vitamin_d_mcg": 1.9,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "Fresh sugar snap peas",
+            "Unseasoned rice vinegar"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 5,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.8,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "matcher",
+          "alias",
+          "alias",
+          "alias",
+          "llm_estimate",
+          "matcher",
+          "matcher",
+          "alias",
+          "llm_estimate"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "ok",
+      "warnings": [
+        "[instruction_completeness] Cook times are provided as ranges with clear visual cues, but the specific 'check at the minimum time' instruction is missing. Add 'Check at 1 minute' for the tuna searing and 'Check at 3 minutes' for the vegetable stir-fry to align perfectly with the book's house style."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is an outstanding, highly appealing weeknight recipe that hits all dietary, nutritional, and practical targets for the cookbook with zero fuss. Only a minor stylistic tweak is needed in the instructions to explicitly check the food at the minimum cook times.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent, classic Asian-American flavor profile. The umami from the soy sauce, the bite of fresh ginger, the nuttiness of sesame, and the acidity of rice vinegar create a perfectly balanced dish."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All listed ingredients are used in the instructions, and no surprise ingredients are introduced in the text."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Cook times are provided as ranges with clear visual cues, but the specific 'check at the minimum time' instruction is missing. Add 'Check at 1 minute' for the tuna searing and 'Check at 3 minutes' for the vegetable stir-fry to align perfectly with the book's house style."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The ingredients and techniques firmly align with the stated Asian-American cuisine style."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A quick skillet sear followed by a brief vegetable stir-fry is a classic and highly effective method for these ingredients. The tuna won't overcook while waiting."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition panel is highly plausible for these quantities, aligning well with the fiber from the whole grains and edamame, and the high protein from the tuna."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title accurately reflects the dish, and the intro is warm, practical, and avoids banned health claims while highlighting real food benefits."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "This is an incredibly appetizing, vibrant, and satisfying weeknight meal. The contrast of the pink tuna, green peas, and nutty rice will look fantastic."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly hits the brief: high in lean protein, vegetable-forward, utilizes a quality complex carbohydrate (brown rice), and relies on unsaturated fats (olive oil, sesame)."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar with all the sweetness coming naturally from the snap peas. The carbohydrate count (46.9g) sits beautifully in the target window and comes from entirely high-quality, whole-food sources."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Fish & Seafood Dinners' chapter effortlessly, delivering a fatty fish (tuna) in a fast, weeknight-friendly format while hitting all macro targets."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Brilliantly executed for time. Using a microwaveable brown rice pouch is a first-class shortcut that allows this complete, balanced meal to genuinely land on the table in under 15 minutes."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The scene features two ceramic plates arranged in a warm, lived-in kitchen environment. The primary plate is centered in the frame, angled at a 35-degree 3/4 overhead perspective to capture the depth of the components, with a second plate softly blurred in the background. Lighting is soft, natural window light from the left, creating subtle shadows and highlights on the soy-glazed vegetables. The surface is a rustic, aged oak wooden table with slight visible wear. The dish consists of a base of fluffy, nutty-brown steamed rice, topped with a vibrant mixture of bright green, crisp-tender sugar snap peas and edamame, and garnished with finely sliced scallions. Two slices of sesame-crusted, medium-rare tuna are arranged neatly alongside the vegetables rather than on top, showcasing the toasted, golden-brown sesame crust and a tender, pink, opaque center. A small, rustic wooden spoon rests beside the foreground plate. A few stray sesame seeds and a small splash of dark soy-based sauce are visible on the ceramic rim. Props include a small ramekin containing a hint of ginger-infused soy sauce placed near the rear plate. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Not a sterile studio setup. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning. Include subtle traces of the cooking process: a few scattered sesame seeds on the wood, a faint oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature — cozy and inviting. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 8,
+  "total_corrections": 0
+}

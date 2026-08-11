@@ -1,0 +1,149 @@
+{
+  "id": "b0c7c2b9-5711-4196-95f2-489f7f05b58e",
+  "title": "Balsamic-Seared Mahi-Mahi with Tomato-Lentil Quinoa",
+  "intro": "Tangy balsamic vinegar creates a rich glaze over flaky seared fish and sweet blistered cherry tomatoes. Using a ready-to-eat quinoa pouch and canned lentils builds a high-fiber base without the wait.",
+  "diet_tags": [],
+  "meal_type": "dinner",
+  "chapter": "fish_seafood_dinners",
+  "servings": 2,
+  "prep_time_min": 10,
+  "cook_time_min": 11,
+  "cook_time_max_min": 16,
+  "passive_time": null,
+  "ingredients": [
+    {
+      "name": "Mahi-Mahi fillets",
+      "canonical_name": "Fish, mahimahi, raw",
+      "quantity_g": 255.0,
+      "quantity_display": "9 oz (255 g)",
+      "preparation": "thawed if frozen, patted dry",
+      "fdc_id": 171959,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Garlic powder",
+      "canonical_name": "Spices, garlic powder",
+      "quantity_g": 3.0,
+      "quantity_display": "1 tsp (3 g)",
+      "preparation": null,
+      "fdc_id": 171325,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Dried oregano",
+      "canonical_name": "Spices, oregano, dried",
+      "quantity_g": 1.0,
+      "quantity_display": "1 tsp (1 g)",
+      "preparation": null,
+      "fdc_id": 171328,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Extra-virgin olive oil",
+      "canonical_name": "Oil, olive, salad or cooking",
+      "quantity_g": 14.0,
+      "quantity_display": "1 tbsp (15 ml)",
+      "preparation": null,
+      "fdc_id": 171413,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Cherry tomatoes",
+      "canonical_name": "Tomatoes, red, ripe, raw, year round average",
+      "quantity_g": 225.0,
+      "quantity_display": "1 1/2 cups (225 g)",
+      "preparation": "whole",
+      "fdc_id": 170457,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Balsamic vinegar",
+      "canonical_name": "Vinegar, balsamic",
+      "quantity_g": 30.0,
+      "quantity_display": "2 tbsp (30 ml)",
+      "preparation": null,
+      "fdc_id": 2709351,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "No-salt-added canned brown lentils",
+      "canonical_name": "Lentils, mature seeds, cooked, boiled, without salt",
+      "quantity_g": 200.0,
+      "quantity_display": "1 cup (200 g)",
+      "preparation": "rinsed and drained",
+      "fdc_id": 172421,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Ready-to-eat cooked quinoa",
+      "canonical_name": "Quinoa, cooked",
+      "quantity_g": 185.0,
+      "quantity_display": "1 cup (185 g)",
+      "preparation": null,
+      "fdc_id": 168917,
+      "nutrition_source": "usda",
+      "is_optional": false
+    },
+    {
+      "name": "Baby spinach",
+      "canonical_name": "Spinach, raw",
+      "quantity_g": 60.0,
+      "quantity_display": "2 cups (60 g)",
+      "preparation": "loosely packed",
+      "fdc_id": 1750352,
+      "nutrition_source": "usda",
+      "is_optional": false
+    }
+  ],
+  "instructions": [
+    "Pat the fish fillets dry and season on both sides with the garlic powder, dried oregano, and black pepper.",
+    "Heat the olive oil in a large skillet over medium-high heat. Add the fish and sear for 3 to 4 minutes, flip at the halfway point, and cook for another 3 to 4 minutes until opaque, then transfer to a plate and cover.",
+    "Reduce the heat to medium and add the cherry tomatoes to the skillet. Cook for 4 to 5 minutes, stirring occasionally, until the tomatoes blister and begin to burst.",
+    "Pour the balsamic vinegar into the skillet and stir constantly to scrape up any browned bits from the bottom. Simmer for 1 to 2 minutes to reduce the liquid.",
+    "Stir the lentils and quinoa into the skillet to combine with the pan juices. Cook for 2 to 3 minutes until completely heated through.",
+    "Fold in the baby spinach and toss gently for 1 to 2 minutes. Remove the skillet from the heat as soon as the leaves wilt.",
+    "Divide the warm lentil and quinoa mixture between shallow bowls. Top with a seared fillet and spoon the remaining pan juices over the fish."
+  ],
+  "variation": "Swap the mahi-mahi fillets for firm white cod or tilapia.",
+  "conservation": "Keeps 2 days refrigerated; reheat gently on the stovetop.",
+  "nutrition_per_serving": {
+    "calories_kcal": 433.2,
+    "protein_g": 38.8,
+    "carbs_g": 46.5,
+    "fat_g": 10.5,
+    "fiber_g": 12.7,
+    "sodium_mg": 161.6,
+    "sugar_g": 5.7,
+    "saturated_fat_g": 1.5,
+    "added_sugar_g": 0.0,
+    "cholesterol_mg": 93.1,
+    "potassium_mg": 1534.9,
+    "trans_fat_g": 0.0,
+    "mufa_g": 5.9,
+    "pufa_g": 2.2,
+    "calcium_mg": 95.9,
+    "iron_mg": 7.2,
+    "vitamin_d_mcg": 0.0,
+    "source": "llm_usda",
+    "missing_ingredients": [],
+    "confidence": "medium"
+  },
+  "validation_passed": true,
+  "validation_warnings": [
+    "Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+    "Stage 4 coverage: 'Balsamic vinegar': [172241] Vinegar, balsamic has no USDA value for fiber_g (which would be summed as zero) — switched to [2709351] Vinegar.",
+    "Stage 4 qualifier: 'No-salt-added canned brown lentils': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [172421] Lentils, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+    "sugar_g: partial data — 32% of recipe weight has no USDA value for it.",
+    "[ingredient_instruction_consistency] Step 1 mentions seasoning with 'a pinch of black pepper', but black pepper is not included in the ingredient list. Add it to the ingredient list to ensure complete consistency."
+  ],
+  "image_path": "C:\\Users\\terja\\Documents\\AI_Projects\\recipe-generator-fatty-liver-diabetes\\data\\generated_recipes\\cookbook-recipes\\Dinner\\IMG\\balsamic-seared_mahi-mahi_with_tomato-lentil_quinoa.png",
+  "created_at": "2026-08-11T09:16:47.021732",
+  "generation_id": "7416f6e9-7eaf-4626-81b1-a17be64b7ef4"
+}

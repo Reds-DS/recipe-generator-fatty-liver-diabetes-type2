@@ -1,0 +1,535 @@
+{
+  "main_ingredient": "large portobello mushroom caps and canned cannellini beans",
+  "meal_type": "dinner",
+  "chapter": "vegetable_meatless_dinners",
+  "exclusions": [],
+  "recipe_title": "Italian White Bean Stuffed Portobellos with Quinoa",
+  "recipe_id": "e1920b73-cac3-4ac8-a000-a15cebc5297c",
+  "generation_id": "3571c849-fda0-4ccb-8c96-ccd34c604bf9",
+  "llm_model": "gemini-3.1-pro-preview",
+  "created_at": "2026-08-11T10:05:23.921572",
+  "draft_attempts": 1,
+  "critic_attempts": 2,
+  "stages": [
+    {
+      "stage": "ideation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "title_candidate": "Italian White Bean Stuffed Portobellos with Quinoa",
+        "main_ingredient": "large portobello mushroom caps and canned cannellini beans",
+        "technique": "Oven-roasting",
+        "flavour_profile": "Savory, hearty, and comforting with classic tomato and garlic notes",
+        "cuisine_style": "Mediterranean-American",
+        "ingredients_sketch": [
+          "large portobello mushroom caps",
+          "no-salt-added canned cannellini beans",
+          "fresh baby spinach",
+          "no-added-sugar marinara sauce",
+          "shredded part-skim mozzarella cheese",
+          "microwaveable quinoa pouch",
+          "garlic powder",
+          "extra-virgin olive oil"
+        ],
+        "diversity_attempts": 1,
+        "source": "live"
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": null,
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 1
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'no-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "high",
+        "missing_ingredients": [],
+        "nutrition": {
+          "calories_kcal": 508.6,
+          "protein_g": 33.0,
+          "carbs_g": 64.8,
+          "fat_g": 14.9,
+          "fiber_g": 14.9,
+          "sodium_mg": 360.8,
+          "sugar_g": 9.2,
+          "saturated_fat_g": 5.3,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 28.4,
+          "potassium_mg": 2031.4,
+          "trans_fat_g": 0.0,
+          "mufa_g": 5.9,
+          "pufa_g": 2.5,
+          "calcium_mg": 523.5,
+          "iron_mg": 8.0,
+          "vitamin_d_mcg": 0.6,
+          "source": "llm_usda",
+          "missing_ingredients": [],
+          "confidence": "high"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 4,
+        "food_db_hit_rate": 1.0,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "matcher",
+          "alias",
+          "matcher"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 64.8 g/serving > ceiling 55 g (\"main\")",
+        "saturated fat 5.3 g/serving > ceiling 5 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 64.8 g/serving > ceiling 55 g (\"main\")",
+              "saturated fat 5.3 g/serving > ceiling 5 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "warning",
+      "warnings": [
+        "Carb base \"low-sodium, no-added-sugar marinara sauce\" (120 g) doesn't say whether it's a whole grain — the book wants whole/intact grains. Specify e.g. \"brown rice\" / \"100% whole-wheat pasta\" / \"whole-grain tortilla\", or swap it. SWAP ITS QUALITY, DO NOT REMOVE IT: this book is deliberately not low-carbohydrate and every tier has a carbohydrate floor."
+      ],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_1",
+      "status": "failed",
+      "warnings": [
+        "[instruction_completeness] Cook times, doneness cues, and check times are wonderfully detailed. However, the preheat step is missing a time estimate. Change Step 1 to: 'Preheat the oven to 400°F / 200°C (this takes about 10 to 15 minutes).'",
+        "[thirty_minute_practicality] With 16 to 20 minutes of total baking time, finishing strictly under 30 minutes from a cold start is very tight because ovens take 10-15 minutes to preheat. The reader must prep rapidly while the oven preheats. It passes the practicality test thanks to the pouch quinoa and canned beans, but represents the absolute upper boundary of the 30-minute promise."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "This is a flavorful, well-constructed, and highly appealing meatless main. However, it requires minor adjustments to the cheese and quinoa quantities to properly clear the saturated fat and carbohydrate ceilings for this chapter.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The flavor profile is excellent. Using a portion of the white beans mashed as a binder is a smart culinary move that gives the filling a great texture and cohesive Italian-American taste."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients in the list are used logically in the instructions with no missing components."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "Cook times, doneness cues, and check times are wonderfully detailed. However, the preheat step is missing a time estimate. Change Step 1 to: 'Preheat the oven to 400°F / 200°C (this takes about 10 to 15 minutes).'"
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the Mediterranean-American style perfectly, relying on olive oil, garlic, beans, spinach, and marinara."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Roasting is ideal here. Instructing the reader to drain the pooled mushroom liquid before stuffing is a crucial and excellent step to prevent a soggy final dish."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Nutrition values are highly plausible for these ingredients. (Note: The automated check flagged marinara as a 'carb base' due to an LLM keyword mismatch; the actual quality carb bases here are the quinoa and beans, which are perfectly appropriate)."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The title matches the recipe precisely, and the intro is warm, practical, and appropriately focuses on the hearty texture of the portobellos without making banned health claims."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "A very appetizing, hearty meatless meal that feels like a substantial dinner, rather than just a side dish."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely answers both conditions: highly vegetable-forward, utilizes high-quality whole-food carbohydrates (beans, quinoa), and relies mostly on unsaturated fat with a controlled amount of cheese."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Zero added sugar thanks to the 'no-added-sugar' marinara specification, and the carbohydrates come from intact, fiber-rich sources."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": false,
+            "severity": "major",
+            "feedback": "The recipe slightly breaches the chapter's ceilings for total carbohydrates (64.8 g vs. 55 g limit) and saturated fat (5.3 g vs. 5.0 g limit). Fix: Reduce the part-skim mozzarella to 2.5 oz (70 g) and reduce the cooked quinoa to 1/2 cup (90 g). This will bring carbs down to ~55g and saturated fat to ~4g while keeping protein safely above the 26g floor."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "With 16 to 20 minutes of total baking time, finishing strictly under 30 minutes from a cold start is very tight because ovens take 10-15 minutes to preheat. The reader must prep rapidly while the oven preheats. It passes the practicality test thanks to the pouch quinoa and canned beans, but represents the absolute upper boundary of the 30-minute promise."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "draft_attempt_1",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "correction_feedback": "An expert cookbook critic flagged the following MAJOR problems:\n1. [chapter_intent_fit] The recipe slightly breaches the chapter's ceilings for total carbohydrates (64.8 g vs. 55 g limit) and saturated fat (5.3 g vs. 5.0 g limit). Fix: Reduce the part-skim mozzarella to 2.5 oz (70 g) and reduce the cooked quinoa to 1/2 cup (90 g). This will bring carbs down to ~55g and saturated fat to ~4g while keeping protein safely above the 26g floor.\n\nFix the recipe based on this feedback. Change only what's needed to resolve these problems.",
+        "quantity_check_passed": true,
+        "pre_diet_check_passed": true,
+        "critic_attempt": 2
+      }
+    },
+    {
+      "stage": "nutrition",
+      "status": "ok",
+      "warnings": [
+        "Stage 4 coverage: 'extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.",
+        "Stage 4 qualifier: 'no-salt-added canned cannellini beans': the recipe uses a canned product but the match is cooked from dry (different water content, so a different weight basis). No candidate in the USDA shortlist satisfies it, so [175203] Beans, white, mature seeds, cooked, boiled, without salt was kept — treat this ingredient's contribution as an over-statement.",
+        "No USDA candidate for 'no-added-sugar marinara sauce' — values estimated by the LLM.",
+        "cholesterol_mg: partial data — 20% of recipe weight has no USDA value for it.",
+        "potassium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+        "calcium_mg: partial data — 13% of recipe weight has no USDA value for it.",
+        "iron_mg: partial data — 13% of recipe weight has no USDA value for it."
+      ],
+      "corrections": [],
+      "details": {
+        "source": "llm_usda",
+        "confidence": "medium",
+        "missing_ingredients": [
+          "no-added-sugar marinara sauce"
+        ],
+        "nutrition": {
+          "calories_kcal": 447.5,
+          "protein_g": 28.0,
+          "carbs_g": 56.5,
+          "fat_g": 14.1,
+          "fiber_g": 13.2,
+          "sodium_mg": 517.8,
+          "sugar_g": 8.4,
+          "saturated_fat_g": 5.0,
+          "added_sugar_g": 0.0,
+          "cholesterol_mg": 22.8,
+          "potassium_mg": 1635.8,
+          "trans_fat_g": 0.2,
+          "mufa_g": 5.4,
+          "pufa_g": 2.0,
+          "calcium_mg": 397.6,
+          "iron_mg": 6.4,
+          "vitamin_d_mcg": 0.7,
+          "source": "llm_usda",
+          "missing_ingredients": [
+            "no-added-sugar marinara sauce"
+          ],
+          "confidence": "medium"
+        },
+        "alias_hits": 4,
+        "matcher_hits": 3,
+        "food_db_hit_rate": 0.875,
+        "alias_hit_rate": 0.5,
+        "match_sources": [
+          "alias",
+          "alias",
+          "matcher",
+          "matcher",
+          "llm_estimate",
+          "alias",
+          "matcher",
+          "alias"
+        ]
+      }
+    },
+    {
+      "stage": "diet_post_nutrition",
+      "status": "ok",
+      "warnings": [
+        "total carbohydrate 56.5 g/serving > ceiling 55 g (\"main\")"
+      ],
+      "corrections": [],
+      "details": {
+        "overall_passed": true,
+        "rules": [
+          {
+            "rule_name": "masld.no_alcohol_ingredient",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_deep_fried",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_sugar_sweetened_beverage_or_juice_component",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_high_fructose_sweetener",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_added_sugar_primary_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_refined_grain_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_processed_cured_meat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.no_tropical_saturated_fat_base",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          },
+          {
+            "rule_name": "masld.tier_targets[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": [
+              "total carbohydrate 56.5 g/serving > ceiling 55 g (\"main\")"
+            ]
+          },
+          {
+            "rule_name": "masld.added_sugar[main]",
+            "passed": true,
+            "violations": [],
+            "warnings": []
+          }
+        ]
+      }
+    },
+    {
+      "stage": "cooking",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {}
+    },
+    {
+      "stage": "critic_attempt_2",
+      "status": "ok",
+      "warnings": [
+        "[title_intro_accuracy] The intro refers to the recipe as a 'plant-based dinner', but it contains dairy (mozzarella cheese). While perfectly fine for this diet, 'plant-based' usually implies vegan to modern readers. Change 'plant-based' to 'meatless' or 'vegetarian'."
+      ],
+      "corrections": [],
+      "details": {
+        "summary": "A highly practical, comforting, and nutritionally sound meatless dinner. It effectively utilizes healthy shortcuts like pouch quinoa and canned beans to deliver a balanced, diabetes- and liver-friendly meal well within the 30-minute promise.",
+        "dimensions": [
+          {
+            "dimension": "taste_coherence",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Excellent culinary sense. The combination of portobello mushrooms, cannellini beans, spinach, marinara, and mozzarella delivers a classic, balanced Italian-American flavor profile."
+          },
+          {
+            "dimension": "ingredient_instruction_consistency",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "All ingredients listed are successfully incorporated into the instructions, and no unlisted ingredients appear in the steps."
+          },
+          {
+            "dimension": "instruction_completeness",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The instructions are complete. A proper time range (15 to 18 minutes) is provided, along with a mid-point check at 15 minutes and clear visual doneness cues (tender mushrooms, bubbling cheese)."
+          },
+          {
+            "dimension": "cuisine_alignment",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Perfectly aligned with the Mediterranean-American style, utilizing olive oil, garlic, tomatoes, and beans."
+          },
+          {
+            "dimension": "cooking_method_suitability",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Baking stuffed portobello caps at 400°F is an ideal method. Mashing half of the beans helps bind the filling so it doesn't spill out or become too watery as the mushrooms release their moisture."
+          },
+          {
+            "dimension": "nutrition_plausibility",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "The computed nutrition values align well with the ingredients. The 28g of protein is accurately sourced from the mozzarella, beans, and quinoa."
+          },
+          {
+            "dimension": "title_intro_accuracy",
+            "passed": false,
+            "severity": "minor",
+            "feedback": "The intro refers to the recipe as a 'plant-based dinner', but it contains dairy (mozzarella cheese). While perfectly fine for this diet, 'plant-based' usually implies vegan to modern readers. Change 'plant-based' to 'meatless' or 'vegetarian'."
+          },
+          {
+            "dimension": "overall_appeal",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Highly appetizing and well-conceived. Stuffed mushrooms feel like a substantial, hearty meal and the presentation is attractive."
+          },
+          {
+            "dimension": "one_plan_both_conditions",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Genuinely answers both conditions. It relies on high-fiber whole foods (beans, vegetables, quinoa), utilizes olive oil, and keeps saturated fat within limits (5g) using part-skim mozzarella rather than a heavier cheese."
+          },
+          {
+            "dimension": "added_sugar_and_carb_balance",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Added sugar is properly mitigated by specifying no-added-sugar marinara. The carbohydrate component is excellent (quinoa and beans). The slight overage (56.5g vs the 55g ceiling) is entirely from high-quality, fiber-rich whole foods and is perfectly acceptable."
+          },
+          {
+            "dimension": "chapter_intent_fit",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Fits the 'Vegetable & Meatless Dinners' intent flawlessly. It uses legumes and a measured amount of cheese to hit the high protein target (26g+) without meat."
+          },
+          {
+            "dimension": "thirty_minute_practicality",
+            "passed": true,
+            "severity": "minor",
+            "feedback": "Easily completed in under 30 minutes. Using a ready-to-eat quinoa pouch is exactly the right shortcut for this book, and the 10-minute active prep overlaps nicely with the oven preheat time."
+          }
+        ]
+      }
+    },
+    {
+      "stage": "formatting",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "prose_rewritten": false
+      }
+    },
+    {
+      "stage": "image_generation",
+      "status": "ok",
+      "warnings": [],
+      "corrections": [],
+      "details": {
+        "attempts": 1,
+        "image_prompt": "[\n  {\n    \"prompt\": \"Shot with a Canon EOS R5, 85mm f/1.8 lens. The composition features two matte ceramic plates placed on a warm, aged oak table with visible grain and small nicks. The primary plate is centered in the frame at a 3/4 overhead angle, ensuring all contents of both the stuffed portobello and the quinoa are clearly visible. The second plate is positioned slightly behind and blurred, maintaining a shallow depth of field. On each plate, two large, roasted portobello caps are filled with a hearty mixture of mashed and whole cannellini beans, wilted spinach, and robust red marinara sauce, topped with bubbly, golden-brown melted mozzarella. Beside the mushrooms on each plate sits a neat mound of fluffy, light-colored quinoa. Soft natural side light from a window to the left illuminates the textures, highlighting the porous surface of the roasted mushroom caps, the vibrancy of the spinach, and the glistening sheen of the melted cheese and sauce. Props include a rumpled, off-white linen napkin tucked under one side of the plate and a wooden spoon resting on the table surface, along with a few stray grains of quinoa and a tiny spinach leaf scattered near the plates. Photorealistic, not AI-generated looking. The scene should look like someone just finished cooking and plating — lived-in, warm, authentic. Slight natural imperfections: an asymmetric garnish placement, a small sauce drip on the plate rim, slightly uneven browning on the cheese. Include subtle traces of the cooking process: a crumb trail on the surface, a slight oil mark near the plate. No plastic sheen, no unnaturally smooth surfaces, no perfect symmetry. Warm, golden-hour color temperature. No text, no watermark, no logo, no hands, no faces. The image should be indistinguishable from a photograph taken by a professional food photographer for a printed cookbook.\"\n  }\n]",
+        "failure_reason": ""
+      }
+    }
+  ],
+  "validation_passed": true,
+  "total_warnings": 9,
+  "total_corrections": 0
+}
