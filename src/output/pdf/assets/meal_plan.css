@@ -5,20 +5,20 @@
 @page {
   size: A4;
   margin: 18mm 16mm 20mm 16mm;
-  background: #f5f9f4;
+  background: #fbf6ec;
 
   @top-left {
     content: string(bookName);
     font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
     font-size: 8.5pt;
-    color: #086344;
+    color: #1a3b18;
     letter-spacing: 0.02em;
   }
   @bottom-right {
     content: counter(page) " / " counter(pages);
     font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
     font-size: 8.5pt;
-    color: #086344;
+    color: #1a3b18;
   }
 }
 
@@ -36,25 +36,42 @@
    Palette + base
    ───────────────────────────────────────────────────────────── */
 
-/* Palette inherited from the engine's parent cookbook and NOT yet re-sampled from
-   this book's cover ("The Fatty Liver Diet Cookbook for Type 2 Diabetes") — do that
-   at bonus time, when the cover art exists. For reference, the parent's was:
-   the deep forest green of the title
-   block (#086344 / #015C39), the sage wash of the background (#659F6F →
-   #9FC5A6 → #B3D1B9) and the "60-DAY MEAL PLAN" yellow (#FFF100). */
+/* Palette SAMPLED from this book's cover art ("The Fatty Liver Diet Cookbook for
+   Type 2 Diabetes", Cover/JPG/), not eyeballed: the image was quantized whole and
+   then point-sampled inside individual glyphs and badges. What came back:
+
+     #183717 / #1A3B18  the deep forest green of the "100+ RECIPES" badge, the
+                        "READY IN UNDER 30 MINUTES" brush, "FOR TYPE 2 DIABETES"
+                        and the word "MEAL PLAN" — the book's primary brand colour
+     #FABF2F            the gold of "DIET COOKBOOK"
+     #A73D14            the rust of "30-DAY", and the terracotta ground the whole
+                        cover sits on (#9B3703 - #B3400E across the field)
+     #F7E8C6 / #F2DBB2  the cream of "THE FATTY LIVER" and the badge fills
+
+   Two deliberate translations from cover to page:
+     * the cover's dominant terracotta becomes an ACCENT, never a ground — 40-odd
+       pages of it would be unreadable and unprintable. It carries the eyebrow
+       count, the day totals and the optional-meal flags, which is enough for the
+       PDF to read as the same product.
+     * the paper is the cover's cream taken most of the way to white (--surface),
+       so the warm cast survives at a weight a laser printer can live with. The
+       parent cookbook's page was green-tinted; this book's cover is warm, so a
+       green page would have fought it. */
 :root {
-  --ink:        #12261c;   /* near-black forest — body text        */
-  --muted:      #6a8271;   /* desaturated sage — secondary text    */
-  --accent:     #086344;   /* cover title green — primary brand    */
-  --accent-deep:#015c39;   /* cover headline green — emphasis      */
-  --accent-2:   #659f6f;   /* cover mid sage                       */
-  --sage:       #9fc5a6;   /* cover light sage                     */
-  --sage-pale:  #dcebdf;   /* tint for blocks                      */
-  --highlight:  #fff100;   /* cover "60-DAY" yellow — sparing use  */
-  --surface:    #f5f9f4;   /* green-tinted paper                   */
-  --stripe:     #e9f2ea;   /* table zebra                          */
-  --rule:       #c9decd;
-  --rule-soft:  #dfebe1;
+  --ink:        #241d14;   /* warm near-black — body text          */
+  --muted:      #6f6353;   /* warm grey-brown — secondary text     */
+  --accent:     #1a3b18;   /* cover badge/brush green — brand      */
+  --accent-deep:#12290f;   /* deeper forest — headlines, emphasis  */
+  --accent-2:   #4a7a45;   /* mid leaf green                       */
+  --sage:       #a8c4a0;   /* light green — rules and washes       */
+  --sage-pale:  #e3ede0;   /* green tint for blocks                */
+  --terra:      #a73d14;   /* cover "30-DAY" rust / cover ground   */
+  --terra-pale: #f7e4d8;   /* rust tint for blocks                 */
+  --highlight:  #fabf2f;   /* cover "DIET COOKBOOK" gold — sparing */
+  --surface:    #fbf6ec;   /* cover cream, lightened to paper      */
+  --stripe:     #f4ede0;   /* table zebra                          */
+  --rule:       #ded0b6;
+  --rule-soft:  #ece3d3;
 }
 
 html {
@@ -110,13 +127,15 @@ body { string-set: bookName attr(data-book-name); }
   max-width: 150mm;
 }
 
-/* Sage rule under the title, echoing the cover's background wash. */
+/* Rule under the title in the cover's terracotta — on the book jacket that
+   colour IS the ground, so it is the fastest way for the reader to see the PDF
+   and the cookbook as one product. */
 .cover h1::after {
   content: "";
   display: block;
   width: 46mm;
   height: 1.6mm;
-  background: var(--sage);
+  background: var(--terra);
   margin-top: 7mm;
 }
 
@@ -125,19 +144,41 @@ body { string-set: bookName attr(data-book-name); }
   font-style: italic;
   margin: 16mm 0 0 0;
   max-width: 140mm;
-  color: #2f4a3a;
+  color: #33402c;
   padding-left: 5mm;
   border-left: 1.2mm solid var(--sage);
 }
+
+/* The medication caveat. This plan ships as a standalone download, so it cannot
+   lean on the book's front matter — and its reader is commonly on insulin, a
+   sulfonylurea, an SGLT2 inhibitor or a GLP-1. Terracotta rule, not a red box:
+   it has to be read, not to frighten. */
+.cover .safety {
+  margin: 14mm 0 0 0;
+  max-width: 140mm;
+  padding: 4mm 5mm;
+  border-left: 1.2mm solid var(--terra);
+  background: var(--terra-pale);
+  font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
+  font-size: 8.5pt;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.cover .safety strong { color: var(--terra); }
 
 /* ─────────────────────────────────────────────────────────────
    Calibration page — "How this plan works" (always shown)
    ───────────────────────────────────────────────────────────── */
 
+/* The calibration page has to hold ONE page. It carries a lead, an 8-row table
+   and five how-to bullets, and at the inherited spacing the last bullet tipped
+   onto a second, otherwise-empty page — the trap this stylesheet's own notes
+   warn about. Everything below is tightened against that budget; re-check the
+   rendered page 2 before adding another row. */
 .brief {
   page-break-before: always;
   page-break-after: always;
-  padding: 6mm 0 0 0;
+  padding: 3mm 0 0 0;
   overflow-wrap: anywhere;
 }
 
@@ -155,7 +196,7 @@ body { string-set: bookName attr(data-book-name); }
 .brief h2 {
   font-size: 19pt;
   line-height: 1.2;
-  margin: 0 0 6mm 0;
+  margin: 0 0 4.5mm 0;
   color: var(--accent-deep);
   max-width: 155mm;
   page-break-after: avoid;
@@ -168,15 +209,15 @@ body { string-set: bookName attr(data-book-name); }
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--accent);
-  margin: 8mm 0 3mm 0;
+  margin: 5.5mm 0 2.5mm 0;
   page-break-after: avoid;
 }
 
 .brief .lead {
-  font-size: 10.5pt;
-  line-height: 1.5;
+  font-size: 10pt;
+  line-height: 1.45;
   margin: 0;
-  padding: 4mm 5mm;
+  padding: 3.5mm 5mm;
   background: var(--sage-pale);
   border-left: 1.6mm solid var(--accent);
 }
@@ -185,7 +226,14 @@ body { string-set: bookName attr(data-book-name); }
 
 /* Three-column benchmark table — the plan's delivered numbers vs the guideline. */
 table.targets { font-size: 9pt; }
-table.targets th.col-value { width: 42mm; }
+/* The "why" column is the one that wraps, so give it the room: a narrower
+   nutrient label and value keep every rationale to two lines, which is what
+   holds the section on one page. */
+table.targets th.col-label { width: 36mm; }
+/* 35mm, not 32: at 32 the header "This plan, per day" wrapped to two lines and
+   took more height than the column saved. */
+table.targets th.col-value { width: 35mm; }
+table.targets tbody td { padding: 1.3mm 3mm; }
 table.targets td.label {
   font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
   font-weight: 600;
@@ -194,6 +242,7 @@ table.targets td.label {
 table.targets td.value {
   font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
   font-weight: 600;
+  color: var(--terra);
 }
 /* Percentage sits on its own line — inline it would overrun the column and
    collide with the "why" text alongside. */
@@ -220,13 +269,13 @@ table.targets td.source {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 9.5pt;
-  line-height: 1.45;
+  font-size: 9.2pt;
+  line-height: 1.4;
 }
 
 .brief ul.how-to li {
   break-inside: avoid;
-  margin: 0 0 3mm 0;
+  margin: 0 0 2mm 0;
   padding: 0 0 0 5mm;
   border-left: 0.8mm solid var(--sage);
 }
@@ -237,10 +286,14 @@ table.targets td.source {
    Pantry page — "stock your pantry once" (front matter)
    ───────────────────────────────────────────────────────────── */
 
+/* Like `.brief`, this section has a one-page budget — 44 staples in two columns
+   plus a closing note. At the inherited spacing the note alone tipped onto a
+   second page. Re-check the rendered page if the pantry threshold in
+   `src/planning/pantry.py` is ever loosened. */
 .pantry {
   page-break-before: always;
   page-break-after: always;
-  padding: 6mm 0 0 0;
+  padding: 3mm 0 0 0;
   overflow-wrap: anywhere;
 }
 
@@ -257,16 +310,16 @@ table.targets td.source {
 
 .pantry h2 {
   font-size: 19pt;
-  margin: 0 0 6mm 0;
+  margin: 0 0 4.5mm 0;
   color: var(--accent-deep);
   page-break-after: avoid;
 }
 
 .pantry .lead {
   font-size: 10pt;
-  line-height: 1.45;
-  margin: 0 0 6mm 0;
-  padding: 4mm 5mm;
+  line-height: 1.4;
+  margin: 0 0 4.5mm 0;
+  padding: 3.5mm 5mm;
   background: var(--sage-pale);
   border-left: 1.6mm solid var(--accent);
 }
@@ -282,7 +335,7 @@ table.targets td.source {
 }
 
 .pantry-cat {
-  margin: 0 0 5mm 0;
+  margin: 0 0 4mm 0;
 }
 
 .pantry-cat h4 {
@@ -294,8 +347,11 @@ table.targets td.source {
   color: var(--accent-deep);
   margin: 0 0 2mm 0;
   padding: 1.2mm 2.5mm;
-  background: var(--sage-pale);
-  border-left: 1mm solid var(--accent);
+  /* Terracotta tint, against the weekly shopping lists' green: this page is
+     stocked ONCE, those are shopped every week, and the reader should never
+     confuse the two. */
+  background: var(--terra-pale);
+  border-left: 1mm solid var(--terra);
 }
 
 .pantry-cat ul { list-style: none; padding: 0; margin: 0; }
@@ -307,7 +363,7 @@ table.targets td.source {
   justify-content: space-between;
   align-items: baseline;
   gap: 3mm;
-  padding: 1mm 0;
+  padding: 0.85mm 0;
   border-bottom: 1px dotted var(--rule);
   font-size: 9pt;
 }
@@ -467,6 +523,7 @@ td.total {
   font-weight: 600;
   white-space: nowrap;
   font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
+  color: var(--terra);
 }
 
 /* Meal cell: thumbnail + stacked text */
@@ -504,6 +561,17 @@ td.meal .kcal {
   color: var(--muted);
   margin-top: 0.5mm;
 }
+/* Hands-off time, in the cover's rust so it reads as "plan ahead" rather than
+   as another statistic. 6.5 pt on its own line — a meal column is only ~21.6 mm
+   wide, the same constraint that shapes the optional flag in the header. */
+td.meal .passive {
+  display: block;
+  font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
+  font-size: 6.5pt;
+  color: var(--terra);
+  margin-top: 0.3mm;
+}
+
 td.meal .dash {
   color: var(--muted);
 }
@@ -511,6 +579,13 @@ td.meal .dash {
 /* ─────────────────────────────────────────────────────────────
    Course list (nested inside .week)
    ───────────────────────────────────────────────────────────── */
+
+.week .list-note {
+  font-size: 8.5pt;
+  font-style: italic;
+  color: var(--muted);
+  margin: -1mm 0 3mm 0;
+}
 
 .courses .category {
   margin-top: 5mm;
@@ -546,11 +621,17 @@ td.meal .dash {
   gap: 3mm;
 }
 
+/* Same flex sizing as `.pantry-cat .ingredient`. Without it a long name cannot
+   shrink or wrap, so it ran straight into its quantity — the printed list read
+   "Low-sodium sprouted whole-grain bread140 g". */
 .courses .ingredient {
   color: var(--ink);
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .courses .qty {
+  flex: 0 0 auto;
   font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
   font-weight: 600;
   color: var(--accent);
@@ -568,23 +649,35 @@ td.meal .dash {
 
 .back {
   page-break-before: always;
-  padding-top: 80mm;
+  padding-top: 34mm;
   text-align: center;
   color: var(--muted);
 }
 
 .back .thanks {
-  font-size: 28pt;
+  font-size: 26pt;
   font-style: italic;
   color: var(--accent-deep);
-  margin: 0 0 10mm 0;
+  margin: 0 0 12mm 0;
 }
 
+/* Left-aligned inside a centred section: a disclaimer set ragged-centre is
+   unreadable, and this one has to actually be read. */
 .back .colophon {
   font-family: "Inter", "Helvetica Neue", "DejaVu Sans", sans-serif;
-  font-size: 9pt;
-  line-height: 1.6;
+  font-size: 8.5pt;
+  line-height: 1.55;
+  text-align: left;
+  max-width: 132mm;
+  margin: 0 auto;
+  padding: 5mm 6mm;
+  border-top: 0.5mm solid var(--rule);
+  border-bottom: 0.5mm solid var(--rule);
 }
+
+.back .colophon p { margin: 0 0 3.5mm 0; }
+.back .colophon p:last-child { margin-bottom: 0; }
+.back .colophon strong { color: var(--accent-deep); }
 
 /* ─────────────────────────────────────────────────────────────
    Profile & targets (personalized plans only)
@@ -633,7 +726,7 @@ td.meal .dash {
 .profile .warnings {
   margin: 6mm 0 0 0;
   padding-left: 5mm;
-  color: #7a5a12;
+  color: #8a5a12;
   font-size: 9.5pt;
   line-height: 1.4;
 }
@@ -675,7 +768,7 @@ td.delta {
 }
 
 td.delta.delta-warn {
-  color: #a8551f;
+  color: #a73d14;
   font-weight: 600;
 }
 

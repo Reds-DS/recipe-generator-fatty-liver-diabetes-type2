@@ -139,6 +139,15 @@ _UNDROPPABLE_TOKENS: frozenset[str] = frozenset({
     # preservation / form the rule layer keeps on purpose
     "frozen", "dried", "dry", "ground", "roasted", "smoked", "crushed", "spray",
     "sliced", "slivered", "liquid", "chip",
+    # A whole spice is not its ground form: the alias pass merged "cinnamon
+    # stick" into "cinnamon", i.e. poached pears in powder.
+    "stick",
+    # A dried or processed derivative is not the fresh thing it is named after.
+    # The pass merged "garlic powder" (25 recipes) into "garlic" and filed the
+    # spice jar under Produce, so the list asked for 48 recipes' worth of fresh
+    # cloves and never mentioned the powder at all. Same shape for onion powder,
+    # vanilla extract, red pepper flakes and tomato paste.
+    "powder", "extract", "flake", "paste",
     # derived-from, not the thing itself
     "zest", "juice",
     # cut / part
@@ -484,8 +493,19 @@ _FRESH_OR_RE = re.compile(
 # separate grocery, and leaving it in printed "Sardines water").
 _PACKING_RE = re.compile(
     r"\b(?:packed\s+)?in\s+(?:its\s+own\s+)?(?:water|juice|brine|olive\s+oil|oil)\b"
+    # "…, with juice" / "with their own juice" is the same statement written the
+    # other way round. Without it "No-salt-added diced tomatoes, with juice" sat
+    # on the weekly list beside "No-salt-added canned diced tomatoes" — one can,
+    # two lines, printed next to each other.
+    r"|\bwith\s+(?:its\s+own\s+|their\s+own\s+|the\s+)?juice\b"
 )
 _WATER_PACKED_RE = re.compile(r"\bwater[\s-]packed\b")
+
+# "Whole-wheat tortillas, 6-inch fajita size" — a diameter is a description, and
+# the same wrap written "(8-inch)" already loses it to `_PAREN_RE`. Without this
+# the two spellings hold separate lines. "fajita size" goes with it: it is the
+# same phrase said twice.
+_SIZE_SPEC_RE = re.compile(r"\b\d+\s*-?\s*inch\b(?:\s+\w+)?\s+size\b|\b\d+\s*-?\s*inch\b")
 
 # "Tomatoes, no-salt-added" must land on the same key as "No-salt-added
 # tomatoes" — same can, qualifier written at the other end.
@@ -494,12 +514,57 @@ _TRAILING_QUAL_RE = re.compile(
     r"no[\s-]sugar[\s-]added|no[\s-]added[\s-]sugar)\s*$"
 )
 
+# A diet marker written INSIDE a parenthetical — "Canned artichoke hearts (in
+# water, no-salt-added)". `_PAREN_RE` deletes the whole bracket, so without this
+# the marker is destroyed and the item lands on the bare `artichoke heart` key,
+# i.e. the shopping list tells the reader to buy the salted can and the book's
+# sodium panel is quietly wrong. Hoist the marker out before the bracket goes.
+# Hyphens are still live at this point (punctuation→space runs later), hence the
+# [\s-] classes; the replacement is written spaced so it matches the front-form.
+_PAREN_MARKER_RE = re.compile(
+    r"\((?:[^)]*?[\s,])?(?P<qual>no[\s-]salt[\s-]added|low[\s-]sodium|salt[\s-]free|"
+    r"unsalted|untreated|no[\s-]added[\s-]sugar|no[\s-]sugar[\s-]added|"
+    r"unsweetened|sugar[\s-]free)(?:[\s,)][^)]*)?\)",
+    re.IGNORECASE,
+)
+
+
+def _hoist_paren_markers(text: str) -> str:
+    """Move any protected marker out of a parenthetical, to the front.
+
+    Runs before `_PAREN_RE` in both the key and the display path, so the two
+    stay in agreement. The matched text is re-emitted verbatim — hyphens and
+    all — because the display path needs "no-salt-added Canned artichoke
+    hearts" to sentence-case into "No-salt-added canned artichoke hearts",
+    while the key path turns punctuation into spaces a step later anyway.
+
+    A marker already present outside the bracket is not duplicated, or the
+    printed name would read "No-salt-added no-salt-added artichoke hearts".
+    """
+    hoisted: list[str] = []
+
+    def _flat(s: str) -> str:
+        return re.sub(r"[\s-]+", " ", s).lower()
+
+    outside_flat = _flat(_PAREN_RE.sub(" ", text))
+
+    def _take(match: re.Match[str]) -> str:
+        qual = match.group("qual")
+        if _flat(qual) not in outside_flat and _flat(qual) not in map(_flat, hoisted):
+            hoisted.append(qual)
+        return " "
+
+    stripped = _PAREN_MARKER_RE.sub(_take, text)
+    return f"{' '.join(hoisted)} {stripped}" if hoisted else text
+
 
 def _pre_clean(folded_lc: str) -> str:
     """Punctuation- and word-order-level tidying, before tokenisation."""
     out = _FRESH_OR_RE.sub(" ", folded_lc)
+    out = _hoist_paren_markers(out)
     out = _PAREN_RE.sub(" ", out)
     out = _WATER_PACKED_RE.sub(" ", out)
+    out = _SIZE_SPEC_RE.sub(" ", out)
     out = _PACKING_RE.sub(" ", out)
     out = re.sub(r"\b\d+\s*%", " ", out)               # "0%", "20 %" → ""
     # Reorder a trailing qualifier to the front. Runs while commas survive.
@@ -660,6 +725,11 @@ _STRIP_BOTH: frozenset[str] = frozenset({
     "chopped", "minced", "cubed", "crumbled", "grated", "matchstick",
     "halved", "quartered", "halve", "floret", "spear", "stalk", "cap",
     "shredded", "piece", "chunk",
+    # The NOUN only ("cheese slices"), never the adjective "sliced" three lines
+    # up: `_PREFIX_DISPLAY_RE` already strips "slices of rye bread" and
+    # ("pre","sliced") already empties, so this is the same call made
+    # consistently. Sliced vs slivered almonds are still separate bags.
+    "slice",
     "thin", "thick",
     # packaging nouns
     "bagged", "bag", "package", "packaged", "packet", "carton",
@@ -761,6 +831,13 @@ _PHRASE_ALIASES: dict[tuple[str, ...], tuple[str, ...]] = {
     # three different bags on the shelf.
     ("pre", "sliced"): (),
     ("pre", "shredded"): (),
+    # Sold as one jar under both names — "crushed" is how red pepper flakes are
+    # made, not a second SKU. (Bare "crushed" stays undroppable elsewhere:
+    # crushed and whole tomatoes really are different cans.)
+    ("crushed", "red", "pepper", "flake"): ("red", "pepper", "flake"),
+    # Italian seasoning is a dried blend by definition; "dried Italian
+    # seasoning" and "Italian seasoning blend" are the same jar.
+    ("dried", "italian", "seasoning"): ("italian", "seasoning"),
 }
 
 # Longest first so "mini sweet bell pepper" wins over "bell pepper".
@@ -850,8 +927,10 @@ def _strip_qualifiers_from_display(name: str) -> str:
     name = _PREFIX_DISPLAY_RE.sub("", name)
     # Same parenthetical/packing tidy-up the key gets — otherwise a stripped
     # percentage leaves the shopper reading "Low-fat cottage cheese ( milkfat)".
+    name = _hoist_paren_markers(name)
     name = _PAREN_RE.sub(" ", name)
     name = _FRESH_OR_RE.sub(" ", _WATER_PACKED_RE.sub(" ", name))
+    name = _SIZE_SPEC_RE.sub(" ", name)
     name = _PERCENT_DISPLAY_RE.sub("", name)
     name = re.sub(r"\s*,\s*(?:divided|rinsed(?:\s+and\s+drained)?|drained)\s*$", "", name,
                   flags=re.IGNORECASE)
@@ -877,7 +956,11 @@ def _strip_qualifiers_from_display(name: str) -> str:
     if len(out) >= 2 and [w.lower() for w in out[:2]] == ["lemon", "zest"]:
         out = out[:2]
 
-    return " ".join(out)
+    # Whatever a removal stage took out mid-name can leave its punctuation
+    # behind — "Whole-wheat tortillas, 6-inch fajita size" would otherwise be
+    # printed as "Whole-wheat tortillas,". Tidy the seam, never the interior:
+    # "Boneless, skinless chicken breast" keeps its comma.
+    return re.sub(r"[\s,;]+$", "", " ".join(out))
 
 
 def _normalise(text: str) -> str:

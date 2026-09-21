@@ -25,14 +25,35 @@ import sys
 
 import yaml
 
-from src.config import DATA_DIR, USDA_DB
+from src.config import DATA_DIR, USDA_ALIAS_DB, USDA_DB
 from src.nutrition.usda_loader import get_alias, register_alias
 
 SEED_FILE = DATA_DIR / "usda_aliases.seed.yaml"
 
 
+def _unpin(canonical_name: str) -> None:
+    """Delete an alias row so `register_alias` can store a new id for it.
+
+    `register_alias` deliberately keeps the first-stored id, so repinning needs
+    the old row gone first. Keyed the same way the loader keys it.
+    """
+    from src.nutrition.usda_loader import _alias_key
+
+    con = sqlite3.connect(USDA_ALIAS_DB)
+    try:
+        con.execute("DELETE FROM alias WHERE canonical_name = ?", (_alias_key(canonical_name),))
+        con.commit()
+    finally:
+        con.close()
+
+
 def main() -> int:
     dry_run = "--dry-run" in sys.argv
+    # A pin already in the cache normally WINS, which is what makes seeding
+    # stable across runs. But when the cache has learned a wrong id — the way it
+    # learned the additive-laden shrimp records — the seed file is the corrected
+    # source of truth and has to be able to overwrite it.
+    force = "--force" in sys.argv
 
     if not SEED_FILE.is_file():
         print(f"ERROR: no seed file at {SEED_FILE}")
@@ -73,8 +94,16 @@ def main() -> int:
 
         existing = get_alias(name)
         if existing is not None and existing != fdc_id:
-            print(f"  KEEP   {name[:52]:52s} already pinned to {existing} (not {fdc_id})")
-            skipped += 1
+            if not force:
+                print(f"  KEEP   {name[:52]:52s} already pinned to {existing} (not {fdc_id})"
+                      f"  [--force to repin]")
+                skipped += 1
+                continue
+            if not dry_run:
+                _unpin(name)
+            print(f"  REPIN  {name[:52]:52s} {existing} -> {fdc_id}")
+            register_alias(name, fdc_id) if not dry_run else None
+            seeded += 1
             continue
         if existing == fdc_id:
             print(f"  OK     {name[:52]:52s} -> {fdc_id}  Na={na_s:>4s}")

@@ -277,3 +277,137 @@ class TestDisplayCase:
 
     def test_empty_is_safe(self):
         assert _display_case("") == ""
+
+
+class TestMarkerInsideParenthetical:
+    """`_PAREN_RE` removes a whole bracket, which silently destroyed any diet
+    marker written inside one. "Canned artichoke hearts (in water,
+    no-salt-added)" landed on the bare ``artichoke heart`` key, i.e. the
+    shopping list sent the reader for the salted can and the book's sodium
+    panel was quietly wrong. The marker is now hoisted out first."""
+
+    @pytest.mark.parametrize("raw,expected", [
+        ("Canned artichoke hearts (in water, no-salt-added)", "no salt added artichoke heart"),
+        ("No-salt-added canned artichoke hearts (water-packed)", "no salt added artichoke heart"),
+        ("Canned no-salt-added artichoke hearts", "no salt added artichoke heart"),
+        ("No-salt-added canned quartered artichoke hearts (in water)",
+         "no salt added artichoke heart"),
+        ("Canned tuna (low-sodium)", "low sodium tuna"),
+        # Only the MARKER is rescued — "dry-roasted" goes with the rest of the
+        # bracket. Hoisting the whole parenthetical would undo the reason it is
+        # deleted in the first place.
+        ("Almonds (unsalted, dry-roasted)", "unsalted almond"),
+    ])
+    def test_marker_survives_the_bracket(self, raw, expected):
+        assert _key(raw) == expected
+
+    def test_all_spellings_land_on_one_key(self):
+        spellings = [
+            "Canned artichoke hearts (in water, no-salt-added)",
+            "No-salt-added canned artichoke hearts (water-packed)",
+            "Canned no-salt-added artichoke hearts",
+            "No-salt-added canned artichoke hearts",
+        ]
+        assert len({_key(s) for s in spellings}) == 1
+
+    def test_marker_is_not_duplicated_when_already_outside(self):
+        shown = _strip_qualifiers_from_display("No-salt-added canned tomatoes (no-salt-added)")
+        assert shown.lower().count("no-salt-added") == 1
+
+    def test_unmarked_parenthetical_still_goes(self):
+        # The original behaviour must survive: a bracket with no marker in it is
+        # still removed whole, or a stripped percentage prints "( milkfat)".
+        assert _key("Low-fat cottage cheese (2% milkfat)") == "low fat cottage cheese"
+        assert _strip_qualifiers_from_display("Low-fat cottage cheese (2% milkfat)") == (
+            "Low-fat cottage cheese"
+        )
+
+
+class TestRetailSizeIsNotAProduct:
+    """"Whole-wheat tortillas, 6-inch fajita size" held its own line beside
+    "Whole-wheat tortillas (8-inch)", which the bracket rule had already
+    cleaned. A diameter describes the wrap; it does not identify it."""
+
+    @pytest.mark.parametrize("raw", [
+        "Whole-wheat tortillas (8-inch)",
+        "Whole-wheat tortillas, 6-inch fajita size",
+        "100% whole-wheat tortillas",
+        "Whole-wheat tortillas, 8 inch",
+    ])
+    def test_one_key(self, raw):
+        assert _key(raw) == "whole wheat tortilla"
+
+    def test_no_punctuation_left_at_the_seam(self):
+        # Removing the size mid-name used to leave "Whole-wheat tortillas,".
+        assert _strip_qualifiers_from_display(
+            "Whole-wheat tortillas, 6-inch fajita size"
+        ) == "Whole-wheat tortillas"
+
+    def test_interior_comma_survives(self):
+        assert "," in _strip_qualifiers_from_display("Boneless, skinless chicken breast")
+
+
+class TestOneJarUnderTwoNames:
+    """Same product, two spellings, two lines on the printed list."""
+
+    @pytest.mark.parametrize("a,b", [
+        ("Red pepper flakes", "Crushed red pepper flakes"),
+        ("dried Italian seasoning", "Italian seasoning blend"),
+    ])
+    def test_merges(self, a, b):
+        assert _key(a) == _key(b)
+
+    @pytest.mark.parametrize("a,b", [
+        # ...but the neighbouring distinctions must NOT collapse with them.
+        ("Crushed tomatoes", "Tomatoes"),
+        ("Cinnamon stick", "Ground cinnamon"),
+        ("Sliced almonds", "Slivered almonds"),
+        ("Frozen raspberries", "Raspberries"),
+        ("Sweet potato", "Potato"),
+    ])
+    def test_still_separate(self, a, b):
+        assert _key(a) != _key(b)
+
+
+class TestDerivativeIsNotTheFreshThing:
+    """The LLM merge pass put "garlic powder" (25 recipes) on the "garlic" line
+    and filed the spice jar under Produce, so the list asked for 48 recipes'
+    worth of fresh cloves and never mentioned the powder. Dropping "powder",
+    "extract", "flake", "paste" or "stick" is now rejected."""
+
+    ALL_KEYS = {
+        "garlic", "garlic powder", "onion", "onion powder", "vanilla",
+        "vanilla extract", "red pepper", "red pepper flake", "tomato",
+        "tomato paste", "cinnamon", "cinnamon stick",
+    }
+
+    @pytest.mark.parametrize("raw,canonical", [
+        ("garlic powder", "garlic"),
+        ("onion powder", "onion"),
+        ("vanilla extract", "vanilla"),
+        ("red pepper flake", "red pepper"),
+        ("tomato paste", "tomato"),
+        ("cinnamon stick", "cinnamon"),
+    ])
+    def test_rejected(self, raw, canonical):
+        kept, rejected = _reject_unsafe_merges({raw: canonical}, self.ALL_KEYS)
+        assert kept == {}
+        assert rejected == [raw]
+
+
+class TestSliceNounNotSlicedAdjective:
+    """"Part-skim mozzarella cheese slices" and "Part-skim mozzarella cheese"
+    held two adjacent lines on a printed weekly list. Stripping the NOUN is the
+    same call the display-prefix rule and the ("pre","sliced") alias already
+    make; the ADJECTIVE has to survive, because raw / sliced / slivered almonds
+    are three different bags."""
+
+    def test_slices_noun_merges(self):
+        assert _key("Part-skim mozzarella cheese slices") == _key("Part-skim mozzarella cheese")
+
+    @pytest.mark.parametrize("a,b", [
+        ("Sliced almonds", "Almonds"),
+        ("Sliced almonds", "Slivered almonds"),
+    ])
+    def test_sliced_adjective_still_splits(self, a, b):
+        assert _key(a) != _key(b)

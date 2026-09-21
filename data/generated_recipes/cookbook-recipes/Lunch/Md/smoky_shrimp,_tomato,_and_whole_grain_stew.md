@@ -38,34 +38,35 @@ Keeps 2 days refrigerated; reheat gently on the stovetop.
 ## Nutrition (per serving) *(confidence: medium)*
 | | |
 |---|---|
-| **Calories** | 395 kcal |
-| **Total carbohydrate** | 42.5 g |
-| &nbsp;&nbsp;Dietary fiber | 8.1 g |
-| &nbsp;&nbsp;Total sugars | 9.6 g |
+| **Calories** | 389 kcal |
+| **Total carbohydrate** | 41.2 g |
+| &nbsp;&nbsp;Dietary fiber | 7.7 g |
+| &nbsp;&nbsp;Total sugars | 9.1 g |
 | &nbsp;&nbsp;&nbsp;&nbsp;incl. added sugars | 0.0 g* |
-| **Protein** | 36.5 g |
-| **Total fat** | 9.8 g |
+| **Protein** | 36.1 g |
+| **Total fat** | 9.9 g |
 | &nbsp;&nbsp;Saturated fat | 1.5 g |
 | &nbsp;&nbsp;Trans fat | 0.0 g |
-| &nbsp;&nbsp;of which good fats (mono + poly) | 7.5 g |
+| &nbsp;&nbsp;of which good fats (mono + poly) | 7.6 g |
 | **Sodium** | 244 mg |
-| **Cholesterol** | 0 mg |
-| **Potassium** | 586 mg† |
-| **Calcium** | 88 mg |
-| **Iron** | 2.8 mg |
+| **Cholesterol** | 236 mg |
+| **Potassium** | 910 mg† |
+| **Calcium** | 175 mg |
+| **Iron** | 3.4 mg |
 | **Vitamin D** | 0.0 mcg |
 
 > Count TOTAL carbohydrate — it is what the label and your care team use.
 > *Added sugars are an estimate.
 > †Potassium needs may be lower with chronic kidney disease — ask your care team.
-> Ingredients without nutrition data: Frozen bell pepper and onion blend, Low-sodium vegetable broth, Frozen pre-cooked shrimp (untreated / no salt added).
+> Ingredients without nutrition data: Frozen bell pepper and onion blend, Low-sodium vegetable broth.
 
 ## Warnings
 - Stage 4 coverage: 'Extra-virgin olive oil': [748608] Oil, olive, extra virgin has no USDA value for fiber_g, protein_g (which would be summed as zero) — switched to [171413] Oil, olive, salad or cooking.
 - No USDA candidate for 'Frozen bell pepper and onion blend' — values estimated by the LLM.
 - No USDA candidate for 'Low-sodium vegetable broth' — values estimated by the LLM.
-- No USDA candidate for 'Frozen pre-cooked shrimp (untreated / no salt added)' — values estimated by the LLM.
-- cholesterol_mg: partial data — 50% of recipe weight has no USDA value for it.
-- potassium_mg: partial data — 49% of recipe weight has no USDA value for it.
-- calcium_mg: partial data — 49% of recipe weight has no USDA value for it.
-- iron_mg: partial data — 49% of recipe weight has no USDA value for it.
+- fiber_g: partial data — 19% of recipe weight has no USDA value for it.
+- sugar_g: partial data — 19% of recipe weight has no USDA value for it.
+- cholesterol_mg: partial data — 31% of recipe weight has no USDA value for it.
+- potassium_mg: partial data — 30% of recipe weight has no USDA value for it.
+- calcium_mg: partial data — 30% of recipe weight has no USDA value for it.
+- iron_mg: partial data — 30% of recipe weight has no USDA value for it.

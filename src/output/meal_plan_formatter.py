@@ -23,16 +23,34 @@ def to_markdown(plan: MealPlan) -> str:
         f"**Actual average**: "
         f"{plan.avg_daily_nutrition.calories_kcal:.0f} kcal/day"
     )
+    # Same caveat the PDF carries on its cover. This plan ships as a standalone
+    # file, so it cannot lean on the book's front matter — and its reader is
+    # commonly on insulin, a sulfonylurea, an SGLT2 inhibitor or a GLP-1.
+    lines.append("")
+    lines.append(
+        "> **Before you start, talk to your doctor or diabetes nurse.** This plan "
+        "changes what and how much you eat, and if you take insulin, a sulfonylurea, "
+        "an SGLT2 inhibitor or a GLP-1 medicine, your dose may need adjusting. It "
+        f"averages about {plan.avg_daily_nutrition.protein_g:.0f} g of protein a day, "
+        "which is more than someone with kidney disease is usually advised to eat, "
+        "and it is not designed for pregnancy or breastfeeding. It is food, not "
+        "treatment, and does not replace your medication."
+    )
     optional_labels = [
         MEAL_TYPE_LABELS[mt].lower()
         for mt in m.meal_structure
         if mt in OPTIONAL_MEAL_TYPES
     ]
     if optional_labels:
-        joined = " and the ".join(optional_labels)
         core = core_day_averages(plan)
+        # OPTIONAL_MEAL_TYPES is {dessert} alone in this book, and the plural
+        # join printed "The dessert are optional."
+        if len(optional_labels) > 1:
+            subject = "The " + " and the ".join(optional_labels) + " are"
+        else:
+            subject = optional_labels[0].capitalize() + " is"
         note = (
-            f"**The {joined} are optional** — if you are not hungry, skip "
+            f"**{subject} optional** — if you are not hungry, skip "
             f"{'them' if len(optional_labels) > 1 else 'it'}; do not force "
             f"yourself to eat on schedule."
         )

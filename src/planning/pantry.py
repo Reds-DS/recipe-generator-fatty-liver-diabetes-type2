@@ -14,23 +14,31 @@ saying nothing.
 """
 from __future__ import annotations
 
+import re
 from collections import defaultdict
 
 from src.models.meal_plan import CourseItem, PantryItem, PantryList, WeekSlice
 from src.planning.course_list import format_quantity
 
 # How many of the book's recipes must use an ingredient before it earns a place
-# in the cupboard. Set from the observed distribution for this book: 71% of
-# ingredients appear in <=2 recipes, and the per-count bucket sizes collapse
-# (48 -> 22 -> 21 -> 11) right up to 5, then stay flat. Five is the knee.
-DEFAULT_MIN_RECIPES = 5
+# in the cupboard. RE-FITTED for this book (2026-08-18) from its own 30-day
+# plan, not inherited: the buckets here collapse 114 -> 45 -> 16 and then sit
+# FLAT across 3/4/5 (16/13/16) before the real cliff at 6. That is the opposite
+# shape to the parent cookbook, whose curve fell all the way to 5 and went flat
+# after it — which is why the inherited value was 5 and why it is wrong here.
+# The plateau is one coherent group, so the threshold goes at its front edge;
+# splitting it at 4 or 5 would be arbitrary. Yields a 44-line pantry page out of
+# 241 distinct shopping lines.
+DEFAULT_MIN_RECIPES = 3
 
 # Dried spices, blends, extracts and leaveners qualify sooner: the smallest jar
-# you can buy is many times a 60-day need, so making someone shop for 6 g of
-# thyme in week 6 is a failure of the plan, not a saving. That reasoning only
-# holds while the quantity really is jar-sized — hence the ceiling, which keeps
-# the exception from sweeping in 840 g of almond milk on a technicality.
-SPICE_MIN_RECIPES = 3
+# you can buy is many times a 30-day need, so making someone shop for 4 g of
+# chili powder in week 3 is a failure of the plan, not a saving. That reasoning
+# only holds while the quantity really is jar-sized — hence the ceiling, which
+# keeps the exception from sweeping in 840 g of almond milk on a technicality.
+# Lowered to 2 alongside DEFAULT_MIN_RECIPES so the exception still does
+# something: at 3 it would exactly equal the default and never fire.
+SPICE_MIN_RECIPES = 2
 SPICE_MAX_TOTAL_G = 150.0
 
 # Categories whose contents keep for months unopened.
@@ -54,9 +62,22 @@ _GRAINS_SHELF_STABLE_KW: tuple[str, ...] = (
 
 # Sold fresh and used within days, despite sitting in an otherwise-stable aisle.
 # A name that explicitly says "dried" overrides this (see `_is_shelf_stable`).
+#
+# These are matched on WORD BOUNDARIES, not as substrings, and that is what lets
+# the list say "sage" and "ginger" at all: as substrings they hit "sausage" and
+# (elsewhere in this lineage) "gingerbread", so the list previously had to write
+# "sage leaf" and "ginger root" — neither of which a recipe ever says. The
+# result was that "Fresh ginger" and "fresh thyme" normalise to "Ginger" and
+# "Thyme" (the key normaliser strips "fresh"), matched nothing here, and were
+# printed on the STOCK-ONCE pantry page. A root of ginger does not keep for
+# thirty days in a cupboard, and telling a reader it does is exactly the failure
+# this module's docstring warns about.
 _FRESH_HERB_KW: tuple[str, ...] = (
     "basil", "cilantro", "coriander", "parsley", "dill", "mint", "chive",
-    "tarragon", "sage leaf", "ginger root",
+    "tarragon", "sage", "ginger", "thyme", "rosemary",
+)
+_FRESH_HERB_RE = re.compile(
+    r"\b(?:{})\b".format("|".join(re.escape(k) for k in _FRESH_HERB_KW))
 )
 
 # Never worth listing as a pantry item, whatever the counts say.
@@ -88,7 +109,7 @@ def _is_shelf_stable(item: CourseItem) -> bool:
         return False
 
     # A fresh herb is perishable unless the name marks it as dried/ground.
-    if any(kw in name for kw in _FRESH_HERB_KW):
+    if _FRESH_HERB_RE.search(name):
         return any(m in name for m in _DRIED_MARKERS)
 
     return True

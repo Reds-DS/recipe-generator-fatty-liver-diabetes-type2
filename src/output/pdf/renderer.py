@@ -65,6 +65,14 @@ def render_to_pdf(
         "sex_labels": SEX_LABELS,
         "generated_on": _format_date(plan.created_at),
         "image_urls": _build_image_map(plan, recipes_by_id, book_dir),
+        # Hands-off time the schedule would otherwise hide. A dessert that needs
+        # "chill 2 hours" is not something to discover at the point of making it,
+        # and the schedule is where the reader plans the day.
+        "passive_by_id": {
+            rid: r.passive_time
+            for rid, r in recipes_by_id.items()
+            if getattr(r, "passive_time", None)
+        },
         "target_rows": _build_target_rows(plan),
         "optional_meals": OPTIONAL_MEAL_TYPES,
         "optional_labels": [
@@ -96,7 +104,12 @@ def _build_target_rows(plan: MealPlan) -> list[dict[str, str]]:
 
     Values are measured off the assembled plan (not restated from the spec) so
     the page stays honest if the recipe mix changes. Guideline column mirrors
-    ``data/fatty_liver_diabetes_guidelines.yaml`` → ``daily_targets``.
+    ``data/fatty_liver_diabetes_guidelines.yaml`` → ``daily_targets``, and is
+    re-authored for THIS book: the inherited column carried the parent
+    cookbook's rationale, which contradicted the measured figures on two rows
+    (it justified protein against a flat 1.6 g/kg and fiber against a 28-38 g
+    band the plan clears outright) and never mentioned carbohydrate at all —
+    the one axis this book is actually arguing about.
     """
     avg = plan.avg_daily_nutrition
     kcal = avg.calories_kcal or 0.0
@@ -120,25 +133,39 @@ def _build_target_rows(plan: MealPlan) -> list[dict[str, str]]:
             "label": "Calories",
             "value": f"{kcal:,.0f} kcal/day",
             "note": "",
-            "guideline": f"{plan.manifest.target_daily_kcal:,} kcal/day target for this plan",
+            "guideline": (
+                f"{plan.manifest.target_daily_kcal:,} kcal/day target — a 500-1,000 kcal "
+                f"daily deficit"
+            ),
+        },
+        {
+            "label": "Total carbohydrate",
+            "value": f"{avg.carbs_g:.0f} g/day",
+            "note": pct_kcal(avg.carbs_g, 4),
+            "guideline": (
+                "Not low-carbohydrate, on purpose — keto patterns are unsafe on an "
+                "SGLT2 inhibitor or insulin"
+            ),
         },
         {
             "label": "Protein",
             "value": f"{avg.protein_g:.0f} g/day",
             "note": pct_kcal(avg.protein_g, 4),
-            "guideline": "1.6 g per kg bodyweight per day — preserves muscle in a deficit",
+            "guideline": "1.2-1.6 g per kg bodyweight — preserves muscle in a deficit",
         },
         {
             "label": "Protein per main meal",
             "value": f"{per_main:.0f} g",
             "note": "",
-            "guideline": "25-30 g — the muscle-building and fullness threshold",
+            "guideline": "25-30 g — below about 25 g the fullness effect is small",
         },
         {
             "label": "Fiber",
             "value": f"{avg.fiber_g:.0f} g/day",
-            "note": "",
-            "guideline": "28-38 g/day — FDA Daily Value is 28 g",
+            "note": (
+                f"{avg.fiber_g / kcal * 1000:.0f} g per 1,000 kcal" if kcal > 0 else ""
+            ),
+            "guideline": "ADA: at least 14 g per 1,000 kcal",
         },
     ]
     if avg.added_sugar_g is not None:
@@ -146,20 +173,23 @@ def _build_target_rows(plan: MealPlan) -> list[dict[str, str]]:
             "label": "Added sugar",
             "value": f"{avg.added_sugar_g:.0f} g/day",
             "note": pct_kcal(avg.added_sugar_g, 4),
-            "guideline": "Under 10% of calories",
+            "guideline": (
+                "The tightest number in the book — added sugar acts on the liver "
+                "beyond its calories"
+            ),
         })
     if avg.saturated_fat_g is not None:
         rows.append({
             "label": "Saturated fat",
             "value": f"{avg.saturated_fat_g:.0f} g/day",
             "note": pct_kcal(avg.saturated_fat_g, 9),
-            "guideline": "Under 10% of calories",
+            "guideline": "Under 10% of calories, mostly from unsaturated sources",
         })
     rows.append({
         "label": "Sodium",
         "value": f"{avg.sodium_mg:,.0f} mg/day",
         "note": "",
-        "guideline": "Under 2,300 mg/day",
+        "guideline": "Under 2,300 mg/day — acid and herbs instead of salt",
     })
     return rows
 

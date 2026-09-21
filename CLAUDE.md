@@ -556,11 +556,11 @@ Every chapter is at its exact target. `scripts/audit_book.py` reports **96/100 p
 | snacks_sides | 12/12 |
 | desserts | 10/10 |
 
-**THE 4 REMAINING BLOCKERS — fix before print** (`uv run python scripts/audit_book.py cookbook-recipes`):
+**THE 3 REMAINING BLOCKERS — fix before print** (`uv run python scripts/audit_book.py cookbook-recipes`).
+The shakshuka's time claim was fixed 2026-08-18 — see the Bonus 2 review round below:
 
 | recipe | defect | note |
 |---|---|---|
-| 15-Minute Chickpea and Spinach Shakshuka | time claim in title AND filename | pre-fix pilot |
 | Broiled Cinnamon Peaches with Vanilla Ricotta | fabricated preheat "for 3 minutes" | pre-fix pilot |
 | Sheet-Pan Lemon-Dill Salmon | fabricated preheat "for 5 minutes" | pre-fix pilot |
 | Smoky Salmon and Sweet Corn Chowder | declared total 32 min > the 30 min cover promise | post-fix |
@@ -572,6 +572,205 @@ time claim is in its FILENAME too, so its replacement lands under a new name —
 **Also worth an editorial pass before print:** 58 envelope advisories across 42 recipes. Most are
 rounding (28.3 vs 28 g carbohydrate; 2.1 vs 2 g saturated fat) and not defects — the panel is
 computed from a food database with real variance. Sort by magnitude and look only at the outliers.
+
+### THE INDESIGN EXPORT IS BUILT (2026-08-18) — 100/100 recipes
+
+```bash
+uv run python cli.py export-book cookbook-recipes     # -> <book>/Export/
+```
+
+Five files per format, one per **meal-type folder** (not per chapter): breakfast, lunch, dinner,
+snack, dessert. Each row is a **two-recipe spread** — every column duplicated `_1`/`_2` — so
+16 breakfasts become 8 rows. **72 columns** = 36 base × 2. Both formats are written every run:
+`*_indesign.txt` (tab-delimited, **UTF-16**, InDesign Data Merge's native import) and
+`*_indesign.csv` (semicolon, UTF-8-BOM, for spreadsheet inspection).
+
+Verified against the source JSON: 100/100 recipes, **0** ingredient/instruction count mismatches,
+100/100 `@Image` paths resolve on disk, no blank fields, every line carries exactly 71 tabs.
+
+**`NUM_INGREDIENTS` was 12 and the book's widest recipe has 13.** *Spiced Beef, Herb, and Bulgur
+Salad Bowls* (13 ingredients) would have lost its sliced almonds — silently, because short lists pad
+with `""` and long ones were simply sliced. Now 13, and `parse_recipe` **warns** on overflow instead
+of dropping. Measured across the finished book: ingredients **5-13** (mean 9.6, median 10),
+instructions **3-7** (mean 6.3, 53 recipes at exactly 7).
+
+The two caps behave differently and that is the reason this bit:
+- **`max_steps: 7` holds 100/100** — it is in `output_schemas.py` (`max_length=7`) *and* stated in
+  `draft.py`.
+- **`max_ingredients: 10` binds nothing.** No code reads the YAML key, and it reaches the model only
+  as "about 10 ingredients or fewer" in the **ideation** prompt — the draft prompt never mentions a
+  count. 26/100 recipes are over it (20×11, 5×12, 1×13). The schema's own field prose exempts salt,
+  pepper, water and cooking oil, so most are defensible; if it should bind, the lever is one line in
+  `draft.py`, not a new checker.
+
+**The nutrition columns are fixed by the layout design (2026-08-18), in this order:**
+`Calories, Protein, Fiber, Carbs, TotalFat, SaturatedFat, TotalSugars, AddedSugars` — plus
+**`Sodium`** as a ninth, kept deliberately because every tier has a hard per-serving ceiling
+(550/500/250/150 mg) and the canned-goods finding makes it the axis most worth proofing on the page.
+Renamed from the first cut: `Sugar`→`TotalSugars`, `Fat`→`TotalFat`, `AddedSugar`→`AddedSugars`.
+All 900 cells (100 recipes × 9) were checked back against each recipe's
+`nutrition_per_serving` JSON: **0 mismatches, 0 empty**. Column order is merge-field order only —
+Data Merge places by NAME — so it does **not** touch the printed panel's HERO SIX order in
+`formatter.py`. The map's KEYS are the markdown panel's own labels: change a label in
+`formatter.py` without changing the key here and the column goes **silently empty**.
+
+**For the layout template:** `AddedSugars` ships as `0.0 g*` on all 100 — the `*` is the panel's
+honesty marker and its legend (*"Added sugars are an estimate."*) is **not** an exported column, so
+put it in static page furniture. Values carry their units (`545 kcal`, `48.7 g`, `205 mg`), so the
+frame should not add its own. Non-ASCII in the export is only en dash (74×, cook-time ranges),
+`°` (20×) and `é` (8×). `@Image` paths are absolute Windows paths; remember the files are **JPEG
+bytes named `.png`** — InDesign sniffs content and places them fine.
+
+### BONUS 2 — THE 30-DAY MEAL PLAN IS BUILT (2026-08-18)
+
+```bash
+docker compose build app          # REQUIRED after any src/, Jinja or CSS change
+docker compose run --rm -e PYTHONIOENCODING=utf-8 app   meal-plan --book cookbook-recipes --days 30 --seed 42 --output all --use-llm-aliases
+```
+
+**25-page PDF + md + json + csv** in `<book>/MealPlan/meal_plan_2026-08-18_seed42.*`.
+**Seed 42 is the one that shipped.** `cookbook.json` was authored by hand (NOT `init-manifest`):
+1,700 kcal ±200, a five-slot day including dessert, 7-day repeat window.
+
+Measured over the assembled plan: **1,767 kcal/day**, 190 g carbohydrate (**43% of energy**),
+118 g protein, 41 g fiber, **3 g added sugar**, 12 g saturated fat (6% of energy), 1,456 mg sodium.
+2 of 30 days sit outside the ±200 kcal band (days 27-28, 1,948 and 2,024). Structure: 4 weeks of
+7/7/7/**9** days — `week_slicer` folds a trailing remainder shorter than 4 days into the previous week.
+
+**96 of 100 recipes appear, and 96 is the maximum.** 30 days give 30 dinner slots against 34 dinner
+recipes, so 4 dinners cannot appear at one dinner a day. Every breakfast (16), lunch (28), snack (12)
+and dessert (10) is used, and the 30 dinners are all distinct — zero dinner repeats in the month.
+Changing `--seed` rotates *which* 4 sit out; no 30-day arrangement includes all 34.
+
+**Palette re-sampled from the real cover** (`KDP - 2026/…/Cover/JPG/`), quantized whole then
+point-sampled inside glyphs: green `#1A3B18` (badge, brush, "FOR TYPE 2 DIABETES"), gold `#FABF2F`
+("DIET COOKBOOK"), rust `#A73D14` ("30-DAY" and the cover ground), cream `#F7E8C6`. Two deliberate
+translations: the terracotta is an **accent, never a ground** (40 pages of it is unreadable and
+unprintable), and the paper is the cover cream taken most of the way to white. Rust carries the
+cover rule, the brief page's delivered figures, the per-day kcal totals and the pantry-page aisle
+headers — that last one on purpose, because the pantry page is stocked ONCE and the weekly lists
+(green headers) are shopped every week.
+
+#### Defects this bonus found and fixed — all were reader-facing
+
+1. **Diet markers were destroyed inside parentheticals.** `_PAREN_RE` deletes a whole bracket, so
+   *"Canned artichoke hearts (in water, no-salt-added)"* landed on the bare `artichoke heart` key:
+   the list sent the reader for the salted can and the book's sodium panel was quietly wrong.
+   `_hoist_paren_markers` now lifts the marker out first, in both the key and the display path.
+2. **The LLM alias pass merged `garlic powder` (25 recipes) into fresh `garlic`** and filed the
+   spice jar under Produce — the list asked for 48 recipes' worth of cloves and never mentioned the
+   powder. `_reject_unsafe_merges` missed it because `powder` was not guarded. `powder`, `extract`,
+   `flake`, `paste` and `stick` are now in `_UNDROPPABLE_TOKENS` (`stick` because the same pass had
+   merged `cinnamon stick` into `cinnamon` — poached pears in powder).
+3. **Fresh ginger and fresh thyme were printed on the STOCK-ONCE pantry page.** The key normaliser
+   strips "fresh", so they arrived as "Ginger"/"Thyme" and `_FRESH_HERB_KW` — which could only spell
+   them "ginger root"/"sage leaf" to dodge the *sausage* and *gingerbread* substring traps — matched
+   nothing. Now matched on **word boundaries**, so the list can say bare `ginger`, `thyme`, `sage`,
+   `rosemary`. A root of ginger does not keep for thirty days in a cupboard.
+4. **"The dessert are optional."** `OPTIONAL_MEAL_TYPES` is `{dessert}` alone in this book, and both
+   the Jinja template and `meal_plan_formatter.py` joined it as a plural. Fixed in both.
+5. **Long shopping-list names collided with their quantity** — the printed line read
+   *"Low-sodium sprouted whole-grain bread140 g"*. `.courses .ingredient` never got the flex sizing
+   its `.pantry-cat` twin has, so it could not shrink.
+6. **Two near-empty pages** (the trap the playbook names): the brief page spilled its last bullets
+   and the pantry page spilled its footnote. Both sections now carry a documented one-page budget in
+   the CSS — re-check the render before adding a table row or loosening the pantry threshold.
+7. **Duplicate lines merged**: `crushed red pepper flakes`/`red pepper flakes`,
+   `dried Italian seasoning`/`Italian seasoning blend`, a retail size (`6-inch fajita size`), and
+   the NOUN `slice` ("cheese slices" vs "cheese" — the adjective `sliced` still splits almonds).
+   English muffins and waffles were falling through to an "Other" aisle; keywords added.
+
+**`src/planning/pantry.py` thresholds were RE-FITTED** (this was an open TODO). This book's buckets
+collapse 114 → 45 → 16 then sit **flat across 3/4/5** (16/13/16) before the real cliff at 6 — the
+opposite shape to the parent cookbook, whose curve fell all the way to 5. `DEFAULT_MIN_RECIPES`
+5 → **3**, `SPICE_MIN_RECIPES` 3 → **2** (at 3 it would equal the default and never fire). Yields a
+**44-line** pantry page out of 241 distinct lines; weekly lists fell ~11% (116/125/110/135 →
+103/108/99/122).
+
+**The brief page's "Why that number" column was re-authored.** It carried the parent book's
+rationale, which contradicted the measured figures on two rows (protein justified against a flat
+1.6 g/kg; fiber against a 28-38 g band the plan clears outright) and **never mentioned carbohydrate
+at all** — the one axis this book is actually arguing about. Now sourced from the YAML `daily_targets`,
+with a Total carbohydrate row that names the 26% very-low-carb line and why it matters on an SGLT2
+inhibitor or insulin.
+
+Tests **504 passed** (was 473); 31 new cases in `tests/test_course_list.py` covering all of the above.
+
+**Gotcha proven again:** `--reset-aliases` after ANY key-normaliser change. `AliasCache` has no
+invalidation, and it was a reset that exposed the garlic-powder merge in the first place.
+
+**Known, deliberately left alone** (the playbook's rule is *when unsure, keep them separate*):
+`Kalamata olives` and `Kalamata olives, low-sodium` hold two pantry lines, as do the artichoke
+`low sodium` / `no salt added` variants. Merging either would strip a diet marker.
+
+#### The review round (2026-08-18) — read this before touching the plan again
+
+The finished PDF was reviewed page by page against the book's objective. Nothing violated a hard
+block and there were **no banned claims**, but twelve things were wrong and all are now fixed.
+Four are worth carrying forward because they are traps, not typos:
+
+1. **THE SHRIMP SODIUM BUG — a real nutrition error, not a rounding one.** FoodData Central splits
+   shellfish into two families and the drafting model names the wrong one: `[175180] Crustaceans,
+   shrimp, cooked` is **111 mg**/100 g while `[171971] … cooked, moist heat (may contain additives
+   to retain moisture)` is **947 mg**. The additive is sodium tripolyphosphate. Four recipes were
+   computed against the 344-947 mg records, overstating sodium **3-6x**, which pushed one day of
+   the plan to **2,698 mg** — over the 2,300 mg line the plan itself prints on page 2.
+   *How it was found:* the stew with the MOST shrimp had the LOWEST sodium, because its ingredient
+   happened to say "no salt added" while the others said "untreated" — and
+   **`qualifiers.py::_UNSALTED_RE` did not know the word "untreated"**, so the >140 mg/100 g
+   rejection never fired. `untreated`, `dry packed`, `no phosphate` are now in that regex, the
+   clean records are pinned in `usda_aliases.seed.yaml`, and one recipe that just said "raw peeled
+   shrimp" had `untreated` added to match the book's own convention.
+   **Result: 1,399 → 451, 738 → 235, 717 → 528, 506 → 70 mg/serving.** All four sodium-ceiling
+   breaches gone; plan mean 1,456 → **1,345 mg**; no day over 2,300.
+   *Watch for the same split elsewhere* — scallops have no clean record at all (252/301 mg is the
+   best available), so a scallop recipe's sodium is inherently high, not a bug.
+
+2. **`cli.py recompute-nutrition` REPLACES `validation_warnings` wholesale**, which deletes the
+   critic's `[dimension] …` findings. It is the wrong tool for a targeted fix. The shrimp recompute
+   was done with a script that merges instead: Stage 4 + envelope warnings recomputed, critic
+   findings carried through. Two critic notes were then dropped BY HAND because the thing they
+   described had been fixed (the sushi bowl's "1400mg is a database discrepancy" — the critic was
+   right — and the shakshuka's title complaint).
+
+3. **`scripts/seed_usda_aliases.py` KEEPS an existing pin** — which is what makes seeding stable,
+   but useless when the cache has already learned a wrong id. It now takes **`--force`** to repin.
+
+4. **The planner had a systematic calorie trend.** `_score` sorts on `usage_count` first, so each
+   bucket hands back its nearest-to-budget recipes first and whatever fitted worst is left for the
+   end: weekly averages ran **1,656 → 1,740 → 1,779 → 1,866**. Steering the daily budget does NOT
+   fix this — by then every remaining candidate sits on the same side of the budget, so a lower
+   target picks the same recipe. `_rebalance_week_kcal()` instead PERMUTES the finished plan,
+   swapping same-meal-type slots between a heavy week and a light one, then again within each week
+   (free, since a within-week swap cannot move that week's mean). Because it is a permutation,
+   coverage, usage counts and the plan mean are unchanged by construction.
+   **Week spread 210 kcal → under 2. Daily range 1,597-2,024 → 1,711-1,805. Days outside the ±200
+   band: 2 → 0.** The window check must use **`> window`**, not `>=` — `_eligible_candidates` admits
+   a recipe only when `current_day - last_used_day > window`, and getting that wrong is caught by
+   `test_personalized_plan_preserves_no_repeat_window`.
+
+Also fixed: the plan carried **no medication or clinician note at all** (0 hits for doctor /
+clinician / hypoglycemia) despite a readership commonly on insulin, a sulfonylurea, an SGLT2
+inhibitor or a GLP-1 — it now has one on the cover and a full colophon on what used to be a
+three-word back page, including the dossier's own **CKD protein caveat**, which the plan had
+dropped while printing 119 g/day; recipes with `validation_passed=False` are down-weighted by
+`_defect_units()` so a snack breaching three tier ceilings no longer gets served 3×; the
+"…keep the second portion for the next day's lunch" bullet contradicted the schedule and is
+rewritten; the shopping lists now say they are sized for the full 2 servings; declared **passive
+time is surfaced in the schedule cell** (a dessert needing "chill 2 hours" was invisible until you
+made it); `no salt added diced tomato with juice` merged into its own can; popcorn kernels moved
+out of Produce; and the "15-Minute" shakshuka was renamed (**its FILENAME still says
+`15-minute_…`** — cosmetic and not reader-facing, but it will look odd in the repo).
+
+**Tests 511** (was 504). `scripts/audit_book.py` now reports **97/100 publishable**, 3 blockers
+(2 fabricated preheats + the 32-min chowder). Envelope advisories 58 → 52.
+
+**The InDesign export was regenerated** — five recipe panels and one title changed, so the
+cell-by-cell verification recorded in the export section above was re-run against the new values.
+
+**The `.brief` and `.pantry` sections each have a documented ONE-PAGE budget in the CSS.** Adding a
+table row or a bullet to either will silently push content onto a near-empty page; this happened
+three times during this round. Re-render and look before shipping.
 
 ### THE HISTORICAL FAILURES BELOW ARE RESOLVED — kept for diagnosis, not as current state
 
@@ -622,7 +821,6 @@ Run in batches of 2-3 per the batching note above.
 
 | recipe | defect |
 |---|---|
-| 15-Minute Chickpea and Spinach Shakshuka | time claim in title AND filename (pre-fix) |
 | Broiled Cinnamon Peaches with Vanilla Ricotta | fabricated preheat "for 3 minutes" (pre-fix) |
 | Sheet-Pan Lemon-Dill Salmon | fabricated preheat "for 5 minutes" (pre-fix) |
 | Smoky Salmon and Sweet Corn Chowder | declared total 32 min > the 30 min cover promise (POST-fix) |
@@ -643,14 +841,17 @@ that walked past *"ready in under **ten** minutes"*. First run reported 5 blocke
       `scripts/audit_book.py` until it exits 0.
 - [ ] **Editorial pass on the 58 envelope advisories** (42 recipes) — sort by magnitude, most are
       rounding.
-- [ ] **The three reader bonuses have not been touched** — companion app, 30-day meal plan, desserts
-      PDF. They were deferred to the `cookbook-bonuses` skill and all three read the recipes this
-      engine produced, which now exist. Note the subtitle promises a **30-day** plan, not 60.
-- [ ] **Re-fit `src/planning/pantry.py` thresholds** (`DEFAULT_MIN_RECIPES = 5`,
-      `SPICE_MIN_RECIPES = 3`, `SPICE_MAX_TOTAL_G = 150`) — they were fitted to the parent book's
-      ingredient-frequency distribution. Now that 100 recipes exist, re-fit before the meal-plan bonus.
-- [ ] **Re-sample the PDF palette** in `pdf/assets/meal_plan.css` from this book's cover (flagged in
-      a comment there); it is still the parent cookbook's.
+- [x] **Bonus 2, the 30-day meal plan, is BUILT** (2026-08-18, seed 42) — see its own section above.
+- [ ] **Bonus 1 (companion app) and Bonus 3 (desserts PDF) have not been touched.** Both are in the
+      `cookbook-bonuses` skill and both read the recipes this engine produced, which now exist.
+      Bonus 3 shares `recipe_book.css` with the meal plan's stylesheet and its palette literals are
+      **still the parent cookbook's** — copy the `:root` block out of `meal_plan.css`, which has now
+      been re-sampled from the real cover.
+- [x] **`src/planning/pantry.py` thresholds RE-FITTED** (2026-08-18) — 5 → 3 and 3 → 2, measured off
+      this book's own 30-day plan. See the Bonus 2 section.
+- [x] **PDF palette RE-SAMPLED** in `pdf/assets/meal_plan.css` from the real cover art (2026-08-18).
+      `recipe_book.css` (Bonus 3) is a separate file with duplicated literals and is **still the
+      parent's** — sync it at Bonus 3 time.
 
 ### VERIFIED: THE AIM-AT-TARGETS FIX WORKED
 
@@ -665,16 +866,12 @@ Mean energy fell ~50 kcal onto the 460 midpoint and the cluster at the top of th
 while protein barely moved — portions came down without stripping protein out. This closed the last
 open design question from the pilot. Do NOT retune the tier envelopes to "fix" over-portioning; the
 tiers derive from the guidelines, and the lever is the drafting prompt.
-- [ ] **Meal-plan / PDF coaching prose is only partly retargeted.** The claims that were wrong for
-      this book were fixed (`meal_plan_formatter.py`, `meal_plan.html.j2`), but the PDF palette in
-      `pdf/assets/meal_plan.css` is still the parent book's and is flagged in a comment — re-sample
-      it from this book's cover at bonus time.
-- [ ] **`src/planning/pantry.py` thresholds** (`DEFAULT_MIN_RECIPES = 5`, `SPICE_MIN_RECIPES = 3`,
-      `SPICE_MAX_TOTAL_G = 150`) were fitted to the parent book's ingredient-frequency
-      distribution. Re-fit once this book's recipes exist. Matters for the meal-plan bonus, not for
-      generation.
-- [ ] **The three reader bonuses are explicitly deferred** to the `cookbook-bonuses` skill (companion
-      app, meal plan, desserts PDF). Note the subtitle promises a **30-day** plan, not 60.
+- [x] **Meal-plan / PDF coaching prose retargeted** (2026-08-18). The calibration table's rationale
+      column was still the parent's and contradicted two of its own measured rows; re-authored from
+      the YAML `daily_targets`, with a Total carbohydrate row added.
+- [x] Duplicate of the pantry-threshold item above — done 2026-08-18.
+- [ ] **Bonuses 1 and 3 remain deferred** to the `cookbook-bonuses` skill. Bonus 2 shipped
+      2026-08-18; the subtitle promises a **30-day** plan, not 60, and that is what was built.
 
 ### PILOT — the next command to run
 

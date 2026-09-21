@@ -50,6 +50,42 @@ aliases:
   - canonical_name: "Tomatoes, crushed, canned, no salt added"
     fdc_id: 170138
 
+  # ── Shellfish: the "additives to retain moisture" split ────────────────────
+  # Found reviewing the 30-day meal plan (2026-08-18). FoodData Central carries
+  # TWO families of shrimp record and the drafting model names the wrong one:
+  #
+  #     175180  Crustaceans, shrimp, cooked ................................ 111 mg
+  #     175179  Crustaceans, shrimp, raw ................................... 119 mg
+  #     171970  Crustaceans, shrimp, mixed species, cooked ................. 344 mg
+  #     174210  ... mixed species, raw (may contain additives) ............. 566 mg
+  #     171972  Crustaceans, shrimp, mixed species, canned ................. 870 mg
+  #     171971  ... mixed species, cooked, moist heat (may contain additives) 947 mg
+  #
+  # The additive is sodium tripolyphosphate, used to hold water in commodity
+  # shrimp. Every recipe in this book specifies UNTREATED shrimp, so the 111/119
+  # records are the correct basis — but four recipes were computed against the
+  # 344-947 mg ones, overstating sodium 3-6x. On 227 g of shrimp that is ~950 mg
+  # per serving of pure artefact, and it pushed day 10 of the meal plan over the
+  # 2,300 mg daily line the plan itself prints.
+  #
+  # `qualifiers.py` now reads "untreated" as an unsalted marker, which rejects
+  # anything over 140 mg/100 g; these pins are the belt to that braces, and they
+  # also cover the recipes that just say "raw peeled shrimp".
+  - canonical_name: "Crustaceans, shrimp, cooked"
+    fdc_id: 175180          # 111 mg Na
+  - canonical_name: "Crustaceans, shrimp, mixed species, cooked"
+    fdc_id: 175180
+  - canonical_name: "Crustaceans, shrimp, mixed species, cooked, moist heat"
+    fdc_id: 175180
+  - canonical_name: "Crustaceans, shrimp, untreated, cooked"
+    fdc_id: 175180          # a description the model invented; no such record
+  - canonical_name: "Crustaceans, shrimp, mixed species, canned"
+    fdc_id: 175180
+  - canonical_name: "Crustaceans, shrimp, raw"
+    fdc_id: 175179          # 119 mg Na
+  - canonical_name: "Crustaceans, shrimp, mixed species, raw"
+    fdc_id: 175179
+
   # ── Canned legumes WITH a genuine low-sodium record ────────────────────────
   - canonical_name: "Beans, black, mature seeds, canned, low sodium"
     fdc_id: 175238          # 138 mg Na  (vs 384 for the plain canned record)

@@ -1,0 +1,36 @@
+{
+  "name": "cookbook-recipes",
+  "display_name": "The Fatty Liver Diet Cookbook for Type 2 Diabetes",
+  "objective": "One way of eating for both conditions: 30 days of Mediterranean-style meals from everyday supermarket ingredients, energy-controlled for steady weight loss, very low in added sugar, fiber- and protein-forward, and alcohol-free — built to help lower liver fat and keep blood sugar steady.",
+  "diet_tags": [
+    "masld",
+    "fatty-liver",
+    "type-2-diabetes",
+    "mediterranean",
+    "alcohol-free",
+    "low-added-sugar",
+    "high-fiber"
+  ],
+  "servings_per_recipe": 2,
+  "target_daily_kcal": 1700,
+  "kcal_tolerance": 200,
+  "max_repeat_window_days": 7,
+  "meal_structure": [
+    "breakfast",
+    "lunch",
+    "snack",
+    "dinner",
+    "dessert"
+  ],
+  "meal_share": null,
+  "recipe_targets": {
+    "breakfasts": 16,
+    "soups_salads": 14,
+    "lunches": 14,
+    "poultry_meat_dinners": 13,
+    "fish_seafood_dinners": 11,
+    "vegetable_meatless_dinners": 10,
+    "snacks_sides": 12,
+    "desserts": 10
+  }
+}

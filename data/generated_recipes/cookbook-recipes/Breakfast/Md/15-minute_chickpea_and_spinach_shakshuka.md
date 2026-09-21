@@ -1,6 +1,6 @@
-# 15-Minute Chickpea and Spinach Shakshuka
+# Chickpea and Spinach Shakshuka
 
-![15-Minute Chickpea and Spinach Shakshuka](C:\Users\terja\Documents\AI_Projects\recipe-generator-fatty-liver-diabetes\data\generated_recipes\cookbook-recipes\Breakfast\IMG\15-minute_chickpea_and_spinach_shakshuka.png)
+![Chickpea and Spinach Shakshuka](C:\Users\terja\Documents\AI_Projects\recipe-generator-fatty-liver-diabetes\data\generated_recipes\cookbook-recipes\Breakfast\IMG\15-minute_chickpea_and_spinach_shakshuka.png)
 
 This simple, single-skillet meal requires minimal prep and cooks completely on the stovetop. Eggs, chickpeas, and spinach simmer in a spiced tomato sauce for a hearty start to the day.
 
@@ -73,4 +73,3 @@ Best enjoyed right away; does not keep.
 - potassium_mg: partial data — 38% of recipe weight has no USDA value for it.
 - calcium_mg: partial data — 38% of recipe weight has no USDA value for it.
 - iron_mg: partial data — 38% of recipe weight has no USDA value for it.
-- [title_intro_accuracy] The title calls this a '15-Minute' shakshuka, but the listed prep (5 minutes) and minimum cook time (13 minutes) equal 18 minutes, and the cumulative step times can stretch to 19 minutes. Consider renaming it to '20-Minute Chickpea and Spinach Shakshuka' or 'Quick Chickpea and Spinach Shakshuka' to maintain strict honesty.

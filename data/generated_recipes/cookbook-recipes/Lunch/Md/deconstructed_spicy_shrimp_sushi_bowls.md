@@ -36,32 +36,34 @@ Swap the shrimp for flaked no-salt-added canned pink salmon.
 ## Storage
 Keeps 2 days refrigerated; add the avocado just before serving.
 
-## Nutrition (per serving)
+## Nutrition (per serving) *(confidence: medium)*
 | | |
 |---|---|
-| **Calories** | 426 kcal |
-| **Total carbohydrate** | 45.9 g |
+| **Calories** | 403 kcal |
+| **Total carbohydrate** | 44.4 g |
 | &nbsp;&nbsp;Dietary fiber | 6.8 g |
-| &nbsp;&nbsp;Total sugars | 4.8 g |
+| &nbsp;&nbsp;Total sugars | 4.9 g |
 | &nbsp;&nbsp;&nbsp;&nbsp;incl. added sugars | 0.8 g* |
-| **Protein** | 34.9 g |
-| **Total fat** | 11.5 g |
-| &nbsp;&nbsp;Saturated fat | 2.2 g |
+| **Protein** | 36.3 g |
+| **Total fat** | 9.9 g |
+| &nbsp;&nbsp;Saturated fat | 1.6 g |
 | &nbsp;&nbsp;Trans fat | 0.0 g |
-| &nbsp;&nbsp;of which good fats (mono + poly) | 8.5 g |
-| **Sodium** | 1400 mg |
-| **Cholesterol** | 241 mg |
-| **Potassium** | 822 mg† |
-| **Calcium** | 184 mg |
-| **Iron** | 2.0 mg |
-| **Vitamin D** | 0.1 mcg |
+| &nbsp;&nbsp;of which good fats (mono + poly) | 7.5 g |
+| **Sodium** | 451 mg |
+| **Cholesterol** | 216 mg |
+| **Potassium** | 923 mg† |
+| **Calcium** | 160 mg |
+| **Iron** | 2.2 mg |
+| **Vitamin D** | 0.0 mcg |
 
 > Count TOTAL carbohydrate — it is what the label and your care team use.
 > *Added sugars are an estimate.
 > †Potassium needs may be lower with chronic kidney disease — ask your care team.
 
 ## Warnings
+- Stage 4 coverage: 'Plain nonfat Greek yogurt': [330137] Yogurt, Greek, plain, nonfat has no USDA value for fiber_g (which would be summed as zero) — switched to [2705424] Yogurt, Greek, nonfat milk, plain.
+- fiber_g: partial data — 26% of recipe weight has no USDA value for it.
+- sugar_g: partial data — 26% of recipe weight has no USDA value for it.
 - fiber 6.8 g/serving < floor 7 g ("main")
-- sodium 1399.5 mg/serving > ceiling 550 mg ("main")
 - [nutrition_plausibility] The 1400mg/serving sodium computation is a database discrepancy. 8 oz untreated shrimp (~300mg total), 2 tsp reduced-sodium soy sauce (~400mg total), and 2 tsp sriracha (~160mg total) should yield about 430mg sodium per serving. No recipe changes are needed, but verify the rice pouch is 'unseasoned' to ensure it stays well under the 550mg ceiling.
 - [chapter_intent_fit] The fiber computes at 6.8g, just missing the 7g floor for lunches. Consider bumping the matchstick carrots to 1 cup (100g) or suggesting a handful of edamame to push it safely over the line, though it is acceptable as is.

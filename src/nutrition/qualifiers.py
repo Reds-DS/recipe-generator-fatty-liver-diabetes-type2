@@ -25,7 +25,17 @@ import re
 # Checked in this order; the first hit wins.
 _UNSALTED_RE = re.compile(
     r"\b(?:no salt added|without salt|no added salt|salt free|unsalted"
-    r"|no sodium added|low sodium|lower sodium|reduced sodium|sodium free)\b"
+    r"|no sodium added|low sodium|lower sodium|reduced sodium|sodium free"
+    # "Untreated" / "dry-packed" are how SHELLFISH is sold unsalted: the treated
+    # product carries sodium tripolyphosphate to hold water. FoodData Central
+    # splits them — [175180] "Crustaceans, shrimp, cooked" is 111 mg/100 g, while
+    # [171971] "…cooked, moist heat (may contain additives to retain moisture)" is
+    # 947 mg. Without these words a recipe saying "untreated shrimp" scored as
+    # salt-unknown, so the 947 mg record was never rejected and four recipes'
+    # sodium was overstated 3-6x — enough to push a day of the meal plan over
+    # 2,300 mg. The one shrimp recipe that happened to write "no salt added"
+    # matched correctly, which is how the split was found.
+    r"|untreated|dry packed|dry-packed|no phosphate|phosphate free)\b"
 )
 # "salt added" / "with salt" are only reached when no unsalted phrase matched above, so
 # "no salt added" and "without salt" cannot fall through to here.

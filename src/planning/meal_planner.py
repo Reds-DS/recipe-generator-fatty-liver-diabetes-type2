@@ -33,6 +33,38 @@ CAP_RELAX_MAX = 0.50
 # alternative without making it unselectable.
 LOW_CONFIDENCE_PENALTY = 0.30
 
+# The cover promises every recipe in under 30 minutes, "no exceptions". A recipe
+# that declares more than this still belongs to the book, but the plan should not
+# reach for it while an on-promise alternative is free.
+THIRTY_MINUTE_CAP = 30
+
+# Penalty units for a recipe the book itself has flagged: `validation_passed` is
+# False (a critic finding stands against it) or its declared time breaks the
+# cover promise. Expressed in units, then scaled to whichever score scale is in
+# play — the legacy path measures distance in kcal, the personalized one in
+# normalised macro distance.
+#
+# This does NOT exclude anything: `usage_count` still dominates the sort, so
+# every recipe is still rotated through before any repeat. What it changes is
+# WHICH recipes get the extra uses when a bucket is smaller than the number of
+# slots — and that was the real defect. With 12 snacks over 30 slots, six of them
+# get a third outing, and a recipe breaching three snack ceilings was among them.
+DEFECT_PENALTY = 0.35
+DEFECT_KCAL_EQUIVALENT = 150.0
+
+# Proportional feedback on the plan's running kcal error, folded into the next
+# day's budget.
+#
+# Without it the planner is greedy one day at a time: each bucket hands back its
+# nearest-to-budget recipes first, so the ones left for late in the plan are
+# whatever fitted worst. Measured over this book, that ran the weekly average
+# 1,656 -> 1,740 -> 1,779 -> 1,866 kcal/day — the deficit the liver is relying on
+# quietly eroding exactly as the month goes on. The controller steers the budget
+# against the mean error so far, damped and clamped so it corrects a trend
+# without lurching day to day.
+KCAL_FEEDBACK_GAIN = 0.8
+KCAL_FEEDBACK_MAX = 160.0
+
 
 def build_plan(
     recipes_by_meal: dict[str, list[Recipe]],
@@ -67,11 +99,25 @@ def build_plan(
     generation_warnings: list[str] = []
 
     day_plans: list[DayPlan] = []
+    kcal_delivered = 0.0  # running total across finished days, for the feedback term
 
     for day in range(1, days + 1):
         slots: list[MealSlot] = []
         kcal_so_far = 0.0
         meals_total = len(meal_structure)
+
+        # Steer today's budget against how far the plan has drifted so far.
+        # Positive mean error = running hot, so aim today lower.
+        days_done = day - 1
+        if days_done:
+            mean_error = kcal_delivered / days_done - target_daily_kcal
+            correction = max(
+                -KCAL_FEEDBACK_MAX,
+                min(KCAL_FEEDBACK_MAX, KCAL_FEEDBACK_GAIN * mean_error),
+            )
+        else:
+            correction = 0.0
+        day_kcal_target = target_daily_kcal - correction
 
         for meal_idx, meal_type in enumerate(meal_structure):
             bucket = recipes_by_meal[meal_type]
@@ -82,7 +128,7 @@ def build_plan(
             else:
                 meals_done = meal_idx
                 meals_remaining = meals_total - meals_done
-                per_meal_budget = (target_daily_kcal - kcal_so_far) / max(meals_remaining, 1)
+                per_meal_budget = (day_kcal_target - kcal_so_far) / max(meals_remaining, 1)
 
             candidates = _eligible_candidates(
                 bucket, last_used_day, day, window,
@@ -117,11 +163,15 @@ def build_plan(
             usage_count[chosen.id] = usage_count.get(chosen.id, 0) + 1
             last_used_day[chosen.id] = day
 
+        totals = _sum_nutrition([s.nutrition_per_serving for s in slots])
+        kcal_delivered += totals.calories_kcal
         day_plans.append(DayPlan(
             day_number=day,
             slots=slots,
-            daily_totals=_sum_nutrition([s.nutrition_per_serving for s in slots]),
+            daily_totals=totals,
         ))
+
+    day_plans = _rebalance_week_kcal(day_plans, window)
 
     avg = average_nutrition([d.daily_totals for d in day_plans])
 
@@ -141,6 +191,154 @@ def build_plan(
         insights=insights,
         generation_warnings=_dedupe_warnings(generation_warnings),
     )
+
+
+def _rebalance_week_kcal(
+    day_plans: list[DayPlan],
+    window: int,
+    max_swaps: int = 400,
+) -> list[DayPlan]:
+    """Even out the weekly calorie averages by swapping slots between days.
+
+    The greedy day-by-day build leaves a trend: each bucket hands back its
+    nearest-to-budget recipes first, so whatever fitted worst is what is left for
+    the end of the plan. Measured on this book that ran the weekly average
+    1,656 -> 1,740 -> 1,779 -> 1,866 kcal/day. Steering the daily budget cannot
+    fix it — by then every remaining candidate sits on the same side of the
+    budget, so a lower target just picks the same recipe.
+
+    This pass instead PERMUTES the finished assignment: it exchanges two slots of
+    the same meal type between a heavy week and a light week. Because it is a
+    permutation, the set of recipes used, every usage count and the plan's own
+    mean are all unchanged by construction — only the distribution across weeks
+    moves. Repeat-window distance is re-checked for both recipes before any swap
+    is accepted, and swaps are evaluated in sorted order so the result stays
+    deterministic for a given seed.
+    """
+    from src.planning.week_slicer import build_week_spans
+
+    spans = build_week_spans(len(day_plans))
+    if len(spans) < 2:
+        return day_plans
+
+    by_num = {d.day_number: d for d in day_plans}
+
+    def week_days(span: tuple[int, int]) -> list[DayPlan]:
+        return [by_num[n] for n in range(span[0], span[1] + 1) if n in by_num]
+
+    def week_mean(span: tuple[int, int]) -> float:
+        ds = week_days(span)
+        return sum(d.daily_totals.calories_kcal for d in ds) / len(ds) if ds else 0.0
+
+    def spread() -> float:
+        means = [week_mean(s) for s in spans]
+        return max(means) - min(means)
+
+    def occurrences(recipe_id: str) -> set[int]:
+        return {
+            d.day_number for d in day_plans
+            for s in d.slots if s.recipe_id == recipe_id
+        }
+
+    def window_ok(recipe_id: str, leaving: int, arriving: int) -> bool:
+        """Would putting `recipe_id` on `arriving` (freeing `leaving`) still clear
+        the repeat window?
+
+        Strictly GREATER than the window, matching `_eligible_candidates`, which
+        admits a recipe only when ``current_day - last_used_day > window``. A gap
+        of exactly `window` is a violation, not the boundary case.
+        """
+        if window <= 0:
+            return True
+        others = occurrences(recipe_id) - {leaving}
+        return all(abs(o - arriving) > window for o in others)
+
+    for _ in range(max_swaps):
+        current = spread()
+        means = {i: week_mean(s) for i, s in enumerate(spans)}
+        hot = max(means, key=lambda i: means[i])
+        cold = min(means, key=lambda i: means[i])
+        if hot == cold or current <= 1.0:
+            break
+
+        best: tuple[float, int, int, int] | None = None  # (spread, dayA, dayB, idx)
+        for da in sorted(d.day_number for d in week_days(spans[hot])):
+            for db in sorted(d.day_number for d in week_days(spans[cold])):
+                A, B = by_num[da], by_num[db]
+                for idx in range(min(len(A.slots), len(B.slots))):
+                    sa, sb = A.slots[idx], B.slots[idx]
+                    if sa.meal_type != sb.meal_type or sa.recipe_id == sb.recipe_id:
+                        continue
+                    # Only a swap that moves calories from the hot week to the
+                    # cold one can help.
+                    delta = (
+                        sa.nutrition_per_serving.calories_kcal
+                        - sb.nutrition_per_serving.calories_kcal
+                    )
+                    if delta <= 0:
+                        continue
+                    if not window_ok(sa.recipe_id, da, db):
+                        continue
+                    if not window_ok(sb.recipe_id, db, da):
+                        continue
+                    _swap(A, B, idx)
+                    after = spread()
+                    _swap(A, B, idx)  # restore
+                    if after < current - 1e-9 and (best is None or after < best[0]):
+                        best = (after, da, db, idx)
+        if best is None:
+            break
+        _, da, db, idx = best
+        _swap(by_num[da], by_num[db], idx)
+
+    # Second pass, within each week. A swap between two days of the SAME week
+    # cannot change that week's mean, so this is free with respect to the
+    # objective above — it just stops one day carrying the week's heavy meals.
+    for span in spans:
+        for _ in range(max_swaps):
+            ds = week_days(span)
+            if len(ds) < 2:
+                break
+            kcals = {d.day_number: d.daily_totals.calories_kcal for d in ds}
+            current = max(kcals.values()) - min(kcals.values())
+            if current <= 1.0:
+                break
+            hot = max(kcals, key=lambda n: kcals[n])
+            cold = min(kcals, key=lambda n: kcals[n])
+            best_in: tuple[float, int] | None = None
+            A, B = by_num[hot], by_num[cold]
+            for idx in range(min(len(A.slots), len(B.slots))):
+                sa, sb = A.slots[idx], B.slots[idx]
+                if sa.meal_type != sb.meal_type or sa.recipe_id == sb.recipe_id:
+                    continue
+                if (sa.nutrition_per_serving.calories_kcal
+                        <= sb.nutrition_per_serving.calories_kcal):
+                    continue
+                if not window_ok(sa.recipe_id, hot, cold):
+                    continue
+                if not window_ok(sb.recipe_id, cold, hot):
+                    continue
+                _swap(A, B, idx)
+                after = max(
+                    d.daily_totals.calories_kcal for d in week_days(span)
+                ) - min(d.daily_totals.calories_kcal for d in week_days(span))
+                _swap(A, B, idx)
+                if after < current - 1e-9 and (best_in is None or after < best_in[0]):
+                    best_in = (after, idx)
+            if best_in is None:
+                break
+            _swap(A, B, best_in[1])
+
+    return day_plans
+
+
+def _swap(a: DayPlan, b: DayPlan, idx: int) -> None:
+    """Exchange slot `idx` between two days, keeping day numbers and totals right."""
+    sa, sb = a.slots[idx], b.slots[idx]
+    a.slots[idx] = sb.model_copy(update={"day": a.day_number})
+    b.slots[idx] = sa.model_copy(update={"day": b.day_number})
+    a.daily_totals = _sum_nutrition([s.nutrition_per_serving for s in a.slots])
+    b.daily_totals = _sum_nutrition([s.nutrition_per_serving for s in b.slots])
 
 
 def _dedupe_warnings(warnings: list[str]) -> list[str]:
@@ -271,8 +469,13 @@ def _score(
     if nutrition is None:
         return (usage_count.get(recipe.id, 0), per_meal_budget_kcal, recipe.id)
 
+    defects = _defect_units(recipe)
+
     if per_meal_target is None:
-        distance = abs(nutrition.calories_kcal - per_meal_budget_kcal)
+        distance = (
+            abs(nutrition.calories_kcal - per_meal_budget_kcal)
+            + defects * DEFECT_KCAL_EQUIVALENT
+        )
     else:
         t = per_meal_target
         distance = (
@@ -287,7 +490,31 @@ def _score(
         # them. Push them behind comparable high-confidence alternatives.
         if nutrition.confidence == "low":
             distance += LOW_CONFIDENCE_PENALTY
+        distance += defects * DEFECT_PENALTY
     return (usage_count.get(recipe.id, 0), distance, recipe.id)
+
+
+def _declared_total_min(recipe: Recipe) -> int:
+    """Active minutes the recipe declares: prep + the top of its cook range."""
+    cook = recipe.cook_time_max_min
+    if cook is None:
+        cook = recipe.cook_time_min or 0
+    return (recipe.prep_time_min or 0) + cook
+
+
+def _defect_units(recipe: Recipe) -> float:
+    """How many things the book itself has flagged about this recipe.
+
+    Used only to break ties among equally-used recipes, so a flagged recipe is
+    still rotated in — it just stops collecting the *extra* uses that a bucket
+    smaller than the slot count hands out.
+    """
+    units = 0.0
+    if recipe.validation_passed is False:
+        units += 1.0
+    if _declared_total_min(recipe) > THIRTY_MINUTE_CAP:
+        units += 1.0
+    return units
 
 
 # Panel fields aggregated by _sum_nutrition / average_nutrition (the 7 core macros + the
@@ -297,7 +524,9 @@ _AGG_FIELDS: tuple[str, ...] = (
     "saturated_fat_g", "added_sugar_g", "cholesterol_mg", "potassium_mg", "trans_fat_g",
     "mufa_g", "pufa_g", "calcium_mg", "iron_mg", "vitamin_d_mcg",
 )
-_CORE_AGG_FIELDS = {"calories_kcal", "protein_g", "carbs_g", "fat_g", "fiber_g", "sodium_mg", "sugar_g"}
+_CORE_AGG_FIELDS = {
+    "calories_kcal", "protein_g", "carbs_g", "fat_g", "fiber_g", "sodium_mg", "sugar_g",
+}
 
 
 def _zero_nutrition() -> NutritionInfo:

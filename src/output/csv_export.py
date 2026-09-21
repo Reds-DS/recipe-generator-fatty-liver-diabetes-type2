@@ -8,30 +8,55 @@ FDA-Nutrition-Facts-style nutrition panel).
 import csv
 import re
 import unicodedata
+import warnings
 from pathlib import Path
 
-# Sized to the recipes actually in the book: the max observed is 12 ingredients
-# and 7 steps. 7 is also the hard cap in src/llm/output_schemas.py
-# (DraftRecipe.instructions max_length=7); ingredients allow up to 15 there, so a
-# future recipe with 13-15 would be truncated here — re-check if regenerating.
-NUM_INGREDIENTS = 12
+# Sized to the 100 recipes actually in the book, re-measured 2026-08-18:
+# ingredients run 5-13 (mean 9.6, median 10), instructions 3-7 (mean 6.3).
+#
+# INSTRUCTIONS: 7 is a real cap — src/llm/output_schemas.py DraftRecipe.instructions
+# has max_length=7 and draft.py states it — and 0/100 recipes exceed it.
+# INGREDIENTS ARE NOT CAPPED ANYWHERE. The schema allows 15, and the spec's
+# `easy_recipe_constraints.max_ingredients: 10` is editorial only: no code reads it
+# and it reaches the model just as "about 10 or fewer" in the IDEATION prompt, not
+# the draft prompt. 26/100 recipes are already over it (20x11, 5x12, 1x13). This
+# constant was 12, which would have SILENTLY DROPPED the 13th ingredient of
+# "Spiced Beef, Herb, and Bulgur Salad Bowls" — a missing line in a printed book.
+# Truncation here is silent by design (short lists pad with ""), so re-measure
+# after any regeneration rather than trusting this number:
+#   max(len(json.load(open(f))["ingredients"]) for f in <book>/*/JSON/*.json)
+# A recipe that overflows now raises a warning in parse_recipe rather than
+# vanishing quietly.
+NUM_INGREDIENTS = 13
 NUM_INSTRUCTIONS = 7
 
 # Nutrition-panel labels (as they appear in the markdown table, with the
-# leading `**`/`&nbsp;` stripped) → CSV column name. Keep in sync with
-# `_nutrition_lines()` in formatter.py and with `nutrition_panel` in the spec.
-# Ordered to match the printed panel, which leads with the HERO SIX. There is no
-# NetCarbs column: this book does not compute or print net carbs (no FDA
-# definition; the ADA counts total carbohydrate).
+# leading `**`/`&nbsp;` stripped) → CSV column name. Keep the KEYS in sync with
+# `_nutrition_lines()` in formatter.py: a key that stops matching the panel's
+# wording yields a silently EMPTY column, not an error.
+#
+# The eight VALUES below are the layout's required set, named and ordered as the
+# design asks for them. Column order here is merge-field order only — InDesign
+# Data Merge places fields by NAME, so it does not constrain the printed panel,
+# which keeps its own HERO SIX order in formatter.py (that order is the book's
+# thesis and is not this file's business).
+#
+# Sodium is carried as a ninth column beyond the required eight, deliberately:
+# every tier in this book has a hard per-serving sodium ceiling (550/500/250/150
+# mg) and the canned-goods finding in CLAUDE.md makes it the axis most worth
+# proofing on the page. Drop it only on an explicit editorial decision.
+#
+# There is no NetCarbs column: this book does not compute or print net carbs (no
+# FDA definition; the ADA counts total carbohydrate). Do not "restore" it.
 _NUTRITION_LABELS = {
     "calories": "Calories",
-    "total carbohydrate": "Carbs",
-    "dietary fiber": "Fiber",
-    "total sugars": "Sugar",
-    "incl. added sugars": "AddedSugar",
     "protein": "Protein",
-    "total fat": "Fat",
+    "dietary fiber": "Fiber",
+    "total carbohydrate": "Carbs",
+    "total fat": "TotalFat",
     "saturated fat": "SaturatedFat",
+    "total sugars": "TotalSugars",
+    "incl. added sugars": "AddedSugars",
     "sodium": "Sodium",
 }
 _NUTRITION_COLUMNS = list(dict.fromkeys(_NUTRITION_LABELS.values()))
@@ -132,6 +157,20 @@ def parse_recipe(md_path: Path) -> dict:
     }
     for col in _NUTRITION_COLUMNS:
         row[col] = nutrition[col]
+
+    # NEVER let a recipe lose a line to the column count — an ingredient that
+    # falls off the end of the table is invisible in the laid-out page. Short
+    # lists pad with "" (fine); long ones are shouted about (see the constants).
+    for name, items, width in (
+        ("ingredients", ingr_list, NUM_INGREDIENTS),
+        ("instructions", instr_list, NUM_INSTRUCTIONS),
+    ):
+        if len(items) > width:
+            warnings.warn(
+                f"{md_path.name}: {len(items)} {name} but only {width} columns — "
+                f"dropping {items[width:]}. Raise NUM_{name.upper()} in csv_export.py.",
+                stacklevel=2,
+            )
 
     for i in range(NUM_INGREDIENTS):
         row[f"Ingredient_{i + 1}"] = ingr_list[i] if i < len(ingr_list) else ""

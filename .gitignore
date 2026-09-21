@@ -24,3 +24,7 @@ data/users/
 
 # USDA FoodData Central raw CSV bundle (downloaded separately, multi-GB)
 usda_source_data/
+
+# PDF renderer thumbnail caches (downscaled copies of the recipe images; rebuilt on demand)
+data/generated_recipes/cookbook-recipes/**/.thumbs/
+data/generated_recipes/cookbook-recipes/**/.thumbs-recipe/

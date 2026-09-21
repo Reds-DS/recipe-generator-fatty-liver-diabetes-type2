@@ -1,0 +1,573 @@
+week,category,item,quantity_g,quantity_display,is_optional,is_pantry
+1,"Grains, Starches & Legumes",Dense whole-grain bread,140.0,140 g,false,false
+1,"Grains, Starches & Legumes",Extra-firm tofu,200.0,200 g,false,false
+1,"Grains, Starches & Legumes",Frozen whole-wheat waffles,140.0,140 g,false,false
+1,"Grains, Starches & Legumes",Low-sodium canned chickpeas,150.0,150 g,false,false
+1,"Grains, Starches & Legumes",Low-sodium sprouted whole-grain bread,136.0,140 g,false,false
+1,"Grains, Starches & Legumes",No-salt-added canned dark red kidney beans,130.0,130 g,false,false
+1,"Grains, Starches & Legumes",No-salt-added canned Great Northern beans,200.0,200 g,false,false
+1,"Grains, Starches & Legumes",No-salt-added canned navy beans,260.0,260 g,false,false
+1,"Grains, Starches & Legumes",Plain quinoa,200.0,200 g,false,false
+1,"Grains, Starches & Legumes",Tempeh,170.0,170 g,false,false
+1,"Grains, Starches & Legumes",Whole wheat English muffins,114.0,110 g,false,false
+1,"Grains, Starches & Legumes",Whole-grain crispbreads,18.0,20 g,false,false
+1,"Grains, Starches & Legumes",Whole-wheat breads,330.0,330 g,false,false
+1,"Grains, Starches & Legumes",Whole-wheat penne or rotini,85.0,85 g,false,false
+1,"Grains, Starches & Legumes",Whole-wheat tortillas,120.0,120 g,false,false
+1,Produce — Fruit,Apples,250.0,250 g,false,false
+1,Produce — Fruit,Cherry tomatoes,900.0,900 g,false,false
+1,Produce — Fruit,Frozen bananas,150.0,150 g,false,false
+1,Produce — Fruit,Frozen blueberries,210.0,210 g,false,false
+1,Produce — Fruit,Frozen mixed berries,520.0,520 g,false,false
+1,Produce — Fruit,Hass avocado,100.0,100 g,false,false
+1,Produce — Fruit,Lemon juice,215.0,220 g,false,false
+1,Produce — Fruit,Medjool dates,48.0,50 g,false,false
+1,Produce — Fruit,Oranges,390.0,390 g,false,false
+1,Produce — Fruit,Pears,180.0,180 g,false,false
+1,Produce — Fruit,Raspberries,123.0,120 g,false,false
+1,Produce — Fruit,Red grapes,150.0,150 g,false,false
+1,Produce — Fruit,Strawberries,580.0,580 g,false,false
+1,Produce — Fruit,Unsweetened dried apricots,55.0,55 g,false,false
+1,Herbs & Spices,Basil leaves,22.0,20 g,false,false
+1,Herbs & Spices,Cilantro,4.0,5 g,false,false
+1,Herbs & Spices,Dill,4.0,5 g,false,false
+1,Herbs & Spices,Dried sage,1.0,5 g,false,false
+1,Herbs & Spices,Flat-leaf parsley,5.0,5 g,false,false
+1,Herbs & Spices,Ginger,6.0,5 g,false,false
+1,Herbs & Spices,Ground nutmeg,0.5,5 g,false,false
+1,Herbs & Spices,Lemon zest,8.0,10 g,false,false
+1,Herbs & Spices,Onion powder,3.0,5 g,false,false
+1,Herbs & Spices,Pumpkin pie spice,2.0,5 g,false,false
+1,Herbs & Spices,Rosemary,2.0,5 g,false,false
+1,Herbs & Spices,Za'atar seasoning or dried oregano,1.0,5 g,false,false
+1,Produce — Vegetables,Arugula,140.0,140 g,false,false
+1,Produce — Vegetables,Asparagus,900.0,900 g,false,false
+1,Produce — Vegetables,Bok choy,227.0,230 g,false,false
+1,Produce — Vegetables,Celery,80.0,80 g,false,false
+1,Produce — Vegetables,English cucumber,520.0,520 g,false,false
+1,Produce — Vegetables,Frozen broccoli,130.0,130 g,false,false
+1,Produce — Vegetables,Frozen diced butternut squash,250.0,250 g,false,false
+1,Produce — Vegetables,Frozen edamame,155.0,160 g,false,false
+1,Produce — Vegetables,Frozen green peas,534.0,530 g,false,false
+1,Produce — Vegetables,Frozen spinach,75.0,75 g,false,false
+1,Produce — Vegetables,Garlic,45.0,45 g,false,false
+1,Produce — Vegetables,"Jarred roasted red peppers, no-salt-added",120.0,120 g,false,false
+1,Produce — Vegetables,Kale,42.0,40 g,false,false
+1,Produce — Vegetables,Low-sodium canned artichoke hearts,225.0,220 g,false,false
+1,Produce — Vegetables,Mini sweet peppers,120.0,120 g,false,false
+1,Produce — Vegetables,No-salt-added canned artichoke hearts,540.0,540 g,false,false
+1,Produce — Vegetables,No-salt-added canned crushed tomatoes,240.0,240 g,false,false
+1,Produce — Vegetables,"No-salt-added diced tomatoes, with juice",836.0,840 g,false,false
+1,Produce — Vegetables,Pre-chopped yellow onion,135.0,140 g,false,false
+1,Produce — Vegetables,Pumpkin,80.0,80 g,false,false
+1,Produce — Vegetables,Red onion,80.0,80 g,false,false
+1,Produce — Vegetables,Scallions,30.0,30 g,false,false
+1,Produce — Vegetables,Shaved Brussels sprouts,200.0,200 g,false,false
+1,Produce — Vegetables,Spinach,445.0,440 g,false,false
+1,Produce — Vegetables,Sun-dried tomatoes,20.0,20 g,false,false
+1,Produce — Vegetables,Tomatoes,120.0,120 g,false,false
+1,Fish & Seafood,Haddock fillets,255.0,260 g,false,false
+1,Fish & Seafood,No-salt-added canned sardines in water,212.0,210 g,false,false
+1,Fish & Seafood,Rainbow trout fillets,255.0,260 g,false,false
+1,Fish & Seafood,Salmon,225.0,220 g,false,false
+1,Dairy & Eggs,Eggs,500.0,500 g,false,false
+1,Dairy & Eggs,Liquid egg whites,790.0,790 g,false,false
+1,Dairy & Eggs,Low-fat milk,305.0,300 g,false,false
+1,Dairy & Eggs,Low-sodium low-fat cottage cheese,350.0,350 g,false,false
+1,Dairy & Eggs,Natural almond butter,32.0,30 g,false,false
+1,Dairy & Eggs,Nonfat plain Skyr,454.0,450 g,false,false
+1,Dairy & Eggs,Part-skim mozzarella cheese,28.0,30 g,false,false
+1,Dairy & Eggs,Part-skim ricotta cheese,100.0,100 g,false,false
+1,Dairy & Eggs,Plain non-fat Greek yogurt,1801.0,1.8 kg,false,false
+1,Dairy & Eggs,Sharp cheddar cheese,14.0,15 g,false,false
+1,Condiments & Sauces,Hummus,80.0,80 g,false,false
+1,Condiments & Sauces,No-salt-added vegetable broth,120.0,120 g,false,false
+1,Condiments & Sauces,Tahini,10.0,10 g,false,false
+1,Condiments & Sauces,Whole-grain mustard,15.0,15 g,false,false
+1,Nuts & Seeds,Dry-roasted pumpkin seeds,10.0,10 g,false,false
+1,Nuts & Seeds,Dry-roasted unsalted almonds,20.0,20 g,false,false
+1,Nuts & Seeds,Natural creamy peanut butter,16.0,15 g,false,false
+1,Nuts & Seeds,Pecans,23.0,25 g,false,false
+1,Nuts & Seeds,Unsalted almonds,18.0,20 g,false,false
+1,Nuts & Seeds,Unsalted pistachios,30.0,30 g,false,false
+1,Nuts & Seeds,Unsalted roasted pumpkin seeds,40.0,40 g,false,false
+1,Nuts & Seeds,Whole almonds,25.0,25 g,false,false
+1,Meat & Poultry,"Boneless, skinless chicken breast tenders",227.0,230 g,false,false
+1,Meat & Poultry,Chicken breast,150.0,150 g,false,false
+1,Meat & Poultry,Lean ground chicken,170.0,170 g,false,false
+1,Meat & Poultry,Lean sirloin steak strips,285.0,280 g,false,false
+1,Meat & Poultry,Low-sodium chicken broth,480.0,480 g,false,false
+1,Meat & Poultry,No-salt-added canned chicken breast,200.0,200 g,false,false
+1,Meat & Poultry,Turkey breast cutlets,200.0,200 g,false,false
+1,Pantry & Baking,Cornstarch,8.0,10 g,false,false
+1,Pantry & Baking,Oat flour,32.0,30 g,false,false
+1,Pantry & Baking,Unsweetened almond milk,270.0,270 g,false,false
+1,Condiments & Sauces,Low-sodium vegetable broth,960.0,960 g,false,true
+1,"Grains, Starches & Legumes",Ready-to-eat brown rice,930.0,930 g,false,true
+1,"Grains, Starches & Legumes",No-salt-added canned cannellini beans,330.0,330 g,false,true
+1,Oils & Fats,Extra-virgin olive oil,251.0,250 g,false,true
+1,"Grains, Starches & Legumes",No-salt-added canned brown lentils,240.0,240 g,false,true
+1,"Grains, Starches & Legumes",Ready-to-eat plain quinoa,240.0,240 g,false,true
+1,"Grains, Starches & Legumes",Unseasoned ready-to-eat farro,240.0,240 g,false,true
+1,Nuts & Seeds,Walnuts,174.0,170 g,false,true
+1,"Grains, Starches & Legumes",Whole-wheat pasta,157.0,160 g,false,true
+1,"Grains, Starches & Legumes",No-salt-added canned chickpeas,130.0,130 g,false,true
+1,"Grains, Starches & Legumes",Old-fashioned rolled oats,120.0,120 g,false,true
+1,Condiments & Sauces,Pure maple syrup,52.0,50 g,false,true
+1,Condiments & Sauces,Balsamic vinegar,45.0,45 g,false,true
+1,Nuts & Seeds,Pumpkin seeds,43.0,45 g,false,true
+1,Pantry & Baking,Kalamata olives,38.0,40 g,false,true
+1,Condiments & Sauces,Dijon mustard,35.0,35 g,false,true
+1,Condiments & Sauces,Red wine vinegar,35.0,35 g,false,true
+1,Pantry & Baking,Pure vanilla extract,30.5,30 g,false,true
+1,Nuts & Seeds,Hemp hearts,30.0,30 g,false,true
+1,Nuts & Seeds,Pistachios,30.0,30 g,false,true
+1,Nuts & Seeds,Sliced almonds,30.0,30 g,false,true
+1,Pantry & Baking,Dark chocolate chips,22.0,20 g,false,true
+1,Condiments & Sauces,Apple cider vinegar,15.0,15 g,false,true
+1,Condiments & Sauces,Unseasoned rice vinegar,15.0,15 g,false,true
+1,Pantry & Baking,Capers,15.0,15 g,false,true
+1,Herbs & Spices,Garlic powder,11.7,10 g,false,true
+1,Herbs & Spices,Black pepper,10.0,10 g,false,true
+1,Condiments & Sauces,Reduced-sodium soy sauce,10.0,10 g,false,true
+1,Pantry & Baking,Unsweetened cocoa powder,9.0,10 g,false,true
+1,Herbs & Spices,Ground cinnamon,8.0,10 g,false,true
+1,Herbs & Spices,Salt,7.0,5 g,false,true
+1,Herbs & Spices,Curry powder,6.0,5 g,false,true
+1,Herbs & Spices,Dried oregano,5.0,5 g,false,true
+1,Herbs & Spices,Smoked paprika,5.0,5 g,false,true
+1,Herbs & Spices,Ground cumin,3.0,5 g,false,true
+1,Herbs & Spices,Dried Italian seasoning,2.0,5 g,false,true
+1,Pantry & Baking,Baking powder,2.0,5 g,false,true
+1,Herbs & Spices,Crushed red pepper flakes,1.5,5 g,false,true
+2,Produce — Fruit,Apples,250.0,250 g,false,false
+2,Produce — Fruit,Bananas,118.0,120 g,false,false
+2,Produce — Fruit,Cherry tomatoes,963.0,960 g,false,false
+2,Produce — Fruit,Frozen blueberries,420.0,420 g,false,false
+2,Produce — Fruit,Frozen mixed berries,280.0,280 g,false,false
+2,Produce — Fruit,Fuji or Honeycrisp apple,150.0,150 g,false,false
+2,Produce — Fruit,Hass avocado,202.0,200 g,false,false
+2,Produce — Fruit,Lemon,60.0,60 g,false,false
+2,Produce — Fruit,Lemon juice,165.0,160 g,false,false
+2,Produce — Fruit,Lime juice,60.0,60 g,false,false
+2,Produce — Fruit,Oranges,284.0,280 g,false,false
+2,Produce — Fruit,Peaches,300.0,300 g,false,false
+2,Produce — Fruit,Pears,260.0,260 g,false,false
+2,Produce — Fruit,Raspberries,243.0,240 g,false,false
+2,Produce — Fruit,Unsweetened dried apricots,55.0,55 g,false,false
+2,Nuts & Seeds,Dry-roasted pumpkin seeds,10.0,10 g,false,false
+2,Nuts & Seeds,Dry-roasted unsalted almonds,20.0,20 g,false,false
+2,Nuts & Seeds,Natural creamy peanut butter,24.0,25 g,false,false
+2,Nuts & Seeds,Pecans,23.0,25 g,false,false
+2,Nuts & Seeds,Unsalted roasted pumpkin seeds,10.0,10 g,false,false
+2,Dairy & Eggs,Canned no-salt-added butter beans,150.0,150 g,false,false
+2,Dairy & Eggs,Eggs,650.0,650 g,false,false
+2,Dairy & Eggs,Feta cheese,14.0,15 g,false,false
+2,Dairy & Eggs,Liquid egg whites,543.0,540 g,false,false
+2,Dairy & Eggs,Low-fat milk,305.0,300 g,false,false
+2,Dairy & Eggs,Natural almond butter,32.0,30 g,false,false
+2,Dairy & Eggs,No-salt-added low-fat cottage cheese,226.0,230 g,false,false
+2,Dairy & Eggs,Nonfat plain Skyr,454.0,450 g,false,false
+2,Dairy & Eggs,Parmesan cheese,15.0,15 g,false,false
+2,Dairy & Eggs,Part-skim mozzarella cheese,70.0,70 g,false,false
+2,Dairy & Eggs,Part-skim ricotta cheese,60.0,60 g,false,false
+2,Dairy & Eggs,Plain non-fat Greek yogurt,665.0,660 g,false,false
+2,"Grains, Starches & Legumes",Extra-firm tofu,250.0,250 g,false,false
+2,"Grains, Starches & Legumes",Frozen whole-wheat waffles,140.0,140 g,false,false
+2,"Grains, Starches & Legumes",Low-sodium whole-wheat woven crackers,38.0,40 g,false,false
+2,"Grains, Starches & Legumes",No-salt-added canned Great Northern beans,255.0,260 g,false,false
+2,"Grains, Starches & Legumes",No-salt-added canned navy beans,260.0,260 g,false,false
+2,"Grains, Starches & Legumes",Pre-cooked brown and wild rice,210.0,210 g,false,false
+2,"Grains, Starches & Legumes",Quick-cooking bulgur wheat,70.0,70 g,false,false
+2,"Grains, Starches & Legumes","Ready-to-eat farro pouch, unsalted",200.0,200 g,false,false
+2,"Grains, Starches & Legumes",Silken tofu,450.0,450 g,false,false
+2,"Grains, Starches & Legumes",Tempeh,255.0,260 g,false,false
+2,"Grains, Starches & Legumes",Whole-wheat breads,420.0,420 g,false,false
+2,"Grains, Starches & Legumes",Whole-wheat tortillas,85.0,85 g,false,false
+2,Pantry & Baking,Cornstarch,8.0,10 g,false,false
+2,Pantry & Baking,Oat flour,32.0,30 g,false,false
+2,Pantry & Baking,Popcorn kernels,50.0,50 g,false,false
+2,Pantry & Baking,Unsweetened soy milk,360.0,360 g,false,false
+2,Herbs & Spices,Basil leaves,6.0,5 g,false,false
+2,Herbs & Spices,Canned no-salt-added black-eyed peas,160.0,160 g,false,false
+2,Herbs & Spices,Cardamom pods,1.0,5 g,false,false
+2,Herbs & Spices,Chinese five-spice powder,2.0,5 g,false,false
+2,Herbs & Spices,Cilantro,22.0,20 g,false,false
+2,Herbs & Spices,Cinnamon,1.0,5 g,false,false
+2,Herbs & Spices,Cinnamon stick,2.0,5 g,false,false
+2,Herbs & Spices,Dill,9.0,10 g,false,false
+2,Herbs & Spices,Dried thyme,1.0,5 g,false,false
+2,Herbs & Spices,Flat-leaf parsley,30.0,30 g,false,false
+2,Herbs & Spices,Ginger,15.0,15 g,false,false
+2,Herbs & Spices,Ground allspice,1.0,5 g,false,false
+2,Herbs & Spices,Ground nutmeg,0.5,5 g,false,false
+2,Herbs & Spices,Lemon zest,4.0,5 g,false,false
+2,Herbs & Spices,Parsley,10.0,10 g,false,false
+2,Herbs & Spices,Pumpkin pie spice,2.0,5 g,false,false
+2,Herbs & Spices,Thyme,1.0,5 g,false,false
+2,Produce — Vegetables,Arugula,85.0,85 g,false,false
+2,Produce — Vegetables,Bell peppers,80.0,80 g,false,false
+2,Produce — Vegetables,Bok choy,225.0,220 g,false,false
+2,Produce — Vegetables,Carrots,225.0,220 g,false,false
+2,Produce — Vegetables,Celery,120.0,120 g,false,false
+2,Produce — Vegetables,Cremini mushrooms,225.0,220 g,false,false
+2,Produce — Vegetables,English cucumber,715.0,720 g,false,false
+2,Produce — Vegetables,Frozen bell pepper and onion,170.0,170 g,false,false
+2,Produce — Vegetables,Frozen diced sweet potatoes,200.0,200 g,false,false
+2,Produce — Vegetables,Frozen edamame,155.0,160 g,false,false
+2,Produce — Vegetables,Frozen mirepoix,115.0,120 g,false,false
+2,Produce — Vegetables,Frozen sweet corn kernels,82.0,80 g,false,false
+2,Produce — Vegetables,Garlic,42.0,40 g,false,false
+2,Produce — Vegetables,"Jarred roasted red peppers, no-salt-added",120.0,120 g,false,false
+2,Produce — Vegetables,No-salt-added canned artichoke hearts,150.0,150 g,false,false
+2,Produce — Vegetables,"No-salt-added diced tomatoes, with juice",831.0,830 g,false,false
+2,Produce — Vegetables,Portobello mushroom,680.0,680 g,false,false
+2,Produce — Vegetables,Pre-shredded cabbage slaw mix,170.0,170 g,false,false
+2,Produce — Vegetables,Pumpkin,80.0,80 g,false,false
+2,Produce — Vegetables,Radishes,45.0,45 g,false,false
+2,Produce — Vegetables,Red onion,100.0,100 g,false,false
+2,Produce — Vegetables,Shaved Brussels sprouts,200.0,200 g,false,false
+2,Produce — Vegetables,Spinach,600.0,600 g,false,false
+2,Produce — Vegetables,Sugar snap peas,225.0,220 g,false,false
+2,Produce — Vegetables,Zucchini,500.0,500 g,false,false
+2,Condiments & Sauces,Mild chunky salsa,60.0,60 g,false,false
+2,Condiments & Sauces,No-added-sugar marinara sauce,125.0,120 g,false,false
+2,Condiments & Sauces,No-salt-added tomato paste,30.0,30 g,false,false
+2,Other,Mixed greens,60.0,60 g,false,false
+2,Fish & Seafood,Mahi-Mahi fillets,255.0,260 g,false,false
+2,Fish & Seafood,"Or frozen red snapper fillets, thawed",300.0,300 g,false,false
+2,Fish & Seafood,Tilapia fillets,225.0,220 g,false,false
+2,Fish & Seafood,Untreated Frozen shrimp,115.0,120 g,false,false
+2,Meat & Poultry,"Boneless, skinless chicken thighs",300.0,300 g,false,false
+2,Meat & Poultry,Chicken breast,510.0,510 g,false,false
+2,Meat & Poultry,Extra-lean ground beef,450.0,450 g,false,false
+2,Meat & Poultry,Lean ground chicken,225.0,220 g,false,false
+2,Meat & Poultry,Low-sodium chicken broth,1245.0,1.2 kg,false,false
+2,Meat & Poultry,Turkey breast cutlets,480.0,480 g,false,false
+2,"Grains, Starches & Legumes",Ready-to-eat plain quinoa,1015.0,1 kg,false,true
+2,"Grains, Starches & Legumes",No-salt-added canned chickpeas,280.0,280 g,false,true
+2,"Grains, Starches & Legumes","Canned black beans, no-salt-added",260.0,260 g,false,true
+2,Oils & Fats,Extra-virgin olive oil,254.0,250 g,false,true
+2,"Grains, Starches & Legumes",No-salt-added canned cannellini beans,250.0,250 g,false,true
+2,"Grains, Starches & Legumes",Ready-to-eat brown rice,250.0,250 g,false,true
+2,"Grains, Starches & Legumes",Unseasoned ready-to-eat farro,250.0,250 g,false,true
+2,"Grains, Starches & Legumes",No-salt-added canned brown lentils,200.0,200 g,false,true
+2,"Grains, Starches & Legumes",Old-fashioned rolled oats,120.0,120 g,false,true
+2,"Grains, Starches & Legumes",Whole-wheat pasta,100.0,100 g,false,true
+2,Nuts & Seeds,Hemp hearts,90.0,90 g,false,true
+2,Nuts & Seeds,Walnuts,89.0,90 g,false,true
+2,Pantry & Baking,Kalamata olives,88.0,90 g,false,true
+2,Condiments & Sauces,Pure maple syrup,81.0,80 g,false,true
+2,Nuts & Seeds,Pistachios,68.0,70 g,false,true
+2,Nuts & Seeds,Chia seeds,66.0,65 g,false,true
+2,Condiments & Sauces,Apple cider vinegar,45.0,45 g,false,true
+2,Nuts & Seeds,Sliced almonds,37.0,35 g,false,true
+2,Pantry & Baking,Pure vanilla extract,34.0,35 g,false,true
+2,Condiments & Sauces,Balsamic vinegar,30.0,30 g,false,true
+2,Condiments & Sauces,Reduced-sodium soy sauce,20.0,20 g,false,true
+2,Herbs & Spices,Garlic powder,17.0,15 g,false,true
+2,Condiments & Sauces,Dijon mustard,15.0,15 g,false,true
+2,Condiments & Sauces,Red wine vinegar,15.0,15 g,false,true
+2,Condiments & Sauces,Unseasoned rice vinegar,15.0,15 g,false,true
+2,Pantry & Baking,Dark chocolate chips,12.0,10 g,false,true
+2,Nuts & Seeds,Sesame seeds,9.0,10 g,false,true
+2,Pantry & Baking,Capers,9.0,10 g,false,true
+2,Herbs & Spices,Salt,8.9,10 g,false,true
+2,Herbs & Spices,Ground cumin,8.0,10 g,false,true
+2,Pantry & Baking,Baking powder,6.0,5 g,false,true
+2,Herbs & Spices,Dried oregano,6.0,5 g,false,true
+2,Herbs & Spices,Ground cinnamon,6.0,5 g,false,true
+2,Herbs & Spices,Smoked paprika,6.0,5 g,false,true
+2,Herbs & Spices,Black pepper,4.5,5 g,false,true
+2,Herbs & Spices,Crushed red pepper flakes,2.0,5 g,false,true
+2,Herbs & Spices,Curry powder,2.0,5 g,false,true
+2,Herbs & Spices,Chili powder,1.0,5 g,false,true
+2,Herbs & Spices,Dried Italian seasoning,1.0,5 g,false,true
+3,"Grains, Starches & Legumes",Corn tortillas,100.0,100 g,false,false
+3,"Grains, Starches & Legumes",Dry red lentils,120.0,120 g,false,false
+3,"Grains, Starches & Legumes",No-salt-added canned pinto beans,455.0,460 g,false,false
+3,"Grains, Starches & Legumes",Potatoes,400.0,400 g,false,false
+3,"Grains, Starches & Legumes","Whole wheat couscous, dry",85.0,85 g,false,false
+3,"Grains, Starches & Legumes",Whole wheat English muffins,114.0,110 g,false,false
+3,"Grains, Starches & Legumes",Whole-grain crispbreads,18.0,20 g,false,false
+3,"Grains, Starches & Legumes",Whole-wheat breads,420.0,420 g,false,false
+3,"Grains, Starches & Legumes",Whole-wheat tortillas,90.0,90 g,false,false
+3,Fish & Seafood,No-salt-added canned pink salmon,466.0,470 g,false,false
+3,Fish & Seafood,No-salt-added canned tuna in water,200.0,200 g,false,false
+3,Fish & Seafood,Salmon,285.0,280 g,false,false
+3,Fish & Seafood,"Scallops, untreated / no salt added",340.0,340 g,false,false
+3,Fish & Seafood,"Shrimp , untreated",225.0,220 g,false,false
+3,Fish & Seafood,Skinless cod fillets,340.0,340 g,false,false
+3,Condiments & Sauces,Hummus,160.0,160 g,false,false
+3,Condiments & Sauces,Low-sodium beef broth,60.0,60 g,false,false
+3,Condiments & Sauces,Pico de gallo,230.0,230 g,false,false
+3,Condiments & Sauces,Whole-grain mustard,15.0,15 g,false,false
+3,Produce — Fruit,Apples,220.0,220 g,false,false
+3,Produce — Fruit,Cherry tomatoes,925.0,920 g,false,false
+3,Produce — Fruit,Frozen bananas,150.0,150 g,false,false
+3,Produce — Fruit,Frozen mixed berries,520.0,520 g,false,false
+3,Produce — Fruit,Hass avocado,125.0,120 g,false,false
+3,Produce — Fruit,Lemon,58.0,60 g,false,false
+3,Produce — Fruit,Lemon juice,192.0,190 g,false,false
+3,Produce — Fruit,Lime juice,90.0,90 g,false,false
+3,Produce — Fruit,Mango,100.0,100 g,false,false
+3,Produce — Fruit,Medjool dates,48.0,50 g,false,false
+3,Produce — Fruit,Mixed berries,220.0,220 g,false,false
+3,Produce — Fruit,Oranges,4.0,5 g,false,false
+3,Produce — Fruit,Peaches,300.0,300 g,false,false
+3,Produce — Fruit,Pears,440.0,440 g,false,false
+3,Produce — Fruit,Raspberries,120.0,120 g,false,false
+3,Produce — Fruit,Strawberries,574.0,570 g,false,false
+3,Produce — Fruit,Unsweetened dried apricots,55.0,55 g,false,false
+3,Herbs & Spices,Canned no-salt-added black-eyed peas,160.0,160 g,false,false
+3,Herbs & Spices,Cardamom pods,1.0,5 g,false,false
+3,Herbs & Spices,Cilantro,49.0,50 g,false,false
+3,Herbs & Spices,Cinnamon stick,2.0,5 g,false,false
+3,Herbs & Spices,Dill,6.0,5 g,false,false
+3,Herbs & Spices,Flat-leaf parsley,15.0,15 g,false,false
+3,Herbs & Spices,Lemon zest,4.0,5 g,false,false
+3,Herbs & Spices,Mint,3.0,5 g,false,false
+3,Herbs & Spices,Parsley,43.0,45 g,false,false
+3,Herbs & Spices,Rosemary,2.0,5 g,false,false
+3,Herbs & Spices,Salt-free taco seasoning,7.0,5 g,false,false
+3,Herbs & Spices,Thyme,2.0,5 g,false,false
+3,Herbs & Spices,Za'atar seasoning or dried oregano,1.0,5 g,false,false
+3,Produce — Vegetables,Bell peppers,570.0,570 g,false,false
+3,Produce — Vegetables,Celery,80.0,80 g,false,false
+3,Produce — Vegetables,Cremini mushrooms,225.0,220 g,false,false
+3,Produce — Vegetables,English cucumber,620.0,620 g,false,false
+3,Produce — Vegetables,Frozen edamame,155.0,160 g,false,false
+3,Produce — Vegetables,Frozen green peas,130.0,130 g,false,false
+3,Produce — Vegetables,Frozen sweet corn,275.0,280 g,false,false
+3,Produce — Vegetables,Frozen sweet corn kernels,82.0,80 g,false,false
+3,Produce — Vegetables,Garlic,33.0,35 g,false,false
+3,Produce — Vegetables,Green beans,225.0,220 g,false,false
+3,Produce — Vegetables,Low-sodium canned artichoke hearts,225.0,220 g,false,false
+3,Produce — Vegetables,Low-sodium diced green chiles,113.0,110 g,false,false
+3,Produce — Vegetables,Mini sweet peppers,120.0,120 g,false,false
+3,Produce — Vegetables,No-salt-added canned artichoke hearts,240.0,240 g,false,false
+3,Produce — Vegetables,No-salt-added canned crushed tomatoes,480.0,480 g,false,false
+3,Produce — Vegetables,"No-salt-added diced tomatoes, with juice",651.0,650 g,false,false
+3,Produce — Vegetables,Pre-chopped yellow onion,235.0,240 g,false,false
+3,Produce — Vegetables,Red onion,140.0,140 g,false,false
+3,Produce — Vegetables,Romaine lettuce,150.0,150 g,false,false
+3,Produce — Vegetables,Scallions,28.0,30 g,false,false
+3,Produce — Vegetables,Spinach,720.0,720 g,false,false
+3,Produce — Vegetables,Tomatoes,120.0,120 g,false,false
+3,Produce — Vegetables,Zucchini,740.0,740 g,false,false
+3,Meat & Poultry,Chicken breast,200.0,200 g,false,false
+3,Meat & Poultry,Extra-lean ground beef,505.0,500 g,false,false
+3,Meat & Poultry,Lean ground turkey,227.0,230 g,false,false
+3,Meat & Poultry,Low-sodium chicken broth,240.0,240 g,false,false
+3,Meat & Poultry,No-salt-added canned chicken breast,280.0,280 g,false,false
+3,Nuts & Seeds,Dry-roasted pumpkin seeds,10.0,10 g,false,false
+3,Nuts & Seeds,Dry-roasted unsalted almonds,20.0,20 g,false,false
+3,Nuts & Seeds,Natural creamy peanut butter,16.0,15 g,false,false
+3,Nuts & Seeds,Unsalted almonds,18.0,20 g,false,false
+3,Nuts & Seeds,Whole almonds,25.0,25 g,false,false
+3,Dairy & Eggs,Canned no-salt-added butter beans,260.0,260 g,false,false
+3,Dairy & Eggs,Eggs,832.0,830 g,false,false
+3,Dairy & Eggs,Feta cheese,45.0,45 g,false,false
+3,Dairy & Eggs,Liquid egg whites,670.0,670 g,false,false
+3,Dairy & Eggs,Natural almond butter,32.0,30 g,false,false
+3,Dairy & Eggs,Part-skim mozzarella cheese,28.0,30 g,false,false
+3,Dairy & Eggs,Part-skim ricotta cheese,60.0,60 g,false,false
+3,Dairy & Eggs,Plain non-fat Greek yogurt,1933.0,1.9 kg,false,false
+3,Pantry & Baking,Unsweetened almond milk,270.0,270 g,false,false
+3,Pantry & Baking,Unsweetened soy milk,180.0,180 g,false,false
+3,Other,Mixed greens,120.0,120 g,false,false
+3,"Grains, Starches & Legumes",Ready-to-eat plain quinoa,980.0,980 g,false,true
+3,Condiments & Sauces,Low-sodium vegetable broth,600.0,600 g,false,true
+3,"Grains, Starches & Legumes",No-salt-added canned brown lentils,540.0,540 g,false,true
+3,"Grains, Starches & Legumes",Ready-to-eat brown rice,440.0,440 g,false,true
+3,"Grains, Starches & Legumes",Unseasoned ready-to-eat farro,390.0,390 g,false,true
+3,"Grains, Starches & Legumes",No-salt-added canned cannellini beans,320.0,320 g,false,true
+3,Oils & Fats,Extra-virgin olive oil,286.0,290 g,false,true
+3,"Grains, Starches & Legumes","Canned black beans, no-salt-added",130.0,130 g,false,true
+3,"Grains, Starches & Legumes",No-salt-added canned chickpeas,130.0,130 g,false,true
+3,"Grains, Starches & Legumes",Old-fashioned rolled oats,120.0,120 g,false,true
+3,Nuts & Seeds,Walnuts,107.0,110 g,false,true
+3,Pantry & Baking,Kalamata olives,68.0,70 g,false,true
+3,Nuts & Seeds,Sliced almonds,61.0,60 g,false,true
+3,Nuts & Seeds,Pumpkin seeds,58.0,60 g,false,true
+3,Condiments & Sauces,Pure maple syrup,39.0,40 g,false,true
+3,Condiments & Sauces,Red wine vinegar,35.0,35 g,false,true
+3,Nuts & Seeds,Chia seeds,30.0,30 g,false,true
+3,Pantry & Baking,"Kalamata olives, low-sodium",30.0,30 g,false,true
+3,Pantry & Baking,Pure vanilla extract,25.5,25 g,false,true
+3,Pantry & Baking,Dark chocolate chips,22.0,20 g,false,true
+3,Condiments & Sauces,Dijon mustard,20.0,20 g,false,true
+3,Condiments & Sauces,Apple cider vinegar,15.0,15 g,false,true
+3,Herbs & Spices,Garlic powder,13.7,15 g,false,true
+3,Herbs & Spices,Salt,10.0,10 g,false,true
+3,Pantry & Baking,Unsweetened cocoa powder,9.0,10 g,false,true
+3,Herbs & Spices,Black pepper,8.0,10 g,false,true
+3,Herbs & Spices,Dried oregano,8.0,10 g,false,true
+3,Nuts & Seeds,Pistachios,8.0,10 g,false,true
+3,Herbs & Spices,Curry powder,6.0,5 g,false,true
+3,Herbs & Spices,Ground cinnamon,6.0,5 g,false,true
+3,Herbs & Spices,Ground cumin,6.0,5 g,false,true
+3,Herbs & Spices,Smoked paprika,5.0,5 g,false,true
+3,Herbs & Spices,Chili powder,1.0,5 g,false,true
+3,Herbs & Spices,Crushed red pepper flakes,1.0,5 g,false,true
+4,Oils & Fats,Sesame oil,5.0,5 g,false,false
+4,"Grains, Starches & Legumes",Corn tortillas,100.0,100 g,false,false
+4,"Grains, Starches & Legumes",Dried whole-wheat couscous,120.0,120 g,false,false
+4,"Grains, Starches & Legumes",Extra-firm tofu,340.0,340 g,false,false
+4,"Grains, Starches & Legumes",Hearty whole-grain bread,70.0,70 g,false,false
+4,"Grains, Starches & Legumes",Low-sodium sprouted whole-grain bread,136.0,140 g,false,false
+4,"Grains, Starches & Legumes",Low-sodium whole-wheat woven crackers,38.0,40 g,false,false
+4,"Grains, Starches & Legumes",Microwave brown rice,250.0,250 g,false,false
+4,"Grains, Starches & Legumes",No-salt-added canned lentils,200.0,200 g,false,false
+4,"Grains, Starches & Legumes",No-salt-added canned navy beans,520.0,520 g,false,false
+4,"Grains, Starches & Legumes",Plain quinoa,180.0,180 g,false,false
+4,"Grains, Starches & Legumes",Potatoes,150.0,150 g,false,false
+4,"Grains, Starches & Legumes",Ready-to-eat brown rice and quinoa,200.0,200 g,false,false
+4,"Grains, Starches & Legumes",Silken tofu,450.0,450 g,false,false
+4,"Grains, Starches & Legumes",Tempeh,255.0,260 g,false,false
+4,"Grains, Starches & Legumes",Whole-wheat breads,318.0,320 g,false,false
+4,"Grains, Starches & Legumes",Whole-wheat tortillas,175.0,180 g,false,false
+4,Condiments & Sauces,Mild chunky salsa,60.0,60 g,false,false
+4,Condiments & Sauces,No-salt-added tomato paste,30.0,30 g,false,false
+4,Condiments & Sauces,Sherry vinegar,15.0,15 g,false,false
+4,Condiments & Sauces,Sriracha sauce,10.0,10 g,false,false
+4,Herbs & Spices,Basil leaves,15.0,15 g,false,false
+4,Herbs & Spices,Cardamom pods,1.0,5 g,false,false
+4,Herbs & Spices,Chives,6.0,5 g,false,false
+4,Herbs & Spices,Cilantro,34.0,35 g,false,false
+4,Herbs & Spices,Cinnamon,1.0,5 g,false,false
+4,Herbs & Spices,Cinnamon stick,2.0,5 g,false,false
+4,Herbs & Spices,Dill,3.0,5 g,false,false
+4,Herbs & Spices,Dried thyme,1.0,5 g,false,false
+4,Herbs & Spices,Flat-leaf parsley,15.0,15 g,false,false
+4,Herbs & Spices,Ginger,6.0,5 g,false,false
+4,Herbs & Spices,Ginger paste,15.0,15 g,false,false
+4,Herbs & Spices,Ground nutmeg,0.5,5 g,false,false
+4,Herbs & Spices,Lemon zest,6.0,5 g,false,false
+4,Herbs & Spices,Mint,3.0,5 g,false,false
+4,Herbs & Spices,Parsley,15.0,15 g,false,false
+4,Herbs & Spices,Pumpkin pie spice,2.0,5 g,false,false
+4,Herbs & Spices,Rosemary,2.0,5 g,false,false
+4,Herbs & Spices,Sage,2.0,5 g,false,false
+4,Produce — Vegetables,Arugula,40.0,40 g,false,false
+4,Produce — Vegetables,Bell peppers,299.0,300 g,false,false
+4,Produce — Vegetables,Broccoli,180.0,180 g,false,false
+4,Produce — Vegetables,Carrots,110.0,110 g,false,false
+4,Produce — Vegetables,Celery,120.0,120 g,false,false
+4,Produce — Vegetables,English cucumber,580.0,580 g,false,false
+4,Produce — Vegetables,Frozen bell pepper and onion,320.0,320 g,false,false
+4,Produce — Vegetables,Frozen broccoli,130.0,130 g,false,false
+4,Produce — Vegetables,Frozen butternut squash,210.0,210 g,false,false
+4,Produce — Vegetables,Frozen diced sweet potatoes,200.0,200 g,false,false
+4,Produce — Vegetables,Frozen edamame,530.0,530 g,false,false
+4,Produce — Vegetables,Frozen green peas,130.0,130 g,false,false
+4,Produce — Vegetables,Frozen sweet corn,200.0,200 g,false,false
+4,Produce — Vegetables,Frozen whole kernel corn,140.0,140 g,false,false
+4,Produce — Vegetables,Garlic,54.0,55 g,false,false
+4,Produce — Vegetables,"Jarred roasted red peppers, no-salt-added",120.0,120 g,false,false
+4,Produce — Vegetables,Kale,100.0,100 g,false,false
+4,Produce — Vegetables,Mini sweet peppers,120.0,120 g,false,false
+4,Produce — Vegetables,"No-salt-added diced tomatoes, with juice",651.0,650 g,false,false
+4,Produce — Vegetables,Pre-chopped yellow onion,100.0,100 g,false,false
+4,Produce — Vegetables,Pre-shredded red cabbage,105.0,100 g,false,false
+4,Produce — Vegetables,Pumpkin,80.0,80 g,false,false
+4,Produce — Vegetables,Red onion,205.0,200 g,false,false
+4,Produce — Vegetables,Romaine lettuce,280.0,280 g,false,false
+4,Produce — Vegetables,Scallions,58.0,60 g,false,false
+4,Produce — Vegetables,Shaved Brussels sprouts,200.0,200 g,false,false
+4,Produce — Vegetables,Spinach,770.0,770 g,false,false
+4,Produce — Vegetables,Sugar snap peas,225.0,220 g,false,false
+4,Produce — Vegetables,Sweet potatoes,590.0,590 g,false,false
+4,Produce — Vegetables,Tomatoes,400.0,400 g,false,false
+4,Dairy & Eggs,Canned no-salt-added butter beans,150.0,150 g,false,false
+4,Dairy & Eggs,Eggs,850.0,850 g,false,false
+4,Dairy & Eggs,Feta cheese,77.0,75 g,false,false
+4,Dairy & Eggs,Liquid egg whites,903.0,900 g,false,false
+4,Dairy & Eggs,Low-fat milk,545.0,540 g,false,false
+4,Dairy & Eggs,Natural almond butter,64.0,65 g,false,false
+4,Dairy & Eggs,No-salt-added low-fat cottage cheese,226.0,230 g,false,false
+4,Dairy & Eggs,Parmesan cheese,15.0,15 g,false,false
+4,Dairy & Eggs,Part-skim ricotta cheese,60.0,60 g,false,false
+4,Dairy & Eggs,Plain non-fat Greek yogurt,1310.0,1.3 kg,false,false
+4,Dairy & Eggs,Sharp cheddar cheese,14.0,15 g,false,false
+4,Produce — Fruit,Apples,400.0,400 g,false,false
+4,Produce — Fruit,Bananas,118.0,120 g,false,false
+4,Produce — Fruit,Cherry tomatoes,1038.0,1 kg,false,false
+4,Produce — Fruit,Frozen bananas,150.0,150 g,false,false
+4,Produce — Fruit,Frozen blueberries,210.0,210 g,false,false
+4,Produce — Fruit,Frozen mixed berries,600.0,600 g,false,false
+4,Produce — Fruit,Hass avocado,402.0,400 g,false,false
+4,Produce — Fruit,Lemon juice,210.0,210 g,false,false
+4,Produce — Fruit,Lime juice,150.0,150 g,false,false
+4,Produce — Fruit,Mango,100.0,100 g,false,false
+4,Produce — Fruit,Medjool dates,48.0,50 g,false,false
+4,Produce — Fruit,Oranges,394.0,390 g,false,false
+4,Produce — Fruit,Peaches,300.0,300 g,false,false
+4,Produce — Fruit,Pears,440.0,440 g,false,false
+4,Produce — Fruit,Raspberries,243.0,240 g,false,false
+4,Produce — Fruit,Strawberries,294.0,290 g,false,false
+4,Meat & Poultry,Boneless pork loin chops,283.0,280 g,false,false
+4,Meat & Poultry,"Boneless, skinless chicken thighs",340.0,340 g,false,false
+4,Meat & Poultry,Chicken breast,340.0,340 g,false,false
+4,Meat & Poultry,Chicken tenderloins,220.0,220 g,false,false
+4,Meat & Poultry,Low-sodium chicken broth,120.0,120 g,false,false
+4,Meat & Poultry,Or frozen tuna steaks,225.0,220 g,false,false
+4,Meat & Poultry,Pork tenderloin,283.0,280 g,false,false
+4,Nuts & Seeds,Natural creamy peanut butter,16.0,15 g,false,false
+4,Nuts & Seeds,Pecans,23.0,25 g,false,false
+4,Nuts & Seeds,Unsalted pumpkin seeds,15.0,15 g,false,false
+4,Nuts & Seeds,Unsalted roasted pumpkin seeds,10.0,10 g,false,false
+4,Nuts & Seeds,Whole almonds,25.0,25 g,false,false
+4,Pantry & Baking,Cornstarch,8.0,10 g,false,false
+4,Pantry & Baking,Oat flour,32.0,30 g,false,false
+4,Pantry & Baking,Popcorn kernels,50.0,50 g,false,false
+4,Pantry & Baking,Unsweetened almond milk,30.0,30 g,false,false
+4,Pantry & Baking,Unsweetened soy milk,360.0,360 g,false,false
+4,Fish & Seafood,"Frozen shrimp, untreated",170.0,170 g,false,false
+4,Fish & Seafood,Halibut fillets,280.0,280 g,false,false
+4,Fish & Seafood,No salt added Frozen pre-cooked shrimp,250.0,250 g,false,false
+4,Fish & Seafood,No-salt-added canned pink salmon,170.0,170 g,false,false
+4,Fish & Seafood,No-salt-added canned sardines in water,212.0,210 g,false,false
+4,Fish & Seafood,No-salt-added canned skinless boneless mackerel in water,225.0,220 g,false,false
+4,Fish & Seafood,"Shrimp , untreated",225.0,220 g,false,false
+4,Fish & Seafood,Untreated cod fillets,285.0,280 g,false,false
+4,Fish & Seafood,Untreated Frozen shrimp,115.0,120 g,false,false
+4,Fish & Seafood,"Untreated Frozen shrimp, and tail-off",227.0,230 g,false,false
+4,"Grains, Starches & Legumes","Canned black beans, no-salt-added",1105.0,1.1 kg,false,true
+4,Condiments & Sauces,Low-sodium vegetable broth,1080.0,1.1 kg,false,true
+4,"Grains, Starches & Legumes",Ready-to-eat brown rice,780.0,780 g,false,true
+4,"Grains, Starches & Legumes",Unseasoned ready-to-eat farro,406.0,410 g,false,true
+4,"Grains, Starches & Legumes",No-salt-added canned cannellini beans,390.0,390 g,false,true
+4,Oils & Fats,Extra-virgin olive oil,379.0,380 g,false,true
+4,"Grains, Starches & Legumes",Ready-to-eat plain quinoa,315.0,320 g,false,true
+4,"Grains, Starches & Legumes",No-salt-added canned brown lentils,240.0,240 g,false,true
+4,"Grains, Starches & Legumes",Old-fashioned rolled oats,160.0,160 g,false,true
+4,"Grains, Starches & Legumes",No-salt-added canned chickpeas,130.0,130 g,false,true
+4,Nuts & Seeds,Walnuts,96.0,95 g,false,true
+4,Condiments & Sauces,Pure maple syrup,86.0,85 g,false,true
+4,Condiments & Sauces,Apple cider vinegar,75.0,75 g,false,true
+4,Nuts & Seeds,Pistachios,68.0,70 g,false,true
+4,Nuts & Seeds,Chia seeds,66.0,65 g,false,true
+4,Nuts & Seeds,Hemp hearts,60.0,60 g,false,true
+4,Nuts & Seeds,Sliced almonds,53.0,55 g,false,true
+4,Condiments & Sauces,Unseasoned rice vinegar,52.0,50 g,false,true
+4,Nuts & Seeds,Pumpkin seeds,43.0,45 g,false,true
+4,Pantry & Baking,Pure vanilla extract,38.5,40 g,false,true
+4,Pantry & Baking,Kalamata olives,38.0,40 g,false,true
+4,Condiments & Sauces,Reduced-sodium soy sauce,30.0,30 g,false,true
+4,Pantry & Baking,"Kalamata olives, low-sodium",30.0,30 g,false,true
+4,Condiments & Sauces,Dijon mustard,20.0,20 g,false,true
+4,Herbs & Spices,Smoked paprika,18.0,20 g,false,true
+4,Herbs & Spices,Garlic powder,15.7,15 g,false,true
+4,Condiments & Sauces,Red wine vinegar,15.0,15 g,false,true
+4,Herbs & Spices,Ground cumin,15.0,15 g,false,true
+4,Herbs & Spices,Salt,13.3,15 g,false,true
+4,Nuts & Seeds,Sesame seeds,12.0,10 g,false,true
+4,Pantry & Baking,Dark chocolate chips,10.0,10 g,false,true
+4,Pantry & Baking,Unsweetened cocoa powder,9.0,10 g,false,true
+4,Herbs & Spices,Ground cinnamon,8.5,10 g,false,true
+4,Herbs & Spices,Black pepper,6.5,5 g,false,true
+4,Herbs & Spices,Dried oregano,6.0,5 g,false,true
+4,Pantry & Baking,Baking powder,6.0,5 g,false,true
+4,Herbs & Spices,Crushed red pepper flakes,3.0,5 g,false,true
+4,Herbs & Spices,Chili powder,2.0,5 g,false,true

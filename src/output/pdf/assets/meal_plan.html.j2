@@ -11,6 +11,18 @@
     <p class="eyebrow"><span class="count">{{ plan.days|length }}-day</span> meal plan</p>
     <h1>{{ book_display }}</h1>
     <p class="objective">{{ manifest.objective }}</p>
+
+    <p class="safety">
+      <strong>Before you start, talk to your doctor or diabetes nurse.</strong>
+      This plan changes what and how much you eat, and if you take insulin, a
+      sulfonylurea, an SGLT2 inhibitor or a GLP-1 medicine, your dose may need
+      adjusting — eating differently on an unchanged dose is how people end up
+      with low blood sugar. Ask about it before day 1, and keep testing as
+      usual. Two other things worth raising at the same appointment: this plan
+      averages about {{ plan.avg_daily_nutrition.protein_g|round|int }} g of
+      protein a day, which is more than someone with kidney disease is usually
+      advised to eat, and it is not designed for pregnancy or breastfeeding.
+    </p>
   </section>
 
   <section class="brief">
@@ -33,7 +45,7 @@
     <table class="targets">
       <thead>
         <tr>
-          <th>Nutrient</th>
+          <th class="col-label">Nutrient</th>
           <th class="col-value">This plan, per day</th>
           <th>Why that number</th>
         </tr>
@@ -53,14 +65,15 @@
     </table>
     <p class="table-note">
       Averages across all {{ plan.days|length }} days. Individual days vary —
-      that is normal and intended; what matters is the weekly picture.
+      what matters is the weekly picture.
     </p>
 
     <h3>How to use it</h3>
     <ul class="how-to">
       {% if optional_labels %}
-        <li class="optional-rule"><strong>The
-            {{ optional_labels|join(" and the ") }} are optional.</strong>
+        <li class="optional-rule"><strong>{% if optional_labels|length > 1
+            %}The {{ optional_labels|join(" and the ") }} are{% else
+            %}{{ optional_labels[0]|capitalize }} is{% endif %} optional.</strong>
             Not hungry? Skip {% if optional_labels|length > 1 %}them{% else %}it{% endif %} —
             never force yourself to eat on schedule.
             {% if core_day %}
@@ -71,17 +84,18 @@
             {% endif %}</li>
       {% endif %}
       <li><strong>Shop once a week.</strong> Each week opens with its own
-          shopping list, already totalled across that week's recipes. Buy from
-          that list and you have the week covered.</li>
-      <li><strong>Cook two portions, eat one.</strong> Every recipe serves
-          {{ manifest.servings_per_recipe }} — either share it, or keep the
-          second portion for the next day's lunch.</li>
+          shopping list, already totalled across that week's recipes.</li>
+      <li><strong>Every recipe serves {{ manifest.servings_per_recipe }}.</strong>
+          Every number here is <em>one</em> portion, but the shopping lists buy the
+          whole recipe. Cooking for two, they are already right — cooking for one,
+          halve them or keep the second portion for a day you would rather not
+          cook.</li>
       <li><strong>Swap within a column.</strong> Do not fancy the Tuesday
-          dinner? Trade it for any other dinner in the book. The macros are
+          dinner? Trade it for any other dinner in the book — the numbers are
           close enough that the week still works.</li>
-      <li><strong>Drink more water than usual.</strong> This plan carries about
-          {{ plan.avg_daily_nutrition.fiber_g|round|int }} g of fiber a day.
-          Fiber needs water to do its job comfortably — aim for 6-8 glasses.</li>
+      <li><strong>Drink more water than usual.</strong> About
+          {{ plan.avg_daily_nutrition.fiber_g|round|int }} g of fiber a day needs
+          water to work comfortably — aim for 6-8 glasses.</li>
     </ul>
   </section>
 
@@ -404,6 +418,8 @@
                   <span class="meal-text">
                     <span class="title">{{ slot.recipe_title }}</span>
                     <span class="kcal">{{ slot.nutrition_per_serving.calories_kcal|round|int }} kcal</span>
+                    {% set passive = passive_by_id.get(slot.recipe_id) %}
+                    {% if passive %}<span class="passive">{{ passive|lower }}</span>{% endif %}
                   </span>
                 {% else %}
                   <span class="dash">—</span>
@@ -422,6 +438,10 @@
     </table>
 
     <h3 class="section-label">Shopping list</h3>
+    <p class="list-note">
+      Quantities cover every recipe in the week at its full
+      {{ manifest.servings_per_recipe }} servings. Cooking for one? Halve them.
+    </p>
     <div class="courses">
       {% for category, items in week.course_list.items_by_category.items() %}
         <div class="category">
@@ -474,6 +494,29 @@
 
   <section class="back">
     <p class="thanks">Enjoy your meals.</p>
+    <div class="colophon">
+      <p><strong>A few honest limits.</strong></p>
+      <p>
+        This plan is food, not treatment. It is built to help lower liver fat and
+        keep blood sugar steady alongside the care you already have — it does not
+        replace your medication, and no diet cures fatty liver or type 2 diabetes.
+        Nothing here is personal medical advice.
+      </p>
+      <p>
+        Check with your clinician before you begin, especially about
+        <strong>medication doses</strong> if you take insulin, a sulfonylurea, an
+        SGLT2 inhibitor or a GLP-1 medicine. If you have
+        <strong>kidney disease</strong>, this plan's protein level is likely
+        higher than you have been advised to eat, and needs adjusting. It is not
+        written for pregnancy, breastfeeding, or for anyone whose liver disease
+        has progressed to cirrhosis. Adapt it for your own allergies.
+      </p>
+      <p>
+        The nutrition figures are computed per serving from the USDA FoodData
+        Central database and rounded. Real ingredients vary, and added sugars are
+        an estimate. Treat every number as a good guide, not a laboratory result.
+      </p>
+    </div>
   </section>
 
 </body>
